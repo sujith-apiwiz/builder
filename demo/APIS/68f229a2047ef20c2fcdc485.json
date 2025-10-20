@@ -1,0 +1,298 @@
+{
+  "id" : "68f229a2047ef20c2fcdc485",
+  "cts" : 1760700834058,
+  "createdUserName" : "Sujith Kumar",
+  "modifiedUserName" : "Sujith Kumar",
+  "mts" : 1760955993105,
+  "createdBy" : "67a0969408a0e559a5309912",
+  "modifiedBy" : "67a0969408a0e559a5309912",
+  "proxyId" : "68f229a2047ef20c2fcdc484",
+  "revision" : 1,
+  "name" : "New Workflow 152",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/test-nodes/{path}",
+  "pathArray" : [ "test-nodes", "*" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "Sujith Kumar",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "73a4b612-98ae-4b3c-9e1e-6550f4f62c9d" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ],
+      "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "v1" ]
+    },
+    "outbound" : {
+      "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "73a4b612-98ae-4b3c-9e1e-6550f4f62c9d" ],
+      "v1" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ]
+    },
+    "allNeighbours" : [ "v1", "1a52a281-8986-4f21-9712-4735630d1ef6", "73a4b612-98ae-4b3c-9e1e-6550f4f62c9d" ]
+  },
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "header",
+        "reference" : "headers",
+        "value" : "header",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "query",
+        "reference" : "query-params",
+        "value" : "query",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "query-params",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "body",
+        "reference" : "body",
+        "value" : "$.body",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "path",
+        "reference" : "path-variable",
+        "value" : "path",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "path-variable",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "1a52a281-8986-4f21-9712-4735630d1ef6" : {
+      "vertexId" : "1a52a281-8986-4f21-9712-4735630d1ef6",
+      "vertexType" : "FEEL_SCRIPT",
+      "name" : "scripting",
+      "description" : "",
+      "feelScriptData" : {
+        "expression" : "a + b + c",
+        "feelVariableList" : [ {
+          "name" : "a",
+          "value" : "{{id}}",
+          "valueDataType" : "INTEGER"
+        }, {
+          "name" : "b",
+          "value" : "20",
+          "valueDataType" : "INTEGER"
+        }, {
+          "name" : "c",
+          "value" : "2",
+          "valueDataType" : "INTEGER"
+        } ],
+        "targetVariable" : "target",
+        "variableDataType" : "STRING",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "73a4b612-98ae-4b3c-9e1e-6550f4f62c9d" : {
+      "vertexId" : "73a4b612-98ae-4b3c-9e1e-6550f4f62c9d",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"scripting\": \"{{target}}\",\n    \"path\": \"{{path}}\",\n    \"header\": \"{{header}}\",\n    \"query\": \"{{query}}\",\n    \"body\": \"{{body}}\"\n}",
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1760955762913,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760943653578,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760943635331,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760943565743,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760943390023,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760942082422,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760941359209,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760941325151,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760706148351,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760706132831,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760706119340,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760706096422,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760706009066,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760705814040,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760705247567,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760705211386,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760705198720,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760705110916,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760704304947,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760704290669,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760704272062,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760704255435,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760702514175,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760702465044,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Draft",
+    "cts" : 1760701305615,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Draft",
+    "cts" : 1760701305351,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Approved",
+    "cts" : 1760700875596,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Draft",
+    "cts" : 1760700834058,
+    "lastModifiedBy" : "Sujith Kumar",
+    "description" : "Created new proxy"
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : false,
+  "environmentName" : "uat",
+  "environmentId" : "68ef29919d30e85f6e63cb8b",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
