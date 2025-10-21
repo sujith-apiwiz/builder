@@ -1,0 +1,332 @@
+{
+  "id" : "68d77d1cc1bd20238894c526",
+  "cts" : 1758952732634,
+  "createdUserName" : "Sujith Kumar",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1761023155832,
+  "createdBy" : "67a0969408a0e559a5309912",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "68d77d1cc1bd20238894c525",
+  "revision" : 1,
+  "name" : "Tracing",
+  "description" : "tracing",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/tracing",
+  "pathArray" : [ "tracing" ],
+  "revisionStatus" : "REVIEW",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "eed49911-8012-4faf-9a37-31d7dfd5f5bb" : [ "v1" ],
+      "ab5c2ff7-bbf6-4f10-8f78-6936bc1bea0f" : [ "eed49911-8012-4faf-9a37-31d7dfd5f5bb" ],
+      "49a73c06-1157-4c04-9f95-518e1efe65e0" : [ "55a9ca47-d6b7-4c5f-b92f-c13673191d59" ],
+      "10e8306c-43a5-4fb8-a3db-8cfc586eb2ee" : [ "ab5c2ff7-bbf6-4f10-8f78-6936bc1bea0f" ],
+      "55a9ca47-d6b7-4c5f-b92f-c13673191d59" : [ "10e8306c-43a5-4fb8-a3db-8cfc586eb2ee" ]
+    },
+    "outbound" : {
+      "v1" : [ "eed49911-8012-4faf-9a37-31d7dfd5f5bb" ],
+      "eed49911-8012-4faf-9a37-31d7dfd5f5bb" : [ "ab5c2ff7-bbf6-4f10-8f78-6936bc1bea0f" ],
+      "55a9ca47-d6b7-4c5f-b92f-c13673191d59" : [ "49a73c06-1157-4c04-9f95-518e1efe65e0" ],
+      "ab5c2ff7-bbf6-4f10-8f78-6936bc1bea0f" : [ "10e8306c-43a5-4fb8-a3db-8cfc586eb2ee" ],
+      "10e8306c-43a5-4fb8-a3db-8cfc586eb2ee" : [ "55a9ca47-d6b7-4c5f-b92f-c13673191d59" ]
+    },
+    "allNeighbours" : [ "49a73c06-1157-4c04-9f95-518e1efe65e0", "eed49911-8012-4faf-9a37-31d7dfd5f5bb", "10e8306c-43a5-4fb8-a3db-8cfc586eb2ee", "55a9ca47-d6b7-4c5f-b92f-c13673191d59", "v1", "ab5c2ff7-bbf6-4f10-8f78-6936bc1bea0f" ]
+  },
+  "vertexHashMap" : {
+    "49a73c06-1157-4c04-9f95-518e1efe65e0" : {
+      "vertexId" : "49a73c06-1157-4c04-9f95-518e1efe65e0",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/xml"
+        },
+        "body" : {
+          "data" : "{{{data1}}}",
+          "type" : "xml"
+        }
+      }
+    },
+    "eed49911-8012-4faf-9a37-31d7dfd5f5bb" : {
+      "vertexId" : "eed49911-8012-4faf-9a37-31d7dfd5f5bb",
+      "vertexType" : "TARGET",
+      "name" : "customerOfService",
+      "target" : {
+        "name" : "customerOfService",
+        "description" : "customerOfService",
+        "apiType" : "SOAP",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "webservices.oorsprong.org",
+          "path" : "/websamples.countryinfo/CountryInfoService.wso",
+          "headerParams" : [ {
+            "name" : "Referer",
+            "value" : "http"
+          }, {
+            "name" : "User-Agent",
+            "value" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+          }, {
+            "name" : "Accept",
+            "value" : "application/json, text/plain, */*"
+          }, {
+            "name" : "content-type",
+            "value" : "text/xml;charset=UTF-8"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <web:CountryName>\n            <web:sCountryISOCode>IN</web:sCountryISOCode>\n        </web:CountryName>\n    </soapenv:Body>\n</soapenv:Envelope>",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "data",
+            "reference" : "body",
+            "value" : "/",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "55a9ca47-d6b7-4c5f-b92f-c13673191d59" : {
+      "vertexId" : "55a9ca47-d6b7-4c5f-b92f-c13673191d59",
+      "vertexType" : "LOGGER",
+      "name" : "log",
+      "description" : "",
+      "logData" : {
+        "data" : "{{{message1}}}",
+        "skip" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "10e8306c-43a5-4fb8-a3db-8cfc586eb2ee" : {
+      "vertexId" : "10e8306c-43a5-4fb8-a3db-8cfc586eb2ee",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "xml-json",
+      "description" : "xml-json",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "data1",
+        "targetVariable" : "message1",
+        "jsonArray" : false,
+        "rootElementName" : "",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "id",
+        "reference" : "body",
+        "value" : "55",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "ab5c2ff7-bbf6-4f10-8f78-6936bc1bea0f" : {
+      "vertexId" : "ab5c2ff7-bbf6-4f10-8f78-6936bc1bea0f",
+      "vertexType" : "DATABASE",
+      "name" : "mongodb",
+      "description" : "mogoDB",
+      "databaseData" : {
+        "connectorId" : "68664076d9eeb361fb189966",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"insert\",\"databaseName\":\"admin\",\"collection\":\"system.version\",\"documents\":[{\"_id\":\"\",\"version\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "data1",
+        "connectorName" : "mongoDB-chinmayee",
+        "tenantName" : "admin",
+        "collectionName" : "system.version",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1760706168243,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760702669920,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "kj"
+  }, {
+    "status" : "Review",
+    "cts" : 1760701836478,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760701231103,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "approved"
+  }, {
+    "status" : "Review",
+    "cts" : 1760701212642,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760620557077,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "as"
+  }, {
+    "status" : "Review",
+    "cts" : 1760620533075,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760620248353,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "sa"
+  }, {
+    "status" : "Review",
+    "cts" : 1760620137376,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760619967537,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "kj"
+  }, {
+    "status" : "Review",
+    "cts" : 1760619812475,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760619682564,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760619606409,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760619566752,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1760619510276,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760619357687,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "kl"
+  }, {
+    "status" : "Review",
+    "cts" : 1760619339859,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1760619303100,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "ds"
+  }, {
+    "status" : "Draft",
+    "cts" : 1758952732634,
+    "lastModifiedBy" : "Sujith Kumar",
+    "description" : "Created new proxy"
+  } ],
+  "virtualHostList" : [ ],
+  "enableTracing" : true,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : true,
+  "indexName" : "new_logger",
+  "deleted" : false,
+  "deployed" : false
+}
