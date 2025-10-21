@@ -3,7 +3,7 @@
   "cts" : 1758952732634,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761023155832,
+  "mts" : 1761026039625,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "68d77d1cc1bd20238894c525",
@@ -187,14 +187,73 @@
       "imported" : true,
       "skipRuntimeVariables" : false,
       "securityResponse" : {
-        "isEnabled" : false,
+        "isEnabled" : true,
+        "ruleGroup" : [ {
+          "id" : "68753d5f11cd9cf1f45828ef",
+          "name" : "SQLI: SQL injection - updated",
+          "rules" : [ {
+            "id" : "66dc27f12d868430f00225bd",
+            "name" : "MySQL in-line comment detected"
+          }, {
+            "id" : "66dc281e2d868430f00225c2",
+            "name" : "Detects basic SQL injection based on keyword alter or union"
+          }, {
+            "id" : "66dc28262d868430f00225c3",
+            "name" : "Detects concatenated basic SQL injection and SQLLFI attempts"
+          }, {
+            "id" : "66dc282f2d868430f00225c4",
+            "name" : "Detects MySQL UDF injection and other data/structure manipulation attempts"
+          }, {
+            "id" : "66dc39f6479dee4367b6b232",
+            "name" : "Detects MySQL and PostgreSQL stored procedure/function injections"
+          }, {
+            "id" : "66dc39fe479dee4367b6b233",
+            "name" : "Detects chained SQL injection attempts 2/2"
+          }, {
+            "id" : "66dc3a07479dee4367b6b234",
+            "name" : "Detects MySQL comments conditions and ch(a)r injections"
+          }, {
+            "id" : "66dc3a18479dee4367b6b236",
+            "name" : "Looking for basic SQL injection Common attack string for MySQL Oracle and others"
+          }, {
+            "id" : "66dc3a20479dee4367b6b237",
+            "name" : "Detects basic SQL authentication bypass attempts 2/3"
+          }, {
+            "id" : "66dc3a35479dee4367b6b23f",
+            "name" : "Detects MySQL charset switch and MSSQL DoS attempts"
+          }, {
+            "id" : "66dc3a4c479dee4367b6b240",
+            "name" : "Detects conditional SQL injection attempts"
+          }, {
+            "id" : "66dc3a5f479dee4367b6b242",
+            "name" : "Detects chained SQL injection attempts 1/2"
+          }, {
+            "id" : "66dc3a87479dee4367b6b287",
+            "name" : "Detects MSSQL code execution and information gathering attempts"
+          }, {
+            "id" : "66dc3a8e479dee4367b6b288",
+            "name" : "Detects basic SQL authentication bypass attempts 1/3"
+          }, {
+            "id" : "66dc3a96479dee4367b6b289",
+            "name" : "Detects SQL benchmark and sleep injection attempts including conditional queries"
+          }, {
+            "id" : "66dc3a9f479dee4367b6b2a4",
+            "name" : "Detects blind SQLI tests using sleep() or benchmark()"
+          }, {
+            "id" : "66dc3aa6479dee4367b6b2ca",
+            "name" : "SQL Injection Attack: Common DB Names Detected"
+          }, {
+            "id" : "66dc3aae479dee4367b6b2cb",
+            "name" : "SQL Injection Attack: SQL Operator Detected"
+          } ]
+        } ],
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
         "errorResponse" : {
-          "statusCode" : 400,
+          "statusCode" : 403,
           "body" : {
-            "data" : "",
+            "data" : "{\n    \"message\":\"having threat\"\n}",
             "type" : "json"
           }
         }
