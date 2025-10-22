@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761117499341,
+  "mts" : 1761117506037,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -160,9 +160,16 @@
         "override" : false
       }, {
         "name" : "y",
-        "value" : "20",
+        "value" : "qa",
+        "type" : "STRING",
         "feelExpression" : false,
-        "override" : false
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
+        "source" : "e441cc0c-d2a3-406c-9e91-4559290851ae",
+        "override" : true
       }, {
         "name" : "z",
         "value" : "30",
@@ -222,13 +229,6 @@
         } ],
         "source" : "path-variable",
         "override" : false
-      }, {
-        "name" : "y",
-        "value" : "qa",
-        "type" : "STRING",
-        "feelExpression" : false,
-        "source" : "e441cc0c-d2a3-406c-9e91-4559290851ae",
-        "override" : true
       } ],
       "imported" : false,
       "skipRuntimeVariables" : false
