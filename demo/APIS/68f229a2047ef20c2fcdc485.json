@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761117633350,
+  "mts" : 1761117638001,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -152,23 +152,43 @@
         "value" : "100",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
       }, {
         "name" : "y",
         "value" : "20",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
       }, {
         "name" : "z",
         "value" : "30",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
       }, {
         "name" : "header",
         "value" : "header",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "source" : "headers",
         "override" : false
       }, {
@@ -176,6 +196,11 @@
         "value" : "query",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "source" : "query-params",
         "override" : false
       }, {
@@ -183,6 +208,11 @@
         "value" : "$.body",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "source" : "raw",
         "override" : false
       }, {
@@ -190,6 +220,11 @@
         "value" : "path",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "source" : "path-variable",
         "override" : false
       }, {
