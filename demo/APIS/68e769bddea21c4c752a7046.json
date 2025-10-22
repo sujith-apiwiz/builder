@@ -3,7 +3,7 @@
   "cts" : 1759996349617,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761110342046,
+  "mts" : 1761110387688,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68e769bddea21c4c752a7045",
@@ -413,6 +413,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761110382016,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761110350985,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1760701289301,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
@@ -1554,7 +1564,7 @@
     "description" : "Created new proxy"
   } ],
   "virtualHostList" : [ ],
-  "enableTracing" : false,
+  "enableTracing" : true,
   "environmentName" : "uat",
   "environmentId" : "68ef29919d30e85f6e63cb8b",
   "selectedVirtualHostName" : "",
