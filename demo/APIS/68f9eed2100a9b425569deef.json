@@ -3,7 +3,7 @@
   "cts" : 1761210066084,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761210096412,
+  "mts" : 1761215352895,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "68f9eed2100a9b425569deee",
@@ -14,17 +14,19 @@
   "apiMethod" : "GET",
   "path" : "/qa_dev_sandbox_v1/operation",
   "pathArray" : [ "qa_dev_sandbox_v1", "operation" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "d78f3059-2afd-4506-af4f-912a4de5c877" : [ "v1" ]
+      "83163524-d2d7-4f1a-b069-a879f9d2f0f4" : [ "v1" ],
+      "d78f3059-2afd-4506-af4f-912a4de5c877" : [ "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ]
     },
     "outbound" : {
-      "v1" : [ "d78f3059-2afd-4506-af4f-912a4de5c877" ]
+      "v1" : [ "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ],
+      "83163524-d2d7-4f1a-b069-a879f9d2f0f4" : [ "d78f3059-2afd-4506-af4f-912a4de5c877" ]
     },
-    "allNeighbours" : [ "d78f3059-2afd-4506-af4f-912a4de5c877", "v1" ]
+    "allNeighbours" : [ "d78f3059-2afd-4506-af4f-912a4de5c877", "v1", "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ]
   },
   "vertexHashMap" : {
     "d78f3059-2afd-4506-af4f-912a4de5c877" : {
@@ -66,14 +68,51 @@
           }
         }
       }
+    },
+    "83163524-d2d7-4f1a-b069-a879f9d2f0f4" : {
+      "vertexId" : "83163524-d2d7-4f1a-b069-a879f9d2f0f4",
+      "vertexType" : "DATABASE",
+      "name" : "MsSql",
+      "description" : "MsSql_description",
+      "databaseData" : {
+        "connectorId" : "68f9f896100a9b425569e0d8",
+        "databaseType" : "MSSQL",
+        "query" : "SELECT * \nFROM MSreplication_options ;",
+        "variableName" : "MsSql_var",
+        "connectorName" : "New_microsoft_sql_connector",
+        "tableName" : "MSreplication_options",
+        "queryRequest" : {
+          "tableName" : "MSreplication_options",
+          "operation" : "SELECT",
+          "selectedFields" : { },
+          "limit" : 0,
+          "offSet" : 0,
+          "top" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761211295097,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761210105997,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1761210066084,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
