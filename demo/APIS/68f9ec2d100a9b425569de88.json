@@ -1,0 +1,128 @@
+{
+  "id" : "68f9ec2d100a9b425569de88",
+  "cts" : 1761209389167,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1761209389167,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "68f9ec2d100a9b425569de87",
+  "revision" : 1,
+  "name" : "GET - get_operation_one_of",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/qa_dev_sandbox_v1/operation",
+  "pathArray" : [ "qa_dev_sandbox_v1", "operation" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "57fdf52e-13ff-48ef-96dc-4f3b312e617b" : [ "v1" ],
+      "7ae6516a-1dbc-446d-a394-59352d57db58" : [ "57fdf52e-13ff-48ef-96dc-4f3b312e617b" ],
+      "e3040cdf-7287-49a4-b8eb-2690402f9e48" : [ "57fdf52e-13ff-48ef-96dc-4f3b312e617b" ]
+    },
+    "outbound" : {
+      "v1" : [ "57fdf52e-13ff-48ef-96dc-4f3b312e617b" ],
+      "57fdf52e-13ff-48ef-96dc-4f3b312e617b" : [ "7ae6516a-1dbc-446d-a394-59352d57db58", "e3040cdf-7287-49a4-b8eb-2690402f9e48" ]
+    },
+    "allNeighbours" : [ "7ae6516a-1dbc-446d-a394-59352d57db58", "e3040cdf-7287-49a4-b8eb-2690402f9e48", "v1", "57fdf52e-13ff-48ef-96dc-4f3b312e617b" ]
+  },
+  "vertexHashMap" : {
+    "7ae6516a-1dbc-446d-a394-59352d57db58" : {
+      "vertexId" : "7ae6516a-1dbc-446d-a394-59352d57db58",
+      "vertexType" : "STOP",
+      "name" : "200 - ok",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"user\" : \"derails\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "e3040cdf-7287-49a4-b8eb-2690402f9e48" : {
+      "vertexId" : "e3040cdf-7287-49a4-b8eb-2690402f9e48",
+      "vertexType" : "STOP",
+      "name" : "408 - request_timeout_ad",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 408,
+        "body" : {
+          "data" : "{\n    \"user\" : \"derails\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "57fdf52e-13ff-48ef-96dc-4f3b312e617b" : {
+      "vertexId" : "57fdf52e-13ff-48ef-96dc-4f3b312e617b",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "7ae6516a-1dbc-446d-a394-59352d57db58" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "e3040cdf-7287-49a4-b8eb-2690402f9e48" ]
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1761209389167,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
