@@ -3,7 +3,7 @@
   "cts" : 1761210066084,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761288622237,
+  "mts" : 1761302805441,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "68f9eed2100a9b425569deee",
@@ -20,13 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "83163524-d2d7-4f1a-b069-a879f9d2f0f4" : [ "v1" ],
-      "d78f3059-2afd-4506-af4f-912a4de5c877" : [ "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ]
+      "01ca5e16-6076-4f54-aaca-6b929182f693" : [ "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ],
+      "d78f3059-2afd-4506-af4f-912a4de5c877" : [ "01ca5e16-6076-4f54-aaca-6b929182f693" ]
     },
     "outbound" : {
       "v1" : [ "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ],
-      "83163524-d2d7-4f1a-b069-a879f9d2f0f4" : [ "d78f3059-2afd-4506-af4f-912a4de5c877" ]
+      "83163524-d2d7-4f1a-b069-a879f9d2f0f4" : [ "01ca5e16-6076-4f54-aaca-6b929182f693" ],
+      "01ca5e16-6076-4f54-aaca-6b929182f693" : [ "d78f3059-2afd-4506-af4f-912a4de5c877" ]
     },
-    "allNeighbours" : [ "d78f3059-2afd-4506-af4f-912a4de5c877", "v1", "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ]
+    "allNeighbours" : [ "d78f3059-2afd-4506-af4f-912a4de5c877", "01ca5e16-6076-4f54-aaca-6b929182f693", "v1", "83163524-d2d7-4f1a-b069-a879f9d2f0f4" ]
   },
   "vertexHashMap" : {
     "d78f3059-2afd-4506-af4f-912a4de5c877" : {
@@ -45,6 +47,40 @@
           "type" : "json"
         }
       }
+    },
+    "01ca5e16-6076-4f54-aaca-6b929182f693" : {
+      "vertexId" : "01ca5e16-6076-4f54-aaca-6b929182f693",
+      "vertexType" : "DATABASE",
+      "name" : "MessageID",
+      "description" : "messageID",
+      "databaseData" : {
+        "connectorId" : "67f4fe607531cc6c4f2367af",
+        "databaseType" : "MSSQL",
+        "query" : "SELECT * \nFROM Student_Details \nWHERE ((Student_Details.Name IS NOT NULL \n\tAND Student_Details.Name != '')) ;",
+        "variableName" : "message",
+        "connectorName" : "new_mssql_connector",
+        "tableName" : "Student_Details",
+        "queryRequest" : {
+          "tableName" : "Student_Details",
+          "operation" : "SELECT",
+          "filters" : [ {
+            "filterFields" : [ {
+              "fieldName" : "Name",
+              "operator" : "present"
+            } ],
+            "fieldsCondition" : "AND",
+            "nextCondition" : "AND"
+          } ],
+          "selectedFields" : { },
+          "limit" : 0,
+          "offSet" : 0,
+          "top" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
