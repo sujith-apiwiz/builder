@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761306194235,
+  "mts" : 1761306632385,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -21,18 +21,33 @@
     "inbound" : {
       "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "v1" ],
       "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ],
-      "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ],
-      "68595a37-8575-4e3c-925a-e0e98e3e911f" : [ "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" ]
+      "14e6127b-d05d-4f80-9aff-5ddaa881b664" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ]
     },
     "outbound" : {
       "v1" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ],
       "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ],
-      "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" ],
-      "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" : [ "68595a37-8575-4e3c-925a-e0e98e3e911f" ]
+      "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "14e6127b-d05d-4f80-9aff-5ddaa881b664" ]
     },
-    "allNeighbours" : [ "v1", "68595a37-8575-4e3c-925a-e0e98e3e911f", "1a52a281-8986-4f21-9712-4735630d1ef6", "da501b46-5928-42bd-8fa9-8569c5cbbc58", "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" ]
+    "allNeighbours" : [ "14e6127b-d05d-4f80-9aff-5ddaa881b664", "v1", "1a52a281-8986-4f21-9712-4735630d1ef6", "da501b46-5928-42bd-8fa9-8569c5cbbc58" ]
   },
   "vertexHashMap" : {
+    "14e6127b-d05d-4f80-9aff-5ddaa881b664" : {
+      "vertexId" : "14e6127b-d05d-4f80-9aff-5ddaa881b664",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"res\": \"response\"\n}",
+          "type" : "json"
+        }
+      }
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -92,23 +107,6 @@
         }
       }
     },
-    "68595a37-8575-4e3c-925a-e0e98e3e911f" : {
-      "vertexId" : "68595a37-8575-4e3c-925a-e0e98e3e911f",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "skipRuntimeVariables" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "content-type" : "application/json"
-        },
-        "body" : {
-          "data" : "{\n    \"a\": \"response\"\n}",
-          "type" : "json"
-        }
-      }
-    },
     "1a52a281-8986-4f21-9712-4735630d1ef6" : {
       "vertexId" : "1a52a281-8986-4f21-9712-4735630d1ef6",
       "vertexType" : "FEEL_SCRIPT",
@@ -142,48 +140,6 @@
           }
         }
       },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
-    "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" : {
-      "vertexId" : "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658",
-      "vertexType" : "CONDITIONAL_FLOW",
-      "name" : "Condition",
-      "conditionalFlow" : [ {
-        "condition" : "if",
-        "assertion" : {
-          "feelExpressionString" : "a > b",
-          "feelVariableList" : [ {
-            "name" : "a",
-            "value" : "10",
-            "valueDataType" : "STRING"
-          }, {
-            "name" : "b",
-            "value" : "5",
-            "valueDataType" : "STRING"
-          } ],
-          "feelExpression" : true,
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "flowVertexes" : [ "68595a37-8575-4e3c-925a-e0e98e3e911f" ]
-      }, {
-        "condition" : "else",
-        "assertion" : {
-          "feelExpression" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false
-        }
-      } ],
       "imported" : false,
       "skipRuntimeVariables" : false
     },
@@ -284,6 +240,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761306248390,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761306204742,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1761125054146,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
