@@ -3,7 +3,7 @@
   "cts" : 1761210066084,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761287533893,
+  "mts" : 1761288622237,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "68f9eed2100a9b425569deee",
@@ -77,7 +77,7 @@
       "databaseData" : {
         "connectorId" : "68f9f896100a9b425569e0d8",
         "databaseType" : "MSSQL",
-        "query" : "SELECT * \nFROM MSreplication_options ;",
+        "query" : "SELECT MSreplication_options.optname As msreplication_options_optname,\n\tMSreplication_options.value As msreplication_options_value,\n\tMSreplication_options.major_version As msreplication_options_major_version,\n\tMSreplication_options.minor_version As msreplication_options_minor_version,\n\tMSreplication_options.revision As msreplication_options_revision,\n\tMSreplication_options.install_failures As msreplication_options_install_failures \nFROM MSreplication_options ;",
         "variableName" : "MsSql_var",
         "variableDataType" : "STRING",
         "connectorName" : "New_microsoft_sql_connector",
@@ -85,7 +85,9 @@
         "queryRequest" : {
           "tableName" : "MSreplication_options",
           "operation" : "SELECT",
-          "selectedFields" : { },
+          "selectedFields" : {
+            "fields" : [ "optname", "value", "major_version", "minor_version", "revision", "install_failures" ]
+          },
           "limit" : 0,
           "offSet" : 0,
           "top" : 0
@@ -98,6 +100,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761288346947,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761287539457,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1761287481484,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
