@@ -3,7 +3,7 @@
   "cts" : 1761210066084,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761302935933,
+  "mts" : 1761303328532,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "68f9eed2100a9b425569deee",
@@ -43,7 +43,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"message\" : \"successfull\",\n              \"var\"=  {{{MsSql_var}}}\n}",
+          "data" : "{\n    \"message\" : \"successfull\",\n              \"var\"=  {{{MsSql_var}}}\n    \"message\" : \"successfull\",\n              \"var\"= {{{}}}\n}",
           "type" : "json"
         }
       }
