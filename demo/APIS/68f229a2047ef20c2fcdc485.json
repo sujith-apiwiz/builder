@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761306171620,
+  "mts" : 1761306194235,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -152,14 +152,17 @@
       "conditionalFlow" : [ {
         "condition" : "if",
         "assertion" : {
-          "expression" : "({0})",
-          "placeHolders" : [ {
-            "rule" : "EQUAL_TO",
-            "key" : "id",
-            "value" : "100",
-            "valueDataType" : "INTEGER"
+          "feelExpressionString" : "a > b",
+          "feelVariableList" : [ {
+            "name" : "a",
+            "value" : "10",
+            "valueDataType" : "STRING"
+          }, {
+            "name" : "b",
+            "value" : "5",
+            "valueDataType" : "STRING"
           } ],
-          "feelExpression" : false,
+          "feelExpression" : true,
           "skip" : false,
           "showActualErrorMessage" : false,
           "continueOnError" : false,
