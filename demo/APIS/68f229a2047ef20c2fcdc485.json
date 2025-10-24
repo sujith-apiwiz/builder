@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761117638001,
+  "mts" : 1761306147480,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -21,14 +21,16 @@
     "inbound" : {
       "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "v1" ],
       "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ],
-      "68595a37-8575-4e3c-925a-e0e98e3e911f" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ]
+      "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ],
+      "68595a37-8575-4e3c-925a-e0e98e3e911f" : [ "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" ]
     },
     "outbound" : {
       "v1" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ],
       "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ],
-      "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "68595a37-8575-4e3c-925a-e0e98e3e911f" ]
+      "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" ],
+      "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" : [ "68595a37-8575-4e3c-925a-e0e98e3e911f" ]
     },
-    "allNeighbours" : [ "v1", "68595a37-8575-4e3c-925a-e0e98e3e911f", "1a52a281-8986-4f21-9712-4735630d1ef6", "da501b46-5928-42bd-8fa9-8569c5cbbc58" ]
+    "allNeighbours" : [ "v1", "68595a37-8575-4e3c-925a-e0e98e3e911f", "1a52a281-8986-4f21-9712-4735630d1ef6", "da501b46-5928-42bd-8fa9-8569c5cbbc58", "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" ]
   },
   "vertexHashMap" : {
     "v1" : {
@@ -143,6 +145,48 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
+    "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658" : {
+      "vertexId" : "d6ae30ad-6e61-4cc6-a8c7-1f2f58100658",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "feelExpressionString" : "a > b",
+          "feelVariableList" : [ {
+            "name" : "a",
+            "value" : "10",
+            "valueDataType" : "STRING"
+          }, {
+            "name" : "b",
+            "value" : "5",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : true,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "68595a37-8575-4e3c-925a-e0e98e3e911f" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "da501b46-5928-42bd-8fa9-8569c5cbbc58" : {
       "vertexId" : "da501b46-5928-42bd-8fa9-8569c5cbbc58",
       "vertexType" : "VARIABLES",
@@ -240,6 +284,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761125054146,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761117648138,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1761117226836,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
