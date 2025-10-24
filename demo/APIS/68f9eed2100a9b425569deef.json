@@ -3,7 +3,7 @@
   "cts" : 1761210066084,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761216021268,
+  "mts" : 1761287221380,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "68f9eed2100a9b425569deee",
@@ -79,6 +79,7 @@
         "databaseType" : "MSSQL",
         "query" : "SELECT * \nFROM MSreplication_options ;",
         "variableName" : "MsSql_var",
+        "variableDataType" : "STRING",
         "connectorName" : "New_microsoft_sql_connector",
         "tableName" : "MSreplication_options",
         "queryRequest" : {
@@ -97,6 +98,46 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761286783917,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761220094423,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1761220087972,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761220073786,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1761220030601,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761216044999,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1761216039372,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761216027083,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1761216017062,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
@@ -162,6 +203,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
