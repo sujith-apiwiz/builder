@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761307168855,
+  "mts" : 1761567333078,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -21,16 +21,18 @@
     "inbound" : {
       "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "v1" ],
       "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ],
-      "c85d005f-d21a-463b-bcca-ea4f872ad8af" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ],
-      "14e6127b-d05d-4f80-9aff-5ddaa881b664" : [ "c85d005f-d21a-463b-bcca-ea4f872ad8af" ]
+      "e8fb87de-a22e-44ed-a354-f47cedec137b" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ],
+      "14e6127b-d05d-4f80-9aff-5ddaa881b664" : [ "c85d005f-d21a-463b-bcca-ea4f872ad8af" ],
+      "c85d005f-d21a-463b-bcca-ea4f872ad8af" : [ "e8fb87de-a22e-44ed-a354-f47cedec137b" ]
     },
     "outbound" : {
       "v1" : [ "1a52a281-8986-4f21-9712-4735630d1ef6" ],
       "1a52a281-8986-4f21-9712-4735630d1ef6" : [ "da501b46-5928-42bd-8fa9-8569c5cbbc58" ],
-      "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "c85d005f-d21a-463b-bcca-ea4f872ad8af" ],
-      "c85d005f-d21a-463b-bcca-ea4f872ad8af" : [ "14e6127b-d05d-4f80-9aff-5ddaa881b664" ]
+      "da501b46-5928-42bd-8fa9-8569c5cbbc58" : [ "e8fb87de-a22e-44ed-a354-f47cedec137b" ],
+      "c85d005f-d21a-463b-bcca-ea4f872ad8af" : [ "14e6127b-d05d-4f80-9aff-5ddaa881b664" ],
+      "e8fb87de-a22e-44ed-a354-f47cedec137b" : [ "c85d005f-d21a-463b-bcca-ea4f872ad8af" ]
     },
-    "allNeighbours" : [ "14e6127b-d05d-4f80-9aff-5ddaa881b664", "c85d005f-d21a-463b-bcca-ea4f872ad8af", "v1", "1a52a281-8986-4f21-9712-4735630d1ef6", "da501b46-5928-42bd-8fa9-8569c5cbbc58" ]
+    "allNeighbours" : [ "14e6127b-d05d-4f80-9aff-5ddaa881b664", "e8fb87de-a22e-44ed-a354-f47cedec137b", "c85d005f-d21a-463b-bcca-ea4f872ad8af", "v1", "1a52a281-8986-4f21-9712-4735630d1ef6", "da501b46-5928-42bd-8fa9-8569c5cbbc58" ]
   },
   "vertexHashMap" : {
     "14e6127b-d05d-4f80-9aff-5ddaa881b664" : {
@@ -49,6 +51,22 @@
           "type" : "json"
         }
       }
+    },
+    "e8fb87de-a22e-44ed-a354-f47cedec137b" : {
+      "vertexId" : "e8fb87de-a22e-44ed-a354-f47cedec137b",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "z",
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "startingVertex" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "c85d005f-d21a-463b-bcca-ea4f872ad8af" : {
       "vertexId" : "c85d005f-d21a-463b-bcca-ea4f872ad8af",
@@ -350,6 +368,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1761307357127,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761307174265,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
     "cts" : 1761307158262,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
     "description" : "Proxy undeploy"
@@ -560,6 +588,6 @@
   "kafkaGroupId" : "",
   "enableLogging" : true,
   "indexName" : "nw_logger",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
