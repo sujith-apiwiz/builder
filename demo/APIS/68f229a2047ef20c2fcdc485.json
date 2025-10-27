@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761567336098,
+  "mts" : 1761567340447,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -57,11 +57,12 @@
       "vertexType" : "LOOP",
       "name" : "For Loop",
       "loopData" : {
-        "listVariableSource" : "y",
+        "listVariableSource" : "body",
         "variables" : [ ],
         "listType" : "json",
         "loopList" : [ ],
         "startingVertex" : [ ],
+        "listVariableVertexId" : "v1",
         "skip" : false,
         "showActualErrorMessage" : false
       },
