@@ -1,0 +1,85 @@
+{
+  "id" : "68ff4a90f0690132583a0aa3",
+  "cts" : 1761561232980,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1761561232980,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "68ff4a90f0690132583a0aa2",
+  "revision" : 1,
+  "name" : "GET - to_get_details_of_archival",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/sample/to_get_details_of_archival",
+  "pathArray" : [ "sample", "to_get_details_of_archival" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "a8871e1e-b73d-4c48-ac36-9b41ea6f5a7e" : [ "v1" ]
+    },
+    "outbound" : {
+      "v1" : [ "a8871e1e-b73d-4c48-ac36-9b41ea6f5a7e" ]
+    },
+    "allNeighbours" : [ "a8871e1e-b73d-4c48-ac36-9b41ea6f5a7e", "v1" ]
+  },
+  "vertexHashMap" : {
+    "a8871e1e-b73d-4c48-ac36-9b41ea6f5a7e" : {
+      "vertexId" : "a8871e1e-b73d-4c48-ac36-9b41ea6f5a7e",
+      "vertexType" : "STOP",
+      "name" : "200 - ok",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n\"user\" : \"ad\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1761561232980,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
