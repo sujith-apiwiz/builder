@@ -3,7 +3,7 @@
   "cts" : 1761544535172,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761544557287,
+  "mts" : 1761544561301,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68ff0957f06901325839f13c",
@@ -70,7 +70,7 @@
     "lastModifiedBy" : "Sujith Kumar",
     "description" : "Created new proxy"
   } ],
-  "enableTracing" : false,
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
   "selectedVirtualHostName" : "",
