@@ -3,7 +3,7 @@
   "cts" : 1761651944696,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761651970282,
+  "mts" : 1761652548881,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6900ace89c686f713029a81d",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/121sdasda/test_package",
   "pathArray" : [ "121sdasda", "test_package" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -69,12 +69,23 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761652542118,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761651978068,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1761651944696,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
-  "enableTracing" : false,
+  "virtualHostList" : [ ],
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
   "selectedVirtualHostName" : "",
@@ -82,7 +93,7 @@
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "enableLogging" : false,
+  "enableLogging" : true,
   "deleted" : false,
   "deployed" : false
 }
