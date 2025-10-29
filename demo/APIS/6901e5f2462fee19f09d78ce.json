@@ -3,33 +3,25 @@
   "cts" : 1761732082692,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761733362834,
+  "mts" : 1761733451951,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6901e5f2462fee19f09d78cd",
   "revision" : 1,
   "name" : "New Workflow 160",
   "description" : "",
-  "apiType" : "RESTAPI",
+  "apiType" : "SCHEDULED",
   "apiMethod" : "POST",
   "path" : "/sujith/v1",
   "pathArray" : [ "sujith", "v1" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
-  "nodeDataHashMap" : {
-    "inbound" : {
-      "c8e743d6-9a2c-4904-8366-874cf8b93324" : [ "v1" ]
-    },
-    "outbound" : {
-      "v1" : [ "c8e743d6-9a2c-4904-8366-874cf8b93324" ]
-    },
-    "allNeighbours" : [ "v1", "c8e743d6-9a2c-4904-8366-874cf8b93324" ]
-  },
+  "nodeDataHashMap" : { },
   "vertexHashMap" : {
     "v1" : {
       "vertexId" : "v1",
-      "vertexType" : "START",
+      "vertexType" : "SCHEDULED_TRIGGER",
       "name" : "Request",
       "requestVariables" : [ ],
       "mandatoryHeaders" : [ ],
@@ -47,23 +39,6 @@
             "data" : "",
             "type" : "json"
           }
-        }
-      }
-    },
-    "c8e743d6-9a2c-4904-8366-874cf8b93324" : {
-      "vertexId" : "c8e743d6-9a2c-4904-8366-874cf8b93324",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "skipRuntimeVariables" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "content-type" : "application/json"
-        },
-        "body" : {
-          "data" : "{\n    \"a\": \"response\"\n}",
-          "type" : "json"
         }
       }
     }
@@ -110,8 +85,7 @@
   "environmentId" : "",
   "selectedVirtualHostName" : "",
   "selectedVirtualHostId" : "",
-  "kafkaConnectorId" : "",
-  "kafkaTopic" : "",
+  "kafkaConnectorId" : "68bab3c9399db1665a322f9a",
   "kafkaGroupId" : "",
   "enableLogging" : true,
   "indexName" : "nw_logger",
