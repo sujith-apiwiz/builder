@@ -3,14 +3,14 @@
   "cts" : 1761732082692,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761733787236,
+  "mts" : 1761734303504,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6901e5f2462fee19f09d78cd",
   "revision" : 1,
   "name" : "New Workflow 160",
   "description" : "",
-  "apiType" : "SCHEDULED",
+  "apiType" : "GRAPHQL",
   "apiMethod" : "POST",
   "path" : "/sujith/v1",
   "pathArray" : [ "sujith", "v1" ],
@@ -19,17 +19,19 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "613d4a8c-55e7-4182-8410-d10b3625efef" : [ "v1" ]
+      "613d4a8c-55e7-4182-8410-d10b3625efef" : [ "v1" ],
+      "b1593bcc-69f7-4218-b925-c52da255a97e" : [ "613d4a8c-55e7-4182-8410-d10b3625efef" ]
     },
     "outbound" : {
-      "v1" : [ "613d4a8c-55e7-4182-8410-d10b3625efef" ]
+      "v1" : [ "613d4a8c-55e7-4182-8410-d10b3625efef" ],
+      "613d4a8c-55e7-4182-8410-d10b3625efef" : [ "b1593bcc-69f7-4218-b925-c52da255a97e" ]
     },
-    "allNeighbours" : [ "613d4a8c-55e7-4182-8410-d10b3625efef", "v1" ]
+    "allNeighbours" : [ "613d4a8c-55e7-4182-8410-d10b3625efef", "v1", "b1593bcc-69f7-4218-b925-c52da255a97e" ]
   },
   "vertexHashMap" : {
     "v1" : {
       "vertexId" : "v1",
-      "vertexType" : "SCHEDULED_TRIGGER",
+      "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ ],
       "mandatoryHeaders" : [ ],
@@ -110,9 +112,36 @@
       },
       "imported" : false,
       "skipRuntimeVariables" : false
+    },
+    "b1593bcc-69f7-4218-b925-c52da255a97e" : {
+      "vertexId" : "b1593bcc-69f7-4218-b925-c52da255a97e",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"A\": \"res\"\n}",
+          "type" : "json"
+        }
+      }
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761733989151,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761733793150,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1761733547842,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
