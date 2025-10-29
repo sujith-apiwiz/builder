@@ -3,7 +3,7 @@
   "cts" : 1760700834058,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761567340447,
+  "mts" : 1761712009245,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "68f229a2047ef20c2fcdc484",
@@ -589,6 +589,6 @@
   "kafkaGroupId" : "",
   "enableLogging" : true,
   "indexName" : "nw_logger",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
