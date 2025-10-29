@@ -3,7 +3,7 @@
   "cts" : 1761732082692,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761733451951,
+  "mts" : 1761733768965,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6901e5f2462fee19f09d78cd",
@@ -17,7 +17,15 @@
   "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
-  "nodeDataHashMap" : { },
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "613d4a8c-55e7-4182-8410-d10b3625efef" : [ "v1" ]
+    },
+    "outbound" : {
+      "v1" : [ "613d4a8c-55e7-4182-8410-d10b3625efef" ]
+    },
+    "allNeighbours" : [ "613d4a8c-55e7-4182-8410-d10b3625efef", "v1" ]
+  },
   "vertexHashMap" : {
     "v1" : {
       "vertexId" : "v1",
@@ -41,9 +49,80 @@
           }
         }
       }
+    },
+    "613d4a8c-55e7-4182-8410-d10b3625efef" : {
+      "vertexId" : "613d4a8c-55e7-4182-8410-d10b3625efef",
+      "vertexType" : "TARGET",
+      "name" : "a",
+      "target" : {
+        "name" : "a",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "test.apiwiz.io",
+          "path" : "/sujith/v1/sujith-test2",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-application-type",
+            "value" : "ApiSandbox"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "{\n  \"a\": \"request\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761733547842,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761733457051,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1761733357131,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
