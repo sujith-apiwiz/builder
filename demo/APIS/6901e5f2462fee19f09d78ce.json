@@ -3,14 +3,14 @@
   "cts" : 1761732082692,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1761802915872,
+  "mts" : 1761821136631,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6901e5f2462fee19f09d78cd",
   "revision" : 1,
   "name" : "New Workflow 160",
   "description" : "",
-  "apiType" : "SCHEDULED",
+  "apiType" : "RESTAPI",
   "apiMethod" : "POST",
   "path" : "/sujith/v1",
   "pathArray" : [ "sujith", "v1" ],
@@ -19,17 +19,19 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "613d4a8c-55e7-4182-8410-d10b3625efef" : [ "v1" ]
+      "613d4a8c-55e7-4182-8410-d10b3625efef" : [ "v1" ],
+      "f9ee410e-5dee-4145-9f10-75e0ff6a48a2" : [ "613d4a8c-55e7-4182-8410-d10b3625efef" ]
     },
     "outbound" : {
-      "v1" : [ "613d4a8c-55e7-4182-8410-d10b3625efef" ]
+      "v1" : [ "613d4a8c-55e7-4182-8410-d10b3625efef" ],
+      "613d4a8c-55e7-4182-8410-d10b3625efef" : [ "f9ee410e-5dee-4145-9f10-75e0ff6a48a2" ]
     },
-    "allNeighbours" : [ "613d4a8c-55e7-4182-8410-d10b3625efef", "v1" ]
+    "allNeighbours" : [ "613d4a8c-55e7-4182-8410-d10b3625efef", "v1", "f9ee410e-5dee-4145-9f10-75e0ff6a48a2" ]
   },
   "vertexHashMap" : {
     "v1" : {
       "vertexId" : "v1",
-      "vertexType" : "SCHEDULED_TRIGGER",
+      "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ ],
       "mandatoryHeaders" : [ ],
@@ -110,6 +112,23 @@
       },
       "imported" : false,
       "skipRuntimeVariables" : false
+    },
+    "f9ee410e-5dee-4145-9f10-75e0ff6a48a2" : {
+      "vertexId" : "f9ee410e-5dee-4145-9f10-75e0ff6a48a2",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"a\": \"a\"\n}",
+          "type" : "json"
+        }
+      }
     }
   },
   "statusHistory" : [ {
@@ -188,6 +207,6 @@
   "kafkaGroupId" : "",
   "enableLogging" : true,
   "indexName" : "nw_logger",
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
