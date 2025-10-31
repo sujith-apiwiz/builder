@@ -3,7 +3,7 @@
   "cts" : 1761732230302,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761912398571,
+  "mts" : 1761912507453,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6901e686462fee19f09d7975",
@@ -79,7 +79,7 @@
           "path" : "/websamples.countryinfo/CountryInfoService.wso",
           "headerParams" : [ {
             "name" : "content-type",
-            "value" : "application/xml"
+            "value" : "text/xml"
           } ],
           "queryParams" : [ ],
           "targetRequestBodyType" : "RAW",
@@ -125,6 +125,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761912494238,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761912422837,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "ww"
+  }, {
     "status" : "Review",
     "cts" : 1761912386140,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
