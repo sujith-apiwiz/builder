@@ -1,57 +1,67 @@
 {
-  "cts" : 1761715445211,
-  "createdUserName" : "divakar v",
-  "modifiedUserName" : "divakar v",
-  "mts" : 1761715445211,
-  "createdBy" : "63cf749921c7bb55c7368952",
-  "modifiedBy" : "63cf749921c7bb55c7368952",
-  "proxyId" : "6901a49f578b833affaeb6c8",
+  "cts" : 1761911968594,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1761911968594,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "6901e686462fee19f09d7975",
   "revision" : 2,
-  "name" : "New Workflow 157",
+  "name" : "New Workflow 161",
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/v1/varun",
-  "pathArray" : [ "v1", "varun" ],
+  "path" : "/",
+  "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "divakar v",
+  "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "e85bf42c-0fe2-493b-830c-ec9da5f7b20a" : [ "v1" ],
-      "c395f139-4621-49b1-b1ac-bf855588eed4" : [ "e85bf42c-0fe2-493b-830c-ec9da5f7b20a" ]
+      "41754ffb-30a0-4dba-9003-93da8b3e78da" : [ "v1" ],
+      "f3e8660f-6271-4d1e-8b1e-db9d8170a179" : [ "41754ffb-30a0-4dba-9003-93da8b3e78da" ]
     },
     "outbound" : {
-      "v1" : [ "e85bf42c-0fe2-493b-830c-ec9da5f7b20a" ],
-      "e85bf42c-0fe2-493b-830c-ec9da5f7b20a" : [ "c395f139-4621-49b1-b1ac-bf855588eed4" ]
+      "v1" : [ "41754ffb-30a0-4dba-9003-93da8b3e78da" ],
+      "41754ffb-30a0-4dba-9003-93da8b3e78da" : [ "f3e8660f-6271-4d1e-8b1e-db9d8170a179" ]
     },
-    "allNeighbours" : [ "e85bf42c-0fe2-493b-830c-ec9da5f7b20a", "v1", "c395f139-4621-49b1-b1ac-bf855588eed4" ]
+    "allNeighbours" : [ "f3e8660f-6271-4d1e-8b1e-db9d8170a179", "v1", "41754ffb-30a0-4dba-9003-93da8b3e78da" ]
   },
   "vertexHashMap" : {
-    "e85bf42c-0fe2-493b-830c-ec9da5f7b20a" : {
-      "vertexId" : "e85bf42c-0fe2-493b-830c-ec9da5f7b20a",
+    "f3e8660f-6271-4d1e-8b1e-db9d8170a179" : {
+      "vertexId" : "f3e8660f-6271-4d1e-8b1e-db9d8170a179",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "41754ffb-30a0-4dba-9003-93da8b3e78da" : {
+      "vertexId" : "41754ffb-30a0-4dba-9003-93da8b3e78da",
       "vertexType" : "TARGET",
-      "name" : "q",
+      "name" : "CountryInfoService",
       "target" : {
-        "name" : "q",
-        "apiType" : "RESTAPI",
+        "name" : "CountryInfoService",
+        "apiType" : "SOAP",
         "request" : {
           "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "qa-dev-ieia.apiwiz.io",
-          "path" : "/v1-1/sujith-security",
+          "scheme" : "http",
+          "host" : "webservices.oorsprong.org",
+          "path" : "/websamples.countryinfo/CountryInfoService.wso",
           "headerParams" : [ {
             "name" : "content-type",
             "value" : "application/json"
-          }, {
-            "name" : "x-application-type",
-            "value" : "ApiSandbox"
           } ],
           "queryParams" : [ ],
           "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "{\n  \"a\": \"request\",\n  \"b\": \"a\"\n}",
-            "type" : "json"
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns=\"\">\n                        <soapenv:Header />\n                        <soapenv:Body>\n                            <ns:ListOfContinentsByName></ns:ListOfContinentsByName>\n                        </soapenv:Body>\n                    </soapenv:Envelope>",
+            "type" : "xml"
           },
           "formParams" : [ ],
           "urlEncodedParams" : [ ]
@@ -111,22 +121,9 @@
           }
         }
       }
-    },
-    "c395f139-4621-49b1-b1ac-bf855588eed4" : {
-      "vertexId" : "c395f139-4621-49b1-b1ac-bf855588eed4",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "skipRuntimeVariables" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "body" : {
-          "type" : "JSON"
-        }
-      }
     }
   },
-  "enableTracing" : true,
+  "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
   "selectedVirtualHostName" : "",
@@ -135,6 +132,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
