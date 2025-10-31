@@ -3,7 +3,7 @@
   "cts" : 1761732238755,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761905398740,
+  "mts" : 1761905944875,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6901e68e462fee19f09d7982",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/start",
   "pathArray" : [ "start" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -54,9 +54,12 @@
           "scheme" : "http",
           "host" : "webservices.oorsprong.org",
           "path" : "/websamples.countryinfo/CountryInfoService.wso",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
           "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
+          "targetRequestBodyType" : "RAW",
           "body" : {
             "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" >\n                        <soapenv:Header />\n                        <soapenv:Body>\n                            \n                        </soapenv:Body>\n                    </soapenv:Envelope>",
             "type" : "xml"
@@ -122,11 +125,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761905924374,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761905458311,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1761732238755,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
