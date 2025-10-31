@@ -3,7 +3,7 @@
   "cts" : 1761732230302,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761911954253,
+  "mts" : 1761912021800,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6901e686462fee19f09d7975",
@@ -12,9 +12,9 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
-  "revisionStatus" : "DRAFT",
+  "path" : "/soap-api",
+  "pathArray" : [ "soap-api" ],
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -125,6 +125,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761912009290,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "dd"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761911975938,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "ddd"
+  }, {
     "status" : "Draft",
     "cts" : 1761732230302,
     "lastModifiedBy" : "Akshatha SM",
