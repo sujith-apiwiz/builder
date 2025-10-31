@@ -3,7 +3,7 @@
   "cts" : 1761732230302,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761912270246,
+  "mts" : 1761912398571,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6901e686462fee19f09d7975",
@@ -79,12 +79,12 @@
           "path" : "/websamples.countryinfo/CountryInfoService.wso",
           "headerParams" : [ {
             "name" : "content-type",
-            "value" : "text/xml"
+            "value" : "application/xml"
           } ],
           "queryParams" : [ ],
           "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ns=\"\">\n                        <soapenv:Header />\n                        <soapenv:Body>\n                            <ns:ListOfContinentsByName></ns:ListOfContinentsByName>\n                        </soapenv:Body>\n                    </soapenv:Envelope>",
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <soapenv:Header />\n    <soapenv:Body>\n        <web:ListOfContinentsByName>\n        </web:ListOfContinentsByName>\n    </soapenv:Body>\n</soapenv:Envelope>",
             "type" : "xml"
           },
           "formParams" : [ ],
@@ -125,6 +125,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1761912386140,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1761912281471,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "www"
+  }, {
     "status" : "Review",
     "cts" : 1761912153140,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
