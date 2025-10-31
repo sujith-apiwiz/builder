@@ -3,7 +3,7 @@
   "cts" : 1761732238755,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1761905944875,
+  "mts" : 1761906111658,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6901e68e462fee19f09d7982",
@@ -56,12 +56,12 @@
           "path" : "/websamples.countryinfo/CountryInfoService.wso",
           "headerParams" : [ {
             "name" : "content-type",
-            "value" : "application/json"
+            "value" : "application/xml"
           } ],
           "queryParams" : [ ],
           "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" >\n                        <soapenv:Header />\n                        <soapenv:Body>\n                            \n                        </soapenv:Body>\n                    </soapenv:Envelope>",
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <soapenv:Header />\n    <soapenv:Body>\n        <web:ListOfContinentsByName>\n        </web:ListOfContinentsByName>\n    </soapenv:Body>\n</soapenv:Envelope>",
             "type" : "xml"
           },
           "formParams" : [ ],
