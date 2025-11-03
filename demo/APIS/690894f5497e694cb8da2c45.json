@@ -3,7 +3,7 @@
   "cts" : 1762170101166,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762170201293,
+  "mts" : 1762170211334,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690894f5497e694cb8da2c44",
@@ -103,8 +103,12 @@
       "skipRuntimeVariables" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{\n    \"ok\" : {{{Bodys}}}\n}",
+          "type" : "json"
         }
       }
     },
