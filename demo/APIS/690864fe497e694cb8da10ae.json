@@ -3,7 +3,7 @@
   "cts" : 1762157822841,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762160632191,
+  "mts" : 1762160660768,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690864fe497e694cb8da10ad",
@@ -122,7 +122,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"body\" : {{body6}}\n}",
+          "data" : "{\n    \"body\" : {{{body6}}}\n}",
           "type" : "json"
         }
       }
@@ -152,6 +152,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762160649463,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762160637725,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762160426908,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
