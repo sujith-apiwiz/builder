@@ -3,7 +3,7 @@
   "cts" : 1762157822841,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762161003046,
+  "mts" : 1762164184921,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690864fe497e694cb8da10ad",
@@ -19,14 +19,16 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "v1" ],
-      "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ]
+      "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ],
+      "381ac653-85ec-44c4-96e1-ee1be835f746" : [ "v1" ],
+      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "381ac653-85ec-44c4-96e1-ee1be835f746" ]
     },
     "outbound" : {
-      "v1" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ],
-      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" ]
+      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" ],
+      "v1" : [ "381ac653-85ec-44c4-96e1-ee1be835f746" ],
+      "381ac653-85ec-44c4-96e1-ee1be835f746" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ]
     },
-    "allNeighbours" : [ "8af5a795-dbff-4afa-849f-893b2204959d", "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938", "v1" ]
+    "allNeighbours" : [ "8af5a795-dbff-4afa-849f-893b2204959d", "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938", "381ac653-85ec-44c4-96e1-ee1be835f746", "v1" ]
   },
   "vertexHashMap" : {
     "8af5a795-dbff-4afa-849f-893b2204959d" : {
@@ -135,9 +137,77 @@
           }
         }
       }
+    },
+    "381ac653-85ec-44c4-96e1-ee1be835f746" : {
+      "vertexId" : "381ac653-85ec-44c4-96e1-ee1be835f746",
+      "vertexType" : "TARGET",
+      "name" : "soap_api_1",
+      "target" : {
+        "name" : "soap_api_1",
+        "apiType" : "SOAP",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "qa-dev-lmxz.apiwiz.io/soap",
+          "path" : "/websamples.countryinfo/CountryInfoService.wso ",
+          "headerParams" : [ {
+            "name" : "Content-Type",
+            "value" : "text/xml; charset=utf-8"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "data" : "",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762161166548,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762161011291,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762160805607,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
