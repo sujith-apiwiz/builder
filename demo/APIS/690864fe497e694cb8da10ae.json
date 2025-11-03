@@ -3,7 +3,7 @@
   "cts" : 1762157822841,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762157843419,
+  "mts" : 1762159804534,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690864fe497e694cb8da10ad",
@@ -19,14 +19,74 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" : [ "v1" ]
+      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "v1" ],
+      "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ]
     },
     "outbound" : {
-      "v1" : [ "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" ]
+      "v1" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ],
+      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" ]
     },
-    "allNeighbours" : [ "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938", "v1" ]
+    "allNeighbours" : [ "8af5a795-dbff-4afa-849f-893b2204959d", "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938", "v1" ]
   },
   "vertexHashMap" : {
+    "8af5a795-dbff-4afa-849f-893b2204959d" : {
+      "vertexId" : "8af5a795-dbff-4afa-849f-893b2204959d",
+      "vertexType" : "TARGET",
+      "name" : "CountryInfoService",
+      "target" : {
+        "name" : "CountryInfoService",
+        "apiType" : "SOAP",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "webservices.oorsprong.org",
+          "path" : "/websamples.countryinfo/CountryInfoService.wso",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "text/xml"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n                        <soapenv:Header />\n                        <soapenv:Body>\n                            <web:ListOfContinentsByName></web:ListOfContinentsByName>\n                        </soapenv:Body>\n                    </soapenv:Envelope>",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" : {
       "vertexId" : "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938",
       "vertexType" : "STOP",
