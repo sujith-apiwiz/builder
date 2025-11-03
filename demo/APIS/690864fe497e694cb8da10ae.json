@@ -3,7 +3,7 @@
   "cts" : 1762157822841,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762164197104,
+  "mts" : 1762164294060,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690864fe497e694cb8da10ad",
@@ -79,8 +79,8 @@
         "request" : {
           "apiMethod" : "POST",
           "scheme" : "http",
-          "host" : "qa-dev-lmxz.apiwiz.io/soap",
-          "path" : "/websamples.countryinfo/CountryInfoService.wso ",
+          "host" : "http://webservices.oorsprong.org",
+          "path" : "/websamples.countryinfo/CountryInfoService.wso",
           "headerParams" : [ {
             "name" : "Content-Type",
             "value" : "text/xml; charset=utf-8"
@@ -129,6 +129,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762164240861,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762164202839,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762161166548,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
