@@ -3,7 +3,7 @@
   "cts" : 1762167019348,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762167041430,
+  "mts" : 1762167092763,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690888eb497e694cb8da2509",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "075f4854-48c2-4fe2-b6b8-f58ea7fde82f" : [ "v1" ]
+      "bdd92a03-bbd0-4862-be67-9d19e7215e92" : [ "v1" ],
+      "075f4854-48c2-4fe2-b6b8-f58ea7fde82f" : [ "bdd92a03-bbd0-4862-be67-9d19e7215e92" ]
     },
     "outbound" : {
-      "v1" : [ "075f4854-48c2-4fe2-b6b8-f58ea7fde82f" ]
+      "v1" : [ "bdd92a03-bbd0-4862-be67-9d19e7215e92" ],
+      "bdd92a03-bbd0-4862-be67-9d19e7215e92" : [ "075f4854-48c2-4fe2-b6b8-f58ea7fde82f" ]
     },
-    "allNeighbours" : [ "v1", "075f4854-48c2-4fe2-b6b8-f58ea7fde82f" ]
+    "allNeighbours" : [ "v1", "bdd92a03-bbd0-4862-be67-9d19e7215e92", "075f4854-48c2-4fe2-b6b8-f58ea7fde82f" ]
   },
   "vertexHashMap" : {
     "v1" : {
@@ -62,6 +64,64 @@
           "type" : "JSON"
         }
       }
+    },
+    "bdd92a03-bbd0-4862-be67-9d19e7215e92" : {
+      "vertexId" : "bdd92a03-bbd0-4862-be67-9d19e7215e92",
+      "vertexType" : "TARGET",
+      "name" : "CountryInfoService",
+      "target" : {
+        "name" : "CountryInfoService",
+        "apiType" : "SOAP",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "webservices.oorsprong.org",
+          "path" : "/websamples.countryinfo/CountryInfoService.wso",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n                        <soapenv:Header />\n                        <soapenv:Body>\n                            <web:ListOfCurrenciesByName></web:ListOfCurrenciesByName>\n                        </soapenv:Body>\n                    </soapenv:Envelope>",
+            "type" : "xml"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
