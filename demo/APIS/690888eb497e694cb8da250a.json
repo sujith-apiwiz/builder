@@ -3,7 +3,7 @@
   "cts" : 1762167019348,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762167387206,
+  "mts" : 1762167394263,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690888eb497e694cb8da2509",
@@ -126,7 +126,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"body\" : {{body}}\n}",
+          "data" : "{\n    \"body\" : {{Body}}\n}",
           "type" : "json"
         }
       }
