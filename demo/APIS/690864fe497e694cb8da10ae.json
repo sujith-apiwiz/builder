@@ -3,7 +3,7 @@
   "cts" : 1762157822841,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762160316429,
+  "mts" : 1762160334878,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690864fe497e694cb8da10ad",
@@ -104,7 +104,7 @@
       "name" : "asd",
       "description" : "asd",
       "logData" : {
-        "data" : "{\n    \"ok\" : {{body}}\n}",
+        "data" : "\"ok\" : {{{body}}}\n",
         "skip" : false
       },
       "imported" : false,
