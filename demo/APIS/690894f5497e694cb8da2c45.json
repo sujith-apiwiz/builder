@@ -3,7 +3,7 @@
   "cts" : 1762170101166,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762170142878,
+  "mts" : 1762170200233,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690894f5497e694cb8da2c44",
@@ -41,9 +41,12 @@
           "scheme" : "http",
           "host" : "webservices.oorsprong.org",
           "path" : "/websamples.countryinfo/CountryInfoService.wso",
-          "headerParams" : [ ],
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "text/xml"
+          } ],
           "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
+          "targetRequestBodyType" : "RAW",
           "body" : {
             "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n                        <soapenv:Header />\n                        <soapenv:Body>\n                            <web:ListOfCurrenciesByName></web:ListOfCurrenciesByName>\n                        </soapenv:Body>\n                    </soapenv:Envelope>",
             "type" : "xml"
@@ -53,7 +56,15 @@
         },
         "response" : {
           "statusCode" : 400,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "Bodys",
+            "reference" : "body",
+            "value" : "/*",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
         },
         "timeout" : 0,
         "skip" : false,
@@ -122,6 +133,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1762170164096,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Approved",
+    "cts" : 1762170149544,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762170101166,
     "lastModifiedBy" : "Akshatha SM",
