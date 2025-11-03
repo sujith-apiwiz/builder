@@ -3,7 +3,7 @@
   "cts" : 1762157822841,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762160035183,
+  "mts" : 1762160059997,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690864fe497e694cb8da10ad",
@@ -20,13 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "8af5a795-dbff-4afa-849f-893b2204959d" : [ "v1" ],
-      "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ]
+      "6d39b52e-362f-44d1-b609-a11685427709" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ],
+      "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" : [ "6d39b52e-362f-44d1-b609-a11685427709" ]
     },
     "outbound" : {
       "v1" : [ "8af5a795-dbff-4afa-849f-893b2204959d" ],
-      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" ]
+      "8af5a795-dbff-4afa-849f-893b2204959d" : [ "6d39b52e-362f-44d1-b609-a11685427709" ],
+      "6d39b52e-362f-44d1-b609-a11685427709" : [ "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938" ]
     },
-    "allNeighbours" : [ "8af5a795-dbff-4afa-849f-893b2204959d", "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938", "v1" ]
+    "allNeighbours" : [ "8af5a795-dbff-4afa-849f-893b2204959d", "6d39b52e-362f-44d1-b609-a11685427709", "c743024b-a2dd-4cb7-9ed4-cf6bda5ff938", "v1" ]
   },
   "vertexHashMap" : {
     "8af5a795-dbff-4afa-849f-893b2204959d" : {
@@ -91,6 +93,18 @@
             }
           }
         }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "6d39b52e-362f-44d1-b609-a11685427709" : {
+      "vertexId" : "6d39b52e-362f-44d1-b609-a11685427709",
+      "vertexType" : "LOGGER",
+      "name" : "asd",
+      "description" : "asd",
+      "logData" : {
+        "data" : "{\n    \"ok\" : {{body}}\n}",
+        "skip" : false
       },
       "imported" : false,
       "skipRuntimeVariables" : false
