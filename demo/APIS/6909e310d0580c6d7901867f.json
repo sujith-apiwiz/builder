@@ -3,7 +3,7 @@
   "cts" : 1762255632790,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762255632790,
+  "mts" : 1762255657756,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6909e310d0580c6d7901867e",
@@ -19,12 +19,14 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "21fd7788-c237-4b97-83af-d6cd1c4b7229" : [ "v1" ]
+      "cb8cd69f-4183-4d01-a747-0f4027eb96e3" : [ "v1" ],
+      "21fd7788-c237-4b97-83af-d6cd1c4b7229" : [ "cb8cd69f-4183-4d01-a747-0f4027eb96e3" ]
     },
     "outbound" : {
-      "v1" : [ "21fd7788-c237-4b97-83af-d6cd1c4b7229" ]
+      "v1" : [ "cb8cd69f-4183-4d01-a747-0f4027eb96e3" ],
+      "cb8cd69f-4183-4d01-a747-0f4027eb96e3" : [ "21fd7788-c237-4b97-83af-d6cd1c4b7229" ]
     },
-    "allNeighbours" : [ "21fd7788-c237-4b97-83af-d6cd1c4b7229", "v1" ]
+    "allNeighbours" : [ "21fd7788-c237-4b97-83af-d6cd1c4b7229", "cb8cd69f-4183-4d01-a747-0f4027eb96e3", "v1" ]
   },
   "vertexHashMap" : {
     "21fd7788-c237-4b97-83af-d6cd1c4b7229" : {
@@ -39,6 +41,59 @@
           "type" : "JSON"
         }
       }
+    },
+    "cb8cd69f-4183-4d01-a747-0f4027eb96e3" : {
+      "vertexId" : "cb8cd69f-4183-4d01-a747-0f4027eb96e3",
+      "vertexType" : "TARGET",
+      "name" : "/v2/acme-bank/validate",
+      "target" : {
+        "name" : "/v2/acme-bank/validate",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/v2/acme-bank/validate",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
