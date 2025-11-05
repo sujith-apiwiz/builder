@@ -3,7 +3,7 @@
   "cts" : 1762338402165,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762339351139,
+  "mts" : 1762341960084,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690b26626952e12772efeda2",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/Operation",
   "pathArray" : [ "Operation" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -149,7 +149,7 @@
           "inputType" : "RADIO",
           "label" : "RadioButtonString",
           "required" : false,
-          "options" : [ "Approved" ]
+          "options" : [ "Approved", "rejected", "Option 3", "Option 4" ]
         }, {
           "id" : "ae73686c-66b5-4d48-8342-d384a1587358",
           "targetVariable" : "RadioButtonBoolean",
@@ -281,7 +281,7 @@
         },
         "expiryDuration" : 432000000,
         "expiryDurationUnit" : "DAYS",
-        "virtualHostId" : "686cb8a8e1052c276a27edc7",
+        "virtualHostId" : "67ed20509ecb12099c749c7a",
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
@@ -321,11 +321,32 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762341917757,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762340974943,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1762340468882,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762339361613,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762338402165,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
