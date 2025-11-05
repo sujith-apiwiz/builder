@@ -3,7 +3,7 @@
   "cts" : 1762338402165,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762338524468,
+  "mts" : 1762339351139,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690b26626952e12772efeda2",
@@ -19,16 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "01669853-1382-4836-8aad-44bd031ebab2" : [ "8c291185-1fd7-4790-b5a1-4cf7f0623870" ],
       "8c291185-1fd7-4790-b5a1-4cf7f0623870" : [ "v1" ],
-      "10c26a98-2d34-4652-be00-dbe1931d73f6" : [ "01669853-1382-4836-8aad-44bd031ebab2" ]
+      "10c26a98-2d34-4652-be00-dbe1931d73f6" : [ "8c291185-1fd7-4790-b5a1-4cf7f0623870" ]
     },
     "outbound" : {
-      "8c291185-1fd7-4790-b5a1-4cf7f0623870" : [ "01669853-1382-4836-8aad-44bd031ebab2" ],
       "v1" : [ "8c291185-1fd7-4790-b5a1-4cf7f0623870" ],
-      "01669853-1382-4836-8aad-44bd031ebab2" : [ "10c26a98-2d34-4652-be00-dbe1931d73f6" ]
+      "8c291185-1fd7-4790-b5a1-4cf7f0623870" : [ "10c26a98-2d34-4652-be00-dbe1931d73f6" ]
     },
-    "allNeighbours" : [ "10c26a98-2d34-4652-be00-dbe1931d73f6", "01669853-1382-4836-8aad-44bd031ebab2", "8c291185-1fd7-4790-b5a1-4cf7f0623870", "v1" ]
+    "allNeighbours" : [ "10c26a98-2d34-4652-be00-dbe1931d73f6", "8c291185-1fd7-4790-b5a1-4cf7f0623870", "v1" ]
   },
   "vertexHashMap" : {
     "10c26a98-2d34-4652-be00-dbe1931d73f6" : {
@@ -43,40 +41,6 @@
           "type" : "JSON"
         }
       }
-    },
-    "01669853-1382-4836-8aad-44bd031ebab2" : {
-      "vertexId" : "01669853-1382-4836-8aad-44bd031ebab2",
-      "vertexType" : "USER_TASK",
-      "name" : "task`",
-      "description" : "",
-      "userTaskNodeData" : {
-        "mode" : "PORTAL_FORM_FILLING",
-        "formName" : "Untitled Form",
-        "formFields" : [ ],
-        "additionalDataMap" : { },
-        "interimResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "JSON"
-          }
-        },
-        "expiryDuration" : 60000,
-        "expiryDurationUnit" : "MINUTES",
-        "virtualHostId" : "686cb8a8e1052c276a27edc7",
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "JSON"
-          }
-        }
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
     },
     "8c291185-1fd7-4790-b5a1-4cf7f0623870" : {
       "vertexId" : "8c291185-1fd7-4790-b5a1-4cf7f0623870",
