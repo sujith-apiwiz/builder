@@ -3,7 +3,7 @@
   "cts" : 1762338402165,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762338402165,
+  "mts" : 1762338524468,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690b26626952e12772efeda2",
@@ -12,23 +12,27 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/Operation",
+  "pathArray" : [ "Operation" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "00c08888-1b1b-4655-9ecd-2dd4c8ab595d" : [ "v1" ]
+      "01669853-1382-4836-8aad-44bd031ebab2" : [ "8c291185-1fd7-4790-b5a1-4cf7f0623870" ],
+      "8c291185-1fd7-4790-b5a1-4cf7f0623870" : [ "v1" ],
+      "10c26a98-2d34-4652-be00-dbe1931d73f6" : [ "01669853-1382-4836-8aad-44bd031ebab2" ]
     },
     "outbound" : {
-      "v1" : [ "00c08888-1b1b-4655-9ecd-2dd4c8ab595d" ]
+      "8c291185-1fd7-4790-b5a1-4cf7f0623870" : [ "01669853-1382-4836-8aad-44bd031ebab2" ],
+      "v1" : [ "8c291185-1fd7-4790-b5a1-4cf7f0623870" ],
+      "01669853-1382-4836-8aad-44bd031ebab2" : [ "10c26a98-2d34-4652-be00-dbe1931d73f6" ]
     },
-    "allNeighbours" : [ "00c08888-1b1b-4655-9ecd-2dd4c8ab595d", "v1" ]
+    "allNeighbours" : [ "10c26a98-2d34-4652-be00-dbe1931d73f6", "01669853-1382-4836-8aad-44bd031ebab2", "8c291185-1fd7-4790-b5a1-4cf7f0623870", "v1" ]
   },
   "vertexHashMap" : {
-    "00c08888-1b1b-4655-9ecd-2dd4c8ab595d" : {
-      "vertexId" : "00c08888-1b1b-4655-9ecd-2dd4c8ab595d",
+    "10c26a98-2d34-4652-be00-dbe1931d73f6" : {
+      "vertexId" : "10c26a98-2d34-4652-be00-dbe1931d73f6",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
@@ -39,6 +43,294 @@
           "type" : "JSON"
         }
       }
+    },
+    "01669853-1382-4836-8aad-44bd031ebab2" : {
+      "vertexId" : "01669853-1382-4836-8aad-44bd031ebab2",
+      "vertexType" : "USER_TASK",
+      "name" : "task`",
+      "description" : "",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Untitled Form",
+        "formFields" : [ ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 60000,
+        "expiryDurationUnit" : "MINUTES",
+        "virtualHostId" : "686cb8a8e1052c276a27edc7",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "8c291185-1fd7-4790-b5a1-4cf7f0623870" : {
+      "vertexId" : "8c291185-1fd7-4790-b5a1-4cf7f0623870",
+      "vertexType" : "USER_TASK",
+      "name" : "User_task",
+      "description" : "User_task_description",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Untitled Form",
+        "formFields" : [ {
+          "id" : "68b91223-4b49-4162-9493-ede6d8c0c667",
+          "targetVariable" : "user name",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "user name",
+          "placeHolder" : "user name",
+          "required" : true
+        }, {
+          "id" : "2b278acf-bb11-4ac9-b162-cddd47e3381d",
+          "targetVariable" : "userid",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "MULTI_LINE",
+          "label" : "userid",
+          "placeHolder" : "userid",
+          "required" : true
+        }, {
+          "id" : "d1484cc4-c1f3-4175-8f47-98a483c698fc",
+          "targetVariable" : "userPhoneNumber",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "NUMBER",
+          "label" : "userPhoneNumber",
+          "placeHolder" : "userPhoneNumber",
+          "required" : false
+        }, {
+          "id" : "9f428edc-672e-45af-982e-6e99d580eb47",
+          "targetVariable" : "Password",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "PASSWORD",
+          "label" : "Password",
+          "placeHolder" : "",
+          "required" : false
+        }, {
+          "id" : "3a4795de-96ab-4018-adb6-2d19bd164abd",
+          "targetVariable" : "status",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "DROPDOWN",
+          "label" : "status",
+          "placeHolder" : "status",
+          "required" : false,
+          "options" : [ "Approve", "Reject" ]
+        }, {
+          "id" : "dbe5921c-c4cf-4250-897a-eafd880ed7a0",
+          "targetVariable" : "DropDownBooalean",
+          "targetVariableDataType" : "BOOLEAN",
+          "inputType" : "DROPDOWN",
+          "label" : "DropDownBooalean",
+          "placeHolder" : "DropDownBooalean",
+          "required" : false,
+          "options" : [ "approved" ]
+        }, {
+          "id" : "217ae30d-9236-4c09-ae8e-880f5a9b2cc7",
+          "targetVariable" : "DropDownInteger",
+          "targetVariableDataType" : "INTEGER",
+          "inputType" : "DROPDOWN",
+          "label" : "DropDownInteger",
+          "placeHolder" : "DropDownInteger",
+          "required" : false,
+          "options" : [ "Approved" ]
+        }, {
+          "id" : "26f7ae4e-867f-4900-bfc3-ddd038382fa0",
+          "targetVariable" : "DropDownDouble",
+          "targetVariableDataType" : "DOUBLE",
+          "inputType" : "DROPDOWN",
+          "label" : "DropDownDouble",
+          "placeHolder" : "DropDownDouble",
+          "required" : false,
+          "options" : [ "Approved" ]
+        }, {
+          "id" : "863db924-0006-4635-b28e-c88db9e9c92c",
+          "targetVariable" : "Status_check_box",
+          "targetVariableDataType" : "BOOLEAN",
+          "inputType" : "CHECK_BOX",
+          "label" : "Status_check_box_boolean",
+          "required" : false,
+          "options" : [ "approve" ]
+        }, {
+          "id" : "28c3e92b-40bf-4404-90bc-899be04833cb",
+          "targetVariable" : "StatusCheckBox_Integer",
+          "targetVariableDataType" : "INTEGER",
+          "inputType" : "CHECK_BOX",
+          "label" : "StatusCheckBox_Integer",
+          "required" : false,
+          "options" : [ "Approved" ]
+        }, {
+          "id" : "3b34d45c-9605-4c56-a475-46a719b4c9a4",
+          "targetVariable" : "StatusDoubleChekbox",
+          "targetVariableDataType" : "DOUBLE",
+          "inputType" : "CHECK_BOX",
+          "label" : "StatusDoubleChekbox",
+          "required" : false,
+          "options" : [ "Approved" ]
+        }, {
+          "id" : "bf1ec68c-8dab-4bdf-a9c6-d1f5be034e03",
+          "targetVariable" : "RadioButtonString",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "RADIO",
+          "label" : "RadioButtonString",
+          "required" : false,
+          "options" : [ "Approved" ]
+        }, {
+          "id" : "ae73686c-66b5-4d48-8342-d384a1587358",
+          "targetVariable" : "RadioButtonBoolean",
+          "targetVariableDataType" : "BOOLEAN",
+          "inputType" : "RADIO",
+          "label" : "RadioButtonBoolean",
+          "required" : false,
+          "options" : [ "Approved" ]
+        }, {
+          "id" : "c9825701-1f3a-47b1-80d4-8adca2a0919e",
+          "targetVariable" : "RadioButtonInteger",
+          "targetVariableDataType" : "INTEGER",
+          "inputType" : "RADIO",
+          "label" : "RadioButtonInteger_nooption i have given for this field",
+          "required" : false,
+          "options" : [ "" ]
+        }, {
+          "id" : "d601767b-ddca-4825-af27-5094ccb5f5c7",
+          "targetVariable" : "RadioButtonDouble",
+          "targetVariableDataType" : "DOUBLE",
+          "inputType" : "RADIO",
+          "label" : "RadioButtonDouble",
+          "required" : false,
+          "options" : [ "Approved" ]
+        }, {
+          "id" : "3a5de258-2745-4926-a7a5-9c69ad579cd5",
+          "targetVariable" : "Data_String",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "DATE",
+          "label" : "Data_String",
+          "placeHolder" : "Data_String",
+          "required" : false
+        }, {
+          "id" : "87578ccf-4f40-4c6d-a12f-f553a9dfbd22",
+          "targetVariable" : "Data_Boolean",
+          "targetVariableDataType" : "BOOLEAN",
+          "inputType" : "DATE",
+          "label" : "Data_Boolean",
+          "placeHolder" : "Data_Boolean",
+          "required" : false
+        }, {
+          "id" : "b93a37ef-2872-4363-ab8b-f7d7ee5c28d4",
+          "targetVariable" : "Data_Integer",
+          "targetVariableDataType" : "INTEGER",
+          "inputType" : "DATE",
+          "label" : "Data_Integer",
+          "placeHolder" : "Data_Integer",
+          "required" : false
+        }, {
+          "id" : "b7ca7347-ebc3-4fbe-a86e-a777d0e5f9b1",
+          "targetVariable" : "Data_Double",
+          "targetVariableDataType" : "DOUBLE",
+          "inputType" : "DATE",
+          "label" : "Data_Double",
+          "placeHolder" : "Data_Double",
+          "required" : false
+        }, {
+          "id" : "c9534964-99b3-4ed3-853f-86ebbd6c387c",
+          "targetVariable" : "Time_string",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TIME",
+          "label" : "Time_string",
+          "placeHolder" : "Time_string",
+          "required" : false
+        }, {
+          "id" : "aceef182-733b-4725-aaf9-7310847f6927",
+          "targetVariable" : "Time_Boolean",
+          "targetVariableDataType" : "BOOLEAN",
+          "inputType" : "TIME",
+          "label" : "Time_Boolean",
+          "placeHolder" : "Time_Boolean",
+          "required" : false
+        }, {
+          "id" : "11d74148-8110-4014-860f-8acb7e2b015c",
+          "targetVariable" : "Time_Integer",
+          "targetVariableDataType" : "INTEGER",
+          "inputType" : "TIME",
+          "label" : "Time_Integer",
+          "placeHolder" : "Time_Integer",
+          "required" : false
+        }, {
+          "id" : "c01567fa-7193-46ce-9fcd-dcf43c09d6a3",
+          "targetVariable" : "Time_Double",
+          "targetVariableDataType" : "DOUBLE",
+          "inputType" : "TIME",
+          "label" : "Time_Double",
+          "placeHolder" : "Time_Double",
+          "required" : false
+        }, {
+          "id" : "56cb9d7f-7d0b-4881-9240-5e57609d2a6f",
+          "targetVariable" : "TimeDate_String",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "DATE_TIME",
+          "label" : "TimeDate_String",
+          "placeHolder" : "",
+          "required" : false
+        }, {
+          "id" : "1c78b0c9-6ecc-4c04-b03e-e98dede4773c",
+          "targetVariable" : "TimeDate_Boolean",
+          "targetVariableDataType" : "BOOLEAN",
+          "inputType" : "DATE_TIME",
+          "label" : "TimeDate_Boolean",
+          "placeHolder" : "",
+          "required" : false
+        }, {
+          "id" : "86a7fd87-f7cb-448d-80fe-32a80031ec1c",
+          "targetVariable" : "TimeDate_Integer",
+          "targetVariableDataType" : "INTEGER",
+          "inputType" : "DATE_TIME",
+          "label" : "TimeDate_Integer",
+          "placeHolder" : "",
+          "required" : false
+        }, {
+          "id" : "4eac8e4e-21a0-4daf-a161-0cc5ffaabbdf",
+          "targetVariable" : "TimeDate_Double",
+          "targetVariableDataType" : "DOUBLE",
+          "inputType" : "DATE_TIME",
+          "label" : "TimeDate_Double",
+          "placeHolder" : "",
+          "required" : false
+        } ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "{\n    \"ok\":\"ok\"\n}",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 432000000,
+        "expiryDurationUnit" : "DAYS",
+        "virtualHostId" : "686cb8a8e1052c276a27edc7",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
@@ -70,15 +362,16 @@
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
-  "enableTracing" : false,
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
-  "selectedVirtualHostName" : "",
-  "selectedVirtualHostId" : "",
+  "selectedVirtualHostName" : "qa-dev",
+  "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "enableLogging" : false,
+  "enableLogging" : true,
+  "indexName" : "nw_logger",
   "deleted" : false,
   "deployed" : false
 }
