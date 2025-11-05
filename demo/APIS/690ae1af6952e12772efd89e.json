@@ -3,7 +3,7 @@
   "cts" : 1762320815077,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762320855592,
+  "mts" : 1762328375906,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690ae1af6952e12772efd89d",
@@ -20,13 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7" : [ "v1" ],
-      "486c44da-5db3-4cba-bf4e-5913f7cd3edf" : [ "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7" ]
+      "58b4b3a6-4900-4ce4-9bdb-e357433381ef" : [ "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7" ],
+      "486c44da-5db3-4cba-bf4e-5913f7cd3edf" : [ "58b4b3a6-4900-4ce4-9bdb-e357433381ef" ]
     },
     "outbound" : {
       "v1" : [ "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7" ],
-      "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7" : [ "486c44da-5db3-4cba-bf4e-5913f7cd3edf" ]
+      "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7" : [ "58b4b3a6-4900-4ce4-9bdb-e357433381ef" ],
+      "58b4b3a6-4900-4ce4-9bdb-e357433381ef" : [ "486c44da-5db3-4cba-bf4e-5913f7cd3edf" ]
     },
-    "allNeighbours" : [ "486c44da-5db3-4cba-bf4e-5913f7cd3edf", "v1", "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7" ]
+    "allNeighbours" : [ "486c44da-5db3-4cba-bf4e-5913f7cd3edf", "v1", "0f20d57e-69c8-4aa9-b2b6-4eead70df9b7", "58b4b3a6-4900-4ce4-9bdb-e357433381ef" ]
   },
   "vertexHashMap" : {
     "486c44da-5db3-4cba-bf4e-5913f7cd3edf" : {
@@ -114,6 +116,55 @@
               "data" : "",
               "type" : "json"
             }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "58b4b3a6-4900-4ce4-9bdb-e357433381ef" : {
+      "vertexId" : "58b4b3a6-4900-4ce4-9bdb-e357433381ef",
+      "vertexType" : "USER_TASK",
+      "name" : "IUHI",
+      "description" : "",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Untitled Form",
+        "formFields" : [ {
+          "id" : "2f268bd0-dd57-4528-a65c-53c5b3ca108c",
+          "targetVariable" : "TREE",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "KHG",
+          "placeHolder" : "GG",
+          "required" : true
+        }, {
+          "id" : "8b9b03dd-5a38-4ed7-9398-e406670d3e16",
+          "targetVariable" : "FDFD",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "MULTI_LINE",
+          "label" : "FDGD",
+          "placeHolder" : "FDFDF",
+          "required" : false
+        } ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 60000,
+        "expiryDurationUnit" : "MINUTES",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
           }
         }
       },
