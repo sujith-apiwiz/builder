@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762434467510,
+  "mts" : 1762434482672,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -222,28 +222,18 @@
       "mailConnectorData" : {
         "mailTemplate" : {
           "toMailIds" : [ "chinmayee.jagadeesh@apiwiz.com" ],
-          "body" : "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Appointment User Table</title>\n  <style>\n    table {\n      border-collapse: collapse;\n      width: 80%;\n      margin: 20px auto;\n      font-family: Arial, sans-serif;\n    }\n    th, td {\n      border: 1px solid #ddd;\n      padding: 10px;\n      text-align: left;\n    }\n    th {\n      background-color: #f4f4f4;\n      font-weight: bold;\n    }\n    tr:nth-child(even) {\n      background-color: #fafafa;\n    }\n  </style>\n</head>\n<body>\n  <h2 style=\"text-align:center;\">User Details</h2>\n  <table id=\"userTable\">\n    <thead>\n      <tr>\n        <th>Name</th>\n        <th>Email</th>\n        <th>Teams</th>\n        <th>Roles</th>\n      </tr>\n    </thead>\n    <tbody></tbody>\n  </table>\n\n  <script>\n    const data = {{{message}}};\n\n    const tbody = document.querySelector(\"#userTable tbody\");\n\n    data.users.forEach(user => {\n      user.workspaces.forEach(workspace => {\n        workspace.teams.forEach(team => {\n          const row = document.createElement(\"tr\");\n\n          const name = `${user.firstName} ${user.lastName}`;\n          const email = user.email;\n          const teams = team.name;\n          const roles = workspace.roles.join(\", \");\n\n          row.innerHTML = `\n            <td>${name}</td>\n            <td>${email}</td>\n            <td>${teams}</td>\n            <td>${roles}</td>\n          `;\n          tbody.appendChild(row);\n        });\n      });\n    });\n  </script>\n</body>\n</html>\n",
+          "body" : "<p>{{data}}</p>\n",
           "subject" : "Extraction of Users List ",
-          "rtfValue" : "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Appointment User Table</title>\n  <style>\n    table {\n      border-collapse: collapse;\n      width: 80%;\n      margin: 20px auto;\n      font-family: Arial, sans-serif;\n    }\n    th, td {\n      border: 1px solid #ddd;\n      padding: 10px;\n      text-align: left;\n    }\n    th {\n      background-color: #f4f4f4;\n      font-weight: bold;\n    }\n    tr:nth-child(even) {\n      background-color: #fafafa;\n    }\n  </style>\n</head>\n<body>\n  <h2 style=\"text-align:center;\">User Details</h2>\n  <table id=\"userTable\">\n    <thead>\n      <tr>\n        <th>Name</th>\n        <th>Email</th>\n        <th>Teams</th>\n        <th>Roles</th>\n      </tr>\n    </thead>\n    <tbody></tbody>\n  </table>\n\n  <script>\n    const data = {{{message}}};\n\n    const tbody = document.querySelector(\"#userTable tbody\");\n\n    data.users.forEach(user => {\n      user.workspaces.forEach(workspace => {\n        workspace.teams.forEach(team => {\n          const row = document.createElement(\"tr\");\n\n          const name = `${user.firstName} ${user.lastName}`;\n          const email = user.email;\n          const teams = team.name;\n          const roles = workspace.roles.join(\", \");\n\n          row.innerHTML = `\n            <td>${name}</td>\n            <td>${email}</td>\n            <td>${teams}</td>\n            <td>${roles}</td>\n          `;\n          tbody.appendChild(row);\n        });\n      });\n    });\n  </script>\n</body>\n</html>\n"
+          "rtfValue" : "{{data}}"
         },
         "mailProperty" : {
-          "tenantId" : "682b543c5de5a802d2d201be",
-          "mailPort" : "587",
-          "mailHost" : "smtp.gmail.com",
-          "smtpAuth" : true,
-          "userName" : "engineering@apiwiz.com ",
-          "password" : "aeL7IusJOi39zl6ciz1cZMHY2LyHPeDdUtmgr6vycSNQtDDH0k8dAPZG0hTToUXOoWUOPjcoVFfC9gQfy9170N48/fnLdbftsi2W6lcQg50QM9MFNT8MwBhaSkxGN/8q+LfFYY3jw9qul6XTksNnpzTRI8+PHF1hsPg4/M7f9Sl3ggd4zj77AoOtrtBIjZqwcU1viH7nsIho7Uc7iInAvX1Ci5HZ0fIihE4NLIPwhKYLCRiSVkhW37w5U7TjHtPPSzuVVBVcVMdY0Oic0yKEC2DYTQlcK72MnDLubghlTYCWT5foQ5Y5bZ6UYCtdrRqNLqiQXgmeGgKpDJDJRdSx2w==",
-          "connectionTimeOut" : 5000,
-          "timeOut" : 5000,
-          "writeTimeOut" : 5000,
-          "enableStartTLS" : true,
-          "mailFromAddress" : "engineering@apiwiz.com ",
-          "cts" : 1747670076067,
-          "mts" : 1757660032907,
-          "createdBy" : "67e298cbed1ae94ac870b921",
-          "modifiedBy" : "67c562eba649de63bf3835e4",
-          "createdUserName" : "Akshatha sm",
-          "modifiedUserName" : "Akshatha SM"
+          "smtpAuth" : false,
+          "connectionTimeOut" : 0,
+          "timeOut" : 0,
+          "writeTimeOut" : 0,
+          "enableStartTLS" : false,
+          "cts" : 0,
+          "mts" : 0
         },
         "skip" : false,
         "showActualErrorMessage" : false,
