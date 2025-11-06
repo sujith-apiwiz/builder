@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762414853616,
+  "mts" : 1762418889692,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -100,10 +100,6 @@
           "ccMailIds" : [ "akshatha.sm@apiwiz.com" ],
           "body" : "<h1> Submit </h1>\nhi , \nYour loan request is succesfull",
           "subject" : "Submit",
-          "mailAttachments" : [ {
-            "attachmentName" : "server (2).crt",
-            "attachment" : "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURyekNDQXBlZ0F3SUJBZ0lVUGw4OGVMQzVPQTJXM3AxbHNNVFpwYi9rVk1Jd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1p6RUxNQWtHQTFVRUJoTUNTVTR4Q3pBSkJnTlZCQWdNQWt0Qk1SSXdFQVlEVlFRSERBbENZVzVuWVd4dgpjbVV4RHpBTkJnTlZCQW9NQm1Gd2FYZHBlakVRTUE0R0ExVUVDd3dIWW1GamEyVnVaREVVTUJJR0ExVUVBd3dMCktpNWhjR2wzYVhvdWFXOHdIaGNOTWpVeE1ESXlNRFEwTXpVNFdoY05NalV4TVRJeE1EUTBNelU0V2pCbk1Rc3cKQ1FZRFZRUUdFd0pKVGpFTE1Ba0dBMVVFQ0F3Q1MwRXhFakFRQmdOVkJBY01DVUpoYm1kaGJHOXlaVEVQTUEwRwpBMVVFQ2d3R1lYQnBkMmw2TVJBd0RnWURWUVFMREFkaVlXTnJaVzVrTVJRd0VnWURWUVFEREFzcUxtRndhWGRwCmVpNXBiekNDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFPNXU3MytLQVVOZkh2REwKeU1OSThPaVNIRkhxc3Q0UkxUeVZ6UU5qMksvV3BJS1FEVklnaXVCYWdIUng4dW1zR29TVzkwMFQvOGlvR3ZMWgpvWXV0RVZ1WlN5cFRuQlNPcWcxdGNCRll0Tk5wV0VHUldrSElZd0J1RDZBU0pWWUVjUWpwSHo0Vlp6bldJMEtzCmM2R3FEL2s5TS9MQXpDMTM4OTQybTIyNUVJT0lTZWdaQ0dWWU1jTWFwR2hXSHpzVFRqbzdDSklNSXd3T0R2Y3IKM1h3alFVZDZsdjBtRnJ2Qjk1UVM5UU1FZFJoWnZxMW85T3lUYTJUUk9uRnJkWjRXSml2SmVPT1VzMUJneG9QWQorRjczaGtVWGxZUnY5MTZqaWYxUHlRWnVSQU5FaDVvcnVwVlJaL1h3Ykg1QTdVVFlzMGROV3pBZTY3N2pWOXZWCjdlWTkrUXNDQXdFQUFhTlRNRkV3SFFZRFZSME9CQllFRkZVM3hxMEJibjVkb1N0bXlVNnV3a0lOdUdaY01COEcKQTFVZEl3UVlNQmFBRkZVM3hxMEJibjVkb1N0bXlVNnV3a0lOdUdaY01BOEdBMVVkRXdFQi93UUZNQU1CQWY4dwpEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBR3RYVDNLSjVwcFZKRlY5bUJVOUtIMWNsb29kVGRMTDFyRVhaNFl6ClVWYVZqbWpBVzBBVXNSZUxaTitoU2RpQU91WmhvRGMvZlpramQzVldPTTBaVy9IWmRqYS9qblZ1UUJJNStDeU8KQnd6Rjg3bHM3Z0MrMDB0YWFhb2tnL0VpUEV4SmZ2T0tVU2x6ek0yR0paY1Bjd0hRTUlKZVpyMW8wN2dmRkljbQpVZDNvWlFXMlJzcGRnS3VLeWFOSVRwdk51TTRVeXk2NTF1VUR1SEdIdzduRjUrVDdNaFhaanV4RDZsY2ZGMTV0CkxZeDhIUzhxMlVpUUtvcXFhcUlKRkNXWXNkYnBQekowQnhZSENMenNXWlpubG94MEZaY043Yzdxd0xnbkgwTUgKUWIwRWJUV3RqZ3gvMUlUZFBTdUEvQ2NtdXpqeGVPdm8zSkpQbzRNZ0JFMytGQ0U9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
-          } ],
           "rtfValue" : "<h1> Submit </h1>\nhi , \nYour loan request is succesfull"
         },
         "mailProperty" : {
@@ -252,6 +248,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762418882189,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762414862298,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762414806984,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
