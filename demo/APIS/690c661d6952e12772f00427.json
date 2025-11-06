@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762434485965,
+  "mts" : 1762434678520,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -222,9 +222,9 @@
       "mailConnectorData" : {
         "mailTemplate" : {
           "toMailIds" : [ "chinmayee.jagadeesh@apiwiz.com" ],
-          "body" : "<p>{{data}}</p>\n",
+          "body" : "<p>{{{data}}}</p>\n",
           "subject" : "Extraction of Users List ",
-          "rtfValue" : "{{data}}"
+          "rtfValue" : "{{{data}}}"
         },
         "mailProperty" : {
           "smtpAuth" : false,
@@ -360,6 +360,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762434658862,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762434494639,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762433809870,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
