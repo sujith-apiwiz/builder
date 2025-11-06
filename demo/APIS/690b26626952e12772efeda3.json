@@ -3,7 +3,7 @@
   "cts" : 1762338402165,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762402911415,
+  "mts" : 1762404006409,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690b26626952e12772efeda2",
@@ -50,7 +50,15 @@
       "userTaskNodeData" : {
         "mode" : "PORTAL_FORM_FILLING",
         "formName" : "Untitled Form",
-        "formFields" : [ ],
+        "formFields" : [ {
+          "id" : "daee1158-9969-4a2b-bbc5-c7cc00b5ff3b",
+          "targetVariable" : "ssfs",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "f",
+          "placeHolder" : "sfs",
+          "required" : false
+        } ],
         "additionalDataMap" : { },
         "interimResponse" : {
           "statusCode" : 200,
@@ -100,6 +108,26 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762403897582,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762403539315,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1762403306398,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762402930999,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762402890521,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
