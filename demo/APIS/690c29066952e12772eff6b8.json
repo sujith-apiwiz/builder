@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762425462042,
+  "mts" : 1762425569034,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -235,12 +235,36 @@
         "mode" : "PORTAL_FORM_FILLING",
         "formName" : "Untitled Form",
         "formFields" : [ {
-          "id" : "6081df99-4134-4c86-b987-2e02af42585b",
-          "targetVariable" : "Text",
+          "id" : "b85c3fa5-bf35-4b87-b427-c639769b9cde",
+          "targetVariable" : "Single_Line",
           "targetVariableDataType" : "STRING",
           "inputType" : "TEXT",
-          "label" : "Text",
-          "placeHolder" : "Text",
+          "label" : "Single_Line",
+          "placeHolder" : "Single_Line",
+          "required" : false
+        }, {
+          "id" : "c8f8b1bb-b1f4-447d-9bd5-7cab0909e250",
+          "targetVariable" : "Multi_line",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "MULTI_LINE",
+          "label" : "Multi_line",
+          "placeHolder" : "Multi_line",
+          "required" : false
+        }, {
+          "id" : "ff02b542-a18c-4ece-966f-a35142d9a296",
+          "targetVariable" : "Numbers",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "NUMBER",
+          "label" : "Numbers",
+          "placeHolder" : "Numbers",
+          "required" : false
+        }, {
+          "id" : "4f2f8c5c-c9a6-4df2-a2c4-10f18e2acbd3",
+          "targetVariable" : "Password",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "PASSWORD",
+          "label" : "Password",
+          "placeHolder" : "",
           "required" : false
         } ],
         "additionalDataMap" : { },
@@ -322,6 +346,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762425498620,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762425472008,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762425455194,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
