@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762421621979,
+  "mts" : 1762421711555,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -229,7 +229,7 @@
     "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : {
       "vertexId" : "05fbc1ef-20f3-420a-a026-c0b36650e3c5",
       "vertexType" : "USER_TASK",
-      "name" : "user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node",
+      "name" : "user_task_node",
       "description" : "user_task_node_description",
       "userTaskNodeData" : {
         "mode" : "PORTAL_FORM_FILLING",
@@ -322,6 +322,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762421681503,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762421638076,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762421613287,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
