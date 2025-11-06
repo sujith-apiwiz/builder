@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762418915877,
+  "mts" : 1762418997033,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -98,9 +98,9 @@
         "mailTemplate" : {
           "toMailIds" : [ "akshatha.sm@apiwiz.com" ],
           "ccMailIds" : [ "akshatha.sm@apiwiz.com" ],
-          "body" : "<h1> Submit </h1>\nhi , \nYour loan request is succesfull",
+          "body" : "\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Simple Name & ID Email</title>\n  <style>\n    /* Keep it super simple and email-safe */\n    body { margin:0; padding:0; background:#f5f5f5; }\n    table { border-collapse:collapse; }\n    .container { width:100%; }\n    .card { max-width:600px; margin:0 auto; background:#ffffff; }\n    .content { font-family: Arial, Helvetica, sans-serif; color:#333333; padding:24px; font-size:16px; line-height:1.5; }\n    .label { color:#666666; font-size:14px; }\n    .value { font-weight:700; }\n    .footer { font-size:12px; color:#888888; text-align:center; padding:12px 24px 24px; }\n    @media screen and (max-width:600px){ .content{ padding:16px; } }\n  </style>\n</head>\n<body>\n  <!-- Wrapper -->\n  <table role=\"presentation\" width=\"100%\" class=\"container\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:#f5f5f5; padding:16px;\">\n    <tr>\n      <td align=\"center\">\n\n        <!-- Card -->\n        <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"card\" style=\"border-radius:10px; overflow:hidden;\">\n          <tr>\n            <td class=\"content\">\n              <h2 style=\"margin:0 0 12px; font-size:22px;\">Hello {{NAME}},</h2>\n              <p style=\"margin:0 0 16px;\">Here are your details:</p>\n\n              <!-- Name row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">Name</td>\n                  <td class=\"value\">{{NAME}}</td>\n                </tr>\n              </table>\n\n              <!-- ID row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">ID</td>\n                  <td class=\"value\">{{ID}}</td>\n                </tr>\n              </table>\n\n              <!-- Optional note -->\n              <p style=\"margin:16px 0 0; font-size:14px; color:#666666;\">If any of this looks wrong, just reply to this email.</p>\n            </td>\n          </tr>\n          <tr>\n            <td class=\"footer\">© {{YEAR}} {{BRAND}} • This is a simple text-only email block</td>\n          </tr>\n        </table>\n\n      </td>\n    </tr>\n  </table>\n</body>\n</html>\n",
           "subject" : "Submit",
-          "rtfValue" : "<h1> Submit </h1>\nhi , \nYour loan request is succesfull"
+          "rtfValue" : "\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Simple Name & ID Email</title>\n  <style>\n    /* Keep it super simple and email-safe */\n    body { margin:0; padding:0; background:#f5f5f5; }\n    table { border-collapse:collapse; }\n    .container { width:100%; }\n    .card { max-width:600px; margin:0 auto; background:#ffffff; }\n    .content { font-family: Arial, Helvetica, sans-serif; color:#333333; padding:24px; font-size:16px; line-height:1.5; }\n    .label { color:#666666; font-size:14px; }\n    .value { font-weight:700; }\n    .footer { font-size:12px; color:#888888; text-align:center; padding:12px 24px 24px; }\n    @media screen and (max-width:600px){ .content{ padding:16px; } }\n  </style>\n</head>\n<body>\n  <!-- Wrapper -->\n  <table role=\"presentation\" width=\"100%\" class=\"container\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:#f5f5f5; padding:16px;\">\n    <tr>\n      <td align=\"center\">\n\n        <!-- Card -->\n        <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"card\" style=\"border-radius:10px; overflow:hidden;\">\n          <tr>\n            <td class=\"content\">\n              <h2 style=\"margin:0 0 12px; font-size:22px;\">Hello {{NAME}},</h2>\n              <p style=\"margin:0 0 16px;\">Here are your details:</p>\n\n              <!-- Name row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">Name</td>\n                  <td class=\"value\">{{NAME}}</td>\n                </tr>\n              </table>\n\n              <!-- ID row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">ID</td>\n                  <td class=\"value\">{{ID}}</td>\n                </tr>\n              </table>\n\n              <!-- Optional note -->\n              <p style=\"margin:16px 0 0; font-size:14px; color:#666666;\">If any of this looks wrong, just reply to this email.</p>\n            </td>\n          </tr>\n          <tr>\n            <td class=\"footer\">© {{YEAR}} {{BRAND}} • This is a simple text-only email block</td>\n          </tr>\n        </table>\n\n      </td>\n    </tr>\n  </table>\n</body>\n</html>\n"
         },
         "mailProperty" : {
           "smtpAuth" : false,
@@ -262,6 +262,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762418980991,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762418921909,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762418882189,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
