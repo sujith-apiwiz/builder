@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762412091304,
+  "mts" : 1762414589540,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -20,15 +20,20 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "v1" ],
-      "8284f657-3f6b-43b9-a12b-44e1112a8573" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ],
-      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "8284f657-3f6b-43b9-a12b-44e1112a8573" ]
+      "e44fa9db-9cf0-4298-b21c-affb81fc8d09" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ],
+      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "8284f657-3f6b-43b9-a12b-44e1112a8573" ],
+      "8284f657-3f6b-43b9-a12b-44e1112a8573" : [ "fc5202a4-944a-4f55-abb5-34876a541f05" ],
+      "fc5202a4-944a-4f55-abb5-34876a541f05" : [ "e44fa9db-9cf0-4298-b21c-affb81fc8d09" ],
+      "6ce7e7f8-3c07-4cb8-94ba-55ac6c82c228" : [ "e44fa9db-9cf0-4298-b21c-affb81fc8d09" ]
     },
     "outbound" : {
       "v1" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ],
-      "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "8284f657-3f6b-43b9-a12b-44e1112a8573" ],
-      "8284f657-3f6b-43b9-a12b-44e1112a8573" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+      "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "e44fa9db-9cf0-4298-b21c-affb81fc8d09" ],
+      "8284f657-3f6b-43b9-a12b-44e1112a8573" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ],
+      "fc5202a4-944a-4f55-abb5-34876a541f05" : [ "8284f657-3f6b-43b9-a12b-44e1112a8573" ],
+      "e44fa9db-9cf0-4298-b21c-affb81fc8d09" : [ "fc5202a4-944a-4f55-abb5-34876a541f05", "6ce7e7f8-3c07-4cb8-94ba-55ac6c82c228" ]
     },
-    "allNeighbours" : [ "8284f657-3f6b-43b9-a12b-44e1112a8573", "05fbc1ef-20f3-420a-a026-c0b36650e3c5", "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+    "allNeighbours" : [ "8284f657-3f6b-43b9-a12b-44e1112a8573", "fc5202a4-944a-4f55-abb5-34876a541f05", "e44fa9db-9cf0-4298-b21c-affb81fc8d09", "05fbc1ef-20f3-420a-a026-c0b36650e3c5", "6ce7e7f8-3c07-4cb8-94ba-55ac6c82c228", "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
   },
   "vertexHashMap" : {
     "8284f657-3f6b-43b9-a12b-44e1112a8573" : {
@@ -84,6 +89,72 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
+    "fc5202a4-944a-4f55-abb5-34876a541f05" : {
+      "vertexId" : "fc5202a4-944a-4f55-abb5-34876a541f05",
+      "vertexType" : "EMAIL_CONNECTOR",
+      "name" : "Accepted mail",
+      "description" : "Accepted mail description",
+      "mailConnectorData" : {
+        "mailTemplate" : {
+          "toMailIds" : [ "akshatha.sm@apiwiz.com" ],
+          "ccMailIds" : [ "akshatha.sm@apiwiz.com" ],
+          "body" : "<h1> Submit </h1>\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Simple Name & ID Email</title>\n  <style>\n    /* Keep it super simple and email-safe */\n    body { margin:0; padding:0; background:#f5f5f5; }\n    table { border-collapse:collapse; }\n    .container { width:100%; }\n    .card { max-width:600px; margin:0 auto; background:#ffffff; }\n    .content { font-family: Arial, Helvetica, sans-serif; color:#333333; padding:24px; font-size:16px; line-height:1.5; }\n    .label { color:#666666; font-size:14px; }\n    .value { font-weight:700; }\n    .footer { font-size:12px; color:#888888; text-align:center; padding:12px 24px 24px; }\n    @media screen and (max-width:600px){ .content{ padding:16px; } }\n  </style>\n</head>\n<body>\n  <!-- Wrapper -->\n  <table role=\"presentation\" width=\"100%\" class=\"container\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:#f5f5f5; padding:16px;\">\n    <tr>\n      <td align=\"center\">\n\n        <!-- Card -->\n        <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"card\" style=\"border-radius:10px; overflow:hidden;\">\n          <tr>\n            <td class=\"content\">\n              <h2 style=\"margin:0 0 12px; font-size:22px;\">Hello {{NAME}},</h2>\n              <p style=\"margin:0 0 16px;\">Here are your details:</p>\n\n              <!-- Name row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">Name</td>\n                  <td class=\"value\">{{NAME}}</td>\n                </tr>\n              </table>\n\n              <!-- ID row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">ID</td>\n                  <td class=\"value\">{{ID}}</td>\n                </tr>\n              </table>\n\n              <!-- Optional note -->\n              <p style=\"margin:16px 0 0; font-size:14px; color:#666666;\">If any of this looks wrong, just reply to this email.</p>\n            </td>\n          </tr>\n          <tr>\n            <td class=\"footer\">© {{YEAR}} {{BRAND}} • This is a simple text-only email block</td>\n          </tr>\n        </table>\n\n      </td>\n    </tr>\n  </table>\n</body>\n</html>\n",
+          "subject" : "Submit",
+          "mailAttachments" : [ {
+            "attachmentName" : "server (2).crt",
+            "attachment" : "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURyekNDQXBlZ0F3SUJBZ0lVUGw4OGVMQzVPQTJXM3AxbHNNVFpwYi9rVk1Jd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1p6RUxNQWtHQTFVRUJoTUNTVTR4Q3pBSkJnTlZCQWdNQWt0Qk1SSXdFQVlEVlFRSERBbENZVzVuWVd4dgpjbVV4RHpBTkJnTlZCQW9NQm1Gd2FYZHBlakVRTUE0R0ExVUVDd3dIWW1GamEyVnVaREVVTUJJR0ExVUVBd3dMCktpNWhjR2wzYVhvdWFXOHdIaGNOTWpVeE1ESXlNRFEwTXpVNFdoY05NalV4TVRJeE1EUTBNelU0V2pCbk1Rc3cKQ1FZRFZRUUdFd0pKVGpFTE1Ba0dBMVVFQ0F3Q1MwRXhFakFRQmdOVkJBY01DVUpoYm1kaGJHOXlaVEVQTUEwRwpBMVVFQ2d3R1lYQnBkMmw2TVJBd0RnWURWUVFMREFkaVlXTnJaVzVrTVJRd0VnWURWUVFEREFzcUxtRndhWGRwCmVpNXBiekNDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFPNXU3MytLQVVOZkh2REwKeU1OSThPaVNIRkhxc3Q0UkxUeVZ6UU5qMksvV3BJS1FEVklnaXVCYWdIUng4dW1zR29TVzkwMFQvOGlvR3ZMWgpvWXV0RVZ1WlN5cFRuQlNPcWcxdGNCRll0Tk5wV0VHUldrSElZd0J1RDZBU0pWWUVjUWpwSHo0Vlp6bldJMEtzCmM2R3FEL2s5TS9MQXpDMTM4OTQybTIyNUVJT0lTZWdaQ0dWWU1jTWFwR2hXSHpzVFRqbzdDSklNSXd3T0R2Y3IKM1h3alFVZDZsdjBtRnJ2Qjk1UVM5UU1FZFJoWnZxMW85T3lUYTJUUk9uRnJkWjRXSml2SmVPT1VzMUJneG9QWQorRjczaGtVWGxZUnY5MTZqaWYxUHlRWnVSQU5FaDVvcnVwVlJaL1h3Ykg1QTdVVFlzMGROV3pBZTY3N2pWOXZWCjdlWTkrUXNDQXdFQUFhTlRNRkV3SFFZRFZSME9CQllFRkZVM3hxMEJibjVkb1N0bXlVNnV3a0lOdUdaY01COEcKQTFVZEl3UVlNQmFBRkZVM3hxMEJibjVkb1N0bXlVNnV3a0lOdUdaY01BOEdBMVVkRXdFQi93UUZNQU1CQWY4dwpEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBR3RYVDNLSjVwcFZKRlY5bUJVOUtIMWNsb29kVGRMTDFyRVhaNFl6ClVWYVZqbWpBVzBBVXNSZUxaTitoU2RpQU91WmhvRGMvZlpramQzVldPTTBaVy9IWmRqYS9qblZ1UUJJNStDeU8KQnd6Rjg3bHM3Z0MrMDB0YWFhb2tnL0VpUEV4SmZ2T0tVU2x6ek0yR0paY1Bjd0hRTUlKZVpyMW8wN2dmRkljbQpVZDNvWlFXMlJzcGRnS3VLeWFOSVRwdk51TTRVeXk2NTF1VUR1SEdIdzduRjUrVDdNaFhaanV4RDZsY2ZGMTV0CkxZeDhIUzhxMlVpUUtvcXFhcUlKRkNXWXNkYnBQekowQnhZSENMenNXWlpubG94MEZaY043Yzdxd0xnbkgwTUgKUWIwRWJUV3RqZ3gvMUlUZFBTdUEvQ2NtdXpqeGVPdm8zSkpQbzRNZ0JFMytGQ0U9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+          } ],
+          "rtfValue" : "<h1> Submit </h1>\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Simple Name & ID Email</title>\n  <style>\n    /* Keep it super simple and email-safe */\n    body { margin:0; padding:0; background:#f5f5f5; }\n    table { border-collapse:collapse; }\n    .container { width:100%; }\n    .card { max-width:600px; margin:0 auto; background:#ffffff; }\n    .content { font-family: Arial, Helvetica, sans-serif; color:#333333; padding:24px; font-size:16px; line-height:1.5; }\n    .label { color:#666666; font-size:14px; }\n    .value { font-weight:700; }\n    .footer { font-size:12px; color:#888888; text-align:center; padding:12px 24px 24px; }\n    @media screen and (max-width:600px){ .content{ padding:16px; } }\n  </style>\n</head>\n<body>\n  <!-- Wrapper -->\n  <table role=\"presentation\" width=\"100%\" class=\"container\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:#f5f5f5; padding:16px;\">\n    <tr>\n      <td align=\"center\">\n\n        <!-- Card -->\n        <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"card\" style=\"border-radius:10px; overflow:hidden;\">\n          <tr>\n            <td class=\"content\">\n              <h2 style=\"margin:0 0 12px; font-size:22px;\">Hello {{NAME}},</h2>\n              <p style=\"margin:0 0 16px;\">Here are your details:</p>\n\n              <!-- Name row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">Name</td>\n                  <td class=\"value\">{{NAME}}</td>\n                </tr>\n              </table>\n\n              <!-- ID row -->\n              <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:0 0 10px;\">\n                <tr>\n                  <td class=\"label\" width=\"120\">ID</td>\n                  <td class=\"value\">{{ID}}</td>\n                </tr>\n              </table>\n\n              <!-- Optional note -->\n              <p style=\"margin:16px 0 0; font-size:14px; color:#666666;\">If any of this looks wrong, just reply to this email.</p>\n            </td>\n          </tr>\n          <tr>\n            <td class=\"footer\">© {{YEAR}} {{BRAND}} • This is a simple text-only email block</td>\n          </tr>\n        </table>\n\n      </td>\n    </tr>\n  </table>\n</body>\n</html>\n"
+        },
+        "mailProperty" : {
+          "smtpAuth" : false,
+          "connectionTimeOut" : 0,
+          "timeOut" : 0,
+          "writeTimeOut" : 0,
+          "enableStartTLS" : false,
+          "cts" : 0,
+          "mts" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "e44fa9db-9cf0-4298-b21c-affb81fc8d09" : {
+      "vertexId" : "e44fa9db-9cf0-4298-b21c-affb81fc8d09",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "fc5202a4-944a-4f55-abb5-34876a541f05" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "6ce7e7f8-3c07-4cb8-94ba-55ac6c82c228" ]
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : {
       "vertexId" : "05fbc1ef-20f3-420a-a026-c0b36650e3c5",
       "vertexType" : "USER_TASK",
@@ -125,6 +196,19 @@
       },
       "imported" : false,
       "skipRuntimeVariables" : false
+    },
+    "6ce7e7f8-3c07-4cb8-94ba-55ac6c82c228" : {
+      "vertexId" : "6ce7e7f8-3c07-4cb8-94ba-55ac6c82c228",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
     },
     "v1" : {
       "vertexId" : "v1",
@@ -168,6 +252,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762414111245,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762412102709,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "  "
+  }, {
     "status" : "Review",
     "cts" : 1762411323493,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
