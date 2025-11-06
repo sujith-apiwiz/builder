@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762431880645,
+  "mts" : 1762432121344,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -138,7 +138,15 @@
         },
         "response" : {
           "statusCode" : 400,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "jsessionid",
+            "reference" : "body",
+            "value" : "$.id",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
         },
         "timeout" : 0,
         "skip" : false,
