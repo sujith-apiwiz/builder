@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762404614251,
+  "mts" : 1762404634191,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/User_Task",
+  "pathArray" : [ "User_Task" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
@@ -70,7 +70,7 @@
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
-  "enableTracing" : false,
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
   "selectedVirtualHostName" : "",
@@ -78,7 +78,8 @@
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "enableLogging" : false,
+  "enableLogging" : true,
+  "indexName" : "nw_logger",
   "deleted" : false,
   "deployed" : false
 }
