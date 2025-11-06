@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762418889692,
+  "mts" : 1762418912923,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -132,10 +132,24 @@
       "conditionalFlow" : [ {
         "condition" : "if",
         "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "Text",
+            "value" : "AD",
+            "valueDataType" : "STRING"
+          } ],
           "feelExpression" : false,
           "skip" : false,
           "showActualErrorMessage" : false,
-          "continueOnError" : false
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
         },
         "flowVertexes" : [ "fc5202a4-944a-4f55-abb5-34876a541f05" ]
       }, {
