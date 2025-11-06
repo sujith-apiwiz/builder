@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762404678588,
+  "mts" : 1762405423897,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/User_Task",
   "pathArray" : [ "User_Task" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -37,7 +37,15 @@
       "userTaskNodeData" : {
         "mode" : "PORTAL_FORM_FILLING",
         "formName" : "Untitled Form",
-        "formFields" : [ ],
+        "formFields" : [ {
+          "id" : "620e6287-33cc-4d6d-a63e-5f03b42e62d5",
+          "targetVariable" : "asfsdf",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "sfs",
+          "placeHolder" : "sdf",
+          "required" : false
+        } ],
         "additionalDataMap" : { },
         "interimResponse" : {
           "statusCode" : 200,
@@ -104,11 +112,32 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762405406792,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762405376609,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1762404760532,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762404717106,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762404614251,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
