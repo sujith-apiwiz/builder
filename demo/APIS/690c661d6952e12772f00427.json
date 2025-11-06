@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762432215938,
+  "mts" : 1762432882967,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -14,21 +14,23 @@
   "apiMethod" : "GET",
   "path" : "/userslist",
   "pathArray" : [ "userslist" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
       "b43b852b-474e-406a-ba26-21872f878450" : [ "v1" ],
       "64ace348-a6c0-4a68-a098-434a2657698f" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
-      "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ]
+      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
+      "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
     },
     "outbound" : {
       "v1" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
       "b43b852b-474e-406a-ba26-21872f878450" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
-      "64ace348-a6c0-4a68-a098-434a2657698f" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384" ]
+      "64ace348-a6c0-4a68-a098-434a2657698f" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
+      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384" ]
     },
-    "allNeighbours" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "b43b852b-474e-406a-ba26-21872f878450" ]
+    "allNeighbours" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
   },
   "vertexHashMap" : {
     "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : {
@@ -182,6 +184,41 @@
         }
       }
     },
+    "bf128fc5-83e0-4743-85fa-2c837f6af620" : {
+      "vertexId" : "bf128fc5-83e0-4743-85fa-2c837f6af620",
+      "vertexType" : "EMAIL_CONNECTOR",
+      "name" : "NewEmail",
+      "description" : "NewEmail",
+      "mailConnectorData" : {
+        "mailTemplate" : {
+          "toMailIds" : [ "chinmayee.jagadeesh@apiwiz.com" ],
+          "body" : "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Appointment User Table</title>\n  <style>\n    table {\n      border-collapse: collapse;\n      width: 80%;\n      margin: 20px auto;\n      font-family: Arial, sans-serif;\n    }\n    th, td {\n      border: 1px solid #ddd;\n      padding: 10px;\n      text-align: left;\n    }\n    th {\n      background-color: #f4f4f4;\n      font-weight: bold;\n    }\n    tr:nth-child(even) {\n      background-color: #fafafa;\n    }\n  </style>\n</head>\n<body>\n  <h2 style=\"text-align:center;\">User Details</h2>\n  <table id=\"userTable\">\n    <thead>\n      <tr>\n        <th>Name</th>\n        <th>Email</th>\n        <th>Teams</th>\n        <th>Roles</th>\n      </tr>\n    </thead>\n    <tbody></tbody>\n  </table>\n\n  <script>\n    const data = {\n      \"users\": {{{message}}}\n    };\n\n    const tbody = document.querySelector(\"#userTable tbody\");\n\n    data.users.forEach(user => {\n      user.workspaces.forEach(workspace => {\n        workspace.teams.forEach(team => {\n          const row = document.createElement(\"tr\");\n\n          const name = `${user.firstName} ${user.lastName}`;\n          const email = user.email;\n          const teams = team.name;\n          const roles = workspace.roles.join(\", \");\n\n          row.innerHTML = `\n            <td>${name}</td>\n            <td>${email}</td>\n            <td>${teams}</td>\n            <td>${roles}</td>\n          `;\n          tbody.appendChild(row);\n        });\n      });\n    });\n  </script>\n</body>\n</html>\n",
+          "subject" : "Extraction of Users List ",
+          "rtfValue" : "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Appointment User Table</title>\n  <style>\n    table {\n      border-collapse: collapse;\n      width: 80%;\n      margin: 20px auto;\n      font-family: Arial, sans-serif;\n    }\n    th, td {\n      border: 1px solid #ddd;\n      padding: 10px;\n      text-align: left;\n    }\n    th {\n      background-color: #f4f4f4;\n      font-weight: bold;\n    }\n    tr:nth-child(even) {\n      background-color: #fafafa;\n    }\n  </style>\n</head>\n<body>\n  <h2 style=\"text-align:center;\">User Details</h2>\n  <table id=\"userTable\">\n    <thead>\n      <tr>\n        <th>Name</th>\n        <th>Email</th>\n        <th>Teams</th>\n        <th>Roles</th>\n      </tr>\n    </thead>\n    <tbody></tbody>\n  </table>\n\n  <script>\n    const data = {\n      \"users\": {{{message}}}\n    };\n\n    const tbody = document.querySelector(\"#userTable tbody\");\n\n    data.users.forEach(user => {\n      user.workspaces.forEach(workspace => {\n        workspace.teams.forEach(team => {\n          const row = document.createElement(\"tr\");\n\n          const name = `${user.firstName} ${user.lastName}`;\n          const email = user.email;\n          const teams = team.name;\n          const roles = workspace.roles.join(\", \");\n\n          row.innerHTML = `\n            <td>${name}</td>\n            <td>${email}</td>\n            <td>${teams}</td>\n            <td>${roles}</td>\n          `;\n          tbody.appendChild(row);\n        });\n      });\n    });\n  </script>\n</body>\n</html>\n"
+        },
+        "mailProperty" : {
+          "smtpAuth" : false,
+          "connectionTimeOut" : 0,
+          "timeOut" : 0,
+          "writeTimeOut" : 0,
+          "enableStartTLS" : false,
+          "cts" : 0,
+          "mts" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "b43b852b-474e-406a-ba26-21872f878450" : {
       "vertexId" : "b43b852b-474e-406a-ba26-21872f878450",
       "vertexType" : "TARGET",
@@ -293,11 +330,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762432325719,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762432231367,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "da"
+  }, {
     "status" : "Draft",
     "cts" : 1762420253037,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
