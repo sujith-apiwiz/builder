@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762406379333,
+  "mts" : 1762407011621,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -19,14 +19,57 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "v1" ]
+      "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "v1" ],
+      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ]
     },
     "outbound" : {
-      "v1" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+      "v1" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ],
+      "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ]
     },
-    "allNeighbours" : [ "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+    "allNeighbours" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5", "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
   },
   "vertexHashMap" : {
+    "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : {
+      "vertexId" : "05fbc1ef-20f3-420a-a026-c0b36650e3c5",
+      "vertexType" : "USER_TASK",
+      "name" : "user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node_user_task_node",
+      "description" : "user_task_node_description",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Untitled Form",
+        "formFields" : [ {
+          "id" : "6081df99-4134-4c86-b987-2e02af42585b",
+          "targetVariable" : "Text",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "Text",
+          "placeHolder" : "Text",
+          "required" : false
+        } ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 86400000,
+        "expiryDurationUnit" : "DAYS",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
