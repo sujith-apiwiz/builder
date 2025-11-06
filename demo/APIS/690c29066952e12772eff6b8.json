@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762408606083,
+  "mts" : 1762411225460,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -20,13 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "v1" ],
-      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ]
+      "d527634e-10b5-4e9b-9ee6-a4a11bc0d3e5" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ],
+      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "d527634e-10b5-4e9b-9ee6-a4a11bc0d3e5" ]
     },
     "outbound" : {
       "v1" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5" ],
-      "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+      "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : [ "d527634e-10b5-4e9b-9ee6-a4a11bc0d3e5" ],
+      "d527634e-10b5-4e9b-9ee6-a4a11bc0d3e5" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ]
     },
-    "allNeighbours" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5", "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+    "allNeighbours" : [ "05fbc1ef-20f3-420a-a026-c0b36650e3c5", "d527634e-10b5-4e9b-9ee6-a4a11bc0d3e5", "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
   },
   "vertexHashMap" : {
     "05fbc1ef-20f3-420a-a026-c0b36650e3c5" : {
@@ -65,6 +67,59 @@
           "body" : {
             "data" : "",
             "type" : "JSON"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "d527634e-10b5-4e9b-9ee6-a4a11bc0d3e5" : {
+      "vertexId" : "d527634e-10b5-4e9b-9ee6-a4a11bc0d3e5",
+      "vertexType" : "TARGET",
+      "name" : "Add a new delivery agent to the system.",
+      "target" : {
+        "name" : "Add a new delivery agent to the system.",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/agent/agents",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
           }
         }
       },
@@ -113,6 +168,36 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762411192210,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762409680663,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1762409671045,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762409436277,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1762409328492,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762408629416,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762408462294,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
