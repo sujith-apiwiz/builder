@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762405426094,
+  "mts" : 1762406379333,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -19,57 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "3a92eeea-a89a-42c7-b3c1-06e722678223" : [ "v1" ],
-      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "3a92eeea-a89a-42c7-b3c1-06e722678223" ]
+      "3b0cf997-c422-4909-b022-c5208da17dcb" : [ "v1" ]
     },
     "outbound" : {
-      "v1" : [ "3a92eeea-a89a-42c7-b3c1-06e722678223" ],
-      "3a92eeea-a89a-42c7-b3c1-06e722678223" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+      "v1" : [ "3b0cf997-c422-4909-b022-c5208da17dcb" ]
     },
-    "allNeighbours" : [ "3a92eeea-a89a-42c7-b3c1-06e722678223", "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
+    "allNeighbours" : [ "v1", "3b0cf997-c422-4909-b022-c5208da17dcb" ]
   },
   "vertexHashMap" : {
-    "3a92eeea-a89a-42c7-b3c1-06e722678223" : {
-      "vertexId" : "3a92eeea-a89a-42c7-b3c1-06e722678223",
-      "vertexType" : "USER_TASK",
-      "name" : "user_task_node",
-      "description" : "",
-      "userTaskNodeData" : {
-        "mode" : "PORTAL_FORM_FILLING",
-        "formName" : "Untitled Form",
-        "formFields" : [ {
-          "id" : "620e6287-33cc-4d6d-a63e-5f03b42e62d5",
-          "targetVariable" : "asfsdf",
-          "targetVariableDataType" : "STRING",
-          "inputType" : "TEXT",
-          "label" : "sfs",
-          "placeHolder" : "sdf",
-          "required" : false
-        } ],
-        "additionalDataMap" : { },
-        "interimResponse" : {
-          "statusCode" : 200,
-          "body" : {
-            "data" : "",
-            "type" : "JSON"
-          }
-        },
-        "expiryDuration" : 172800000,
-        "expiryDurationUnit" : "DAYS",
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "JSON"
-          }
-        }
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -112,6 +69,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762406306284,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762405433547,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762405406792,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
