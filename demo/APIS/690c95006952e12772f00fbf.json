@@ -3,7 +3,7 @@
   "cts" : 1762432256756,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762432256756,
+  "mts" : 1762432385451,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "690c95006952e12772f00fbe",
@@ -19,14 +19,37 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "a2325e31-1a01-44da-8ee1-45b2da512da1" : [ "v1" ]
+      "384dc864-75e5-4479-876d-817ad39f433e" : [ "v1" ],
+      "a2325e31-1a01-44da-8ee1-45b2da512da1" : [ "18ae45f2-2335-4f93-89a7-0e275e947c09", "384dc864-75e5-4479-876d-817ad39f433e" ],
+      "18ae45f2-2335-4f93-89a7-0e275e947c09" : [ "v1" ]
     },
     "outbound" : {
-      "v1" : [ "a2325e31-1a01-44da-8ee1-45b2da512da1" ]
+      "v1" : [ "18ae45f2-2335-4f93-89a7-0e275e947c09", "384dc864-75e5-4479-876d-817ad39f433e" ],
+      "384dc864-75e5-4479-876d-817ad39f433e" : [ "a2325e31-1a01-44da-8ee1-45b2da512da1" ],
+      "18ae45f2-2335-4f93-89a7-0e275e947c09" : [ "a2325e31-1a01-44da-8ee1-45b2da512da1" ]
     },
-    "allNeighbours" : [ "v1", "a2325e31-1a01-44da-8ee1-45b2da512da1" ]
+    "allNeighbours" : [ "18ae45f2-2335-4f93-89a7-0e275e947c09", "v1", "384dc864-75e5-4479-876d-817ad39f433e", "a2325e31-1a01-44da-8ee1-45b2da512da1" ]
   },
   "vertexHashMap" : {
+    "18ae45f2-2335-4f93-89a7-0e275e947c09" : {
+      "vertexId" : "18ae45f2-2335-4f93-89a7-0e275e947c09",
+      "vertexType" : "DATABASE",
+      "name" : "DB-2",
+      "description" : "DB-2",
+      "databaseData" : {
+        "connectorId" : "68b839a4399db1665a31dccd",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"find\",\"databaseName\":\"stage_data\",\"collection\":\"Users.Audit.Logs\",\"documents\":[{\"_id\":\"\",\"userId\":\"\",\"operation\":\"\",\"requestURI\":\"\",\"statusCode\":\"\",\"last_Changed_At\":\"\",\"id_user\":\"\",\"_class\":\"\",\"interactionId\":\"\",\"result\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "DB-2",
+        "connectorName" : "Stage-DB",
+        "tenantName" : "stage_data",
+        "collectionName" : "Users.Audit.Logs",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -49,6 +72,25 @@
           }
         }
       }
+    },
+    "384dc864-75e5-4479-876d-817ad39f433e" : {
+      "vertexId" : "384dc864-75e5-4479-876d-817ad39f433e",
+      "vertexType" : "DATABASE",
+      "name" : "DB",
+      "description" : "DB",
+      "databaseData" : {
+        "connectorId" : "68b839a4399db1665a31dccd",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"find\",\"databaseName\":\"stage_data\",\"collection\":\"Users.Audit.Logs\",\"documents\":[{\"_id\":\"\",\"userId\":\"\",\"operation\":\"\",\"requestURI\":\"\",\"statusCode\":\"\",\"last_Changed_At\":\"\",\"id_user\":\"\",\"_class\":\"\",\"interactionId\":\"\",\"result\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "DB",
+        "connectorName" : "Stage-DB",
+        "tenantName" : "stage_data",
+        "collectionName" : "Users.Audit.Logs",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "a2325e31-1a01-44da-8ee1-45b2da512da1" : {
       "vertexId" : "a2325e31-1a01-44da-8ee1-45b2da512da1",
