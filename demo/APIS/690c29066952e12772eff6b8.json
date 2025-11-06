@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762425856065,
+  "mts" : 1762425936541,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -273,15 +273,18 @@
         },
         "interimResponse" : {
           "statusCode" : 200,
+          "headers" : {
+            "header" : "header_123"
+          },
           "body" : {
-            "data" : "",
+            "data" : "{\n    \"message\": \"user_task_form\"\n}",
             "type" : "JSON"
           }
         },
         "expiryDuration" : 86400000,
         "expiryDurationUnit" : "DAYS",
         "skip" : false,
-        "showActualErrorMessage" : false,
+        "showActualErrorMessage" : true,
         "continueOnError" : false,
         "errorResponse" : {
           "statusCode" : 400,
