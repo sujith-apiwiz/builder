@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762431842221,
+  "mts" : 1762431880645,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : [ "v1" ]
+      "b43b852b-474e-406a-ba26-21872f878450" : [ "v1" ],
+      "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : [ "b43b852b-474e-406a-ba26-21872f878450" ]
     },
     "outbound" : {
-      "v1" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384" ]
+      "v1" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
+      "b43b852b-474e-406a-ba26-21872f878450" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384" ]
     },
-    "allNeighbours" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384", "v1" ]
+    "allNeighbours" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384", "v1", "b43b852b-474e-406a-ba26-21872f878450" ]
   },
   "vertexHashMap" : {
     "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : {
@@ -65,6 +67,107 @@
           }
         }
       }
+    },
+    "b43b852b-474e-406a-ba26-21872f878450" : {
+      "vertexId" : "b43b852b-474e-406a-ba26-21872f878450",
+      "vertexType" : "TARGET",
+      "name" : "LoginAPI",
+      "target" : {
+        "name" : "LoginAPI",
+        "description" : "LoginAPI",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "dev-api.apiwiz.io",
+          "path" : "/itorix/v1/users/login",
+          "headerParams" : [ {
+            "name" : "accept",
+            "value" : "application/json, text/plain, */*"
+          }, {
+            "name" : "accept-language",
+            "value" : "en-GB,en-US;q=0.9,en;q=0.8"
+          }, {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "interactionid",
+            "value" : "f3sTBgeJ7SdcYUaJ"
+          }, {
+            "name" : "origin",
+            "value" : "https"
+          }, {
+            "name" : "priority",
+            "value" : "u=1, i"
+          }, {
+            "name" : "referer",
+            "value" : "https"
+          }, {
+            "name" : "sec-ch-ua",
+            "value" : "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\""
+          }, {
+            "name" : "sec-ch-ua-mobile",
+            "value" : "?0"
+          }, {
+            "name" : "sec-ch-ua-platform",
+            "value" : "\"macOS\""
+          }, {
+            "name" : "sec-fetch-dest",
+            "value" : "empty"
+          }, {
+            "name" : "sec-fetch-mode",
+            "value" : "cors"
+          }, {
+            "name" : "sec-fetch-site",
+            "value" : "same-site"
+          }, {
+            "name" : "user-agent",
+            "value" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+          }, {
+            "name" : "x-apikey",
+            "value" : "E5KAHRATn8kjWZbdAVaXTD7FVtCsdXuijm9dRpatlBLJ4gOplbGSMWSOlcn8x1lwyJLgzug1UVfmF/duXtk1oa9oG5+S6iDGA9zWpTjafpy4U0OT9kBiA5r/nDb55MzE4qfKfWXlpAqtEZrDiwtOlR1tjjzdCTEYmqPEfjYgQr7/WjIUBU2UQdB6zg2oQUWKBbPf1NY+F+TZiVcbhbwHibM7+yTSeLydksCElDo84GEb06QyoHxkXbB+QLWBdw9PvShGJr1e3xnIcf1MupyIPDVfB1WjwqNPSUD+KKqtKI/OSjQGR4x/6ov8zESd1nGQAiEKCvAW5/uhF5uVv0A70w=="
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "{\n  \"loginId\": \"AkshathaSM\",\n  \"password\": \"O77miLHEw/TDTjScYqs6A4OVi2drnVdO2X+AGBbVTDY9Ec9QPnAF1YsuEvOpnwWRQaR42/mqC6mq6gSfCs376V35pohacpjsslZgNiv0qESzN1LVdW9KMc7ayOOJsgWyamusQ2UIMgZXn1lFh0ZhFdeuqftacIbnnoLEZwttLfu9M2v7okfgGeUfwSTCiowm3+zBKZY6f+D4HK85OL7mVsg4lLIxItkAj8IiQwEizA5G01fl+WPltqV8bZiV3NomBAHC1BGNJfXUnxUm8+iv3h9HmpYKcHLr5l0Onnh0Rca24/II992GeaWbii5hpG7awd9YJjBn4H7BkTZEVK/IVw==\",\n  \"workspaceId\": \"qa-dev\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
