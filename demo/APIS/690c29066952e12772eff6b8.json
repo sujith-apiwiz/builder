@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762407013463,
+  "mts" : 1762408606083,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -56,6 +56,7 @@
         },
         "expiryDuration" : 86400000,
         "expiryDurationUnit" : "DAYS",
+        "virtualHostId" : "67ed20509ecb12099c749c7a",
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
@@ -112,6 +113,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762408462294,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762407019647,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762406306284,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
