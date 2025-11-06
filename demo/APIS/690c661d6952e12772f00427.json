@@ -3,14 +3,14 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762434678520,
+  "mts" : 1762434941970,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
   "revision" : 1,
   "name" : "UsersList",
   "description" : "UsersList",
-  "apiType" : "RESTAPI",
+  "apiType" : "SCHEDULED",
   "apiMethod" : "GET",
   "path" : "/userslist",
   "pathArray" : [ "userslist" ],
@@ -22,36 +22,17 @@
       "b43b852b-474e-406a-ba26-21872f878450" : [ "v1" ],
       "64ace348-a6c0-4a68-a098-434a2657698f" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
-      "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ]
     },
     "outbound" : {
       "v1" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
       "b43b852b-474e-406a-ba26-21872f878450" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
       "64ace348-a6c0-4a68-a098-434a2657698f" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
-      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
     },
-    "allNeighbours" : [ "012fb6cd-aa5d-4236-97ac-203a4c8d5384", "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
+    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
   },
   "vertexHashMap" : {
-    "012fb6cd-aa5d-4236-97ac-203a4c8d5384" : {
-      "vertexId" : "012fb6cd-aa5d-4236-97ac-203a4c8d5384",
-      "vertexType" : "STOP",
-      "name" : "Stop",
-      "imported" : false,
-      "skipRuntimeVariables" : false,
-      "proxyResponse" : {
-        "statusCode" : 200,
-        "headers" : {
-          "content-type" : "application/json"
-        },
-        "body" : {
-          "data" : "{{{message}}}",
-          "type" : "json"
-        }
-      }
-    },
     "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : {
       "vertexId" : "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c",
       "vertexType" : "JAVASCRIPT",
@@ -190,7 +171,7 @@
     },
     "v1" : {
       "vertexId" : "v1",
-      "vertexType" : "START",
+      "vertexType" : "SCHEDULED_TRIGGER",
       "name" : "Request",
       "requestVariables" : [ ],
       "mandatoryHeaders" : [ ],
@@ -227,13 +208,23 @@
           "rtfValue" : "{{{data}}}"
         },
         "mailProperty" : {
-          "smtpAuth" : false,
-          "connectionTimeOut" : 0,
-          "timeOut" : 0,
-          "writeTimeOut" : 0,
-          "enableStartTLS" : false,
-          "cts" : 0,
-          "mts" : 0
+          "tenantId" : "682b543c5de5a802d2d201be",
+          "mailPort" : "587",
+          "mailHost" : "smtp.gmail.com",
+          "smtpAuth" : true,
+          "userName" : "engineering@apiwiz.com ",
+          "password" : "aeL7IusJOi39zl6ciz1cZMHY2LyHPeDdUtmgr6vycSNQtDDH0k8dAPZG0hTToUXOoWUOPjcoVFfC9gQfy9170N48/fnLdbftsi2W6lcQg50QM9MFNT8MwBhaSkxGN/8q+LfFYY3jw9qul6XTksNnpzTRI8+PHF1hsPg4/M7f9Sl3ggd4zj77AoOtrtBIjZqwcU1viH7nsIho7Uc7iInAvX1Ci5HZ0fIihE4NLIPwhKYLCRiSVkhW37w5U7TjHtPPSzuVVBVcVMdY0Oic0yKEC2DYTQlcK72MnDLubghlTYCWT5foQ5Y5bZ6UYCtdrRqNLqiQXgmeGgKpDJDJRdSx2w==",
+          "connectionTimeOut" : 5000,
+          "timeOut" : 5000,
+          "writeTimeOut" : 5000,
+          "enableStartTLS" : true,
+          "mailFromAddress" : "engineering@apiwiz.com ",
+          "cts" : 1747670076067,
+          "mts" : 1757660032907,
+          "createdBy" : "67e298cbed1ae94ac870b921",
+          "modifiedBy" : "67c562eba649de63bf3835e4",
+          "createdUserName" : "Akshatha sm",
+          "modifiedUserName" : "Akshatha SM"
         },
         "skip" : false,
         "showActualErrorMessage" : false,
@@ -360,6 +351,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762434781894,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762434687689,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "daws"
+  }, {
     "status" : "Review",
     "cts" : 1762434658862,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
