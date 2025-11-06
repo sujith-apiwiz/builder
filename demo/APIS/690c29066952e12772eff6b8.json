@@ -3,7 +3,7 @@
   "cts" : 1762404614251,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762425936541,
+  "mts" : 1762427876335,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c29066952e12772eff6b7",
@@ -243,28 +243,36 @@
           "placeHolder" : "Single_Line",
           "required" : false
         }, {
-          "id" : "c8f8b1bb-b1f4-447d-9bd5-7cab0909e250",
-          "targetVariable" : "Multi_line",
+          "id" : "a140a17c-6267-4c00-8fb4-4d565184fd14",
+          "targetVariable" : "Address",
           "targetVariableDataType" : "STRING",
           "inputType" : "MULTI_LINE",
-          "label" : "Multi_line",
-          "placeHolder" : "Multi_line",
+          "label" : "Address",
+          "placeHolder" : "Address",
           "required" : false
         }, {
-          "id" : "ff02b542-a18c-4ece-966f-a35142d9a296",
-          "targetVariable" : "Numbers",
+          "id" : "7d52c7ae-46fe-4cb6-9aa2-11ffc2941c49",
+          "targetVariable" : "Date",
           "targetVariableDataType" : "STRING",
-          "inputType" : "NUMBER",
-          "label" : "Numbers",
-          "placeHolder" : "Numbers",
+          "inputType" : "DATE",
+          "label" : "Date",
+          "placeHolder" : "Date",
           "required" : false
         }, {
-          "id" : "4f2f8c5c-c9a6-4df2-a2c4-10f18e2acbd3",
-          "targetVariable" : "Password",
+          "id" : "b6c3e6c2-5e70-45a9-9bc2-ab143624776a",
+          "targetVariable" : "Time",
           "targetVariableDataType" : "STRING",
-          "inputType" : "PASSWORD",
-          "label" : "Password",
-          "placeHolder" : "",
+          "inputType" : "TIME",
+          "label" : "Time",
+          "placeHolder" : "Time",
+          "required" : false
+        }, {
+          "id" : "2e2e8e51-bd78-411d-bdb5-44a511bdc408",
+          "targetVariable" : "Date&time",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "DATE",
+          "label" : "Date&time",
+          "placeHolder" : "Date&time",
           "required" : false
         } ],
         "additionalDataMap" : {
@@ -352,6 +360,36 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762427785793,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762427758598,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
+    "cts" : 1762427181261,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762427149549,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Draft",
+    "cts" : 1762425953490,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Approved",
+    "cts" : 1762425945027,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762425835546,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
