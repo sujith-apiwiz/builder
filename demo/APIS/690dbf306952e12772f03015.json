@@ -3,7 +3,7 @@
   "cts" : 1762508592584,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762508592584,
+  "mts" : 1762508632281,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690dbf306952e12772f03014",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "38d6381f-3b85-4708-ae67-882c0abf99e2" : [ "v1" ]
+      "b01371cb-bbc1-49a7-8f32-01efcf23c7c3" : [ "v1" ],
+      "38d6381f-3b85-4708-ae67-882c0abf99e2" : [ "b01371cb-bbc1-49a7-8f32-01efcf23c7c3" ]
     },
     "outbound" : {
-      "v1" : [ "38d6381f-3b85-4708-ae67-882c0abf99e2" ]
+      "v1" : [ "b01371cb-bbc1-49a7-8f32-01efcf23c7c3" ],
+      "b01371cb-bbc1-49a7-8f32-01efcf23c7c3" : [ "38d6381f-3b85-4708-ae67-882c0abf99e2" ]
     },
-    "allNeighbours" : [ "38d6381f-3b85-4708-ae67-882c0abf99e2", "v1" ]
+    "allNeighbours" : [ "38d6381f-3b85-4708-ae67-882c0abf99e2", "v1", "b01371cb-bbc1-49a7-8f32-01efcf23c7c3" ]
   },
   "vertexHashMap" : {
     "38d6381f-3b85-4708-ae67-882c0abf99e2" : {
@@ -62,6 +64,61 @@
           }
         }
       }
+    },
+    "b01371cb-bbc1-49a7-8f32-01efcf23c7c3" : {
+      "vertexId" : "b01371cb-bbc1-49a7-8f32-01efcf23c7c3",
+      "vertexType" : "TARGET",
+      "name" : "UserDetails",
+      "target" : {
+        "name" : "UserDetails",
+        "description" : "The User Details section displays essential information about each registered user, such as name, email address, role, and account status.",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "url.io",
+          "path" : "/operation",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
