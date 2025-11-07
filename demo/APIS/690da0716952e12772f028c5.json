@@ -3,7 +3,7 @@
   "cts" : 1762500721505,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762500721505,
+  "mts" : 1762500761322,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690da0716952e12772f028c4",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "3cd2f54c-1374-407b-bdc0-9892bd08f11d" : [ "v1" ]
+      "7ab201ea-7925-4abe-9159-5ef5c2427fe9" : [ "v1" ],
+      "3cd2f54c-1374-407b-bdc0-9892bd08f11d" : [ "7ab201ea-7925-4abe-9159-5ef5c2427fe9" ]
     },
     "outbound" : {
-      "v1" : [ "3cd2f54c-1374-407b-bdc0-9892bd08f11d" ]
+      "v1" : [ "7ab201ea-7925-4abe-9159-5ef5c2427fe9" ],
+      "7ab201ea-7925-4abe-9159-5ef5c2427fe9" : [ "3cd2f54c-1374-407b-bdc0-9892bd08f11d" ]
     },
-    "allNeighbours" : [ "3cd2f54c-1374-407b-bdc0-9892bd08f11d", "v1" ]
+    "allNeighbours" : [ "3cd2f54c-1374-407b-bdc0-9892bd08f11d", "7ab201ea-7925-4abe-9159-5ef5c2427fe9", "v1" ]
   },
   "vertexHashMap" : {
     "3cd2f54c-1374-407b-bdc0-9892bd08f11d" : {
@@ -39,6 +41,61 @@
           "type" : "json"
         }
       }
+    },
+    "7ab201ea-7925-4abe-9159-5ef5c2427fe9" : {
+      "vertexId" : "7ab201ea-7925-4abe-9159-5ef5c2427fe9",
+      "vertexType" : "TARGET",
+      "name" : "UserDetails",
+      "target" : {
+        "name" : "UserDetails",
+        "description" : "The User Details section displays essential information about each registered user, such as name, email address, role, and account status.",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "url.io",
+          "path" : "/operation",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
