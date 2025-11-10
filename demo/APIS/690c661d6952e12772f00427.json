@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762756298555,
+  "mts" : 1762756332464,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -43,7 +43,7 @@
       "javascriptData" : {
         "targetVariable" : "data",
         "variableDataType" : "STRING",
-        "javascript" : "var execute = function(input) { \n    let rows = '';\n    console.log(input.data);\n  input.data.users.forEach(user => {\n    user.workspaces.forEach(ws => {\n      ws.teams.forEach(team => {\n        rows += `\n          <tr>\n            <td>${user.firstName} ${user.lastName}</td>\n            <td>${user.email}</td>\n            <td>${team.name}</td>\n            <td>${ws.roles.join(', ')}</td>\n          </tr>`;\n      });\n    });\n  });\n  return `\n    <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">\n      <thead>\n        <tr style=\"background-color: #f4f4f4;\">\n          <th>Name</th><th>Email</th><th>Teams</th><th>Roles</th>\n        </tr>\n      </thead>\n      <tbody>${rows}</tbody>\n    </table>`;\n };",
+        "javascript" : "var execute = function(input) {\n  if (!input?.data?.users) return '<p>No user data available</p>';\n\n  const userMap = new Map(); // key = email, value = aggregated user info\n\n  input.data.users.forEach(user => {\n    const email = user.email || '';\n    if (!email) return; // skip if email missing\n\n    const fullName = `${user.firstName || ''} ${user.lastName || ''}`.trim();\n    const userEntry = userMap.get(email) || { name: fullName, teams: new Set(), roles: new Set() };\n\n    (user.workspaces || []).forEach(ws => {\n      (ws.teams || []).forEach(team => {\n        if (team?.name) userEntry.teams.add(team.name);\n      });\n      (ws.roles || []).forEach(role => {\n        userEntry.roles.add(role);\n      });\n    });\n\n    userMap.set(email, userEntry);\n  });\n\n  // Build HTML rows\n  let rows = '';\n  userMap.forEach((u, email) => {\n    rows += `\n      <tr>\n        <td>${u.name}</td>\n        <td>${email}</td>\n        <td>${Array.from(u.teams).join(', ')}</td>\n        <td>${Array.from(u.roles).join(', ')}</td>\n      </tr>`;\n  });\n\n  return `\n    <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" \n      style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">\n      <thead>\n        <tr style=\"background-color: #f4f4f4;\">\n          <th>Name</th>\n          <th>Email</th>\n          <th>Teams</th>\n          <th>Roles</th>\n        </tr>\n      </thead>\n      <tbody>${rows || '<tr><td colspan=\"4\">No data available</td></tr>'}</tbody>\n    </table>`;\n};",
         "variables" : {
           "data" : "{{{message}}}"
         },
