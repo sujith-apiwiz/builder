@@ -3,7 +3,7 @@
   "cts" : 1762408090686,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762408090686,
+  "mts" : 1762775605797,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c369a6952e12772eff95f",
@@ -19,14 +19,73 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "800c357b-ed99-4bf0-a60e-84db81707bd4" : [ "v1" ]
+      "d1ec6c59-e53e-490b-9b04-299f8b4c8dee" : [ "v1" ],
+      "800c357b-ed99-4bf0-a60e-84db81707bd4" : [ "d1ec6c59-e53e-490b-9b04-299f8b4c8dee" ]
     },
     "outbound" : {
-      "v1" : [ "800c357b-ed99-4bf0-a60e-84db81707bd4" ]
+      "v1" : [ "d1ec6c59-e53e-490b-9b04-299f8b4c8dee" ],
+      "d1ec6c59-e53e-490b-9b04-299f8b4c8dee" : [ "800c357b-ed99-4bf0-a60e-84db81707bd4" ]
     },
-    "allNeighbours" : [ "v1", "800c357b-ed99-4bf0-a60e-84db81707bd4" ]
+    "allNeighbours" : [ "d1ec6c59-e53e-490b-9b04-299f8b4c8dee", "v1", "800c357b-ed99-4bf0-a60e-84db81707bd4" ]
   },
   "vertexHashMap" : {
+    "d1ec6c59-e53e-490b-9b04-299f8b4c8dee" : {
+      "vertexId" : "d1ec6c59-e53e-490b-9b04-299f8b4c8dee",
+      "vertexType" : "USER_TASK",
+      "name" : "dfdsf",
+      "description" : "sdfa",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Untitled Form",
+        "formFields" : [ {
+          "id" : "9c1ddab5-db19-4bc0-91e6-73b946479453",
+          "targetVariable" : "dfg",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "tfmj",
+          "placeHolder" : "dfgh",
+          "required" : false
+        }, {
+          "id" : "b72d0aaf-745a-4b74-9992-53af41f4a788",
+          "targetVariable" : "radio_1",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "RADIO",
+          "label" : "radio_1",
+          "required" : false,
+          "options" : [ "a", "Option 2" ]
+        }, {
+          "id" : "87ec3187-debe-4cd6-b89e-d1f4e9c78566",
+          "targetVariable" : "radio_2",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "RADIO",
+          "label" : "radio_2",
+          "required" : false,
+          "options" : [ "b", "Option 2_2" ]
+        } ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 60000,
+        "expiryDurationUnit" : "MINUTES",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -79,6 +138,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
