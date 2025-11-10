@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762759164436,
+  "mts" : 1762778034102,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -12,8 +12,8 @@
   "description" : "UsersList",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/userslist",
-  "pathArray" : [ "userslist" ],
+  "path" : "/userslist/ewb1",
+  "pathArray" : [ "userslist", "ewb1" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
@@ -370,6 +370,26 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762778014502,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "r"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762759789503,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1762759572331,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762759170906,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "ds"
+  }, {
     "status" : "Review",
     "cts" : 1762759149309,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
