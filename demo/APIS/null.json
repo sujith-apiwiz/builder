@@ -1,13 +1,13 @@
 {
-  "cts" : 1762759817938,
+  "cts" : 1762778175861,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762759817938,
+  "mts" : 1762778175861,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
-  "proxyId" : "690c661d6952e12772f00426",
-  "revision" : 2,
-  "name" : "UsersList",
+  "proxyId" : "6911dc3f13c1403c98521160",
+  "revision" : 1,
+  "name" : "UsersList-11-10-2025 12:36:15",
   "description" : "UsersList",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -238,7 +238,7 @@
       "javascriptData" : {
         "targetVariable" : "data",
         "variableDataType" : "STRING",
-        "javascript" : "var execute = function(input) {\n  if (!input || !input.data || !input.data.users) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email → aggregated data\n\n  input.data.users.forEach(function(user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || { name: fullName, teams: [], roles: [] };\n\n    (user.workspaces || []).forEach(function(ws) {\n      (ws.teams || []).forEach(function(team) {\n        if (team && team.name && userEntry.teams.indexOf(team.name) === -1) {\n          userEntry.teams.push(team.name);\n        }\n      });\n      (ws.roles || []).forEach(function(role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // 1) Build CSV\n  var csv = 'Name,Email,Teams,Roles\\n';\n  var rows = '';\n  for (var email in userMap) {\n    if (!userMap.hasOwnProperty(email)) continue;\n    var u = userMap[email];\n    var teams = u.teams.join('; ');\n    var roles = u.roles.join('; ');\n\n    // HTML table row\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + teams + '</td>' +\n      '<td>' + roles + '</td>' +\n      '</tr>';\n\n    // CSV row (quote fields for safety)\n    csv += '\"' + u.name + '\",\"' + email + '\",\"' + teams + '\",\"' + roles + '\"\\n';\n  }\n\n  // 2) URL-encode CSV for data URI\n  // (JDoodle supports encodeURIComponent)\n  var csvEncoded = encodeURIComponent(csv);\n\n  // 3) Build HTML\n  var html =\n    '<p>' +\n      '<a href=\"data:text/csv;charset=utf-8,' + csvEncoded + '\" ' +\n         'download=\"users.csv\" ' +\n         'style=\"background:#0b5ed7;color:#fff;padding:8px 14px;text-decoration:none;border-radius:4px;display:inline-block;margin-bottom:12px;\">' +\n        'Download CSV' +\n      '</a>' +\n    '</p>' +\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n      'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n      '<thead>' +\n        '<tr style=\"background-color: #f4f4f4;\">' +\n          '<th>Name</th><th>Email</th><th>Teams</th><th>Roles</th>' +\n        '</tr>' +\n      '</thead>' +\n      '<tbody>' +\n        (rows || '<tr><td colspan=\"4\">No data available</td></tr>') +\n      '</tbody>' +\n    '</table>';\n\n  return html;\n};\n",
+        "javascript" : "var execute = function(input) {\n  if (!input || !input.data || !input.data.users) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email, value = aggregated user info\n\n  input.data.users.forEach(function(user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || { name: fullName, teams: [], roles: [] };\n\n    (user.workspaces || []).forEach(function(ws) {\n      (ws.teams || []).forEach(function(team) {\n        if (team && team.name && userEntry.teams.indexOf(team.name) === -1) {\n          userEntry.teams.push(team.name);\n        }\n      });\n      (ws.roles || []).forEach(function(role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // Build HTML rows\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + u.teams.join(', ') + '</td>' +\n      '<td>' + u.roles.join(', ') + '</td>' +\n      '</tr>';\n  }\n\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th><th>Email</th><th>Teams</th><th>Roles</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"4\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};",
         "variables" : {
           "data" : "{{{message}}}"
         },
@@ -368,6 +368,12 @@
       "skipRuntimeVariables" : false
     }
   },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1762778175861,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Duplicated proxy"
+  } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
