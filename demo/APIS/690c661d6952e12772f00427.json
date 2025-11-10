@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762756975891,
+  "mts" : 1762758418171,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -43,7 +43,7 @@
       "javascriptData" : {
         "targetVariable" : "data",
         "variableDataType" : "STRING",
-        "javascript" : "var execute = function(input) {\n  if (!input?.data?.users) return '<p>No user data available</p>';\n\n  const userMap = new Map(); // key = email, value = aggregated user info\n\n  input.data.users.forEach(user => {\n    const email = user.email || '';\n    if (!email) return; // skip if email missing\n\n    const fullName = `${user.firstName || ''} ${user.lastName || ''}`.trim();\n    const userEntry = userMap.get(email) || { name: fullName, teams: new Set(), roles: new Set() };\n\n    (user.workspaces || []).forEach(ws => {\n      (ws.teams || []).forEach(team => {\n        if (team?.name) userEntry.teams.add(team.name);\n      });\n      (ws.roles || []).forEach(role => {\n        userEntry.roles.add(role);\n      });\n    });\n\n    userMap.set(email, userEntry);\n  });\n\n  // Build HTML rows\n  let rows = '';\n  userMap.forEach((u, email) => {\n    rows += `\n      <tr>\n        <td>${u.name}</td>\n        <td>${email}</td>\n        <td>${Array.from(u.teams).join(', ')}</td>\n        <td>${Array.from(u.roles).join(', ')}</td>\n      </tr>`;\n  });\n\n  return `\n    <table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" \n      style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">\n      <thead>\n        <tr style=\"background-color: #f4f4f4;\">\n          <th>Name</th>\n          <th>Email</th>\n          <th>Teams</th>\n          <th>Roles</th>\n        </tr>\n      </thead>\n      <tbody>${rows || '<tr><td colspan=\"4\">No data available</td></tr>'}</tbody>\n    </table>`;\n};",
+        "javascript" : "var execute = function(input) {\n  if (!input || !input.data || !input.data.users) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email, value = aggregated user info\n\n  input.data.users.forEach(function(user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || { name: fullName, teams: [], roles: [] };\n\n    (user.workspaces || []).forEach(function(ws) {\n      (ws.teams || []).forEach(function(team) {\n        if (team && team.name && userEntry.teams.indexOf(team.name) === -1) {\n          userEntry.teams.push(team.name);\n        }\n      });\n      (ws.roles || []).forEach(function(role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // Build HTML rows\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + u.teams.join(', ') + '</td>' +\n      '<td>' + u.roles.join(', ') + '</td>' +\n      '</tr>';\n  }\n\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th><th>Email</th><th>Teams</th><th>Roles</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"4\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};",
         "variables" : {
           "data" : "{{{message}}}"
         },
@@ -370,6 +370,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762757390921,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762756988268,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
     "status" : "Review",
     "cts" : 1762756940131,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
