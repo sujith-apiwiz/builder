@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762758662353,
+  "mts" : 1762759164436,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -43,7 +43,7 @@
       "javascriptData" : {
         "targetVariable" : "data",
         "variableDataType" : "STRING",
-        "javascript" : "var execute = function(input) {\n  if (!input || !input.data || !input.data.users) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email, value = aggregated user info\n\n  input.data.users.forEach(function(user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || { name: fullName, teams: [], roles: [] };\n\n    (user.workspaces || []).forEach(function(ws) {\n      (ws.teams || []).forEach(function(team) {\n        if (team && team.name && userEntry.teams.indexOf(team.name) === -1) {\n          userEntry.teams.push(team.name);\n        }\n      });\n      (ws.roles || []).forEach(function(role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // Build HTML rows and CSV content\n  var rows = '';\n  var csv = 'Name,Email,Teams,Roles\\n';\n\n  for (var email in userMap) {\n    var u = userMap[email];\n    var teams = u.teams.join('; ');\n    var roles = u.roles.join('; ');\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + teams + '</td>' +\n      '<td>' + roles + '</td>' +\n      '</tr>';\n\n    // Escape CSV values with quotes for safety\n    csv += '\"' + u.name + '\",\"' + email + '\",\"' + teams + '\",\"' + roles + '\"\\n';\n  }\n\n  // Encode CSV for download\n  var csvEncoded = encodeURIComponent(csv);\n\n  // Return HTML table + download link\n  return (\n    '<button onclick=\"downloadCSV()\">Download CSV</button>' +\n    '<script>' +\n    'function downloadCSV() {' +\n      'var csvContent = \"' + csv.replace(/\\n/g, '\\\\n').replace(/\"/g, '\\\\\"') + '\";' +\n      'var blob = new Blob([csvContent], { type: \\\\\"text/csv\\\\\" });' +\n      'var link = document.createElement(\\\\\"a\\\\\");' +\n      'link.href = URL.createObjectURL(blob);' +\n      'link.download = \\\\\"users.csv\\\\\";' +\n      'document.body.appendChild(link);' +\n      'link.click();' +\n      'document.body.removeChild(link);' +\n    '}' +\n    '</script>' +\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th><th>Email</th><th>Teams</th><th>Roles</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"4\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};",
+        "javascript" : "var execute = function(input) {\n  if (!input || !input.data || !input.data.users) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email → aggregated data\n\n  input.data.users.forEach(function(user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || { name: fullName, teams: [], roles: [] };\n\n    (user.workspaces || []).forEach(function(ws) {\n      (ws.teams || []).forEach(function(team) {\n        if (team && team.name && userEntry.teams.indexOf(team.name) === -1) {\n          userEntry.teams.push(team.name);\n        }\n      });\n      (ws.roles || []).forEach(function(role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // 1) Build CSV\n  var csv = 'Name,Email,Teams,Roles\\n';\n  var rows = '';\n  for (var email in userMap) {\n    if (!userMap.hasOwnProperty(email)) continue;\n    var u = userMap[email];\n    var teams = u.teams.join('; ');\n    var roles = u.roles.join('; ');\n\n    // HTML table row\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + teams + '</td>' +\n      '<td>' + roles + '</td>' +\n      '</tr>';\n\n    // CSV row (quote fields for safety)\n    csv += '\"' + u.name + '\",\"' + email + '\",\"' + teams + '\",\"' + roles + '\"\\n';\n  }\n\n  // 2) URL-encode CSV for data URI\n  // (JDoodle supports encodeURIComponent)\n  var csvEncoded = encodeURIComponent(csv);\n\n  // 3) Build HTML\n  var html =\n    '<p>' +\n      '<a href=\"data:text/csv;charset=utf-8,' + csvEncoded + '\" ' +\n         'download=\"users.csv\" ' +\n         'style=\"background:#0b5ed7;color:#fff;padding:8px 14px;text-decoration:none;border-radius:4px;display:inline-block;margin-bottom:12px;\">' +\n        'Download CSV' +\n      '</a>' +\n    '</p>' +\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n      'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n      '<thead>' +\n        '<tr style=\"background-color: #f4f4f4;\">' +\n          '<th>Name</th><th>Email</th><th>Teams</th><th>Roles</th>' +\n        '</tr>' +\n      '</thead>' +\n      '<tbody>' +\n        (rows || '<tr><td colspan=\"4\">No data available</td></tr>') +\n      '</tbody>' +\n    '</table>';\n\n  return html;\n};\n",
         "variables" : {
           "data" : "{{{message}}}"
         },
@@ -227,13 +227,23 @@
           "rtfValue" : "{{{data}}}"
         },
         "mailProperty" : {
-          "smtpAuth" : false,
-          "connectionTimeOut" : 0,
-          "timeOut" : 0,
-          "writeTimeOut" : 0,
-          "enableStartTLS" : false,
-          "cts" : 0,
-          "mts" : 0
+          "tenantId" : "682b543c5de5a802d2d201be",
+          "mailPort" : "587",
+          "mailHost" : "smtp.gmail.com",
+          "smtpAuth" : true,
+          "userName" : "engineering@apiwiz.com ",
+          "password" : "aeL7IusJOi39zl6ciz1cZMHY2LyHPeDdUtmgr6vycSNQtDDH0k8dAPZG0hTToUXOoWUOPjcoVFfC9gQfy9170N48/fnLdbftsi2W6lcQg50QM9MFNT8MwBhaSkxGN/8q+LfFYY3jw9qul6XTksNnpzTRI8+PHF1hsPg4/M7f9Sl3ggd4zj77AoOtrtBIjZqwcU1viH7nsIho7Uc7iInAvX1Ci5HZ0fIihE4NLIPwhKYLCRiSVkhW37w5U7TjHtPPSzuVVBVcVMdY0Oic0yKEC2DYTQlcK72MnDLubghlTYCWT5foQ5Y5bZ6UYCtdrRqNLqiQXgmeGgKpDJDJRdSx2w==",
+          "connectionTimeOut" : 5000,
+          "timeOut" : 5000,
+          "writeTimeOut" : 5000,
+          "enableStartTLS" : true,
+          "mailFromAddress" : "engineering@apiwiz.com ",
+          "cts" : 1747670076067,
+          "mts" : 1757660032907,
+          "createdBy" : "67e298cbed1ae94ac870b921",
+          "modifiedBy" : "67c562eba649de63bf3835e4",
+          "createdUserName" : "Akshatha sm",
+          "modifiedUserName" : "Akshatha SM"
         },
         "skip" : false,
         "showActualErrorMessage" : false,
@@ -360,6 +370,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762759149309,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762758669312,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "cs"
+  }, {
     "status" : "Review",
     "cts" : 1762758632744,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
