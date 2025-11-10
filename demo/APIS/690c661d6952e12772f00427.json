@@ -3,14 +3,14 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762434941970,
+  "mts" : 1762752955027,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
   "revision" : 1,
   "name" : "UsersList",
   "description" : "UsersList",
-  "apiType" : "SCHEDULED",
+  "apiType" : "RESTAPI",
   "apiMethod" : "GET",
   "path" : "/userslist",
   "pathArray" : [ "userslist" ],
@@ -22,15 +22,17 @@
       "b43b852b-474e-406a-ba26-21872f878450" : [ "v1" ],
       "64ace348-a6c0-4a68-a098-434a2657698f" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
-      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ]
+      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
+      "f70b0ad6-a03d-4132-9e57-ec9cfe557108" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
     },
     "outbound" : {
       "v1" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
       "b43b852b-474e-406a-ba26-21872f878450" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
       "64ace348-a6c0-4a68-a098-434a2657698f" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
-      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
+      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
+      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "f70b0ad6-a03d-4132-9e57-ec9cfe557108" ]
     },
-    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
+    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
   },
   "vertexHashMap" : {
     "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : {
@@ -171,7 +173,7 @@
     },
     "v1" : {
       "vertexId" : "v1",
-      "vertexType" : "SCHEDULED_TRIGGER",
+      "vertexType" : "START",
       "name" : "Request",
       "requestVariables" : [ ],
       "mandatoryHeaders" : [ ],
@@ -192,6 +194,23 @@
             "data" : "",
             "type" : "json"
           }
+        }
+      }
+    },
+    "f70b0ad6-a03d-4132-9e57-ec9cfe557108" : {
+      "vertexId" : "f70b0ad6-a03d-4132-9e57-ec9cfe557108",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{data}}}",
+          "type" : "json"
         }
       }
     },
@@ -352,6 +371,26 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1762752921944,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762752883578,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "dsd"
+  }, {
+    "status" : "Review",
+    "cts" : 1762752708839,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762434951120,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "fs"
+  }, {
+    "status" : "Review",
     "cts" : 1762434781894,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
     "description" : "Proxy undeploy"
@@ -416,6 +455,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
