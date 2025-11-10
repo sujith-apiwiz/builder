@@ -3,7 +3,7 @@
   "cts" : 1762773356879,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762773356879,
+  "mts" : 1762775013792,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6911c96c13c1403c98520cca",
@@ -19,14 +19,71 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "fc954bf9-a4fe-4e4f-b258-ed4c6f387608" : [ "v1" ]
+      "c995e2e4-e94d-4dbb-a983-857819dd894c" : [ "v1" ],
+      "fc954bf9-a4fe-4e4f-b258-ed4c6f387608" : [ "c995e2e4-e94d-4dbb-a983-857819dd894c" ]
     },
     "outbound" : {
-      "v1" : [ "fc954bf9-a4fe-4e4f-b258-ed4c6f387608" ]
+      "v1" : [ "c995e2e4-e94d-4dbb-a983-857819dd894c" ],
+      "c995e2e4-e94d-4dbb-a983-857819dd894c" : [ "fc954bf9-a4fe-4e4f-b258-ed4c6f387608" ]
     },
-    "allNeighbours" : [ "fc954bf9-a4fe-4e4f-b258-ed4c6f387608", "v1" ]
+    "allNeighbours" : [ "c995e2e4-e94d-4dbb-a983-857819dd894c", "fc954bf9-a4fe-4e4f-b258-ed4c6f387608", "v1" ]
   },
   "vertexHashMap" : {
+    "c995e2e4-e94d-4dbb-a983-857819dd894c" : {
+      "vertexId" : "c995e2e4-e94d-4dbb-a983-857819dd894c",
+      "vertexType" : "TARGET",
+      "name" : "asd",
+      "target" : {
+        "name" : "asd",
+        "description" : "sad",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "url.io",
+          "path" : "/asds",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "fc954bf9-a4fe-4e4f-b258-ed4c6f387608" : {
       "vertexId" : "fc954bf9-a4fe-4e4f-b258-ed4c6f387608",
       "vertexType" : "STOP",
