@@ -3,7 +3,7 @@
   "cts" : 1762780170713,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762794770531,
+  "mts" : 1762794823308,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6911e40a13c1403c98521264",
@@ -20,13 +20,14 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "v1" ],
-      "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" ]
+      "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" ],
+      "0c262447-ca57-4c15-aca9-e94255927c85" : [ "v1" ]
     },
     "outbound" : {
-      "v1" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" ],
+      "v1" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ],
       "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ]
     },
-    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "v1" ]
+    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "0c262447-ca57-4c15-aca9-e94255927c85", "v1" ]
   },
   "vertexHashMap" : {
     "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : {
@@ -68,6 +69,33 @@
           "type" : "JSON"
         }
       }
+    },
+    "0c262447-ca57-4c15-aca9-e94255927c85" : {
+      "vertexId" : "0c262447-ca57-4c15-aca9-e94255927c85",
+      "vertexType" : "DATABASE",
+      "name" : "db-2",
+      "description" : "db-2",
+      "databaseData" : {
+        "connectorId" : "6911e3da13c1403c9852124c",
+        "databaseType" : "ORACLEDB",
+        "query" : "select * from EMPLOYEES",
+        "variableName" : "target-2",
+        "connectorName" : "oracle",
+        "schemaName" : "SYS",
+        "tableName" : "EMPLOYEES",
+        "queryRequest" : {
+          "tableName" : "EMPLOYEES",
+          "operation" : "SELECT",
+          "selectedFields" : { },
+          "limit" : 0,
+          "offSet" : 0,
+          "top" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
