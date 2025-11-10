@@ -2,10 +2,10 @@
   "id" : "690c369a6952e12772eff960",
   "cts" : 1762408090686,
   "createdUserName" : "Akshatha SM",
-  "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762775643291,
+  "modifiedUserName" : "Varun Margam",
+  "mts" : 1762777516731,
   "createdBy" : "67c562eba649de63bf3835e4",
-  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "69113443bed8af2973fe6911",
   "proxyId" : "690c369a6952e12772eff95f",
   "revision" : 1,
   "name" : "New Workflow 171",
@@ -14,9 +14,9 @@
   "apiMethod" : "GET",
   "path" : "/aszdfsf",
   "pathArray" : [ "aszdfsf" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
-  "lockedBy" : "Akshatha SM",
+  "lockedBy" : "Varun Margam",
   "nodeDataHashMap" : {
     "inbound" : {
       "d1ec6c59-e53e-490b-9b04-299f8b4c8dee" : [ "v1" ],
@@ -72,6 +72,7 @@
         },
         "expiryDuration" : 60000,
         "expiryDurationUnit" : "MINUTES",
+        "virtualHostId" : "67ed20509ecb12099c749c7a",
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
@@ -124,11 +125,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762777511293,
+    "lastModifiedBy" : "69113443bed8af2973fe6911",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762775691080,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Approved"
+  }, {
     "status" : "Draft",
     "cts" : 1762408090686,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
