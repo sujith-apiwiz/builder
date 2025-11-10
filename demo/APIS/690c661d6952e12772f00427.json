@@ -3,7 +3,7 @@
   "cts" : 1762420253037,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762753040234,
+  "mts" : 1762753270259,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -227,13 +227,23 @@
           "rtfValue" : "{{{data}}}"
         },
         "mailProperty" : {
-          "smtpAuth" : false,
-          "connectionTimeOut" : 0,
-          "timeOut" : 0,
-          "writeTimeOut" : 0,
-          "enableStartTLS" : false,
-          "cts" : 0,
-          "mts" : 0
+          "tenantId" : "682b543c5de5a802d2d201be",
+          "mailPort" : "587",
+          "mailHost" : "smtp.gmail.com",
+          "smtpAuth" : true,
+          "userName" : "engineering@apiwiz.com ",
+          "password" : "aeL7IusJOi39zl6ciz1cZMHY2LyHPeDdUtmgr6vycSNQtDDH0k8dAPZG0hTToUXOoWUOPjcoVFfC9gQfy9170N48/fnLdbftsi2W6lcQg50QM9MFNT8MwBhaSkxGN/8q+LfFYY3jw9qul6XTksNnpzTRI8+PHF1hsPg4/M7f9Sl3ggd4zj77AoOtrtBIjZqwcU1viH7nsIho7Uc7iInAvX1Ci5HZ0fIihE4NLIPwhKYLCRiSVkhW37w5U7TjHtPPSzuVVBVcVMdY0Oic0yKEC2DYTQlcK72MnDLubghlTYCWT5foQ5Y5bZ6UYCtdrRqNLqiQXgmeGgKpDJDJRdSx2w==",
+          "connectionTimeOut" : 5000,
+          "timeOut" : 5000,
+          "writeTimeOut" : 5000,
+          "enableStartTLS" : true,
+          "mailFromAddress" : "engineering@apiwiz.com ",
+          "cts" : 1747670076067,
+          "mts" : 1757660032907,
+          "createdBy" : "67e298cbed1ae94ac870b921",
+          "modifiedBy" : "67c562eba649de63bf3835e4",
+          "createdUserName" : "Akshatha sm",
+          "modifiedUserName" : "Akshatha SM"
         },
         "skip" : true,
         "showActualErrorMessage" : false,
@@ -273,7 +283,7 @@
             "value" : "application/json"
           }, {
             "name" : "interactionid",
-            "value" : "f3sTBgeJ7SdcYUaJ"
+            "value" : "hmNGC7HG2Wj6SFho"
           }, {
             "name" : "origin",
             "value" : "https"
@@ -311,7 +321,7 @@
           "queryParams" : [ ],
           "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "{\n  \"loginId\": \"AkshathaSM\",\n  \"password\": \"O77miLHEw/TDTjScYqs6A4OVi2drnVdO2X+AGBbVTDY9Ec9QPnAF1YsuEvOpnwWRQaR42/mqC6mq6gSfCs376V35pohacpjsslZgNiv0qESzN1LVdW9KMc7ayOOJsgWyamusQ2UIMgZXn1lFh0ZhFdeuqftacIbnnoLEZwttLfu9M2v7okfgGeUfwSTCiowm3+zBKZY6f+D4HK85OL7mVsg4lLIxItkAj8IiQwEizA5G01fl+WPltqV8bZiV3NomBAHC1BGNJfXUnxUm8+iv3h9HmpYKcHLr5l0Onnh0Rca24/II992GeaWbii5hpG7awd9YJjBn4H7BkTZEVK/IVw==\",\n  \"workspaceId\": \"qa-dev\"\n}",
+            "data" : "{\n  \"loginId\": \"AkshathaSM\",\n  \"password\": \"pX4FXPUAVEvaeW5TV55knNpJa149VaP5bqwDFfclkxeaj99JFR4IQSt/6bYci5RBtyPkZ25mkjocffs85uUoHD0MZ5LjsEuTYyP2V7469OxPh6Ud/0CVgF0+q03GV0vLrO/VXOuIHExQA0Z/jTipsl7HrO/OZNSsTyntAOS8dB5rr5+tLRn6hV2S4Ddk9pBfzprqhShhd9fICM5GfPcSDQ+40NeQP4WQuZYCdTWhr2941GlyTGDA0fpEQBUKVRyvCPIydTcmk3LM+7qFvegla4nLJUdWxAoUUKXxxlBa8ZYUKzF09CGnKqjgKin3pvn2pxu9w5BdFo8rs45gPFJF8g==\",\n  \"workspaceId\": \"qa-dev\"\n}",
             "type" : "json"
           },
           "formParams" : [ ],
@@ -360,6 +370,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762753243636,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762753047903,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "ds"
+  }, {
     "status" : "Review",
     "cts" : 1762752921944,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
