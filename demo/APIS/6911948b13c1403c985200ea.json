@@ -3,7 +3,7 @@
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762760260334,
+  "mts" : 1762779659334,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -19,20 +19,22 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "b43b852b-474e-406a-ba26-21872f878450" : [ "v1" ],
+      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "v1" ],
       "64ace348-a6c0-4a68-a098-434a2657698f" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
-      "f70b0ad6-a03d-4132-9e57-ec9cfe557108" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
+      "f70b0ad6-a03d-4132-9e57-ec9cfe557108" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
+      "b43b852b-474e-406a-ba26-21872f878450" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ]
     },
     "outbound" : {
-      "v1" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
+      "v1" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ],
       "b43b852b-474e-406a-ba26-21872f878450" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
       "64ace348-a6c0-4a68-a098-434a2657698f" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
-      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "f70b0ad6-a03d-4132-9e57-ec9cfe557108" ]
+      "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "f70b0ad6-a03d-4132-9e57-ec9cfe557108" ],
+      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "b43b852b-474e-406a-ba26-21872f878450" ]
     },
-    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
+    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "e2eb696a-b1f4-409d-9c08-181cfe1e96c0", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
   },
   "vertexHashMap" : {
     "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : {
@@ -63,6 +65,25 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
+    "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : {
+      "vertexId" : "e2eb696a-b1f4-409d-9c08-181cfe1e96c0",
+      "vertexType" : "DATABASE",
+      "name" : "AGG",
+      "description" : "./",
+      "databaseData" : {
+        "connectorId" : "68b839a4399db1665a31dccd",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"aggregate\",\"databaseName\":\"apiwiz-stage\",\"collection\":\"Users.List\",\"documents\":[{\"$match\":{\"workspaces.workspace._id\":\"qa-dev\"}},{\"$lookup\":{\"from\":\"Users.Sessions.List\",\"let\":{\"userId\":{\"$toString\":\"$_d\"}},\"pipeline\":[{\"$match\":{\"$expr\":{\"$eq\":[\"$userId\",\"$$serId\"]}}},{\"$sort\":{\"loginTimestamp\":-1}},{\"$limit\":1},{\"$project\":{\"loginTimestamp\":1,\"_id\":0}}],\"as\":\"latestSession\"}},{\"$unwind\":{\"path\":\"$latestSession\",\"preserveNullAndEmptyArrays\":true}},{\"$addFields\":{\"latestLoginTimestamp\":\"$latestSession.loginTimestamp\"}},{\"$unset\":[\"latestSession\",\"profileImage\"]}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "data",
+        "connectorName" : "Stage-DB",
+        "tenantName" : "apiwiz-stage",
+        "collectionName" : "Users.List",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "64ace348-a6c0-4a68-a098-434a2657698f" : {
       "vertexId" : "64ace348-a6c0-4a68-a098-434a2657698f",
       "vertexType" : "TARGET",
@@ -87,7 +108,7 @@
             "value" : "DOjEJxFXhC4pNqFX"
           }, {
             "name" : "jsessionid",
-            "value" : "{{jsessionid}}"
+            "value" : "6065ca6f81632102ddd78fa0"
           }, {
             "name" : "origin",
             "value" : "https"
@@ -370,6 +391,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762777968954,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762760271120,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "das"
+  }, {
     "status" : "Review",
     "cts" : 1762760215008,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
