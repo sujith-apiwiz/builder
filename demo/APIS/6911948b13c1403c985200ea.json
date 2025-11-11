@@ -3,7 +3,7 @@
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762837161031,
+  "mts" : 1762837436133,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -41,7 +41,7 @@
       "javascriptData" : {
         "targetVariable" : "data",
         "variableDataType" : "STRING",
-        "javascript" : "var execute = function (input) {\n  console.log(\"Raw input:\", JSON.stringify(input, null, 2));\n\n  // Validate structure\n  if (!input || !Array.isArray(input.data) || input.data.length === 0) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email, value = aggregated user info\n\n  // Helper to format timestamps to readable date\n  function formatDate(timestamp) {\n    if (!timestamp) return '-';\n    var d = new Date(timestamp);\n    return d.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }); // Format in IST\n  }\n\n  input.data.forEach(function (user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || {\n      name: fullName,\n      userId: user.loginId || '-',\n      createdOn: formatDate(user.cts),\n      status: user.userStatus || '-',\n      lastModified: formatDate(user.mts),\n      lastLogin: formatDate(user.latestLoginTimestamp),\n      workspaces: [],\n      roles: []\n    };\n\n    (user.workspaces || []).forEach(function (ws) {\n      var workspaceName = ws.workspace && ws.workspace._id ? ws.workspace._id : '';\n      if (workspaceName && userEntry.workspaces.indexOf(workspaceName) === -1) {\n        userEntry.workspaces.push(workspaceName);\n      }\n\n      (ws.roles || []).forEach(function (role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  console.log(\"Processed userMap:\", JSON.stringify(userMap, null, 2));\n\n  // Build HTML rows\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + u.userId + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + u.workspaces.join(', ') + '</td>' +\n      '<td>' + u.roles.join(', ') + '</td>' +\n      '<td>' + u.status + '</td>' +\n      '<td>' + u.createdOn + '</td>' +\n      '<td>' + u.lastModified + '</td>' +\n      '<td>' + u.lastLogin + '</td>' +\n      '</tr>';\n  }\n\n  // Final HTML Table\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th>' +\n    '<th>User ID</th>' +\n    '<th>Email</th>' +\n    '<th>Workspaces</th>' +\n    '<th>Roles</th>' +\n    '<th>Status</th>' +\n    '<th>Created On</th>' +\n    '<th>Last Modified</th>' +\n    '<th>Last Login</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"9\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};\n",
+        "javascript" : "var execute = function (input) {\n  console.log(\"Raw input:\", JSON.stringify(input, null, 2));\n\n  // Validate structure\n  if (!input || !Array.isArray(input.data) || input.data.length === 0) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email, value = aggregated user info\n\n  // Helper to format timestamps to readable date\n  function formatDate(timestamp) {\n    if (!timestamp) return '-';\n    var d = new Date(timestamp);\n    return d.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }); // Format in IST\n  }\n\n  input.data.forEach(function (user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || {\n      name: fullName,\n      userId: user.loginId || '-',\n      createdOn: formatDate(user.cts),\n      status: user.userStatus || '-',\n      lastModified: formatDate(user.mts),\n      lastLogin: formatDate(user.latestLoginTimestamp),\n      teams: [],\n      roles: []\n    };\n\n    (user.workspaces || []).forEach(function (ws) {\n      // Collect unique team names\n      (ws.teams || []).forEach(function (team) {\n        if (team && team.name && userEntry.teams.indexOf(team.name) === -1) {\n          userEntry.teams.push(team.name);\n        }\n      });\n\n      // Collect unique roles\n      (ws.roles || []).forEach(function (role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  console.log(\"Processed userMap:\", JSON.stringify(userMap, null, 2));\n\n  // Build HTML rows\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + u.userId + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + (u.teams.length ? u.teams.join(', ') : '-') + '</td>' +\n      '<td>' + (u.roles.length ? u.roles.join(', ') : '-') + '</td>' +\n      '<td>' + u.status + '</td>' +\n      '<td>' + u.createdOn + '</td>' +\n      '<td>' + u.lastModified + '</td>' +\n      '<td>' + u.lastLogin + '</td>' +\n      '</tr>';\n  }\n\n  // Final HTML Table\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th>' +\n    '<th>User ID</th>' +\n    '<th>Email</th>' +\n    '<th>Teams</th>' +\n    '<th>Roles</th>' +\n    '<th>Status</th>' +\n    '<th>Created On</th>' +\n    '<th>Last Modified</th>' +\n    '<th>Last Login</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"9\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};\n",
         "variables" : {
           "data" : "{{{data}}}"
         },
@@ -136,13 +136,23 @@
           "rtfValue" : "{{{data}}}"
         },
         "mailProperty" : {
-          "smtpAuth" : false,
-          "connectionTimeOut" : 0,
-          "timeOut" : 0,
-          "writeTimeOut" : 0,
-          "enableStartTLS" : false,
-          "cts" : 0,
-          "mts" : 0
+          "tenantId" : "682b543c5de5a802d2d201be",
+          "mailPort" : "587",
+          "mailHost" : "smtp.gmail.com",
+          "smtpAuth" : true,
+          "userName" : "engineering@apiwiz.com ",
+          "password" : "aeL7IusJOi39zl6ciz1cZMHY2LyHPeDdUtmgr6vycSNQtDDH0k8dAPZG0hTToUXOoWUOPjcoVFfC9gQfy9170N48/fnLdbftsi2W6lcQg50QM9MFNT8MwBhaSkxGN/8q+LfFYY3jw9qul6XTksNnpzTRI8+PHF1hsPg4/M7f9Sl3ggd4zj77AoOtrtBIjZqwcU1viH7nsIho7Uc7iInAvX1Ci5HZ0fIihE4NLIPwhKYLCRiSVkhW37w5U7TjHtPPSzuVVBVcVMdY0Oic0yKEC2DYTQlcK72MnDLubghlTYCWT5foQ5Y5bZ6UYCtdrRqNLqiQXgmeGgKpDJDJRdSx2w==",
+          "connectionTimeOut" : 5000,
+          "timeOut" : 5000,
+          "writeTimeOut" : 5000,
+          "enableStartTLS" : true,
+          "mailFromAddress" : "engineering@apiwiz.com ",
+          "cts" : 1747670076067,
+          "mts" : 1757660032907,
+          "createdBy" : "67e298cbed1ae94ac870b921",
+          "modifiedBy" : "67c562eba649de63bf3835e4",
+          "createdUserName" : "Akshatha sm",
+          "modifiedUserName" : "Akshatha SM"
         },
         "skip" : false,
         "showActualErrorMessage" : false,
@@ -160,6 +170,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762837400200,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762837170335,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
     "status" : "Review",
     "cts" : 1762837127938,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
