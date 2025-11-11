@@ -3,7 +3,7 @@
   "cts" : 1762780170713,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762834314188,
+  "mts" : 1762836342716,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6911e40a13c1403c98521264",
@@ -14,21 +14,22 @@
   "apiMethod" : "POST",
   "path" : "/check-db",
   "pathArray" : [ "check-db" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
       "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "v1" ],
       "0c262447-ca57-4c15-aca9-e94255927c85" : [ "v1" ],
-      "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ]
+      "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ],
+      "39aa3453-0cb7-43d3-a174-376edd5bfd03" : [ "v1" ]
     },
     "outbound" : {
-      "v1" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ],
+      "v1" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "39aa3453-0cb7-43d3-a174-376edd5bfd03", "0c262447-ca57-4c15-aca9-e94255927c85" ],
       "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ],
       "0c262447-ca57-4c15-aca9-e94255927c85" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ]
     },
-    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "0c262447-ca57-4c15-aca9-e94255927c85", "v1" ]
+    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "39aa3453-0cb7-43d3-a174-376edd5bfd03", "0c262447-ca57-4c15-aca9-e94255927c85", "v1" ]
   },
   "vertexHashMap" : {
     "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : {
@@ -74,6 +75,33 @@
           "type" : "json"
         }
       }
+    },
+    "39aa3453-0cb7-43d3-a174-376edd5bfd03" : {
+      "vertexId" : "39aa3453-0cb7-43d3-a174-376edd5bfd03",
+      "vertexType" : "DATABASE",
+      "name" : "db-3",
+      "description" : " ",
+      "databaseData" : {
+        "connectorId" : "6911e3da13c1403c9852124c",
+        "databaseType" : "ORACLEDB",
+        "query" : "select * from EMPLOYEES",
+        "variableName" : "t3",
+        "connectorName" : "oracle",
+        "schemaName" : "SYS",
+        "tableName" : "EMPLOYEES",
+        "queryRequest" : {
+          "tableName" : "EMPLOYEES",
+          "operation" : "SELECT",
+          "selectedFields" : { },
+          "limit" : 0,
+          "offSet" : 0,
+          "top" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "0c262447-ca57-4c15-aca9-e94255927c85" : {
       "vertexId" : "0c262447-ca57-4c15-aca9-e94255927c85",
@@ -127,11 +155,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762836270131,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762834326148,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762780170713,
     "lastModifiedBy" : "Sujith Kumar",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
