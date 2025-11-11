@@ -3,7 +3,7 @@
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762836967913,
+  "mts" : 1762837161031,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -130,7 +130,7 @@
       "description" : "NewEmail",
       "mailConnectorData" : {
         "mailTemplate" : {
-          "toMailIds" : [ "chinmayee.jagadeesh@apiwiz.com" ],
+          "toMailIds" : [ "chinmayee.jagadeesh@apiwiz.com", "madhusudan@apiwiz.com" ],
           "body" : "<p>{{{data}}}</p>\n",
           "subject" : "Users List ",
           "rtfValue" : "{{{data}}}"
@@ -160,6 +160,21 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762837127938,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762837121535,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762836987196,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
     "status" : "Review",
     "cts" : 1762836925443,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
