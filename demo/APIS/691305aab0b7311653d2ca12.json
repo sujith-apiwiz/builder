@@ -3,7 +3,7 @@
   "cts" : 1762854314430,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762861446377,
+  "mts" : 1762861489177,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691305aab0b7311653d2ca11",
@@ -57,7 +57,7 @@
         "connectorName" : "Mongo-DB-Test",
         "tenantName" : "admin",
         "collectionName" : "system.version",
-        "skip" : false,
+        "skip" : true,
         "showActualErrorMessage" : false
       },
       "imported" : false,
@@ -100,6 +100,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762861480983,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762861452583,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1762861436876,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
