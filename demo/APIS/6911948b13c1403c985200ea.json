@@ -3,7 +3,7 @@
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762834693450,
+  "mts" : 1762836967913,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -136,23 +136,13 @@
           "rtfValue" : "{{{data}}}"
         },
         "mailProperty" : {
-          "tenantId" : "682b543c5de5a802d2d201be",
-          "mailPort" : "587",
-          "mailHost" : "smtp.gmail.com",
-          "smtpAuth" : true,
-          "userName" : "engineering@apiwiz.com ",
-          "password" : "aeL7IusJOi39zl6ciz1cZMHY2LyHPeDdUtmgr6vycSNQtDDH0k8dAPZG0hTToUXOoWUOPjcoVFfC9gQfy9170N48/fnLdbftsi2W6lcQg50QM9MFNT8MwBhaSkxGN/8q+LfFYY3jw9qul6XTksNnpzTRI8+PHF1hsPg4/M7f9Sl3ggd4zj77AoOtrtBIjZqwcU1viH7nsIho7Uc7iInAvX1Ci5HZ0fIihE4NLIPwhKYLCRiSVkhW37w5U7TjHtPPSzuVVBVcVMdY0Oic0yKEC2DYTQlcK72MnDLubghlTYCWT5foQ5Y5bZ6UYCtdrRqNLqiQXgmeGgKpDJDJRdSx2w==",
-          "connectionTimeOut" : 5000,
-          "timeOut" : 5000,
-          "writeTimeOut" : 5000,
-          "enableStartTLS" : true,
-          "mailFromAddress" : "engineering@apiwiz.com ",
-          "cts" : 1747670076067,
-          "mts" : 1757660032907,
-          "createdBy" : "67e298cbed1ae94ac870b921",
-          "modifiedBy" : "67c562eba649de63bf3835e4",
-          "createdUserName" : "Akshatha sm",
-          "modifiedUserName" : "Akshatha SM"
+          "smtpAuth" : false,
+          "connectionTimeOut" : 0,
+          "timeOut" : 0,
+          "writeTimeOut" : 0,
+          "enableStartTLS" : false,
+          "cts" : 0,
+          "mts" : 0
         },
         "skip" : false,
         "showActualErrorMessage" : false,
@@ -170,6 +160,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762836925443,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762834713803,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
     "status" : "Review",
     "cts" : 1762777968954,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
