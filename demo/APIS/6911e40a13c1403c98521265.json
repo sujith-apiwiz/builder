@@ -3,7 +3,7 @@
   "cts" : 1762780170713,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762836342716,
+  "mts" : 1762836379370,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6911e40a13c1403c98521264",
@@ -22,14 +22,15 @@
       "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "v1" ],
       "0c262447-ca57-4c15-aca9-e94255927c85" : [ "v1" ],
       "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ],
-      "39aa3453-0cb7-43d3-a174-376edd5bfd03" : [ "v1" ]
+      "39aa3453-0cb7-43d3-a174-376edd5bfd03" : [ "v1" ],
+      "5fe06681-7399-4e80-810e-6eb6a108a4b9" : [ "v1" ]
     },
     "outbound" : {
-      "v1" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "39aa3453-0cb7-43d3-a174-376edd5bfd03", "0c262447-ca57-4c15-aca9-e94255927c85" ],
+      "v1" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "39aa3453-0cb7-43d3-a174-376edd5bfd03", "5fe06681-7399-4e80-810e-6eb6a108a4b9", "0c262447-ca57-4c15-aca9-e94255927c85" ],
       "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ],
       "0c262447-ca57-4c15-aca9-e94255927c85" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ]
     },
-    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "39aa3453-0cb7-43d3-a174-376edd5bfd03", "0c262447-ca57-4c15-aca9-e94255927c85", "v1" ]
+    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "39aa3453-0cb7-43d3-a174-376edd5bfd03", "5fe06681-7399-4e80-810e-6eb6a108a4b9", "0c262447-ca57-4c15-aca9-e94255927c85", "v1" ]
   },
   "vertexHashMap" : {
     "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : {
@@ -86,6 +87,33 @@
         "databaseType" : "ORACLEDB",
         "query" : "select * from EMPLOYEES",
         "variableName" : "t3",
+        "connectorName" : "oracle",
+        "schemaName" : "SYS",
+        "tableName" : "EMPLOYEES",
+        "queryRequest" : {
+          "tableName" : "EMPLOYEES",
+          "operation" : "SELECT",
+          "selectedFields" : { },
+          "limit" : 0,
+          "offSet" : 0,
+          "top" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "5fe06681-7399-4e80-810e-6eb6a108a4b9" : {
+      "vertexId" : "5fe06681-7399-4e80-810e-6eb6a108a4b9",
+      "vertexType" : "DATABASE",
+      "name" : "d4",
+      "description" : " ",
+      "databaseData" : {
+        "connectorId" : "6911e3da13c1403c9852124c",
+        "databaseType" : "ORACLEDB",
+        "query" : "select * from EMPLOYEES",
+        "variableName" : "t4",
         "connectorName" : "oracle",
         "schemaName" : "SYS",
         "tableName" : "EMPLOYEES",
