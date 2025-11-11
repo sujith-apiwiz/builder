@@ -1,0 +1,176 @@
+{
+  "id" : "6912b7b913c1403c985213c0",
+  "cts" : 1762834360448,
+  "createdUserName" : "Sujith Kumar",
+  "modifiedUserName" : "Sujith Kumar",
+  "mts" : 1762834400843,
+  "createdBy" : "67a0969408a0e559a5309912",
+  "modifiedBy" : "67a0969408a0e559a5309912",
+  "proxyId" : "6912b7b813c1403c985213be",
+  "revision" : 1,
+  "name" : "check-db-11-11-2025 04:12:40",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/check-db",
+  "pathArray" : [ "check-db" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Sujith Kumar",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ],
+      "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" ],
+      "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" : [ "v1" ],
+      "21241333-e9b2-44ab-a85a-3b46e34f9413" : [ "v1" ],
+      "0c262447-ca57-4c15-aca9-e94255927c85" : [ "21241333-e9b2-44ab-a85a-3b46e34f9413" ]
+    },
+    "outbound" : {
+      "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ],
+      "0c262447-ca57-4c15-aca9-e94255927c85" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ],
+      "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" ],
+      "v1" : [ "21241333-e9b2-44ab-a85a-3b46e34f9413", "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" ],
+      "21241333-e9b2-44ab-a85a-3b46e34f9413" : [ "0c262447-ca57-4c15-aca9-e94255927c85" ]
+    },
+    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "21241333-e9b2-44ab-a85a-3b46e34f9413", "0c262447-ca57-4c15-aca9-e94255927c85", "v1", "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" ]
+  },
+  "vertexHashMap" : {
+    "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : {
+      "vertexId" : "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5",
+      "vertexType" : "DATABASE",
+      "name" : "db-1",
+      "description" : "db-1",
+      "databaseData" : {
+        "connectorId" : "6911e3da13c1403c9852124c",
+        "databaseType" : "ORACLEDB",
+        "query" : "select * from EMPLOYEES",
+        "variableName" : "target-1",
+        "connectorName" : "oracle",
+        "schemaName" : "SYS",
+        "tableName" : "ACCESS$",
+        "queryRequest" : {
+          "tableName" : "ACCESS$",
+          "operation" : "SELECT",
+          "selectedFields" : { },
+          "limit" : 0,
+          "offSet" : 0,
+          "top" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : {
+      "vertexId" : "f5c7ac8f-c46a-4c9c-b20c-def5458f7852",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{{{target-1}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "21241333-e9b2-44ab-a85a-3b46e34f9413" : {
+      "vertexId" : "21241333-e9b2-44ab-a85a-3b46e34f9413",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 2,
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "0c262447-ca57-4c15-aca9-e94255927c85" : {
+      "vertexId" : "0c262447-ca57-4c15-aca9-e94255927c85",
+      "vertexType" : "DATABASE",
+      "name" : "db-2",
+      "description" : "db-2",
+      "databaseData" : {
+        "connectorId" : "6911e3da13c1403c9852124c",
+        "databaseType" : "ORACLEDB",
+        "query" : "select * from EMPLOYEES",
+        "variableName" : "target-2",
+        "connectorName" : "oracle",
+        "schemaName" : "SYS",
+        "tableName" : "EMPLOYEES",
+        "queryRequest" : {
+          "tableName" : "EMPLOYEES",
+          "operation" : "SELECT",
+          "selectedFields" : { },
+          "limit" : 0,
+          "offSet" : 0,
+          "top" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" : {
+      "vertexId" : "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 2,
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1762834360448,
+    "lastModifiedBy" : "Sujith Kumar",
+    "description" : "Duplicated proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
