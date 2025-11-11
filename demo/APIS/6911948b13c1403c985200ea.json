@@ -2,10 +2,10 @@
   "id" : "6911948b13c1403c985200ea",
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
-  "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762838675771,
+  "modifiedUserName" : "divakar v",
+  "mts" : 1762850866688,
   "createdBy" : "67c562eba649de63bf3835e4",
-  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "63cf749921c7bb55c7368952",
   "proxyId" : "690c661d6952e12772f00426",
   "revision" : 2,
   "name" : "UsersList",
@@ -16,7 +16,7 @@
   "pathArray" : [ "userslist" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
-  "lockedBy" : "Akshatha SM",
+  "lockedBy" : "divakar v",
   "nodeDataHashMap" : {
     "inbound" : {
       "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "v1" ],
@@ -43,10 +43,9 @@
       "javascriptData" : {
         "targetVariable" : "data",
         "variableDataType" : "STRING",
-        "javascript" : "var execute = function (input) {\n  console.log(\"Raw input:\", JSON.stringify(input, null, 2));\n\n  // Validate structure\n  if (\n    !input ||\n    !Array.isArray(input.data) ||\n    input.data.length === 0\n  ) {\n    return '<p>No user data available</p>';\n  }\n\n  var users = input.data || [];\n  var teams = input.teams || [];\n  var userMap = {}; // key = email, value = aggregated user info\n\n  // Helper to format timestamps\n  function formatDate(timestamp) {\n    if (!timestamp) return '-';\n    var d = new Date(timestamp);\n    return d.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });\n  }\n\n  // Step 1: Process users\n  users.forEach(function (user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || {\n      name: fullName,\n      userId: user.loginId || '-',\n      createdOn: formatDate(user.cts),\n      status: user.userStatus || '-',\n      lastModified: formatDate(user.mts),\n      lastLogin: formatDate(user.latestLoginTimestamp),\n      workspaces: [],\n      roles: [],\n      teams: [] // new field for team names\n    };\n\n    (user.workspaces || []).forEach(function (ws) {\n      var workspaceName = ws.workspace && ws.workspace._id ? ws.workspace._id : '';\n      if (workspaceName && userEntry.workspaces.indexOf(workspaceName) === -1) {\n        userEntry.workspaces.push(workspaceName);\n      }\n\n      (ws.roles || []).forEach(function (role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // Step 2: Match users to teams\n  teams.forEach(function (team) {\n    (team.contacts || []).forEach(function (contact) {\n      var email = contact.email || '';\n      if (email && userMap[email]) {\n        if (userMap[email].teams.indexOf(team.displayName || team.name) === -1) {\n          userMap[email].teams.push(team.displayName || team.name);\n        }\n\n        // Add contact roles if not already present\n        (contact.role || []).forEach(function (r) {\n          if (userMap[email].roles.indexOf(r) === -1) {\n            userMap[email].roles.push(r);\n          }\n        });\n      }\n    });\n  });\n\n  console.log(\"Processed userMap:\", JSON.stringify(userMap, null, 2));\n\n  // Step 3: Build HTML\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + u.userId + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + u.teams.join(', ') + '</td>' +\n      '<td>' + u.roles.join(', ') + '</td>' +\n      '<td>' + u.status + '</td>' +\n      '<td>' + u.createdOn + '</td>' +\n      '<td>' + u.lastModified + '</td>' +\n      '<td>' + u.lastLogin + '</td>' +\n      '</tr>';\n  }\n\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th>' +\n    '<th>User ID</th>' +\n    '<th>Email</th>' +\n    '<th>Teams</th>' +\n    '<th>Roles</th>' +\n    '<th>Status</th>' +\n    '<th>Created On</th>' +\n    '<th>Last Modified</th>' +\n    '<th>Last Login</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"10\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};\n",
+        "javascript" : "var execute = function (input) {\n  console.log(\"Raw input:\", JSON.stringify(input, null, 2));\n\n  // Validate structure\n  if (!input || !Array.isArray(input.data) || input.data.length === 0) {\n    return '<p>No user data available</p>';\n  }\n\n  var users = input.data || [];\n  var teams = input.teams || [];\n  var userMap = {}; // key = email, value = aggregated user info\n\n  // Helper to format timestamps\n  function formatDate(timestamp) {\n    if (!timestamp) return '-';\n    var d = new Date(timestamp);\n    return d.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });\n  }\n\n  // Step 1: Process users\n  users.forEach(function (user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var userId = user.loginId || '';\n    if (!userId) return; // skip users without userId\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || {\n      name: fullName,\n      userId: userId,\n      createdOn: formatDate(user.cts),\n      status: user.userStatus || '-',\n      lastModified: formatDate(user.mts),\n      lastLogin: formatDate(user.latestLoginTimestamp),\n      roles: [],\n      teams: []\n    };\n\n    (user.workspaces || []).forEach(function (ws) {\n      (ws.roles || []).forEach(function (role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // Step 2: Match users to teams\n  teams.forEach(function (team) {\n    (team.contacts || []).forEach(function (contact) {\n      var email = contact.email || '';\n      if (email && userMap[email]) {\n        if (userMap[email].teams.indexOf(team.displayName || team.name) === -1) {\n          userMap[email].teams.push(team.displayName || team.name);\n        }\n\n        // Merge contact roles\n        (contact.role || []).forEach(function (r) {\n          if (userMap[email].roles.indexOf(r) === -1) {\n            userMap[email].roles.push(r);\n          }\n        });\n      }\n    });\n  });\n\n  console.log(\"Processed userMap:\", JSON.stringify(userMap, null, 2));\n\n  // Step 3: Build HTML (without workspace column)\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + u.userId + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + u.teams.join(', ') + '</td>' +\n      '<td>' + u.roles.join(', ') + '</td>' +\n      '<td>' + u.status + '</td>' +\n      '<td>' + u.createdOn + '</td>' +\n      '<td>' + u.lastModified + '</td>' +\n      '<td>' + u.lastLogin + '</td>' +\n      '</tr>';\n  }\n\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th>' +\n    '<th>User ID</th>' +\n    '<th>Email</th>' +\n    '<th>Teams</th>' +\n    '<th>Roles</th>' +\n    '<th>Status</th>' +\n    '<th>Created On</th>' +\n    '<th>Last Modified</th>' +\n    '<th>Last Login</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"9\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};\n",
         "variables" : {
-          "data" : "{{{data}}}",
-          "teams" : "{{{teams}}}"
+          "data" : "{{{message}}}"
         },
         "skip" : false,
         "showActualErrorMessage" : false,
@@ -193,6 +192,26 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1762850837646,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762850599779,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : ",."
+  }, {
+    "status" : "Review",
+    "cts" : 1762850580883,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "./"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762838694063,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
+    "status" : "Review",
     "cts" : 1762838165631,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
     "description" : "Proxy undeploy"
@@ -272,6 +291,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deployed" : false,
-  "deleted" : false
+  "deleted" : false,
+  "deployed" : false
 }
