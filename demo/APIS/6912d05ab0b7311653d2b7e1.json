@@ -2,10 +2,10 @@
   "id" : "6912d05ab0b7311653d2b7e1",
   "cts" : 1762840666730,
   "createdUserName" : "sujith dummy",
-  "modifiedUserName" : "sujith dummy",
-  "mts" : 1762840695023,
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1762846794304,
   "createdBy" : "68b155aa5c84b24ba6e0da23",
-  "modifiedBy" : "68b155aa5c84b24ba6e0da23",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6912d05ab0b7311653d2b7e0",
   "revision" : 1,
   "name" : "ParentFlow-DontDelete",
@@ -16,15 +16,17 @@
   "pathArray" : [ "parent-flow" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "sujith dummy",
+  "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "562c2968-7ba4-4168-a855-90f8dbfea525" : [ "v1" ]
+      "1f11a79f-8fa8-49aa-89b8-8cdd912579aa" : [ "v1" ],
+      "562c2968-7ba4-4168-a855-90f8dbfea525" : [ "1f11a79f-8fa8-49aa-89b8-8cdd912579aa" ]
     },
     "outbound" : {
-      "v1" : [ "562c2968-7ba4-4168-a855-90f8dbfea525" ]
+      "v1" : [ "1f11a79f-8fa8-49aa-89b8-8cdd912579aa" ],
+      "1f11a79f-8fa8-49aa-89b8-8cdd912579aa" : [ "562c2968-7ba4-4168-a855-90f8dbfea525" ]
     },
-    "allNeighbours" : [ "562c2968-7ba4-4168-a855-90f8dbfea525", "v1" ]
+    "allNeighbours" : [ "562c2968-7ba4-4168-a855-90f8dbfea525", "v1", "1f11a79f-8fa8-49aa-89b8-8cdd912579aa" ]
   },
   "vertexHashMap" : {
     "562c2968-7ba4-4168-a855-90f8dbfea525" : {
@@ -62,6 +64,25 @@
           }
         }
       }
+    },
+    "1f11a79f-8fa8-49aa-89b8-8cdd912579aa" : {
+      "vertexId" : "1f11a79f-8fa8-49aa-89b8-8cdd912579aa",
+      "vertexType" : "DATABASE",
+      "name" : "ASD",
+      "description" : "ASD",
+      "databaseData" : {
+        "connectorId" : "6911d16013c1403c98520f3e",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"insert\",\"databaseName\":\"apiwiz-stage\",\"collection\":\"Users.List\",\"documents\":[{\"_id\":\"\",\"$unset\":[],\"$addFields\":{\"latestLoginTimestamp\":\"\"},\"$unwind\":{\"path\":\"\",\"preserveNullAndEmptyArrays\":\"\"},\"$lookup\":{\"from\":\"\",\"let\":{\"userId\":{\"$toString\":\"\"}},\"pipeline\":[{\"$match\":{\"$expr\":{\"$eq\":[]}}}],\"as\":\"\"},\"$match\":{\"workspaces.workspace._id\":\"\"},\"loginId\":\"\",\"email\":\"\",\"password\":\"\",\"passwordLastChangedDate\":\"\",\"isServiceAccount\":\"\",\"lastName\":\"\",\"firstName\":\"\",\"userStatus\":\"\",\"workspaces\":[{\"roles\":[],\"workspace\":{\"_id\":\"\",\"planId\":\"\",\"status\":\"\",\"tenant\":\"\",\"key\":\"\",\"seats\":\"\",\"paymentSchedule\":\"\",\"trialPeriod\":\"\",\"isTrial\":\"\",\"expiresOn\":\"\",\"licenceKey\":\"\",\"ssoEnabled\":\"\",\"overrideIdPRoles\":\"\",\"twoFactorAuthEnabled\":\"\",\"cts\":\"\",\"mts\":\"\",\"ssoHost\":\"\",\"ssoPath\":\"\",\"devPortalSSOHost\":\"\",\"idpProvider\":\"\",\"passwordExpiryDays\":\"\",\"passwordExpiryAlertDays\":\"\",\"invalidPasswordMaxRetries\":\"\",\"allowMultipleLoginSessions\":\"\",\"twoFactorTimeLimit\":\"\",\"twoFactorOTPLength\":\"\",\"twoFactorOTPRetryCount\":\"\"},\"userType\":\"\",\"acceptInvite\":\"\",\"active\":\"\",\"lastLoginTs\":\"\",\"createdUserName\":\"\",\"cts\":\"\"}],\"userCount\":\"\",\"subscribeNewsLetter\":\"\",\"invited\":\"\",\"cts\":\"\",\"mts\":\"\",\"_class\":\"\",\"workPhone\":\"\",\"company\":\"\",\"profileImage\":\"\",\"createdUserName\":\"\",\"createdBy\":\"\",\"modifiedUserName\":\"\",\"modifiedBy\":\"\",\"passwordHistory\":[],\"passwordExpiryAlertSentAt\":\"\",\"passwordExpiredLoggedAt\":\"\",\"userId\":\"\"}],\"updates\":[],\"pipelines\":[{\"$match\":{\"status\":\"TESTED\"}},{\"$facet\":{\"deploymentFacet\":[{\"$group\":{\"_id\":\"$deploymentAccess.name\",\"count\":{\"$sum\":1}}},{\"$sort\":{\"count\":-1}},{\"$limit\":5}],\"tlsSettingsFacet\":[{\"$group\":{\"_id\":\"$tlsSettings.tlsMode\",\"totalCertificates\":{\"$sum\":1},\"avgPort\":{\"$avg\":\"$port\"}}}],\"statusHistoryFacet\":[{\"$unwind\":\"$statusHistory\"},{\"$group\":{\"_id\":\"$statusHistory.status\",\"count\":{\"$sum\":1}}}]}},{\"$project\":{\"deploymentFacet\":1,\"tlsSettingsFacet\":1,\"statusHistoryFacet\":1}}],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "ASDD",
+        "connectorName" : "STAGE",
+        "tenantName" : "apiwiz-stage",
+        "collectionName" : "Users.List",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
