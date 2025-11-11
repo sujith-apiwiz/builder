@@ -3,7 +3,7 @@
   "cts" : 1762834360448,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762834400843,
+  "mts" : 1762834495800,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "6912b7b813c1403c985213be",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "POST",
-  "path" : "/check-db",
-  "pathArray" : [ "check-db" ],
+  "path" : "/v1/check-db",
+  "pathArray" : [ "v1", "check-db" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
@@ -21,8 +21,8 @@
     "inbound" : {
       "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ],
       "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" ],
-      "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" : [ "v1" ],
       "21241333-e9b2-44ab-a85a-3b46e34f9413" : [ "v1" ],
+      "95481bc3-67a4-4fe0-a25f-a1d1e4eede8e" : [ "v1" ],
       "0c262447-ca57-4c15-aca9-e94255927c85" : [ "21241333-e9b2-44ab-a85a-3b46e34f9413" ]
     },
     "outbound" : {
@@ -157,6 +157,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1762834486129,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Approved",
+    "cts" : 1762834405159,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762834360448,
     "lastModifiedBy" : "Sujith Kumar",
