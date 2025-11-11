@@ -1,0 +1,670 @@
+{
+  "id" : "6912cfe4b0b7311653d2b7c3",
+  "cts" : 1762840548162,
+  "createdUserName" : "Varun Margam",
+  "modifiedUserName" : "Varun Margam",
+  "mts" : 1762840548162,
+  "createdBy" : "69113443bed8af2973fe6911",
+  "modifiedBy" : "69113443bed8af2973fe6911",
+  "proxyId" : "6912cfe4b0b7311653d2b7c2",
+  "revision" : 1,
+  "name" : "Auto Loan Approval ",
+  "description" : "A customer applies for a loan, and the bank needs to verify creditworthiness, income, and assess risk before approving the loan.\n",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/v1/loan/approve",
+  "pathArray" : [ "v1", "loan", "approve" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Varun Margam",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "4ff29732-7293-492d-957b-ac5007ecae09" : [ "3fd036c4-465e-42a0-95f9-2e7ccc3e43fd" ],
+      "2c4863cb-5906-4451-a1e5-5abbb05f2d7f" : [ "084c4ffd-8610-4624-a476-5964881a840e" ],
+      "701110ad-e043-41af-8b74-e2958190ef21" : [ "a7ba7edd-2835-4fd5-ab82-1b00dc368731" ],
+      "505e8edb-46a1-406f-be82-59a61c6709ed" : [ "v1" ],
+      "89bd6a0e-1129-4e31-b94e-a75b72ca25dc" : [ "505e8edb-46a1-406f-be82-59a61c6709ed" ],
+      "e3b02622-693a-4769-b9ba-2a1c815380f1" : [ "575ea65e-aa98-4639-9fb1-7c6c1ae42c19" ],
+      "084c4ffd-8610-4624-a476-5964881a840e" : [ "701110ad-e043-41af-8b74-e2958190ef21" ],
+      "88ccbc43-f83b-4f97-bd7c-cc9e26828d3c" : [ "37333df7-76b6-4b2b-b49a-86d598f7b995" ],
+      "37333df7-76b6-4b2b-b49a-86d598f7b995" : [ "a7ba7edd-2835-4fd5-ab82-1b00dc368731" ],
+      "22622c67-ad7a-469f-ad4c-c821e708a095" : [ "575ea65e-aa98-4639-9fb1-7c6c1ae42c19" ],
+      "575ea65e-aa98-4639-9fb1-7c6c1ae42c19" : [ "89bd6a0e-1129-4e31-b94e-a75b72ca25dc" ],
+      "3fd036c4-465e-42a0-95f9-2e7ccc3e43fd" : [ "22622c67-ad7a-469f-ad4c-c821e708a095" ],
+      "a7ba7edd-2835-4fd5-ab82-1b00dc368731" : [ "4ff29732-7293-492d-957b-ac5007ecae09" ]
+    },
+    "outbound" : {
+      "4ff29732-7293-492d-957b-ac5007ecae09" : [ "a7ba7edd-2835-4fd5-ab82-1b00dc368731" ],
+      "701110ad-e043-41af-8b74-e2958190ef21" : [ "084c4ffd-8610-4624-a476-5964881a840e" ],
+      "89bd6a0e-1129-4e31-b94e-a75b72ca25dc" : [ "575ea65e-aa98-4639-9fb1-7c6c1ae42c19" ],
+      "505e8edb-46a1-406f-be82-59a61c6709ed" : [ "89bd6a0e-1129-4e31-b94e-a75b72ca25dc" ],
+      "084c4ffd-8610-4624-a476-5964881a840e" : [ "2c4863cb-5906-4451-a1e5-5abbb05f2d7f" ],
+      "37333df7-76b6-4b2b-b49a-86d598f7b995" : [ "88ccbc43-f83b-4f97-bd7c-cc9e26828d3c" ],
+      "22622c67-ad7a-469f-ad4c-c821e708a095" : [ "3fd036c4-465e-42a0-95f9-2e7ccc3e43fd" ],
+      "v1" : [ "505e8edb-46a1-406f-be82-59a61c6709ed" ],
+      "575ea65e-aa98-4639-9fb1-7c6c1ae42c19" : [ "e3b02622-693a-4769-b9ba-2a1c815380f1", "22622c67-ad7a-469f-ad4c-c821e708a095" ],
+      "3fd036c4-465e-42a0-95f9-2e7ccc3e43fd" : [ "4ff29732-7293-492d-957b-ac5007ecae09" ],
+      "a7ba7edd-2835-4fd5-ab82-1b00dc368731" : [ "701110ad-e043-41af-8b74-e2958190ef21", "37333df7-76b6-4b2b-b49a-86d598f7b995" ]
+    },
+    "allNeighbours" : [ "2c4863cb-5906-4451-a1e5-5abbb05f2d7f", "701110ad-e043-41af-8b74-e2958190ef21", "505e8edb-46a1-406f-be82-59a61c6709ed", "e3b02622-693a-4769-b9ba-2a1c815380f1", "88ccbc43-f83b-4f97-bd7c-cc9e26828d3c", "37333df7-76b6-4b2b-b49a-86d598f7b995", "575ea65e-aa98-4639-9fb1-7c6c1ae42c19", "a7ba7edd-2835-4fd5-ab82-1b00dc368731", "4ff29732-7293-492d-957b-ac5007ecae09", "89bd6a0e-1129-4e31-b94e-a75b72ca25dc", "084c4ffd-8610-4624-a476-5964881a840e", "22622c67-ad7a-469f-ad4c-c821e708a095", "v1", "3fd036c4-465e-42a0-95f9-2e7ccc3e43fd" ]
+  },
+  "vertexHashMap" : {
+    "2c4863cb-5906-4451-a1e5-5abbb05f2d7f" : {
+      "vertexId" : "2c4863cb-5906-4451-a1e5-5abbb05f2d7f",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"Response\":\"Your Loan application has been Rejected - aplicationId\"{{applicationId}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "701110ad-e043-41af-8b74-e2958190ef21" : {
+      "vertexId" : "701110ad-e043-41af-8b74-e2958190ef21",
+      "vertexType" : "TARGET",
+      "name" : "Reject Loan",
+      "target" : {
+        "name" : "Reject Loan",
+        "description" : "Reject Loan",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/loan/reject/{{applicationId}}",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "505e8edb-46a1-406f-be82-59a61c6709ed" : {
+      "vertexId" : "505e8edb-46a1-406f-be82-59a61c6709ed",
+      "vertexType" : "AUTHENTICATION",
+      "name" : "Authenticate",
+      "target" : {
+        "name" : "Authenticate",
+        "description" : "Verify customer identity.",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/v1/authenticate",
+          "headerParams" : [ {
+            "name" : "enableTracing",
+            "value" : "{{tracing}}"
+          }, {
+            "name" : "deviateResponse",
+            "value" : "{{deviate}} "
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n    {{requestData}}\n    }",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "authenticationResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "e3b02622-693a-4769-b9ba-2a1c815380f1" : {
+      "vertexId" : "e3b02622-693a-4769-b9ba-2a1c815380f1",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 400,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"error\":\"Loan Application is Rejected\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "88ccbc43-f83b-4f97-bd7c-cc9e26828d3c" : {
+      "vertexId" : "88ccbc43-f83b-4f97-bd7c-cc9e26828d3c",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\"Response\":\"Your Loan application has been approved-aplicationId\",\"applcationId\":{{applicationId}}}",
+          "type" : "json"
+        }
+      }
+    },
+    "37333df7-76b6-4b2b-b49a-86d598f7b995" : {
+      "vertexId" : "37333df7-76b6-4b2b-b49a-86d598f7b995",
+      "vertexType" : "TARGET",
+      "name" : "sendNotification",
+      "target" : {
+        "name" : "sendNotification",
+        "description" : "Send Notification",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/v1/notifications",
+          "headerParams" : [ {
+            "name" : "deviateResponse",
+            "value" : "{{deviate}}"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{IncomeResponse}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "notificationResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "575ea65e-aa98-4639-9fb1-7c6c1ae42c19" : {
+      "vertexId" : "575ea65e-aa98-4639-9fb1-7c6c1ae42c19",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "NOT_EQUAL_TO",
+            "key" : "loanStatus",
+            "value" : "Rejected",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "22622c67-ad7a-469f-ad4c-c821e708a095" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "e3b02622-693a-4769-b9ba-2a1c815380f1" ]
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "a7ba7edd-2835-4fd5-ab82-1b00dc368731" : {
+      "vertexId" : "a7ba7edd-2835-4fd5-ab82-1b00dc368731",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "loanapproval",
+            "value" : "true",
+            "valueDataType" : "BOOLEAN"
+          } ],
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 500,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "37333df7-76b6-4b2b-b49a-86d598f7b995" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "701110ad-e043-41af-8b74-e2958190ef21" ]
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "4ff29732-7293-492d-957b-ac5007ecae09" : {
+      "vertexId" : "4ff29732-7293-492d-957b-ac5007ecae09",
+      "vertexType" : "TARGET",
+      "name" : "GetProfileRisk",
+      "target" : {
+        "name" : "GetProfileRisk",
+        "description" : "GetProfileRisk",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/v1/risk-assessment",
+          "headerParams" : [ {
+            "name" : "enableTracing",
+            "value" : "{{tracing}}"
+          }, {
+            "name" : "deviateResponse",
+            "value" : "{{deviate}}"
+          }, {
+            "name" : "Content-Type",
+            "value" : "application/json"
+          } ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{{{IncomeResponse}}}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "loanapproval",
+            "reference" : "body",
+            "value" : "$.Approved",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "89bd6a0e-1129-4e31-b94e-a75b72ca25dc" : {
+      "vertexId" : "89bd6a0e-1129-4e31-b94e-a75b72ca25dc",
+      "vertexType" : "TARGET",
+      "name" : "Submit for Approval",
+      "target" : {
+        "name" : "Submit for Approval",
+        "description" : "Submit and track the loan application.",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/v1/loans/approve/{{applicationId}}",
+          "headerParams" : [ {
+            "name" : "enableTracing",
+            "value" : "{{tracing}}"
+          }, {
+            "name" : "deviateResponse",
+            "value" : "{{deviate}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "loanResponse ",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "loanStatus",
+            "reference" : "body",
+            "value" : "$.status",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          }, {
+            "name" : "SSN",
+            "reference" : "body",
+            "value" : "$.SSN",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "084c4ffd-8610-4624-a476-5964881a840e" : {
+      "vertexId" : "084c4ffd-8610-4624-a476-5964881a840e",
+      "vertexType" : "TARGET",
+      "name" : "sendNotification",
+      "target" : {
+        "name" : "sendNotification",
+        "description" : "Send Notification",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/v1/notifications",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "body" : {
+            "data" : "{\n\t\"notificationType\": \"string\",\n\t\"message\": \"string\",\n\t\"recipient\": \"string\"\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "22622c67-ad7a-469f-ad4c-c821e708a095" : {
+      "vertexId" : "22622c67-ad7a-469f-ad4c-c821e708a095",
+      "vertexType" : "TARGET",
+      "name" : "GetCreditScore",
+      "target" : {
+        "name" : "GetCreditScore",
+        "description" : "Get Credit Score",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/v1/credit-score/{{SSN}}",
+          "headerParams" : [ {
+            "name" : "enableTracing",
+            "value" : "{{tracing}}"
+          }, {
+            "name" : "deviateResponse",
+            "value" : "{{deviate}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "creditScore",
+            "reference" : "body",
+            "value" : "$.creditScore",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Start",
+      "requestVariables" : [ {
+        "name" : "tracing",
+        "reference" : "headers",
+        "value" : "enableTracing",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "deviate",
+        "reference" : "headers",
+        "value" : "deviateResponse",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "requestData ",
+        "reference" : "body",
+        "value" : "$",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      }, {
+        "name" : "applicationId",
+        "reference" : "body",
+        "value" : "$.customerId",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "useEnforcedRules" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false
+      }
+    },
+    "3fd036c4-465e-42a0-95f9-2e7ccc3e43fd" : {
+      "vertexId" : "3fd036c4-465e-42a0-95f9-2e7ccc3e43fd",
+      "vertexType" : "TARGET",
+      "name" : "GetIncomeValue",
+      "target" : {
+        "name" : "GetIncomeValue",
+        "description" : "Get income value by Social Security Number",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "http",
+          "host" : "{{host}}",
+          "path" : "/v1/income-verification/{{SSN}}",
+          "headerParams" : [ {
+            "name" : "enableTracing",
+            "value" : "{{tracing}}"
+          }, {
+            "name" : "deviateResponse",
+            "value" : "{{deviate}}"
+          }, {
+            "name" : "SSN",
+            "value" : "{{SSN}}"
+          } ],
+          "queryParams" : [ ],
+          "body" : { },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 200,
+          "variables" : [ {
+            "name" : "IncomeResponse",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1762840548162,
+    "lastModifiedBy" : "Varun Margam",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "developer",
+  "environmentId" : "66fe733e5b8c4541af925658",
+  "enableLogging" : false,
+  "deleted" : false,
+  "deployed" : false
+}
