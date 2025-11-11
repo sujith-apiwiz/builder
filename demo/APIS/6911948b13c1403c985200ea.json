@@ -3,7 +3,7 @@
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762833238557,
+  "mts" : 1762833963797,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -20,21 +20,17 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "v1" ],
-      "64ace348-a6c0-4a68-a098-434a2657698f" : [ "b43b852b-474e-406a-ba26-21872f878450" ],
-      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
       "f70b0ad6-a03d-4132-9e57-ec9cfe557108" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
-      "b43b852b-474e-406a-ba26-21872f878450" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ]
+      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ]
     },
     "outbound" : {
       "v1" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ],
-      "b43b852b-474e-406a-ba26-21872f878450" : [ "64ace348-a6c0-4a68-a098-434a2657698f" ],
-      "64ace348-a6c0-4a68-a098-434a2657698f" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "f70b0ad6-a03d-4132-9e57-ec9cfe557108" ],
-      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "b43b852b-474e-406a-ba26-21872f878450" ]
+      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ]
     },
-    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "e2eb696a-b1f4-409d-9c08-181cfe1e96c0", "64ace348-a6c0-4a68-a098-434a2657698f", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620", "b43b852b-474e-406a-ba26-21872f878450" ]
+    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "e2eb696a-b1f4-409d-9c08-181cfe1e96c0", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
   },
   "vertexHashMap" : {
     "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : {
@@ -45,9 +41,9 @@
       "javascriptData" : {
         "targetVariable" : "data",
         "variableDataType" : "STRING",
-        "javascript" : "var execute = function(input) {\n  if (!input || !input.data || !input.data.users) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email, value = aggregated user info\n\n  input.data.users.forEach(function(user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || { name: fullName, teams: [], roles: [] };\n\n    (user.workspaces || []).forEach(function(ws) {\n      (ws.teams || []).forEach(function(team) {\n        if (team && team.name && userEntry.teams.indexOf(team.name) === -1) {\n          userEntry.teams.push(team.name);\n        }\n      });\n      (ws.roles || []).forEach(function(role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // Build HTML rows\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + u.teams.join(', ') + '</td>' +\n      '<td>' + u.roles.join(', ') + '</td>' +\n      '</tr>';\n  }\n\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th><th>Email</th><th>Teams</th><th>Roles</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"4\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};",
+        "javascript" : "var execute = function (input) {\n  console.log(\"Raw input:\", JSON.stringify(input, null, 2));\n\n  // Validate structure\n  if (!input || !Array.isArray(input.data) || input.data.length === 0) {\n    return '<p>No user data available</p>';\n  }\n\n  var userMap = {}; // key = email, value = aggregated user info\n\n  input.data.forEach(function (user) {\n    var email = user.email || '';\n    if (!email) return;\n\n    var fullName = ((user.firstName || '') + ' ' + (user.lastName || '')).trim();\n    var userEntry = userMap[email] || { name: fullName, workspaces: [], roles: [] };\n\n    (user.workspaces || []).forEach(function (ws) {\n      var workspaceName = ws.workspace && ws.workspace._id ? ws.workspace._id : '';\n      if (workspaceName && userEntry.workspaces.indexOf(workspaceName) === -1) {\n        userEntry.workspaces.push(workspaceName);\n      }\n\n      (ws.roles || []).forEach(function (role) {\n        if (userEntry.roles.indexOf(role) === -1) {\n          userEntry.roles.push(role);\n        }\n      });\n    });\n\n    userMap[email] = userEntry;\n  });\n\n  // Build HTML rows\n  var rows = '';\n  for (var email in userMap) {\n    var u = userMap[email];\n    rows +=\n      '<tr>' +\n      '<td>' + u.name + '</td>' +\n      '<td>' + email + '</td>' +\n      '<td>' + u.workspaces.join(', ') + '</td>' +\n      '<td>' + u.roles.join(', ') + '</td>' +\n      '</tr>';\n  }\n\n  // Final HTML Table\n  return (\n    '<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" ' +\n    'style=\"border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;\">' +\n    '<thead>' +\n    '<tr style=\"background-color: #f4f4f4;\">' +\n    '<th>Name</th><th>Email</th><th>Workspaces</th><th>Roles</th>' +\n    '</tr>' +\n    '</thead>' +\n    '<tbody>' +\n    (rows || '<tr><td colspan=\"4\">No data available</td></tr>') +\n    '</tbody>' +\n    '</table>'\n  );\n};\n",
         "variables" : {
-          "data" : "{{{message}}}"
+          "data" : "{{{data}}}"
         },
         "skip" : false,
         "showActualErrorMessage" : false,
@@ -80,114 +76,6 @@
         "collectionName" : "Users.List",
         "skip" : false,
         "showActualErrorMessage" : false
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
-    "64ace348-a6c0-4a68-a098-434a2657698f" : {
-      "vertexId" : "64ace348-a6c0-4a68-a098-434a2657698f",
-      "vertexType" : "TARGET",
-      "name" : "UsersAPI",
-      "target" : {
-        "name" : "UsersAPI",
-        "description" : "UsersAPI",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "dev-api.apiwiz.io",
-          "path" : "/itorix/v1/users",
-          "headerParams" : [ {
-            "name" : "accept",
-            "value" : "application/json, text/plain, */*"
-          }, {
-            "name" : "accept-language",
-            "value" : "en-GB,en-US;q=0.9,en;q=0.8"
-          }, {
-            "name" : "interactionid",
-            "value" : "DOjEJxFXhC4pNqFX"
-          }, {
-            "name" : "jsessionid",
-            "value" : "6065ca6f81632102ddd78fa0"
-          }, {
-            "name" : "origin",
-            "value" : "https"
-          }, {
-            "name" : "priority",
-            "value" : "u=1, i"
-          }, {
-            "name" : "referer",
-            "value" : "https"
-          }, {
-            "name" : "sec-ch-ua",
-            "value" : "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\""
-          }, {
-            "name" : "sec-ch-ua-mobile",
-            "value" : "?0"
-          }, {
-            "name" : "sec-ch-ua-platform",
-            "value" : "\"macOS\""
-          }, {
-            "name" : "sec-fetch-dest",
-            "value" : "empty"
-          }, {
-            "name" : "sec-fetch-mode",
-            "value" : "cors"
-          }, {
-            "name" : "sec-fetch-site",
-            "value" : "same-site"
-          }, {
-            "name" : "user-agent",
-            "value" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
-          }, {
-            "name" : "x-apikey",
-            "value" : "E5KAHRATn8kjWZbdAVaXTD7FVtCsdXuijm9dRpatlBLJ4gOplbGSMWSOlcn8x1lwyJLgzug1UVfmF/duXtk1oa9oG5+S6iDGA9zWpTjafpy4U0OT9kBiA5r/nDb55MzE4qfKfWXlpAqtEZrDiwtOlR1tjjzdCTEYmqPEfjYgQr7/WjIUBU2UQdB6zg2oQUWKBbPf1NY+F+TZiVcbhbwHibM7+yTSeLydksCElDo84GEb06QyoHxkXbB+QLWBdw9PvShGJr1e3xnIcf1MupyIPDVfB1WjwqNPSUD+KKqtKI/OSjQGR4x/6ov8zESd1nGQAiEKCvAW5/uhF5uVv0A70w=="
-          } ],
-          "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
-          "body" : {
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ {
-            "name" : "message",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false,
-            "feelExpression" : false
-          } ]
-        },
-        "timeout" : 0,
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        },
-        "securityResponse" : {
-          "isEnabled" : false,
-          "useEnforcedRules" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        }
       },
       "imported" : false,
       "skipRuntimeVariables" : false
@@ -274,115 +162,6 @@
           "body" : {
             "data" : "",
             "type" : "json"
-          }
-        }
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
-    "b43b852b-474e-406a-ba26-21872f878450" : {
-      "vertexId" : "b43b852b-474e-406a-ba26-21872f878450",
-      "vertexType" : "TARGET",
-      "name" : "LoginAPI",
-      "target" : {
-        "name" : "LoginAPI",
-        "description" : "LoginAPI",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "https",
-          "host" : "dev-api.apiwiz.io",
-          "path" : "/itorix/v1/users/login",
-          "headerParams" : [ {
-            "name" : "accept",
-            "value" : "application/json, text/plain, */*"
-          }, {
-            "name" : "accept-language",
-            "value" : "en-GB,en-US;q=0.9,en;q=0.8"
-          }, {
-            "name" : "content-type",
-            "value" : "application/json"
-          }, {
-            "name" : "interactionid",
-            "value" : "hmNGC7HG2Wj6SFho"
-          }, {
-            "name" : "origin",
-            "value" : "https"
-          }, {
-            "name" : "priority",
-            "value" : "u=1, i"
-          }, {
-            "name" : "referer",
-            "value" : "https"
-          }, {
-            "name" : "sec-ch-ua",
-            "value" : "\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\""
-          }, {
-            "name" : "sec-ch-ua-mobile",
-            "value" : "?0"
-          }, {
-            "name" : "sec-ch-ua-platform",
-            "value" : "\"macOS\""
-          }, {
-            "name" : "sec-fetch-dest",
-            "value" : "empty"
-          }, {
-            "name" : "sec-fetch-mode",
-            "value" : "cors"
-          }, {
-            "name" : "sec-fetch-site",
-            "value" : "same-site"
-          }, {
-            "name" : "user-agent",
-            "value" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
-          }, {
-            "name" : "x-apikey",
-            "value" : "E5KAHRATn8kjWZbdAVaXTD7FVtCsdXuijm9dRpatlBLJ4gOplbGSMWSOlcn8x1lwyJLgzug1UVfmF/duXtk1oa9oG5+S6iDGA9zWpTjafpy4U0OT9kBiA5r/nDb55MzE4qfKfWXlpAqtEZrDiwtOlR1tjjzdCTEYmqPEfjYgQr7/WjIUBU2UQdB6zg2oQUWKBbPf1NY+F+TZiVcbhbwHibM7+yTSeLydksCElDo84GEb06QyoHxkXbB+QLWBdw9PvShGJr1e3xnIcf1MupyIPDVfB1WjwqNPSUD+KKqtKI/OSjQGR4x/6ov8zESd1nGQAiEKCvAW5/uhF5uVv0A70w=="
-          } ],
-          "queryParams" : [ ],
-          "targetRequestBodyType" : "RAW",
-          "body" : {
-            "data" : "{\n  \"loginId\": \"AkshathaSM\",\n  \"password\": \"pX4FXPUAVEvaeW5TV55knNpJa149VaP5bqwDFfclkxeaj99JFR4IQSt/6bYci5RBtyPkZ25mkjocffs85uUoHD0MZ5LjsEuTYyP2V7469OxPh6Ud/0CVgF0+q03GV0vLrO/VXOuIHExQA0Z/jTipsl7HrO/OZNSsTyntAOS8dB5rr5+tLRn6hV2S4Ddk9pBfzprqhShhd9fICM5GfPcSDQ+40NeQP4WQuZYCdTWhr2941GlyTGDA0fpEQBUKVRyvCPIydTcmk3LM+7qFvegla4nLJUdWxAoUUKXxxlBa8ZYUKzF09CGnKqjgKin3pvn2pxu9w5BdFo8rs45gPFJF8g==\",\n  \"workspaceId\": \"qa-dev\"\n}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ {
-            "name" : "jsessionid",
-            "reference" : "body",
-            "value" : "$.id",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false,
-            "feelExpression" : false
-          } ]
-        },
-        "timeout" : 0,
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        },
-        "securityResponse" : {
-          "isEnabled" : false,
-          "useEnforcedRules" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
           }
         }
       },
