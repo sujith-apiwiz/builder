@@ -3,7 +3,7 @@
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762837436133,
+  "mts" : 1762838358487,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
@@ -22,15 +22,17 @@
       "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "v1" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
       "f70b0ad6-a03d-4132-9e57-ec9cfe557108" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
-      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ]
+      "3b595ed2-893a-45f6-877e-bc15ac57c6ef" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ],
+      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "3b595ed2-893a-45f6-877e-bc15ac57c6ef" ]
     },
     "outbound" : {
       "v1" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "f70b0ad6-a03d-4132-9e57-ec9cfe557108" ],
-      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ]
+      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "3b595ed2-893a-45f6-877e-bc15ac57c6ef" ],
+      "3b595ed2-893a-45f6-877e-bc15ac57c6ef" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ]
     },
-    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "e2eb696a-b1f4-409d-9c08-181cfe1e96c0", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
+    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "e2eb696a-b1f4-409d-9c08-181cfe1e96c0", "3b595ed2-893a-45f6-877e-bc15ac57c6ef", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
   },
   "vertexHashMap" : {
     "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : {
@@ -74,6 +76,25 @@
         "connectorName" : "Stage-DB",
         "tenantName" : "apiwiz-stage",
         "collectionName" : "Users.List",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "3b595ed2-893a-45f6-877e-bc15ac57c6ef" : {
+      "vertexId" : "3b595ed2-893a-45f6-877e-bc15ac57c6ef",
+      "vertexType" : "DATABASE",
+      "name" : "getTeamsFromTenantDB",
+      "description" : "Collecting teams to integrate in the final users list.",
+      "databaseData" : {
+        "connectorId" : "68b839a4399db1665a31dccd",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"find\",\"databaseName\":\"qa-dev\",\"collection\":\"Design.Swagger.Teams\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"displayName\":\"\",\"description\":\"\",\"contacts\":[{\"name\":\"\",\"email\":\"\",\"role\":[]}],\"swaggers\":\"\",\"swagger3\":[],\"cts\":\"\",\"createdUserName\":\"\",\"modifiedUserName\":\"\",\"mts\":\"\",\"createdBy\":\"\",\"modifiedBy\":\"\",\"interactionid\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[{\"$match\":{\"status\":\"TESTED\"}},{\"$facet\":{\"deploymentFacet\":[{\"$group\":{\"_id\":\"$deploymentAccess.name\",\"count\":{\"$sum\":1}}},{\"$sort\":{\"count\":-1}},{\"$limit\":5}],\"tlsSettingsFacet\":[{\"$group\":{\"_id\":\"$tlsSettings.tlsMode\",\"totalCertificates\":{\"$sum\":1},\"avgPort\":{\"$avg\":\"$port\"}}}],\"statusHistoryFacet\":[{\"$unwind\":\"$statusHistory\"},{\"$group\":{\"_id\":\"$statusHistory.status\",\"count\":{\"$sum\":1}}}]}},{\"$project\":{\"deploymentFacet\":1,\"tlsSettingsFacet\":1,\"statusHistoryFacet\":1}}],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "teams",
+        "connectorName" : "Stage-DB",
+        "tenantName" : "qa-dev",
+        "collectionName" : "Design.Swagger.Teams",
         "skip" : false,
         "showActualErrorMessage" : false
       },
@@ -170,6 +191,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762838165631,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762837444879,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "./"
+  }, {
     "status" : "Review",
     "cts" : 1762837400200,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
