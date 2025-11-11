@@ -3,7 +3,7 @@
   "cts" : 1762854314430,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762861395444,
+  "mts" : 1762861445197,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691305aab0b7311653d2ca11",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/sfsdfdfd",
   "pathArray" : [ "sfsdfdfd" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -69,7 +69,7 @@
       "name" : "mongo_db",
       "description" : "mongo_db_description",
       "logData" : {
-        "data" : "{\n    \"data\":{{MongoDB_Description_var}}\n}",
+        "data" : "{\n    \"data\":{{{MongoDB_Description_var}}}\n}",
         "skip" : false
       },
       "imported" : false,
@@ -100,11 +100,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762861436876,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762861402301,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762854314430,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
