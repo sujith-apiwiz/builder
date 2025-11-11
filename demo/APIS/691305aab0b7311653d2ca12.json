@@ -3,7 +3,7 @@
   "cts" : 1762854314430,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762854314430,
+  "mts" : 1762861280348,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691305aab0b7311653d2ca11",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "556d9579-cffb-4e66-a586-cc9c68253af4" : [ "v1" ]
+      "20f8d7ad-7b20-4231-8c76-93ea92e2a779" : [ "v1" ],
+      "556d9579-cffb-4e66-a586-cc9c68253af4" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779" ]
     },
     "outbound" : {
-      "v1" : [ "556d9579-cffb-4e66-a586-cc9c68253af4" ]
+      "v1" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779" ],
+      "20f8d7ad-7b20-4231-8c76-93ea92e2a779" : [ "556d9579-cffb-4e66-a586-cc9c68253af4" ]
     },
-    "allNeighbours" : [ "556d9579-cffb-4e66-a586-cc9c68253af4", "v1" ]
+    "allNeighbours" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779", "556d9579-cffb-4e66-a586-cc9c68253af4", "v1" ]
   },
   "vertexHashMap" : {
     "556d9579-cffb-4e66-a586-cc9c68253af4" : {
@@ -39,6 +41,25 @@
           "type" : "JSON"
         }
       }
+    },
+    "20f8d7ad-7b20-4231-8c76-93ea92e2a779" : {
+      "vertexId" : "20f8d7ad-7b20-4231-8c76-93ea92e2a779",
+      "vertexType" : "DATABASE",
+      "name" : "MongoDB",
+      "description" : "MongoDB_Description",
+      "databaseData" : {
+        "connectorId" : "691316c5b0b7311653d2d34d",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"aggregate\",\"databaseName\":\"admin\",\"collection\":\"system.version\",\"documents\":[{\"_id\":\"9\",\"version\":\"1.0.0\"}],\"updates\":[{\"q\":{},\"u\":{\"$set\":{\"_id\":\"sfdgfdgj.dkglkdjfgh,dfkjghkfdgfd\",\"version\":\"skjdghkjfdhgkjndfgnsdfgb\"},\"$inc\":{\"_id\":\"gvmhhbjnkmllskgdnkgndkng,dnfgmdf,gdfg\",\"version\":\"ajsdkjhjdkngds\"}},\"upsert\":false,\"multi\":false}],\"pipelines\":[{\"$match\":{\"status\":\"TESTED\"}},{\"$facet\":{\"deploymentFacet\":[{\"$group\":{\"_id\":\"$deploymentAccess.name\",\"count\":{\"$sum\":1}}},{\"$sort\":{\"count\":-1}},{\"$limit\":5}],\"tlsSettingsFacet\":[{\"$group\":{\"_id\":\"$tlsSettings.tlsMode\",\"totalCertificates\":{\"$sum\":1},\"avgPort\":{\"$avg\":\"$port\"}}}],\"statusHistoryFacet\":[{\"$unwind\":\"$statusHistory\"},{\"$group\":{\"_id\":\"$statusHistory.status\",\"count\":{\"$sum\":1}}}]}},{\"$project\":{\"deploymentFacet\":1,\"tlsSettingsFacet\":1,\"statusHistoryFacet\":1}}],\"deletes\":[{\"q\":{\"_id\":\"1\"},\"limit\":0}],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "MongoDB_Description_var",
+        "connectorName" : "Mongo-DB-Test",
+        "tenantName" : "admin",
+        "collectionName" : "system.version",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
