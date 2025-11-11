@@ -3,7 +3,7 @@
   "cts" : 1762854314430,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762861280348,
+  "mts" : 1762861388105,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691305aab0b7311653d2ca11",
@@ -20,13 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "20f8d7ad-7b20-4231-8c76-93ea92e2a779" : [ "v1" ],
-      "556d9579-cffb-4e66-a586-cc9c68253af4" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779" ]
+      "744ada1c-c3cd-4e37-99b6-b81f3508b12a" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779" ],
+      "556d9579-cffb-4e66-a586-cc9c68253af4" : [ "744ada1c-c3cd-4e37-99b6-b81f3508b12a" ]
     },
     "outbound" : {
       "v1" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779" ],
-      "20f8d7ad-7b20-4231-8c76-93ea92e2a779" : [ "556d9579-cffb-4e66-a586-cc9c68253af4" ]
+      "20f8d7ad-7b20-4231-8c76-93ea92e2a779" : [ "744ada1c-c3cd-4e37-99b6-b81f3508b12a" ],
+      "744ada1c-c3cd-4e37-99b6-b81f3508b12a" : [ "556d9579-cffb-4e66-a586-cc9c68253af4" ]
     },
-    "allNeighbours" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779", "556d9579-cffb-4e66-a586-cc9c68253af4", "v1" ]
+    "allNeighbours" : [ "20f8d7ad-7b20-4231-8c76-93ea92e2a779", "556d9579-cffb-4e66-a586-cc9c68253af4", "744ada1c-c3cd-4e37-99b6-b81f3508b12a", "v1" ]
   },
   "vertexHashMap" : {
     "556d9579-cffb-4e66-a586-cc9c68253af4" : {
@@ -57,6 +59,18 @@
         "collectionName" : "system.version",
         "skip" : false,
         "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "744ada1c-c3cd-4e37-99b6-b81f3508b12a" : {
+      "vertexId" : "744ada1c-c3cd-4e37-99b6-b81f3508b12a",
+      "vertexType" : "LOGGER",
+      "name" : "mongo_db",
+      "description" : "mongo_db_description",
+      "logData" : {
+        "data" : "{\n    \"data\":{{MongoDB_Description_var}}\n}",
+        "skip" : false
       },
       "imported" : false,
       "skipRuntimeVariables" : false
