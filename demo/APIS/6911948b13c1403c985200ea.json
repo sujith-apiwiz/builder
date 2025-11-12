@@ -2,10 +2,10 @@
   "id" : "6911948b13c1403c985200ea",
   "cts" : 1762759817938,
   "createdUserName" : "Akshatha SM",
-  "modifiedUserName" : "divakar v",
-  "mts" : 1762851037230,
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1762959823781,
   "createdBy" : "67c562eba649de63bf3835e4",
-  "modifiedBy" : "63cf749921c7bb55c7368952",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "690c661d6952e12772f00426",
   "revision" : 2,
   "name" : "UsersList",
@@ -16,23 +16,25 @@
   "pathArray" : [ "userslist" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
-  "lockedBy" : "divakar v",
+  "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "v1" ],
+      "c7f55152-3c89-4952-b3a0-229c01fba64f" : [ "v1" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
       "f70b0ad6-a03d-4132-9e57-ec9cfe557108" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
       "3b595ed2-893a-45f6-877e-bc15ac57c6ef" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ],
-      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "3b595ed2-893a-45f6-877e-bc15ac57c6ef" ]
+      "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "3b595ed2-893a-45f6-877e-bc15ac57c6ef" ],
+      "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "c7f55152-3c89-4952-b3a0-229c01fba64f" ]
     },
     "outbound" : {
-      "v1" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ],
+      "v1" : [ "c7f55152-3c89-4952-b3a0-229c01fba64f" ],
       "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : [ "bf128fc5-83e0-4743-85fa-2c837f6af620" ],
       "bf128fc5-83e0-4743-85fa-2c837f6af620" : [ "f70b0ad6-a03d-4132-9e57-ec9cfe557108" ],
       "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" : [ "3b595ed2-893a-45f6-877e-bc15ac57c6ef" ],
-      "3b595ed2-893a-45f6-877e-bc15ac57c6ef" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ]
+      "3b595ed2-893a-45f6-877e-bc15ac57c6ef" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" ],
+      "c7f55152-3c89-4952-b3a0-229c01fba64f" : [ "e2eb696a-b1f4-409d-9c08-181cfe1e96c0" ]
     },
-    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "e2eb696a-b1f4-409d-9c08-181cfe1e96c0", "3b595ed2-893a-45f6-877e-bc15ac57c6ef", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
+    "allNeighbours" : [ "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c", "e2eb696a-b1f4-409d-9c08-181cfe1e96c0", "c7f55152-3c89-4952-b3a0-229c01fba64f", "3b595ed2-893a-45f6-877e-bc15ac57c6ef", "v1", "f70b0ad6-a03d-4132-9e57-ec9cfe557108", "bf128fc5-83e0-4743-85fa-2c837f6af620" ]
   },
   "vertexHashMap" : {
     "cfccbe0a-e8ba-4ef6-a940-57a152d9d29c" : {
@@ -77,6 +79,26 @@
         "connectorName" : "Stage-DB",
         "tenantName" : "apiwiz-stage",
         "collectionName" : "Users.List",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "c7f55152-3c89-4952-b3a0-229c01fba64f" : {
+      "vertexId" : "c7f55152-3c89-4952-b3a0-229c01fba64f",
+      "vertexType" : "DATABASE",
+      "name" : "getPasswordExpiryDays",
+      "description" : "getPasswordExpiryDays",
+      "databaseData" : {
+        "connectorId" : "68b839a4399db1665a31dccd",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"find\",\"databaseName\":\"apiwiz-stage\",\"collection\":\"Users.Workspace.List\",\"documents\":[{\"_id\":\"\",\"planId\":\"\",\"status\":\"\",\"tenant\":\"\",\"key\":\"\",\"seats\":\"\",\"trialPeriod\":\"\",\"isTrial\":\"\",\"expiresOn\":\"\",\"licenceKey\":\"\",\"ssoEnabled\":\"\",\"cts\":\"\",\"mts\":\"\",\"_class\":\"\",\"ssoHost\":\"\",\"idpProvider\":\"\",\"keycloakRealm\":\"\",\"keycloakClientId\":\"\",\"overrideIdPRoles\":\"\",\"twoFactorAuthEnabled\":\"\",\"ssoPath\":\"\",\"devPortalSSOHost\":\"\",\"twoFactorTimeLimit\":\"\",\"twoFactorOTPLength\":\"\",\"twoFactorOTPRetryCount\":\"\",\"passwordExpiryDays\":\"\",\"passwordExpiryAlertDays\":\"\",\"invalidPasswordMaxRetries\":\"\",\"allowMultipleLoginSessions\":\"\",\"paymentSchedule\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{\"_id\":\"qa-dev\"},\"projection\":{\"passwordExpiryDays\":1,\"_id\":0},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "passwordExpiryDaysArrayObject",
+        "variableDataType" : "STRING",
+        "connectorName" : "Stage-DB",
+        "tenantName" : "apiwiz-stage",
+        "collectionName" : "Users.Workspace.List",
         "skip" : false,
         "showActualErrorMessage" : false
       },
@@ -193,6 +215,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1762951727618,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762851058536,
+    "lastModifiedBy" : "63cf749921c7bb55c7368952",
+    "description" : "./"
+  }, {
+    "status" : "Review",
     "cts" : 1762850944859,
     "lastModifiedBy" : "63cf749921c7bb55c7368952",
     "description" : "Proxy undeploy"
@@ -302,6 +334,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
