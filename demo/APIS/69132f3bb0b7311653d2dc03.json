@@ -3,7 +3,7 @@
   "cts" : 1762864955209,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762925288932,
+  "mts" : 1762925351356,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "69132f3bb0b7311653d2dc02",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/check-override",
   "pathArray" : [ "check-override" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
@@ -132,23 +132,45 @@
         "value" : "100",
         "variableDataType" : "STRING",
         "feelExpression" : false,
-        "override" : false
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
+        "source" : "ENV_VALUE",
+        "override" : true
       }, {
         "name" : "y",
         "value" : "20",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
       }, {
         "name" : "z",
         "value" : "30",
         "variableDataType" : "STRING",
         "feelExpression" : false,
-        "override" : false
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
+        "source" : "ENV_VALUE",
+        "override" : true
       }, {
         "name" : "custom",
         "value" : "9",
         "type" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "source" : "11135074-d55d-4305-b050-0618455161b3",
         "override" : true
       }, {
@@ -156,6 +178,11 @@
         "value" : "path",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "source" : "path-variable",
         "override" : false
       } ],
@@ -164,11 +191,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762925339998,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762925312969,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762864955209,
     "lastModifiedBy" : "Sujith Kumar",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "uat",
   "environmentId" : "68ef29919d30e85f6e63cb8b",
