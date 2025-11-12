@@ -3,7 +3,7 @@
   "cts" : 1762936061765,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762936120015,
+  "mts" : 1762936150274,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691444fdb0b7311653d31970",
@@ -20,15 +20,42 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "82d911de-664e-4753-a87d-e06e94fafb36" : [ "v1" ],
-      "398ab091-823b-4e93-a90e-293237c82e07" : [ "82d911de-664e-4753-a87d-e06e94fafb36" ]
+      "b1901401-3846-431c-9940-1ce7fa5d195d" : [ "82d911de-664e-4753-a87d-e06e94fafb36" ],
+      "398ab091-823b-4e93-a90e-293237c82e07" : [ "b1901401-3846-431c-9940-1ce7fa5d195d" ]
     },
     "outbound" : {
       "v1" : [ "82d911de-664e-4753-a87d-e06e94fafb36" ],
-      "82d911de-664e-4753-a87d-e06e94fafb36" : [ "398ab091-823b-4e93-a90e-293237c82e07" ]
+      "82d911de-664e-4753-a87d-e06e94fafb36" : [ "b1901401-3846-431c-9940-1ce7fa5d195d" ],
+      "b1901401-3846-431c-9940-1ce7fa5d195d" : [ "398ab091-823b-4e93-a90e-293237c82e07" ]
     },
-    "allNeighbours" : [ "398ab091-823b-4e93-a90e-293237c82e07", "v1", "82d911de-664e-4753-a87d-e06e94fafb36" ]
+    "allNeighbours" : [ "b1901401-3846-431c-9940-1ce7fa5d195d", "398ab091-823b-4e93-a90e-293237c82e07", "v1", "82d911de-664e-4753-a87d-e06e94fafb36" ]
   },
   "vertexHashMap" : {
+    "b1901401-3846-431c-9940-1ce7fa5d195d" : {
+      "vertexId" : "b1901401-3846-431c-9940-1ce7fa5d195d",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        },
+        "flowVertexes" : [ "398ab091-823b-4e93-a90e-293237c82e07" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "398ab091-823b-4e93-a90e-293237c82e07" : {
       "vertexId" : "398ab091-823b-4e93-a90e-293237c82e07",
       "vertexType" : "STOP",
@@ -88,7 +115,15 @@
         },
         "response" : {
           "statusCode" : 400,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "body",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
         },
         "timeout" : 0,
         "skip" : false,
