@@ -3,7 +3,7 @@
   "cts" : 1762936061765,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762936220066,
+  "mts" : 1762936266002,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691444fdb0b7311653d31970",
@@ -12,8 +12,8 @@
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
-  "path" : "/",
-  "pathArray" : [ ],
+  "path" : "/call_workflow-Sample",
+  "pathArray" : [ "call_workflow-Sample" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
@@ -180,19 +180,30 @@
   },
   "statusHistory" : [ {
     "status" : "Draft",
+    "cts" : 1762936243012,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Approved",
+    "cts" : 1762936225634,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Draft",
     "cts" : 1762936061765,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
-  "enableTracing" : false,
+  "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
-  "selectedVirtualHostName" : "",
-  "selectedVirtualHostId" : "",
+  "selectedVirtualHostName" : "qa-dev",
+  "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
   "kafkaConnectorId" : "",
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
-  "enableLogging" : false,
+  "enableLogging" : true,
+  "indexName" : "nw_logger",
   "deleted" : false,
   "deployed" : false
 }
