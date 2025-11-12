@@ -3,7 +3,7 @@
   "cts" : 1762864955209,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762925352536,
+  "mts" : 1762944748156,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "69132f3bb0b7311653d2dc02",
@@ -81,8 +81,33 @@
         } ],
         "override" : false
       }, {
+        "name" : "path",
+        "value" : "path",
+        "variableDataType" : "STRING",
+        "feelExpression" : false,
+        "source" : "path-variable",
+        "override" : false
+      }, {
         "name" : "custom",
         "value" : "9",
+        "type" : "STRING",
+        "feelExpression" : false,
+        "source" : "11135074-d55d-4305-b050-0618455161b3",
+        "override" : true
+      }, {
+        "name" : "b",
+        "type" : "STRING",
+        "feelExpression" : false,
+        "source" : "11135074-d55d-4305-b050-0618455161b3",
+        "override" : true
+      }, {
+        "name" : "c",
+        "type" : "STRING",
+        "feelExpression" : false,
+        "source" : "11135074-d55d-4305-b050-0618455161b3",
+        "override" : true
+      }, {
+        "name" : "a",
         "type" : "STRING",
         "feelExpression" : false,
         "source" : "11135074-d55d-4305-b050-0618455161b3",
@@ -192,6 +217,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1762925395779,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762925357374,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
+    "status" : "Review",
     "cts" : 1762925339998,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
     "description" : "Proxy undeploy"
@@ -216,6 +251,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
