@@ -3,7 +3,7 @@
   "cts" : 1762936061765,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762936061765,
+  "mts" : 1762936120015,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691444fdb0b7311653d31970",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "398ab091-823b-4e93-a90e-293237c82e07" : [ "v1" ]
+      "82d911de-664e-4753-a87d-e06e94fafb36" : [ "v1" ],
+      "398ab091-823b-4e93-a90e-293237c82e07" : [ "82d911de-664e-4753-a87d-e06e94fafb36" ]
     },
     "outbound" : {
-      "v1" : [ "398ab091-823b-4e93-a90e-293237c82e07" ]
+      "v1" : [ "82d911de-664e-4753-a87d-e06e94fafb36" ],
+      "82d911de-664e-4753-a87d-e06e94fafb36" : [ "398ab091-823b-4e93-a90e-293237c82e07" ]
     },
-    "allNeighbours" : [ "398ab091-823b-4e93-a90e-293237c82e07", "v1" ]
+    "allNeighbours" : [ "398ab091-823b-4e93-a90e-293237c82e07", "v1", "82d911de-664e-4753-a87d-e06e94fafb36" ]
   },
   "vertexHashMap" : {
     "398ab091-823b-4e93-a90e-293237c82e07" : {
@@ -62,6 +64,46 @@
           }
         }
       }
+    },
+    "82d911de-664e-4753-a87d-e06e94fafb36" : {
+      "vertexId" : "82d911de-664e-4753-a87d-e06e94fafb36",
+      "vertexType" : "CALL_WORKFLOW",
+      "name" : "Call Workflow_2",
+      "description" : "",
+      "callWorkflowData" : {
+        "childWorkflowId" : "691443feb0b7311653d318dc",
+        "childWorkflowName" : "New Workflow 183",
+        "virtualHostId" : "67ed20509ecb12099c749c7a",
+        "virtualHostName" : "qa-dev",
+        "request" : {
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "data" : "{}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
