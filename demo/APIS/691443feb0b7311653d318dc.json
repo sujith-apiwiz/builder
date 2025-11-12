@@ -3,7 +3,7 @@
   "cts" : 1762935806699,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762935938590,
+  "mts" : 1762936078366,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691443feb0b7311653d318db",
@@ -14,61 +14,19 @@
   "apiMethod" : "GET",
   "path" : "/call_work_flow",
   "pathArray" : [ "call_work_flow" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "ddf63f4f-44f5-47ca-9d3d-f0eff35cfbce" : [ "v1" ],
-      "7dcce44d-bc08-4981-8447-f50c3cc89578" : [ "ddf63f4f-44f5-47ca-9d3d-f0eff35cfbce" ]
+      "7dcce44d-bc08-4981-8447-f50c3cc89578" : [ "v1" ]
     },
     "outbound" : {
-      "v1" : [ "ddf63f4f-44f5-47ca-9d3d-f0eff35cfbce" ],
-      "ddf63f4f-44f5-47ca-9d3d-f0eff35cfbce" : [ "7dcce44d-bc08-4981-8447-f50c3cc89578" ]
+      "v1" : [ "7dcce44d-bc08-4981-8447-f50c3cc89578" ]
     },
-    "allNeighbours" : [ "ddf63f4f-44f5-47ca-9d3d-f0eff35cfbce", "7dcce44d-bc08-4981-8447-f50c3cc89578", "v1" ]
+    "allNeighbours" : [ "7dcce44d-bc08-4981-8447-f50c3cc89578", "v1" ]
   },
   "vertexHashMap" : {
-    "ddf63f4f-44f5-47ca-9d3d-f0eff35cfbce" : {
-      "vertexId" : "ddf63f4f-44f5-47ca-9d3d-f0eff35cfbce",
-      "vertexType" : "CALL_WORKFLOW",
-      "name" : "Call Workflow_1",
-      "description" : "",
-      "callWorkflowData" : {
-        "childWorkflowId" : "6911948b13c1403c985200ea",
-        "childWorkflowName" : "UsersList",
-        "virtualHostId" : "67ed20509ecb12099c749c7a",
-        "virtualHostName" : "qa-dev",
-        "request" : {
-          "headerParams" : [ ],
-          "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
-          "body" : {
-            "data" : "{}",
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ ]
-        },
-        "timeout" : 0,
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
     "7dcce44d-bc08-4981-8447-f50c3cc89578" : {
       "vertexId" : "7dcce44d-bc08-4981-8447-f50c3cc89578",
       "vertexType" : "STOP",
@@ -111,11 +69,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762936045137,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762935943789,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762935806699,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
