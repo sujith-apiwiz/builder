@@ -3,7 +3,7 @@
   "cts" : 1762936061765,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762936267938,
+  "mts" : 1762936306321,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691444fdb0b7311653d31970",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/call_workflow-Sample",
   "pathArray" : [ "call_workflow-Sample" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -43,7 +43,7 @@
           "placeHolders" : [ {
             "rule" : "EQUAL_TO",
             "key" : "body",
-            "value" : "{\n    \"ok\" : \"ok\"\n}",
+            "value" : "{\n    \"ok\" : \n}",
             "valueDataType" : "JSON"
           } ],
           "feelExpression" : false,
@@ -139,6 +139,8 @@
         "childWorkflowName" : "New Workflow 183",
         "virtualHostId" : "67ed20509ecb12099c749c7a",
         "virtualHostName" : "qa-dev",
+        "url" : "HTTPS://qa-dev-lmxz.apiwiz.io/call_work_flow",
+        "apiMethod" : "GET",
         "request" : {
           "headerParams" : [ ],
           "queryParams" : [ ],
@@ -179,6 +181,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1762936290363,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762936272942,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1762936243012,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
@@ -194,6 +206,7 @@
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : true,
   "environmentName" : "",
   "environmentId" : "",
