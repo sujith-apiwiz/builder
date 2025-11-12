@@ -3,7 +3,7 @@
   "cts" : 1762864955209,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762925188711,
+  "mts" : 1762925208436,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "69132f3bb0b7311653d2dc02",
@@ -20,13 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "11135074-d55d-4305-b050-0618455161b3" : [ "v1" ],
-      "e5740def-eddb-47ac-8f95-dce1910b0126" : [ "11135074-d55d-4305-b050-0618455161b3" ]
+      "bdf79371-2b6c-48e9-93da-305a47194b51" : [ "11135074-d55d-4305-b050-0618455161b3" ],
+      "e5740def-eddb-47ac-8f95-dce1910b0126" : [ "bdf79371-2b6c-48e9-93da-305a47194b51" ]
     },
     "outbound" : {
       "v1" : [ "11135074-d55d-4305-b050-0618455161b3" ],
-      "11135074-d55d-4305-b050-0618455161b3" : [ "e5740def-eddb-47ac-8f95-dce1910b0126" ]
+      "11135074-d55d-4305-b050-0618455161b3" : [ "bdf79371-2b6c-48e9-93da-305a47194b51" ],
+      "bdf79371-2b6c-48e9-93da-305a47194b51" : [ "e5740def-eddb-47ac-8f95-dce1910b0126" ]
     },
-    "allNeighbours" : [ "e5740def-eddb-47ac-8f95-dce1910b0126", "11135074-d55d-4305-b050-0618455161b3", "v1" ]
+    "allNeighbours" : [ "e5740def-eddb-47ac-8f95-dce1910b0126", "11135074-d55d-4305-b050-0618455161b3", "v1", "bdf79371-2b6c-48e9-93da-305a47194b51" ]
   },
   "vertexHashMap" : {
     "e5740def-eddb-47ac-8f95-dce1910b0126" : {
@@ -51,18 +53,40 @@
         "value" : "100",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
       }, {
         "name" : "y",
         "value" : "20",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
       }, {
         "name" : "z",
         "value" : "30",
         "variableDataType" : "STRING",
         "feelExpression" : false,
+        "feelVariableList" : [ {
+          "name" : "",
+          "value" : "",
+          "valueDataType" : "STRING"
+        } ],
         "override" : false
+      }, {
+        "name" : "custom",
+        "value" : "9",
+        "type" : "STRING",
+        "feelExpression" : false,
+        "source" : "11135074-d55d-4305-b050-0618455161b3",
+        "override" : true
       } ],
       "imported" : false,
       "skipRuntimeVariables" : false
@@ -89,6 +113,14 @@
           }
         }
       }
+    },
+    "bdf79371-2b6c-48e9-93da-305a47194b51" : {
+      "vertexId" : "bdf79371-2b6c-48e9-93da-305a47194b51",
+      "vertexType" : "VARIABLES",
+      "name" : "Set Variable",
+      "runtimeVariableList" : [ ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
