@@ -3,7 +3,7 @@
   "cts" : 1763106428324,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763106628119,
+  "mts" : 1763106820235,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6916de7c08652843916483ec",
@@ -19,16 +19,73 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : [ "v1" ],
-      "a42a2ebf-338d-44bb-a199-d41b963e4052" : [ "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" ]
+      "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" : [ "v1" ],
+      "a42a2ebf-338d-44bb-a199-d41b963e4052" : [ "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" ],
+      "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" ]
     },
     "outbound" : {
-      "v1" : [ "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" ],
-      "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : [ "a42a2ebf-338d-44bb-a199-d41b963e4052" ]
+      "v1" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" ],
+      "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : [ "a42a2ebf-338d-44bb-a199-d41b963e4052" ],
+      "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" : [ "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" ]
     },
-    "allNeighbours" : [ "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b", "a42a2ebf-338d-44bb-a199-d41b963e4052", "v1" ]
+    "allNeighbours" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53", "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b", "a42a2ebf-338d-44bb-a199-d41b963e4052", "v1" ]
   },
   "vertexHashMap" : {
+    "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" : {
+      "vertexId" : "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53",
+      "vertexType" : "TARGET",
+      "name" : "Test_3",
+      "target" : {
+        "name" : "Test_3",
+        "description" : "Test_3_description",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/test_3",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : {
       "vertexId" : "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b",
       "vertexType" : "LOOP",
@@ -101,6 +158,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763106711104,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763106635434,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763106613214,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
