@@ -3,7 +3,7 @@
   "cts" : 1763121426192,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763121590755,
+  "mts" : 1763121830945,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691719120865284391649635",
@@ -20,14 +20,16 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "v1" ],
-      "637f2400-a606-4870-8713-bb1d9c770192" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ],
+      "637f2400-a606-4870-8713-bb1d9c770192" : [ "7e9be9f0-1f95-4773-8868-5795b27c4b23" ],
+      "7e9be9f0-1f95-4773-8868-5795b27c4b23" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ],
       "eb085459-4d93-4fc1-88e9-2529cfc45a30" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ]
     },
     "outbound" : {
       "v1" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ],
-      "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "eb085459-4d93-4fc1-88e9-2529cfc45a30", "637f2400-a606-4870-8713-bb1d9c770192" ]
+      "7e9be9f0-1f95-4773-8868-5795b27c4b23" : [ "637f2400-a606-4870-8713-bb1d9c770192" ],
+      "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "eb085459-4d93-4fc1-88e9-2529cfc45a30", "7e9be9f0-1f95-4773-8868-5795b27c4b23" ]
     },
-    "allNeighbours" : [ "eb085459-4d93-4fc1-88e9-2529cfc45a30", "637f2400-a606-4870-8713-bb1d9c770192", "1c0d133c-2d37-4105-bc63-a5317041ea75", "v1" ]
+    "allNeighbours" : [ "eb085459-4d93-4fc1-88e9-2529cfc45a30", "637f2400-a606-4870-8713-bb1d9c770192", "7e9be9f0-1f95-4773-8868-5795b27c4b23", "1c0d133c-2d37-4105-bc63-a5317041ea75", "v1" ]
   },
   "vertexHashMap" : {
     "eb085459-4d93-4fc1-88e9-2529cfc45a30" : {
@@ -57,6 +59,43 @@
         }
       }
     },
+    "7e9be9f0-1f95-4773-8868-5795b27c4b23" : {
+      "vertexId" : "7e9be9f0-1f95-4773-8868-5795b27c4b23",
+      "vertexType" : "SHARED_FLOW",
+      "name" : "validate",
+      "description" : "",
+      "sharedFlowNodeData" : {
+        "sharedFlowId" : "691718d00865284391649616",
+        "sharedFlowName" : "validate",
+        "inputVariablesMap" : {
+          "shipment_details" : "{{{shipment_details}}}"
+        },
+        "importOutputVariables" : true,
+        "importedVariables" : [ {
+          "name" : "sandbox_response",
+          "reference" : "headers",
+          "value" : "sandbox_response",
+          "active" : true,
+          "source" : "headers",
+          "hide" : false,
+          "feelExpression" : false,
+          "envVertexName" : "sandbox",
+          "vertexId" : "f10a04c0-7a67-41eb-817e-1582d8df5840"
+        } ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "1c0d133c-2d37-4105-bc63-a5317041ea75" : {
       "vertexId" : "1c0d133c-2d37-4105-bc63-a5317041ea75",
       "vertexType" : "CONDITIONAL_FLOW",
@@ -83,7 +122,7 @@
             }
           }
         },
-        "flowVertexes" : [ "637f2400-a606-4870-8713-bb1d9c770192" ]
+        "flowVertexes" : [ "7e9be9f0-1f95-4773-8868-5795b27c4b23" ]
       }, {
         "condition" : "else",
         "assertion" : {
