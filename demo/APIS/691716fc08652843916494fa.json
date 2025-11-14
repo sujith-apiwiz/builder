@@ -3,7 +3,7 @@
   "cts" : 1763120892938,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763120953505,
+  "mts" : 1763120967151,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691716fc08652843916494f9",
@@ -19,12 +19,14 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "053c6e55-594d-423f-abb3-abe966f1bc4e" : [ "v1" ]
+      "3aea81cd-be96-4a99-8b8f-db57351b569e" : [ "v1" ],
+      "053c6e55-594d-423f-abb3-abe966f1bc4e" : [ "3aea81cd-be96-4a99-8b8f-db57351b569e" ]
     },
     "outbound" : {
-      "v1" : [ "053c6e55-594d-423f-abb3-abe966f1bc4e" ]
+      "v1" : [ "3aea81cd-be96-4a99-8b8f-db57351b569e" ],
+      "3aea81cd-be96-4a99-8b8f-db57351b569e" : [ "053c6e55-594d-423f-abb3-abe966f1bc4e" ]
     },
-    "allNeighbours" : [ "053c6e55-594d-423f-abb3-abe966f1bc4e", "v1" ]
+    "allNeighbours" : [ "053c6e55-594d-423f-abb3-abe966f1bc4e", "v1", "3aea81cd-be96-4a99-8b8f-db57351b569e" ]
   },
   "vertexHashMap" : {
     "053c6e55-594d-423f-abb3-abe966f1bc4e" : {
@@ -80,6 +82,45 @@
           }
         }
       }
+    },
+    "3aea81cd-be96-4a99-8b8f-db57351b569e" : {
+      "vertexId" : "3aea81cd-be96-4a99-8b8f-db57351b569e",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "shipment_id",
+            "value" : "123",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "053c6e55-594d-423f-abb3-abe966f1bc4e" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
