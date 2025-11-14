@@ -3,7 +3,7 @@
   "cts" : 1763121426192,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763121557750,
+  "mts" : 1763121572397,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691719120865284391649635",
@@ -19,12 +19,14 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "637f2400-a606-4870-8713-bb1d9c770192" : [ "v1" ]
+      "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "v1" ],
+      "637f2400-a606-4870-8713-bb1d9c770192" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ]
     },
     "outbound" : {
-      "v1" : [ "637f2400-a606-4870-8713-bb1d9c770192" ]
+      "v1" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ],
+      "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "637f2400-a606-4870-8713-bb1d9c770192" ]
     },
-    "allNeighbours" : [ "637f2400-a606-4870-8713-bb1d9c770192", "v1" ]
+    "allNeighbours" : [ "637f2400-a606-4870-8713-bb1d9c770192", "1c0d133c-2d37-4105-bc63-a5317041ea75", "v1" ]
   },
   "vertexHashMap" : {
     "637f2400-a606-4870-8713-bb1d9c770192" : {
@@ -39,6 +41,45 @@
           "type" : "JSON"
         }
       }
+    },
+    "1c0d133c-2d37-4105-bc63-a5317041ea75" : {
+      "vertexId" : "1c0d133c-2d37-4105-bc63-a5317041ea75",
+      "vertexType" : "CONDITIONAL_FLOW",
+      "name" : "Condition",
+      "conditionalFlow" : [ {
+        "condition" : "if",
+        "assertion" : {
+          "expression" : "({0})",
+          "placeHolders" : [ {
+            "rule" : "EQUAL_TO",
+            "key" : "shipment_id",
+            "value" : "123",
+            "valueDataType" : "STRING"
+          } ],
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "flowVertexes" : [ "637f2400-a606-4870-8713-bb1d9c770192" ]
+      }, {
+        "condition" : "else",
+        "assertion" : {
+          "feelExpression" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false
+        }
+      } ],
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
