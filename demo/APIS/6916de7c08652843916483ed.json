@@ -3,7 +3,7 @@
   "cts" : 1763106428324,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763106987161,
+  "mts" : 1763107753123,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6916de7c08652843916483ec",
@@ -20,17 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" : [ "v1" ],
-      "83c2964a-68fe-4846-a499-bde4bbf54f85" : [ "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" ],
-      "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" ],
-      "a42a2ebf-338d-44bb-a199-d41b963e4052" : [ "83c2964a-68fe-4846-a499-bde4bbf54f85" ]
+      "79a9af2a-124d-444f-ba49-a97b5e6a8a60" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" ],
+      "a42a2ebf-338d-44bb-a199-d41b963e4052" : [ "79a9af2a-124d-444f-ba49-a97b5e6a8a60" ]
     },
     "outbound" : {
       "v1" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" ],
-      "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : [ "83c2964a-68fe-4846-a499-bde4bbf54f85" ],
-      "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" : [ "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" ],
-      "83c2964a-68fe-4846-a499-bde4bbf54f85" : [ "a42a2ebf-338d-44bb-a199-d41b963e4052" ]
+      "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" : [ "79a9af2a-124d-444f-ba49-a97b5e6a8a60" ],
+      "79a9af2a-124d-444f-ba49-a97b5e6a8a60" : [ "a42a2ebf-338d-44bb-a199-d41b963e4052" ]
     },
-    "allNeighbours" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53", "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b", "a42a2ebf-338d-44bb-a199-d41b963e4052", "v1", "83c2964a-68fe-4846-a499-bde4bbf54f85" ]
+    "allNeighbours" : [ "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53", "79a9af2a-124d-444f-ba49-a97b5e6a8a60", "a42a2ebf-338d-44bb-a199-d41b963e4052", "v1" ]
   },
   "vertexHashMap" : {
     "d4fc05c6-b47e-4e7b-8813-2907ac0d6e53" : {
@@ -96,33 +94,85 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
-    "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b" : {
-      "vertexId" : "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b",
+    "79a9af2a-124d-444f-ba49-a97b5e6a8a60" : {
+      "vertexId" : "79a9af2a-124d-444f-ba49-a97b5e6a8a60",
       "vertexType" : "LOOP",
       "name" : "For Loop",
       "loopData" : {
+        "listVariableSource" : "",
         "variables" : [ ],
         "listType" : "json",
         "loopList" : [ ],
-        "startingVertex" : [ "f2922ed3-44ef-4ae3-a9f1-1cd6731a46dc" ],
-        "loopVertexes" : [ "f2922ed3-44ef-4ae3-a9f1-1cd6731a46dc" ],
+        "listName" : "",
+        "startingVertex" : [ "31a5447d-5a06-4f10-aebf-585671ca5c41" ],
+        "listVariableVertexId" : "",
+        "loopVertexes" : [ "31a5447d-5a06-4f10-aebf-585671ca5c41" ],
         "skip" : false,
         "showActualErrorMessage" : false
       },
       "imported" : false,
       "skipRuntimeVariables" : false
     },
-    "f2922ed3-44ef-4ae3-a9f1-1cd6731a46dc" : {
-      "vertexId" : "f2922ed3-44ef-4ae3-a9f1-1cd6731a46dc",
-      "vertexType" : "DELAY",
-      "name" : "Delay",
-      "delayData" : {
-        "delayUnit" : "SECONDS",
-        "delayAmount" : 10,
+    "31a5447d-5a06-4f10-aebf-585671ca5c41" : {
+      "vertexId" : "31a5447d-5a06-4f10-aebf-585671ca5c41",
+      "vertexType" : "TARGET",
+      "name" : "for_loop_2",
+      "target" : {
+        "name" : "for_loop_2",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/test_3",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "for_loop_body",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
         "skip" : false,
-        "showActualErrorMessage" : false
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
       },
-      "parentVertex" : "8a1d49fd-b2e3-4b69-bc8a-40869f8afd9b",
+      "parentVertex" : "79a9af2a-124d-444f-ba49-a97b5e6a8a60",
       "imported" : false,
       "skipRuntimeVariables" : false
     },
@@ -165,45 +215,19 @@
           }
         }
       }
-    },
-    "83c2964a-68fe-4846-a499-bde4bbf54f85" : {
-      "vertexId" : "83c2964a-68fe-4846-a499-bde4bbf54f85",
-      "vertexType" : "EMAIL_CONNECTOR",
-      "name" : "forloop mail",
-      "description" : "",
-      "mailConnectorData" : {
-        "mailTemplate" : {
-          "toMailIds" : [ "akshatha.sm@apiwiz.com" ],
-          "ccMailIds" : [ " akshatha.sm@apiwiz.com" ],
-          "body" : "<p>Hi ,\nforLoop mail configuration</p>\n",
-          "subject" : "Forloop mail",
-          "rtfValue" : "Hi ,\nforLoop mail configuration"
-        },
-        "mailProperty" : {
-          "smtpAuth" : false,
-          "connectionTimeOut" : 0,
-          "timeOut" : 0,
-          "writeTimeOut" : 0,
-          "enableStartTLS" : false,
-          "cts" : 0,
-          "mts" : 0
-        },
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763107681952,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763106993436,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763106885589,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
