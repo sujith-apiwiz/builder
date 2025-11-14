@@ -3,7 +3,7 @@
   "cts" : 1763121426192,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763121572397,
+  "mts" : 1763121590755,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691719120865284391649635",
@@ -20,15 +20,30 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "v1" ],
-      "637f2400-a606-4870-8713-bb1d9c770192" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ]
+      "637f2400-a606-4870-8713-bb1d9c770192" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ],
+      "eb085459-4d93-4fc1-88e9-2529cfc45a30" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ]
     },
     "outbound" : {
       "v1" : [ "1c0d133c-2d37-4105-bc63-a5317041ea75" ],
-      "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "637f2400-a606-4870-8713-bb1d9c770192" ]
+      "1c0d133c-2d37-4105-bc63-a5317041ea75" : [ "eb085459-4d93-4fc1-88e9-2529cfc45a30", "637f2400-a606-4870-8713-bb1d9c770192" ]
     },
-    "allNeighbours" : [ "637f2400-a606-4870-8713-bb1d9c770192", "1c0d133c-2d37-4105-bc63-a5317041ea75", "v1" ]
+    "allNeighbours" : [ "eb085459-4d93-4fc1-88e9-2529cfc45a30", "637f2400-a606-4870-8713-bb1d9c770192", "1c0d133c-2d37-4105-bc63-a5317041ea75", "v1" ]
   },
   "vertexHashMap" : {
+    "eb085459-4d93-4fc1-88e9-2529cfc45a30" : {
+      "vertexId" : "eb085459-4d93-4fc1-88e9-2529cfc45a30",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "data" : "{\n    \"a\": \"error\"\n}",
+          "type" : "JSON"
+        }
+      }
+    },
     "637f2400-a606-4870-8713-bb1d9c770192" : {
       "vertexId" : "637f2400-a606-4870-8713-bb1d9c770192",
       "vertexType" : "STOP",
@@ -76,7 +91,8 @@
           "skip" : false,
           "showActualErrorMessage" : false,
           "continueOnError" : false
-        }
+        },
+        "flowVertexes" : [ "eb085459-4d93-4fc1-88e9-2529cfc45a30" ]
       } ],
       "imported" : false,
       "skipRuntimeVariables" : false
