@@ -3,7 +3,7 @@
   "cts" : 1763118244141,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763118424993,
+  "mts" : 1763118478534,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "69170ca40865284391649054",
@@ -21,14 +21,16 @@
     "inbound" : {
       "fe572806-ee92-4d08-911d-523f88cb6082" : [ "v1" ],
       "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ],
-      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "2d817777-2215-49dc-a7db-c7e3b8b8d83b" ]
+      "064bab9a-3bbf-4fec-ae61-360cd47554f6" : [ "2d817777-2215-49dc-a7db-c7e3b8b8d83b" ],
+      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "064bab9a-3bbf-4fec-ae61-360cd47554f6" ]
     },
     "outbound" : {
       "v1" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ],
       "fe572806-ee92-4d08-911d-523f88cb6082" : [ "2d817777-2215-49dc-a7db-c7e3b8b8d83b" ],
-      "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
+      "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : [ "064bab9a-3bbf-4fec-ae61-360cd47554f6" ],
+      "064bab9a-3bbf-4fec-ae61-360cd47554f6" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
     },
-    "allNeighbours" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "v1", "2d817777-2215-49dc-a7db-c7e3b8b8d83b", "fe572806-ee92-4d08-911d-523f88cb6082" ]
+    "allNeighbours" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "064bab9a-3bbf-4fec-ae61-360cd47554f6", "v1", "2d817777-2215-49dc-a7db-c7e3b8b8d83b", "fe572806-ee92-4d08-911d-523f88cb6082" ]
   },
   "vertexHashMap" : {
     "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : {
@@ -70,6 +72,68 @@
           }
         }
       }
+    },
+    "064bab9a-3bbf-4fec-ae61-360cd47554f6" : {
+      "vertexId" : "064bab9a-3bbf-4fec-ae61-360cd47554f6",
+      "vertexType" : "TARGET",
+      "name" : "json_hagsjd",
+      "target" : {
+        "name" : "json_hagsjd",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/test_3",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "json_body",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : {
       "vertexId" : "2d817777-2215-49dc-a7db-c7e3b8b8d83b",
