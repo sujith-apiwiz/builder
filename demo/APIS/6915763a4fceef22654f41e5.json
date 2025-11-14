@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763094649086,
+  "mts" : 1763094896279,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -22,15 +22,17 @@
       "8bd5c392-276a-465c-9809-9dfa637381de" : [ "v1" ],
       "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ]
+      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
     },
     "outbound" : {
       "v1" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ],
       "8bd5c392-276a-465c-9809-9dfa637381de" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
       "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
-      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
+      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
+      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
     },
-    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "8bd5c392-276a-465c-9809-9dfa637381de", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ]
+    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "8bd5c392-276a-465c-9809-9dfa637381de", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -203,6 +205,18 @@
         "loopVertexes" : [ "f7031186-90e0-4bb6-b947-4939074aefdd" ],
         "skip" : false,
         "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : {
+      "vertexId" : "9af40e9a-25ac-475d-a8ab-0a676ee6760a",
+      "vertexType" : "LOGGER",
+      "name" : "logger",
+      "description" : "logger_description",
+      "logData" : {
+        "data" : "{\n    \"logger\" : {{{body}}}\n}",
+        "skip" : false
       },
       "imported" : false,
       "skipRuntimeVariables" : false
