@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763094969862,
+  "mts" : 1763095077747,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -19,20 +19,22 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "8bd5c392-276a-465c-9809-9dfa637381de" : [ "v1" ],
+      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "v1" ],
       "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
+      "8bd5c392-276a-465c-9809-9dfa637381de" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ]
     },
     "outbound" : {
-      "v1" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ],
+      "v1" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
       "8bd5c392-276a-465c-9809-9dfa637381de" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
       "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
-      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
+      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ],
+      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ]
     },
-    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "8bd5c392-276a-465c-9809-9dfa637381de", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
+    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "8bd5c392-276a-465c-9809-9dfa637381de", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -167,6 +169,60 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
+    "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : {
+      "vertexId" : "0bb9f761-d40c-43b5-9cc5-cfbb1047c180",
+      "vertexType" : "TARGET",
+      "name" : "test",
+      "target" : {
+        "name" : "test",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "test.apiwiz.io",
+          "path" : "/start_test",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -223,6 +279,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763095015820,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763094979965,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763094563364,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
