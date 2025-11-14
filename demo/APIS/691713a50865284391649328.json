@@ -3,7 +3,7 @@
   "cts" : 1763120037366,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763121827275,
+  "mts" : 1763122113492,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691713a50865284391649327",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/asdsadsadsad",
   "pathArray" : [ "asdsadsadsad" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -95,8 +95,8 @@
         "request" : {
           "apiMethod" : "GET",
           "scheme" : "https",
-          "host" : "url.io",
-          "path" : "/SDsd",
+          "host" : "qa-dev-sujith.apiwiz.io",
+          "path" : "/test_3",
           "headerParams" : [ ],
           "queryParams" : [ ],
           "targetRequestBodyType" : "NONE",
@@ -167,11 +167,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763122076155,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763121833559,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1763120037366,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
