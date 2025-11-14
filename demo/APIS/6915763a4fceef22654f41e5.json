@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763095103557,
+  "mts" : 1763095218442,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -22,17 +22,19 @@
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "v1" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
-      "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ]
+      "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
+      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
     },
     "outbound" : {
       "v1" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
       "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
-      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ],
-      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ]
+      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
+      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
+      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
     },
-    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
+    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -220,9 +222,46 @@
       },
       "imported" : false,
       "skipRuntimeVariables" : false
+    },
+    "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : {
+      "vertexId" : "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "jsno_to_xml",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "body",
+        "targetVariable" : "body_target_var",
+        "jsonArray" : false,
+        "rootElementName" : "body_target_var_root_element",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763095151450,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763095108886,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763095015820,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
