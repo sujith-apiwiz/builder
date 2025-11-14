@@ -3,7 +3,7 @@
   "cts" : 1763106743120,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763107061201,
+  "mts" : 1763107162372,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6916dfb708652843916484c1",
@@ -19,14 +19,16 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "368942ec-0770-40ee-9747-dfacf330773d" : [ "v1" ],
-      "125053f1-b488-4fcd-9dc1-a182f9abc442" : [ "368942ec-0770-40ee-9747-dfacf330773d" ]
+      "6abc5d8e-63c9-429d-b7b5-bb26705ea39b" : [ "v1" ],
+      "125053f1-b488-4fcd-9dc1-a182f9abc442" : [ "368942ec-0770-40ee-9747-dfacf330773d" ],
+      "368942ec-0770-40ee-9747-dfacf330773d" : [ "6abc5d8e-63c9-429d-b7b5-bb26705ea39b" ]
     },
     "outbound" : {
-      "v1" : [ "368942ec-0770-40ee-9747-dfacf330773d" ],
-      "368942ec-0770-40ee-9747-dfacf330773d" : [ "125053f1-b488-4fcd-9dc1-a182f9abc442" ]
+      "v1" : [ "6abc5d8e-63c9-429d-b7b5-bb26705ea39b" ],
+      "368942ec-0770-40ee-9747-dfacf330773d" : [ "125053f1-b488-4fcd-9dc1-a182f9abc442" ],
+      "6abc5d8e-63c9-429d-b7b5-bb26705ea39b" : [ "368942ec-0770-40ee-9747-dfacf330773d" ]
     },
-    "allNeighbours" : [ "368942ec-0770-40ee-9747-dfacf330773d", "v1", "125053f1-b488-4fcd-9dc1-a182f9abc442" ]
+    "allNeighbours" : [ "6abc5d8e-63c9-429d-b7b5-bb26705ea39b", "368942ec-0770-40ee-9747-dfacf330773d", "v1", "125053f1-b488-4fcd-9dc1-a182f9abc442" ]
   },
   "vertexHashMap" : {
     "368942ec-0770-40ee-9747-dfacf330773d" : {
@@ -42,13 +44,22 @@
           "rtfValue" : "hi,\nakshatha"
         },
         "mailProperty" : {
-          "smtpAuth" : false,
+          "tenantId" : "682b543c5de5a802d2d201be",
+          "mailPort" : "587",
+          "mailHost" : "smtp.gmail.com",
+          "smtpAuth" : true,
+          "userName" : "engineering@apiwiz.com ",
           "connectionTimeOut" : 0,
           "timeOut" : 0,
           "writeTimeOut" : 0,
-          "enableStartTLS" : false,
-          "cts" : 0,
-          "mts" : 0
+          "enableStartTLS" : true,
+          "mailFromAddress" : "engineering@apiwiz.com ",
+          "cts" : 1747670076067,
+          "mts" : 1762946246728,
+          "createdBy" : "67e298cbed1ae94ac870b921",
+          "modifiedBy" : "67c562eba649de63bf3835e4",
+          "createdUserName" : "Akshatha sm",
+          "modifiedUserName" : "Akshatha SM"
         },
         "skip" : false,
         "showActualErrorMessage" : false,
@@ -58,6 +69,47 @@
           "body" : {
             "data" : "",
             "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "6abc5d8e-63c9-429d-b7b5-bb26705ea39b" : {
+      "vertexId" : "6abc5d8e-63c9-429d-b7b5-bb26705ea39b",
+      "vertexType" : "USER_TASK",
+      "name" : "user_task",
+      "description" : "",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Untitled Form",
+        "formFields" : [ {
+          "id" : "3fd7849b-baa6-4a6c-8ad8-ec24b9dbd0f6",
+          "targetVariable" : "name_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "name",
+          "placeHolder" : "name",
+          "required" : false
+        } ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 60000,
+        "expiryDurationUnit" : "MINUTES",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
           }
         }
       },
@@ -106,6 +158,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763107087621,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763107067442,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763107030651,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
