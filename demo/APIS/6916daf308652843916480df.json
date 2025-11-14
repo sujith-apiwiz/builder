@@ -3,7 +3,7 @@
   "cts" : 1763105523639,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763105547213,
+  "mts" : 1763105585300,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6916daf308652843916480de",
@@ -35,8 +35,12 @@
       "skipRuntimeVariables" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/xml"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Day>\n  <Name>Monday</Name>\n</Day>\n",
+          "type" : "xml"
         }
       }
     },
