@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763105299344,
+  "mts" : 1763105709851,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -23,20 +23,22 @@
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "v1" ],
       "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
-      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ]
+      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ],
+      "abf51216-4ba6-4198-9354-d7ab13d8f096" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "abf51216-4ba6-4198-9354-d7ab13d8f096" ]
     },
     "outbound" : {
       "8ee67ae6-fb48-410b-b7d1-c10781fad51d" : [ "e26a88f6-016e-43b8-b778-9bcb7e632369" ],
       "v1" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
-      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ],
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
-      "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
+      "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
+      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "abf51216-4ba6-4198-9354-d7ab13d8f096" ],
+      "abf51216-4ba6-4198-9354-d7ab13d8f096" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
     },
-    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "161e1bbc-7196-4880-b5ff-31d05717c3f2", "e26a88f6-016e-43b8-b778-9bcb7e632369", "59d77390-9b14-46c8-8919-68dfc12f8c2f", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "8ee67ae6-fb48-410b-b7d1-c10781fad51d", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
+    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "e26a88f6-016e-43b8-b778-9bcb7e632369", "abf51216-4ba6-4198-9354-d7ab13d8f096", "59d77390-9b14-46c8-8919-68dfc12f8c2f", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "8ee67ae6-fb48-410b-b7d1-c10781fad51d", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -79,6 +81,68 @@
         "skip" : false
       },
       "parentVertex" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "abf51216-4ba6-4198-9354-d7ab13d8f096" : {
+      "vertexId" : "abf51216-4ba6-4198-9354-d7ab13d8f096",
+      "vertexType" : "TARGET",
+      "name" : "xml_path_1",
+      "target" : {
+        "name" : "xml_path_1",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/xml_path",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "xml_body",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
       "imported" : false,
       "skipRuntimeVariables" : false
     },
@@ -239,6 +303,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763105348942,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763105305256,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763105287445,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
