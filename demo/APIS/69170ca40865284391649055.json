@@ -3,7 +3,7 @@
   "cts" : 1763118244141,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763118244141,
+  "mts" : 1763118310181,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "69170ca40865284391649054",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "v1" ]
+      "fe572806-ee92-4d08-911d-523f88cb6082" : [ "v1" ],
+      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ]
     },
     "outbound" : {
-      "v1" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
+      "v1" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ],
+      "fe572806-ee92-4d08-911d-523f88cb6082" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
     },
-    "allNeighbours" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "v1" ]
+    "allNeighbours" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "v1", "fe572806-ee92-4d08-911d-523f88cb6082" ]
   },
   "vertexHashMap" : {
     "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : {
@@ -62,6 +64,68 @@
           }
         }
       }
+    },
+    "fe572806-ee92-4d08-911d-523f88cb6082" : {
+      "vertexId" : "fe572806-ee92-4d08-911d-523f88cb6082",
+      "vertexType" : "TARGET",
+      "name" : "XML_VALUE",
+      "target" : {
+        "name" : "XML_VALUE",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "qa-dev-lmxz.apiwiz.io",
+          "path" : "/xml_path",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "xml_body",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
