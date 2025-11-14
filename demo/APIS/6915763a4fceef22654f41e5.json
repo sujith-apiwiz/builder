@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763096436412,
+  "mts" : 1763096657389,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -24,9 +24,8 @@
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
       "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
-      "9cdcc0e2-abee-45c3-844d-bd1fb53304d9" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
       "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a" ],
-      "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a" : [ "9cdcc0e2-abee-45c3-844d-bd1fb53304d9" ]
+      "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
     },
     "outbound" : {
       "v1" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
@@ -34,11 +33,10 @@
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
-      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "9cdcc0e2-abee-45c3-844d-bd1fb53304d9" ],
       "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ],
-      "9cdcc0e2-abee-45c3-844d-bd1fb53304d9" : [ "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a" ]
+      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a" ]
     },
-    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "9cdcc0e2-abee-45c3-844d-bd1fb53304d9", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
+    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "cb3dc33b-6ab0-4a68-a5d1-4c2563ce742a", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -53,7 +51,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"OK\":\"OK\"\n    \"response\" : {{{body_target_var}}}\n    \"xml_response\" : {{{xml_target_var}}},\n \n}",
+          "data" : "{\n    \"OK\":\"OK\"\n    \"response\" : {{{body_target_var}}}\n    \"xml_response\" : {{{xml_target_var}}},\n    \"var\" : {{{}}}\n \n}",
           "type" : "json"
         }
       }
@@ -65,25 +63,6 @@
       "delayData" : {
         "delayUnit" : "SECONDS",
         "delayAmount" : 10,
-        "skip" : false,
-        "showActualErrorMessage" : false
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
-    "9cdcc0e2-abee-45c3-844d-bd1fb53304d9" : {
-      "vertexId" : "9cdcc0e2-abee-45c3-844d-bd1fb53304d9",
-      "vertexType" : "DATABASE",
-      "name" : "sd",
-      "description" : "sdd",
-      "databaseData" : {
-        "connectorId" : "691316c5b0b7311653d2d34d",
-        "databaseType" : "MONGODB",
-        "query" : "{\"operation\":\"insert\",\"databaseName\":\"admin\",\"collection\":\"system.version\",\"documents\":[{\"_id\":\"\",\"version\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-        "variableName" : "db_taget_variable",
-        "connectorName" : "Mongo-DB-Test",
-        "tenantName" : "admin",
-        "collectionName" : "system.version",
         "skip" : false,
         "showActualErrorMessage" : false
       },
