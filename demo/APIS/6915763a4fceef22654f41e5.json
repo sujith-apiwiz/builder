@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763102235770,
+  "mts" : 1763102442288,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -88,10 +88,11 @@
       "name" : "For Loop",
       "loopData" : {
         "variables" : [ ],
-        "listType" : "json",
-        "loopList" : [ ],
+        "listType" : "xml",
+        "loopList" : [ "[]" ],
         "startingVertex" : [ "8ee67ae6-fb48-410b-b7d1-c10781fad51d" ],
         "loopVertexes" : [ "e26a88f6-016e-43b8-b778-9bcb7e632369", "8ee67ae6-fb48-410b-b7d1-c10781fad51d" ],
+        "xpath" : "/xmlpath",
         "skip" : false,
         "showActualErrorMessage" : false
       },
@@ -238,6 +239,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763102355035,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763102240970,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763102223393,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
