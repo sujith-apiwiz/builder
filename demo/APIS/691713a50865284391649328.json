@@ -1,0 +1,84 @@
+{
+  "id" : "691713a50865284391649328",
+  "cts" : 1763120037366,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763120037366,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "691713a50865284391649327",
+  "revision" : 1,
+  "name" : "New Workflow 191",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/",
+  "pathArray" : [ ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "70d9ca2b-01fc-4228-a202-7f9538d08c24" : [ "v1" ]
+    },
+    "outbound" : {
+      "v1" : [ "70d9ca2b-01fc-4228-a202-7f9538d08c24" ]
+    },
+    "allNeighbours" : [ "v1", "70d9ca2b-01fc-4228-a202-7f9538d08c24" ]
+  },
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "70d9ca2b-01fc-4228-a202-7f9538d08c24" : {
+      "vertexId" : "70d9ca2b-01fc-4228-a202-7f9538d08c24",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1763120037366,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
