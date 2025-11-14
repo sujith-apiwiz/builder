@@ -3,7 +3,7 @@
   "cts" : 1763106743120,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763106770383,
+  "mts" : 1763107058999,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6916dfb708652843916484c1",
@@ -14,19 +14,56 @@
   "apiMethod" : "GET",
   "path" : "/test_3",
   "pathArray" : [ "test_3" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "125053f1-b488-4fcd-9dc1-a182f9abc442" : [ "v1" ]
+      "368942ec-0770-40ee-9747-dfacf330773d" : [ "v1" ],
+      "125053f1-b488-4fcd-9dc1-a182f9abc442" : [ "368942ec-0770-40ee-9747-dfacf330773d" ]
     },
     "outbound" : {
-      "v1" : [ "125053f1-b488-4fcd-9dc1-a182f9abc442" ]
+      "v1" : [ "368942ec-0770-40ee-9747-dfacf330773d" ],
+      "368942ec-0770-40ee-9747-dfacf330773d" : [ "125053f1-b488-4fcd-9dc1-a182f9abc442" ]
     },
-    "allNeighbours" : [ "v1", "125053f1-b488-4fcd-9dc1-a182f9abc442" ]
+    "allNeighbours" : [ "368942ec-0770-40ee-9747-dfacf330773d", "v1", "125053f1-b488-4fcd-9dc1-a182f9abc442" ]
   },
   "vertexHashMap" : {
+    "368942ec-0770-40ee-9747-dfacf330773d" : {
+      "vertexId" : "368942ec-0770-40ee-9747-dfacf330773d",
+      "vertexType" : "EMAIL_CONNECTOR",
+      "name" : "email",
+      "description" : "",
+      "mailConnectorData" : {
+        "mailTemplate" : {
+          "toMailIds" : [ " akshatha.sm@apiwiz.com" ],
+          "body" : "<p>hi,\nakshatha</p>\n",
+          "subject" : "email",
+          "rtfValue" : "hi,\nakshatha"
+        },
+        "mailProperty" : {
+          "smtpAuth" : false,
+          "connectionTimeOut" : 0,
+          "timeOut" : 0,
+          "writeTimeOut" : 0,
+          "enableStartTLS" : false,
+          "cts" : 0,
+          "mts" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "v1" : {
       "vertexId" : "v1",
       "vertexType" : "START",
@@ -69,11 +106,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763107030651,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763106776100,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1763106743120,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
