@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763105216051,
+  "mts" : 1763105297950,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -89,7 +89,7 @@
       "loopData" : {
         "variables" : [ ],
         "listType" : "xml",
-        "loopList" : [ "\n<Items>\n  <Item>\n    <Id>1</Id>\n    <Name>Apple</Name>\n    <Quantity>10</Quantity>\n  </Item>\n\n  <Item>\n    <Id>2</Id>\n    <Name>Banana</Name>\n    <Quantity>20</Quantity>\n  </Item>\n\n  <Item>\n    <Id>3</Id>\n    <Name>Cherry</Name>\n    <Quantity>15</Quantity>\n  </Item>\n</Items>\n]" ],
+        "loopList" : [ "<Items>\n  <Item>\n    <Id>1</Id>\n    <Name>Apple</Name>\n    <Quantity>10</Quantity>\n  </Item>\n\n  <Item>\n    <Id>2</Id>\n    <Name>Banana</Name>\n    <Quantity>20</Quantity>\n  </Item>\n\n  <Item>\n    <Id>3</Id>\n    <Name>Cherry</Name>\n    <Quantity>15</Quantity>\n  </Item>\n</Items>\n]" ],
         "startingVertex" : [ "8ee67ae6-fb48-410b-b7d1-c10781fad51d" ],
         "loopVertexes" : [ "e26a88f6-016e-43b8-b778-9bcb7e632369", "8ee67ae6-fb48-410b-b7d1-c10781fad51d" ],
         "xpath" : "/Items/Item",
@@ -239,6 +239,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763105287445,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763105223594,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763104577149,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
