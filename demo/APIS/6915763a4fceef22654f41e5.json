@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763095548548,
+  "mts" : 1763095564360,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -51,7 +51,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"OK\":\"OK\"\n    \"response\" : {{{body_target_var}}}\n}",
+          "data" : "{\n    \"OK\":\"OK\"\n    \"response\" : {{{body_target_var}}}\n    \"xml_response\" : {{{xml_target_var}}}\n}",
           "type" : "json"
         }
       }
