@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763094495537,
+  "mts" : 1763094579092,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -21,14 +21,16 @@
     "inbound" : {
       "8bd5c392-276a-465c-9809-9dfa637381de" : [ "v1" ],
       "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ],
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ]
+      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ]
     },
     "outbound" : {
       "v1" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ],
       "8bd5c392-276a-465c-9809-9dfa637381de" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
-      "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
+      "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
+      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
     },
-    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "8bd5c392-276a-465c-9809-9dfa637381de", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ]
+    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "8bd5c392-276a-465c-9809-9dfa637381de", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -47,6 +49,19 @@
           "type" : "json"
         }
       }
+    },
+    "161e1bbc-7196-4880-b5ff-31d05717c3f2" : {
+      "vertexId" : "161e1bbc-7196-4880-b5ff-31d05717c3f2",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 10,
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "f7031186-90e0-4bb6-b947-4939074aefdd" : {
       "vertexId" : "f7031186-90e0-4bb6-b947-4939074aefdd",
@@ -186,6 +201,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763094563364,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763094501958,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763094484061,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
