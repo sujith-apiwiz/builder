@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763100389273,
+  "mts" : 1763101007403,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -20,21 +20,21 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "v1" ],
-      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
+      "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
       "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
-      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "99724303-eebe-4584-8bff-3f005c745cc0" ],
-      "99724303-eebe-4584-8bff-3f005c745cc0" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ]
+      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
+      "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ]
     },
     "outbound" : {
       "v1" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
-      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
+      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
       "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ],
-      "99724303-eebe-4584-8bff-3f005c745cc0" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
-      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "99724303-eebe-4584-8bff-3f005c745cc0" ]
+      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
+      "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
     },
-    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "161e1bbc-7196-4880-b5ff-31d05717c3f2", "99724303-eebe-4584-8bff-3f005c745cc0", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
+    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "161e1bbc-7196-4880-b5ff-31d05717c3f2", "59d77390-9b14-46c8-8919-68dfc12f8c2f", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -67,17 +67,19 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
-    "99724303-eebe-4584-8bff-3f005c745cc0" : {
-      "vertexId" : "99724303-eebe-4584-8bff-3f005c745cc0",
+    "59d77390-9b14-46c8-8919-68dfc12f8c2f" : {
+      "vertexId" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
       "vertexType" : "LOOP",
       "name" : "For Loop",
       "loopData" : {
+        "listVariableSource" : "",
         "variables" : [ ],
         "listType" : "json",
-        "loopList" : [ "1", "2" ],
-        "listName" : "new_array",
-        "startingVertex" : [ "fd00ce74-4fed-41a6-bf91-77852ff8ec25" ],
-        "loopVertexes" : [ "fd00ce74-4fed-41a6-bf91-77852ff8ec25" ],
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ "034d6293-3551-4eb0-9a46-10782283a6d2" ],
+        "listVariableVertexId" : "",
+        "loopVertexes" : [ "034d6293-3551-4eb0-9a46-10782283a6d2" ],
         "skip" : false,
         "showActualErrorMessage" : false
       },
@@ -181,8 +183,35 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
-    "fd00ce74-4fed-41a6-bf91-77852ff8ec25" : {
-      "vertexId" : "fd00ce74-4fed-41a6-bf91-77852ff8ec25",
+    "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : {
+      "vertexId" : "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "jsno_to_xml",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "body",
+        "targetVariable" : "body_target_var",
+        "jsonArray" : false,
+        "rootElementName" : "body_target_var_root_element",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "034d6293-3551-4eb0-9a46-10782283a6d2" : {
+      "vertexId" : "034d6293-3551-4eb0-9a46-10782283a6d2",
       "vertexType" : "TARGET",
       "name" : "for_loop",
       "target" : {
@@ -205,7 +234,7 @@
         "response" : {
           "statusCode" : 400,
           "variables" : [ {
-            "name" : "for_loop_var",
+            "name" : "body",
             "reference" : "body",
             "value" : "$",
             "active" : true,
@@ -240,34 +269,7 @@
           }
         }
       },
-      "parentVertex" : "99724303-eebe-4584-8bff-3f005c745cc0",
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
-    "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : {
-      "vertexId" : "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba",
-      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
-      "name" : "jsno_to_xml",
-      "jsonToXmlTransformationData" : {
-        "sourceVariable" : "body",
-        "targetVariable" : "body_target_var",
-        "jsonArray" : false,
-        "rootElementName" : "body_target_var_root_element",
-        "objectElementName" : "",
-        "attributeList" : [ ],
-        "staticElementAttributeHashMap" : { },
-        "staticPathAttributeArrayList" : [ ],
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        }
-      },
+      "parentVertex" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
       "imported" : false,
       "skipRuntimeVariables" : false
     }
