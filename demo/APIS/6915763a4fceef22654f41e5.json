@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763105709851,
+  "mts" : 1763105736299,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -26,7 +26,8 @@
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ],
       "abf51216-4ba6-4198-9354-d7ab13d8f096" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "abf51216-4ba6-4198-9354-d7ab13d8f096" ]
+      "c4123702-3826-46b0-878b-927abd14d10f" : [ "abf51216-4ba6-4198-9354-d7ab13d8f096" ],
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "c4123702-3826-46b0-878b-927abd14d10f" ]
     },
     "outbound" : {
       "8ee67ae6-fb48-410b-b7d1-c10781fad51d" : [ "e26a88f6-016e-43b8-b778-9bcb7e632369" ],
@@ -36,9 +37,10 @@
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
       "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "abf51216-4ba6-4198-9354-d7ab13d8f096" ],
-      "abf51216-4ba6-4198-9354-d7ab13d8f096" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
+      "abf51216-4ba6-4198-9354-d7ab13d8f096" : [ "c4123702-3826-46b0-878b-927abd14d10f" ],
+      "c4123702-3826-46b0-878b-927abd14d10f" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
     },
-    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "e26a88f6-016e-43b8-b778-9bcb7e632369", "abf51216-4ba6-4198-9354-d7ab13d8f096", "59d77390-9b14-46c8-8919-68dfc12f8c2f", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "8ee67ae6-fb48-410b-b7d1-c10781fad51d", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
+    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "e26a88f6-016e-43b8-b778-9bcb7e632369", "c4123702-3826-46b0-878b-927abd14d10f", "abf51216-4ba6-4198-9354-d7ab13d8f096", "59d77390-9b14-46c8-8919-68dfc12f8c2f", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "8ee67ae6-fb48-410b-b7d1-c10781fad51d", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -81,6 +83,28 @@
         "skip" : false
       },
       "parentVertex" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "c4123702-3826-46b0-878b-927abd14d10f" : {
+      "vertexId" : "c4123702-3826-46b0-878b-927abd14d10f",
+      "vertexType" : "XML_TO_JSON_TRANSFORMATION",
+      "name" : "xml_body",
+      "xmlToJsonTransformationData" : {
+        "sourceVariable" : "xml_body",
+        "targetVariable" : "xml_body_target_var",
+        "arrayXPaths" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
       "imported" : false,
       "skipRuntimeVariables" : false
     },
