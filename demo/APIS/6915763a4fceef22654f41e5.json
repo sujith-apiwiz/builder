@@ -2,10 +2,10 @@
   "id" : "6915763a4fceef22654f41e5",
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
-  "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763014202061,
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763093548069,
   "createdBy" : "67a0969408a0e559a5309912",
-  "modifiedBy" : "67a0969408a0e559a5309912",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
   "revision" : 1,
   "name" : "New Workflow 185",
@@ -16,15 +16,17 @@
   "pathArray" : [ ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "Sujith Kumar",
+  "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "v1" ]
+      "8bd5c392-276a-465c-9809-9dfa637381de" : [ "v1" ],
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ]
     },
     "outbound" : {
-      "v1" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
+      "v1" : [ "8bd5c392-276a-465c-9809-9dfa637381de" ],
+      "8bd5c392-276a-465c-9809-9dfa637381de" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
     },
-    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "v1" ]
+    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "8bd5c392-276a-465c-9809-9dfa637381de", "v1" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -39,6 +41,60 @@
           "type" : "JSON"
         }
       }
+    },
+    "8bd5c392-276a-465c-9809-9dfa637381de" : {
+      "vertexId" : "8bd5c392-276a-465c-9809-9dfa637381de",
+      "vertexType" : "TARGET",
+      "name" : "task",
+      "target" : {
+        "name" : "task",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "url.io",
+          "path" : "/sdsfds",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
