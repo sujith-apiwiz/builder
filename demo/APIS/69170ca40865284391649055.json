@@ -3,7 +3,7 @@
   "cts" : 1763118244141,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763118328394,
+  "mts" : 1763118354641,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "69170ca40865284391649054",
@@ -20,13 +20,15 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "fe572806-ee92-4d08-911d-523f88cb6082" : [ "v1" ],
-      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ]
+      "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ],
+      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "2d817777-2215-49dc-a7db-c7e3b8b8d83b" ]
     },
     "outbound" : {
       "v1" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ],
-      "fe572806-ee92-4d08-911d-523f88cb6082" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
+      "fe572806-ee92-4d08-911d-523f88cb6082" : [ "2d817777-2215-49dc-a7db-c7e3b8b8d83b" ],
+      "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
     },
-    "allNeighbours" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "v1", "fe572806-ee92-4d08-911d-523f88cb6082" ]
+    "allNeighbours" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "v1", "2d817777-2215-49dc-a7db-c7e3b8b8d83b", "fe572806-ee92-4d08-911d-523f88cb6082" ]
   },
   "vertexHashMap" : {
     "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : {
@@ -68,6 +70,28 @@
           }
         }
       }
+    },
+    "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : {
+      "vertexId" : "2d817777-2215-49dc-a7db-c7e3b8b8d83b",
+      "vertexType" : "XML_TO_JSON_TRANSFORMATION",
+      "name" : "xml_var",
+      "xmlToJsonTransformationData" : {
+        "sourceVariable" : "xml_body",
+        "targetVariable" : "xml_body_target_var",
+        "arrayXPaths" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "fe572806-ee92-4d08-911d-523f88cb6082" : {
       "vertexId" : "fe572806-ee92-4d08-911d-523f88cb6082",
