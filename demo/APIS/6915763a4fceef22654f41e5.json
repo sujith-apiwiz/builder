@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763096657389,
+  "mts" : 1763097007752,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -91,7 +91,15 @@
         },
         "response" : {
           "statusCode" : 400,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "for_loop_var",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
         },
         "timeout" : 0,
         "skip" : false,
@@ -102,6 +110,20 @@
           "body" : {
             "data" : "",
             "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
           }
         }
       },
