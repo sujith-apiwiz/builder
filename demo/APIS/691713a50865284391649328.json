@@ -3,7 +3,7 @@
   "cts" : 1763120037366,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763131829396,
+  "mts" : 1763131841639,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691713a50865284391649327",
@@ -156,7 +156,7 @@
       "name" : "Delay",
       "delayData" : {
         "delayUnit" : "SECONDS",
-        "delayAmount" : 0,
+        "delayAmount" : 10,
         "skip" : false,
         "showActualErrorMessage" : false
       },
