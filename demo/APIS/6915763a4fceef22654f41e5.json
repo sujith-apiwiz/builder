@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763097557709,
+  "mts" : 1763100330538,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -20,21 +20,21 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "v1" ],
-      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
-      "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
       "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
-      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
+      "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
+      "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "99724303-eebe-4584-8bff-3f005c745cc0" ],
+      "99724303-eebe-4584-8bff-3f005c745cc0" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ]
     },
     "outbound" : {
       "v1" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
-      "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
-      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "89ca874a-dd2b-457a-9c23-29f545eb1c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
-      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ]
+      "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" ],
+      "99724303-eebe-4584-8bff-3f005c745cc0" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
+      "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "99724303-eebe-4584-8bff-3f005c745cc0" ]
     },
-    "allNeighbours" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2", "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "89ca874a-dd2b-457a-9c23-29f545eb1c2f", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
+    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "161e1bbc-7196-4880-b5ff-31d05717c3f2", "99724303-eebe-4584-8bff-3f005c745cc0", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -67,65 +67,20 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
-    "f7031186-90e0-4bb6-b947-4939074aefdd" : {
-      "vertexId" : "f7031186-90e0-4bb6-b947-4939074aefdd",
-      "vertexType" : "TARGET",
-      "name" : "Add a new delivery agent to the system.",
-      "target" : {
-        "name" : "Add a new delivery agent to the system.",
-        "description" : "",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "test.apiwiz.io",
-          "path" : "/Start_test_1",
-          "headerParams" : [ ],
-          "queryParams" : [ ],
-          "targetRequestBodyType" : "RAW",
-          "body" : { },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ {
-            "name" : "for_loop_var",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false,
-            "feelExpression" : false
-          } ]
-        },
-        "timeout" : 0,
+    "99724303-eebe-4584-8bff-3f005c745cc0" : {
+      "vertexId" : "99724303-eebe-4584-8bff-3f005c745cc0",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "variables" : [ ],
+        "listType" : "json",
+        "loopList" : [ "1", "2" ],
+        "listName" : "new_array",
+        "startingVertex" : [ "fd00ce74-4fed-41a6-bf91-77852ff8ec25" ],
+        "loopVertexes" : [ "fd00ce74-4fed-41a6-bf91-77852ff8ec25" ],
         "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        },
-        "securityResponse" : {
-          "isEnabled" : false,
-          "useEnforcedRules" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        }
+        "showActualErrorMessage" : false
       },
-      "parentVertex" : "89ca874a-dd2b-457a-9c23-29f545eb1c2f",
       "imported" : false,
       "skipRuntimeVariables" : false
     },
@@ -214,23 +169,6 @@
         }
       }
     },
-    "89ca874a-dd2b-457a-9c23-29f545eb1c2f" : {
-      "vertexId" : "89ca874a-dd2b-457a-9c23-29f545eb1c2f",
-      "vertexType" : "LOOP",
-      "name" : "For Loop",
-      "loopData" : {
-        "variables" : [ ],
-        "listType" : "json",
-        "loopList" : [ "2" ],
-        "listName" : "reponse_body",
-        "startingVertex" : [ "f7031186-90e0-4bb6-b947-4939074aefdd" ],
-        "loopVertexes" : [ "f7031186-90e0-4bb6-b947-4939074aefdd" ],
-        "skip" : false,
-        "showActualErrorMessage" : false
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
     "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : {
       "vertexId" : "9af40e9a-25ac-475d-a8ab-0a676ee6760a",
       "vertexType" : "LOGGER",
@@ -240,6 +178,69 @@
         "data" : "{\n    \"logger\" : {{{body}}}\n}",
         "skip" : false
       },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "fd00ce74-4fed-41a6-bf91-77852ff8ec25" : {
+      "vertexId" : "fd00ce74-4fed-41a6-bf91-77852ff8ec25",
+      "vertexType" : "TARGET",
+      "name" : "for_loop",
+      "target" : {
+        "name" : "for_loop",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "GET",
+          "scheme" : "https",
+          "host" : "test.apiwiz.io",
+          "path" : "/Start_test_1",
+          "headerParams" : [ ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "NONE",
+          "body" : {
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ {
+            "name" : "for_loop_var",
+            "reference" : "body",
+            "value" : "$",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "parentVertex" : "99724303-eebe-4584-8bff-3f005c745cc0",
       "imported" : false,
       "skipRuntimeVariables" : false
     },
@@ -272,6 +273,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763097975271,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763097563258,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763097519400,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
