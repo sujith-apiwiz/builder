@@ -3,7 +3,7 @@
   "cts" : 1763014202061,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763101283433,
+  "mts" : 1763101865940,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "6915763a4fceef22654f41e4",
@@ -19,6 +19,7 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
+      "e26a88f6-016e-43b8-b778-9bcb7e632369" : [ "8ee67ae6-fb48-410b-b7d1-c10781fad51d" ],
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "v1" ],
       "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ],
@@ -27,6 +28,7 @@
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ]
     },
     "outbound" : {
+      "8ee67ae6-fb48-410b-b7d1-c10781fad51d" : [ "e26a88f6-016e-43b8-b778-9bcb7e632369" ],
       "v1" : [ "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" ],
       "161e1bbc-7196-4880-b5ff-31d05717c3f2" : [ "59d77390-9b14-46c8-8919-68dfc12f8c2f" ],
       "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : [ "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ],
@@ -34,7 +36,7 @@
       "0bb9f761-d40c-43b5-9cc5-cfbb1047c180" : [ "161e1bbc-7196-4880-b5ff-31d05717c3f2" ],
       "59d77390-9b14-46c8-8919-68dfc12f8c2f" : [ "9af40e9a-25ac-475d-a8ab-0a676ee6760a" ]
     },
-    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "161e1bbc-7196-4880-b5ff-31d05717c3f2", "59d77390-9b14-46c8-8919-68dfc12f8c2f", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
+    "allNeighbours" : [ "96766267-cc33-4b0a-8f4d-8e3b1a744fa9", "161e1bbc-7196-4880-b5ff-31d05717c3f2", "e26a88f6-016e-43b8-b778-9bcb7e632369", "59d77390-9b14-46c8-8919-68dfc12f8c2f", "0bb9f761-d40c-43b5-9cc5-cfbb1047c180", "8ee67ae6-fb48-410b-b7d1-c10781fad51d", "v1", "9af40e9a-25ac-475d-a8ab-0a676ee6760a", "e1afa3bf-4eef-4b88-a2bd-434ce0c837ba" ]
   },
   "vertexHashMap" : {
     "96766267-cc33-4b0a-8f4d-8e3b1a744fa9" : {
@@ -67,19 +69,29 @@
       "imported" : false,
       "skipRuntimeVariables" : false
     },
+    "e26a88f6-016e-43b8-b778-9bcb7e632369" : {
+      "vertexId" : "e26a88f6-016e-43b8-b778-9bcb7e632369",
+      "vertexType" : "LOGGER",
+      "name" : "logger",
+      "description" : "",
+      "logData" : {
+        "data" : "{\n    \"response\" : {{{Body}}}\n}",
+        "skip" : false
+      },
+      "parentVertex" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "59d77390-9b14-46c8-8919-68dfc12f8c2f" : {
       "vertexId" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
       "vertexType" : "LOOP",
       "name" : "For Loop",
       "loopData" : {
-        "listVariableSource" : "",
         "variables" : [ ],
         "listType" : "json",
         "loopList" : [ ],
-        "listName" : "",
-        "startingVertex" : [ "034d6293-3551-4eb0-9a46-10782283a6d2" ],
-        "listVariableVertexId" : "",
-        "loopVertexes" : [ "034d6293-3551-4eb0-9a46-10782283a6d2" ],
+        "startingVertex" : [ "8ee67ae6-fb48-410b-b7d1-c10781fad51d" ],
+        "loopVertexes" : [ "8ee67ae6-fb48-410b-b7d1-c10781fad51d", "e26a88f6-016e-43b8-b778-9bcb7e632369" ],
         "skip" : false,
         "showActualErrorMessage" : false
       },
@@ -171,6 +183,20 @@
         }
       }
     },
+    "8ee67ae6-fb48-410b-b7d1-c10781fad51d" : {
+      "vertexId" : "8ee67ae6-fb48-410b-b7d1-c10781fad51d",
+      "vertexType" : "DELAY",
+      "name" : "Delay",
+      "delayData" : {
+        "delayUnit" : "SECONDS",
+        "delayAmount" : 10,
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "parentVertex" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "9af40e9a-25ac-475d-a8ab-0a676ee6760a" : {
       "vertexId" : "9af40e9a-25ac-475d-a8ab-0a676ee6760a",
       "vertexType" : "LOGGER",
@@ -209,72 +235,19 @@
       },
       "imported" : false,
       "skipRuntimeVariables" : false
-    },
-    "034d6293-3551-4eb0-9a46-10782283a6d2" : {
-      "vertexId" : "034d6293-3551-4eb0-9a46-10782283a6d2",
-      "vertexType" : "TARGET",
-      "name" : "for_loop",
-      "target" : {
-        "name" : "for_loop",
-        "apiType" : "RESTAPI",
-        "request" : {
-          "apiMethod" : "GET",
-          "scheme" : "https",
-          "host" : "test.apiwiz.io",
-          "path" : "/Start_test_1",
-          "headerParams" : [ ],
-          "queryParams" : [ ],
-          "targetRequestBodyType" : "NONE",
-          "body" : {
-            "type" : "json"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ {
-            "name" : "body",
-            "reference" : "body",
-            "value" : "$",
-            "active" : true,
-            "source" : "raw",
-            "hide" : false,
-            "feelExpression" : false
-          } ]
-        },
-        "timeout" : 0,
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 400,
-          "body" : {
-            "data" : "",
-            "type" : "json"
-          }
-        },
-        "securityResponse" : {
-          "isEnabled" : false,
-          "useEnforcedRules" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        }
-      },
-      "parentVertex" : "59d77390-9b14-46c8-8919-68dfc12f8c2f",
-      "imported" : false,
-      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763101317799,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763101289048,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Review",
     "cts" : 1763101050414,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
