@@ -3,7 +3,7 @@
   "cts" : 1763121426192,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763121830945,
+  "mts" : 1763121889497,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691719120865284391649635",
@@ -14,7 +14,7 @@
   "apiMethod" : "POST",
   "path" : "/validate/{shipment_id}",
   "pathArray" : [ "validate", "*" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
@@ -54,8 +54,12 @@
       "skipRuntimeVariables" : false,
       "proxyResponse" : {
         "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/xml"
+        },
         "body" : {
-          "type" : "JSON"
+          "data" : "{{{sandbox_response}}}",
+          "type" : "xml"
         }
       }
     },
@@ -179,11 +183,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763121878344,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763121846956,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1763121426192,
     "lastModifiedBy" : "Sujith Kumar",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
