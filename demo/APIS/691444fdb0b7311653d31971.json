@@ -3,7 +3,7 @@
   "cts" : 1762936061765,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1762936834019,
+  "mts" : 1763107528779,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691444fdb0b7311653d31970",
@@ -21,17 +21,55 @@
     "inbound" : {
       "82d911de-664e-4753-a87d-e06e94fafb36" : [ "v1" ],
       "b1901401-3846-431c-9940-1ce7fa5d195d" : [ "82d911de-664e-4753-a87d-e06e94fafb36" ],
-      "398ab091-823b-4e93-a90e-293237c82e07" : [ "b1901401-3846-431c-9940-1ce7fa5d195d" ],
+      "398ab091-823b-4e93-a90e-293237c82e07" : [ "56c74217-4740-4af4-8753-1f39ab84624e" ],
+      "56c74217-4740-4af4-8753-1f39ab84624e" : [ "b1901401-3846-431c-9940-1ce7fa5d195d" ],
       "400075b9-d398-440e-97c1-e31269b43634" : [ "b1901401-3846-431c-9940-1ce7fa5d195d" ]
     },
     "outbound" : {
       "v1" : [ "82d911de-664e-4753-a87d-e06e94fafb36" ],
       "82d911de-664e-4753-a87d-e06e94fafb36" : [ "b1901401-3846-431c-9940-1ce7fa5d195d" ],
-      "b1901401-3846-431c-9940-1ce7fa5d195d" : [ "398ab091-823b-4e93-a90e-293237c82e07", "400075b9-d398-440e-97c1-e31269b43634" ]
+      "56c74217-4740-4af4-8753-1f39ab84624e" : [ "398ab091-823b-4e93-a90e-293237c82e07" ],
+      "b1901401-3846-431c-9940-1ce7fa5d195d" : [ "56c74217-4740-4af4-8753-1f39ab84624e", "400075b9-d398-440e-97c1-e31269b43634" ]
     },
-    "allNeighbours" : [ "b1901401-3846-431c-9940-1ce7fa5d195d", "398ab091-823b-4e93-a90e-293237c82e07", "400075b9-d398-440e-97c1-e31269b43634", "v1", "82d911de-664e-4753-a87d-e06e94fafb36" ]
+    "allNeighbours" : [ "56c74217-4740-4af4-8753-1f39ab84624e", "b1901401-3846-431c-9940-1ce7fa5d195d", "398ab091-823b-4e93-a90e-293237c82e07", "400075b9-d398-440e-97c1-e31269b43634", "v1", "82d911de-664e-4753-a87d-e06e94fafb36" ]
   },
   "vertexHashMap" : {
+    "56c74217-4740-4af4-8753-1f39ab84624e" : {
+      "vertexId" : "56c74217-4740-4af4-8753-1f39ab84624e",
+      "vertexType" : "EMAIL_CONNECTOR",
+      "name" : "email",
+      "description" : "",
+      "mailConnectorData" : {
+        "mailTemplate" : {
+          "toMailIds" : [ "akshatha.sm@apiwiz.com" ],
+          "ccMailIds" : [ "akshatha.sm@apiwiz.com" ],
+          "body" : "<p>hi,\nemail</p>\n",
+          "subject" : "email",
+          "rtfValue" : "hi,\nemail"
+        },
+        "mailProperty" : {
+          "smtpAuth" : false,
+          "connectionTimeOut" : 0,
+          "timeOut" : 0,
+          "writeTimeOut" : 0,
+          "enableStartTLS" : false,
+          "cts" : 0,
+          "mts" : 0
+        },
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "b1901401-3846-431c-9940-1ce7fa5d195d" : {
       "vertexId" : "b1901401-3846-431c-9940-1ce7fa5d195d",
       "vertexType" : "CONDITIONAL_FLOW",
@@ -58,7 +96,7 @@
             }
           }
         },
-        "flowVertexes" : [ "398ab091-823b-4e93-a90e-293237c82e07" ]
+        "flowVertexes" : [ "56c74217-4740-4af4-8753-1f39ab84624e" ]
       }, {
         "condition" : "else",
         "assertion" : {
@@ -182,6 +220,16 @@
   },
   "statusHistory" : [ {
     "status" : "Review",
+    "cts" : 1763107367583,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1762936839437,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
+    "status" : "Review",
     "cts" : 1762936822317,
     "lastModifiedBy" : "67c562eba649de63bf3835e4",
     "description" : "Proxy undeploy"
@@ -227,6 +275,6 @@
   "kafkaGroupId" : "",
   "enableLogging" : true,
   "indexName" : "nw_logger",
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
