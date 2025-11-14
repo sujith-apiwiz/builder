@@ -3,7 +3,7 @@
   "cts" : 1763118244141,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763118551953,
+  "mts" : 1763118590542,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "69170ca40865284391649054",
@@ -22,15 +22,17 @@
       "fe572806-ee92-4d08-911d-523f88cb6082" : [ "v1" ],
       "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ],
       "064bab9a-3bbf-4fec-ae61-360cd47554f6" : [ "2d817777-2215-49dc-a7db-c7e3b8b8d83b" ],
-      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "064bab9a-3bbf-4fec-ae61-360cd47554f6" ]
+      "e2a98c91-571b-4ba1-b35a-0a75f7b64cea" : [ "064bab9a-3bbf-4fec-ae61-360cd47554f6" ],
+      "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : [ "e2a98c91-571b-4ba1-b35a-0a75f7b64cea" ]
     },
     "outbound" : {
       "v1" : [ "fe572806-ee92-4d08-911d-523f88cb6082" ],
       "fe572806-ee92-4d08-911d-523f88cb6082" : [ "2d817777-2215-49dc-a7db-c7e3b8b8d83b" ],
       "2d817777-2215-49dc-a7db-c7e3b8b8d83b" : [ "064bab9a-3bbf-4fec-ae61-360cd47554f6" ],
-      "064bab9a-3bbf-4fec-ae61-360cd47554f6" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
+      "064bab9a-3bbf-4fec-ae61-360cd47554f6" : [ "e2a98c91-571b-4ba1-b35a-0a75f7b64cea" ],
+      "e2a98c91-571b-4ba1-b35a-0a75f7b64cea" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" ]
     },
-    "allNeighbours" : [ "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "064bab9a-3bbf-4fec-ae61-360cd47554f6", "v1", "2d817777-2215-49dc-a7db-c7e3b8b8d83b", "fe572806-ee92-4d08-911d-523f88cb6082" ]
+    "allNeighbours" : [ "e2a98c91-571b-4ba1-b35a-0a75f7b64cea", "c6c0bad4-1065-4afc-8989-58e8b66c7b9b", "064bab9a-3bbf-4fec-ae61-360cd47554f6", "v1", "2d817777-2215-49dc-a7db-c7e3b8b8d83b", "fe572806-ee92-4d08-911d-523f88cb6082" ]
   },
   "vertexHashMap" : {
     "c6c0bad4-1065-4afc-8989-58e8b66c7b9b" : {
@@ -49,6 +51,34 @@
           "type" : "json"
         }
       }
+    },
+    "e2a98c91-571b-4ba1-b35a-0a75f7b64cea" : {
+      "vertexId" : "e2a98c91-571b-4ba1-b35a-0a75f7b64cea",
+      "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+      "name" : "sdfdsf",
+      "description" : "s",
+      "jsonToXmlTransformationData" : {
+        "sourceVariable" : "json_body",
+        "targetVariable" : "json_body_target_var",
+        "jsonArray" : false,
+        "rootElementName" : "xml_var",
+        "objectElementName" : "",
+        "attributeList" : [ ],
+        "staticElementAttributeHashMap" : { },
+        "staticPathAttributeArrayList" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
