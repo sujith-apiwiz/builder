@@ -1,0 +1,155 @@
+{
+  "id" : "691970974690100a05afe43a",
+  "cts" : 1763274903868,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763274903868,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "691970974690100a05afe439",
+  "revision" : 1,
+  "name" : "Import Export Test",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/import-export-test",
+  "pathArray" : [ "import-export-test" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "1309f7a1-d088-4ba3-a716-1e687a3f17b4" : [ "v1" ],
+      "4db63faf-e9c3-4982-92aa-33a75adeffca" : [ "1309f7a1-d088-4ba3-a716-1e687a3f17b4" ],
+      "98f77dec-31c5-4391-87c2-3a67ddd2fdc4" : [ "4db63faf-e9c3-4982-92aa-33a75adeffca" ],
+      "489b4e91-4136-4e3e-80da-64e558b4bb77" : [ "98f77dec-31c5-4391-87c2-3a67ddd2fdc4" ]
+    },
+    "outbound" : {
+      "v1" : [ "1309f7a1-d088-4ba3-a716-1e687a3f17b4" ],
+      "1309f7a1-d088-4ba3-a716-1e687a3f17b4" : [ "4db63faf-e9c3-4982-92aa-33a75adeffca" ],
+      "4db63faf-e9c3-4982-92aa-33a75adeffca" : [ "98f77dec-31c5-4391-87c2-3a67ddd2fdc4" ],
+      "98f77dec-31c5-4391-87c2-3a67ddd2fdc4" : [ "489b4e91-4136-4e3e-80da-64e558b4bb77" ]
+    },
+    "allNeighbours" : [ "1309f7a1-d088-4ba3-a716-1e687a3f17b4", "4db63faf-e9c3-4982-92aa-33a75adeffca", "489b4e91-4136-4e3e-80da-64e558b4bb77", "v1", "98f77dec-31c5-4391-87c2-3a67ddd2fdc4" ]
+  },
+  "vertexHashMap" : {
+    "1309f7a1-d088-4ba3-a716-1e687a3f17b4" : {
+      "vertexId" : "1309f7a1-d088-4ba3-a716-1e687a3f17b4",
+      "vertexType" : "REDIS_CACHING",
+      "name" : "Redis Connector",
+      "description" : "",
+      "redisCachingData" : {
+        "redisCacheConnectorId" : "68398acdbb9e4f4731cd78c3",
+        "cachingOperationList" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "4db63faf-e9c3-4982-92aa-33a75adeffca" : {
+      "vertexId" : "4db63faf-e9c3-4982-92aa-33a75adeffca",
+      "vertexType" : "DATABASE",
+      "name" : "DB Node",
+      "databaseData" : {
+        "connectorId" : "6787425d215c0e72878592b4",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"find\",\"databaseName\":\"sample_mflix\",\"collection\":\"embedded_movies\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"host\":\"\",\"port\":\"\",\"theaterId\":\"\",\"location\":{\"address\":{\"street1\":\"\",\"city\":\"\",\"state\":\"\",\"zipcode\":\"\"},\"geo\":{\"type\":\"\",\"coordinates\":[]}},\"plot\":\"\",\"genres\":[],\"runtime\":\"\",\"cast\":[],\"num_mflix_comments\":\"\",\"title\":\"\",\"fullplot\":\"\",\"languages\":[],\"released\":\"\",\"directors\":[],\"writers\":[],\"awards\":{\"wins\":\"\",\"nominations\":\"\",\"text\":\"\"},\"lastupdated\":\"\",\"year\":\"\",\"imdb\":{\"rating\":\"\",\"votes\":\"\",\"id\":\"\"},\"countries\":[],\"type\":\"\",\"plot_embedding\":[],\"poster\":\"\",\"metacritic\":\"\",\"rated\":\"\",\"tomatoes\":{\"viewer\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"production\":\"\",\"lastUpdated\":\"\",\"dvd\":\"\",\"website\":\"\",\"critic\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"boxOffice\":\"\",\"consensus\":\"\",\"rotten\":\"\",\"fresh\":\"\"}}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{\"_id\":1,\"plot\":1},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "db_output",
+        "connectorName" : "Deepak Cloud DB",
+        "tenantName" : "sample_mflix",
+        "collectionName" : "embedded_movies",
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "489b4e91-4136-4e3e-80da-64e558b4bb77" : {
+      "vertexId" : "489b4e91-4136-4e3e-80da-64e558b4bb77",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "98f77dec-31c5-4391-87c2-3a67ddd2fdc4" : {
+      "vertexId" : "98f77dec-31c5-4391-87c2-3a67ddd2fdc4",
+      "vertexType" : "SHARED_FLOW",
+      "name" : "Looging Loop",
+      "description" : "",
+      "sharedFlowNodeData" : {
+        "sharedFlowId" : "68fb2acd35048c29eabb91ad",
+        "sharedFlowName" : "Logging For loop",
+        "inputVariablesMap" : { },
+        "importOutputVariables" : false,
+        "importedVariables" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1763274903868,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
