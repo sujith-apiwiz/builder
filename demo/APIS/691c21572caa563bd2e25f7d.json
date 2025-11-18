@@ -3,7 +3,7 @@
   "cts" : 1763451223672,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763451223672,
+  "mts" : 1763451308784,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691c21572caa563bd2e25f7c",
@@ -19,12 +19,14 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "4c45ee10-1a24-4951-a3ff-80778260fe4e" : [ "v1" ]
+      "c304e208-d2d5-4229-8a8a-8cbeffcb1d8f" : [ "v1" ],
+      "4c45ee10-1a24-4951-a3ff-80778260fe4e" : [ "c304e208-d2d5-4229-8a8a-8cbeffcb1d8f" ]
     },
     "outbound" : {
-      "v1" : [ "4c45ee10-1a24-4951-a3ff-80778260fe4e" ]
+      "v1" : [ "c304e208-d2d5-4229-8a8a-8cbeffcb1d8f" ],
+      "c304e208-d2d5-4229-8a8a-8cbeffcb1d8f" : [ "4c45ee10-1a24-4951-a3ff-80778260fe4e" ]
     },
-    "allNeighbours" : [ "4c45ee10-1a24-4951-a3ff-80778260fe4e", "v1" ]
+    "allNeighbours" : [ "4c45ee10-1a24-4951-a3ff-80778260fe4e", "c304e208-d2d5-4229-8a8a-8cbeffcb1d8f", "v1" ]
   },
   "vertexHashMap" : {
     "4c45ee10-1a24-4951-a3ff-80778260fe4e" : {
@@ -39,6 +41,55 @@
           "type" : "JSON"
         }
       }
+    },
+    "c304e208-d2d5-4229-8a8a-8cbeffcb1d8f" : {
+      "vertexId" : "c304e208-d2d5-4229-8a8a-8cbeffcb1d8f",
+      "vertexType" : "USER_TASK",
+      "name" : "user_task",
+      "description" : "user_task_description",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Untitled Form",
+        "formFields" : [ {
+          "id" : "1b6d5157-79e1-4c9d-9685-bcb08c05e52f",
+          "targetVariable" : "Single_line_1_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "Single_line_1",
+          "placeHolder" : "Single_line_1_placeholder",
+          "required" : true
+        }, {
+          "id" : "263296ac-e715-4387-847a-208680c71ba9",
+          "targetVariable" : "multiline_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "MULTI_LINE",
+          "label" : "multiline",
+          "placeHolder" : "multiline_placeholder",
+          "required" : false
+        } ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 60000,
+        "expiryDurationUnit" : "MINUTES",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "v1" : {
       "vertexId" : "v1",
