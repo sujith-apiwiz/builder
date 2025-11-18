@@ -3,7 +3,7 @@
   "cts" : 1763458629073,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763468432276,
+  "mts" : 1763468528621,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691c3e452caa563bd2e2664f",
@@ -20,31 +20,29 @@
   "nodeDataHashMap" : {
     "inbound" : {
       "0aa14acd-6617-4b25-b33e-b88ce7bf783d" : [ "v1" ],
-      "6699ad10-36fb-4e66-b096-5398878cc0a2" : [ "0aa14acd-6617-4b25-b33e-b88ce7bf783d" ],
-      "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" : [ "6699ad10-36fb-4e66-b096-5398878cc0a2" ]
+      "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" : [ "0aa14acd-6617-4b25-b33e-b88ce7bf783d" ]
     },
     "outbound" : {
       "v1" : [ "0aa14acd-6617-4b25-b33e-b88ce7bf783d" ],
-      "0aa14acd-6617-4b25-b33e-b88ce7bf783d" : [ "6699ad10-36fb-4e66-b096-5398878cc0a2" ],
-      "6699ad10-36fb-4e66-b096-5398878cc0a2" : [ "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" ]
+      "0aa14acd-6617-4b25-b33e-b88ce7bf783d" : [ "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" ]
     },
-    "allNeighbours" : [ "6699ad10-36fb-4e66-b096-5398878cc0a2", "7bf836bc-6c62-417c-b39b-a1fcf57abb1e", "0aa14acd-6617-4b25-b33e-b88ce7bf783d", "v1" ]
+    "allNeighbours" : [ "7bf836bc-6c62-417c-b39b-a1fcf57abb1e", "0aa14acd-6617-4b25-b33e-b88ce7bf783d", "v1" ]
   },
   "vertexHashMap" : {
-    "6699ad10-36fb-4e66-b096-5398878cc0a2" : {
-      "vertexId" : "6699ad10-36fb-4e66-b096-5398878cc0a2",
+    "4dd5e2bb-dffa-4231-8024-48e68055957b" : {
+      "vertexId" : "4dd5e2bb-dffa-4231-8024-48e68055957b",
       "vertexType" : "USER_TASK",
-      "name" : "test",
+      "name" : "testFormLoop",
       "description" : "",
       "userTaskNodeData" : {
         "mode" : "PORTAL_FORM_FILLING",
-        "formName" : "Testform",
+        "formName" : "Tesslndfna.",
         "formFields" : [ {
-          "id" : "a1ed156a-cd29-4af5-9012-0aea4d8847d6",
-          "targetVariable" : "testname",
+          "id" : "cec68ba6-5801-413b-8f68-603ed159dce4",
+          "targetVariable" : "testForName",
           "targetVariableDataType" : "STRING",
           "inputType" : "TEXT",
-          "label" : "Testname",
+          "label" : "testForName",
           "placeHolder" : "",
           "required" : false
         } ],
@@ -69,6 +67,7 @@
           }
         }
       },
+      "parentVertex" : "0aa14acd-6617-4b25-b33e-b88ce7bf783d",
       "imported" : false,
       "skipRuntimeVariables" : false
     },
@@ -128,8 +127,8 @@
         "listType" : "json",
         "loopList" : [ "1", "2", "3", "4" ],
         "listName" : "somethingtest",
-        "startingVertex" : [ ],
-        "loopVertexes" : [ ],
+        "startingVertex" : [ "4dd5e2bb-dffa-4231-8024-48e68055957b" ],
+        "loopVertexes" : [ "4dd5e2bb-dffa-4231-8024-48e68055957b" ],
         "skip" : false,
         "showActualErrorMessage" : false
       },
