@@ -3,7 +3,7 @@
   "cts" : 1763451223672,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763451346996,
+  "mts" : 1763452008151,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691c21572caa563bd2e25f7c",
@@ -14,7 +14,7 @@
   "apiMethod" : "GET",
   "path" : "/useretghjk",
   "pathArray" : [ "useretghjk" ],
-  "revisionStatus" : "DRAFT",
+  "revisionStatus" : "REVIEW",
   "locked" : true,
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
@@ -53,7 +53,7 @@
       "description" : "user_task_description",
       "userTaskNodeData" : {
         "mode" : "PORTAL_FORM_FILLING",
-        "formName" : "Untitled Form",
+        "formName" : "user_task",
         "formFields" : [ {
           "id" : "1b6d5157-79e1-4c9d-9685-bcb08c05e52f",
           "targetVariable" : "Single_line_1_target_var",
@@ -70,6 +70,56 @@
           "label" : "multiline",
           "placeHolder" : "multiline_placeholder",
           "required" : false
+        }, {
+          "id" : "681aa3a7-763d-4a5b-8d5d-ea90db390f01",
+          "targetVariable" : "Dropdown_1_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "DROPDOWN",
+          "label" : "Dropdown_1",
+          "placeHolder" : "Dropdown_1_placeholder",
+          "required" : true,
+          "options" : [ "option_1", "Option_1" ]
+        }, {
+          "id" : "8ae8084d-91ae-437f-97f2-9d00612dfce3",
+          "targetVariable" : "CheckBox_1_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "CHECK_BOX",
+          "label" : "CheckBox_1",
+          "required" : false,
+          "options" : [ "Option_1", "Option_2" ]
+        }, {
+          "id" : "395b20b0-887d-4ad7-8a5d-a920fbb1af5f",
+          "targetVariable" : "Radio_button_1_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "RADIO",
+          "label" : "Radio_button_1",
+          "required" : false,
+          "options" : [ "Option_1", "Option_2", "Option 3" ]
+        }, {
+          "id" : "7184dd91-5eee-434b-aa4b-e5b1d187e873",
+          "targetVariable" : "Dropdown_2_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "DROPDOWN",
+          "label" : "Dropdown_2",
+          "placeHolder" : "Dropdown_2_placeholder",
+          "required" : false,
+          "options" : [ "Option_1_dropdon", "Option_1_dropdon" ]
+        }, {
+          "id" : "d5837f7c-911d-48a1-979b-d412670e8c92",
+          "targetVariable" : "Check_box_2_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "CHECK_BOX",
+          "label" : "Check_box_2",
+          "required" : false,
+          "options" : [ "Option_1_checkBox", "Option_2_checkBox" ]
+        }, {
+          "id" : "b5491366-c4a1-4c5f-ac8d-fba1b9e48102",
+          "targetVariable" : "Radio_button_2_target_var",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "RADIO",
+          "label" : "Radio_button_2",
+          "required" : false,
+          "options" : [ "Option_1_radioButton", "Option_2_radioButton" ]
         } ],
         "additionalDataMap" : { },
         "interimResponse" : {
@@ -120,11 +170,22 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763451592462,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763451353303,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : " "
+  }, {
     "status" : "Draft",
     "cts" : 1763451223672,
     "lastModifiedBy" : "Akshatha SM",
     "description" : "Created new proxy"
   } ],
+  "virtualHostList" : [ ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
