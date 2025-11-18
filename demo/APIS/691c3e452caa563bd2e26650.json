@@ -3,7 +3,7 @@
   "cts" : 1763458629073,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763465282820,
+  "mts" : 1763468323411,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691c3e452caa563bd2e2664f",
@@ -19,14 +19,59 @@
   "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" : [ "v1" ]
+      "0aa14acd-6617-4b25-b33e-b88ce7bf783d" : [ "v1" ],
+      "6699ad10-36fb-4e66-b096-5398878cc0a2" : [ "0aa14acd-6617-4b25-b33e-b88ce7bf783d" ],
+      "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" : [ "6699ad10-36fb-4e66-b096-5398878cc0a2" ]
     },
     "outbound" : {
-      "v1" : [ "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" ]
+      "v1" : [ "0aa14acd-6617-4b25-b33e-b88ce7bf783d" ],
+      "0aa14acd-6617-4b25-b33e-b88ce7bf783d" : [ "6699ad10-36fb-4e66-b096-5398878cc0a2" ],
+      "6699ad10-36fb-4e66-b096-5398878cc0a2" : [ "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" ]
     },
-    "allNeighbours" : [ "7bf836bc-6c62-417c-b39b-a1fcf57abb1e", "v1" ]
+    "allNeighbours" : [ "6699ad10-36fb-4e66-b096-5398878cc0a2", "7bf836bc-6c62-417c-b39b-a1fcf57abb1e", "0aa14acd-6617-4b25-b33e-b88ce7bf783d", "v1" ]
   },
   "vertexHashMap" : {
+    "6699ad10-36fb-4e66-b096-5398878cc0a2" : {
+      "vertexId" : "6699ad10-36fb-4e66-b096-5398878cc0a2",
+      "vertexType" : "USER_TASK",
+      "name" : "test",
+      "description" : "",
+      "userTaskNodeData" : {
+        "mode" : "PORTAL_FORM_FILLING",
+        "formName" : "Testform",
+        "formFields" : [ {
+          "id" : "a1ed156a-cd29-4af5-9012-0aea4d8847d6",
+          "targetVariable" : "testname",
+          "targetVariableDataType" : "STRING",
+          "inputType" : "TEXT",
+          "label" : "Testname",
+          "placeHolder" : "",
+          "required" : false
+        } ],
+        "additionalDataMap" : { },
+        "interimResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        },
+        "expiryDuration" : 86400000,
+        "expiryDurationUnit" : "DAYS",
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
     "7bf836bc-6c62-417c-b39b-a1fcf57abb1e" : {
       "vertexId" : "7bf836bc-6c62-417c-b39b-a1fcf57abb1e",
       "vertexType" : "STOP",
@@ -62,6 +107,32 @@
           }
         }
       }
+    },
+    "0aa14acd-6617-4b25-b33e-b88ce7bf783d" : {
+      "vertexId" : "0aa14acd-6617-4b25-b33e-b88ce7bf783d",
+      "vertexType" : "LOOP",
+      "name" : "For Loop",
+      "loopData" : {
+        "listVariableSource" : "",
+        "variables" : [ {
+          "name" : "test",
+          "reference" : "body",
+          "value" : "1",
+          "active" : true,
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "listType" : "json",
+        "loopList" : [ ],
+        "listName" : "",
+        "startingVertex" : [ ],
+        "listVariableVertexId" : "",
+        "loopVertexes" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
