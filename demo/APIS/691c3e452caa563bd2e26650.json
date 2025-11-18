@@ -3,7 +3,7 @@
   "cts" : 1763458629073,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763468323411,
+  "mts" : 1763468393603,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691c3e452caa563bd2e2664f",
@@ -113,20 +113,18 @@
       "vertexType" : "LOOP",
       "name" : "For Loop",
       "loopData" : {
-        "listVariableSource" : "",
         "variables" : [ {
           "name" : "test",
           "reference" : "body",
-          "value" : "1",
+          "value" : "5",
           "active" : true,
           "hide" : false,
           "feelExpression" : false
         } ],
         "listType" : "json",
-        "loopList" : [ ],
-        "listName" : "",
+        "loopList" : [ "1", "2", "3", "4" ],
+        "listName" : "somethingtest",
         "startingVertex" : [ ],
-        "listVariableVertexId" : "",
         "loopVertexes" : [ ],
         "skip" : false,
         "showActualErrorMessage" : false
