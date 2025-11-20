@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763639345151,
+  "mts" : 1763639919123,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -63,7 +63,15 @@
         },
         "response" : {
           "statusCode" : 400,
-          "variables" : [ ]
+          "variables" : [ {
+            "name" : "data",
+            "reference" : "body",
+            "value" : "/*",
+            "active" : true,
+            "source" : "raw",
+            "hide" : false,
+            "feelExpression" : false
+          } ]
         },
         "timeout" : 0,
         "skip" : false,
@@ -136,6 +144,26 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763639897236,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763639841149,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "fs"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763639718075,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "fs"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763639357417,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "fs"
+  }, {
     "status" : "Review",
     "cts" : 1763639133490,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
