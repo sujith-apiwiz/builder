@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763632110300,
+  "mts" : 1763632758874,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -90,12 +90,12 @@
         },
         "timeout" : 5,
         "skip" : false,
-        "showActualErrorMessage" : false,
+        "showActualErrorMessage" : true,
         "continueOnError" : false,
         "errorResponse" : {
-          "statusCode" : 400,
+          "statusCode" : 408,
           "body" : {
-            "data" : "",
+            "data" : "{\n    \"message\":\"request time out\"\n}",
             "type" : "json"
           }
         },
@@ -136,6 +136,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763632635308,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763632117574,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "sd"
+  }, {
     "status" : "Review",
     "cts" : 1763632101260,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
