@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763637114567,
+  "mts" : 1763637476233,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -110,12 +110,6 @@
           "host" : "webservices.oorsprong.org",
           "path" : "/websamples.countryinfo/CountryInfoService.wso",
           "headerParams" : [ {
-            "name" : "Referer",
-            "value" : "http"
-          }, {
-            "name" : "User-Agent",
-            "value" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
-          }, {
             "name" : "Accept",
             "value" : "application/json, text/plain, */*"
           }, {
@@ -142,7 +136,7 @@
         "errorResponse" : {
           "statusCode" : 408,
           "body" : {
-            "data" : "",
+            "data" : "\"custom error\"",
             "type" : "json"
           }
         },
@@ -206,6 +200,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763637389102,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763637122805,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "jk"
+  }, {
     "status" : "Review",
     "cts" : 1763637102935,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
