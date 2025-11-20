@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763631847980,
+  "mts" : 1763631875761,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -19,12 +19,14 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "dc8bace5-8853-4691-b9cc-208714696290" : [ "v1" ]
+      "98c0ded2-0dcd-4d3c-a6a5-d7ddc3f4c10c" : [ "v1" ],
+      "dc8bace5-8853-4691-b9cc-208714696290" : [ "98c0ded2-0dcd-4d3c-a6a5-d7ddc3f4c10c" ]
     },
     "outbound" : {
-      "v1" : [ "dc8bace5-8853-4691-b9cc-208714696290" ]
+      "v1" : [ "98c0ded2-0dcd-4d3c-a6a5-d7ddc3f4c10c" ],
+      "98c0ded2-0dcd-4d3c-a6a5-d7ddc3f4c10c" : [ "dc8bace5-8853-4691-b9cc-208714696290" ]
     },
-    "allNeighbours" : [ "v1", "dc8bace5-8853-4691-b9cc-208714696290" ]
+    "allNeighbours" : [ "98c0ded2-0dcd-4d3c-a6a5-d7ddc3f4c10c", "v1", "dc8bace5-8853-4691-b9cc-208714696290" ]
   },
   "vertexHashMap" : {
     "v1" : {
@@ -49,6 +51,71 @@
           }
         }
       }
+    },
+    "98c0ded2-0dcd-4d3c-a6a5-d7ddc3f4c10c" : {
+      "vertexId" : "98c0ded2-0dcd-4d3c-a6a5-d7ddc3f4c10c",
+      "vertexType" : "TARGET",
+      "name" : "CustomerInfo",
+      "target" : {
+        "name" : "CustomerInfo",
+        "description" : "CustomerInfo",
+        "apiType" : "RESTAPI",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "test.apiwiz.io",
+          "path" : "/validate-customer-info",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-application-type",
+            "value" : "ApiSandbox"
+          }, {
+            "name" : "x-tenant",
+            "value" : "qa-dev-686cb8a8e1052c276a27edc7-ApiBuilder"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "",
+            "type" : "JSON"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "dc8bace5-8853-4691-b9cc-208714696290" : {
       "vertexId" : "dc8bace5-8853-4691-b9cc-208714696290",
