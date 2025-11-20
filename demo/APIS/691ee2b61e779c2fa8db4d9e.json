@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763636674633,
+  "mts" : 1763636728795,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -134,7 +134,7 @@
           "variables" : [ ]
         },
         "timeout" : 0,
-        "skip" : false,
+        "skip" : true,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
         "errorResponse" : {
@@ -204,6 +204,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763636720714,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763636685416,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "fs"
+  }, {
     "status" : "Review",
     "cts" : 1763636548991,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
