@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763631986932,
+  "mts" : 1763632008467,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -88,7 +88,7 @@
           "statusCode" : 400,
           "variables" : [ ]
         },
-        "timeout" : 120000,
+        "timeout" : 600,
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
