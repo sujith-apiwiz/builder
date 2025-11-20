@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763639919123,
+  "mts" : 1763639927394,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -137,7 +137,7 @@
           "content-type" : "application/json"
         },
         "body" : {
-          "data" : "{\n    \"message\":\"ok\"\n}",
+          "data" : "{{{data}}}",
           "type" : "json"
         }
       }
