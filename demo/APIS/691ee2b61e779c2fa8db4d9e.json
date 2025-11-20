@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763633781515,
+  "mts" : 1763635740344,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -19,27 +19,53 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "32cd7f16-5333-49e8-ba01-7c8540ec1068" : [ "v1" ],
-      "dc8bace5-8853-4691-b9cc-208714696290" : [ "32cd7f16-5333-49e8-ba01-7c8540ec1068" ]
+      "37c31847-3188-4d6e-b9b9-fbb00690b236" : [ "v1" ],
+      "dc8bace5-8853-4691-b9cc-208714696290" : [ "37c31847-3188-4d6e-b9b9-fbb00690b236" ]
     },
     "outbound" : {
-      "v1" : [ "32cd7f16-5333-49e8-ba01-7c8540ec1068" ],
-      "32cd7f16-5333-49e8-ba01-7c8540ec1068" : [ "dc8bace5-8853-4691-b9cc-208714696290" ]
+      "v1" : [ "37c31847-3188-4d6e-b9b9-fbb00690b236" ],
+      "37c31847-3188-4d6e-b9b9-fbb00690b236" : [ "dc8bace5-8853-4691-b9cc-208714696290" ]
     },
-    "allNeighbours" : [ "32cd7f16-5333-49e8-ba01-7c8540ec1068", "v1", "dc8bace5-8853-4691-b9cc-208714696290" ]
+    "allNeighbours" : [ "37c31847-3188-4d6e-b9b9-fbb00690b236", "v1", "dc8bace5-8853-4691-b9cc-208714696290" ]
   },
   "vertexHashMap" : {
-    "32cd7f16-5333-49e8-ba01-7c8540ec1068" : {
-      "vertexId" : "32cd7f16-5333-49e8-ba01-7c8540ec1068",
-      "vertexType" : "SHARED_FLOW",
-      "name" : "Customer Info shared flow",
-      "description" : "",
-      "sharedFlowNodeData" : {
-        "sharedFlowId" : "691ee8251e779c2fa8db50a2",
-        "sharedFlowName" : "CustomerInfo",
-        "inputVariablesMap" : { },
-        "importOutputVariables" : false,
-        "importedVariables" : [ ],
+    "37c31847-3188-4d6e-b9b9-fbb00690b236" : {
+      "vertexId" : "37c31847-3188-4d6e-b9b9-fbb00690b236",
+      "vertexType" : "TARGET",
+      "name" : "cricketmatch",
+      "target" : {
+        "name" : "cricketmatch",
+        "description" : "cricketmatch",
+        "apiType" : "GRAPHQL",
+        "request" : {
+          "apiMethod" : "POST",
+          "scheme" : "https",
+          "host" : "test.apiwiz.io",
+          "path" : "/cricketmatch",
+          "headerParams" : [ {
+            "name" : "content-type",
+            "value" : "application/json"
+          }, {
+            "name" : "x-application-type",
+            "value" : "ApiSandbox"
+          }, {
+            "name" : "x-tenant",
+            "value" : "qa-dev-686cb8a8e1052c276a27edc7-ApiBuilder"
+          } ],
+          "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
+          "body" : {
+            "data" : "{\n  \"query\": \"mutation UpdateEmployee {\\n    updateEmployee(id: 3, employee: { name: \\\"wanda\\\", role: \\\"hr\\\", gender: FEMALE })\\n}\",\n  \"variables\": {}\n}",
+            "type" : "json"
+          },
+          "formParams" : [ ],
+          "urlEncodedParams" : [ ]
+        },
+        "response" : {
+          "statusCode" : 400,
+          "variables" : [ ]
+        },
+        "timeout" : 0,
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
@@ -48,6 +74,20 @@
           "body" : {
             "data" : "",
             "type" : "json"
+          }
+        },
+        "securityResponse" : {
+          "isEnabled" : false,
+          "useEnforcedRules" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
           }
         }
       },
@@ -96,6 +136,26 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763635259004,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763633810158,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "a"
+  }, {
+    "status" : "Review",
+    "cts" : 1763633804328,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763633788621,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "a"
+  }, {
     "status" : "Review",
     "cts" : 1763633760033,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
