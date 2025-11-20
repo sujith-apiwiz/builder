@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763636400903,
+  "mts" : 1763636674633,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -67,12 +67,12 @@
           "statusCode" : 400,
           "variables" : [ ]
         },
-        "timeout" : 5,
+        "timeout" : 0,
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
         "errorResponse" : {
-          "statusCode" : 502,
+          "statusCode" : 400,
           "body" : {
             "data" : "{\n    \"message\":\"bad gateway\"\n}",
             "type" : "json"
@@ -204,6 +204,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763636548991,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763636417183,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "k"
+  }, {
     "status" : "Review",
     "cts" : 1763636232144,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
