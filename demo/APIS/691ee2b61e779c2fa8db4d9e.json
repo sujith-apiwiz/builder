@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763638045311,
+  "mts" : 1763639345151,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -19,26 +19,24 @@
   "lockedBy" : "Sujith Kumar",
   "nodeDataHashMap" : {
     "inbound" : {
-      "37c31847-3188-4d6e-b9b9-fbb00690b236" : [ "v1" ],
-      "237084f7-123b-45b3-b37f-dbbc4127418c" : [ "37c31847-3188-4d6e-b9b9-fbb00690b236" ],
-      "dc8bace5-8853-4691-b9cc-208714696290" : [ "237084f7-123b-45b3-b37f-dbbc4127418c" ]
+      "c68d310c-d8c1-4350-9d0d-552dea17cf84" : [ "v1" ],
+      "dc8bace5-8853-4691-b9cc-208714696290" : [ "c68d310c-d8c1-4350-9d0d-552dea17cf84" ]
     },
     "outbound" : {
-      "v1" : [ "37c31847-3188-4d6e-b9b9-fbb00690b236" ],
-      "37c31847-3188-4d6e-b9b9-fbb00690b236" : [ "237084f7-123b-45b3-b37f-dbbc4127418c" ],
-      "237084f7-123b-45b3-b37f-dbbc4127418c" : [ "dc8bace5-8853-4691-b9cc-208714696290" ]
+      "v1" : [ "c68d310c-d8c1-4350-9d0d-552dea17cf84" ],
+      "c68d310c-d8c1-4350-9d0d-552dea17cf84" : [ "dc8bace5-8853-4691-b9cc-208714696290" ]
     },
-    "allNeighbours" : [ "37c31847-3188-4d6e-b9b9-fbb00690b236", "237084f7-123b-45b3-b37f-dbbc4127418c", "v1", "dc8bace5-8853-4691-b9cc-208714696290" ]
+    "allNeighbours" : [ "c68d310c-d8c1-4350-9d0d-552dea17cf84", "v1", "dc8bace5-8853-4691-b9cc-208714696290" ]
   },
   "vertexHashMap" : {
-    "37c31847-3188-4d6e-b9b9-fbb00690b236" : {
-      "vertexId" : "37c31847-3188-4d6e-b9b9-fbb00690b236",
+    "c68d310c-d8c1-4350-9d0d-552dea17cf84" : {
+      "vertexId" : "c68d310c-d8c1-4350-9d0d-552dea17cf84",
       "vertexType" : "TARGET",
-      "name" : "cricketmatch",
+      "name" : "Cricketmatch",
       "target" : {
-        "name" : "cricketmatch",
-        "description" : "cricketmatch",
-        "apiType" : "GRAPHQL",
+        "name" : "Cricketmatch",
+        "description" : "Cricketmatch",
+        "apiType" : "RESTAPI",
         "request" : {
           "apiMethod" : "POST",
           "scheme" : "https",
@@ -57,8 +55,8 @@
           "queryParams" : [ ],
           "targetRequestBodyType" : "RAW",
           "body" : {
-            "data" : "{\n  \"query\": \"mutation UpdateEmployee {\\n    updateEmployee(id: 3, employee: { name: \\\"wanda\\\", role: \\\"hr\\\", gender: FEMALE })\\n}\",\n  \"variables\": {}\n}",
-            "type" : "json"
+            "data" : "",
+            "type" : "JSON"
           },
           "formParams" : [ ],
           "urlEncodedParams" : [ ]
@@ -74,69 +72,7 @@
         "errorResponse" : {
           "statusCode" : 400,
           "body" : {
-            "data" : "{\n    \"message\":\"bad gateway\"\n}",
-            "type" : "json"
-          }
-        },
-        "securityResponse" : {
-          "isEnabled" : false,
-          "useEnforcedRules" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        }
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
-    "237084f7-123b-45b3-b37f-dbbc4127418c" : {
-      "vertexId" : "237084f7-123b-45b3-b37f-dbbc4127418c",
-      "vertexType" : "TARGET",
-      "name" : "Soap APIs",
-      "target" : {
-        "name" : "Soap APIs",
-        "description" : "Soap APIs",
-        "apiType" : "SOAP",
-        "request" : {
-          "apiMethod" : "POST",
-          "scheme" : "http",
-          "host" : "webservices.oorsprong.org",
-          "path" : "/websamples.countryinfo/CountryInfoService.wso",
-          "headerParams" : [ {
-            "name" : "Accept",
-            "value" : "application/json, text/plain, */*"
-          }, {
-            "name" : "content-type",
-            "value" : "application/xml"
-          } ],
-          "queryParams" : [ ],
-          "targetRequestBodyType" : "RAW",
-          "body" : {
-            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <web:CountryName>\n            <web:sCountryISOCode>IN</web:sCountryISOCode>\n        </web:CountryName>\n    </soapenv:Body>\n</soapenv:Envelope>",
-            "type" : "xml"
-          },
-          "formParams" : [ ],
-          "urlEncodedParams" : [ ]
-        },
-        "response" : {
-          "statusCode" : 400,
-          "variables" : [ ]
-        },
-        "timeout" : 5,
-        "skip" : false,
-        "showActualErrorMessage" : false,
-        "continueOnError" : false,
-        "errorResponse" : {
-          "statusCode" : 408,
-          "body" : {
-            "data" : "\"custom error\"",
+            "data" : "",
             "type" : "json"
           }
         },
@@ -200,6 +136,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763639133490,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763638056864,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "o"
+  }, {
     "status" : "Review",
     "cts" : 1763638021302,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
