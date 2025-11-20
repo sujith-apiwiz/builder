@@ -3,7 +3,7 @@
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763636744847,
+  "mts" : 1763637051768,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
@@ -119,12 +119,14 @@
             "name" : "Accept",
             "value" : "application/json, text/plain, */*"
           }, {
-            "name" : "Content-Type",
-            "value" : "text/xml;charset=UTF-8"
+            "name" : "content-type",
+            "value" : "application/xml"
           } ],
           "queryParams" : [ ],
+          "targetRequestBodyType" : "RAW",
           "body" : {
-            "type" : "json"
+            "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:web=\"http://www.oorsprong.org/websamples.countryinfo\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <web:CountryName>\n            <web:sCountryISOCode>IN</web:sCountryISOCode>\n        </web:CountryName>\n    </soapenv:Body>\n</soapenv:Envelope>",
+            "type" : "xml"
           },
           "formParams" : [ ],
           "urlEncodedParams" : [ ]
@@ -134,7 +136,7 @@
           "variables" : [ ]
         },
         "timeout" : 0,
-        "skip" : true,
+        "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
         "errorResponse" : {
@@ -204,6 +206,16 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763636766163,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763636750515,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "z"
+  }, {
     "status" : "Review",
     "cts" : 1763636720714,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
