@@ -1,0 +1,91 @@
+{
+  "id" : "69203c32cae7820e4b43524c",
+  "cts" : 1763720242646,
+  "createdUserName" : "Sujith Kumar",
+  "modifiedUserName" : "Sujith Kumar",
+  "mts" : 1763720242646,
+  "createdBy" : "67a0969408a0e559a5309912",
+  "modifiedBy" : "67a0969408a0e559a5309912",
+  "proxyId" : "69203c32cae7820e4b43524b",
+  "revision" : 1,
+  "name" : "GET - get account details ",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/forex/account/{user_id}",
+  "pathArray" : [ "forex", "account", "*" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Sujith Kumar",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde" : [ "v1" ]
+    },
+    "outbound" : {
+      "v1" : [ "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde" ]
+    },
+    "allNeighbours" : [ "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde", "v1" ]
+  },
+  "vertexHashMap" : {
+    "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde" : {
+      "vertexId" : "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "user_id",
+        "reference" : "path-variable",
+        "value" : "",
+        "active" : false,
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1763720242646,
+    "lastModifiedBy" : "Sujith Kumar",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
