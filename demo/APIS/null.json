@@ -1,76 +1,41 @@
 {
-  "cts" : 1762834360448,
-  "createdUserName" : "Sujith Kumar",
-  "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1762834360448,
-  "createdBy" : "67a0969408a0e559a5309912",
-  "modifiedBy" : "67a0969408a0e559a5309912",
-  "proxyId" : "6912b7b813c1403c985213be",
+  "cts" : 1763722947289,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763722947289,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "692046c3cae7820e4b435550",
   "revision" : 1,
-  "name" : "check-db-11-11-2025 04:12:40",
+  "name" : "GET - get account details -11-21-2025 11:02:27",
   "description" : "",
   "apiType" : "RESTAPI",
-  "apiMethod" : "POST",
-  "path" : "/check-db",
-  "pathArray" : [ "check-db" ],
+  "apiMethod" : "GET",
+  "path" : "/forex/account/{user_id}",
+  "pathArray" : [ "forex", "account", "*" ],
   "revisionStatus" : "DRAFT",
   "locked" : true,
-  "lockedBy" : "Sujith Kumar",
+  "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
-      "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "v1" ],
-      "0c262447-ca57-4c15-aca9-e94255927c85" : [ "v1" ],
-      "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ]
+      "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde" : [ "v1" ]
     },
     "outbound" : {
-      "v1" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "0c262447-ca57-4c15-aca9-e94255927c85" ],
-      "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ],
-      "0c262447-ca57-4c15-aca9-e94255927c85" : [ "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" ]
+      "v1" : [ "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde" ]
     },
-    "allNeighbours" : [ "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5", "f5c7ac8f-c46a-4c9c-b20c-def5458f7852", "0c262447-ca57-4c15-aca9-e94255927c85", "v1" ]
+    "allNeighbours" : [ "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde", "v1" ]
   },
   "vertexHashMap" : {
-    "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5" : {
-      "vertexId" : "fcdbb2d2-2f51-4748-bc88-fa88f7bb6cb5",
-      "vertexType" : "DATABASE",
-      "name" : "db-1",
-      "description" : "db-1",
-      "databaseData" : {
-        "connectorId" : "6911e3da13c1403c9852124c",
-        "databaseType" : "ORACLEDB",
-        "query" : "select * from EMPLOYEES",
-        "variableName" : "target-1",
-        "connectorName" : "oracle",
-        "schemaName" : "SYS",
-        "tableName" : "ACCESS$",
-        "queryRequest" : {
-          "tableName" : "ACCESS$",
-          "operation" : "SELECT",
-          "selectedFields" : { },
-          "limit" : 0,
-          "offSet" : 0,
-          "top" : 0
-        },
-        "skip" : false,
-        "showActualErrorMessage" : false
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
-    },
-    "f5c7ac8f-c46a-4c9c-b20c-def5458f7852" : {
-      "vertexId" : "f5c7ac8f-c46a-4c9c-b20c-def5458f7852",
+    "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde" : {
+      "vertexId" : "b96cf5f8-6c2c-426d-ae7f-0f3124ffecde",
       "vertexType" : "STOP",
       "name" : "Stop",
       "imported" : false,
       "skipRuntimeVariables" : false,
       "proxyResponse" : {
         "statusCode" : 200,
-        "headers" : {
-          "content-type" : "application/json"
-        },
         "body" : {
-          "data" : "{{{target-1}}}",
-          "type" : "json"
+          "type" : "JSON"
         }
       }
     },
@@ -78,7 +43,14 @@
       "vertexId" : "v1",
       "vertexType" : "START",
       "name" : "Request",
-      "requestVariables" : [ ],
+      "requestVariables" : [ {
+        "name" : "user_id",
+        "reference" : "path-variable",
+        "value" : "",
+        "active" : false,
+        "hide" : false,
+        "feelExpression" : false
+      } ],
       "mandatoryHeaders" : [ ],
       "mandatoryQueryParams" : [ ],
       "imported" : true,
@@ -96,39 +68,12 @@
           }
         }
       }
-    },
-    "0c262447-ca57-4c15-aca9-e94255927c85" : {
-      "vertexId" : "0c262447-ca57-4c15-aca9-e94255927c85",
-      "vertexType" : "DATABASE",
-      "name" : "db-2",
-      "description" : "db-2",
-      "databaseData" : {
-        "connectorId" : "6911e3da13c1403c9852124c",
-        "databaseType" : "ORACLEDB",
-        "query" : "select * from EMPLOYEES",
-        "variableName" : "target-2",
-        "connectorName" : "oracle",
-        "schemaName" : "SYS",
-        "tableName" : "EMPLOYEES",
-        "queryRequest" : {
-          "tableName" : "EMPLOYEES",
-          "operation" : "SELECT",
-          "selectedFields" : { },
-          "limit" : 0,
-          "offSet" : 0,
-          "top" : 0
-        },
-        "skip" : false,
-        "showActualErrorMessage" : false
-      },
-      "imported" : false,
-      "skipRuntimeVariables" : false
     }
   },
   "statusHistory" : [ {
     "status" : "Draft",
-    "cts" : 1762834360448,
-    "lastModifiedBy" : "Sujith Kumar",
+    "cts" : 1763722947289,
+    "lastModifiedBy" : "Akshatha SM",
     "description" : "Duplicated proxy"
   } ],
   "enableTracing" : false,
