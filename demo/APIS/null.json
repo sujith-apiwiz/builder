@@ -1,13 +1,13 @@
 {
-  "cts" : 1763722947289,
+  "cts" : 1763722974516,
   "createdUserName" : "Akshatha SM",
   "modifiedUserName" : "Akshatha SM",
-  "mts" : 1763722947289,
+  "mts" : 1763722974516,
   "createdBy" : "67c562eba649de63bf3835e4",
   "modifiedBy" : "67c562eba649de63bf3835e4",
-  "proxyId" : "692046c3cae7820e4b435550",
-  "revision" : 1,
-  "name" : "GET - get account details -11-21-2025 11:02:27",
+  "proxyId" : "69203c32cae7820e4b43524b",
+  "revision" : 2,
+  "name" : "GET - get account details ",
   "description" : "",
   "apiType" : "RESTAPI",
   "apiMethod" : "GET",
@@ -70,12 +70,6 @@
       }
     }
   },
-  "statusHistory" : [ {
-    "status" : "Draft",
-    "cts" : 1763722947289,
-    "lastModifiedBy" : "Akshatha SM",
-    "description" : "Duplicated proxy"
-  } ],
   "enableTracing" : false,
   "environmentName" : "",
   "environmentId" : "",
