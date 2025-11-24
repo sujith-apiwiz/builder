@@ -1,0 +1,129 @@
+{
+  "id" : "69243236b5157f696eb5cc7f",
+  "cts" : 1763979830606,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763979830606,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "69243236b5157f696eb5cc7e",
+  "revision" : 1,
+  "name" : "Redis Node Testing",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/redis-testing",
+  "pathArray" : [ "redis-testing" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "vertexHashMap" : {
+    "a64178c9-21c8-42a1-a835-e710751a47f0" : {
+      "vertexId" : "a64178c9-21c8-42a1-a835-e710751a47f0",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"Extracted Jession Id\":{{jessionid}}\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "cdb93f2d-0361-4a9c-bbb8-e3ff42cc6157" : {
+      "vertexId" : "cdb93f2d-0361-4a9c-bbb8-e3ff42cc6157",
+      "vertexType" : "REDIS_CACHING",
+      "name" : "Redis Caching Node",
+      "description" : "",
+      "redisCachingData" : {
+        "redisCacheConnectorId" : "67ff3a6380c7b421541c17a4",
+        "cachingOperationList" : [ {
+          "operationName" : "Save Data",
+          "redisCache" : {
+            "key" : "jessionid",
+            "value" : "{{jessionid}}",
+            "expiration" : 0,
+            "timeUnit" : "SECONDS",
+            "cachingOperationType" : "ADD"
+          },
+          "successFull" : false
+        }, {
+          "operationName" : "Get Data",
+          "targetVariable" : "jessiond-extracted",
+          "redisCache" : {
+            "key" : "jessionid",
+            "value" : "",
+            "expiration" : 0,
+            "timeUnit" : "SECONDS",
+            "cachingOperationType" : "GET"
+          },
+          "successFull" : false
+        } ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "jessionid",
+        "reference" : "headers",
+        "value" : "jessionid",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "headers",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1763979830606,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
