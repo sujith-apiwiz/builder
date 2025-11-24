@@ -3,7 +3,7 @@
   "cts" : 1763982035536,
   "createdUserName" : "Sujith Kumar",
   "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763982841548,
+  "mts" : 1763982909346,
   "createdBy" : "67a0969408a0e559a5309912",
   "modifiedBy" : "67a0969408a0e559a5309912",
   "proxyId" : "69243ad3b5157f696eb5d0f3",
@@ -21,14 +21,16 @@
     "inbound" : {
       "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "v1" ],
       "b95141c7-a6ff-4050-9438-89852f046841" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ],
-      "c4665d79-40f6-4c40-979c-cc1fa0322e11" : [ "b95141c7-a6ff-4050-9438-89852f046841" ]
+      "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "b95141c7-a6ff-4050-9438-89852f046841" ],
+      "c4665d79-40f6-4c40-979c-cc1fa0322e11" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ]
     },
     "outbound" : {
       "v1" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ],
       "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "b95141c7-a6ff-4050-9438-89852f046841" ],
-      "b95141c7-a6ff-4050-9438-89852f046841" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11" ]
+      "b95141c7-a6ff-4050-9438-89852f046841" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
+      "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11" ]
     },
-    "allNeighbours" : [ "9444b742-013b-43f0-8feb-7f8eed66a424", "c4665d79-40f6-4c40-979c-cc1fa0322e11", "b95141c7-a6ff-4050-9438-89852f046841", "v1" ]
+    "allNeighbours" : [ "9444b742-013b-43f0-8feb-7f8eed66a424", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "c4665d79-40f6-4c40-979c-cc1fa0322e11", "b95141c7-a6ff-4050-9438-89852f046841", "v1" ]
   },
   "vertexHashMap" : {
     "9444b742-013b-43f0-8feb-7f8eed66a424" : {
@@ -65,6 +67,35 @@
           "type" : "JSON"
         }
       }
+    },
+    "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : {
+      "vertexId" : "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a",
+      "vertexType" : "SHARED_FLOW",
+      "name" : "shared",
+      "description" : "",
+      "sharedFlowNodeData" : {
+        "sharedFlowId" : "69242a60b5157f696eb5c930",
+        "sharedFlowName" : "test-sujith",
+        "inputVariablesMap" : {
+          "input1" : "1",
+          "input2" : "2",
+          "input3" : "3"
+        },
+        "importOutputVariables" : false,
+        "importedVariables" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
     },
     "b95141c7-a6ff-4050-9438-89852f046841" : {
       "vertexId" : "b95141c7-a6ff-4050-9438-89852f046841",
