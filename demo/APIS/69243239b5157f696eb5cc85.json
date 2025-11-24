@@ -1,0 +1,128 @@
+{
+  "id" : "69243239b5157f696eb5cc85",
+  "cts" : 1763979833999,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763979833999,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "69243239b5157f696eb5cc84",
+  "revision" : 1,
+  "name" : "Import Export Testing",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/import-export-testing",
+  "pathArray" : [ "import-export-testing" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "f449cec9-a7e3-4bff-a598-d6c3f7a84064" : [ "v1" ],
+      "97034088-7faa-454d-8e67-d51c926aedfb" : [ "f449cec9-a7e3-4bff-a598-d6c3f7a84064" ],
+      "6a800c22-75a6-4376-b179-c6fa6b273fce" : [ "97034088-7faa-454d-8e67-d51c926aedfb" ]
+    },
+    "outbound" : {
+      "v1" : [ "f449cec9-a7e3-4bff-a598-d6c3f7a84064" ],
+      "f449cec9-a7e3-4bff-a598-d6c3f7a84064" : [ "97034088-7faa-454d-8e67-d51c926aedfb" ],
+      "97034088-7faa-454d-8e67-d51c926aedfb" : [ "6a800c22-75a6-4376-b179-c6fa6b273fce" ]
+    },
+    "allNeighbours" : [ "6a800c22-75a6-4376-b179-c6fa6b273fce", "f449cec9-a7e3-4bff-a598-d6c3f7a84064", "v1", "97034088-7faa-454d-8e67-d51c926aedfb" ]
+  },
+  "vertexHashMap" : {
+    "6a800c22-75a6-4376-b179-c6fa6b273fce" : {
+      "vertexId" : "6a800c22-75a6-4376-b179-c6fa6b273fce",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "JSON"
+        }
+      }
+    },
+    "f449cec9-a7e3-4bff-a598-d6c3f7a84064" : {
+      "vertexId" : "f449cec9-a7e3-4bff-a598-d6c3f7a84064",
+      "vertexType" : "DATABASE",
+      "name" : "Data Base Data",
+      "description" : "something",
+      "databaseData" : {
+        "connectorId" : "6787425d215c0e72878592b4",
+        "databaseType" : "MONGODB",
+        "query" : "{\"operation\":\"find\",\"databaseName\":\"sample_mflix\",\"collection\":\"movies\",\"documents\":[{\"_id\":\"\",\"plot\":\"\",\"genres\":[],\"runtime\":\"\",\"rated\":\"\",\"title\":\"\",\"num_mflix_comments\":\"\",\"poster\":\"\",\"countries\":[],\"fullplot\":\"\",\"languages\":[],\"cast\":[],\"directors\":[],\"writers\":[],\"awards\":{\"wins\":\"\",\"nominations\":\"\",\"text\":\"\"},\"lastupdated\":\"\",\"year\":\"\",\"imdb\":{\"rating\":\"\",\"votes\":\"\",\"id\":\"\"},\"type\":\"\",\"tomatoes\":{\"website\":\"\",\"viewer\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"dvd\":\"\",\"critic\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"lastUpdated\":\"\",\"rotten\":\"\",\"production\":\"\",\"fresh\":\"\",\"boxOffice\":\"\",\"consensus\":\"\"},\"released\":\"\",\"metacritic\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{\"plot\":1},\"sort\":{},\"limit\":0,\"skip\":0}",
+        "variableName" : "data",
+        "connectorName" : "Deepak Cloud DB",
+        "tenantName" : "sample_mflix",
+        "collectionName" : "movies",
+        "manual" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "97034088-7faa-454d-8e67-d51c926aedfb" : {
+      "vertexId" : "97034088-7faa-454d-8e67-d51c926aedfb",
+      "vertexType" : "REDIS_CACHING",
+      "name" : "Redis Node",
+      "description" : "bvjfkxv",
+      "redisCachingData" : {
+        "redisCacheConnectorId" : "68398acdbb9e4f4731cd78c3",
+        "cachingOperationList" : [ ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1763979833999,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
