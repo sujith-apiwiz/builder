@@ -1,0 +1,84 @@
+{
+  "id" : "6924422d4dfccc785bb51dea",
+  "cts" : 1763983917258,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763983917258,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "6924422d4dfccc785bb51de9",
+  "revision" : 1,
+  "name" : "GET - get_operation",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "GET",
+  "path" : "/v1/sandbox/40/operation",
+  "pathArray" : [ "v1", "sandbox", "40", "operation" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "nodeDataHashMap" : {
+    "inbound" : {
+      "49ef5fbd-2e10-4248-99ed-c43a333c4e99" : [ "v1" ]
+    },
+    "outbound" : {
+      "v1" : [ "49ef5fbd-2e10-4248-99ed-c43a333c4e99" ]
+    },
+    "allNeighbours" : [ "v1", "49ef5fbd-2e10-4248-99ed-c43a333c4e99" ]
+  },
+  "vertexHashMap" : {
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "49ef5fbd-2e10-4248-99ed-c43a333c4e99" : {
+      "vertexId" : "49ef5fbd-2e10-4248-99ed-c43a333c4e99",
+      "vertexType" : "STOP",
+      "name" : "200 - 200 ok",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "body" : {
+          "type" : "json"
+        }
+      }
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1763983917258,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "selectedVirtualHostName" : "",
+  "selectedVirtualHostId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
