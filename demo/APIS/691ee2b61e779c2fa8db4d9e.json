@@ -2,10 +2,10 @@
   "id" : "691ee2b61e779c2fa8db4d9e",
   "cts" : 1763631798028,
   "createdUserName" : "Sujith Kumar",
-  "modifiedUserName" : "Sujith Kumar",
-  "mts" : 1763640250097,
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763976524543,
   "createdBy" : "67a0969408a0e559a5309912",
-  "modifiedBy" : "67a0969408a0e559a5309912",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
   "proxyId" : "691ee2b61e779c2fa8db4d9d",
   "revision" : 1,
   "name" : "New Workflow 199",
@@ -16,7 +16,7 @@
   "pathArray" : [ "customer-info" ],
   "revisionStatus" : "REVIEW",
   "locked" : true,
-  "lockedBy" : "Sujith Kumar",
+  "lockedBy" : "Akshatha SM",
   "nodeDataHashMap" : {
     "inbound" : {
       "c68d310c-d8c1-4350-9d0d-552dea17cf84" : [ "v1" ],
@@ -32,7 +32,7 @@
     "c68d310c-d8c1-4350-9d0d-552dea17cf84" : {
       "vertexId" : "c68d310c-d8c1-4350-9d0d-552dea17cf84",
       "vertexType" : "TARGET",
-      "name" : "Cricketmatch",
+      "name" : "Crickhgvhgngvjetmatch",
       "target" : {
         "name" : "Cricketmatch",
         "description" : "Cricketmatch",
@@ -73,7 +73,7 @@
             "feelExpression" : false
           } ]
         },
-        "timeout" : 0,
+        "timeout" : 5,
         "skip" : false,
         "showActualErrorMessage" : false,
         "continueOnError" : false,
@@ -144,6 +144,46 @@
     }
   },
   "statusHistory" : [ {
+    "status" : "Review",
+    "cts" : 1763728185181,
+    "lastModifiedBy" : "67c562eba649de63bf3835e4",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763642481344,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "dd"
+  }, {
+    "status" : "Review",
+    "cts" : 1763641482941,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763641448690,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "kj"
+  }, {
+    "status" : "Review",
+    "cts" : 1763641235112,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763641173113,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "dsd"
+  }, {
+    "status" : "Review",
+    "cts" : 1763641139913,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "Proxy undeploy"
+  }, {
+    "status" : "Approved",
+    "cts" : 1763640259774,
+    "lastModifiedBy" : "67a0969408a0e559a5309912",
+    "description" : "ik"
+  }, {
     "status" : "Review",
     "cts" : 1763640239596,
     "lastModifiedBy" : "67a0969408a0e559a5309912",
@@ -409,6 +449,6 @@
   "kafkaTopic" : "",
   "kafkaGroupId" : "",
   "enableLogging" : false,
-  "deleted" : false,
-  "deployed" : false
+  "deployed" : false,
+  "deleted" : false
 }
