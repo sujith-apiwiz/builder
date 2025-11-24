@@ -1,0 +1,130 @@
+{
+  "id" : "69243238b5157f696eb5cc82",
+  "cts" : 1763979832429,
+  "createdUserName" : "Akshatha SM",
+  "modifiedUserName" : "Akshatha SM",
+  "mts" : 1763979832429,
+  "createdBy" : "67c562eba649de63bf3835e4",
+  "modifiedBy" : "67c562eba649de63bf3835e4",
+  "proxyId" : "69243238b5157f696eb5cc81",
+  "revision" : 1,
+  "name" : "cryptogaphy-11-24-2025 10:23:52",
+  "description" : "",
+  "apiType" : "RESTAPI",
+  "apiMethod" : "POST",
+  "path" : "/crypto-test",
+  "pathArray" : [ "crypto-test" ],
+  "revisionStatus" : "DRAFT",
+  "locked" : true,
+  "lockedBy" : "Akshatha SM",
+  "vertexHashMap" : {
+    "882d6fee-e4d2-43d4-8303-8ead464127d1" : {
+      "vertexId" : "882d6fee-e4d2-43d4-8303-8ead464127d1",
+      "vertexType" : "STOP",
+      "name" : "Stop",
+      "imported" : false,
+      "skipRuntimeVariables" : false,
+      "proxyResponse" : {
+        "statusCode" : 200,
+        "headers" : {
+          "content-type" : "application/json"
+        },
+        "body" : {
+          "data" : "{\n    \"m\": \"{{res}}\"\n}",
+          "type" : "json"
+        }
+      }
+    },
+    "v1" : {
+      "vertexId" : "v1",
+      "vertexType" : "START",
+      "name" : "Request",
+      "requestVariables" : [ {
+        "name" : "payload",
+        "reference" : "body",
+        "value" : "$.a",
+        "variableDataType" : "STRING",
+        "active" : true,
+        "source" : "raw",
+        "hide" : false,
+        "feelExpression" : false
+      } ],
+      "mandatoryHeaders" : [ ],
+      "mandatoryQueryParams" : [ ],
+      "imported" : true,
+      "skipRuntimeVariables" : false,
+      "securityResponse" : {
+        "isEnabled" : false,
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "131ddc32-b175-4771-a2c0-9ff8a075711b" : {
+      "vertexId" : "131ddc32-b175-4771-a2c0-9ff8a075711b",
+      "vertexType" : "DECRYPTION",
+      "name" : "encry",
+      "description" : "",
+      "decryptionData" : {
+        "encryptionDecryptionOperationList" : [ {
+          "operationName" : "a",
+          "description" : "a",
+          "targetVariable" : "res",
+          "sourceVariable" : "payload",
+          "sourceProvidedAtNode" : false,
+          "transformationKey" : "faef6e16136c059f108d46da316adf16",
+          "initializationVector" : "c7e86975bed9613d",
+          "algorithmType" : "AES",
+          "modeType" : "CBC",
+          "paddingType" : "PKCS5Padding"
+        } ],
+        "skip" : false,
+        "showActualErrorMessage" : false,
+        "continueOnError" : false,
+        "errorResponse" : {
+          "statusCode" : 400,
+          "body" : {
+            "data" : "",
+            "type" : "json"
+          }
+        }
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    },
+    "6a97c670-26bc-4ee5-b201-c9ee195d045e" : {
+      "vertexId" : "6a97c670-26bc-4ee5-b201-c9ee195d045e",
+      "vertexType" : "LOGGER",
+      "name" : "Logger",
+      "description" : "",
+      "logData" : {
+        "data" : "{\n    \"m\": \"{{res}}\"\n}",
+        "skip" : false
+      },
+      "imported" : false,
+      "skipRuntimeVariables" : false
+    }
+  },
+  "statusHistory" : [ {
+    "status" : "Draft",
+    "cts" : 1763979832429,
+    "lastModifiedBy" : "Akshatha SM",
+    "description" : "Created new proxy"
+  } ],
+  "enableTracing" : false,
+  "environmentName" : "",
+  "environmentId" : "",
+  "kafkaConnectorId" : "",
+  "kafkaTopic" : "",
+  "kafkaGroupId" : "",
+  "enableLogging" : false,
+  "deployed" : false,
+  "deleted" : false
+}
