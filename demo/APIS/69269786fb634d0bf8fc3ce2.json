@@ -4,7 +4,7 @@
     "cts" : 1764136838400,
     "createdUserName" : "divakar v",
     "modifiedUserName" : "divakar v",
-    "mts" : 1764136957142,
+    "mts" : 1764136978326,
     "createdBy" : "63cf749921c7bb55c7368952",
     "modifiedBy" : "63cf749921c7bb55c7368952",
     "proxyId" : "69269786fb634d0bf8fc3ce1",
@@ -37,6 +37,8 @@
         "target" : {
           "name" : "sand",
           "apiType" : "RESTAPI",
+          "certificateId" : "69269760fb634d0bf8fc3cc4",
+          "certificateName" : "test qa-dev-ieia",
           "request" : {
             "apiMethod" : "POST",
             "scheme" : "https",
@@ -148,4 +150,37 @@
   },
   "type" : "proxy",
   "collectionName" : "ApiBuilder.Proxy.List"
+}, {
+  "data" : {
+    "id" : "69269760fb634d0bf8fc3cc4",
+    "cts" : 1764136800510,
+    "createdUserName" : "divakar v",
+    "modifiedUserName" : "divakar v",
+    "mts" : 1764136824857,
+    "createdBy" : "63cf749921c7bb55c7368952",
+    "modifiedBy" : "63cf749921c7bb55c7368952",
+    "name" : "test qa-dev-ieia",
+    "description" : " ",
+    "certificateFileName" : "user.pfx",
+    "password" : "null",
+    "alias" : "",
+    "status" : "APPROVED",
+    "statusHistory" : [ {
+      "status" : "Approved",
+      "cts" : 1764136824857,
+      "lastModifiedBy" : "divakar v",
+      "description" : " "
+    }, {
+      "status" : "Draft",
+      "cts" : 1764136811709,
+      "lastModifiedBy" : "divakar v"
+    }, {
+      "status" : "Draft",
+      "cts" : 1764136800510,
+      "lastModifiedBy" : "divakar v",
+      "description" : "Created new certificate"
+    } ]
+  },
+  "type" : "connector",
+  "collectionName" : "ApiBuilder.Certificate.List"
 } ]
