@@ -4,7 +4,7 @@
     "cts" : 1763982035536,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764139825771,
+    "mts" : 1764141378584,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "69243ad3b5157f696eb5d0f3",
@@ -188,8 +188,8 @@
     "kafkaTopic" : "",
     "kafkaGroupId" : "",
     "enableLogging" : false,
-    "deployed" : false,
-    "deleted" : false
+    "deleted" : false,
+    "deployed" : false
   },
   "type" : "proxy",
   "collectionName" : "ApiBuilder.Proxy.List"
