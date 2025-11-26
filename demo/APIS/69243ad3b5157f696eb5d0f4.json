@@ -4,7 +4,7 @@
     "cts" : 1763982035536,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764139816788,
+    "mts" : 1764139825771,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "69243ad3b5157f696eb5d0f3",
@@ -60,6 +60,7 @@
         "vertexId" : "390e4b40-36c6-4982-a486-6c59b13f32e2",
         "vertexType" : "DATABASE",
         "name" : "db ",
+        "description" : "sdf",
         "databaseData" : {
           "connectorId" : "6911d16013c1403c98520f3e",
           "databaseType" : "MONGODB",
