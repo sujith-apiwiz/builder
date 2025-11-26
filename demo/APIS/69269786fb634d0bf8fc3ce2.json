@@ -1,0 +1,88 @@
+[ {
+  "data" : {
+    "id" : "69269786fb634d0bf8fc3ce2",
+    "cts" : 1764136838400,
+    "createdUserName" : "divakar v",
+    "modifiedUserName" : "divakar v",
+    "mts" : 1764136838400,
+    "createdBy" : "63cf749921c7bb55c7368952",
+    "modifiedBy" : "63cf749921c7bb55c7368952",
+    "proxyId" : "69269786fb634d0bf8fc3ce1",
+    "revision" : 1,
+    "name" : "New Workflow 207",
+    "description" : "",
+    "apiType" : "RESTAPI",
+    "apiMethod" : "GET",
+    "path" : "/",
+    "pathArray" : [ ],
+    "revisionStatus" : "DRAFT",
+    "locked" : true,
+    "lockedBy" : "divakar v",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "2930cf4e-d8c9-46ee-aefd-e2f99c9dbecb" : [ "v1" ]
+      },
+      "outbound" : {
+        "v1" : [ "2930cf4e-d8c9-46ee-aefd-e2f99c9dbecb" ]
+      },
+      "allNeighbours" : [ "v1", "2930cf4e-d8c9-46ee-aefd-e2f99c9dbecb" ]
+    },
+    "vertexHashMap" : {
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "START",
+        "name" : "Request",
+        "requestVariables" : [ ],
+        "mandatoryHeaders" : [ ],
+        "mandatoryQueryParams" : [ ],
+        "imported" : true,
+        "skipRuntimeVariables" : false,
+        "securityResponse" : {
+          "isEnabled" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "2930cf4e-d8c9-46ee-aefd-e2f99c9dbecb" : {
+        "vertexId" : "2930cf4e-d8c9-46ee-aefd-e2f99c9dbecb",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "type" : "JSON"
+          }
+        }
+      }
+    },
+    "statusHistory" : [ {
+      "status" : "Draft",
+      "cts" : 1764136838400,
+      "lastModifiedBy" : "divakar v",
+      "description" : "Created new proxy"
+    } ],
+    "enableTracing" : false,
+    "environmentName" : "",
+    "environmentId" : "",
+    "selectedVirtualHostName" : "",
+    "selectedVirtualHostId" : "",
+    "kafkaConnectorId" : "",
+    "kafkaTopic" : "",
+    "kafkaGroupId" : "",
+    "enableLogging" : false,
+    "deployed" : false,
+    "deleted" : false
+  },
+  "type" : "proxy",
+  "collectionName" : "ApiBuilder.Proxy.List"
+} ]
