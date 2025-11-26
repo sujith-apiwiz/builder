@@ -4,7 +4,7 @@
     "cts" : 1764153478729,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764162032161,
+    "mts" : 1764162106042,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "6926d8868ecdc7110ad21d52",
@@ -21,15 +21,57 @@
     "nodeDataHashMap" : {
       "inbound" : {
         "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ],
-        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "v1" ]
+        "41fcc903-eac1-49f7-a292-9302d8798dbf" : [ "v1" ],
+        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "41fcc903-eac1-49f7-a292-9302d8798dbf" ]
       },
       "outbound" : {
         "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ],
-        "v1" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ]
+        "v1" : [ "41fcc903-eac1-49f7-a292-9302d8798dbf" ],
+        "41fcc903-eac1-49f7-a292-9302d8798dbf" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ]
       },
-      "allNeighbours" : [ "v1", "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a", "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ]
+      "allNeighbours" : [ "41fcc903-eac1-49f7-a292-9302d8798dbf", "v1", "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a", "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ]
     },
     "vertexHashMap" : {
+      "41fcc903-eac1-49f7-a292-9302d8798dbf" : {
+        "vertexId" : "41fcc903-eac1-49f7-a292-9302d8798dbf",
+        "vertexType" : "CALL_WORKFLOW",
+        "name" : "Call Workflow",
+        "description" : "",
+        "callWorkflowData" : {
+          "childWorkflowId" : "67ed29b29ecb12099c749eaa",
+          "childWorkflowName" : "Process Order",
+          "virtualHostId" : "67ed20509ecb12099c749c7a",
+          "virtualHostName" : "qa-dev",
+          "request" : {
+            "headerParams" : [ ],
+            "queryParams" : [ ],
+            "targetRequestBodyType" : "NONE",
+            "body" : {
+              "data" : "{}",
+              "type" : "json"
+            },
+            "formParams" : [ ],
+            "urlEncodedParams" : [ ]
+          },
+          "response" : {
+            "statusCode" : 400,
+            "variables" : [ ]
+          },
+          "timeout" : 0,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
       "v1" : {
         "vertexId" : "v1",
         "vertexType" : "START",
@@ -120,6 +162,265 @@
     "indexName" : "nw_logger",
     "deleted" : false,
     "deployed" : false
+  },
+  "type" : "proxy",
+  "collectionName" : "ApiBuilder.Proxy.List"
+}, {
+  "data" : {
+    "id" : "67ed29b29ecb12099c749eaa",
+    "cts" : 1743595954901,
+    "createdUserName" : "Akshatha sm",
+    "modifiedUserName" : "Akshatha sm",
+    "mts" : 1743739514574,
+    "createdBy" : "67e298cbed1ae94ac870b921",
+    "modifiedBy" : "67e298cbed1ae94ac870b921",
+    "proxyId" : "67ed29b29ecb12099c749ea9",
+    "revision" : 1,
+    "name" : "Process Order",
+    "description" : "",
+    "apiType" : "RESTAPI",
+    "apiMethod" : "POST",
+    "path" : "/process-order",
+    "pathArray" : [ "process-order" ],
+    "revisionStatus" : "APPROVED",
+    "locked" : true,
+    "lockedBy" : "Akshatha sm",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "8e3ddf0a-03a1-455e-aca8-e07e0256387d" : [ "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" ],
+        "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" : [ "v1" ],
+        "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" : [ "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" ]
+      },
+      "outbound" : {
+        "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" : [ "8e3ddf0a-03a1-455e-aca8-e07e0256387d", "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" ],
+        "v1" : [ "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" ]
+      },
+      "allNeighbours" : [ "8e3ddf0a-03a1-455e-aca8-e07e0256387d", "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb", "v1", "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" ]
+    },
+    "vertexHashMap" : {
+      "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" : {
+        "vertexId" : "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb",
+        "vertexType" : "CONDITIONAL_FLOW",
+        "name" : "Condition",
+        "conditionalFlow" : [ {
+          "condition" : "if",
+          "assertion" : {
+            "expression" : "({0}) && ({1}) && ({2}) && ({3})",
+            "placeHolders" : [ {
+              "rule" : "EQUAL_TO",
+              "key" : "userid",
+              "value" : "6d04c530",
+              "valueDataType" : "STRING"
+            }, {
+              "rule" : "EQUAL_TO",
+              "key" : "orderid",
+              "value" : "1ee4c2fb",
+              "valueDataType" : "STRING"
+            }, {
+              "rule" : "EQUAL_TO",
+              "key" : "transactionid",
+              "value" : "a6660b41",
+              "valueDataType" : "STRING"
+            }, {
+              "rule" : "EQUAL_TO",
+              "key" : "hotelid",
+              "value" : "c4d0e761",
+              "valueDataType" : "STRING"
+            } ],
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false,
+            "errorResponse" : {
+              "statusCode" : 400,
+              "body" : {
+                "data" : "",
+                "type" : "json"
+              }
+            }
+          },
+          "flowVertexes" : [ "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" ]
+        }, {
+          "condition" : "else",
+          "assertion" : {
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false
+          },
+          "flowVertexes" : [ "8e3ddf0a-03a1-455e-aca8-e07e0256387d" ]
+        } ],
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "8e3ddf0a-03a1-455e-aca8-e07e0256387d" : {
+        "vertexId" : "8e3ddf0a-03a1-455e-aca8-e07e0256387d",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 404,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n  \"message\": \"Bad Request. Missing or invalid parameters.\",\n  \"error_details\": \"userId, orderId, transactionId, and restaurantId are required.\"\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "START",
+        "name" : "Request",
+        "requestVariables" : [ {
+          "name" : "userid",
+          "reference" : "path-variable",
+          "value" : "$.userId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "orderid",
+          "reference" : "path-variable",
+          "value" : "$.orderId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "transactionid",
+          "reference" : "path-variable",
+          "value" : "$.transactionId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "hotelid",
+          "reference" : "path-variable",
+          "value" : "$.hotelId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "imported" : true,
+        "skipRuntimeVariables" : false,
+        "securityResponse" : {
+          "isEnabled" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" : {
+        "vertexId" : "cc908d5a-2864-4e3f-b3c7-a823a501d9a1",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 200,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n  \"message\": \"Order, transaction, and restaurant details fetched successfully\",\n  \"order\": {\n    \"order_id\": {{orderId}},\n    \"user_id\": {{userId}},\n    \"order_date\": \"2025-04-02\",\n    \"total_price\": 100.00,\n    \"status\": \"Processing\",\n    \"items\": [\n      {\n        \"item_id\": \"001\",\n        \"name\": \"Cheese Pizza\",\n        \"quantity\": 2,\n        \"price\": 15.00\n      },\n      {\n        \"item_id\": \"002\",\n        \"name\": \"Coke\",\n        \"quantity\": 1,\n        \"price\": 2.00\n      }\n    ]\n  },\n  \"transaction\": {\n    \"transaction_id\": \"a6660b41\",\n    \"amount_paid\": 100.00,\n    \"payment_method\": \"Credit Card\",\n    \"payment_date\": \"2025-04-02\",\n    \"status\": \"Completed\"\n  },\n  \"hotel\": {\n    \"hotel_id\": \"c4d0e761\",\n    \"hotel_name\": \"The Pizza Place\",\n    \"address\": {\n      \"street\": \"456 Main St\",\n      \"city\": \"Springfield\",\n      \"state\": \"IL\",\n      \"zipcode\": \"62701\"\n    }\n  }\n}\n",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "statusHistory" : [ {
+      "status" : "Approved",
+      "cts" : 1743739510689,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "f"
+    }, {
+      "status" : "Review",
+      "cts" : 1743657465937,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743654597834,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "d"
+    }, {
+      "status" : "Review",
+      "cts" : 1743653104975,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743652975369,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "d"
+    }, {
+      "status" : "Review",
+      "cts" : 1743652923904,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743652616768,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "j"
+    }, {
+      "status" : "Review",
+      "cts" : 1743652591533,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743652547483,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "k"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743652451131,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "k"
+    }, {
+      "status" : "Draft",
+      "cts" : 1743595954901,
+      "lastModifiedBy" : "Akshatha sm",
+      "description" : "Duplicated proxy"
+    } ],
+    "virtualHostList" : [ {
+      "id" : "67ed20509ecb12099c749c7a",
+      "name" : "qa-dev",
+      "timeStamp" : 1743739514495
+    } ],
+    "enableTracing" : true,
+    "environmentName" : "",
+    "environmentId" : "",
+    "selectedVirtualHostName" : "qa-dev",
+    "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+    "kafkaConnectorId" : "",
+    "kafkaTopic" : "",
+    "kafkaGroupId" : "",
+    "enableLogging" : true,
+    "indexName" : "nw_logger",
+    "parentWorkflowMap" : {
+      "67ed20509ecb12099c749c7a" : [ "68ca55a69f1f251b4c0bb197" ]
+    },
+    "deleted" : false,
+    "deployed" : true
   },
   "type" : "proxy",
   "collectionName" : "ApiBuilder.Proxy.List"
