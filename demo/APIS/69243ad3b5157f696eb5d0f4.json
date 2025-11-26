@@ -4,7 +4,7 @@
     "cts" : 1763982035536,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764141667572,
+    "mts" : 1764144215710,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "69243ad3b5157f696eb5d0f3",
@@ -21,15 +21,13 @@
     "nodeDataHashMap" : {
       "inbound" : {
         "c4665d79-40f6-4c40-979c-cc1fa0322e11" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
-        "e9f21add-cdf4-4450-be2a-dbc6c5403a71" : [ "v1" ],
-        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "e9f21add-cdf4-4450-be2a-dbc6c5403a71" ]
+        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "v1" ]
       },
       "outbound" : {
         "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11" ],
-        "v1" : [ "e9f21add-cdf4-4450-be2a-dbc6c5403a71" ],
-        "e9f21add-cdf4-4450-be2a-dbc6c5403a71" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ]
+        "v1" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ]
       },
-      "allNeighbours" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "v1", "e9f21add-cdf4-4450-be2a-dbc6c5403a71" ]
+      "allNeighbours" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "v1" ]
     },
     "vertexHashMap" : {
       "c4665d79-40f6-4c40-979c-cc1fa0322e11" : {
@@ -96,28 +94,6 @@
             }
           }
         }
-      },
-      "e9f21add-cdf4-4450-be2a-dbc6c5403a71" : {
-        "vertexId" : "e9f21add-cdf4-4450-be2a-dbc6c5403a71",
-        "vertexType" : "REDIS_CACHING",
-        "name" : "redis",
-        "description" : "",
-        "redisCachingData" : {
-          "redisCacheConnectorId" : "6925b1bafb634d0bf8fc2790",
-          "cachingOperationList" : [ ],
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "imported" : false,
-        "skipRuntimeVariables" : false
       }
     },
     "statusHistory" : [ {
@@ -469,21 +445,4 @@
   },
   "type" : "sharedFlow",
   "collectionName" : "ApiBuilder.SharedFlows.List"
-}, {
-  "data" : {
-    "id" : "6925b1bafb634d0bf8fc2790",
-    "cts" : 1764078010495,
-    "createdUserName" : "Sujith Kumar",
-    "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764078031943,
-    "createdBy" : "Sujith Kumar",
-    "modifiedBy" : "Sujith Kumar",
-    "name" : "sujith",
-    "description" : "",
-    "host" : "54.203.45.67",
-    "port" : 6379,
-    "password" : "WRl6RLyup09riMa"
-  },
-  "type" : "connector",
-  "collectionName" : "Connectors.Redis.Cache"
 } ]
