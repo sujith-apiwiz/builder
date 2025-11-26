@@ -4,7 +4,7 @@
     "cts" : 1763982035536,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764141378584,
+    "mts" : 1764141578995,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "69243ad3b5157f696eb5d0f3",
@@ -22,16 +22,14 @@
       "inbound" : {
         "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "v1" ],
         "c4665d79-40f6-4c40-979c-cc1fa0322e11" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
-        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "390e4b40-36c6-4982-a486-6c59b13f32e2" ],
-        "390e4b40-36c6-4982-a486-6c59b13f32e2" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ]
+        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ]
       },
       "outbound" : {
         "v1" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ],
         "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11" ],
-        "390e4b40-36c6-4982-a486-6c59b13f32e2" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
-        "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "390e4b40-36c6-4982-a486-6c59b13f32e2" ]
+        "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ]
       },
-      "allNeighbours" : [ "9444b742-013b-43f0-8feb-7f8eed66a424", "390e4b40-36c6-4982-a486-6c59b13f32e2", "c4665d79-40f6-4c40-979c-cc1fa0322e11", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "v1" ]
+      "allNeighbours" : [ "9444b742-013b-43f0-8feb-7f8eed66a424", "c4665d79-40f6-4c40-979c-cc1fa0322e11", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "v1" ]
     },
     "vertexHashMap" : {
       "9444b742-013b-43f0-8feb-7f8eed66a424" : {
@@ -52,26 +50,6 @@
               "type" : "json"
             }
           }
-        },
-        "imported" : false,
-        "skipRuntimeVariables" : false
-      },
-      "390e4b40-36c6-4982-a486-6c59b13f32e2" : {
-        "vertexId" : "390e4b40-36c6-4982-a486-6c59b13f32e2",
-        "vertexType" : "DATABASE",
-        "name" : "db ",
-        "description" : "sdf",
-        "databaseData" : {
-          "connectorId" : "6911d16013c1403c98520f3e",
-          "databaseType" : "MONGODB",
-          "query" : "{\"operation\":\"find\",\"databaseName\":\"DevD\",\"collection\":\"guides\",\"documents\":[{\"_id\":\"\",\"createdBy\":\"\",\"updatedBy\":\"\",\"deprecated\":\"\",\"title\":\"\",\"comments\":\"\",\"visitors\":\"\",\"isDefault\":\"\",\"versions\":[{\"pages\":[{\"type\":\"\",\"pageId\":\"\",\"title\":\"\",\"pages\":\"\"}],\"version\":\"\",\"status\":\"\",\"createdBy\":\"\",\"updatedBy\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\"}],\"cts\":\"\",\"mts\":\"\",\"__v\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-          "variableName" : "target",
-          "connectorName" : "STAGE",
-          "tenantName" : "DevD",
-          "collectionName" : "guides",
-          "manual" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false
         },
         "imported" : false,
         "skipRuntimeVariables" : false
@@ -207,31 +185,6 @@
   },
   "type" : "connector",
   "collectionName" : "Connectors.Redis.Cache"
-}, {
-  "database" : "MongoDb",
-  "data" : {
-    "id" : "6911d16013c1403c98520f3e",
-    "cts" : 1762775392130,
-    "createdUserName" : "Akshatha SM",
-    "modifiedUserName" : "Akshatha SM",
-    "mts" : 1762775392130,
-    "createdBy" : "67c562eba649de63bf3835e4",
-    "modifiedBy" : "67c562eba649de63bf3835e4",
-    "name" : "STAGE",
-    "description" : "STAGE",
-    "host" : "10.10.12.20:27017/apiwiz",
-    "scheme" : "mongodb",
-    "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
-    "authentication" : {
-      "mongoDbAuthType" : "userNamePassword",
-      "username" : "apiwiz",
-      "password" : "Kufas2spaprunof",
-      "authenticationDatabase" : "admin",
-      "authenticationMechanism" : "DEFAULT"
-    }
-  },
-  "type" : "connector",
-  "collectionName" : "Connectors.MongoDb.Configuration"
 }, {
   "data" : {
     "id" : "69242a60b5157f696eb5c930",
