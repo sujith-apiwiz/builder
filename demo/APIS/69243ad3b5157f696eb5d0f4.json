@@ -4,7 +4,7 @@
     "cts" : 1763982035536,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764139728108,
+    "mts" : 1764139816788,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "69243ad3b5157f696eb5d0f3",
@@ -21,19 +21,17 @@
     "nodeDataHashMap" : {
       "inbound" : {
         "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "v1" ],
-        "b95141c7-a6ff-4050-9438-89852f046841" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ],
-        "390e4b40-36c6-4982-a486-6c59b13f32e2" : [ "b95141c7-a6ff-4050-9438-89852f046841" ],
         "c4665d79-40f6-4c40-979c-cc1fa0322e11" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
-        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "390e4b40-36c6-4982-a486-6c59b13f32e2" ]
+        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "390e4b40-36c6-4982-a486-6c59b13f32e2" ],
+        "390e4b40-36c6-4982-a486-6c59b13f32e2" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ]
       },
       "outbound" : {
         "v1" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ],
-        "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "b95141c7-a6ff-4050-9438-89852f046841" ],
-        "b95141c7-a6ff-4050-9438-89852f046841" : [ "390e4b40-36c6-4982-a486-6c59b13f32e2" ],
         "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11" ],
-        "390e4b40-36c6-4982-a486-6c59b13f32e2" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ]
+        "390e4b40-36c6-4982-a486-6c59b13f32e2" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
+        "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "390e4b40-36c6-4982-a486-6c59b13f32e2" ]
       },
-      "allNeighbours" : [ "9444b742-013b-43f0-8feb-7f8eed66a424", "390e4b40-36c6-4982-a486-6c59b13f32e2", "c4665d79-40f6-4c40-979c-cc1fa0322e11", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "b95141c7-a6ff-4050-9438-89852f046841", "v1" ]
+      "allNeighbours" : [ "9444b742-013b-43f0-8feb-7f8eed66a424", "390e4b40-36c6-4982-a486-6c59b13f32e2", "c4665d79-40f6-4c40-979c-cc1fa0322e11", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "v1" ]
     },
     "vertexHashMap" : {
       "9444b742-013b-43f0-8feb-7f8eed66a424" : {
@@ -115,26 +113,6 @@
               "type" : "json"
             }
           }
-        },
-        "imported" : false,
-        "skipRuntimeVariables" : false
-      },
-      "b95141c7-a6ff-4050-9438-89852f046841" : {
-        "vertexId" : "b95141c7-a6ff-4050-9438-89852f046841",
-        "vertexType" : "DATABASE",
-        "name" : "DB",
-        "description" : "DB",
-        "databaseData" : {
-          "connectorId" : "6787425d215c0e72878592b4",
-          "databaseType" : "MONGODB",
-          "query" : "{\"operation\":\"find\",\"databaseName\":\"sample_mflix\",\"collection\":\"embedded_movies\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"host\":\"\",\"port\":\"\",\"theaterId\":\"\",\"location\":{\"address\":{\"street1\":\"\",\"city\":\"\",\"state\":\"\",\"zipcode\":\"\"},\"geo\":{\"type\":\"\",\"coordinates\":[]}},\"plot\":\"\",\"genres\":[],\"runtime\":\"\",\"cast\":[],\"num_mflix_comments\":\"\",\"title\":\"\",\"fullplot\":\"\",\"languages\":[],\"released\":\"\",\"directors\":[],\"writers\":[],\"awards\":{\"wins\":\"\",\"nominations\":\"\",\"text\":\"\"},\"lastupdated\":\"\",\"year\":\"\",\"imdb\":{\"rating\":\"\",\"votes\":\"\",\"id\":\"\"},\"countries\":[],\"type\":\"\",\"plot_embedding\":[],\"poster\":\"\",\"metacritic\":\"\",\"rated\":\"\",\"tomatoes\":{\"viewer\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"production\":\"\",\"lastUpdated\":\"\",\"dvd\":\"\",\"website\":\"\",\"critic\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"boxOffice\":\"\",\"consensus\":\"\",\"rotten\":\"\",\"fresh\":\"\"}}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-          "variableName" : "DB-response",
-          "connectorName" : "Deepak Cloud DB",
-          "tenantName" : "sample_mflix",
-          "collectionName" : "embedded_movies",
-          "manual" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false
         },
         "imported" : false,
         "skipRuntimeVariables" : false
@@ -551,28 +529,4 @@
   },
   "type" : "sharedFlow",
   "collectionName" : "ApiBuilder.SharedFlows.List"
-}, {
-  "database" : "MongoDb",
-  "data" : {
-    "id" : "6787425d215c0e72878592b4",
-    "cts" : 1736917597512,
-    "createdUserName" : "divakar v",
-    "modifiedUserName" : "divakar v",
-    "mts" : 1739255365544,
-    "createdBy" : "63cf749921c7bb55c7368952",
-    "modifiedBy" : "63cf749921c7bb55c7368952",
-    "name" : "Deepak Cloud DB",
-    "description" : "this is cloud db",
-    "host" : "cluster0.36fr1.mongodb.net/",
-    "scheme" : "mongodb+srv",
-    "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
-    "authentication" : {
-      "mongoDbAuthType" : "userNamePassword",
-      "username" : "apiwiz-database",
-      "password" : "false",
-      "authenticationMechanism" : "DEFAULT"
-    }
-  },
-  "type" : "connector",
-  "collectionName" : "Connectors.MongoDb.Configuration"
 } ]
