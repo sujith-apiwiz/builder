@@ -1,17 +1,17 @@
 [ {
   "data" : {
-    "cts" : 1764067885619,
+    "cts" : 1764219756485,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764067885619,
+    "mts" : 1764219756485,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
-    "proxyId" : "69243ad3b5157f696eb5d0f3",
-    "revision" : 2,
-    "name" : "import-export-sujith",
+    "proxyId" : "6926d8868ecdc7110ad21d52",
+    "revision" : 9,
+    "name" : "import-export-2",
     "description" : "",
     "apiType" : "RESTAPI",
-    "apiMethod" : "POST",
+    "apiMethod" : "GET",
     "path" : "/import-export",
     "pathArray" : [ "import-export" ],
     "revisionStatus" : "DRAFT",
@@ -19,31 +19,30 @@
     "lockedBy" : "Sujith Kumar",
     "nodeDataHashMap" : {
       "inbound" : {
-        "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "v1" ],
-        "b95141c7-a6ff-4050-9438-89852f046841" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ],
-        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "b95141c7-a6ff-4050-9438-89852f046841" ],
-        "c4665d79-40f6-4c40-979c-cc1fa0322e11" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ]
+        "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ],
+        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "v1" ]
       },
       "outbound" : {
-        "v1" : [ "9444b742-013b-43f0-8feb-7f8eed66a424" ],
-        "9444b742-013b-43f0-8feb-7f8eed66a424" : [ "b95141c7-a6ff-4050-9438-89852f046841" ],
-        "b95141c7-a6ff-4050-9438-89852f046841" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
-        "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11" ]
+        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ],
+        "v1" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ]
       },
-      "allNeighbours" : [ "9444b742-013b-43f0-8feb-7f8eed66a424", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "c4665d79-40f6-4c40-979c-cc1fa0322e11", "b95141c7-a6ff-4050-9438-89852f046841", "v1" ]
+      "allNeighbours" : [ "v1", "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a", "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ]
     },
     "vertexHashMap" : {
-      "9444b742-013b-43f0-8feb-7f8eed66a424" : {
-        "vertexId" : "9444b742-013b-43f0-8feb-7f8eed66a424",
-        "vertexType" : "REDIS_CACHING",
-        "name" : "redis",
+      "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : {
+        "vertexId" : "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a",
+        "vertexType" : "SHARED_FLOW",
+        "name" : "shared",
         "description" : "",
-        "redisCachingData" : {
-          "redisCacheConnectorId" : "68529fc7afeab91fd3a9a218",
-          "cachingOperationList" : [ ],
+        "sharedFlowNodeData" : {
+          "sharedFlowId" : "69242a60b5157f696eb5c930",
+          "sharedFlowName" : "test-sujith",
+          "inputVariablesMap" : { },
+          "importOutputVariables" : false,
+          "importedVariables" : [ ],
           "skip" : false,
           "showActualErrorMessage" : false,
-          "continueOnError" : true,
+          "continueOnError" : false,
           "errorResponse" : {
             "statusCode" : 400,
             "body" : {
@@ -51,26 +50,6 @@
               "type" : "json"
             }
           }
-        },
-        "imported" : false,
-        "skipRuntimeVariables" : false
-      },
-      "b95141c7-a6ff-4050-9438-89852f046841" : {
-        "vertexId" : "b95141c7-a6ff-4050-9438-89852f046841",
-        "vertexType" : "DATABASE",
-        "name" : "DB",
-        "description" : "DB",
-        "databaseData" : {
-          "connectorId" : "6787425d215c0e72878592b4",
-          "databaseType" : "MONGODB",
-          "query" : "{\"operation\":\"find\",\"databaseName\":\"sample_mflix\",\"collection\":\"embedded_movies\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"host\":\"\",\"port\":\"\",\"theaterId\":\"\",\"location\":{\"address\":{\"street1\":\"\",\"city\":\"\",\"state\":\"\",\"zipcode\":\"\"},\"geo\":{\"type\":\"\",\"coordinates\":[]}},\"plot\":\"\",\"genres\":[],\"runtime\":\"\",\"cast\":[],\"num_mflix_comments\":\"\",\"title\":\"\",\"fullplot\":\"\",\"languages\":[],\"released\":\"\",\"directors\":[],\"writers\":[],\"awards\":{\"wins\":\"\",\"nominations\":\"\",\"text\":\"\"},\"lastupdated\":\"\",\"year\":\"\",\"imdb\":{\"rating\":\"\",\"votes\":\"\",\"id\":\"\"},\"countries\":[],\"type\":\"\",\"plot_embedding\":[],\"poster\":\"\",\"metacritic\":\"\",\"rated\":\"\",\"tomatoes\":{\"viewer\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"production\":\"\",\"lastUpdated\":\"\",\"dvd\":\"\",\"website\":\"\",\"critic\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"boxOffice\":\"\",\"consensus\":\"\",\"rotten\":\"\",\"fresh\":\"\"}}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-          "variableName" : "DB-response",
-          "connectorName" : "Deepak Cloud DB",
-          "tenantName" : "sample_mflix",
-          "collectionName" : "embedded_movies",
-          "manual" : false,
-          "skip" : false,
-          "showActualErrorMessage" : false
         },
         "imported" : false,
         "skipRuntimeVariables" : false
@@ -98,8 +77,8 @@
           }
         }
       },
-      "c4665d79-40f6-4c40-979c-cc1fa0322e11" : {
-        "vertexId" : "c4665d79-40f6-4c40-979c-cc1fa0322e11",
+      "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" : {
+        "vertexId" : "afddbe9b-2b0c-4d67-b05a-63c41354d0ed",
         "vertexType" : "STOP",
         "name" : "Stop",
         "imported" : false,
@@ -110,35 +89,6 @@
             "type" : "JSON"
           }
         }
-      },
-      "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : {
-        "vertexId" : "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a",
-        "vertexType" : "SHARED_FLOW",
-        "name" : "shared",
-        "description" : "",
-        "sharedFlowNodeData" : {
-          "sharedFlowId" : "69242a60b5157f696eb5c930",
-          "sharedFlowName" : "test-sujith",
-          "inputVariablesMap" : {
-            "input1" : "1",
-            "input2" : "2",
-            "input3" : "3"
-          },
-          "importOutputVariables" : false,
-          "importedVariables" : [ ],
-          "skip" : false,
-          "showActualErrorMessage" : false,
-          "continueOnError" : false,
-          "errorResponse" : {
-            "statusCode" : 400,
-            "body" : {
-              "data" : "",
-              "type" : "json"
-            }
-          }
-        },
-        "imported" : false,
-        "skipRuntimeVariables" : false
       }
     },
     "enableTracing" : false,
@@ -150,59 +100,21 @@
     "kafkaTopic" : "",
     "kafkaGroupId" : "",
     "enableLogging" : false,
-    "deleted" : false,
-    "deployed" : false
+    "deployed" : false,
+    "deleted" : false
   },
   "type" : "proxy",
   "collectionName" : "ApiBuilder.Proxy.List"
 }, {
   "data" : {
-    "id" : "68529fc7afeab91fd3a9a218",
-    "cts" : 1750245319578,
-    "createdUserName" : "Akshatha sm",
-    "createdBy" : "Akshatha sm",
-    "name" : "test",
-    "description" : "",
-    "host" : "2.tcp.us-cal-1.ngrok.io",
-    "port" : 11714,
-    "password" : "WRl6RLyup09riMa"
-  },
-  "type" : "connector",
-  "collectionName" : "Connectors.Redis.Cache"
-}, {
-  "database" : "MongoDb",
-  "data" : {
-    "id" : "6787425d215c0e72878592b4",
-    "cts" : 1736917597512,
-    "createdUserName" : "divakar v",
-    "modifiedUserName" : "divakar v",
-    "mts" : 1739255365544,
-    "createdBy" : "63cf749921c7bb55c7368952",
-    "modifiedBy" : "63cf749921c7bb55c7368952",
-    "name" : "Deepak Cloud DB",
-    "description" : "this is cloud db",
-    "host" : "cluster0.36fr1.mongodb.net/",
-    "scheme" : "mongodb+srv",
-    "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
-    "authentication" : {
-      "mongoDbAuthType" : "userNamePassword",
-      "username" : "apiwiz-database",
-      "password" : "false",
-      "authenticationMechanism" : "DEFAULT"
-    }
-  },
-  "type" : "connector",
-  "collectionName" : "Connectors.MongoDb.Configuration"
-}, {
-  "data" : {
     "id" : "69242a60b5157f696eb5c930",
-    "cts" : 1763977824882,
+    "cts" : 1764157442289,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1763984386743,
+    "mts" : 1764157442289,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
-    "name" : "test-sujith",
+    "name" : "test-sujith-11-26-2025 10:45:42-11-26-2025 11:44:02",
     "description" : "test-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujith",
     "nodeDataHashMap" : {
       "inbound" : {
@@ -279,7 +191,7 @@
         "skipRuntimeVariables" : false
       }
     },
-    "parentWorkflowIds" : [ "69243ad3b5157f696eb5d0f4" ],
+    "parentWorkflowIds" : [ "69258a2f61000668f4a73d63" ],
     "inputVariableList" : [ {
       "name" : "input1",
       "variableDataType" : "STRING",
@@ -307,13 +219,13 @@
 }, {
   "data" : {
     "id" : "69243c68b5157f696eb5d255",
-    "cts" : 1763982440159,
+    "cts" : 1764157442293,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1763984611471,
+    "mts" : 1764157442293,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
-    "name" : "test-internal-flow",
+    "name" : "test-internal-flow-11-26-2025 10:45:42-11-26-2025 11:44:02",
     "description" : "",
     "nodeDataHashMap" : {
       "inbound" : {
