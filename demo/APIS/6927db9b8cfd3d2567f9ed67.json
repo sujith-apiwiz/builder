@@ -1,0 +1,413 @@
+[ {
+  "data" : {
+    "id" : "6927db9b8cfd3d2567f9ed67",
+    "cts" : 1764219803935,
+    "createdUserName" : "Sujith Kumar",
+    "modifiedUserName" : "Sujith Kumar",
+    "mts" : 1764219803935,
+    "createdBy" : "67a0969408a0e559a5309912",
+    "modifiedBy" : "67a0969408a0e559a5309912",
+    "proxyId" : "6926d8868ecdc7110ad21d52",
+    "revision" : 11,
+    "name" : "import-export-2",
+    "description" : "",
+    "apiType" : "RESTAPI",
+    "apiMethod" : "GET",
+    "path" : "/import-export",
+    "pathArray" : [ "import-export" ],
+    "revisionStatus" : "DRAFT",
+    "locked" : true,
+    "lockedBy" : "Sujith Kumar",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ],
+        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "v1" ]
+      },
+      "outbound" : {
+        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ],
+        "v1" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ]
+      },
+      "allNeighbours" : [ "v1", "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a", "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ]
+    },
+    "vertexHashMap" : {
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "START",
+        "name" : "Request",
+        "requestVariables" : [ ],
+        "mandatoryHeaders" : [ ],
+        "mandatoryQueryParams" : [ ],
+        "imported" : true,
+        "skipRuntimeVariables" : false,
+        "securityResponse" : {
+          "isEnabled" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : {
+        "vertexId" : "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a",
+        "vertexType" : "SHARED_FLOW",
+        "name" : "shared",
+        "description" : "",
+        "sharedFlowNodeData" : {
+          "sharedFlowId" : "69242a60b5157f696eb5c930",
+          "sharedFlowName" : "test-sujith",
+          "inputVariablesMap" : { },
+          "importOutputVariables" : false,
+          "importedVariables" : [ ],
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" : {
+        "vertexId" : "afddbe9b-2b0c-4d67-b05a-63c41354d0ed",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "type" : "JSON"
+          }
+        }
+      }
+    },
+    "statusHistory" : [ {
+      "status" : "Draft",
+      "cts" : 1764219803935,
+      "lastModifiedBy" : "Sujith Kumar",
+      "description" : "Created new proxy"
+    } ],
+    "enableTracing" : false,
+    "environmentName" : "",
+    "environmentId" : "",
+    "selectedVirtualHostName" : "",
+    "selectedVirtualHostId" : "",
+    "kafkaConnectorId" : "",
+    "kafkaTopic" : "",
+    "kafkaGroupId" : "",
+    "enableLogging" : false,
+    "deployed" : false,
+    "deleted" : false
+  },
+  "type" : "proxy",
+  "collectionName" : "ApiBuilder.Proxy.List"
+}, {
+  "data" : {
+    "id" : "69242a60b5157f696eb5c930",
+    "cts" : 1764157442289,
+    "createdUserName" : "Sujith Kumar",
+    "modifiedUserName" : "Sujith Kumar",
+    "mts" : 1764157442289,
+    "createdBy" : "67a0969408a0e559a5309912",
+    "modifiedBy" : "67a0969408a0e559a5309912",
+    "name" : "test-sujith-11-26-2025 10:45:42-11-26-2025 11:44:02",
+    "description" : "test-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujith",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "737ca640-6de3-40d6-bcbc-ed1df466c49f" : [ "v1" ],
+        "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" : [ "737ca640-6de3-40d6-bcbc-ed1df466c49f" ],
+        "8f164ae6-e752-47ae-9f53-ee598859decd" : [ "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" ]
+      },
+      "outbound" : {
+        "v1" : [ "737ca640-6de3-40d6-bcbc-ed1df466c49f" ],
+        "737ca640-6de3-40d6-bcbc-ed1df466c49f" : [ "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" ],
+        "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" : [ "8f164ae6-e752-47ae-9f53-ee598859decd" ]
+      },
+      "allNeighbours" : [ "737ca640-6de3-40d6-bcbc-ed1df466c49f", "8f164ae6-e752-47ae-9f53-ee598859decd", "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc", "v1" ]
+    },
+    "vertexHashMap" : {
+      "8f164ae6-e752-47ae-9f53-ee598859decd" : {
+        "vertexId" : "8f164ae6-e752-47ae-9f53-ee598859decd",
+        "vertexType" : "SHARED_FLOW_STOP",
+        "name" : "Exit",
+        "sharedFlowStopData" : {
+          "stopNodeAction" : "CONTINUE",
+          "sharedFlowResponse" : {
+            "statusCode" : 200,
+            "body" : {
+              "type" : "JSON"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "737ca640-6de3-40d6-bcbc-ed1df466c49f" : {
+        "vertexId" : "737ca640-6de3-40d6-bcbc-ed1df466c49f",
+        "vertexType" : "LOGGER",
+        "name" : "logs",
+        "description" : "",
+        "logData" : {
+          "data" : "{{input1}},\n{{input2}},\n{{input3}}",
+          "skip" : false
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "SHARED_FLOW_START",
+        "name" : "test-sujith",
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" : {
+        "vertexId" : "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc",
+        "vertexType" : "SHARED_FLOW",
+        "name" : "internal shared flow call ",
+        "description" : "",
+        "sharedFlowNodeData" : {
+          "sharedFlowId" : "69243c68b5157f696eb5d255",
+          "sharedFlowName" : "test-internal-flow",
+          "inputVariablesMap" : { },
+          "importOutputVariables" : false,
+          "importedVariables" : [ ],
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      }
+    },
+    "parentWorkflowIds" : [ "69258a2f61000668f4a73d63" ],
+    "inputVariableList" : [ {
+      "name" : "input1",
+      "variableDataType" : "STRING",
+      "active" : false,
+      "hide" : false,
+      "feelExpression" : false
+    }, {
+      "name" : "input2",
+      "variableDataType" : "STRING",
+      "active" : false,
+      "hide" : false,
+      "feelExpression" : false
+    }, {
+      "name" : "input3",
+      "variableDataType" : "STRING",
+      "active" : false,
+      "hide" : false,
+      "feelExpression" : false
+    } ],
+    "outputVariableList" : [ ],
+    "workspaceTenant" : "qa-dev"
+  },
+  "type" : "sharedFlow",
+  "collectionName" : "ApiBuilder.SharedFlows.List"
+}, {
+  "data" : {
+    "id" : "69243c68b5157f696eb5d255",
+    "cts" : 1764157442293,
+    "createdUserName" : "Sujith Kumar",
+    "modifiedUserName" : "Sujith Kumar",
+    "mts" : 1764157442293,
+    "createdBy" : "67a0969408a0e559a5309912",
+    "modifiedBy" : "67a0969408a0e559a5309912",
+    "name" : "test-internal-flow-11-26-2025 10:45:42-11-26-2025 11:44:02",
+    "description" : "",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "4b95bae6-b954-4237-8ee0-1d919469d8b3" : [ "v1" ],
+        "f5d2f480-c82f-4fdb-8c03-7468782cf37d" : [ "4b95bae6-b954-4237-8ee0-1d919469d8b3" ],
+        "006061f8-57a1-4589-82c9-bc6f5825b212" : [ "f5d2f480-c82f-4fdb-8c03-7468782cf37d" ],
+        "440b93ff-4ea5-42f9-b533-866ede744eb2" : [ "006061f8-57a1-4589-82c9-bc6f5825b212" ],
+        "a3939906-33bf-4d12-bb7d-0b2464a87f8c" : [ "440b93ff-4ea5-42f9-b533-866ede744eb2" ],
+        "876f02ac-7ac6-4427-ab3c-b0a3dc81809b" : [ "a3939906-33bf-4d12-bb7d-0b2464a87f8c" ]
+      },
+      "outbound" : {
+        "v1" : [ "4b95bae6-b954-4237-8ee0-1d919469d8b3" ],
+        "4b95bae6-b954-4237-8ee0-1d919469d8b3" : [ "f5d2f480-c82f-4fdb-8c03-7468782cf37d" ],
+        "f5d2f480-c82f-4fdb-8c03-7468782cf37d" : [ "006061f8-57a1-4589-82c9-bc6f5825b212" ],
+        "006061f8-57a1-4589-82c9-bc6f5825b212" : [ "440b93ff-4ea5-42f9-b533-866ede744eb2" ],
+        "440b93ff-4ea5-42f9-b533-866ede744eb2" : [ "a3939906-33bf-4d12-bb7d-0b2464a87f8c" ],
+        "a3939906-33bf-4d12-bb7d-0b2464a87f8c" : [ "876f02ac-7ac6-4427-ab3c-b0a3dc81809b" ]
+      },
+      "allNeighbours" : [ "876f02ac-7ac6-4427-ab3c-b0a3dc81809b", "a3939906-33bf-4d12-bb7d-0b2464a87f8c", "4b95bae6-b954-4237-8ee0-1d919469d8b3", "440b93ff-4ea5-42f9-b533-866ede744eb2", "006061f8-57a1-4589-82c9-bc6f5825b212", "v1", "f5d2f480-c82f-4fdb-8c03-7468782cf37d" ]
+    },
+    "vertexHashMap" : {
+      "876f02ac-7ac6-4427-ab3c-b0a3dc81809b" : {
+        "vertexId" : "876f02ac-7ac6-4427-ab3c-b0a3dc81809b",
+        "vertexType" : "SHARED_FLOW_STOP",
+        "name" : "Exit",
+        "sharedFlowStopData" : {
+          "stopNodeAction" : "CONTINUE",
+          "sharedFlowResponse" : {
+            "statusCode" : 200,
+            "body" : {
+              "type" : "JSON"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "a3939906-33bf-4d12-bb7d-0b2464a87f8c" : {
+        "vertexId" : "a3939906-33bf-4d12-bb7d-0b2464a87f8c",
+        "vertexType" : "EXTRACTION",
+        "name" : "extraction",
+        "description" : "",
+        "extractionData" : {
+          "extractionDataOperationList" : [ {
+            "name" : "extract",
+            "path" : "$.a",
+            "type" : "JSON",
+            "inputData" : "{{{json}}}",
+            "targetVariable" : "extracted from json "
+          } ],
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "4b95bae6-b954-4237-8ee0-1d919469d8b3" : {
+        "vertexId" : "4b95bae6-b954-4237-8ee0-1d919469d8b3",
+        "vertexType" : "LOGGER",
+        "name" : "shared",
+        "description" : "",
+        "logData" : {
+          "data" : "Internal shared flow called",
+          "skip" : false
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "440b93ff-4ea5-42f9-b533-866ede744eb2" : {
+        "vertexId" : "440b93ff-4ea5-42f9-b533-866ede744eb2",
+        "vertexType" : "INCREMENT_DECREMENT",
+        "name" : "increment",
+        "description" : "",
+        "incDecData" : {
+          "incDecOperationList" : [ {
+            "operationName" : "increment",
+            "variableName" : "a",
+            "changeType" : "INCREMENT",
+            "value" : "10"
+          } ],
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "SHARED_FLOW_START",
+        "name" : "Input",
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "006061f8-57a1-4589-82c9-bc6f5825b212" : {
+        "vertexId" : "006061f8-57a1-4589-82c9-bc6f5825b212",
+        "vertexType" : "VARIABLES",
+        "name" : "Set Variable",
+        "runtimeVariableList" : [ {
+          "name" : "a",
+          "value" : "10",
+          "type" : "STRING",
+          "feelExpression" : false,
+          "source" : "006061f8-57a1-4589-82c9-bc6f5825b212",
+          "override" : true
+        }, {
+          "name" : "json",
+          "value" : "{\n    \"a\": \"request\"\n}",
+          "type" : "STRING",
+          "feelExpression" : false,
+          "source" : "006061f8-57a1-4589-82c9-bc6f5825b212",
+          "override" : true
+        } ],
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "f5d2f480-c82f-4fdb-8c03-7468782cf37d" : {
+        "vertexId" : "f5d2f480-c82f-4fdb-8c03-7468782cf37d",
+        "vertexType" : "DELAY",
+        "name" : "Delay",
+        "delayData" : {
+          "delayUnit" : "SECONDS",
+          "delayAmount" : 1,
+          "skip" : false,
+          "showActualErrorMessage" : false
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      }
+    },
+    "parentWorkflowIds" : [ ],
+    "inputVariableList" : [ ],
+    "outputVariableList" : [ {
+      "name" : "extracted from json ",
+      "active" : false,
+      "hide" : false,
+      "feelExpression" : false,
+      "envVertexName" : "extraction",
+      "vertexId" : "a3939906-33bf-4d12-bb7d-0b2464a87f8c"
+    }, {
+      "name" : "a",
+      "value" : "10",
+      "active" : false,
+      "source" : "006061f8-57a1-4589-82c9-bc6f5825b212",
+      "hide" : false,
+      "feelExpression" : false,
+      "envVertexName" : "Set Variable",
+      "vertexId" : "006061f8-57a1-4589-82c9-bc6f5825b212"
+    }, {
+      "name" : "json",
+      "value" : "{\n    \"a\": \"request\"\n}",
+      "active" : false,
+      "source" : "006061f8-57a1-4589-82c9-bc6f5825b212",
+      "hide" : false,
+      "feelExpression" : false,
+      "envVertexName" : "Set Variable",
+      "vertexId" : "006061f8-57a1-4589-82c9-bc6f5825b212"
+    } ],
+    "workspaceTenant" : "qa-dev"
+  },
+  "type" : "sharedFlow",
+  "collectionName" : "ApiBuilder.SharedFlows.List"
+} ]
