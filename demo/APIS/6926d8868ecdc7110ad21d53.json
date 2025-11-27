@@ -4,7 +4,7 @@
     "cts" : 1764153478729,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764219824384,
+    "mts" : 1764219945255,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "6926d8868ecdc7110ad21d52",
@@ -21,13 +21,15 @@
     "nodeDataHashMap" : {
       "inbound" : {
         "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ],
-        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "v1" ]
+        "011caed9-64d3-4702-8664-a472f7bc8eeb" : [ "v1" ],
+        "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "011caed9-64d3-4702-8664-a472f7bc8eeb" ]
       },
       "outbound" : {
         "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" : [ "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ],
-        "v1" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ]
+        "v1" : [ "011caed9-64d3-4702-8664-a472f7bc8eeb" ],
+        "011caed9-64d3-4702-8664-a472f7bc8eeb" : [ "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a" ]
       },
-      "allNeighbours" : [ "v1", "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a", "afddbe9b-2b0c-4d67-b05a-63c41354d0ed" ]
+      "allNeighbours" : [ "v1", "f69dad2a-daac-4b52-b46a-8c67f4b8ff9a", "afddbe9b-2b0c-4d67-b05a-63c41354d0ed", "011caed9-64d3-4702-8664-a472f7bc8eeb" ]
     },
     "vertexHashMap" : {
       "v1" : {
@@ -90,6 +92,46 @@
             "type" : "JSON"
           }
         }
+      },
+      "011caed9-64d3-4702-8664-a472f7bc8eeb" : {
+        "vertexId" : "011caed9-64d3-4702-8664-a472f7bc8eeb",
+        "vertexType" : "CALL_WORKFLOW",
+        "name" : "Call Workflow",
+        "description" : "",
+        "callWorkflowData" : {
+          "childWorkflowId" : "67ef7713f13f990a07c8ab8e",
+          "childWorkflowName" : "Get Transaction Details",
+          "virtualHostId" : "67ed20509ecb12099c749c7a",
+          "virtualHostName" : "qa-dev",
+          "request" : {
+            "headerParams" : [ ],
+            "queryParams" : [ ],
+            "targetRequestBodyType" : "NONE",
+            "body" : {
+              "data" : "{}",
+              "type" : "json"
+            },
+            "formParams" : [ ],
+            "urlEncodedParams" : [ ]
+          },
+          "response" : {
+            "statusCode" : 400,
+            "variables" : [ ]
+          },
+          "timeout" : 0,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
       }
     },
     "statusHistory" : [ {
@@ -421,4 +463,258 @@
   },
   "type" : "sharedFlow",
   "collectionName" : "ApiBuilder.SharedFlows.List"
+}, {
+  "data" : {
+    "id" : "67ef7713f13f990a07c8ab8e",
+    "cts" : 1743746835627,
+    "createdUserName" : "Akshatha sm",
+    "modifiedUserName" : "Akshatha sm",
+    "mts" : 1743766330658,
+    "createdBy" : "67e298cbed1ae94ac870b921",
+    "modifiedBy" : "67e298cbed1ae94ac870b921",
+    "proxyId" : "67ef7713f13f990a07c8ab8d",
+    "revision" : 1,
+    "name" : "Get Transaction Details",
+    "description" : "Get Transaction Details",
+    "apiType" : "RESTAPI",
+    "apiMethod" : "GET",
+    "path" : "/transactions/{transaction_id}",
+    "pathArray" : [ "transactions", "*" ],
+    "revisionStatus" : "APPROVED",
+    "locked" : true,
+    "lockedBy" : "Akshatha sm",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "2eda2a4f-38b7-4a87-a0cf-5dee7a8de01e" : [ "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec" ],
+        "c4c599c9-5d68-4ee0-beb3-8da75107c436" : [ "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec" ],
+        "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec" : [ "v1" ]
+      },
+      "outbound" : {
+        "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec" : [ "2eda2a4f-38b7-4a87-a0cf-5dee7a8de01e", "c4c599c9-5d68-4ee0-beb3-8da75107c436" ],
+        "v1" : [ "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec" ]
+      },
+      "allNeighbours" : [ "2eda2a4f-38b7-4a87-a0cf-5dee7a8de01e", "c4c599c9-5d68-4ee0-beb3-8da75107c436", "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec", "v1" ]
+    },
+    "vertexHashMap" : {
+      "2eda2a4f-38b7-4a87-a0cf-5dee7a8de01e" : {
+        "vertexId" : "2eda2a4f-38b7-4a87-a0cf-5dee7a8de01e",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 404,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "\n{\n  \"message\": \"Transaction not found\",\n  \"status\": \"Fail\",\n  \"error_details\": \"No transaction exists with the provided transaction_id.\"\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec" : {
+        "vertexId" : "c657b303-ec1d-45b4-ac9a-5b679f8fb0ec",
+        "vertexType" : "CONDITIONAL_FLOW",
+        "name" : "Condition",
+        "conditionalFlow" : [ {
+          "condition" : "if",
+          "assertion" : {
+            "expression" : "({0}) || ({1})",
+            "placeHolders" : [ {
+              "rule" : "EQUAL_TO",
+              "key" : "deviate",
+              "value" : "false",
+              "valueDataType" : "BOOLEAN"
+            }, {
+              "rule" : "EQUAL_TO",
+              "key" : "transaction_id",
+              "value" : "a6660b41",
+              "valueDataType" : "STRING"
+            } ],
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false,
+            "errorResponse" : {
+              "statusCode" : 400,
+              "body" : {
+                "data" : "",
+                "type" : "json"
+              }
+            }
+          },
+          "flowVertexes" : [ "c4c599c9-5d68-4ee0-beb3-8da75107c436" ]
+        }, {
+          "condition" : "else",
+          "assertion" : {
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false
+          },
+          "flowVertexes" : [ "2eda2a4f-38b7-4a87-a0cf-5dee7a8de01e" ]
+        } ],
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "START",
+        "name" : "Request",
+        "requestVariables" : [ {
+          "name" : "deviate",
+          "reference" : "headers",
+          "value" : "deviate",
+          "variableDataType" : "BOOLEAN",
+          "active" : true,
+          "source" : "headers",
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "transaction_id",
+          "reference" : "path-variable",
+          "value" : "transaction_id",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "imported" : true,
+        "skipRuntimeVariables" : false,
+        "securityResponse" : {
+          "isEnabled" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "c4c599c9-5d68-4ee0-beb3-8da75107c436" : {
+        "vertexId" : "c4c599c9-5d68-4ee0-beb3-8da75107c436",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 200,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n  \"transaction_id\": \"a6660b41\",\n  \"transaction_type\": \"payment\",\n  \"amount\": 100.5,\n  \"currency\": \"INR\",\n  \"sender_account\": \"A123456789\",\n  \"receiver_account\": \"B987654321\",\n  \"status\": \"successful\",\n  \"transaction_date\": \"2025-03-28T12:34:56Z\"\n}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "statusHistory" : [ {
+      "status" : "Approved",
+      "cts" : 1743766328745,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1743766304421,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743765989140,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1743765928180,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743765812261,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "k"
+    }, {
+      "status" : "Review",
+      "cts" : 1743765589067,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743765468268,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1743765454020,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743765411702,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1743759629700,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743759526901,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1743759396500,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743759358582,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1743759036822,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743759017546,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Draft",
+      "cts" : 1743746835627,
+      "lastModifiedBy" : "Akshatha sm",
+      "description" : "Created new proxy"
+    } ],
+    "virtualHostList" : [ {
+      "id" : "67ed20509ecb12099c749c7a",
+      "name" : "qa-dev",
+      "timeStamp" : 1743766330654
+    } ],
+    "enableTracing" : true,
+    "environmentName" : "",
+    "environmentId" : "",
+    "selectedVirtualHostName" : "qa-dev",
+    "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+    "kafkaConnectorId" : "",
+    "kafkaTopic" : "",
+    "kafkaGroupId" : "",
+    "enableLogging" : true,
+    "indexName" : "nw_logger",
+    "parentWorkflowMap" : { },
+    "deployed" : true,
+    "deleted" : false
+  },
+  "type" : "proxy",
+  "collectionName" : "ApiBuilder.Proxy.List"
 } ]
