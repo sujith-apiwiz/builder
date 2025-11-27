@@ -1,0 +1,201 @@
+[ {
+  "data" : {
+    "id" : "6927d9038cfd3d2567f9ecb5",
+    "cts" : 1764219139086,
+    "createdUserName" : "Sujith Kumar",
+    "modifiedUserName" : "Sujith Kumar",
+    "mts" : 1764219139086,
+    "createdBy" : "67a0969408a0e559a5309912",
+    "modifiedBy" : "67a0969408a0e559a5309912",
+    "proxyId" : "67ed29b29ecb12099c749ea9",
+    "revision" : 2,
+    "name" : "Process Order",
+    "description" : "",
+    "apiType" : "RESTAPI",
+    "apiMethod" : "POST",
+    "path" : "/process-order",
+    "pathArray" : [ "process-order" ],
+    "revisionStatus" : "DRAFT",
+    "locked" : true,
+    "lockedBy" : "Sujith Kumar",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "8e3ddf0a-03a1-455e-aca8-e07e0256387d" : [ "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" ],
+        "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" : [ "v1" ],
+        "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" : [ "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" ]
+      },
+      "outbound" : {
+        "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" : [ "8e3ddf0a-03a1-455e-aca8-e07e0256387d", "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" ],
+        "v1" : [ "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" ]
+      },
+      "allNeighbours" : [ "8e3ddf0a-03a1-455e-aca8-e07e0256387d", "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb", "v1", "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" ]
+    },
+    "vertexHashMap" : {
+      "8e3ddf0a-03a1-455e-aca8-e07e0256387d" : {
+        "vertexId" : "8e3ddf0a-03a1-455e-aca8-e07e0256387d",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 404,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n  \"message\": \"Bad Request. Missing or invalid parameters.\",\n  \"error_details\": \"userId, orderId, transactionId, and restaurantId are required.\"\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb" : {
+        "vertexId" : "7ab73c8a-67b2-4764-9b8d-6b4cfbb93eeb",
+        "vertexType" : "CONDITIONAL_FLOW",
+        "name" : "Condition",
+        "conditionalFlow" : [ {
+          "condition" : "if",
+          "assertion" : {
+            "expression" : "({0}) && ({1}) && ({2}) && ({3})",
+            "placeHolders" : [ {
+              "rule" : "EQUAL_TO",
+              "key" : "userid",
+              "value" : "6d04c530",
+              "valueDataType" : "STRING"
+            }, {
+              "rule" : "EQUAL_TO",
+              "key" : "orderid",
+              "value" : "1ee4c2fb",
+              "valueDataType" : "STRING"
+            }, {
+              "rule" : "EQUAL_TO",
+              "key" : "transactionid",
+              "value" : "a6660b41",
+              "valueDataType" : "STRING"
+            }, {
+              "rule" : "EQUAL_TO",
+              "key" : "hotelid",
+              "value" : "c4d0e761",
+              "valueDataType" : "STRING"
+            } ],
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false,
+            "errorResponse" : {
+              "statusCode" : 400,
+              "body" : {
+                "data" : "",
+                "type" : "json"
+              }
+            }
+          },
+          "flowVertexes" : [ "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" ]
+        }, {
+          "condition" : "else",
+          "assertion" : {
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false
+          },
+          "flowVertexes" : [ "8e3ddf0a-03a1-455e-aca8-e07e0256387d" ]
+        } ],
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "START",
+        "name" : "Request",
+        "requestVariables" : [ {
+          "name" : "userid",
+          "reference" : "path-variable",
+          "value" : "$.userId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "orderid",
+          "reference" : "path-variable",
+          "value" : "$.orderId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "transactionid",
+          "reference" : "path-variable",
+          "value" : "$.transactionId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "hotelid",
+          "reference" : "path-variable",
+          "value" : "$.hotelId",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "path-variable",
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "imported" : true,
+        "skipRuntimeVariables" : false,
+        "securityResponse" : {
+          "isEnabled" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "cc908d5a-2864-4e3f-b3c7-a823a501d9a1" : {
+        "vertexId" : "cc908d5a-2864-4e3f-b3c7-a823a501d9a1",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 200,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n  \"message\": \"Order, transaction, and restaurant details fetched successfully\",\n  \"order\": {\n    \"order_id\": {{orderId}},\n    \"user_id\": {{userId}},\n    \"order_date\": \"2025-04-02\",\n    \"total_price\": 100.00,\n    \"status\": \"Processing\",\n    \"items\": [\n      {\n        \"item_id\": \"001\",\n        \"name\": \"Cheese Pizza\",\n        \"quantity\": 2,\n        \"price\": 15.00\n      },\n      {\n        \"item_id\": \"002\",\n        \"name\": \"Coke\",\n        \"quantity\": 1,\n        \"price\": 2.00\n      }\n    ]\n  },\n  \"transaction\": {\n    \"transaction_id\": \"a6660b41\",\n    \"amount_paid\": 100.00,\n    \"payment_method\": \"Credit Card\",\n    \"payment_date\": \"2025-04-02\",\n    \"status\": \"Completed\"\n  },\n  \"hotel\": {\n    \"hotel_id\": \"c4d0e761\",\n    \"hotel_name\": \"The Pizza Place\",\n    \"address\": {\n      \"street\": \"456 Main St\",\n      \"city\": \"Springfield\",\n      \"state\": \"IL\",\n      \"zipcode\": \"62701\"\n    }\n  }\n}\n",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "statusHistory" : [ {
+      "status" : "Draft",
+      "cts" : 1764219139086,
+      "lastModifiedBy" : "Sujith Kumar",
+      "description" : "Created new proxy"
+    } ],
+    "enableTracing" : false,
+    "environmentName" : "",
+    "environmentId" : "",
+    "selectedVirtualHostName" : "qa-dev",
+    "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+    "kafkaConnectorId" : "",
+    "kafkaTopic" : "",
+    "kafkaGroupId" : "",
+    "enableLogging" : false,
+    "deployed" : false,
+    "deleted" : false
+  },
+  "type" : "proxy",
+  "collectionName" : "ApiBuilder.Proxy.List"
+} ]
