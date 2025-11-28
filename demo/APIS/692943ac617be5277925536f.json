@@ -1,0 +1,88 @@
+[ {
+  "data" : {
+    "id" : "692943ac617be5277925536f",
+    "cts" : 1764311980011,
+    "createdUserName" : "Sujith Kumar",
+    "modifiedUserName" : "Sujith Kumar",
+    "mts" : 1764311980011,
+    "createdBy" : "67a0969408a0e559a5309912",
+    "modifiedBy" : "67a0969408a0e559a5309912",
+    "proxyId" : "692943ac617be5277925536e",
+    "revision" : 1,
+    "name" : "New Workflow 210",
+    "description" : "",
+    "apiType" : "RESTAPI",
+    "apiMethod" : "GET",
+    "path" : "/",
+    "pathArray" : [ ],
+    "revisionStatus" : "DRAFT",
+    "locked" : true,
+    "lockedBy" : "Sujith Kumar",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "2a998086-4738-4599-90ee-3abb9bfa278f" : [ "v1" ]
+      },
+      "outbound" : {
+        "v1" : [ "2a998086-4738-4599-90ee-3abb9bfa278f" ]
+      },
+      "allNeighbours" : [ "v1", "2a998086-4738-4599-90ee-3abb9bfa278f" ]
+    },
+    "vertexHashMap" : {
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "START",
+        "name" : "Request",
+        "requestVariables" : [ ],
+        "mandatoryHeaders" : [ ],
+        "mandatoryQueryParams" : [ ],
+        "imported" : true,
+        "skipRuntimeVariables" : false,
+        "securityResponse" : {
+          "isEnabled" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "2a998086-4738-4599-90ee-3abb9bfa278f" : {
+        "vertexId" : "2a998086-4738-4599-90ee-3abb9bfa278f",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 200,
+          "body" : {
+            "type" : "JSON"
+          }
+        }
+      }
+    },
+    "statusHistory" : [ {
+      "status" : "Draft",
+      "cts" : 1764311980011,
+      "lastModifiedBy" : "Sujith Kumar",
+      "description" : "Created new proxy"
+    } ],
+    "enableTracing" : false,
+    "environmentName" : "",
+    "environmentId" : "",
+    "selectedVirtualHostName" : "",
+    "selectedVirtualHostId" : "",
+    "kafkaConnectorId" : "",
+    "kafkaTopic" : "",
+    "kafkaGroupId" : "",
+    "enableLogging" : false,
+    "deleted" : false,
+    "deployed" : false
+  },
+  "type" : "proxy",
+  "collectionName" : "ApiBuilder.Proxy.List"
+} ]
