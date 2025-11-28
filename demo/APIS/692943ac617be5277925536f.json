@@ -4,7 +4,7 @@
     "cts" : 1764311980011,
     "createdUserName" : "Sujith Kumar",
     "modifiedUserName" : "Sujith Kumar",
-    "mts" : 1764311980011,
+    "mts" : 1764312148665,
     "createdBy" : "67a0969408a0e559a5309912",
     "modifiedBy" : "67a0969408a0e559a5309912",
     "proxyId" : "692943ac617be5277925536e",
@@ -20,14 +20,56 @@
     "lockedBy" : "Sujith Kumar",
     "nodeDataHashMap" : {
       "inbound" : {
-        "2a998086-4738-4599-90ee-3abb9bfa278f" : [ "v1" ]
+        "0372b3dc-1703-4b17-9963-df9e1c507be7" : [ "v1" ],
+        "2a998086-4738-4599-90ee-3abb9bfa278f" : [ "0372b3dc-1703-4b17-9963-df9e1c507be7" ]
       },
       "outbound" : {
-        "v1" : [ "2a998086-4738-4599-90ee-3abb9bfa278f" ]
+        "v1" : [ "0372b3dc-1703-4b17-9963-df9e1c507be7" ],
+        "0372b3dc-1703-4b17-9963-df9e1c507be7" : [ "2a998086-4738-4599-90ee-3abb9bfa278f" ]
       },
-      "allNeighbours" : [ "v1", "2a998086-4738-4599-90ee-3abb9bfa278f" ]
+      "allNeighbours" : [ "0372b3dc-1703-4b17-9963-df9e1c507be7", "v1", "2a998086-4738-4599-90ee-3abb9bfa278f" ]
     },
     "vertexHashMap" : {
+      "0372b3dc-1703-4b17-9963-df9e1c507be7" : {
+        "vertexId" : "0372b3dc-1703-4b17-9963-df9e1c507be7",
+        "vertexType" : "CALL_WORKFLOW",
+        "name" : "Call Workflow",
+        "description" : "",
+        "callWorkflowData" : {
+          "childWorkflowId" : "67ef7718f13f990a07c8ab97",
+          "childWorkflowName" : "Hotel details",
+          "virtualHostId" : "67ed20509ecb12099c749c7a",
+          "virtualHostName" : "qa-dev",
+          "request" : {
+            "headerParams" : [ ],
+            "queryParams" : [ ],
+            "targetRequestBodyType" : "NONE",
+            "body" : {
+              "data" : "{}",
+              "type" : "json"
+            },
+            "formParams" : [ ],
+            "urlEncodedParams" : [ ]
+          },
+          "response" : {
+            "statusCode" : 400,
+            "variables" : [ ]
+          },
+          "timeout" : 0,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        },
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
       "v1" : {
         "vertexId" : "v1",
         "vertexType" : "START",
@@ -82,6 +124,347 @@
     "enableLogging" : false,
     "deleted" : false,
     "deployed" : false
+  },
+  "type" : "proxy",
+  "collectionName" : "ApiBuilder.Proxy.List"
+}, {
+  "data" : {
+    "id" : "67ef7718f13f990a07c8ab97",
+    "cts" : 1743746839942,
+    "createdUserName" : "Akshatha sm",
+    "modifiedUserName" : "Akshatha sm",
+    "mts" : 1750425795754,
+    "createdBy" : "67e298cbed1ae94ac870b921",
+    "modifiedBy" : "67e298cbed1ae94ac870b921",
+    "proxyId" : "67ef7717f13f990a07c8ab96",
+    "revision" : 1,
+    "name" : "Hotel details",
+    "description" : "",
+    "apiType" : "RESTAPI",
+    "apiMethod" : "POST",
+    "path" : "/v1/server/hotel/placeorder",
+    "pathArray" : [ "v1", "server", "hotel", "placeorder" ],
+    "revisionStatus" : "APPROVED",
+    "locked" : true,
+    "lockedBy" : "Akshatha sm",
+    "nodeDataHashMap" : {
+      "inbound" : {
+        "95730b34-66df-4f19-a488-2f13685e3411" : [ "v1" ],
+        "96dc3580-0b1f-4227-90a1-a8816964c211" : [ "95730b34-66df-4f19-a488-2f13685e3411" ],
+        "875e52c0-219d-40c3-b08b-03dc1b4905b5" : [ "95730b34-66df-4f19-a488-2f13685e3411" ]
+      },
+      "outbound" : {
+        "95730b34-66df-4f19-a488-2f13685e3411" : [ "96dc3580-0b1f-4227-90a1-a8816964c211", "875e52c0-219d-40c3-b08b-03dc1b4905b5" ],
+        "v1" : [ "95730b34-66df-4f19-a488-2f13685e3411" ]
+      },
+      "allNeighbours" : [ "95730b34-66df-4f19-a488-2f13685e3411", "96dc3580-0b1f-4227-90a1-a8816964c211", "875e52c0-219d-40c3-b08b-03dc1b4905b5", "v1" ]
+    },
+    "vertexHashMap" : {
+      "95730b34-66df-4f19-a488-2f13685e3411" : {
+        "vertexId" : "95730b34-66df-4f19-a488-2f13685e3411",
+        "vertexType" : "CONDITIONAL_FLOW",
+        "name" : "Condition",
+        "conditionalFlow" : [ {
+          "condition" : "if",
+          "assertion" : {
+            "expression" : "({0})",
+            "placeHolders" : [ {
+              "rule" : "EQUAL_TO",
+              "key" : "orderid",
+              "value" : "1ee4c2fb",
+              "valueDataType" : "STRING"
+            } ],
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false,
+            "errorResponse" : {
+              "statusCode" : 400,
+              "body" : {
+                "data" : "",
+                "type" : "json"
+              }
+            }
+          },
+          "flowVertexes" : [ "875e52c0-219d-40c3-b08b-03dc1b4905b5" ]
+        }, {
+          "condition" : "else",
+          "assertion" : {
+            "feelExpression" : false,
+            "skip" : false,
+            "showActualErrorMessage" : false,
+            "continueOnError" : false
+          },
+          "flowVertexes" : [ "96dc3580-0b1f-4227-90a1-a8816964c211" ]
+        } ],
+        "imported" : false,
+        "skipRuntimeVariables" : false
+      },
+      "v1" : {
+        "vertexId" : "v1",
+        "vertexType" : "START",
+        "name" : "Request",
+        "requestVariables" : [ {
+          "name" : "orderid",
+          "reference" : "body",
+          "value" : "$.order_id",
+          "variableDataType" : "STRING",
+          "active" : true,
+          "source" : "raw",
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "mandatoryHeaders" : [ ],
+        "mandatoryQueryParams" : [ ],
+        "imported" : true,
+        "skipRuntimeVariables" : false,
+        "securityResponse" : {
+          "isEnabled" : false,
+          "skip" : false,
+          "showActualErrorMessage" : false,
+          "continueOnError" : false,
+          "errorResponse" : {
+            "statusCode" : 400,
+            "body" : {
+              "data" : "",
+              "type" : "json"
+            }
+          }
+        }
+      },
+      "875e52c0-219d-40c3-b08b-03dc1b4905b5" : {
+        "vertexId" : "875e52c0-219d-40c3-b08b-03dc1b4905b5",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 200,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n  \"account_number\": \"1234567890\",\n  \"ifsc\": \"HDFC0000123\",\n  \"name_at_bank\": \"JOHN DOE\",\n  \"name\": \"bank\",\n  \"success\": true\n}",
+            "type" : "json"
+          }
+        }
+      },
+      "96dc3580-0b1f-4227-90a1-a8816964c211" : {
+        "vertexId" : "96dc3580-0b1f-4227-90a1-a8816964c211",
+        "vertexType" : "STOP",
+        "name" : "Stop",
+        "imported" : false,
+        "skipRuntimeVariables" : false,
+        "proxyResponse" : {
+          "statusCode" : 404,
+          "headers" : {
+            "content-type" : "application/json"
+          },
+          "body" : {
+            "data" : "{\n    \"message\" :\"coudn't able to place an order\"\n}",
+            "type" : "json"
+          }
+        }
+      }
+    },
+    "statusHistory" : [ {
+      "status" : "Approved",
+      "cts" : 1750425791512,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1750425783269,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748592581182,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "a"
+    }, {
+      "status" : "Review",
+      "cts" : 1748592559911,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748592048148,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "a"
+    }, {
+      "status" : "Review",
+      "cts" : 1748592021265,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748589901824,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "d"
+    }, {
+      "status" : "Review",
+      "cts" : 1748589887749,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748589814256,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1748589796952,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748587609901,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1748587577750,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748582115749,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1748582090716,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748345093192,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "A"
+    }, {
+      "status" : "Review",
+      "cts" : 1748345067512,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748270085192,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1748270065272,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748266547911,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "wsd"
+    }, {
+      "status" : "Review",
+      "cts" : 1748266485032,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1748234992204,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1748234956782,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1744029555277,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1744029520832,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1744029268545,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1744029247533,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1744029212613,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1744029110314,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1744028975982,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : " "
+    }, {
+      "status" : "Review",
+      "cts" : 1744028735115,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1744019562253,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1744019532973,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1744019210019,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Review",
+      "cts" : 1744019081940,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "Proxy undeploy"
+    }, {
+      "status" : "Approved",
+      "cts" : 1743769496272,
+      "lastModifiedBy" : "67e298cbed1ae94ac870b921",
+      "description" : "ok"
+    }, {
+      "status" : "Draft",
+      "cts" : 1743746839942,
+      "lastModifiedBy" : "Akshatha sm",
+      "description" : "Created new proxy"
+    } ],
+    "virtualHostList" : [ {
+      "id" : "67ed20509ecb12099c749c7a",
+      "name" : "qa-dev",
+      "timeStamp" : 1750425795751
+    } ],
+    "enableTracing" : true,
+    "environmentName" : "",
+    "environmentId" : "",
+    "selectedVirtualHostName" : "qa-dev",
+    "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+    "kafkaConnectorId" : "",
+    "kafkaTopic" : "",
+    "kafkaGroupId" : "",
+    "enableLogging" : true,
+    "indexName" : "nw_logger",
+    "deleted" : false,
+    "deployed" : true
   },
   "type" : "proxy",
   "collectionName" : "ApiBuilder.Proxy.List"
