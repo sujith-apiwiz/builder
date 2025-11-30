@@ -1,0 +1,201 @@
+{
+  "cts" : 1764483219412,
+  "name" : "KiranImportExport-11-30-2025 06:13:39",
+  "exportedBy" : "sujith dummy",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "692be093e882573068d0f475",
+        "cts" : 1764483219360,
+        "createdUserName" : "sujith dummy",
+        "modifiedUserName" : "sujith dummy",
+        "mts" : 1764483219360,
+        "createdBy" : "68b155aa5c84b24ba6e0da23",
+        "modifiedBy" : "68b155aa5c84b24ba6e0da23",
+        "proxyId" : "692bdf38e882573068d0f439",
+        "revision" : 1,
+        "name" : "KiranImportExport-11-30-2025 06:13:39",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "sujith dummy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "ee65ce53-2654-4c2f-b874-b5e27200fae3" : [ "v1" ],
+            "0ce08bb0-402e-4347-a05a-0acc073d0a89" : [ "ee65ce53-2654-4c2f-b874-b5e27200fae3" ],
+            "c342208a-117d-413e-8d97-f6343ca6e22d" : [ "0ce08bb0-402e-4347-a05a-0acc073d0a89" ]
+          },
+          "outbound" : {
+            "v1" : [ "ee65ce53-2654-4c2f-b874-b5e27200fae3" ],
+            "ee65ce53-2654-4c2f-b874-b5e27200fae3" : [ "0ce08bb0-402e-4347-a05a-0acc073d0a89" ],
+            "0ce08bb0-402e-4347-a05a-0acc073d0a89" : [ "c342208a-117d-413e-8d97-f6343ca6e22d" ]
+          },
+          "allNeighbours" : [ "0ce08bb0-402e-4347-a05a-0acc073d0a89", "ee65ce53-2654-4c2f-b874-b5e27200fae3", "v1", "c342208a-117d-413e-8d97-f6343ca6e22d" ]
+        },
+        "vertexHashMap" : {
+          "0ce08bb0-402e-4347-a05a-0acc073d0a89" : {
+            "vertexId" : "0ce08bb0-402e-4347-a05a-0acc073d0a89",
+            "vertexType" : "TARGET",
+            "name" : "testpost",
+            "target" : {
+              "name" : "testpost",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "postman-echo.com",
+                "path" : "/get",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "ee65ce53-2654-4c2f-b874-b5e27200fae3" : {
+            "vertexId" : "ee65ce53-2654-4c2f-b874-b5e27200fae3",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "testSF",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "68f9e988100a9b425569ddd0",
+              "sharedFlowName" : "Deepak-Test",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "c342208a-117d-413e-8d97-f6343ca6e22d" : {
+            "vertexId" : "c342208a-117d-413e-8d97-f6343ca6e22d",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1764483219360,
+          "lastModifiedBy" : "sujith dummy",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "AcmeBank DEV",
+        "environmentId" : "6651dc284289865ae027e44e",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "6651dc284289865ae027e44e",
+      "name" : "AcmeBank DEV"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
