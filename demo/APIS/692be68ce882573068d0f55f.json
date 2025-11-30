@@ -1,0 +1,356 @@
+{
+  "cts" : 1764484748578,
+  "name" : "KiranImportExport-11-30-2025 06:39:08",
+  "exportedBy" : "sujith dummy",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "692be68ce882573068d0f55f",
+        "cts" : 1764484748484,
+        "createdUserName" : "sujith dummy",
+        "modifiedUserName" : "sujith dummy",
+        "mts" : 1764484748484,
+        "createdBy" : "68b155aa5c84b24ba6e0da23",
+        "modifiedBy" : "68b155aa5c84b24ba6e0da23",
+        "proxyId" : "692bdf38e882573068d0f439",
+        "revision" : 1,
+        "name" : "KiranImportExport-11-30-2025 06:39:08",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "sujith dummy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "ee65ce53-2654-4c2f-b874-b5e27200fae3" : [ "v1" ],
+            "0ce08bb0-402e-4347-a05a-0acc073d0a89" : [ "ee65ce53-2654-4c2f-b874-b5e27200fae3" ],
+            "c342208a-117d-413e-8d97-f6343ca6e22d" : [ "0ce08bb0-402e-4347-a05a-0acc073d0a89" ]
+          },
+          "outbound" : {
+            "v1" : [ "ee65ce53-2654-4c2f-b874-b5e27200fae3" ],
+            "ee65ce53-2654-4c2f-b874-b5e27200fae3" : [ "0ce08bb0-402e-4347-a05a-0acc073d0a89" ],
+            "0ce08bb0-402e-4347-a05a-0acc073d0a89" : [ "c342208a-117d-413e-8d97-f6343ca6e22d" ]
+          },
+          "allNeighbours" : [ "0ce08bb0-402e-4347-a05a-0acc073d0a89", "ee65ce53-2654-4c2f-b874-b5e27200fae3", "v1", "c342208a-117d-413e-8d97-f6343ca6e22d" ]
+        },
+        "vertexHashMap" : {
+          "0ce08bb0-402e-4347-a05a-0acc073d0a89" : {
+            "vertexId" : "0ce08bb0-402e-4347-a05a-0acc073d0a89",
+            "vertexType" : "TARGET",
+            "name" : "testpost",
+            "target" : {
+              "name" : "testpost",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "postman-echo.com",
+                "path" : "/get",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "ee65ce53-2654-4c2f-b874-b5e27200fae3" : {
+            "vertexId" : "ee65ce53-2654-4c2f-b874-b5e27200fae3",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "testSF",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "68f9e988100a9b425569ddd0",
+              "sharedFlowName" : "Deepak-Test",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "c342208a-117d-413e-8d97-f6343ca6e22d" : {
+            "vertexId" : "c342208a-117d-413e-8d97-f6343ca6e22d",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1764484748484,
+          "lastModifiedBy" : "sujith dummy",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "AcmeBank DEV",
+        "environmentId" : "6651dc284289865ae027e44e",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "68f9e988100a9b425569ddd0",
+        "cts" : 1764483220786,
+        "createdUserName" : "sujith dummy",
+        "modifiedUserName" : "sujith dummy",
+        "mts" : 1764483220786,
+        "createdBy" : "68b155aa5c84b24ba6e0da23",
+        "modifiedBy" : "68b155aa5c84b24ba6e0da23",
+        "name" : "Deepak-Test",
+        "description" : "",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "57b3d735-b47f-41af-8079-7a7d01efcfe5" : [ "v1" ],
+            "48d0da05-2d67-47ee-a28e-9a9f09be5227" : [ "57b3d735-b47f-41af-8079-7a7d01efcfe5" ],
+            "96595dd8-4d89-48dd-87e8-9199c02d944a" : [ "48d0da05-2d67-47ee-a28e-9a9f09be5227" ]
+          },
+          "outbound" : {
+            "v1" : [ "57b3d735-b47f-41af-8079-7a7d01efcfe5" ],
+            "57b3d735-b47f-41af-8079-7a7d01efcfe5" : [ "48d0da05-2d67-47ee-a28e-9a9f09be5227" ],
+            "48d0da05-2d67-47ee-a28e-9a9f09be5227" : [ "96595dd8-4d89-48dd-87e8-9199c02d944a" ]
+          },
+          "allNeighbours" : [ "57b3d735-b47f-41af-8079-7a7d01efcfe5", "48d0da05-2d67-47ee-a28e-9a9f09be5227", "v1", "96595dd8-4d89-48dd-87e8-9199c02d944a" ]
+        },
+        "vertexHashMap" : {
+          "57b3d735-b47f-41af-8079-7a7d01efcfe5" : {
+            "vertexId" : "57b3d735-b47f-41af-8079-7a7d01efcfe5",
+            "vertexType" : "DATABASE",
+            "name" : "Get Db Details",
+            "databaseData" : {
+              "connectorId" : "68f9ce5a100a9b425569da79",
+              "databaseType" : "MSSQL",
+              "query" : "SELECT * \nFROM Student_Details ;",
+              "variableName" : "student_details",
+              "variableDataType" : "ARRAY",
+              "connectorName" : "Local host MSSql",
+              "tableName" : "Student_Details",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "Student_Details",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0,
+                "updateFields" : {
+                  "Gender" : "Male"
+                }
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "48d0da05-2d67-47ee-a28e-9a9f09be5227" : {
+            "vertexId" : "48d0da05-2d67-47ee-a28e-9a9f09be5227",
+            "vertexType" : "LOGGER",
+            "name" : "Print Student details",
+            "description" : "",
+            "logData" : {
+              "data" : "{{{student_details}}}",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "Deepak-Test",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "96595dd8-4d89-48dd-87e8-9199c02d944a" : {
+            "vertexId" : "96595dd8-4d89-48dd-87e8-9199c02d944a",
+            "vertexType" : "SHARED_FLOW_STOP",
+            "name" : "Exit",
+            "sharedFlowStopData" : {
+              "stopNodeAction" : "TERMINATE_WITH_RESPONSE",
+              "sharedFlowResponse" : {
+                "statusCode" : 200,
+                "headers" : {
+                  "content-type" : "application/json"
+                },
+                "body" : {
+                  "data" : "{{{student_details}}}",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ ],
+        "inputVariableList" : [ {
+          "name" : "name",
+          "variableDataType" : "STRING",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "outputVariableList" : [ {
+          "name" : "student_details",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false,
+          "envVertexName" : "Get Db Details",
+          "vertexId" : "57b3d735-b47f-41af-8079-7a7d01efcfe5"
+        } ],
+        "workspaceTenant" : "qa-dev"
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MsSql.Configuration",
+    "data" : {
+      "msSqlConfigurationData" : {
+        "id" : "68f9ce5a100a9b425569da79",
+        "cts" : 1761201754006,
+        "createdUserName" : "Deepak Satuluri",
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1761201754006,
+        "createdBy" : "685a38a166575941216c9c0e",
+        "modifiedBy" : "685a38a166575941216c9c0e",
+        "name" : "Local host MSSql",
+        "description" : "this is local host mssql",
+        "msSqlConfigType" : "SQL_AUTH",
+        "hostname" : "54.203.45.67",
+        "port" : "1433",
+        "username" : "SA",
+        "password" : "test@123",
+        "databaseName" : "master",
+        "url" : "jdbc:sqlserver://54.203.45.67:1433;databaseName=master"
+      },
+      "databaseType" : "MsSql"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "attachedSharedFlows" : [ "68f9e988100a9b425569ddd0" ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "6651dc284289865ae027e44e",
+      "name" : "AcmeBank DEV"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "68f9e988100a9b425569ddd0",
+      "name" : "Deepak-Test",
+      "description" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ "692be68ce882573068d0f55f" ],
+      "attachedConnectors" : [ "68f9ce5a100a9b425569da79" ]
+    } ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "68f9ce5a100a9b425569da79",
+      "name" : "Local host MSSql"
+    } ]
+  }
+}
