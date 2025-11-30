@@ -1,0 +1,260 @@
+{
+  "cts" : 1764482602601,
+  "name" : "import-export-sujith-11-30-2025 06:03:22",
+  "exportedBy" : "sujith dummy",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "692bde2ae882573068d0f403",
+        "cts" : 1764482602584,
+        "createdUserName" : "sujith dummy",
+        "modifiedUserName" : "sujith dummy",
+        "mts" : 1764482602584,
+        "createdBy" : "68b155aa5c84b24ba6e0da23",
+        "modifiedBy" : "68b155aa5c84b24ba6e0da23",
+        "proxyId" : "69243ad3b5157f696eb5d0f3",
+        "revision" : 3,
+        "name" : "import-export-sujith-11-30-2025 06:03:22",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "POST",
+        "path" : "/import-export",
+        "pathArray" : [ "import-export" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "sujith dummy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "c4665d79-40f6-4c40-979c-cc1fa0322e11" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ],
+            "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "v1" ]
+          },
+          "outbound" : {
+            "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11" ],
+            "v1" : [ "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" ]
+          },
+          "allNeighbours" : [ "c4665d79-40f6-4c40-979c-cc1fa0322e11", "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a", "v1" ]
+        },
+        "vertexHashMap" : {
+          "c4665d79-40f6-4c40-979c-cc1fa0322e11" : {
+            "vertexId" : "c4665d79-40f6-4c40-979c-cc1fa0322e11",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a" : {
+            "vertexId" : "8cb0ea0e-5ac4-4a8f-81b7-df140e9b936a",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "shared",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "69242a60b5157f696eb5c930",
+              "sharedFlowName" : "test-sujith",
+              "inputVariablesMap" : {
+                "input1" : "1",
+                "input2" : "2",
+                "input3" : "3"
+              },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1764482602584,
+          "lastModifiedBy" : "sujith dummy",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "Clear environment",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "qa-dev",
+        "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "69242a60b5157f696eb5c930",
+        "cts" : 1764157442289,
+        "createdUserName" : "Sujith Kumar",
+        "modifiedUserName" : "Sujith Kumar",
+        "mts" : 1764157442289,
+        "createdBy" : "67a0969408a0e559a5309912",
+        "modifiedBy" : "67a0969408a0e559a5309912",
+        "name" : "test-sujith-11-26-2025 10:45:42-11-26-2025 11:44:02",
+        "description" : "test-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujith",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "737ca640-6de3-40d6-bcbc-ed1df466c49f" : [ "v1" ],
+            "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" : [ "737ca640-6de3-40d6-bcbc-ed1df466c49f" ],
+            "8f164ae6-e752-47ae-9f53-ee598859decd" : [ "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" ]
+          },
+          "outbound" : {
+            "v1" : [ "737ca640-6de3-40d6-bcbc-ed1df466c49f" ],
+            "737ca640-6de3-40d6-bcbc-ed1df466c49f" : [ "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" ],
+            "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" : [ "8f164ae6-e752-47ae-9f53-ee598859decd" ]
+          },
+          "allNeighbours" : [ "737ca640-6de3-40d6-bcbc-ed1df466c49f", "8f164ae6-e752-47ae-9f53-ee598859decd", "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc", "v1" ]
+        },
+        "vertexHashMap" : {
+          "8f164ae6-e752-47ae-9f53-ee598859decd" : {
+            "vertexId" : "8f164ae6-e752-47ae-9f53-ee598859decd",
+            "vertexType" : "SHARED_FLOW_STOP",
+            "name" : "Exit",
+            "sharedFlowStopData" : {
+              "stopNodeAction" : "CONTINUE",
+              "sharedFlowResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "737ca640-6de3-40d6-bcbc-ed1df466c49f" : {
+            "vertexId" : "737ca640-6de3-40d6-bcbc-ed1df466c49f",
+            "vertexType" : "LOGGER",
+            "name" : "logs",
+            "description" : "",
+            "logData" : {
+              "data" : "{{input1}},\n{{input2}},\n{{input3}}",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "test-sujith",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc" : {
+            "vertexId" : "1f4fe1c7-e64d-42e6-b07e-e9c396e6c3cc",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "internal shared flow call ",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "69243c68b5157f696eb5d255",
+              "sharedFlowName" : "test-internal-flow",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ "69258a2f61000668f4a73d63" ],
+        "inputVariableList" : [ {
+          "name" : "input1",
+          "variableDataType" : "STRING",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "input2",
+          "variableDataType" : "STRING",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false
+        }, {
+          "name" : "input3",
+          "variableDataType" : "STRING",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "outputVariableList" : [ ],
+        "workspaceTenant" : "qa-dev"
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "attachedSharedFlows" : [ "69242a60b5157f696eb5c930" ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : "Clear environment"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "69242a60b5157f696eb5c930",
+      "name" : "test-sujith-11-26-2025 10:45:42-11-26-2025 11:44:02",
+      "description" : "test-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujithtest-sujith",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ "692bde2ae882573068d0f403" ],
+      "attachedConnectors" : [ ]
+    } ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
