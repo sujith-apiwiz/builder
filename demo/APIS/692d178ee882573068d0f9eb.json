@@ -1,5 +1,5 @@
 {
-  "cts" : 1764562869552,
+  "cts" : 1764562883091,
   "name" : "GET - get_operation_1",
   "exportedBy" : "Akshatha SM",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764562830965,
         "createdUserName" : "Akshatha SM",
         "modifiedUserName" : "Akshatha SM",
-        "mts" : 1764562869537,
+        "mts" : 1764562883060,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "proxyId" : "692d178ee882573068d0f9ea",
@@ -78,15 +78,16 @@
           "lastModifiedBy" : "Akshatha SM",
           "description" : "Created new proxy"
         } ],
-        "enableTracing" : false,
+        "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
-        "selectedVirtualHostName" : "",
-        "selectedVirtualHostId" : "",
+        "selectedVirtualHostName" : "qa-dev",
+        "selectedVirtualHostId" : "67ed20509ecb12099c749c7a",
         "kafkaConnectorId" : "",
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
-        "enableLogging" : false,
+        "enableLogging" : true,
+        "indexName" : "nw_logger",
         "deleted" : false,
         "deployed" : false
       }
