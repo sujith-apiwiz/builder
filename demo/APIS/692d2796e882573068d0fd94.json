@@ -1,5 +1,5 @@
 {
-  "cts" : 1764567025499,
+  "cts" : 1764567042878,
   "name" : "Mock",
   "exportedBy" : "Akshatha SM",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764566934702,
         "createdUserName" : "Akshatha SM",
         "modifiedUserName" : "Akshatha SM",
-        "mts" : 1764567025494,
+        "mts" : 1764567042874,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "proxyId" : "692d2796e882573068d0fd93",
@@ -108,8 +108,12 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
-                "type" : "JSON"
+                "data" : "{\n    \"body\" : {{Body}}\n}",
+                "type" : "json"
               }
             }
           },
