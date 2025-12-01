@@ -1,5 +1,5 @@
 {
-  "cts" : 1764567094884,
+  "cts" : 1764567644389,
   "name" : "Mock",
   "exportedBy" : "Akshatha SM",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764566934702,
         "createdUserName" : "Akshatha SM",
         "modifiedUserName" : "Akshatha SM",
-        "mts" : 1764567094883,
+        "mts" : 1764567644374,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "proxyId" : "692d2796e882573068d0fd93",
@@ -46,7 +46,7 @@
               "description" : "Registry",
               "apiType" : "RESTAPI",
               "request" : {
-                "apiMethod" : "GET",
+                "apiMethod" : "POST",
                 "scheme" : "https",
                 "host" : "test.apiwiz.io",
                 "path" : "/Registry",
@@ -142,6 +142,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1764567637254,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1764567100882,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1764567083554,
           "lastModifiedBy" : "67c562eba649de63bf3835e4",
