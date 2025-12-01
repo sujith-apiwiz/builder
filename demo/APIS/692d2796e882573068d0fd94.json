@@ -1,5 +1,5 @@
 {
-  "cts" : 1764567646057,
+  "cts" : 1764567764066,
   "name" : "Mock",
   "exportedBy" : "Akshatha SM",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764566934702,
         "createdUserName" : "Akshatha SM",
         "modifiedUserName" : "Akshatha SM",
-        "mts" : 1764567646051,
+        "mts" : 1764567764054,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "proxyId" : "692d2796e882573068d0fd93",
@@ -50,7 +50,10 @@
                 "scheme" : "https",
                 "host" : "test.apiwiz.io",
                 "path" : "/Registry",
-                "headerParams" : [ ],
+                "headerParams" : [ {
+                  "name" : "Content-Type",
+                  "value" : "text/plain"
+                } ],
                 "queryParams" : [ ],
                 "targetRequestBodyType" : "NONE",
                 "body" : {
@@ -142,6 +145,26 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1764567742740,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1764567698614,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1764567691900,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1764567651912,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1764567637254,
           "lastModifiedBy" : "67c562eba649de63bf3835e4",
