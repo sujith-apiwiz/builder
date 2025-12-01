@@ -1,7 +1,7 @@
 {
-  "cts" : 1764593489513,
+  "cts" : 1764593637067,
   "name" : "Mock",
-  "exportedBy" : "Akshatha SM",
+  "exportedBy" : "divakar v",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,10 @@
         "id" : "692d2796e882573068d0fd94",
         "cts" : 1764566934702,
         "createdUserName" : "Akshatha SM",
-        "modifiedUserName" : "Akshatha SM",
-        "mts" : 1764593489500,
+        "modifiedUserName" : "divakar v",
+        "mts" : 1764593637053,
         "createdBy" : "67c562eba649de63bf3835e4",
-        "modifiedBy" : "67c562eba649de63bf3835e4",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
         "proxyId" : "692d2796e882573068d0fd93",
         "revision" : 1,
         "name" : "Mock",
@@ -24,7 +24,7 @@
         "pathArray" : [ "snbhjbdjbsadbsadbsnbdksnkdsd" ],
         "revisionStatus" : "REVIEW",
         "locked" : true,
-        "lockedBy" : "Akshatha SM",
+        "lockedBy" : "divakar v",
         "nodeDataHashMap" : {
           "inbound" : {
             "433a3943-38a5-4f74-9d31-b2d497d791f2" : [ "v1" ],
