@@ -1,5 +1,5 @@
 {
-  "cts" : 1764567766129,
+  "cts" : 1764593489513,
   "name" : "Mock",
   "exportedBy" : "Akshatha SM",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764566934702,
         "createdUserName" : "Akshatha SM",
         "modifiedUserName" : "Akshatha SM",
-        "mts" : 1764567766093,
+        "mts" : 1764593489500,
         "createdBy" : "67c562eba649de63bf3835e4",
         "modifiedBy" : "67c562eba649de63bf3835e4",
         "proxyId" : "692d2796e882573068d0fd93",
@@ -146,6 +146,16 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1764567834056,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1764567771452,
+          "lastModifiedBy" : "67c562eba649de63bf3835e4",
+          "description" : " "
+        }, {
+          "status" : "Review",
           "cts" : 1764567742740,
           "lastModifiedBy" : "67c562eba649de63bf3835e4",
           "description" : "Proxy undeploy"
@@ -200,13 +210,21 @@
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
         "enableLogging" : false,
-        "deleted" : false,
-        "deployed" : false
+        "deployed" : false,
+        "deleted" : false
       }
     }
   } ],
   "metadata" : {
-    "proxyMetadataDetailsDtoList" : [ ],
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "692d2796e882573068d0fd94",
+      "proxyid" : "692d2796e882573068d0fd93",
+      "name" : "Mock",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
       "id" : "",
