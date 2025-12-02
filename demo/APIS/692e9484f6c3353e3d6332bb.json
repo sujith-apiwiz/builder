@@ -1,5 +1,5 @@
 {
-  "cts" : 1764660431019,
+  "cts" : 1764660452705,
   "name" : "New Workflow 217",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764660356018,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764660430843,
+        "mts" : 1764660452667,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692e9484f6c3353e3d6332ba",
@@ -28,13 +28,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "v1" ],
-            "7069e494-83e5-4d33-8286-0a76bde9c52e" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ]
+            "7069e494-83e5-4d33-8286-0a76bde9c52e" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ],
+            "551a42a7-c181-411a-a067-0c604d9b9472" : [ "7069e494-83e5-4d33-8286-0a76bde9c52e" ]
           },
           "outbound" : {
             "v1" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ],
-            "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "7069e494-83e5-4d33-8286-0a76bde9c52e" ]
+            "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "7069e494-83e5-4d33-8286-0a76bde9c52e" ],
+            "7069e494-83e5-4d33-8286-0a76bde9c52e" : [ "551a42a7-c181-411a-a067-0c604d9b9472" ]
           },
-          "allNeighbours" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab", "v1", "7069e494-83e5-4d33-8286-0a76bde9c52e" ]
+          "allNeighbours" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab", "v1", "7069e494-83e5-4d33-8286-0a76bde9c52e", "551a42a7-c181-411a-a067-0c604d9b9472" ]
         },
         "vertexHashMap" : {
           "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : {
@@ -88,6 +90,18 @@
                   "type" : "json"
                 }
               },
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "551a42a7-c181-411a-a067-0c604d9b9472" : {
+            "vertexId" : "551a42a7-c181-411a-a067-0c604d9b9472",
+            "vertexType" : "LOGGER",
+            "name" : "logger",
+            "description" : "",
+            "logData" : {
+              "data" : "aaa",
               "skip" : false
             },
             "imported" : false,
