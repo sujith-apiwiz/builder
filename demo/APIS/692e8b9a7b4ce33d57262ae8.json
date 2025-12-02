@@ -1,6 +1,6 @@
 {
-  "cts" : 1764658074113,
-  "name" : "New Workflow 217",
+  "cts" : 1764658144040,
+  "name" : "Test-rcbc-pipeline",
   "exportedBy" : "divakar v",
   "data" : [ {
     "type" : "proxy",
@@ -11,12 +11,12 @@
         "cts" : 1764658074094,
         "createdUserName" : "divakar v",
         "modifiedUserName" : "divakar v",
-        "mts" : 1764658074094,
+        "mts" : 1764658144020,
         "createdBy" : "63cf749921c7bb55c7368952",
         "modifiedBy" : "63cf749921c7bb55c7368952",
         "proxyId" : "692e8b9a7b4ce33d57262ae7",
         "revision" : 1,
-        "name" : "New Workflow 217",
+        "name" : "Test-rcbc-pipeline",
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
@@ -96,7 +96,7 @@
     "proxyMetadataDetailsDtoList" : [ {
       "id" : "692e8b9a7b4ce33d57262ae8",
       "proxyid" : "692e8b9a7b4ce33d57262ae7",
-      "name" : "New Workflow 217",
+      "name" : "Test-rcbc-pipeline",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
