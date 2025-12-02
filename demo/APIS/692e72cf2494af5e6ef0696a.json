@@ -1,0 +1,117 @@
+{
+  "cts" : 1764651727573,
+  "name" : "ImoprtWithIntermResponse-12-02-2025 05:02:07",
+  "exportedBy" : "sujith dummy",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "692e72cf2494af5e6ef0696a",
+        "cts" : 1764651727570,
+        "createdUserName" : "sujith dummy",
+        "modifiedUserName" : "sujith dummy",
+        "mts" : 1764651727570,
+        "createdBy" : "68b155aa5c84b24ba6e0da23",
+        "modifiedBy" : "68b155aa5c84b24ba6e0da23",
+        "proxyId" : "692e718c2494af5e6ef068ca",
+        "revision" : 1,
+        "name" : "ImoprtWithIntermResponse-12-02-2025 05:02:07",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/ImoprtWithIntermResponse",
+        "pathArray" : [ "ImoprtWithIntermResponse" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "sujith dummy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "fc7a7862-dfc5-4c6d-b011-7faab0f27913" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "fc7a7862-dfc5-4c6d-b011-7faab0f27913" ]
+          },
+          "allNeighbours" : [ "v1", "fc7a7862-dfc5-4c6d-b011-7faab0f27913" ]
+        },
+        "vertexHashMap" : {
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "fc7a7862-dfc5-4c6d-b011-7faab0f27913" : {
+            "vertexId" : "fc7a7862-dfc5-4c6d-b011-7faab0f27913",
+            "vertexType" : "INTERIM_RESPONSE",
+            "name" : "Interm Response Node",
+            "description" : "",
+            "interimResponseData" : {
+              "response" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
+              },
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1764651727570,
+          "lastModifiedBy" : "sujith dummy",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "692e72cf2494af5e6ef0696a",
+      "proxyid" : "692e718c2494af5e6ef068ca",
+      "name" : "ImoprtWithIntermResponse-12-02-2025 05:02:07",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
