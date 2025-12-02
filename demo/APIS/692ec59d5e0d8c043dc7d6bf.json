@@ -1,5 +1,5 @@
 {
-  "cts" : 1764675133890,
+  "cts" : 1764675173372,
   "name" : "New Workflow 219",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764672925108,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764675133850,
+        "mts" : 1764675173331,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692ec59d5e0d8c043dc7d6be",
@@ -62,8 +62,8 @@
                   "h3" : "3"
                 },
                 "body" : {
-                  "data" : "{\n    \"a\": \"error\"\n}",
-                  "type" : "json"
+                  "data" : "<message>Response</Response>",
+                  "type" : "xml"
                 }
               }
             },
