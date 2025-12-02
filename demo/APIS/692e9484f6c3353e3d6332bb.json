@@ -1,5 +1,5 @@
 {
-  "cts" : 1764660392043,
+  "cts" : 1764660431019,
   "name" : "New Workflow 217",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764660356018,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764660391864,
+        "mts" : 1764660430843,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692e9484f6c3353e3d6332ba",
@@ -28,13 +28,13 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "v1" ],
-            "7c8a5f2a-d120-495d-a7cb-7feae6c6d148" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ]
+            "7069e494-83e5-4d33-8286-0a76bde9c52e" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ]
           },
           "outbound" : {
             "v1" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ],
-            "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "7c8a5f2a-d120-495d-a7cb-7feae6c6d148" ]
+            "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "7069e494-83e5-4d33-8286-0a76bde9c52e" ]
           },
-          "allNeighbours" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab", "7c8a5f2a-d120-495d-a7cb-7feae6c6d148", "v1" ]
+          "allNeighbours" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab", "v1", "7069e494-83e5-4d33-8286-0a76bde9c52e" ]
         },
         "vertexHashMap" : {
           "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : {
@@ -48,19 +48,6 @@
             },
             "imported" : false,
             "skipRuntimeVariables" : false
-          },
-          "7c8a5f2a-d120-495d-a7cb-7feae6c6d148" : {
-            "vertexId" : "7c8a5f2a-d120-495d-a7cb-7feae6c6d148",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "type" : "JSON"
-              }
-            }
           },
           "v1" : {
             "vertexId" : "v1",
@@ -84,6 +71,27 @@
                 }
               }
             }
+          },
+          "7069e494-83e5-4d33-8286-0a76bde9c52e" : {
+            "vertexId" : "7069e494-83e5-4d33-8286-0a76bde9c52e",
+            "vertexType" : "INTERIM_RESPONSE",
+            "name" : "Interm Response Node",
+            "description" : "",
+            "interimResponseData" : {
+              "response" : {
+                "statusCode" : 200,
+                "headers" : {
+                  "content-type" : "application/json"
+                },
+                "body" : {
+                  "data" : "{\n    \"m\": \":response\"\n}",
+                  "type" : "json"
+                }
+              },
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
