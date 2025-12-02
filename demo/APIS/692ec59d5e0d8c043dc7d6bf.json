@@ -1,5 +1,5 @@
 {
-  "cts" : 1764673113871,
+  "cts" : 1764674597565,
   "name" : "New Workflow 219",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764672925108,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764673113842,
+        "mts" : 1764674597523,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692ec59d5e0d8c043dc7d6be",
@@ -54,9 +54,9 @@
               "showActualErrorMessage" : false,
               "continueOnError" : false,
               "errorResponse" : {
-                "statusCode" : 404,
+                "statusCode" : 400,
                 "body" : {
-                  "data" : "",
+                  "data" : "{\n    \"a\": \"error\"\n}",
                   "type" : "json"
                 }
               }
@@ -106,6 +106,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1764674553974,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1764673121336,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1764673041610,
           "lastModifiedBy" : "67a0969408a0e559a5309912",
