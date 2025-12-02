@@ -1,5 +1,5 @@
 {
-  "cts" : 1764673012982,
+  "cts" : 1764673113871,
   "name" : "New Workflow 219",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764672925108,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764673012958,
+        "mts" : 1764673113842,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692ec59d5e0d8c043dc7d6be",
@@ -22,7 +22,7 @@
         "apiMethod" : "GET",
         "path" : "/builder-bugs",
         "pathArray" : [ "builder-bugs" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Sujith Kumar",
         "nodeDataHashMap" : {
@@ -44,12 +44,12 @@
             "databaseData" : {
               "connectorId" : "6787425d215c0e72878592b4",
               "databaseType" : "MONGODB",
-              "query" : "{\"operation\":\"insert\",\"databaseName\":\"student-details\",\"collection\":\"student.details\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"age\":\"\",\"class\":\"\",\"roll no\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "query" : "{\n  \"operation\": \"insert\",\n  adfvsffv\n  \"databaseName\": \"student-details\",\n  \"collection\": \"student.details\",\n  \"documents\": [\n    {\n      \"_id\": \"\",\n      \"name\": \"\",\n      \"age\": \"\",\n      \"class\": \"\",\n      \"roll no\": \"\"\n    }\n  ],\n  \"updates\": [],\n  \"pipelines\": [],\n  \"deletes\": [],\n  \"filter\": {},\n  \"projection\": {},\n  \"sort\": {},\n  \"limit\": 0,\n  \"skip\": 0\n}",
               "variableName" : "res",
               "connectorName" : "Deepak Cloud DB",
               "tenantName" : "student-details",
               "collectionName" : "student.details",
-              "manual" : false,
+              "manual" : true,
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -106,11 +106,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1764673041610,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1764673019548,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1764672925108,
           "lastModifiedBy" : "Sujith Kumar",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
