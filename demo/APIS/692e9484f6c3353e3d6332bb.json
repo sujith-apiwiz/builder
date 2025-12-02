@@ -1,5 +1,5 @@
 {
-  "cts" : 1764660356029,
+  "cts" : 1764660381042,
   "name" : "New Workflow 217",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764660356018,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764660356018,
+        "mts" : 1764660381016,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692e9484f6c3353e3d6332ba",
@@ -20,8 +20,8 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/",
-        "pathArray" : [ ],
+        "path" : "/interim-response",
+        "pathArray" : [ "interim-response" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "Sujith Kumar",
@@ -78,7 +78,7 @@
           "lastModifiedBy" : "Sujith Kumar",
           "description" : "Created new proxy"
         } ],
-        "enableTracing" : false,
+        "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
         "selectedVirtualHostName" : "",
