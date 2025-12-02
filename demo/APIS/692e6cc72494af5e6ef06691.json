@@ -1,0 +1,127 @@
+{
+  "cts" : 1764650183247,
+  "name" : "ImportExportBuilder-Nihal-12-02-2025 04:36:23",
+  "exportedBy" : "sujith dummy",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "692e6cc72494af5e6ef06691",
+        "cts" : 1764650183197,
+        "createdUserName" : "sujith dummy",
+        "modifiedUserName" : "sujith dummy",
+        "mts" : 1764650183197,
+        "createdBy" : "68b155aa5c84b24ba6e0da23",
+        "modifiedBy" : "68b155aa5c84b24ba6e0da23",
+        "proxyId" : "692e65c02494af5e6ef065b2",
+        "revision" : 1,
+        "name" : "ImportExportBuilder-Nihal-12-02-2025 04:36:23",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/ImportExportBuilder",
+        "pathArray" : [ "ImportExportBuilder" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "sujith dummy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "edd3ec1a-4a3c-4724-9b0f-637faf679fbd" : [ "v1" ],
+            "ba5cc612-044d-48eb-9f8f-cf3ead342ec2" : [ "edd3ec1a-4a3c-4724-9b0f-637faf679fbd" ]
+          },
+          "outbound" : {
+            "v1" : [ "edd3ec1a-4a3c-4724-9b0f-637faf679fbd" ],
+            "edd3ec1a-4a3c-4724-9b0f-637faf679fbd" : [ "ba5cc612-044d-48eb-9f8f-cf3ead342ec2" ]
+          },
+          "allNeighbours" : [ "edd3ec1a-4a3c-4724-9b0f-637faf679fbd", "ba5cc612-044d-48eb-9f8f-cf3ead342ec2", "v1" ]
+        },
+        "vertexHashMap" : {
+          "ba5cc612-044d-48eb-9f8f-cf3ead342ec2" : {
+            "vertexId" : "ba5cc612-044d-48eb-9f8f-cf3ead342ec2",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "edd3ec1a-4a3c-4724-9b0f-637faf679fbd" : {
+            "vertexId" : "edd3ec1a-4a3c-4724-9b0f-637faf679fbd",
+            "vertexType" : "LOGGER",
+            "name" : "logging",
+            "description" : "",
+            "logData" : {
+              "data" : "logging",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1764650183197,
+          "lastModifiedBy" : "sujith dummy",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "692e6cc72494af5e6ef06691",
+      "proxyid" : "692e65c02494af5e6ef065b2",
+      "name" : "ImportExportBuilder-Nihal-12-02-2025 04:36:23",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
