@@ -1,5 +1,5 @@
 {
-  "cts" : 1764675854493,
+  "cts" : 1764675924547,
   "name" : "New Workflow 219",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764672925108,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764675854488,
+        "mts" : 1764675924543,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692ec59d5e0d8c043dc7d6be",
@@ -28,13 +28,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "ae6965b8-2eb7-40cd-999b-992013deea07" : [ "v1" ],
-            "bca65ca9-1e2d-46d1-8c50-9d07b21cac84" : [ "ae6965b8-2eb7-40cd-999b-992013deea07" ]
+            "8eac3ba0-1957-4aec-b683-39ad8844ae0b" : [ "ae6965b8-2eb7-40cd-999b-992013deea07" ],
+            "bca65ca9-1e2d-46d1-8c50-9d07b21cac84" : [ "8eac3ba0-1957-4aec-b683-39ad8844ae0b" ]
           },
           "outbound" : {
             "v1" : [ "ae6965b8-2eb7-40cd-999b-992013deea07" ],
-            "ae6965b8-2eb7-40cd-999b-992013deea07" : [ "bca65ca9-1e2d-46d1-8c50-9d07b21cac84" ]
+            "ae6965b8-2eb7-40cd-999b-992013deea07" : [ "8eac3ba0-1957-4aec-b683-39ad8844ae0b" ],
+            "8eac3ba0-1957-4aec-b683-39ad8844ae0b" : [ "bca65ca9-1e2d-46d1-8c50-9d07b21cac84" ]
           },
-          "allNeighbours" : [ "ae6965b8-2eb7-40cd-999b-992013deea07", "bca65ca9-1e2d-46d1-8c50-9d07b21cac84", "v1" ]
+          "allNeighbours" : [ "ae6965b8-2eb7-40cd-999b-992013deea07", "8eac3ba0-1957-4aec-b683-39ad8844ae0b", "bca65ca9-1e2d-46d1-8c50-9d07b21cac84", "v1" ]
         },
         "vertexHashMap" : {
           "ae6965b8-2eb7-40cd-999b-992013deea07" : {
@@ -66,6 +68,32 @@
                   "type" : "json"
                 }
               }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "8eac3ba0-1957-4aec-b683-39ad8844ae0b" : {
+            "vertexId" : "8eac3ba0-1957-4aec-b683-39ad8844ae0b",
+            "vertexType" : "JAVASCRIPT",
+            "name" : "js",
+            "description" : "",
+            "javascriptData" : {
+              "targetVariable" : "res",
+              "variableDataType" : "STRING",
+              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n console.log(input.foo);\n a\n return input;\n };",
+              "variables" : { },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "customResponseMapping" : false,
+              "responsePathMapping" : { }
             },
             "imported" : false,
             "skipRuntimeVariables" : false
