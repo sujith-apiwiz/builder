@@ -1,5 +1,5 @@
 {
-  "cts" : 1764660687221,
+  "cts" : 1764660794703,
   "name" : "New Workflow 217",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764660356018,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764660687206,
+        "mts" : 1764660794669,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "692e9484f6c3353e3d6332ba",
@@ -22,7 +22,7 @@
         "apiMethod" : "GET",
         "path" : "/interim-response",
         "pathArray" : [ "interim-response" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Sujith Kumar",
         "nodeDataHashMap" : {
@@ -30,15 +30,17 @@
             "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "v1" ],
             "7069e494-83e5-4d33-8286-0a76bde9c52e" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ],
             "551a42a7-c181-411a-a067-0c604d9b9472" : [ "7069e494-83e5-4d33-8286-0a76bde9c52e" ],
-            "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3" : [ "551a42a7-c181-411a-a067-0c604d9b9472" ]
+            "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3" : [ "551a42a7-c181-411a-a067-0c604d9b9472" ],
+            "974be2dd-c79a-4fc7-a4f9-845526a6294d" : [ "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3" ]
           },
           "outbound" : {
             "v1" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" ],
             "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : [ "7069e494-83e5-4d33-8286-0a76bde9c52e" ],
             "7069e494-83e5-4d33-8286-0a76bde9c52e" : [ "551a42a7-c181-411a-a067-0c604d9b9472" ],
-            "551a42a7-c181-411a-a067-0c604d9b9472" : [ "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3" ]
+            "551a42a7-c181-411a-a067-0c604d9b9472" : [ "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3" ],
+            "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3" : [ "974be2dd-c79a-4fc7-a4f9-845526a6294d" ]
           },
-          "allNeighbours" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab", "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3", "v1", "7069e494-83e5-4d33-8286-0a76bde9c52e", "551a42a7-c181-411a-a067-0c604d9b9472" ]
+          "allNeighbours" : [ "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab", "f4af1db9-ef8f-4a31-ad76-ceefe0f67df3", "v1", "7069e494-83e5-4d33-8286-0a76bde9c52e", "974be2dd-c79a-4fc7-a4f9-845526a6294d", "551a42a7-c181-411a-a067-0c604d9b9472" ]
         },
         "vertexHashMap" : {
           "5cc0e757-768b-48d2-bc8f-e7ee5dedc4ab" : {
@@ -110,6 +112,31 @@
             "imported" : false,
             "skipRuntimeVariables" : false
           },
+          "974be2dd-c79a-4fc7-a4f9-845526a6294d" : {
+            "vertexId" : "974be2dd-c79a-4fc7-a4f9-845526a6294d",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "shared",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "692e90e3f6c3353e3d6330c1",
+              "sharedFlowName" : "Internal - Interim response",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "551a42a7-c181-411a-a067-0c604d9b9472" : {
             "vertexId" : "551a42a7-c181-411a-a067-0c604d9b9472",
             "vertexType" : "LOGGER",
@@ -124,11 +151,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1764660763683,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1764660709859,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1764660356018,
           "lastModifiedBy" : "Sujith Kumar",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
@@ -142,6 +180,94 @@
         "deleted" : false
       }
     }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "692e90e3f6c3353e3d6330c1",
+        "cts" : 1764659427275,
+        "createdUserName" : "Sujith Kumar",
+        "modifiedUserName" : "Sujith Kumar",
+        "mts" : 1764660099391,
+        "createdBy" : "67a0969408a0e559a5309912",
+        "modifiedBy" : "67a0969408a0e559a5309912",
+        "name" : "Internal - Interim response",
+        "description" : "",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "f2e9ca91-2a00-46ff-aa86-e7abdca33772" : [ "v1" ],
+            "0c4aa84b-c87a-4069-aa2f-458a1ddcf148" : [ "f2e9ca91-2a00-46ff-aa86-e7abdca33772" ],
+            "d4a38bf1-c45a-41ab-9b69-5c486e43b596" : [ "0c4aa84b-c87a-4069-aa2f-458a1ddcf148" ]
+          },
+          "outbound" : {
+            "v1" : [ "f2e9ca91-2a00-46ff-aa86-e7abdca33772" ],
+            "f2e9ca91-2a00-46ff-aa86-e7abdca33772" : [ "0c4aa84b-c87a-4069-aa2f-458a1ddcf148" ],
+            "0c4aa84b-c87a-4069-aa2f-458a1ddcf148" : [ "d4a38bf1-c45a-41ab-9b69-5c486e43b596" ]
+          },
+          "allNeighbours" : [ "0c4aa84b-c87a-4069-aa2f-458a1ddcf148", "d4a38bf1-c45a-41ab-9b69-5c486e43b596", "f2e9ca91-2a00-46ff-aa86-e7abdca33772", "v1" ]
+        },
+        "vertexHashMap" : {
+          "0c4aa84b-c87a-4069-aa2f-458a1ddcf148" : {
+            "vertexId" : "0c4aa84b-c87a-4069-aa2f-458a1ddcf148",
+            "vertexType" : "LOGGER",
+            "name" : "k",
+            "description" : "",
+            "logData" : {
+              "data" : "After internal internal interim response ",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "d4a38bf1-c45a-41ab-9b69-5c486e43b596" : {
+            "vertexId" : "d4a38bf1-c45a-41ab-9b69-5c486e43b596",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 10,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "Input",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "f2e9ca91-2a00-46ff-aa86-e7abdca33772" : {
+            "vertexId" : "f2e9ca91-2a00-46ff-aa86-e7abdca33772",
+            "vertexType" : "INTERIM_RESPONSE",
+            "name" : "Interm Response Node",
+            "description" : "",
+            "interimResponseData" : {
+              "response" : {
+                "statusCode" : 200,
+                "headers" : {
+                  "content-type" : "application/json"
+                },
+                "body" : {
+                  "data" : "{\n    \"message\": \"internal shared flow\"\n}",
+                  "type" : "json"
+                }
+              },
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ ],
+        "inputVariableList" : [ ],
+        "outputVariableList" : [ ],
+        "workspaceTenant" : "qa-dev"
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -149,7 +275,7 @@
       "proxyid" : "692e9484f6c3353e3d6332ba",
       "name" : "New Workflow 217",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ ],
+      "attachedSharedFlows" : [ "692e90e3f6c3353e3d6330c1" ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
@@ -158,7 +284,14 @@
       "id" : "",
       "name" : ""
     } ],
-    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "692e90e3f6c3353e3d6330c1",
+      "name" : "Internal - Interim response",
+      "description" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
     "connectorMetadataDetailsDtoList" : [ ]
   }
 }
