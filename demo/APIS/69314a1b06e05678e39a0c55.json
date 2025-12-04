@@ -1,5 +1,5 @@
 {
-  "cts" : 1764838114275,
+  "cts" : 1764838148375,
   "name" : "New Workflow 226",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764837915460,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764838114263,
+        "mts" : 1764838148356,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "69314a1b06e05678e39a0c54",
@@ -20,8 +20,8 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/",
-        "pathArray" : [ ],
+        "path" : "/interim-response-1",
+        "pathArray" : [ "interim-response-1" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "Sujith Kumar",
@@ -138,6 +138,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1764838132949,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : " "
+        }, {
+          "status" : "Approved",
+          "cts" : 1764838119248,
+          "lastModifiedBy" : "67a0969408a0e559a5309912",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1764837915460,
           "lastModifiedBy" : "Sujith Kumar",
