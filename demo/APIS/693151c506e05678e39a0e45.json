@@ -1,5 +1,5 @@
 {
-  "cts" : 1764840730378,
+  "cts" : 1764840776243,
   "name" : "New Workflow 227",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764839877775,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764840730374,
+        "mts" : 1764840776216,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "693151c506e05678e39a0e44",
@@ -28,13 +28,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "3266575b-4bbb-4388-bfe4-b01cd988c8b2" : [ "v1" ],
-            "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2" ]
+            "22e2bac3-169c-4cdc-879b-009a281b910f" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2" ],
+            "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" : [ "22e2bac3-169c-4cdc-879b-009a281b910f" ]
           },
           "outbound" : {
             "v1" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2" ],
-            "3266575b-4bbb-4388-bfe4-b01cd988c8b2" : [ "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
+            "3266575b-4bbb-4388-bfe4-b01cd988c8b2" : [ "22e2bac3-169c-4cdc-879b-009a281b910f" ],
+            "22e2bac3-169c-4cdc-879b-009a281b910f" : [ "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
           },
-          "allNeighbours" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2", "v1", "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
+          "allNeighbours" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2", "v1", "22e2bac3-169c-4cdc-879b-009a281b910f", "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
         },
         "vertexHashMap" : {
           "3266575b-4bbb-4388-bfe4-b01cd988c8b2" : {
@@ -86,6 +88,31 @@
                 }
               }
             }
+          },
+          "22e2bac3-169c-4cdc-879b-009a281b910f" : {
+            "vertexId" : "22e2bac3-169c-4cdc-879b-009a281b910f",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "shared",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "691718d00865284391649616",
+              "sharedFlowName" : "validate",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" : {
             "vertexId" : "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee",
@@ -150,6 +177,147 @@
       },
       "databaseType" : "MongoDb"
     }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "691718d00865284391649616",
+        "cts" : 1763121360673,
+        "createdUserName" : "Sujith Kumar",
+        "modifiedUserName" : "Sujith Kumar",
+        "mts" : 1763216577273,
+        "createdBy" : "67a0969408a0e559a5309912",
+        "modifiedBy" : "67a0969408a0e559a5309912",
+        "name" : "validate",
+        "description" : "",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "f10a04c0-7a67-41eb-817e-1582d8df5840" : [ "v1" ],
+            "74969c02-e99e-46e8-bf60-433545c6ba26" : [ "f10a04c0-7a67-41eb-817e-1582d8df5840" ]
+          },
+          "outbound" : {
+            "v1" : [ "f10a04c0-7a67-41eb-817e-1582d8df5840" ],
+            "f10a04c0-7a67-41eb-817e-1582d8df5840" : [ "74969c02-e99e-46e8-bf60-433545c6ba26" ]
+          },
+          "allNeighbours" : [ "74969c02-e99e-46e8-bf60-433545c6ba26", "f10a04c0-7a67-41eb-817e-1582d8df5840", "v1" ]
+        },
+        "vertexHashMap" : {
+          "74969c02-e99e-46e8-bf60-433545c6ba26" : {
+            "vertexId" : "74969c02-e99e-46e8-bf60-433545c6ba26",
+            "vertexType" : "SHARED_FLOW_STOP",
+            "name" : "Exit",
+            "sharedFlowStopData" : {
+              "stopNodeAction" : "CONTINUE",
+              "sharedFlowResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "Input",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "f10a04c0-7a67-41eb-817e-1582d8df5840" : {
+            "vertexId" : "f10a04c0-7a67-41eb-817e-1582d8df5840",
+            "vertexType" : "TARGET",
+            "name" : "sandbox",
+            "target" : {
+              "name" : "sandbox",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "test.apiwiz.io",
+                "path" : "/validate",
+                "headerParams" : [ {
+                  "name" : "x-application-type",
+                  "value" : "ApiSandbox"
+                }, {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "RAW",
+                "body" : {
+                  "data" : "{{{shipment_details}}}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ {
+                  "name" : "sandbox_response",
+                  "reference" : "body",
+                  "value" : "/*",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ "691719120865284391649636" ],
+        "inputVariableList" : [ {
+          "name" : "shipment_details",
+          "variableDataType" : "STRING",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false
+        } ],
+        "outputVariableList" : [ {
+          "name" : "sandbox_response",
+          "reference" : "body",
+          "value" : "/*",
+          "active" : true,
+          "source" : "raw",
+          "hide" : false,
+          "feelExpression" : false,
+          "envVertexName" : "sandbox",
+          "vertexId" : "f10a04c0-7a67-41eb-817e-1582d8df5840"
+        } ],
+        "workspaceTenant" : "qa-dev"
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -157,7 +325,7 @@
       "proxyid" : "693151c506e05678e39a0e44",
       "name" : "New Workflow 227",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ ],
+      "attachedSharedFlows" : [ "691718d00865284391649616" ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ "6787425d215c0e72878592b4" ]
     } ],
@@ -166,7 +334,14 @@
       "id" : "",
       "name" : ""
     } ],
-    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "691718d00865284391649616",
+      "name" : "validate",
+      "description" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "6787425d215c0e72878592b4",
       "name" : "Deepak Cloud DB"
