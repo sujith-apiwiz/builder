@@ -1,5 +1,5 @@
 {
-  "cts" : 1764837915465,
+  "cts" : 1764837969259,
   "name" : "New Workflow 226",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764837915460,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764837915460,
+        "mts" : 1764837969257,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "69314a1b06e05678e39a0c54",
@@ -27,26 +27,43 @@
         "lockedBy" : "Sujith Kumar",
         "nodeDataHashMap" : {
           "inbound" : {
-            "61dad8bd-8b7d-4122-b4ff-81090ddbb09e" : [ "v1" ]
+            "6eff2e4b-70d7-4912-a51c-b6406187d6ef" : [ "v1" ],
+            "1d06d996-752a-49e5-aa92-04a3b36d7421" : [ "6eff2e4b-70d7-4912-a51c-b6406187d6ef" ]
           },
           "outbound" : {
-            "v1" : [ "61dad8bd-8b7d-4122-b4ff-81090ddbb09e" ]
+            "v1" : [ "6eff2e4b-70d7-4912-a51c-b6406187d6ef" ],
+            "6eff2e4b-70d7-4912-a51c-b6406187d6ef" : [ "1d06d996-752a-49e5-aa92-04a3b36d7421" ]
           },
-          "allNeighbours" : [ "61dad8bd-8b7d-4122-b4ff-81090ddbb09e", "v1" ]
+          "allNeighbours" : [ "1d06d996-752a-49e5-aa92-04a3b36d7421", "6eff2e4b-70d7-4912-a51c-b6406187d6ef", "v1" ]
         },
         "vertexHashMap" : {
-          "61dad8bd-8b7d-4122-b4ff-81090ddbb09e" : {
-            "vertexId" : "61dad8bd-8b7d-4122-b4ff-81090ddbb09e",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "type" : "JSON"
+          "1d06d996-752a-49e5-aa92-04a3b36d7421" : {
+            "vertexId" : "1d06d996-752a-49e5-aa92-04a3b36d7421",
+            "vertexType" : "INTERIM_RESPONSE",
+            "name" : "Interim Response",
+            "description" : "",
+            "interimResponseData" : {
+              "response" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
               }
-            }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "6eff2e4b-70d7-4912-a51c-b6406187d6ef" : {
+            "vertexId" : "6eff2e4b-70d7-4912-a51c-b6406187d6ef",
+            "vertexType" : "LOGGER",
+            "name" : "logger",
+            "description" : "",
+            "logData" : {
+              "data" : "sujith",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
