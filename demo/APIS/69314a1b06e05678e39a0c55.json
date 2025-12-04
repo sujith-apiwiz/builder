@@ -1,5 +1,5 @@
 {
-  "cts" : 1764838028263,
+  "cts" : 1764838046536,
   "name" : "New Workflow 226",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764837915460,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764838028262,
+        "mts" : 1764838046531,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "69314a1b06e05678e39a0c54",
@@ -28,13 +28,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "6eff2e4b-70d7-4912-a51c-b6406187d6ef" : [ "v1" ],
-            "1d06d996-752a-49e5-aa92-04a3b36d7421" : [ "6eff2e4b-70d7-4912-a51c-b6406187d6ef" ]
+            "1d06d996-752a-49e5-aa92-04a3b36d7421" : [ "6eff2e4b-70d7-4912-a51c-b6406187d6ef" ],
+            "2929e758-55b9-41b3-8fbb-c87452b6b3e1" : [ "1d06d996-752a-49e5-aa92-04a3b36d7421" ]
           },
           "outbound" : {
             "v1" : [ "6eff2e4b-70d7-4912-a51c-b6406187d6ef" ],
-            "6eff2e4b-70d7-4912-a51c-b6406187d6ef" : [ "1d06d996-752a-49e5-aa92-04a3b36d7421" ]
+            "6eff2e4b-70d7-4912-a51c-b6406187d6ef" : [ "1d06d996-752a-49e5-aa92-04a3b36d7421" ],
+            "1d06d996-752a-49e5-aa92-04a3b36d7421" : [ "2929e758-55b9-41b3-8fbb-c87452b6b3e1" ]
           },
-          "allNeighbours" : [ "1d06d996-752a-49e5-aa92-04a3b36d7421", "6eff2e4b-70d7-4912-a51c-b6406187d6ef", "v1" ]
+          "allNeighbours" : [ "1d06d996-752a-49e5-aa92-04a3b36d7421", "6eff2e4b-70d7-4912-a51c-b6406187d6ef", "v1", "2929e758-55b9-41b3-8fbb-c87452b6b3e1" ]
         },
         "vertexHashMap" : {
           "1d06d996-752a-49e5-aa92-04a3b36d7421" : {
@@ -91,6 +93,18 @@
                 }
               }
             }
+          },
+          "2929e758-55b9-41b3-8fbb-c87452b6b3e1" : {
+            "vertexId" : "2929e758-55b9-41b3-8fbb-c87452b6b3e1",
+            "vertexType" : "LOGGER",
+            "name" : "log",
+            "description" : "",
+            "logData" : {
+              "data" : "after interim response node",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
