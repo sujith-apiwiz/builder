@@ -1,5 +1,5 @@
 {
-  "cts" : 1764837969259,
+  "cts" : 1764838028263,
   "name" : "New Workflow 226",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764837915460,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764837969257,
+        "mts" : 1764838028262,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "69314a1b06e05678e39a0c54",
@@ -45,8 +45,12 @@
             "interimResponseData" : {
               "response" : {
                 "statusCode" : 200,
+                "headers" : {
+                  "content-type" : "application/json"
+                },
                 "body" : {
-                  "type" : "JSON"
+                  "data" : "{\n    \"a\": \"interim responsemessage\"\n}",
+                  "type" : "json"
                 }
               }
             },
