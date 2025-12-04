@@ -1,5 +1,5 @@
 {
-  "cts" : 1764839998880,
+  "cts" : 1764840717863,
   "name" : "New Workflow 227",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764839877775,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764839998865,
+        "mts" : 1764840717848,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "693151c506e05678e39a0e44",
@@ -27,14 +27,43 @@
         "lockedBy" : "Sujith Kumar",
         "nodeDataHashMap" : {
           "inbound" : {
-            "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" : [ "v1" ]
+            "3266575b-4bbb-4388-bfe4-b01cd988c8b2" : [ "v1" ],
+            "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2" ]
           },
           "outbound" : {
-            "v1" : [ "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
+            "v1" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2" ],
+            "3266575b-4bbb-4388-bfe4-b01cd988c8b2" : [ "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
           },
-          "allNeighbours" : [ "v1", "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
+          "allNeighbours" : [ "3266575b-4bbb-4388-bfe4-b01cd988c8b2", "v1", "15abd5cb-6fa6-4fc7-8f90-409ab93d0eee" ]
         },
         "vertexHashMap" : {
+          "3266575b-4bbb-4388-bfe4-b01cd988c8b2" : {
+            "vertexId" : "3266575b-4bbb-4388-bfe4-b01cd988c8b2",
+            "vertexType" : "DATABASE",
+            "name" : "db",
+            "databaseData" : {
+              "connectorId" : "6787425d215c0e72878592b4",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"find\",\"databaseName\":\"student-details\",\"collection\":\"student.details\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"age\":\"\",\"class\":\"\",\"roll no\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "res",
+              "connectorName" : "Deepak Cloud DB",
+              "tenantName" : "student-details",
+              "collectionName" : "student.details",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -91,6 +120,32 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "6787425d215c0e72878592b4",
+        "cts" : 1736917597512,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1739255365544,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
+        "name" : "Deepak Cloud DB",
+        "description" : "this is cloud db",
+        "host" : "cluster0.36fr1.mongodb.net/",
+        "scheme" : "mongodb+srv",
+        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz-database",
+          "password" : "false",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -100,7 +155,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "6787425d215c0e72878592b4" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -108,6 +163,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "6787425d215c0e72878592b4",
+      "name" : "Deepak Cloud DB"
+    } ]
   }
 }
