@@ -1,5 +1,5 @@
 {
-  "cts" : 1764924435505,
+  "cts" : 1764934284574,
   "name" : "New Workflow 228",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764911548629,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764924435463,
+        "mts" : 1764934284571,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "693269bc0a80f05da262546a",
@@ -116,8 +116,8 @@
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
         "enableLogging" : false,
-        "deleted" : false,
-        "deployed" : false
+        "deployed" : false,
+        "deleted" : false
       }
     }
   }, {
