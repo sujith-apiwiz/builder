@@ -1,5 +1,5 @@
 {
-  "cts" : 1764934295069,
+  "cts" : 1764934311593,
   "name" : "New Workflow 228",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1764934295067,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1764934295067,
+        "mts" : 1764934311586,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "6932c2970d3f922d8350da8e",
@@ -27,14 +27,38 @@
         "lockedBy" : "Sujith Kumar",
         "nodeDataHashMap" : {
           "inbound" : {
-            "8b024bb2-6f35-40da-a60d-ebfbb391c341" : [ "v1" ]
+            "c8aa9c5f-a97f-48bd-aaa9-d78fd0701966" : [ "v1" ],
+            "8b024bb2-6f35-40da-a60d-ebfbb391c341" : [ "c8aa9c5f-a97f-48bd-aaa9-d78fd0701966" ]
           },
           "outbound" : {
-            "v1" : [ "8b024bb2-6f35-40da-a60d-ebfbb391c341" ]
+            "v1" : [ "c8aa9c5f-a97f-48bd-aaa9-d78fd0701966" ],
+            "c8aa9c5f-a97f-48bd-aaa9-d78fd0701966" : [ "8b024bb2-6f35-40da-a60d-ebfbb391c341" ]
           },
-          "allNeighbours" : [ "8b024bb2-6f35-40da-a60d-ebfbb391c341", "v1" ]
+          "allNeighbours" : [ "c8aa9c5f-a97f-48bd-aaa9-d78fd0701966", "8b024bb2-6f35-40da-a60d-ebfbb391c341", "v1" ]
         },
         "vertexHashMap" : {
+          "c8aa9c5f-a97f-48bd-aaa9-d78fd0701966" : {
+            "vertexId" : "c8aa9c5f-a97f-48bd-aaa9-d78fd0701966",
+            "vertexType" : "REDIS_CACHING",
+            "name" : "a",
+            "description" : "",
+            "redisCachingData" : {
+              "redisCacheConnectorId" : "680741cf6ffe4c6e05a6d3df",
+              "cachingOperationList" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "8b024bb2-6f35-40da-a60d-ebfbb391c341" : {
             "vertexId" : "8b024bb2-6f35-40da-a60d-ebfbb391c341",
             "vertexType" : "STOP",
@@ -91,6 +115,25 @@
         "deleted" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Redis.Cache",
+    "data" : {
+      "redisCacheConnectorData" : {
+        "id" : "680741cf6ffe4c6e05a6d3df",
+        "cts" : 1745306063299,
+        "createdUserName" : "Akshatha sm",
+        "modifiedUserName" : "Akshatha sm",
+        "mts" : 1745306130098,
+        "createdBy" : "Akshatha sm",
+        "modifiedBy" : "Akshatha sm",
+        "name" : "new_redis_connector",
+        "description" : "new_redis_connector_s",
+        "host" : "54.203.45.67",
+        "port" : 6379,
+        "password" : "WRl6RLyup09riMa"
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -100,7 +143,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "680741cf6ffe4c6e05a6d3df" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -108,6 +151,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "680741cf6ffe4c6e05a6d3df",
+      "name" : "new_redis_connector"
+    } ]
   }
 }
