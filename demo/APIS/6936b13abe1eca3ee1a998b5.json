@@ -1,5 +1,5 @@
 {
-  "cts" : 1765192022669,
+  "cts" : 1765192040428,
   "name" : "env-tagging-sujith",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1765191994439,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1765192022668,
+        "mts" : 1765192040427,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "6936b13abe1eca3ee1a998b4",
@@ -43,8 +43,12 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
-                "type" : "JSON"
+                "data" : "{\n    \"message\": \"response\"\n}",
+                "type" : "json"
               }
             }
           },
