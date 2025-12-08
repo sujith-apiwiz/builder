@@ -1,5 +1,5 @@
 {
-  "cts" : 1765192040428,
+  "cts" : 1765192055786,
   "name" : "env-tagging-sujith",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1765191994439,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1765192040427,
+        "mts" : 1765192055785,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "6936b13abe1eca3ee1a998b4",
@@ -19,7 +19,7 @@
         "name" : "env-tagging-sujith",
         "description" : "",
         "apiType" : "RESTAPI",
-        "apiMethod" : "GET",
+        "apiMethod" : "POST",
         "path" : "/env-tagging-sujith",
         "pathArray" : [ "env-tagging-sujith" ],
         "revisionStatus" : "DRAFT",
@@ -82,7 +82,7 @@
           "lastModifiedBy" : "Sujith Kumar",
           "description" : "Created new proxy"
         } ],
-        "enableTracing" : false,
+        "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
         "selectedVirtualHostName" : "",
