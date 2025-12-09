@@ -1,5 +1,5 @@
 {
-  "cts" : 1765257994918,
+  "cts" : 1765258033853,
   "name" : "env-tagging-sujith",
   "exportedBy" : "Sujith Kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1765257994906,
         "createdUserName" : "Sujith Kumar",
         "modifiedUserName" : "Sujith Kumar",
-        "mts" : 1765257994906,
+        "mts" : 1765258033792,
         "createdBy" : "67a0969408a0e559a5309912",
         "modifiedBy" : "67a0969408a0e559a5309912",
         "proxyId" : "6936b13abe1eca3ee1a998b4",
@@ -20,8 +20,8 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "POST",
-        "path" : "/env-tagging-sujith",
-        "pathArray" : [ "env-tagging-sujith" ],
+        "path" : "/env-tagging-sujith/t3",
+        "pathArray" : [ "env-tagging-sujith", "t3" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "Sujith Kumar",
@@ -76,6 +76,12 @@
             }
           }
         },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1765257994906,
+          "lastModifiedBy" : "Sujith Kumar",
+          "description" : "Created new proxy revision"
+        } ],
         "enableTracing" : true,
         "environmentName" : "",
         "environmentId" : "",
