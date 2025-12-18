@@ -1,0 +1,458 @@
+{
+  "cts" : 1766076435440,
+  "name" : "KIRAN_TBAC_DO_NOT_DELETE",
+  "exportedBy" : "Kiran Kamble",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6940eee85d553f2f72ad9245",
+        "cts" : 1765863144332,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766076435362,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "proxyId" : "6940eee85d553f2f72ad9244",
+        "revision" : 1,
+        "name" : "KIRAN_TBAC_DO_NOT_DELETE",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/v1/1213",
+        "pathArray" : [ "v1", "1213" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Kiran Kamble",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "d4300745-38fe-4f74-b802-028caeb94431" : [ "v1" ],
+            "475e2f5e-6db9-4963-98fe-fdeeea132e3b" : [ "3de46edd-266c-49c8-bec8-b159fa8195a0" ],
+            "3de46edd-266c-49c8-bec8-b159fa8195a0" : [ "31e9805d-a9fe-4d0d-9b3a-9b5d3b865c97" ],
+            "31e9805d-a9fe-4d0d-9b3a-9b5d3b865c97" : [ "ce131621-3236-41bd-ad57-34fc76e463d3" ],
+            "5c725872-3e09-40b0-847c-f928788c9a69" : [ "d4300745-38fe-4f74-b802-028caeb94431" ],
+            "ce131621-3236-41bd-ad57-34fc76e463d3" : [ "5c725872-3e09-40b0-847c-f928788c9a69" ]
+          },
+          "outbound" : {
+            "v1" : [ "d4300745-38fe-4f74-b802-028caeb94431" ],
+            "3de46edd-266c-49c8-bec8-b159fa8195a0" : [ "475e2f5e-6db9-4963-98fe-fdeeea132e3b" ],
+            "31e9805d-a9fe-4d0d-9b3a-9b5d3b865c97" : [ "3de46edd-266c-49c8-bec8-b159fa8195a0" ],
+            "ce131621-3236-41bd-ad57-34fc76e463d3" : [ "31e9805d-a9fe-4d0d-9b3a-9b5d3b865c97" ],
+            "d4300745-38fe-4f74-b802-028caeb94431" : [ "5c725872-3e09-40b0-847c-f928788c9a69" ],
+            "5c725872-3e09-40b0-847c-f928788c9a69" : [ "ce131621-3236-41bd-ad57-34fc76e463d3" ]
+          },
+          "allNeighbours" : [ "475e2f5e-6db9-4963-98fe-fdeeea132e3b", "d4300745-38fe-4f74-b802-028caeb94431", "3de46edd-266c-49c8-bec8-b159fa8195a0", "5c725872-3e09-40b0-847c-f928788c9a69", "ce131621-3236-41bd-ad57-34fc76e463d3", "v1", "31e9805d-a9fe-4d0d-9b3a-9b5d3b865c97" ]
+        },
+        "vertexHashMap" : {
+          "475e2f5e-6db9-4963-98fe-fdeeea132e3b" : {
+            "vertexId" : "475e2f5e-6db9-4963-98fe-fdeeea132e3b",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "d4300745-38fe-4f74-b802-028caeb94431" : {
+            "vertexId" : "d4300745-38fe-4f74-b802-028caeb94431",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
+            "description" : "",
+            "callWorkflowData" : {
+              "childWorkflowId" : "69410c1fd153c2098e5c9946",
+              "childWorkflowName" : "testKiranTbac",
+              "virtualHostId" : "66dc0ef2e836d076001b628b",
+              "virtualHostName" : "stage-data",
+              "request" : {
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "3de46edd-266c-49c8-bec8-b159fa8195a0" : {
+            "vertexId" : "3de46edd-266c-49c8-bec8-b159fa8195a0",
+            "vertexType" : "DATABASE",
+            "name" : "teskiran",
+            "databaseData" : {
+              "connectorId" : "693fd141962d9f250a980f0c",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"workspace_docu\",\"collection\":\"guides\",\"documents\":[{\"_id\":\"\",\"createdBy\":\"\",\"updatedBy\":\"\",\"deprecated\":\"\",\"title\":\"\",\"comments\":\"\",\"visitors\":\"\",\"isDefault\":\"\",\"versions\":[{\"pages\":[{\"type\":\"\",\"pageId\":\"\",\"title\":\"\",\"pages\":\"\"}],\"version\":\"\",\"status\":\"\",\"createdBy\":\"\",\"updatedBy\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\"}],\"cts\":\"\",\"mts\":\"\",\"__v\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "kk",
+              "connectorName" : "tbac-db-test",
+              "tenantName" : "workspace_docu",
+              "collectionName" : "guides",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "5c725872-3e09-40b0-847c-f928788c9a69" : {
+            "vertexId" : "5c725872-3e09-40b0-847c-f928788c9a69",
+            "vertexType" : "DATABASE",
+            "name" : "teskiran",
+            "databaseData" : {
+              "connectorId" : "693fd141962d9f250a980f0c",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"akshatha-dev\",\"collection\":\"ApiBuilder.Proxy.Deployed.List\",\"documents\":[{\"_id\":\"\",\"proxyId\":\"\",\"revisionId\":\"\",\"revision\":\"\",\"name\":\"\",\"description\":\"\",\"path\":\"\",\"pathArray\":[],\"apiMethod\":\"\",\"apiType\":\"\",\"nodeDataHashMap\":{\"inbound\":{\"cbcf90c4-5d38-433d-821f-cf6181d6d3ce\":[]},\"outbound\":{\"v1\":[]}},\"vertexHashMap\":{\"cbcf90c4-5d38-433d-821f-cf6181d6d3ce\":{\"vertexId\":\"\",\"vertexType\":\"\",\"name\":\"\",\"imported\":\"\",\"skipRuntimeVariables\":\"\",\"proxyResponse\":{\"statusCode\":\"\",\"headers\":{\"content-type\":\"\"},\"body\":{\"data\":\"\",\"type\":\"\"}}},\"v1\":{\"vertexId\":\"\",\"vertexType\":\"\",\"name\":\"\",\"requestVariables\":\"\",\"mandatoryHeaders\":\"\",\"mandatoryQueryParams\":\"\",\"imported\":\"\",\"skipRuntimeVariables\":\"\",\"securityResponse\":{\"isEnabled\":\"\",\"ruleGroup\":\"\",\"skip\":\"\",\"showActualErrorMessage\":\"\",\"continueOnError\":\"\",\"errorResponse\":{\"statusCode\":\"\",\"headers\":{},\"body\":{\"data\":\"\",\"type\":\"\"}}}}},\"enableTracing\":\"\",\"workspaceTenant\":\"\",\"kafkaTopic\":\"\",\"kafkaConnectorId\":\"\",\"kafkaGroupId\":\"\",\"enableLogging\":\"\",\"cts\":\"\",\"createdUserName\":\"\",\"modifiedUserName\":\"\",\"mts\":\"\",\"createdBy\":\"\",\"modifiedBy\":\"\",\"_class\":\"\",\"indexName\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "xsd",
+              "connectorName" : "tbac-db-test",
+              "tenantName" : "akshatha-dev",
+              "collectionName" : "ApiBuilder.Proxy.Deployed.List",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "ce131621-3236-41bd-ad57-34fc76e463d3" : {
+            "vertexId" : "ce131621-3236-41bd-ad57-34fc76e463d3",
+            "vertexType" : "DATABASE",
+            "name" : "testKK",
+            "databaseData" : {
+              "connectorId" : "693fd141962d9f250a980f0c",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"acme-bank-1\",\"collection\":\"API.Network.InternalIps\",\"documents\":[{\"_id\":\"\",\"internalIps\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "cf",
+              "connectorName" : "tbac-db-test",
+              "tenantName" : "acme-bank-1",
+              "collectionName" : "API.Network.InternalIps",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "31e9805d-a9fe-4d0d-9b3a-9b5d3b865c97" : {
+            "vertexId" : "31e9805d-a9fe-4d0d-9b3a-9b5d3b865c97",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 5,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1765863144332,
+          "lastModifiedBy" : "Kiran Kamble",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "validated" : false,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69410c1fd153c2098e5c9946",
+        "cts" : 1765870623381,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1765873432967,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "proxyId" : "69410c1fd153c2098e5c9945",
+        "revision" : 1,
+        "name" : "testKiranTbacWithCallWfl",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/bgbbgbg",
+        "pathArray" : [ "bgbbgbg" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "Kiran Kamble",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "218b4571-e95c-4f6c-9079-010b933fb83e" : [ "v1" ],
+            "874ddc22-1616-4cce-866c-f847e160e64d" : [ "218b4571-e95c-4f6c-9079-010b933fb83e" ]
+          },
+          "outbound" : {
+            "v1" : [ "218b4571-e95c-4f6c-9079-010b933fb83e" ],
+            "218b4571-e95c-4f6c-9079-010b933fb83e" : [ "874ddc22-1616-4cce-866c-f847e160e64d" ]
+          },
+          "allNeighbours" : [ "218b4571-e95c-4f6c-9079-010b933fb83e", "v1", "874ddc22-1616-4cce-866c-f847e160e64d" ]
+        },
+        "vertexHashMap" : {
+          "218b4571-e95c-4f6c-9079-010b933fb83e" : {
+            "vertexId" : "218b4571-e95c-4f6c-9079-010b933fb83e",
+            "vertexType" : "DATABASE",
+            "name" : "rrrrr",
+            "databaseData" : {
+              "connectorId" : "693fd141962d9f250a980f0c",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"workspace_document\",\"collection\":\"guides\",\"documents\":[{}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "rr",
+              "connectorName" : "tbac-db-test",
+              "tenantName" : "workspace_document",
+              "collectionName" : "guides",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "874ddc22-1616-4cce-866c-f847e160e64d" : {
+            "vertexId" : "874ddc22-1616-4cce-866c-f847e160e64d",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1765873422005,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1765870942648,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1765870869726,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1765870820662,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1765870674883,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1765870661771,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Approved",
+          "cts" : 1765870643868,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1765870623381,
+          "lastModifiedBy" : "Kiran Kamble",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ {
+          "id" : "66dc0ef2e836d076001b628b",
+          "name" : "stage-data",
+          "timeStamp" : 1765873432845,
+          "deployedBy" : "Kiran Kamble"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "validated" : false,
+        "deployed" : true,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "693fd141962d9f250a980f0c",
+        "cts" : 1765790017480,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1765970268534,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "name" : "tbac-db-test",
+        "description" : "tbac-db-test",
+        "host" : "10.10.12.20:27017/apiwiz",
+        "scheme" : "mongodb",
+        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz",
+          "authenticationDatabase" : "admin",
+          "authenticationMechanism" : "DEFAULT"
+        },
+        "ssl" : {
+          "sslConnection" : false,
+          "tlsAllowInvalidHostnames" : false
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "6940eee85d553f2f72ad9245",
+      "proxyid" : "6940eee85d553f2f72ad9244",
+      "name" : "KIRAN_TBAC_DO_NOT_DELETE",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ "69410c1fd153c2098e5c9946" ],
+      "attachedConnectors" : [ "693fd141962d9f250a980f0c" ]
+    }, {
+      "id" : "69410c1fd153c2098e5c9946",
+      "proxyid" : "69410c1fd153c2098e5c9945",
+      "name" : "testKiranTbacWithCallWfl",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "693fd141962d9f250a980f0c" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "693fd141962d9f250a980f0c",
+      "name" : "tbac-db-test"
+    } ]
+  }
+}
