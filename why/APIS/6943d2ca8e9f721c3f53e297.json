@@ -1,7 +1,7 @@
 {
-  "cts" : 1766127359292,
+  "cts" : 1766135542883,
   "name" : "TBAC_MST_A",
-  "exportedBy" : "Deepak Satuluri",
+  "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,11 @@
         "id" : "6943d2ca8e9f721c3f53e297",
         "cts" : 1766052554164,
         "createdUserName" : "Madhusudan Tripathy",
-        "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1766127359280,
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766135542801,
         "createdBy" : "676be2be391f97263bb0b16c",
-        "modifiedBy" : "685a38a166575941216c9c0e",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
+        "taggedTeams" : [ ],
         "proxyId" : "6943d2ca8e9f721c3f53e296",
         "revision" : 1,
         "name" : "TBAC_MST_A",
@@ -24,7 +25,7 @@
         "pathArray" : [ "unq" ],
         "revisionStatus" : "REVIEW",
         "locked" : true,
-        "lockedBy" : "Deepak Satuluri",
+        "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
             "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
@@ -255,7 +256,8 @@
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
         "enableLogging" : false,
-        "validated" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
         "deployed" : false,
         "deleted" : false
       }
@@ -303,6 +305,7 @@
         "mts" : 1716728587042,
         "createdBy" : "63761a7c2702eb379fb286e1",
         "modifiedBy" : "63761a7c2702eb379fb286e1",
+        "taggedTeams" : [ ],
         "proxyId" : "6652b6264289865ae027e452",
         "revision" : 1,
         "name" : "Apply Credit Card",
@@ -648,7 +651,8 @@
         "environmentName" : "",
         "environmentId" : "",
         "enableLogging" : false,
-        "validated" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
         "deployed" : true,
         "deleted" : false
       }
