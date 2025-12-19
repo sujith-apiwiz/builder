@@ -1,5 +1,5 @@
 {
-  "cts" : 1766135542883,
+  "cts" : 1766138164041,
   "name" : "TBAC_MST_A",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766052554164,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766135542801,
+        "mts" : 1766138163763,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -28,20 +28,22 @@
         "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
-            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
+            "5c06b9bf-78de-4a51-968e-7e7049235d94" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
             "6455412d-90ff-4518-b389-15c20746ccad" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
             "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "v1" ],
             "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
-            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
+            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ],
+            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "5c06b9bf-78de-4a51-968e-7e7049235d94" ]
           },
           "outbound" : {
-            "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
+            "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "5c06b9bf-78de-4a51-968e-7e7049235d94" ],
             "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "6455412d-90ff-4518-b389-15c20746ccad" ],
             "v1" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
             "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ],
-            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ]
+            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
+            "5c06b9bf-78de-4a51-968e-7e7049235d94" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ]
           },
-          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1", "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
+          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1", "5c06b9bf-78de-4a51-968e-7e7049235d94", "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
         },
         "vertexHashMap" : {
           "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : {
@@ -139,8 +141,8 @@
             "name" : "sf",
             "description" : "./",
             "sharedFlowNodeData" : {
-              "sharedFlowId" : "69428fe9ca79445e02a87f24",
-              "sharedFlowName" : "happFlowTest",
+              "sharedFlowId" : "6943f457d4167432fe665c73",
+              "sharedFlowName" : "TestForLoopEvent",
               "inputVariablesMap" : { },
               "importOutputVariables" : false,
               "importedVariables" : [ ],
@@ -180,6 +182,28 @@
                 }
               }
             }
+          },
+          "5c06b9bf-78de-4a51-968e-7e7049235d94" : {
+            "vertexId" : "5c06b9bf-78de-4a51-968e-7e7049235d94",
+            "vertexType" : "REDIS_CACHING",
+            "name" : "test",
+            "description" : "./",
+            "redisCachingData" : {
+              "redisCacheConnectorId" : "68529fc7afeab91fd3a9a218",
+              "cachingOperationList" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : {
             "vertexId" : "7e8f6d5f-eae8-4eef-804a-5d6007063ffa",
@@ -258,8 +282,8 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deployed" : false,
-        "deleted" : false
+        "deleted" : false,
+        "deployed" : false
       }
     }
   }, {
@@ -653,8 +677,8 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deployed" : true,
-        "deleted" : false
+        "deleted" : false,
+        "deployed" : true
       }
     }
   }, {
@@ -662,42 +686,57 @@
     "collectionName" : "ApiBuilder.SharedFlows.List",
     "data" : {
       "sharedFlowData" : {
-        "id" : "69428fe9ca79445e02a87f24",
-        "cts" : 1765969897506,
-        "createdUserName" : "Kiran Kamble",
+        "id" : "6943f457d4167432fe665c73",
+        "cts" : 1766061143445,
+        "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1766124547118,
-        "createdBy" : "685b8a3df073051941d15c1c",
+        "mts" : 1766122153757,
+        "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
-        "taggedTeams" : [ {
-          "id" : "6943d01f8e9f721c3f53e109",
-          "name" : "TBAC_MST_A"
-        } ],
-        "name" : "happFlowTest",
+        "taggedTeams" : [ ],
+        "name" : "TestForLoopEvent",
         "description" : "",
         "nodeDataHashMap" : {
           "inbound" : {
-            "c3883871-c5c7-4816-b32c-88442621b9c2" : [ "v1" ],
-            "7029c04e-dbab-4c49-b2b2-feb9150582cf" : [ "c3883871-c5c7-4816-b32c-88442621b9c2" ]
+            "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : [ "v1" ],
+            "7375b1fb-337d-4910-952b-25830dcb359a" : [ "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ],
+            "7bf76d01-d527-418f-8f84-ef2097ac203e" : [ "7375b1fb-337d-4910-952b-25830dcb359a" ]
           },
           "outbound" : {
-            "v1" : [ "c3883871-c5c7-4816-b32c-88442621b9c2" ],
-            "c3883871-c5c7-4816-b32c-88442621b9c2" : [ "7029c04e-dbab-4c49-b2b2-feb9150582cf" ]
+            "v1" : [ "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ],
+            "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : [ "7375b1fb-337d-4910-952b-25830dcb359a" ],
+            "7375b1fb-337d-4910-952b-25830dcb359a" : [ "7bf76d01-d527-418f-8f84-ef2097ac203e" ]
           },
-          "allNeighbours" : [ "c3883871-c5c7-4816-b32c-88442621b9c2", "7029c04e-dbab-4c49-b2b2-feb9150582cf", "v1" ]
+          "allNeighbours" : [ "7375b1fb-337d-4910-952b-25830dcb359a", "7bf76d01-d527-418f-8f84-ef2097ac203e", "v1", "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" ]
         },
         "vertexHashMap" : {
-          "c3883871-c5c7-4816-b32c-88442621b9c2" : {
-            "vertexId" : "c3883871-c5c7-4816-b32c-88442621b9c2",
-            "vertexType" : "JAVASCRIPT",
-            "name" : "sdf",
-            "description" : "sd",
-            "javascriptData" : {
-              "targetVariable" : "sdf",
-              "variableDataType" : "STRING",
-              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n console.log(input.foo);\n return input;\n };",
-              "variables" : { },
-              "skip" : false,
+          "de1629b5-fc51-425e-84b0-cde3fbf54a56" : {
+            "vertexId" : "de1629b5-fc51-425e-84b0-cde3fbf54a56",
+            "vertexType" : "LOGGER",
+            "name" : "value",
+            "description" : "",
+            "logData" : {
+              "data" : "{{value}}",
+              "skip" : false
+            },
+            "parentVertex" : "e6b91eef-40a9-4353-98bd-4bb9b225e0dc",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "7375b1fb-337d-4910-952b-25830dcb359a" : {
+            "vertexId" : "7375b1fb-337d-4910-952b-25830dcb359a",
+            "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+            "name" : "transform",
+            "jsonToXmlTransformationData" : {
+              "sourceVariable" : "payload",
+              "targetVariable" : "target",
+              "jsonArray" : false,
+              "rootElementName" : "",
+              "objectElementName" : "",
+              "attributeList" : [ ],
+              "staticElementAttributeHashMap" : { },
+              "staticPathAttributeArrayList" : [ ],
+              "skip" : true,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
               "errorResponse" : {
@@ -706,9 +745,7 @@
                   "data" : "",
                   "type" : "json"
                 }
-              },
-              "customResponseMapping" : false,
-              "responsePathMapping" : { }
+              }
             },
             "imported" : false,
             "skipRuntimeVariables" : false
@@ -716,16 +753,16 @@
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "SHARED_FLOW_START",
-            "name" : "happFlowTest",
+            "name" : "TestForLoopEvent",
             "imported" : false,
             "skipRuntimeVariables" : false
           },
-          "7029c04e-dbab-4c49-b2b2-feb9150582cf" : {
-            "vertexId" : "7029c04e-dbab-4c49-b2b2-feb9150582cf",
+          "7bf76d01-d527-418f-8f84-ef2097ac203e" : {
+            "vertexId" : "7bf76d01-d527-418f-8f84-ef2097ac203e",
             "vertexType" : "SHARED_FLOW_STOP",
             "name" : "Exit",
             "sharedFlowStopData" : {
-              "stopNodeAction" : "CONTINUE",
+              "stopNodeAction" : "TERMINATE_WITH_RESPONSE",
               "sharedFlowResponse" : {
                 "statusCode" : 200,
                 "body" : {
@@ -735,21 +772,67 @@
             },
             "imported" : false,
             "skipRuntimeVariables" : false
+          },
+          "e6b91eef-40a9-4353-98bd-4bb9b225e0dc" : {
+            "vertexId" : "e6b91eef-40a9-4353-98bd-4bb9b225e0dc",
+            "vertexType" : "LOOP",
+            "name" : "For Loop",
+            "loopData" : {
+              "variables" : [ {
+                "name" : "value",
+                "reference" : "body",
+                "value" : "$.value",
+                "active" : true,
+                "hide" : false,
+                "feelExpression" : false
+              } ],
+              "listType" : "json",
+              "loopList" : [ "{\"value\":2}", "{\"value\":3}", "{\"value\":4}" ],
+              "listName" : "custom",
+              "startingVertex" : [ "de1629b5-fc51-425e-84b0-cde3fbf54a56" ],
+              "loopVertexes" : [ "de1629b5-fc51-425e-84b0-cde3fbf54a56" ],
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "parentWorkflowIds" : [ ],
-        "inputVariableList" : [ ],
+        "inputVariableList" : [ {
+          "name" : "payload",
+          "variableDataType" : "STRING",
+          "active" : false,
+          "hide" : false,
+          "feelExpression" : false
+        } ],
         "outputVariableList" : [ {
-          "name" : "sdf",
+          "name" : "target",
           "active" : false,
           "hide" : false,
           "feelExpression" : false,
-          "envVertexName" : "sdf",
-          "vertexId" : "c3883871-c5c7-4816-b32c-88442621b9c2"
+          "envVertexName" : "transform",
+          "vertexId" : "7375b1fb-337d-4910-952b-25830dcb359a"
         } ],
         "workspaceTenant" : "stage-data",
         "misconfigurationMessages" : [ ],
         "validated" : true
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Redis.Cache",
+    "data" : {
+      "redisCacheConnectorData" : {
+        "id" : "68529fc7afeab91fd3a9a218",
+        "cts" : 1750245319578,
+        "createdUserName" : "Akshatha sm",
+        "createdBy" : "Akshatha sm",
+        "name" : "test",
+        "description" : "",
+        "host" : "2.tcp.us-cal-1.ngrok.io",
+        "port" : 11714,
+        "password" : "WRl6RLyup09riMa"
       }
     }
   }, {
@@ -785,9 +868,9 @@
       "proxyid" : "6943d2ca8e9f721c3f53e296",
       "name" : "TBAC_MST_A",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ "69428fe9ca79445e02a87f24" ],
+      "attachedSharedFlows" : [ "6943f457d4167432fe665c73" ],
       "attachedProxies" : [ "6652b6264289865ae027e453" ],
-      "attachedConnectors" : [ "6790e28b66befd1482d6c3c6", "694268cdca79445e02a875e1" ]
+      "attachedConnectors" : [ "6790e28b66befd1482d6c3c6", "68529fc7afeab91fd3a9a218", "694268cdca79445e02a875e1" ]
     }, {
       "id" : "6652b6264289865ae027e453",
       "proxyid" : "6652b6264289865ae027e452",
@@ -802,8 +885,8 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ {
-      "id" : "69428fe9ca79445e02a87f24",
-      "name" : "happFlowTest",
+      "id" : "6943f457d4167432fe665c73",
+      "name" : "TestForLoopEvent",
       "description" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
@@ -812,6 +895,9 @@
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "694268cdca79445e02a875e1",
       "name" : "TestTBAC-MST"
+    }, {
+      "id" : "68529fc7afeab91fd3a9a218",
+      "name" : "test"
     }, {
       "id" : "6790e28b66befd1482d6c3c6",
       "name" : "mongo srv"
