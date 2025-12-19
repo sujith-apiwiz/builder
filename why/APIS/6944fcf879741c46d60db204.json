@@ -1,0 +1,172 @@
+{
+  "cts" : 1766129736006,
+  "name" : "New Workflow 816",
+  "exportedBy" : "Kiran Kamble",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6944fcf879741c46d60db204",
+        "cts" : 1766128888798,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766129735999,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "proxyId" : "6944fcf879741c46d60db203",
+        "revision" : 1,
+        "name" : "New Workflow 816",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Kiran Kamble",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "4d9f8e21-2ecf-43ed-a2b2-0e9ea262a404" : [ "v1" ],
+            "26619d05-746c-41d1-86bf-f85c576b6bb5" : [ "4d9f8e21-2ecf-43ed-a2b2-0e9ea262a404" ]
+          },
+          "outbound" : {
+            "v1" : [ "4d9f8e21-2ecf-43ed-a2b2-0e9ea262a404" ],
+            "4d9f8e21-2ecf-43ed-a2b2-0e9ea262a404" : [ "26619d05-746c-41d1-86bf-f85c576b6bb5" ]
+          },
+          "allNeighbours" : [ "v1", "26619d05-746c-41d1-86bf-f85c576b6bb5", "4d9f8e21-2ecf-43ed-a2b2-0e9ea262a404" ]
+        },
+        "vertexHashMap" : {
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "26619d05-746c-41d1-86bf-f85c576b6bb5" : {
+            "vertexId" : "26619d05-746c-41d1-86bf-f85c576b6bb5",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "4d9f8e21-2ecf-43ed-a2b2-0e9ea262a404" : {
+            "vertexId" : "4d9f8e21-2ecf-43ed-a2b2-0e9ea262a404",
+            "vertexType" : "DATABASE",
+            "name" : "gjjgyhm",
+            "databaseData" : {
+              "connectorId" : "6787425d215c0e72878592b4",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"sample_mflix\",\"collection\":\"movies\",\"documents\":[{\"_id\":\"\",\"plot\":\"\",\"genres\":[],\"runtime\":\"\",\"cast\":[],\"poster\":\"\",\"title\":\"\",\"fullplot\":\"\",\"languages\":[],\"released\":\"\",\"directors\":[],\"rated\":\"\",\"awards\":{\"wins\":\"\",\"nominations\":\"\",\"text\":\"\"},\"lastupdated\":\"\",\"year\":\"\",\"imdb\":{\"rating\":\"\",\"votes\":\"\",\"id\":\"\"},\"countries\":[],\"type\":\"\",\"tomatoes\":{\"viewer\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"fresh\":\"\",\"critic\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"rotten\":\"\",\"lastUpdated\":\"\",\"website\":\"\",\"dvd\":\"\",\"production\":\"\",\"boxOffice\":\"\",\"consensus\":\"\"},\"num_mflix_comments\":\"\",\"writers\":[],\"metacritic\":\"\",\"test\":\"\",\"name\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "gf",
+              "connectorName" : "Deepak Cloud DB",
+              "tenantName" : "sample_mflix",
+              "collectionName" : "movies",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766128888798,
+          "lastModifiedBy" : "Kiran Kamble",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "validated" : false,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "6787425d215c0e72878592b4",
+        "cts" : 1736917597512,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766039243289,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "name" : "Deepak Cloud DB",
+        "description" : "this is cloud db",
+        "host" : "cluster0.36fr1.mongodb.net/",
+        "scheme" : "mongodb+srv",
+        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/?authMechanism=DEFAULT",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz-database",
+          "password" : "oNyFlrO4XM5AWX8Y",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "6944fcf879741c46d60db204",
+      "proxyid" : "6944fcf879741c46d60db203",
+      "name" : "New Workflow 816",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "6787425d215c0e72878592b4" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "6787425d215c0e72878592b4",
+      "name" : "Deepak Cloud DB"
+    } ]
+  }
+}
