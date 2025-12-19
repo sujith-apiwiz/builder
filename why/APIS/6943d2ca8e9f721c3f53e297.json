@@ -1,7 +1,7 @@
 {
-  "cts" : 1766078248648,
+  "cts" : 1766127359292,
   "name" : "TBAC_MST_A",
-  "exportedBy" : "Madhusudan Tripathy",
+  "exportedBy" : "Deepak Satuluri",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,10 @@
         "id" : "6943d2ca8e9f721c3f53e297",
         "cts" : 1766052554164,
         "createdUserName" : "Madhusudan Tripathy",
-        "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766078248564,
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1766127359280,
         "createdBy" : "676be2be391f97263bb0b16c",
-        "modifiedBy" : "676be2be391f97263bb0b16c",
+        "modifiedBy" : "685a38a166575941216c9c0e",
         "proxyId" : "6943d2ca8e9f721c3f53e296",
         "revision" : 1,
         "name" : "TBAC_MST_A",
@@ -24,21 +24,23 @@
         "pathArray" : [ "unq" ],
         "revisionStatus" : "REVIEW",
         "locked" : true,
-        "lockedBy" : "Madhusudan Tripathy",
+        "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
             "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
             "6455412d-90ff-4518-b389-15c20746ccad" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ],
             "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "v1" ],
-            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ]
+            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
+            "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
           },
           "outbound" : {
             "19104e8e-a71f-42c3-a815-d9e869a13e77" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" ],
             "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" : [ "6455412d-90ff-4518-b389-15c20746ccad" ],
             "v1" : [ "19104e8e-a71f-42c3-a815-d9e869a13e77" ],
-            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ]
+            "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : [ "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ],
+            "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : [ "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603" ]
           },
-          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1" ]
+          "allNeighbours" : [ "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb", "6455412d-90ff-4518-b389-15c20746ccad", "3dd63f4b-8961-4eef-9fa9-4c1e90f3c603", "19104e8e-a71f-42c3-a815-d9e869a13e77", "v1", "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" ]
         },
         "vertexHashMap" : {
           "5f880c86-5ec3-4fc5-b9ea-2ac9bfd2a7bb" : {
@@ -177,9 +179,47 @@
                 }
               }
             }
+          },
+          "7e8f6d5f-eae8-4eef-804a-5d6007063ffa" : {
+            "vertexId" : "7e8f6d5f-eae8-4eef-804a-5d6007063ffa",
+            "vertexType" : "DATABASE",
+            "name" : "q",
+            "description" : "q",
+            "databaseData" : {
+              "connectorId" : "6790e28b66befd1482d6c3c6",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"ewb-poc\",\"collection\":\"user.accounts.collection\",\"documents\":[{\"_id\":\"\",\"transactionId\":\"\",\"amount\":\"\",\"currency\":\"\",\"timestamp\":\"\",\"status\":\"\",\"remarks\":\"\",\"credit\":\"\",\"debit\":\"\",\"present\":\"\",\"orderingCustomerName\":\"\",\"creditAccountIBAN\":\"\",\"debitAccountIBAN\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "q",
+              "connectorName" : "mongo srv",
+              "tenantName" : "ewb-poc",
+              "collectionName" : "user.accounts.collection",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1766123744556,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766123345291,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
           "status" : "Review",
           "cts" : 1766072047926,
           "lastModifiedBy" : "676be2be391f97263bb0b16c",
@@ -621,10 +661,10 @@
         "id" : "69428fe9ca79445e02a87f24",
         "cts" : 1765969897506,
         "createdUserName" : "Kiran Kamble",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1765970125119,
+        "modifiedUserName" : "Nihal Ahamed",
+        "mts" : 1766124547118,
         "createdBy" : "685b8a3df073051941d15c1c",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ {
           "id" : "6943d01f8e9f721c3f53e109",
           "name" : "TBAC_MST_A"
@@ -633,29 +673,26 @@
         "description" : "",
         "nodeDataHashMap" : {
           "inbound" : {
-            "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : [ "v1" ],
-            "7029c04e-dbab-4c49-b2b2-feb9150582cf" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" ]
+            "c3883871-c5c7-4816-b32c-88442621b9c2" : [ "v1" ],
+            "7029c04e-dbab-4c49-b2b2-feb9150582cf" : [ "c3883871-c5c7-4816-b32c-88442621b9c2" ]
           },
           "outbound" : {
-            "v1" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" ],
-            "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : [ "7029c04e-dbab-4c49-b2b2-feb9150582cf" ]
+            "v1" : [ "c3883871-c5c7-4816-b32c-88442621b9c2" ],
+            "c3883871-c5c7-4816-b32c-88442621b9c2" : [ "7029c04e-dbab-4c49-b2b2-feb9150582cf" ]
           },
-          "allNeighbours" : [ "ec7534e1-f45d-41fe-9a82-f1ab6628ff48", "7029c04e-dbab-4c49-b2b2-feb9150582cf", "v1" ]
+          "allNeighbours" : [ "c3883871-c5c7-4816-b32c-88442621b9c2", "7029c04e-dbab-4c49-b2b2-feb9150582cf", "v1" ]
         },
         "vertexHashMap" : {
-          "ec7534e1-f45d-41fe-9a82-f1ab6628ff48" : {
-            "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48",
-            "vertexType" : "DATABASE",
-            "name" : "testKiranDemo",
-            "databaseData" : {
-              "connectorId" : "693fd141962d9f250a980f0c",
-              "databaseType" : "MONGODB",
-              "query" : "{\"operation\":\"insert\",\"databaseName\":\"DevD\",\"collection\":\"references\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"description\":\"\",\"createdBy\":\"\",\"modifiedBy\":\"\",\"deprecated\":\"\",\"isDefault\":\"\",\"revisions\":[{\"revision\":\"\",\"schemaId\":\"\",\"status\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\"}],\"comments\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\",\"__v\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-              "variableName" : "dd",
-              "connectorName" : "tbac-db-test",
-              "tenantName" : "DevD",
-              "collectionName" : "references",
-              "manual" : false,
+          "c3883871-c5c7-4816-b32c-88442621b9c2" : {
+            "vertexId" : "c3883871-c5c7-4816-b32c-88442621b9c2",
+            "vertexType" : "JAVASCRIPT",
+            "name" : "sdf",
+            "description" : "sd",
+            "javascriptData" : {
+              "targetVariable" : "sdf",
+              "variableDataType" : "STRING",
+              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n console.log(input.foo);\n return input;\n };",
+              "variables" : { },
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -665,7 +702,9 @@
                   "data" : "",
                   "type" : "json"
                 }
-              }
+              },
+              "customResponseMapping" : false,
+              "responsePathMapping" : { }
             },
             "imported" : false,
             "skipRuntimeVariables" : false
@@ -682,7 +721,7 @@
             "vertexType" : "SHARED_FLOW_STOP",
             "name" : "Exit",
             "sharedFlowStopData" : {
-              "stopNodeAction" : "TERMINATE_WITH_RESPONSE",
+              "stopNodeAction" : "CONTINUE",
               "sharedFlowResponse" : {
                 "statusCode" : 200,
                 "body" : {
@@ -697,21 +736,16 @@
         "parentWorkflowIds" : [ ],
         "inputVariableList" : [ ],
         "outputVariableList" : [ {
-          "name" : "dd",
+          "name" : "sdf",
           "active" : false,
           "hide" : false,
           "feelExpression" : false,
-          "envVertexName" : "testKiranDemo",
-          "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48"
+          "envVertexName" : "sdf",
+          "vertexId" : "c3883871-c5c7-4816-b32c-88442621b9c2"
         } ],
         "workspaceTenant" : "stage-data",
-        "misconfigurationMessages" : [ {
-          "vertexId" : "ec7534e1-f45d-41fe-9a82-f1ab6628ff48",
-          "vertexName" : "testKiranDemo",
-          "vertexType" : "DATABASE",
-          "missingTeams" : [ "QA Team" ]
-        } ],
-        "validated" : false
+        "misconfigurationMessages" : [ ],
+        "validated" : true
       }
     }
   }, {
@@ -719,27 +753,23 @@
     "collectionName" : "Connectors.MongoDb.Configuration",
     "data" : {
       "mongoDBConfigurationData" : {
-        "id" : "693fd141962d9f250a980f0c",
-        "cts" : 1765790017480,
-        "createdUserName" : "Kiran Kamble",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1765970268534,
-        "createdBy" : "685b8a3df073051941d15c1c",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
-        "name" : "tbac-db-test",
-        "description" : "tbac-db-test",
-        "host" : "10.10.12.20:27017/apiwiz",
-        "scheme" : "mongodb",
-        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
+        "id" : "6790e28b66befd1482d6c3c6",
+        "cts" : 1737548427157,
+        "createdUserName" : "Deepak Satuluri",
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1737548427157,
+        "createdBy" : "6768ec5e85cdc202f0e3c5db",
+        "modifiedBy" : "6768ec5e85cdc202f0e3c5db",
+        "name" : "mongo srv",
+        "description" : "this is mongo srv url",
+        "host" : "cluster0.36fr1.mongodb.net/",
+        "scheme" : "mongodb+srv",
+        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
         "authentication" : {
           "mongoDbAuthType" : "userNamePassword",
-          "username" : "apiwiz",
-          "authenticationDatabase" : "admin",
+          "username" : "apiwiz-database",
+          "password" : "oNyFlrO4XM5AWX8Y",
           "authenticationMechanism" : "DEFAULT"
-        },
-        "ssl" : {
-          "sslConnection" : false,
-          "tlsAllowInvalidHostnames" : false
         }
       },
       "databaseType" : "MongoDb"
@@ -753,7 +783,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "69428fe9ca79445e02a87f24" ],
       "attachedProxies" : [ "6652b6264289865ae027e453" ],
-      "attachedConnectors" : [ "694268cdca79445e02a875e1" ]
+      "attachedConnectors" : [ "6790e28b66befd1482d6c3c6", "694268cdca79445e02a875e1" ]
     }, {
       "id" : "6652b6264289865ae027e453",
       "proxyid" : "6652b6264289865ae027e452",
@@ -773,14 +803,14 @@
       "description" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "693fd141962d9f250a980f0c" ]
+      "attachedConnectors" : [ ]
     } ],
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "694268cdca79445e02a875e1",
       "name" : "TestTBAC-MST"
     }, {
-      "id" : "693fd141962d9f250a980f0c",
-      "name" : "tbac-db-test"
+      "id" : "6790e28b66befd1482d6c3c6",
+      "name" : "mongo srv"
     } ]
   }
 }
