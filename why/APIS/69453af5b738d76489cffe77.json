@@ -1,0 +1,116 @@
+{
+  "cts" : 1766144757438,
+  "name" : "TestAllNodes - Nihal",
+  "exportedBy" : "Nihal Ahamed",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69453af5b738d76489cffe77",
+        "cts" : 1766144757373,
+        "createdUserName" : "Nihal Ahamed",
+        "modifiedUserName" : "Nihal Ahamed",
+        "mts" : 1766144757373,
+        "createdBy" : "6704b7de02afc5238c963878",
+        "modifiedBy" : "6704b7de02afc5238c963878",
+        "taggedTeams" : [ ],
+        "proxyId" : "69453af5b738d76489cffe76",
+        "revision" : 1,
+        "name" : "TestAllNodes - Nihal",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/TestAllNodes",
+        "pathArray" : [ "TestAllNodes" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Nihal Ahamed",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "e14ddfcb-f169-4512-abe1-0ec9fe0890a2" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "e14ddfcb-f169-4512-abe1-0ec9fe0890a2" ]
+          },
+          "allNeighbours" : [ "e14ddfcb-f169-4512-abe1-0ec9fe0890a2", "v1" ]
+        },
+        "vertexHashMap" : {
+          "e14ddfcb-f169-4512-abe1-0ec9fe0890a2" : {
+            "vertexId" : "e14ddfcb-f169-4512-abe1-0ec9fe0890a2",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766144757373,
+          "lastModifiedBy" : "Nihal Ahamed",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69453af5b738d76489cffe77",
+      "proxyid" : "69453af5b738d76489cffe76",
+      "name" : "TestAllNodes - Nihal",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
