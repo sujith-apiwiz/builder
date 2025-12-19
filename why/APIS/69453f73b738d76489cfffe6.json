@@ -1,0 +1,116 @@
+{
+  "cts" : 1766147103366,
+  "name" : "YOYO",
+  "exportedBy" : "Kiran Kamble",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69453f73b738d76489cfffe6",
+        "cts" : 1766145907921,
+        "createdUserName" : "Madhusudan Tripathy",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766147103279,
+        "createdBy" : "676be2be391f97263bb0b16c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ ],
+        "proxyId" : "69453f73b738d76489cfffe5",
+        "revision" : 1,
+        "name" : "YOYO",
+        "description" : "YOY",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/abc",
+        "pathArray" : [ "abc" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Kiran Kamble",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" ]
+          },
+          "allNeighbours" : [ "81248c6c-bacb-46ee-8eef-d6a0b8c79abe", "v1" ]
+        },
+        "vertexHashMap" : {
+          "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" : {
+            "vertexId" : "81248c6c-bacb-46ee-8eef-d6a0b8c79abe",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766145907921,
+          "lastModifiedBy" : "Madhusudan Tripathy",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69453f73b738d76489cfffe6",
+      "proxyid" : "69453f73b738d76489cfffe5",
+      "name" : "YOYO",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
