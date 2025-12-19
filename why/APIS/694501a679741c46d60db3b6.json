@@ -1,7 +1,7 @@
 {
-  "cts" : 1766130086235,
+  "cts" : 1766130345119,
   "name" : "New Workflow 817",
-  "exportedBy" : "Binitkumar Shirsath",
+  "exportedBy" : "Kiran Kamble",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,10 @@
         "id" : "694501a679741c46d60db3b6",
         "cts" : 1766130086076,
         "createdUserName" : "Binitkumar Shirsath",
-        "modifiedUserName" : "Binitkumar Shirsath",
-        "mts" : 1766130086076,
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766130345039,
         "createdBy" : "6875ddc455236f5d5fa969e7",
-        "modifiedBy" : "6875ddc455236f5d5fa969e7",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
         "proxyId" : "694501a679741c46d60db3b5",
         "revision" : 1,
         "name" : "New Workflow 817",
@@ -24,15 +24,17 @@
         "pathArray" : [ ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
-        "lockedBy" : "Binitkumar Shirsath",
+        "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
           "inbound" : {
-            "0fea75eb-61f2-4ef9-bb7a-8369d3d9eb31" : [ "v1" ]
+            "9dc681b1-8d34-4c39-9919-660ac58f0aa9" : [ "v1" ],
+            "0fea75eb-61f2-4ef9-bb7a-8369d3d9eb31" : [ "9dc681b1-8d34-4c39-9919-660ac58f0aa9" ]
           },
           "outbound" : {
-            "v1" : [ "0fea75eb-61f2-4ef9-bb7a-8369d3d9eb31" ]
+            "v1" : [ "9dc681b1-8d34-4c39-9919-660ac58f0aa9" ],
+            "9dc681b1-8d34-4c39-9919-660ac58f0aa9" : [ "0fea75eb-61f2-4ef9-bb7a-8369d3d9eb31" ]
           },
-          "allNeighbours" : [ "0fea75eb-61f2-4ef9-bb7a-8369d3d9eb31", "v1" ]
+          "allNeighbours" : [ "0fea75eb-61f2-4ef9-bb7a-8369d3d9eb31", "9dc681b1-8d34-4c39-9919-660ac58f0aa9", "v1" ]
         },
         "vertexHashMap" : {
           "0fea75eb-61f2-4ef9-bb7a-8369d3d9eb31" : {
@@ -47,6 +49,33 @@
                 "type" : "JSON"
               }
             }
+          },
+          "9dc681b1-8d34-4c39-9919-660ac58f0aa9" : {
+            "vertexId" : "9dc681b1-8d34-4c39-9919-660ac58f0aa9",
+            "vertexType" : "DATABASE",
+            "name" : "sb",
+            "databaseData" : {
+              "connectorId" : "6787425d215c0e72878592b4",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"sample_mflix\",\"collection\":\"movies\",\"documents\":[{\"_id\":\"\",\"plot\":\"\",\"genres\":[],\"runtime\":\"\",\"cast\":[],\"poster\":\"\",\"title\":\"\",\"fullplot\":\"\",\"languages\":[],\"released\":\"\",\"directors\":[],\"rated\":\"\",\"awards\":{\"wins\":\"\",\"nominations\":\"\",\"text\":\"\"},\"lastupdated\":\"\",\"year\":\"\",\"imdb\":{\"rating\":\"\",\"votes\":\"\",\"id\":\"\"},\"countries\":[],\"type\":\"\",\"tomatoes\":{\"viewer\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"fresh\":\"\",\"critic\":{\"rating\":\"\",\"numReviews\":\"\",\"meter\":\"\"},\"rotten\":\"\",\"lastUpdated\":\"\",\"website\":\"\",\"dvd\":\"\",\"production\":\"\",\"boxOffice\":\"\",\"consensus\":\"\"},\"num_mflix_comments\":\"\",\"writers\":[],\"metacritic\":\"\",\"test\":\"\",\"name\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "sasa",
+              "connectorName" : "Deepak Cloud DB",
+              "tenantName" : "sample_mflix",
+              "collectionName" : "movies",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -92,6 +121,32 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "6787425d215c0e72878592b4",
+        "cts" : 1736917597512,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766039243289,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "name" : "Deepak Cloud DB",
+        "description" : "this is cloud db",
+        "host" : "cluster0.36fr1.mongodb.net/",
+        "scheme" : "mongodb+srv",
+        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/?authMechanism=DEFAULT",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz-database",
+          "password" : "oNyFlrO4XM5AWX8Y",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -101,7 +156,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "6787425d215c0e72878592b4" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -109,6 +164,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "6787425d215c0e72878592b4",
+      "name" : "Deepak Cloud DB"
+    } ]
   }
 }
