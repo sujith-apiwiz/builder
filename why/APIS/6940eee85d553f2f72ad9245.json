@@ -1,7 +1,7 @@
 {
-  "cts" : 1766076460320,
+  "cts" : 1766136333207,
   "name" : "KIRAN_TBAC_DO_NOT_DELETE",
-  "exportedBy" : "Kiran Kamble",
+  "exportedBy" : "divakar v",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,11 @@
         "id" : "6940eee85d553f2f72ad9245",
         "cts" : 1765863144332,
         "createdUserName" : "Kiran Kamble",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1766076460240,
+        "modifiedUserName" : "divakar v",
+        "mts" : 1766136333202,
         "createdBy" : "685b8a3df073051941d15c1c",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
+        "taggedTeams" : [ ],
         "proxyId" : "6940eee85d553f2f72ad9244",
         "revision" : 1,
         "name" : "KIRAN_TBAC_DO_NOT_DELETE",
@@ -24,7 +25,7 @@
         "pathArray" : [ "v1", "1213" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
-        "lockedBy" : "Kiran Kamble",
+        "lockedBy" : "divakar v",
         "nodeDataHashMap" : {
           "inbound" : {
             "d4300745-38fe-4f74-b802-028caeb94431" : [ "v1" ],
@@ -140,7 +141,7 @@
               "manual" : false,
               "skip" : false,
               "showActualErrorMessage" : false,
-              "continueOnError" : false,
+              "continueOnError" : true,
               "errorResponse" : {
                 "statusCode" : 400,
                 "body" : {
@@ -167,7 +168,7 @@
               "manual" : false,
               "skip" : false,
               "showActualErrorMessage" : false,
-              "continueOnError" : false,
+              "continueOnError" : true,
               "errorResponse" : {
                 "statusCode" : 400,
                 "body" : {
@@ -231,7 +232,8 @@
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
         "enableLogging" : false,
-        "validated" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
         "deployed" : false,
         "deleted" : false
       }
@@ -248,6 +250,7 @@
         "mts" : 1765873432967,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ ],
         "proxyId" : "69410c1fd153c2098e5c9945",
         "revision" : 1,
         "name" : "testKiranTbacWithCallWfl",
@@ -391,7 +394,8 @@
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
         "enableLogging" : false,
-        "validated" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
         "deployed" : true,
         "deleted" : false
       }
