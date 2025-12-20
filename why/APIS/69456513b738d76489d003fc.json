@@ -1,0 +1,168 @@
+{
+  "cts" : 1766215148638,
+  "name" : "OPAA",
+  "exportedBy" : "Madhusudan Tripathy",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69456513b738d76489d003fc",
+        "cts" : 1766155539115,
+        "createdUserName" : "Madhusudan Tripathy",
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766215148403,
+        "createdBy" : "676be2be391f97263bb0b16c",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
+        "taggedTeams" : [ ],
+        "proxyId" : "69456513b738d76489d003fb",
+        "revision" : 1,
+        "name" : "OPAA",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Madhusudan Tripathy",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : [ "v1" ],
+            "6778dbb9-d109-45f3-a689-a63aecf41551" : [ "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" ]
+          },
+          "outbound" : {
+            "v1" : [ "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" ],
+            "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : [ "6778dbb9-d109-45f3-a689-a63aecf41551" ]
+          },
+          "allNeighbours" : [ "v1", "951d5eee-df9c-420f-8cfc-dfd9a5dc0737", "6778dbb9-d109-45f3-a689-a63aecf41551" ]
+        },
+        "vertexHashMap" : {
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "6778dbb9-d109-45f3-a689-a63aecf41551" : {
+            "vertexId" : "6778dbb9-d109-45f3-a689-a63aecf41551",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "951d5eee-df9c-420f-8cfc-dfd9a5dc0737" : {
+            "vertexId" : "951d5eee-df9c-420f-8cfc-dfd9a5dc0737",
+            "vertexType" : "ENTITLEMENT",
+            "name" : "asa",
+            "entitlementData" : {
+              "connectorId" : "66fa9be66f8f1845387da8ef",
+              "connectorName" : "opa-connector",
+              "policyId" : "67d959ee51232468ef4b6171",
+              "policyName" : "Rest",
+              "serverUrl" : "https://opa-connector.apiwiz.io",
+              "packagePath" : "/apiwiz/builder_agent",
+              "token" : "5432",
+              "inputData" : "",
+              "graphqlAuthorization" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766155539115,
+          "lastModifiedBy" : "Madhusudan Tripathy",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Entitlement",
+    "data" : {
+      "apiBuilderEntitlementServerDTOData" : {
+        "id" : "66fa9be66f8f1845387da8ef",
+        "name" : "opa-connector",
+        "serverUrl" : "https://opa-connector.apiwiz.io",
+        "token" : "5432"
+      },
+      "apiBuilderEntitlementPolicyDTOData" : {
+        "id" : "67d959ee51232468ef4b6171",
+        "name" : "Rest",
+        "packagePath" : "/apiwiz/builder_agent"
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69456513b738d76489d003fc",
+      "proxyid" : "69456513b738d76489d003fb",
+      "name" : "OPAA",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "66fa9be66f8f1845387da8ef", "67d959ee51232468ef4b6171" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "66fa9be66f8f1845387da8ef",
+      "name" : "opa-connector"
+    }, {
+      "id" : "67d959ee51232468ef4b6171",
+      "name" : "Rest"
+    } ]
+  }
+}
