@@ -1,7 +1,7 @@
 {
-  "cts" : 1766149022160,
+  "cts" : 1766307141119,
   "name" : "YOYO",
-  "exportedBy" : "Kiran Kamble",
+  "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,10 @@
         "id" : "69453f73b738d76489cfffe6",
         "cts" : 1766145907921,
         "createdUserName" : "Madhusudan Tripathy",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1766149022158,
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766307141049,
         "createdBy" : "676be2be391f97263bb0b16c",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
         "proxyId" : "69453f73b738d76489cfffe5",
         "revision" : 1,
@@ -25,7 +25,7 @@
         "pathArray" : [ "abc" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
-        "lockedBy" : "Kiran Kamble",
+        "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
             "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" : [ "v1" ],
@@ -57,7 +57,7 @@
             "name" : "Delay",
             "delayData" : {
               "delayUnit" : "SECONDS",
-              "delayAmount" : 4,
+              "delayAmount" : 2,
               "skip" : false,
               "showActualErrorMessage" : false
             },
@@ -105,8 +105,8 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deleted" : false,
-        "deployed" : false
+        "deployed" : false,
+        "deleted" : false
       }
     }
   } ],
