@@ -1,5 +1,5 @@
 {
-  "cts" : 1766308002640,
+  "cts" : 1766308222968,
   "name" : "NONA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766298164247,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766308002560,
+        "mts" : 1766308222811,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -64,19 +64,19 @@
           "6848f958-2ee0-4cda-9a1e-81cf560a8e6c" : {
             "vertexId" : "6848f958-2ee0-4cda-9a1e-81cf560a8e6c",
             "vertexType" : "ENTITLEMENT",
-            "name" : "./",
+            "name" : "www",
             "entitlementData" : {
               "connectorId" : "66fa9be66f8f1845387da8ef",
               "connectorName" : "opa-connector",
               "policyId" : "67e10a58ed1ae94ac8709a58",
               "policyName" : "Temp",
-              "serverUrl" : "",
-              "packagePath" : "",
-              "token" : "",
+              "serverUrl" : "https://opa-connector.apiwiz.io",
+              "packagePath" : "/apiwiz/builder_agent",
+              "token" : "5432",
               "inputData" : "",
               "graphqlAuthorization" : false,
               "skip" : false,
-              "showActualErrorMessage" : false,
+              "showActualErrorMessage" : true,
               "continueOnError" : true,
               "errorResponse" : {
                 "statusCode" : 400,
@@ -288,6 +288,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1766308196412,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766308100877,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : ","
+        }, {
           "status" : "Review",
           "cts" : 1766307966557,
           "lastModifiedBy" : "676be2be391f97263bb0b16c",
