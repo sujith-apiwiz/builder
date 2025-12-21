@@ -1,5 +1,5 @@
 {
-  "cts" : 1766307095290,
+  "cts" : 1766307411598,
   "name" : "NONA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766298164247,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766307095213,
+        "mts" : 1766307411445,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -65,8 +65,8 @@
             "name" : "Call Workflow",
             "description" : "",
             "callWorkflowData" : {
-              "childWorkflowId" : "67b465da6fd61a1bdf4c810c",
-              "childWorkflowName" : "Sireesha Workflow",
+              "childWorkflowId" : "69453f73b738d76489cfffe6",
+              "childWorkflowName" : "YOYO",
               "virtualHostId" : "66dc0ef2e836d076001b628b",
               "virtualHostName" : "stage-data",
               "url" : "HTTPS://stage-data-lkgc.apiwiz.io/mihir-testing",
@@ -324,134 +324,70 @@
     "collectionName" : "ApiBuilder.Proxy.List",
     "data" : {
       "proxyData" : {
-        "id" : "67b465da6fd61a1bdf4c810c",
-        "cts" : 1739875801544,
-        "createdUserName" : "vidya wiz",
-        "modifiedUserName" : "vidya wiz",
-        "mts" : 1739877550438,
-        "createdBy" : "66d5b447299d441dfc15644a",
-        "modifiedBy" : "66d5b447299d441dfc15644a",
+        "id" : "69453f73b738d76489cfffe6",
+        "cts" : 1766145907921,
+        "createdUserName" : "Madhusudan Tripathy",
+        "modifiedUserName" : "Madhusudan Tripathy",
+        "mts" : 1766307305124,
+        "createdBy" : "676be2be391f97263bb0b16c",
+        "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
-        "proxyId" : "67b465d96fd61a1bdf4c810b",
+        "proxyId" : "69453f73b738d76489cfffe5",
         "revision" : 1,
-        "name" : "Sireesha Workflow",
-        "description" : "desc",
+        "name" : "YOYO",
+        "description" : "YOY",
         "apiType" : "RESTAPI",
-        "apiMethod" : "POST",
-        "path" : "/sireesha-get-endpoint",
-        "pathArray" : [ "sireesha-get-endpoint" ],
+        "apiMethod" : "GET",
+        "path" : "/abc-oo",
+        "pathArray" : [ "abc-oo" ],
         "revisionStatus" : "APPROVED",
         "locked" : true,
-        "lockedBy" : "vidya wiz",
+        "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
-            "04824c71-7a96-447e-9498-13daeb293004" : [ "v1" ],
-            "2feb85fe-c9e1-4275-9154-c0954bf7ca91" : [ "04824c71-7a96-447e-9498-13daeb293004" ]
+            "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" : [ "v1" ],
+            "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" : [ "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" ]
           },
           "outbound" : {
-            "04824c71-7a96-447e-9498-13daeb293004" : [ "2feb85fe-c9e1-4275-9154-c0954bf7ca91" ],
-            "v1" : [ "04824c71-7a96-447e-9498-13daeb293004" ]
+            "v1" : [ "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" ],
+            "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" : [ "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" ]
           },
-          "allNeighbours" : [ "04824c71-7a96-447e-9498-13daeb293004", "2feb85fe-c9e1-4275-9154-c0954bf7ca91", "v1" ]
+          "allNeighbours" : [ "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175", "81248c6c-bacb-46ee-8eef-d6a0b8c79abe", "v1" ]
         },
         "vertexHashMap" : {
-          "04824c71-7a96-447e-9498-13daeb293004" : {
-            "vertexId" : "04824c71-7a96-447e-9498-13daeb293004",
-            "vertexType" : "TARGET",
-            "name" : "Post",
-            "target" : {
-              "name" : "Post",
-              "apiType" : "RESTAPI",
-              "request" : {
-                "apiMethod" : "POST",
-                "scheme" : "https",
-                "host" : "postman-echo.com",
-                "path" : "/post",
-                "headerParams" : [ {
-                  "name" : "content-type",
-                  "value" : "application/json"
-                } ],
-                "queryParams" : [ ],
-                "targetRequestBodyType" : "RAW",
-                "body" : {
-                  "data" : "{{{sireeshaPayload}}}",
-                  "type" : "json"
-                },
-                "formParams" : [ ],
-                "urlEncodedParams" : [ ]
-              },
-              "response" : {
-                "statusCode" : 400,
-                "variables" : [ {
-                  "name" : "postmanResponse",
-                  "reference" : "body",
-                  "value" : "$",
-                  "active" : true,
-                  "source" : "raw",
-                  "hide" : false,
-                  "feelExpression" : false
-                } ]
-              },
-              "timeout" : 0,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              },
-              "securityResponse" : {
-                "isEnabled" : false,
-                "useEnforcedRules" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false,
-                "errorResponse" : {
-                  "statusCode" : 400,
-                  "body" : {
-                    "data" : "",
-                    "type" : "json"
-                  }
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "2feb85fe-c9e1-4275-9154-c0954bf7ca91" : {
-            "vertexId" : "2feb85fe-c9e1-4275-9154-c0954bf7ca91",
+          "81248c6c-bacb-46ee-8eef-d6a0b8c79abe" : {
+            "vertexId" : "81248c6c-bacb-46ee-8eef-d6a0b8c79abe",
             "vertexType" : "STOP",
             "name" : "Stop",
             "imported" : false,
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
-              "headers" : {
-                "content-type" : "application/json"
-              },
               "body" : {
-                "data" : "{{{postmanResponse}}}",
-                "type" : "json"
+                "type" : "JSON"
               }
             }
+          },
+          "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175" : {
+            "vertexId" : "1ac5d6a9-1bac-4a4b-b3d3-8d6b83759175",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 2,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ {
-              "name" : "sireeshaPayload",
-              "reference" : "body",
-              "value" : "$",
-              "variableDataType" : "STRING",
-              "active" : true,
-              "source" : "raw",
-              "hide" : false,
-              "feelExpression" : false
-            } ],
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
             "imported" : true,
             "skipRuntimeVariables" : false,
             "securityResponse" : {
@@ -471,61 +407,42 @@
         },
         "statusHistory" : [ {
           "status" : "Approved",
-          "cts" : 1739877547502,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : ",,"
+          "cts" : 1766307220169,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
         }, {
           "status" : "Review",
-          "cts" : 1739877531863,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : "Proxy undeploy"
+          "cts" : 1766307201849,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
         }, {
           "status" : "Approved",
-          "cts" : 1739877481268,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : "mm"
+          "cts" : 1766307165444,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766307165126,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
         }, {
           "status" : "Draft",
-          "cts" : 1739875801544,
-          "lastModifiedBy" : "vidya wiz",
+          "cts" : 1766145907921,
+          "lastModifiedBy" : "Madhusudan Tripathy",
           "description" : "Created new proxy"
-        } ],
-        "changeLogs" : [ {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "",
-          "timeStamp" : 1739875801544,
-          "totalNodes" : 2
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "",
-          "timeStamp" : 1739877123209,
-          "totalNodes" : 2
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "",
-          "timeStamp" : 1739877349624,
-          "totalNodes" : 3
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "",
-          "timeStamp" : 1739877356704,
-          "totalNodes" : 3
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "",
-          "timeStamp" : 1739877541438,
-          "totalNodes" : 3
         } ],
         "virtualHostList" : [ {
           "id" : "66dc0ef2e836d076001b628b",
           "name" : "stage-data",
-          "timeStamp" : 1739877550431
+          "timeStamp" : 1766307304957,
+          "environmentId" : "66fe733e5b8c4541af925658",
+          "deployedBy" : "Madhusudan Tripathy"
         } ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
-        "selectedVirtualHostName" : "stage-data",
-        "selectedVirtualHostId" : "66dc0ef2e836d076001b628b",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
         "kafkaConnectorId" : "",
         "kafkaTopic" : "",
         "kafkaGroupId" : "",
@@ -728,12 +645,12 @@
       "name" : "NONA",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "6943f457d4167432fe665c73" ],
-      "attachedProxies" : [ "67b465da6fd61a1bdf4c810c" ],
+      "attachedProxies" : [ "69453f73b738d76489cfffe6" ],
       "attachedConnectors" : [ "68398acdbb9e4f4731cd78c3", "682e31412d820556c5f23c86" ]
     }, {
-      "id" : "67b465da6fd61a1bdf4c810c",
-      "proxyid" : "67b465d96fd61a1bdf4c810b",
-      "name" : "Sireesha Workflow",
+      "id" : "69453f73b738d76489cfffe6",
+      "proxyid" : "69453f73b738d76489cfffe5",
+      "name" : "YOYO",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
