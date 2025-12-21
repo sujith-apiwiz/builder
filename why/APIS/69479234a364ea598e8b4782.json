@@ -1,5 +1,5 @@
 {
-  "cts" : 1766298563768,
+  "cts" : 1766298668722,
   "name" : "NONA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766298164247,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766298563756,
+        "mts" : 1766298668572,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -30,14 +30,16 @@
           "inbound" : {
             "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "v1" ],
             "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
-            "118be731-6f44-439c-8983-041a80dc4d50" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ]
+            "3709a564-6d92-499a-88f8-d0d6a44c257b" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ],
+            "118be731-6f44-439c-8983-041a80dc4d50" : [ "3709a564-6d92-499a-88f8-d0d6a44c257b" ]
           },
           "outbound" : {
             "v1" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
             "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ],
-            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "118be731-6f44-439c-8983-041a80dc4d50" ]
+            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "3709a564-6d92-499a-88f8-d0d6a44c257b" ],
+            "3709a564-6d92-499a-88f8-d0d6a44c257b" : [ "118be731-6f44-439c-8983-041a80dc4d50" ]
           },
-          "allNeighbours" : [ "118be731-6f44-439c-8983-041a80dc4d50", "v1", "d47aeb83-30ee-426a-964a-9fe5447f5d9e", "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ]
+          "allNeighbours" : [ "118be731-6f44-439c-8983-041a80dc4d50", "3709a564-6d92-499a-88f8-d0d6a44c257b", "v1", "d47aeb83-30ee-426a-964a-9fe5447f5d9e", "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ]
         },
         "vertexHashMap" : {
           "118be731-6f44-439c-8983-041a80dc4d50" : {
@@ -52,6 +54,34 @@
                 "type" : "JSON"
               }
             }
+          },
+          "3709a564-6d92-499a-88f8-d0d6a44c257b" : {
+            "vertexId" : "3709a564-6d92-499a-88f8-d0d6a44c257b",
+            "vertexType" : "ENTITLEMENT",
+            "name" : "opa",
+            "entitlementData" : {
+              "connectorId" : "66fa9be66f8f1845387da8ef",
+              "connectorName" : "opa-connector",
+              "policyId" : "67e10a58ed1ae94ac8709a58",
+              "policyName" : "Temp",
+              "serverUrl" : "",
+              "packagePath" : "",
+              "token" : "",
+              "inputData" : "",
+              "graphqlAuthorization" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -176,6 +206,22 @@
     }
   }, {
     "type" : "connector",
+    "collectionName" : "Connectors.Entitlement",
+    "data" : {
+      "apiBuilderEntitlementServerDTOData" : {
+        "id" : "66fa9be66f8f1845387da8ef",
+        "name" : "opa-connector",
+        "serverUrl" : "https://opa-connector.apiwiz.io",
+        "token" : "5432"
+      },
+      "apiBuilderEntitlementPolicyDTOData" : {
+        "id" : "67e10a58ed1ae94ac8709a58",
+        "name" : "Temp",
+        "packagePath" : "/apiwiz/builder_agent"
+      }
+    }
+  }, {
+    "type" : "connector",
     "collectionName" : "Connectors.Redis.Cache",
     "data" : {
       "redisCacheConnectorData" : {
@@ -202,7 +248,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "68398acdbb9e4f4731cd78c3" ]
+      "attachedConnectors" : [ "67e10a58ed1ae94ac8709a58", "66fa9be66f8f1845387da8ef", "68398acdbb9e4f4731cd78c3" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -211,6 +257,12 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
+      "id" : "66fa9be66f8f1845387da8ef",
+      "name" : "opa-connector"
+    }, {
+      "id" : "67e10a58ed1ae94ac8709a58",
+      "name" : "Temp"
+    }, {
       "id" : "68398acdbb9e4f4731cd78c3",
       "name" : "redis connection 1"
     } ]
