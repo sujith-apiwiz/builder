@@ -1,5 +1,5 @@
 {
-  "cts" : 1766298508802,
+  "cts" : 1766298563768,
   "name" : "NONA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766298164247,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766298508799,
+        "mts" : 1766298563756,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -29,13 +29,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "v1" ],
-            "118be731-6f44-439c-8983-041a80dc4d50" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ]
+            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
+            "118be731-6f44-439c-8983-041a80dc4d50" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ]
           },
           "outbound" : {
             "v1" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
-            "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "118be731-6f44-439c-8983-041a80dc4d50" ]
+            "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ],
+            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "118be731-6f44-439c-8983-041a80dc4d50" ]
           },
-          "allNeighbours" : [ "118be731-6f44-439c-8983-041a80dc4d50", "v1", "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ]
+          "allNeighbours" : [ "118be731-6f44-439c-8983-041a80dc4d50", "v1", "d47aeb83-30ee-426a-964a-9fe5447f5d9e", "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ]
         },
         "vertexHashMap" : {
           "118be731-6f44-439c-8983-041a80dc4d50" : {
@@ -73,6 +75,28 @@
                 }
               }
             }
+          },
+          "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : {
+            "vertexId" : "d47aeb83-30ee-426a-964a-9fe5447f5d9e",
+            "vertexType" : "REDIS_CACHING",
+            "name" : "red",
+            "description" : "",
+            "redisCachingData" : {
+              "redisCacheConnectorId" : "68398acdbb9e4f4731cd78c3",
+              "cachingOperationList" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : true,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : {
             "vertexId" : "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe",
@@ -150,6 +174,25 @@
         "deleted" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Redis.Cache",
+    "data" : {
+      "redisCacheConnectorData" : {
+        "id" : "68398acdbb9e4f4731cd78c3",
+        "cts" : 1748601549865,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1750245241105,
+        "createdBy" : "divakar v",
+        "modifiedBy" : "divakar v",
+        "name" : "redis connection 1",
+        "description" : "",
+        "host" : "2.tcp.us-cal-1.ngrok.io",
+        "port" : 11714,
+        "password" : "WRl6RLyup09riMa"
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -159,7 +202,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "68398acdbb9e4f4731cd78c3" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -167,6 +210,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "68398acdbb9e4f4731cd78c3",
+      "name" : "redis connection 1"
+    } ]
   }
 }
