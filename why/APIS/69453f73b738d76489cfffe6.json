@@ -1,5 +1,5 @@
 {
-  "cts" : 1766307141119,
+  "cts" : 1766307208157,
   "name" : "YOYO",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766145907921,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766307141049,
+        "mts" : 1766307208006,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -21,9 +21,9 @@
         "description" : "YOY",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/abc",
-        "pathArray" : [ "abc" ],
-        "revisionStatus" : "DRAFT",
+        "path" : "/abc-oo",
+        "pathArray" : [ "abc-oo" ],
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
@@ -89,6 +89,21 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1766307201849,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766307165444,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766307165126,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
           "status" : "Draft",
           "cts" : 1766145907921,
           "lastModifiedBy" : "Madhusudan Tripathy",
