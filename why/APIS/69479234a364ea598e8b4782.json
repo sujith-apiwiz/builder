@@ -1,5 +1,5 @@
 {
-  "cts" : 1766298707919,
+  "cts" : 1766305103769,
   "name" : "NONA",
   "exportedBy" : "Madhusudan Tripathy",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766298164247,
         "createdUserName" : "Madhusudan Tripathy",
         "modifiedUserName" : "Madhusudan Tripathy",
-        "mts" : 1766298707837,
+        "mts" : 1766305103686,
         "createdBy" : "676be2be391f97263bb0b16c",
         "modifiedBy" : "676be2be391f97263bb0b16c",
         "taggedTeams" : [ ],
@@ -21,27 +21,29 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/",
-        "pathArray" : [ ],
-        "revisionStatus" : "DRAFT",
+        "path" : "/SASASA",
+        "pathArray" : [ "SASASA" ],
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Madhusudan Tripathy",
         "nodeDataHashMap" : {
           "inbound" : {
-            "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "v1" ],
+            "6f6f55d7-1b0e-4589-a992-725c4a0983da" : [ "v1" ],
             "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
-            "3709a564-6d92-499a-88f8-d0d6a44c257b" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ],
-            "75e01f65-f7c1-4159-871e-856a49fb53ee" : [ "3709a564-6d92-499a-88f8-d0d6a44c257b" ],
-            "118be731-6f44-439c-8983-041a80dc4d50" : [ "75e01f65-f7c1-4159-871e-856a49fb53ee" ]
+            "55316187-2915-4b1c-9841-3d1935da422d" : [ "75e01f65-f7c1-4159-871e-856a49fb53ee" ],
+            "118be731-6f44-439c-8983-041a80dc4d50" : [ "55316187-2915-4b1c-9841-3d1935da422d" ],
+            "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "6f6f55d7-1b0e-4589-a992-725c4a0983da" ],
+            "75e01f65-f7c1-4159-871e-856a49fb53ee" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ]
           },
           "outbound" : {
-            "v1" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
+            "v1" : [ "6f6f55d7-1b0e-4589-a992-725c4a0983da" ],
             "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" : [ "d47aeb83-30ee-426a-964a-9fe5447f5d9e" ],
-            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "3709a564-6d92-499a-88f8-d0d6a44c257b" ],
-            "3709a564-6d92-499a-88f8-d0d6a44c257b" : [ "75e01f65-f7c1-4159-871e-856a49fb53ee" ],
-            "75e01f65-f7c1-4159-871e-856a49fb53ee" : [ "118be731-6f44-439c-8983-041a80dc4d50" ]
+            "75e01f65-f7c1-4159-871e-856a49fb53ee" : [ "55316187-2915-4b1c-9841-3d1935da422d" ],
+            "55316187-2915-4b1c-9841-3d1935da422d" : [ "118be731-6f44-439c-8983-041a80dc4d50" ],
+            "6f6f55d7-1b0e-4589-a992-725c4a0983da" : [ "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe" ],
+            "d47aeb83-30ee-426a-964a-9fe5447f5d9e" : [ "75e01f65-f7c1-4159-871e-856a49fb53ee" ]
           },
-          "allNeighbours" : [ "118be731-6f44-439c-8983-041a80dc4d50", "3709a564-6d92-499a-88f8-d0d6a44c257b", "v1", "d47aeb83-30ee-426a-964a-9fe5447f5d9e", "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe", "75e01f65-f7c1-4159-871e-856a49fb53ee" ]
+          "allNeighbours" : [ "118be731-6f44-439c-8983-041a80dc4d50", "55316187-2915-4b1c-9841-3d1935da422d", "v1", "d47aeb83-30ee-426a-964a-9fe5447f5d9e", "33878111-1ed1-46fc-a2a2-1bdba8ea8dfe", "6f6f55d7-1b0e-4589-a992-725c4a0983da", "75e01f65-f7c1-4159-871e-856a49fb53ee" ]
         },
         "vertexHashMap" : {
           "118be731-6f44-439c-8983-041a80dc4d50" : {
@@ -57,20 +59,34 @@
               }
             }
           },
-          "3709a564-6d92-499a-88f8-d0d6a44c257b" : {
-            "vertexId" : "3709a564-6d92-499a-88f8-d0d6a44c257b",
-            "vertexType" : "ENTITLEMENT",
-            "name" : "opa",
-            "entitlementData" : {
-              "connectorId" : "66fa9be66f8f1845387da8ef",
-              "connectorName" : "opa-connector",
-              "policyId" : "67e10a58ed1ae94ac8709a58",
-              "policyName" : "Temp",
-              "serverUrl" : "https://opa-connector.apiwiz.io",
-              "packagePath" : "/apiwiz/builder_agent",
-              "token" : "5432",
-              "inputData" : "",
-              "graphqlAuthorization" : false,
+          "55316187-2915-4b1c-9841-3d1935da422d" : {
+            "vertexId" : "55316187-2915-4b1c-9841-3d1935da422d",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
+            "description" : "",
+            "callWorkflowData" : {
+              "childWorkflowId" : "6732f1fd3bf1244914c7cd48",
+              "childWorkflowName" : "Loan Sanction ",
+              "virtualHostId" : "66dc0ef2e836d076001b628b",
+              "virtualHostName" : "stage-data",
+              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/mihir-testing",
+              "apiMethod" : "GET",
+              "request" : {
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : true,
@@ -208,14 +224,83 @@
             },
             "imported" : false,
             "skipRuntimeVariables" : false
+          },
+          "6f6f55d7-1b0e-4589-a992-725c4a0983da" : {
+            "vertexId" : "6f6f55d7-1b0e-4589-a992-725c4a0983da",
+            "vertexType" : "DATABASE",
+            "name" : "qQ",
+            "description" : "Q",
+            "databaseData" : {
+              "connectorId" : "682e31412d820556c5f23c86",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"DevD\",\"collection\":\"ApiBuilder.Data.Archival.List\",\"documents\":[{}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "AA",
+              "connectorName" : "Stage-Data DB",
+              "tenantName" : "DevD",
+              "collectionName" : "ApiBuilder.Data.Archival.List",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1766305020329,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766304884490,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766304395198,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766302916883,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766302861207,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766302761920,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1766302706652,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766302681679,
+          "lastModifiedBy" : "676be2be391f97263bb0b16c",
+          "description" : "./"
+        }, {
           "status" : "Draft",
           "cts" : 1766298164247,
           "lastModifiedBy" : "Madhusudan Tripathy",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -232,19 +317,661 @@
       }
     }
   }, {
-    "type" : "connector",
-    "collectionName" : "Connectors.Entitlement",
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
     "data" : {
-      "apiBuilderEntitlementServerDTOData" : {
-        "id" : "66fa9be66f8f1845387da8ef",
-        "name" : "opa-connector",
-        "serverUrl" : "https://opa-connector.apiwiz.io",
-        "token" : "5432"
-      },
-      "apiBuilderEntitlementPolicyDTOData" : {
-        "id" : "67e10a58ed1ae94ac8709a58",
-        "name" : "Temp",
-        "packagePath" : "/apiwiz/builder_agent"
+      "proxyData" : {
+        "id" : "6732f1fd3bf1244914c7cd48",
+        "cts" : 1731391992316,
+        "createdUserName" : "vidya wiz",
+        "modifiedUserName" : "vidya wiz",
+        "mts" : 1731396713111,
+        "createdBy" : "66d5b447299d441dfc15644a",
+        "modifiedBy" : "66d5b447299d441dfc15644a",
+        "taggedTeams" : [ ],
+        "proxyId" : "6732f1f83bf1244914c7cd47",
+        "revision" : 1,
+        "name" : "Loan Sanction ",
+        "description" : "Loan Sanction ",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/v1/loan-saction",
+        "pathArray" : [ "v1", "loan-saction" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "vidya wiz",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "d68319a5-badc-4c1b-82d4-5f63cce5df55" : [ "ea9ca780-c8c9-4683-9764-f276a9d53bdf" ],
+            "cd151633-37a4-4903-ac5a-f5520f18aada" : [ "d68319a5-badc-4c1b-82d4-5f63cce5df55" ],
+            "3735a0a4-465a-4b98-a0d7-fb1da8000474" : [ "2898739e-be89-44cf-b146-1cb7455393bd" ],
+            "cff3e8c2-7342-41f6-be9d-c824e3a69690" : [ "a3fa875f-429b-4e34-b72e-4fad331ce529" ],
+            "75a99122-e740-4ef4-87ce-fb93a669b19d" : [ "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" ],
+            "a3fa875f-429b-4e34-b72e-4fad331ce529" : [ "9204d273-13a9-4f06-9082-b80cce37814c" ],
+            "54229e0e-b925-4c86-80fe-cdff9f9846a4" : [ "cff3e8c2-7342-41f6-be9d-c824e3a69690" ],
+            "ea9ca780-c8c9-4683-9764-f276a9d53bdf" : [ "69b06ef6-2fbc-4813-9ef8-da75537ac570" ],
+            "2898739e-be89-44cf-b146-1cb7455393bd" : [ "cd151633-37a4-4903-ac5a-f5520f18aada" ],
+            "69b06ef6-2fbc-4813-9ef8-da75537ac570" : [ "v1" ],
+            "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" : [ "ea9ca780-c8c9-4683-9764-f276a9d53bdf" ],
+            "9204d273-13a9-4f06-9082-b80cce37814c" : [ "3735a0a4-465a-4b98-a0d7-fb1da8000474" ]
+          },
+          "outbound" : {
+            "d68319a5-badc-4c1b-82d4-5f63cce5df55" : [ "cd151633-37a4-4903-ac5a-f5520f18aada" ],
+            "cd151633-37a4-4903-ac5a-f5520f18aada" : [ "2898739e-be89-44cf-b146-1cb7455393bd" ],
+            "3735a0a4-465a-4b98-a0d7-fb1da8000474" : [ "9204d273-13a9-4f06-9082-b80cce37814c" ],
+            "cff3e8c2-7342-41f6-be9d-c824e3a69690" : [ "54229e0e-b925-4c86-80fe-cdff9f9846a4" ],
+            "ea9ca780-c8c9-4683-9764-f276a9d53bdf" : [ "d68319a5-badc-4c1b-82d4-5f63cce5df55", "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" ],
+            "a3fa875f-429b-4e34-b72e-4fad331ce529" : [ "cff3e8c2-7342-41f6-be9d-c824e3a69690" ],
+            "2898739e-be89-44cf-b146-1cb7455393bd" : [ "3735a0a4-465a-4b98-a0d7-fb1da8000474" ],
+            "69b06ef6-2fbc-4813-9ef8-da75537ac570" : [ "ea9ca780-c8c9-4683-9764-f276a9d53bdf" ],
+            "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" : [ "75a99122-e740-4ef4-87ce-fb93a669b19d" ],
+            "v1" : [ "69b06ef6-2fbc-4813-9ef8-da75537ac570" ],
+            "9204d273-13a9-4f06-9082-b80cce37814c" : [ "a3fa875f-429b-4e34-b72e-4fad331ce529" ]
+          },
+          "allNeighbours" : [ "d68319a5-badc-4c1b-82d4-5f63cce5df55", "3735a0a4-465a-4b98-a0d7-fb1da8000474", "75a99122-e740-4ef4-87ce-fb93a669b19d", "54229e0e-b925-4c86-80fe-cdff9f9846a4", "2898739e-be89-44cf-b146-1cb7455393bd", "69b06ef6-2fbc-4813-9ef8-da75537ac570", "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069", "cd151633-37a4-4903-ac5a-f5520f18aada", "cff3e8c2-7342-41f6-be9d-c824e3a69690", "a3fa875f-429b-4e34-b72e-4fad331ce529", "ea9ca780-c8c9-4683-9764-f276a9d53bdf", "v1", "9204d273-13a9-4f06-9082-b80cce37814c" ]
+        },
+        "vertexHashMap" : {
+          "d68319a5-badc-4c1b-82d4-5f63cce5df55" : {
+            "vertexId" : "d68319a5-badc-4c1b-82d4-5f63cce5df55",
+            "vertexType" : "TARGET",
+            "name" : "CTC",
+            "target" : {
+              "name" : "CTC",
+              "description" : "CTC",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "http",
+                "host" : "ctc.com",
+                "path" : "/v1/ctc-check",
+                "headerParams" : [ ],
+                "queryParams" : [ {
+                  "name" : "CTC",
+                  "value" : "11L"
+                } ],
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 200,
+                "variables" : [ {
+                  "name" : "ctcCategory",
+                  "reference" : "body",
+                  "value" : "$.category",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "3735a0a4-465a-4b98-a0d7-fb1da8000474" : {
+            "vertexId" : "3735a0a4-465a-4b98-a0d7-fb1da8000474",
+            "vertexType" : "TARGET",
+            "name" : "CustomerDetails",
+            "target" : {
+              "name" : "CustomerDetails",
+              "description" : "CustomerDetails",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "customer.com",
+                "path" : "/v1/customer",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{{{customerData}}}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 200,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "75a99122-e740-4ef4-87ce-fb93a669b19d" : {
+            "vertexId" : "75a99122-e740-4ef4-87ce-fb93a669b19d",
+            "vertexType" : "STOP",
+            "name" : "Negative Response",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "54229e0e-b925-4c86-80fe-cdff9f9846a4" : {
+            "vertexId" : "54229e0e-b925-4c86-80fe-cdff9f9846a4",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "data" : "{\n    \"Message\":\"Your Loan has been sacntioned\"\n}",
+                "type" : "json"
+              }
+            }
+          },
+          "2898739e-be89-44cf-b146-1cb7455393bd" : {
+            "vertexId" : "2898739e-be89-44cf-b146-1cb7455393bd",
+            "vertexType" : "ASSERTION",
+            "name" : "Assertion",
+            "assertion" : {
+              "expression" : "({0})",
+              "placeHolders" : [ {
+                "rule" : "GREATER_THAN",
+                "key" : "creditScore",
+                "value" : "600",
+                "valueDataType" : "INTEGER"
+              } ],
+              "feelExpression" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "{\n    \"Message\":\"Credit score is not approvable or low\"\n}",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "69b06ef6-2fbc-4813-9ef8-da75537ac570" : {
+            "vertexId" : "69b06ef6-2fbc-4813-9ef8-da75537ac570",
+            "vertexType" : "TARGET",
+            "name" : "Salary Veriification",
+            "target" : {
+              "name" : "Salary Veriification",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "http",
+                "host" : "salary.com",
+                "path" : "/v1/salary/verify",
+                "headerParams" : [ {
+                  "name" : "jesssiond",
+                  "value" : "123123123"
+                } ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{\n    \"salary\":30,\n    \"ctc\":\"11LPA\"\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 200,
+                "variables" : [ {
+                  "name" : "salaryEligibility",
+                  "reference" : "body",
+                  "value" : "$.eligible",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" : {
+            "vertexId" : "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069",
+            "vertexType" : "TARGET",
+            "name" : "listAccounts",
+            "target" : {
+              "name" : "listAccounts",
+              "description" : "Obtain a list of accounts",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "abcd.com",
+                "path" : "/v1/accountlist/banking/accounts",
+                "headerParams" : [ {
+                  "name" : "openStatus",
+                  "value" : ""
+                }, {
+                  "name" : "accountType",
+                  "value" : ""
+                }, {
+                  "name" : "isOwned",
+                  "value" : ""
+                }, {
+                  "name" : "x-v",
+                  "value" : ""
+                }, {
+                  "name" : "participantId",
+                  "value" : ""
+                }, {
+                  "name" : "accept",
+                  "value" : ""
+                } ],
+                "queryParams" : [ ],
+                "body" : { },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 200,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "cd151633-37a4-4903-ac5a-f5520f18aada" : {
+            "vertexId" : "cd151633-37a4-4903-ac5a-f5520f18aada",
+            "vertexType" : "TARGET",
+            "name" : "CreditScore",
+            "target" : {
+              "name" : "CreditScore",
+              "description" : "CreditScore",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "http",
+                "host" : "credit.com",
+                "path" : "/v1/credit",
+                "headerParams" : [ {
+                  "name" : "",
+                  "value" : ""
+                } ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{\n    \"category\":{{{ctcCategor}}},\n    \"eleigibility\":{{{eligibilty}}}\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 200,
+                "variables" : [ {
+                  "name" : "creditScore",
+                  "reference" : "body",
+                  "value" : "$.credSore",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "cff3e8c2-7342-41f6-be9d-c824e3a69690" : {
+            "vertexId" : "cff3e8c2-7342-41f6-be9d-c824e3a69690",
+            "vertexType" : "TARGET",
+            "name" : "Sanction-Loan",
+            "target" : {
+              "name" : "Sanction-Loan",
+              "description" : "Sanction-Loan",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "http",
+                "host" : "loan.com",
+                "path" : "/sanction/loan",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{\n    \"eligiblity\":{{{eligibility}}},\n    \"ctc\":{{{ctc}}},\n    \"category\":{{{ctcCategory}}},\n    \"history\":{{{loanAmount}}}\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 200,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "ea9ca780-c8c9-4683-9764-f276a9d53bdf" : {
+            "vertexId" : "ea9ca780-c8c9-4683-9764-f276a9d53bdf",
+            "vertexType" : "CONDITIONAL_FLOW",
+            "name" : "Condition",
+            "conditionalFlow" : [ {
+              "condition" : "if",
+              "assertion" : {
+                "expression" : "({0})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "salaryEligibility",
+                  "value" : "true",
+                  "valueDataType" : "BOOLEAN"
+                } ],
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 500,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              },
+              "flowVertexes" : [ "d68319a5-badc-4c1b-82d4-5f63cce5df55" ]
+            }, {
+              "condition" : "else",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "bbe9a52b-bdd0-4820-9c8c-dd6ee6d28069" ]
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "a3fa875f-429b-4e34-b72e-4fad331ce529" : {
+            "vertexId" : "a3fa875f-429b-4e34-b72e-4fad331ce529",
+            "vertexType" : "ASSERTION",
+            "name" : "Final Condition validator",
+            "assertion" : {
+              "expression" : "({0}) && ({1}) && ({2}) && ({3})",
+              "placeHolders" : [ {
+                "rule" : "LESSER_THAN",
+                "key" : "loanAmount",
+                "value" : "50000",
+                "valueDataType" : "INTEGER"
+              }, {
+                "rule" : "EQUAL_TO",
+                "key" : "creditScore",
+                "value" : "650",
+                "valueDataType" : "INTEGER"
+              }, {
+                "rule" : "EQUAL_TO",
+                "key" : "ctcCategory",
+                "value" : "A1",
+                "valueDataType" : "STRING"
+              }, {
+                "rule" : "EQUAL_TO",
+                "key" : "salaryEligibility",
+                "value" : "true",
+                "valueDataType" : "BOOLEAN"
+              } ],
+              "feelExpression" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Start",
+            "requestVariables" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false
+          },
+          "9204d273-13a9-4f06-9082-b80cce37814c" : {
+            "vertexId" : "9204d273-13a9-4f06-9082-b80cce37814c",
+            "vertexType" : "TARGET",
+            "name" : "credit history",
+            "target" : {
+              "name" : "credit history",
+              "description" : "credit hiostory",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "http",
+                "host" : "credit.com",
+                "path" : "/v1/credit-history",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 200,
+                "variables" : [ {
+                  "name" : "loanAmount",
+                  "reference" : "body",
+                  "value" : "$.amount",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1731396576190,
+          "lastModifiedBy" : "66d5b447299d441dfc15644a",
+          "description" : "a"
+        }, {
+          "status" : "Draft",
+          "cts" : 1731391992316,
+          "lastModifiedBy" : "vidya wiz",
+          "description" : "Created new proxy"
+        } ],
+        "changeLogs" : [ {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "240b5a5627255be3cb9d878ba7eeab8922dffe3f",
+          "timeStamp" : 1731391992316,
+          "totalNodes" : 2
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "5473c3c885fca4609fbd0f7ffbf732c73b469f27",
+          "timeStamp" : 1731392271338,
+          "totalNodes" : 2
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "17dc62e9d6dd332fdddc9d83111939f9eefa3494",
+          "timeStamp" : 1731394177108,
+          "totalNodes" : 3
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "d6d75af0514683d3a55ad7e173c1cfa846f9f910",
+          "timeStamp" : 1731394289802,
+          "totalNodes" : 3
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "8b61e6259f445d217a7976d46b6d93dc11569d7b",
+          "timeStamp" : 1731394424320,
+          "totalNodes" : 4
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "2ca4f9cf3e2aae69a9f5656ef18a9bda04c12716",
+          "timeStamp" : 1731394497037,
+          "totalNodes" : 6
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "0e9e9006f2a70ace86d5c91a2e9248fd5ac039b8",
+          "timeStamp" : 1731394625896,
+          "totalNodes" : 7
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "c73c15ba09f07ef4e17ae85fa7f7610a5e623151",
+          "timeStamp" : 1731394950245,
+          "totalNodes" : 8
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "fee3354034f5443ef4c14ae8944636bfc99c8cae",
+          "timeStamp" : 1731395001541,
+          "totalNodes" : 8
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "45352239495e62ea7265d59711c50a41622e2679",
+          "timeStamp" : 1731395156743,
+          "totalNodes" : 8
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "cfad5720302d3f7718631d9e3fbca2f05d0e874d",
+          "timeStamp" : 1731395201325,
+          "totalNodes" : 9
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "7bd827c81ee23fbfe7035c54b7c0e3f2ec24b29a",
+          "timeStamp" : 1731395265407,
+          "totalNodes" : 9
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "ac61ad3d14bd225a19330a23c414a86ba9dfe504",
+          "timeStamp" : 1731395363405,
+          "totalNodes" : 10
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "3d343faccbae9b9c65b37e2ad6c74ab019d70af5",
+          "timeStamp" : 1731395935009,
+          "totalNodes" : 11
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "5dc4d6b0aa501030b96ef0016dd85883fb17c573",
+          "timeStamp" : 1731396066619,
+          "totalNodes" : 12
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "e20c44b3fe1fae837dc112e9db3e338b7538516d",
+          "timeStamp" : 1731396202900,
+          "totalNodes" : 13
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "70bed5bf113da6e383ff986b72a860b9d26f943e",
+          "timeStamp" : 1731396276740,
+          "totalNodes" : 13
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "acac6acaa75ea58f46513af198dd9c4d5333d98d",
+          "timeStamp" : 1731396543009,
+          "totalNodes" : 13
+        } ],
+        "virtualHostList" : [ {
+          "id" : "66dc0ef2e836d076001b628b",
+          "name" : "stage-data",
+          "timeStamp" : 1731396713087
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : true,
+        "deleted" : false
       }
     }
   }, {
@@ -404,6 +1131,33 @@
         "validated" : true
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "682e31412d820556c5f23c86",
+        "cts" : 1747857729040,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1747857729040,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
+        "name" : "Stage-Data DB",
+        "description" : "Stage-Data DB",
+        "host" : "10.10.12.20:27017/apiwiz",
+        "scheme" : "mongodb",
+        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz",
+          "password" : "Kufas2spaprunof",
+          "authenticationDatabase" : "admin",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -412,8 +1166,15 @@
       "name" : "NONA",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "6943f457d4167432fe665c73" ],
+      "attachedProxies" : [ "6732f1fd3bf1244914c7cd48" ],
+      "attachedConnectors" : [ "68398acdbb9e4f4731cd78c3", "682e31412d820556c5f23c86" ]
+    }, {
+      "id" : "6732f1fd3bf1244914c7cd48",
+      "proxyid" : "6732f1f83bf1244914c7cd47",
+      "name" : "Loan Sanction ",
+      "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "67e10a58ed1ae94ac8709a58", "66fa9be66f8f1845387da8ef", "68398acdbb9e4f4731cd78c3" ]
+      "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -429,14 +1190,11 @@
       "attachedConnectors" : [ ]
     } ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "66fa9be66f8f1845387da8ef",
-      "name" : "opa-connector"
-    }, {
-      "id" : "67e10a58ed1ae94ac8709a58",
-      "name" : "Temp"
-    }, {
       "id" : "68398acdbb9e4f4731cd78c3",
       "name" : "redis connection 1"
+    }, {
+      "id" : "682e31412d820556c5f23c86",
+      "name" : "Stage-Data DB"
     } ]
   }
 }
