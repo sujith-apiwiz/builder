@@ -1,5 +1,5 @@
 {
-  "cts" : 1766483640986,
+  "cts" : 1766483699311,
   "name" : "New Workflow 1",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766394088351,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766483640983,
+        "mts" : 1766483699305,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -89,8 +89,8 @@
           "description" : "Created new proxy"
         } ],
         "enableTracing" : true,
-        "environmentName" : "",
-        "environmentId" : "",
+        "environmentName" : "alpha-env",
+        "environmentId" : "694a66a453b6916b367fa8b7",
         "selectedVirtualHostName" : "",
         "selectedVirtualHostId" : "",
         "kafkaConnectorId" : "",
@@ -109,15 +109,15 @@
       "id" : "694908e85e492342f9dfcbc2",
       "proxyid" : "694908e85e492342f9dfcbc1",
       "name" : "New Workflow 1",
-      "attachedEnv" : "",
+      "attachedEnv" : "694a66a453b6916b367fa8b7",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
-      "id" : "",
-      "name" : ""
+      "id" : "694a66a453b6916b367fa8b7",
+      "name" : "alpha-env"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ ]
