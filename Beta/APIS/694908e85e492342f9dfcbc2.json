@@ -1,5 +1,5 @@
 {
-  "cts" : 1766489227561,
+  "cts" : 1766489273300,
   "name" : "New Workflow 1",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766394088351,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766489227559,
+        "mts" : 1766489273219,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/v2/team",
         "pathArray" : [ "v2", "team" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
@@ -48,7 +48,7 @@
                 "content-type" : "application/json"
               },
               "body" : {
-                "data" : "{{beta1}}",
+                "data" : "",
                 "type" : "json"
               }
             }
@@ -87,11 +87,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1766489264201,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766489232915,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1766394088351,
           "lastModifiedBy" : "First user",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : true,
         "environmentName" : "env-beta",
         "environmentId" : "694a79d76027251a93ebea8c",
