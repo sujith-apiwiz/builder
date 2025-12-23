@@ -1,5 +1,5 @@
 {
-  "cts" : 1766472688578,
+  "cts" : 1766472706595,
   "name" : "New Workflow 1",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766394088351,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766472688510,
+        "mts" : 1766472706593,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -21,8 +21,8 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/v1/team",
-        "pathArray" : [ "v1", "team" ],
+        "path" : "/v2/team",
+        "pathArray" : [ "v2", "team" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "Apiwiz Admin",
