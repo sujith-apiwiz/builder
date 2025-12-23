@@ -1,5 +1,5 @@
 {
-  "cts" : 1766480884345,
+  "cts" : 1766481135303,
   "name" : "New Workflow 1",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766394088351,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766480884278,
+        "mts" : 1766481133714,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -63,7 +63,7 @@
               "hide" : false,
               "feelExpression" : false
             } ],
-            "mandatoryHeaders" : [ ],
+            "mandatoryHeaders" : [ "beta" ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
             "skipRuntimeVariables" : false,
