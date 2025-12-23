@@ -1,0 +1,116 @@
+{
+  "cts" : 1766489336656,
+  "name" : "New Workflow 5",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "694a7cf86027251a93ebec6c",
+        "cts" : 1766489336587,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1766489336587,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "694a7cf86027251a93ebec6b",
+        "revision" : 1,
+        "name" : "New Workflow 5",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/tbac-test",
+        "pathArray" : [ "tbac-test" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" ]
+          },
+          "allNeighbours" : [ "v1", "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" ]
+        },
+        "vertexHashMap" : {
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" : {
+            "vertexId" : "339215bd-3e6d-4a26-98eb-8bf9600f1b3e",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766489336587,
+          "lastModifiedBy" : "Apiwiz Admin",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : true,
+        "environmentName" : "env-beta",
+        "environmentId" : "694a79d76027251a93ebea8c",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "694a7cf86027251a93ebec6c",
+      "proxyid" : "694a7cf86027251a93ebec6b",
+      "name" : "New Workflow 5",
+      "attachedEnv" : "694a79d76027251a93ebea8c",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "694a79d76027251a93ebea8c",
+      "name" : "env-beta"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
