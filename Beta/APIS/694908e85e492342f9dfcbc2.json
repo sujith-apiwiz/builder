@@ -1,5 +1,5 @@
 {
-  "cts" : 1766489273300,
+  "cts" : 1766489298985,
   "name" : "New Workflow 1",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766394088351,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766489273219,
+        "mts" : 1766489298827,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -88,6 +88,16 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1766489291790,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1766489277073,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Review",
           "cts" : 1766489264201,
           "lastModifiedBy" : "6943a6099f593fb753fe6911",
           "description" : "Proxy undeploy"
@@ -104,8 +114,8 @@
         } ],
         "virtualHostList" : [ ],
         "enableTracing" : true,
-        "environmentName" : "env-beta",
-        "environmentId" : "694a79d76027251a93ebea8c",
+        "environmentName" : "Clear environment",
+        "environmentId" : "",
         "selectedVirtualHostName" : "",
         "selectedVirtualHostId" : "",
         "kafkaConnectorId" : "",
@@ -124,15 +134,15 @@
       "id" : "694908e85e492342f9dfcbc2",
       "proxyid" : "694908e85e492342f9dfcbc1",
       "name" : "New Workflow 1",
-      "attachedEnv" : "694a79d76027251a93ebea8c",
+      "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
-      "id" : "694a79d76027251a93ebea8c",
-      "name" : "env-beta"
+      "id" : "",
+      "name" : "Clear environment"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ ]
