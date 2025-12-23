@@ -1,0 +1,125 @@
+{
+  "cts" : 1766473299558,
+  "name" : "New Workflow 1",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "694908e85e492342f9dfcbc2",
+        "cts" : 1766394088351,
+        "createdUserName" : "First user",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1766473299556,
+        "createdBy" : "6948eef7a364ea598e8b58c2",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "694908e85e492342f9dfcbc1",
+        "revision" : 1,
+        "name" : "New Workflow 1",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/v2/team",
+        "pathArray" : [ "v2", "team" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "03cabee1-b8d4-4e27-8b87-0eaf5e13dfa7" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "03cabee1-b8d4-4e27-8b87-0eaf5e13dfa7" ]
+          },
+          "allNeighbours" : [ "03cabee1-b8d4-4e27-8b87-0eaf5e13dfa7", "v1" ]
+        },
+        "vertexHashMap" : {
+          "03cabee1-b8d4-4e27-8b87-0eaf5e13dfa7" : {
+            "vertexId" : "03cabee1-b8d4-4e27-8b87-0eaf5e13dfa7",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "path1",
+              "reference" : "path-variable",
+              "value" : "path1",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766394088351,
+          "lastModifiedBy" : "First user",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : true,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "694908e85e492342f9dfcbc2",
+      "proxyid" : "694908e85e492342f9dfcbc1",
+      "name" : "New Workflow 1",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
