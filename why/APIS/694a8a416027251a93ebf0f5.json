@@ -1,0 +1,370 @@
+{
+  "cts" : 1766492737864,
+  "name" : "Apply Credit Card",
+  "exportedBy" : "Kiran Kamble",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "694a8a416027251a93ebf0f5",
+        "cts" : 1766492737716,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766492737716,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ ],
+        "proxyId" : "6652b6264289865ae027e452",
+        "revision" : 3,
+        "name" : "Apply Credit Card",
+        "description" : "Consumer card application workflow",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "POST",
+        "path" : "/v1/cards/application",
+        "pathArray" : [ "v1", "cards", "application" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Kiran Kamble",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "6d44afa2-2f38-4d59-8590-a226f15a5cb2" : [ "1d2285a4-5801-4dc2-a60a-b8c774749095" ],
+            "3a897526-048c-44e8-8eaa-ef8354e9e850" : [ "v1" ],
+            "e5f418f0-880f-4faa-95d9-c0fe07f12a62" : [ "6d44afa2-2f38-4d59-8590-a226f15a5cb2" ],
+            "586d5397-d36d-484c-aad4-5e5fca4989d4" : [ "e5f418f0-880f-4faa-95d9-c0fe07f12a62" ],
+            "1d2285a4-5801-4dc2-a60a-b8c774749095" : [ "3a897526-048c-44e8-8eaa-ef8354e9e850" ]
+          },
+          "outbound" : {
+            "3a897526-048c-44e8-8eaa-ef8354e9e850" : [ "1d2285a4-5801-4dc2-a60a-b8c774749095" ],
+            "6d44afa2-2f38-4d59-8590-a226f15a5cb2" : [ "e5f418f0-880f-4faa-95d9-c0fe07f12a62" ],
+            "e5f418f0-880f-4faa-95d9-c0fe07f12a62" : [ "586d5397-d36d-484c-aad4-5e5fca4989d4" ],
+            "v1" : [ "3a897526-048c-44e8-8eaa-ef8354e9e850" ],
+            "1d2285a4-5801-4dc2-a60a-b8c774749095" : [ "6d44afa2-2f38-4d59-8590-a226f15a5cb2" ]
+          },
+          "allNeighbours" : [ "6d44afa2-2f38-4d59-8590-a226f15a5cb2", "3a897526-048c-44e8-8eaa-ef8354e9e850", "e5f418f0-880f-4faa-95d9-c0fe07f12a62", "v1", "586d5397-d36d-484c-aad4-5e5fca4989d4", "1d2285a4-5801-4dc2-a60a-b8c774749095" ]
+        },
+        "vertexHashMap" : {
+          "e5f418f0-880f-4faa-95d9-c0fe07f12a62" : {
+            "vertexId" : "e5f418f0-880f-4faa-95d9-c0fe07f12a62",
+            "vertexType" : "TARGET",
+            "name" : "Send Card Notification",
+            "target" : {
+              "name" : "Send Card Notification",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "acmebank-app.apiwiz.io",
+                "path" : "/{{env}}/v1/cards/notifications/trigger",
+                "headerParams" : [ {
+                  "name" : "Authorization",
+                  "value" : "{{access_token}}"
+                }, {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{\n    \"id\": 987654321,\n    \"mode\":\"EMAIL\",\n    \"type\":\"APPLICATION_CREATION_STATUS\"\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 0,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 0,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Start",
+            "requestVariables" : [ {
+              "name" : "cardResponse",
+              "reference" : "body",
+              "value" : "$",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "id",
+              "reference" : "body",
+              "value" : "id",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "586d5397-d36d-484c-aad4-5e5fca4989d4" : {
+            "vertexId" : "586d5397-d36d-484c-aad4-5e5fca4989d4",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "data" : "{\n    \"response\": {{{response}}}\n}",
+                "type" : "json"
+              }
+            }
+          },
+          "3a897526-048c-44e8-8eaa-ef8354e9e850" : {
+            "vertexId" : "3a897526-048c-44e8-8eaa-ef8354e9e850",
+            "vertexType" : "AUTHENTICATION",
+            "name" : "Get OAuth Token",
+            "target" : {
+              "name" : "Get OAuth Token",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "acmebank-app.apiwiz.io",
+                "path" : "/oauth2/token",
+                "headerParams" : [ {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{\n    \"client_id\": \"Yr0p1cDus68U2S7KXvwOuGAPz1HDmbCX\",\n    \"client_secret\": \"kQtWYLiTUJJFoyZdUKqDEPgA7u3TrPuk\",\n    \"grant_type\": \"client_credentials\"\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 0,
+                "variables" : [ {
+                  "name" : "access_token",
+                  "reference" : "body",
+                  "value" : "access_token",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 0,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "6d44afa2-2f38-4d59-8590-a226f15a5cb2" : {
+            "vertexId" : "6d44afa2-2f38-4d59-8590-a226f15a5cb2",
+            "vertexType" : "TARGET",
+            "name" : "Update Card Application",
+            "target" : {
+              "name" : "Update Card Application",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "PATCH",
+                "scheme" : "https",
+                "host" : "acmebank-app.apiwiz.io",
+                "path" : "/{{env}}/v1/cards/application",
+                "headerParams" : [ {
+                  "name" : "Authorization",
+                  "value" : "{{access_token}}"
+                }, {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{\n    \"id\": 987654321,\n    \"status\":\"APPROVED\"\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 0,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 0,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "1d2285a4-5801-4dc2-a60a-b8c774749095" : {
+            "vertexId" : "1d2285a4-5801-4dc2-a60a-b8c774749095",
+            "vertexType" : "TARGET",
+            "name" : "New Card Application",
+            "target" : {
+              "name" : "New Card Application",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "acmebank-app.apiwiz.io",
+                "path" : "/{{env}}/v1/cards/application",
+                "headerParams" : [ {
+                  "name" : "Authorization",
+                  "value" : "{{access_token}}"
+                }, {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ ],
+                "body" : {
+                  "data" : "{\n    \"id\": 987654321,\n    \"type\":\"STANDARD\"\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 0,
+                "variables" : [ {
+                  "name" : "response",
+                  "reference" : "body",
+                  "value" : "$",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 0,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766492737716,
+          "lastModifiedBy" : "Kiran Kamble",
+          "description" : "Created new proxy revision"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "694a8a416027251a93ebf0f5",
+      "proxyid" : "6652b6264289865ae027e452",
+      "name" : "Apply Credit Card",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
