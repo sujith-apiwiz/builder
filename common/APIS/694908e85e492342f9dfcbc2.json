@@ -1,5 +1,5 @@
 {
-  "cts" : 1766472706595,
+  "cts" : 1766472775894,
   "name" : "New Workflow 1",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766394088351,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766472706593,
+        "mts" : 1766472775892,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -54,9 +54,9 @@
             "vertexType" : "START",
             "name" : "Request",
             "requestVariables" : [ {
-              "name" : "path",
+              "name" : "path1",
               "reference" : "path-variable",
-              "value" : "path",
+              "value" : "path1",
               "variableDataType" : "STRING",
               "active" : true,
               "source" : "path-variable",
