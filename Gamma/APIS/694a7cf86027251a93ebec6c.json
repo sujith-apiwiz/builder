@@ -1,5 +1,5 @@
 {
-  "cts" : 1766555361712,
+  "cts" : 1766567469319,
   "name" : "New Workflow 5",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766489336587,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766555354599,
+        "mts" : 1766567463785,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -45,8 +45,8 @@
             "target" : {
               "name" : "rest",
               "apiType" : "RESTAPI",
-              "certificateId" : "694b75036027251a93ebf508",
-              "certificateName" : "alpha-beta-gamma",
+              "certificateId" : "694b749c6027251a93ebf4ab",
+              "certificateName" : "alpha",
               "request" : {
                 "apiMethod" : "POST",
                 "scheme" : "https",
@@ -183,8 +183,8 @@
         } ],
         "virtualHostList" : [ ],
         "enableTracing" : true,
-        "environmentName" : "Clear environment",
-        "environmentId" : "",
+        "environmentName" : "alpha-beta",
+        "environmentId" : "694b6f166027251a93ebf2af",
         "selectedVirtualHostName" : "",
         "selectedVirtualHostId" : "",
         "kafkaConnectorId" : "",
@@ -202,38 +202,32 @@
     "collectionName" : "ApiBuilder.Certificate.List",
     "data" : {
       "certificateData" : {
-        "id" : "694b75036027251a93ebf508",
-        "cts" : 1766552835706,
+        "id" : "694b749c6027251a93ebf4ab",
+        "cts" : 1766552732508,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766553176750,
+        "mts" : 1766553127465,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ {
           "id" : "694a2d335e492342f9dff258",
           "name" : "Alpha"
-        }, {
-          "id" : "6948f1e0a364ea598e8b59c9",
-          "name" : "Beta"
-        }, {
-          "id" : "694a271e5e492342f9dfef91",
-          "name" : "Gamma"
         } ],
-        "name" : "alpha-beta-gamma",
+        "name" : "alpha",
         "content" : "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURyekNDQXBlZ0F3SUJBZ0lVUlhaTEo0M1MrOEJqaGlKZVNtTjFoMWVVL2xnd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1p6RUxNQWtHQTFVRUJoTUNTVTR4RWpBUUJnTlZCQWdNQ1V0QlVrNUJWRUZMUVRFU01CQUdBMVVFQnd3SgpRbUZ1WjJGc2IzSmxNUTh3RFFZRFZRUUtEQVpCVUVsM2FYb3hDakFJQmdOVkJBc01BV0V4RXpBUkJnTlZCQU1NCkNpb3VaR1Z0Ynk1amIyMHdIaGNOTWpVeE1ESTBNRFUwTnpVeVdoY05NalV4TVRJek1EVTBOelV5V2pCbk1Rc3cKQ1FZRFZRUUdFd0pKVGpFU01CQUdBMVVFQ0F3SlMwRlNUa0ZVUVV0Qk1SSXdFQVlEVlFRSERBbENZVzVuWVd4dgpjbVV4RHpBTkJnTlZCQW9NQmtGUVNYZHBlakVLTUFnR0ExVUVDd3dCWVRFVE1CRUdBMVVFQXd3S0tpNWtaVzF2CkxtTnZiVENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNRGQ0ZGVlZlF0QXFKS2sKaU1BemRxZnVCRzU0dTVuYlFlckp3RWI2eElpYkdnMllzT2pCSUlHMC9JSk1ZVW9tZW15bUVXUUtqVU5HOVJyeApoWi81UUpqazAzZzJrcDViVlVwc0ZaY0FXQnVyK2dLWGNmK0xEY0oyNjgwUTluRkw3TnM3ZTc5MXFKOGhmWnBVCmdGMHAwaFBFVTBpZmFxUVR5YVVvYXlnczRpdDlJL0pwNUY4b3BFdDJlYXdZM1pnUGpjTm9IN2FjcUoyMkwxME0KNnZDZ0U0TlhWMCtyTlR0ZWNqM2R5QiswalNIeGk1MGs3ejllcUFCZnpnUWh2L3FocWJveTBoY1dtZjlHL1JhZQpMdEl0V2YxRnVYVjFabTFoQ0hvUXY2aVZqOU9xdG91M2FMYUdsQ2MrMUtsSnlQcmVxcHM1UWllTGJrY0lYQVdoCnRqUUk5ck1DQXdFQUFhTlRNRkV3SFFZRFZSME9CQllFRkpURnR6d1lHT1R1UTY5OUVTb1BmQzFsOVRZNE1COEcKQTFVZEl3UVlNQmFBRkpURnR6d1lHT1R1UTY5OUVTb1BmQzFsOVRZNE1BOEdBMVVkRXdFQi93UUZNQU1CQWY4dwpEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBREUwbXpXaEQ2c2FtcFFmQmxFL0xOT0hLUm1NcUpCMXhkM0FHaWsxCnZqRkd4N05xU2ZuMGJ4RXZjczREQmlEU0VDKzdsVVFtczNyWjlEcUFVVHB2NjBNSGFqTmlLTmRsbnA3NzhRd3YKZCtHbGQ1L3Z1TFhWeFVKMmVYS29GWWUvL1hDTWdsMjFSeFJkNDlMeDJVMTFRcGhQa0lnNGJKaXljMWNnQlhXSApnRHh5TDFTYVZPeXUrbmkvVGFQaFE4SWN3Nnl2dVRwMkI2NlV5VHJKRXNQeTRlUnlaS0xMeHVqU3dHWnRiZ0UwCnBEM0NyZGJYa3NxTHhhSm1MeEZ6ajVKcURzRTE4S0VOcXNIK2NRZHIvbW1IVUN6RUJjZVlGdnNwZEYza0M4RTIKUUdTNjErMkhyZTV1T2pOdkEzN3A3ZTkrc2ZtRlFUQ2xXRWcydnZJWm5iUlNuOU09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
-        "description" : "alpha-beta-gamma",
+        "description" : "alpha",
         "certificateFileName" : "server.crt",
         "password" : "null",
         "alias" : "",
         "status" : "APPROVED",
         "statusHistory" : [ {
           "status" : "Approved",
-          "cts" : 1766553176750,
+          "cts" : 1766553127465,
           "lastModifiedBy" : "Apiwiz Admin",
           "description" : " "
         }, {
           "status" : "Draft",
-          "cts" : 1766552835706,
+          "cts" : 1766552732508,
           "lastModifiedBy" : "Apiwiz Admin",
           "description" : "Created new certificate"
         } ]
@@ -245,21 +239,21 @@
       "id" : "694a7cf86027251a93ebec6c",
       "proxyid" : "694a7cf86027251a93ebec6b",
       "name" : "New Workflow 5",
-      "attachedEnv" : "",
+      "attachedEnv" : "694b6f166027251a93ebf2af",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "694b75036027251a93ebf508" ]
+      "attachedConnectors" : [ "694b749c6027251a93ebf4ab" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
-      "id" : "",
-      "name" : "Clear environment"
+      "id" : "694b6f166027251a93ebf2af",
+      "name" : "alpha-beta"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "694b75036027251a93ebf508",
-      "name" : "alpha-beta-gamma",
-      "description" : "alpha-beta-gamma"
+      "id" : "694b749c6027251a93ebf4ab",
+      "name" : "alpha",
+      "description" : "alpha"
     } ]
   }
 }
