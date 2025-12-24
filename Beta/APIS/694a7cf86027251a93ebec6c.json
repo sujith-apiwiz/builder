@@ -1,7 +1,7 @@
 {
-  "cts" : 1766489534195,
+  "cts" : 1766551436583,
   "name" : "New Workflow 5",
-  "exportedBy" : "First user",
+  "exportedBy" : "Apiwiz Admin",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,10 @@
         "id" : "694a7cf86027251a93ebec6c",
         "cts" : 1766489336587,
         "createdUserName" : "Apiwiz Admin",
-        "modifiedUserName" : "First user",
-        "mts" : 1766489534192,
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1766551436580,
         "createdBy" : "6943a6099f593fb753fe6911",
-        "modifiedBy" : "6948eef7a364ea598e8b58c2",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
         "proxyId" : "694a7cf86027251a93ebec6b",
         "revision" : 1,
@@ -25,7 +25,7 @@
         "pathArray" : [ "tbac-test" ],
         "revisionStatus" : "REVIEW",
         "locked" : true,
-        "lockedBy" : "First user",
+        "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
             "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" : [ "v1" ]
@@ -71,7 +71,7 @@
                 "content-type" : "application/json"
               },
               "body" : {
-                "data" : "{{beta1}}",
+                "data" : "{{c1}}",
                 "type" : "json"
               }
             }
@@ -95,8 +95,8 @@
         } ],
         "virtualHostList" : [ ],
         "enableTracing" : true,
-        "environmentName" : "env-common",
-        "environmentId" : "694a79f06027251a93ebea8f",
+        "environmentName" : "beta-gamma",
+        "environmentId" : "694b6f2c6027251a93ebf2b2",
         "selectedVirtualHostName" : "",
         "selectedVirtualHostId" : "",
         "kafkaConnectorId" : "",
@@ -115,15 +115,15 @@
       "id" : "694a7cf86027251a93ebec6c",
       "proxyid" : "694a7cf86027251a93ebec6b",
       "name" : "New Workflow 5",
-      "attachedEnv" : "694a79f06027251a93ebea8f",
+      "attachedEnv" : "694b6f2c6027251a93ebf2b2",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
-      "id" : "694a79f06027251a93ebea8f",
-      "name" : "env-common"
+      "id" : "694b6f2c6027251a93ebf2b2",
+      "name" : "beta-gamma"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ ]
