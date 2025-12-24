@@ -1,5 +1,5 @@
 {
-  "cts" : 1766567487460,
+  "cts" : 1766567652198,
   "name" : "New Workflow 5",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766489336587,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766567482428,
+        "mts" : 1766567646852,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -29,15 +29,77 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "8d871f57-1d34-494e-85f4-ecb6c4cff703" : [ "v1" ],
-            "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" : [ "8d871f57-1d34-494e-85f4-ecb6c4cff703" ]
+            "d4c5653c-a826-4dd1-b838-8e5e75c3100d" : [ "8d871f57-1d34-494e-85f4-ecb6c4cff703" ],
+            "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" : [ "d4c5653c-a826-4dd1-b838-8e5e75c3100d" ]
           },
           "outbound" : {
             "v1" : [ "8d871f57-1d34-494e-85f4-ecb6c4cff703" ],
-            "8d871f57-1d34-494e-85f4-ecb6c4cff703" : [ "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" ]
+            "8d871f57-1d34-494e-85f4-ecb6c4cff703" : [ "d4c5653c-a826-4dd1-b838-8e5e75c3100d" ],
+            "d4c5653c-a826-4dd1-b838-8e5e75c3100d" : [ "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" ]
           },
-          "allNeighbours" : [ "8d871f57-1d34-494e-85f4-ecb6c4cff703", "v1", "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" ]
+          "allNeighbours" : [ "d4c5653c-a826-4dd1-b838-8e5e75c3100d", "8d871f57-1d34-494e-85f4-ecb6c4cff703", "v1", "339215bd-3e6d-4a26-98eb-8bf9600f1b3e" ]
         },
         "vertexHashMap" : {
+          "d4c5653c-a826-4dd1-b838-8e5e75c3100d" : {
+            "vertexId" : "d4c5653c-a826-4dd1-b838-8e5e75c3100d",
+            "vertexType" : "TARGET",
+            "name" : "fxg",
+            "target" : {
+              "name" : "fxg",
+              "apiType" : "GRAPHQL",
+              "certificateId" : "694b75036027251a93ebf508",
+              "certificateName" : "alpha-beta-gamma",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "sdf",
+                "path" : "/",
+                "headerParams" : [ {
+                  "name" : "Content-Type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "RAW",
+                "body" : {
+                  "data" : "{\n\t\"query\": \"\",\n\t\"variables\": {}\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "8d871f57-1d34-494e-85f4-ecb6c4cff703" : {
             "vertexId" : "8d871f57-1d34-494e-85f4-ecb6c4cff703",
             "vertexType" : "TARGET",
