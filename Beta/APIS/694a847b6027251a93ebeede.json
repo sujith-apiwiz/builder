@@ -1,5 +1,5 @@
 {
-  "cts" : 1766555631480,
+  "cts" : 1766730874189,
   "name" : "TestFlow",
   "exportedBy" : "First user",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766491259070,
         "createdUserName" : "First user",
         "modifiedUserName" : "First user",
-        "mts" : 1766555631468,
+        "mts" : 1766730874029,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6948eef7a364ea598e8b58c2",
         "taggedTeams" : [ ],
@@ -47,8 +47,6 @@
             "target" : {
               "name" : "seadsxa",
               "apiType" : "RESTAPI",
-              "certificateId" : "694b73e86027251a93ebf453",
-              "certificateName" : "testK",
               "request" : {
                 "apiMethod" : "GET",
                 "scheme" : "https",
@@ -177,60 +175,8 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deleted" : false,
-        "deployed" : false
-      }
-    }
-  }, {
-    "type" : "connector",
-    "collectionName" : "ApiBuilder.Certificate.List",
-    "data" : {
-      "certificateData" : {
-        "id" : "694b73e86027251a93ebf453",
-        "cts" : 1766552552843,
-        "createdUserName" : "First user",
-        "modifiedUserName" : "First user",
-        "mts" : 1766554685417,
-        "createdBy" : "6948eef7a364ea598e8b58c2",
-        "modifiedBy" : "6948eef7a364ea598e8b58c2",
-        "taggedTeams" : [ {
-          "id" : "6948f1e0a364ea598e8b59c9",
-          "name" : "Beta"
-        }, {
-          "id" : "694a2d335e492342f9dff258",
-          "name" : "Alpha"
-        }, {
-          "id" : "694a271e5e492342f9dfef91"
-        } ],
-        "name" : "testK",
-        "description" : "sd",
-        "certificateFileName" : "cert.cer",
-        "password" : "null",
-        "alias" : "",
-        "status" : "APPROVED",
-        "statusHistory" : [ {
-          "status" : "Approved",
-          "cts" : 1766554685417,
-          "lastModifiedBy" : "First user"
-        }, {
-          "status" : "Approved",
-          "cts" : 1766554655553,
-          "lastModifiedBy" : "First user"
-        }, {
-          "status" : "Approved",
-          "cts" : 1766554264604,
-          "lastModifiedBy" : "First user",
-          "description" : " "
-        }, {
-          "status" : "Draft",
-          "cts" : 1766552641068,
-          "lastModifiedBy" : "second user"
-        }, {
-          "status" : "Draft",
-          "cts" : 1766552552844,
-          "lastModifiedBy" : "First user",
-          "description" : "Created new certificate"
-        } ]
+        "deployed" : false,
+        "deleted" : false
       }
     }
   }, {
@@ -273,7 +219,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "694a85906027251a93ebef2e", "694b73e86027251a93ebf453" ]
+      "attachedConnectors" : [ "694a85906027251a93ebef2e" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -282,10 +228,6 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "694b73e86027251a93ebf453",
-      "name" : "testK",
-      "description" : "sd"
-    }, {
       "id" : "694a85906027251a93ebef2e",
       "name" : "TestDB-ABC"
     } ]
