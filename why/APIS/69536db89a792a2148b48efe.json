@@ -1,5 +1,5 @@
 {
-  "cts" : 1767075583387,
+  "cts" : 1767076048265,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767075583385,
+        "mts" : 1767076048261,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -145,7 +145,7 @@
             "conditionalFlow" : [ {
               "condition" : "if",
               "assertion" : {
-                "expression" : "({0} && {1} && {2}) || ({3} && {4} && {5} && {6} && {7})",
+                "expression" : "({0} && {1} && {2}) || ({3} && {4} && {5} && {6} && {7}) && ({8} || {9} || {10})",
                 "placeHolders" : [ {
                   "rule" : "EQUAL_TO",
                   "key" : "c2",
@@ -170,6 +170,21 @@
                   "rule" : "EQUAL_TO",
                   "key" : "c4",
                   "value" : "c4",
+                  "valueDataType" : "STRING"
+                }, {
+                  "rule" : "EQUAL_TO",
+                  "key" : "c5",
+                  "value" : "c5",
+                  "valueDataType" : "STRING"
+                }, {
+                  "rule" : "EQUAL_TO",
+                  "key" : "c6",
+                  "value" : "c6",
+                  "valueDataType" : "STRING"
+                }, {
+                  "rule" : "EQUAL_TO",
+                  "key" : "c7",
+                  "value" : "c7",
                   "valueDataType" : "STRING"
                 }, {
                   "rule" : "EQUAL_TO",
