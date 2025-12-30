@@ -1,5 +1,5 @@
 {
-  "cts" : 1767075558756,
+  "cts" : 1767075570507,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767075558753,
+        "mts" : 1767075570505,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -29,15 +29,29 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "v1" ],
-            "5d70d8f6-1c25-4501-9010-7d20179160f1" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ]
+            "5d70d8f6-1c25-4501-9010-7d20179160f1" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
+            "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ]
           },
           "outbound" : {
             "v1" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
-            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
+            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
           },
-          "allNeighbours" : [ "v1", "ac577b84-f290-45d4-ac50-de444ac69bfe", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
+          "allNeighbours" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "v1", "ac577b84-f290-45d4-ac50-de444ac69bfe", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
         },
         "vertexHashMap" : {
+          "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : {
+            "vertexId" : "0d5bbd5b-9728-4f89-a3a1-b1084749cf98",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -193,7 +207,8 @@
                 "skip" : false,
                 "showActualErrorMessage" : false,
                 "continueOnError" : false
-              }
+              },
+              "flowVertexes" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" ]
             } ],
             "imported" : false,
             "skipRuntimeVariables" : false
