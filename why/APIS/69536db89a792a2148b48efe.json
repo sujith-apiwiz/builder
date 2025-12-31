@@ -1,5 +1,5 @@
 {
-  "cts" : 1767165108550,
+  "cts" : 1767165182985,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767165108548,
+        "mts" : 1767165182982,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -32,18 +32,20 @@
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
             "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
-            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
-            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ]
+            "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
+            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
+            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ]
           },
           "outbound" : {
             "v1" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ],
             "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
-            "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
-            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
+            "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ],
+            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
+            "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ]
           },
-          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
+          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "07875599-2b0e-4b2d-baac-5f0e61e64e7f", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "v1" ]
         },
         "vertexHashMap" : {
           "ccd48df9-4e36-4405-a468-9886890fb2bc" : {
@@ -82,6 +84,71 @@
               },
               "customResponseMapping" : false,
               "responsePathMapping" : { }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : {
+            "vertexId" : "07875599-2b0e-4b2d-baac-5f0e61e64e7f",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
+            "description" : "",
+            "callWorkflowData" : {
+              "childWorkflowId" : "672c5c825d5d82602a2abafb",
+              "childWorkflowName" : "call workflow",
+              "virtualHostId" : "66dc0ef2e836d076001b628b",
+              "virtualHostName" : "stage-data",
+              "request" : {
+                "headerParams" : [ {
+                  "name" : "h1",
+                  "value" : "v1"
+                }, {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ {
+                  "name" : "q1",
+                  "value" : "v1"
+                } ],
+                "targetRequestBodyType" : "RAW",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ {
+                  "name" : "extract_header_1",
+                  "reference" : "headers",
+                  "value" : "v1",
+                  "active" : true,
+                  "source" : "headers",
+                  "hide" : false,
+                  "feelExpression" : false
+                }, {
+                  "name" : "extract_payload",
+                  "reference" : "body",
+                  "value" : "$",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
             },
             "imported" : false,
             "skipRuntimeVariables" : false
@@ -332,6 +399,162 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "672c5c825d5d82602a2abafb",
+        "cts" : 1730960508212,
+        "createdUserName" : "vidya wiz",
+        "modifiedUserName" : "vidya wiz",
+        "mts" : 1730960935389,
+        "createdBy" : "66d5b447299d441dfc15644a",
+        "modifiedBy" : "66d5b447299d441dfc15644a",
+        "taggedTeams" : [ ],
+        "proxyId" : "672c5c7c5d5d82602a2abafa",
+        "revision" : 1,
+        "name" : "call workflow",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/callWorkflow",
+        "pathArray" : [ "callWorkflow" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "vidya wiz",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "aba752ce-29b7-4721-af94-d06e9d3860a0" : [ "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" ],
+            "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" ],
+            "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" : [ "aba752ce-29b7-4721-af94-d06e9d3860a0" ]
+          },
+          "allNeighbours" : [ "v1", "aba752ce-29b7-4721-af94-d06e9d3860a0", "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" ]
+        },
+        "vertexHashMap" : {
+          "aba752ce-29b7-4721-af94-d06e9d3860a0" : {
+            "vertexId" : "aba752ce-29b7-4721-af94-d06e9d3860a0",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Start",
+            "requestVariables" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false
+          },
+          "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" : {
+            "vertexId" : "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b",
+            "vertexType" : "ASSERTION",
+            "name" : "Assertion",
+            "assertion" : {
+              "expression" : "({0})",
+              "placeHolders" : [ {
+                "rule" : "EQUAL_TO",
+                "key" : "env",
+                "value" : "dev",
+                "valueDataType" : "STRING"
+              } ],
+              "feelExpression" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1730960900594,
+          "lastModifiedBy" : "66d5b447299d441dfc15644a",
+          "description" : "a"
+        }, {
+          "status" : "Review",
+          "cts" : 1730960876636,
+          "lastModifiedBy" : "66d5b447299d441dfc15644a",
+          "description" : "r"
+        }, {
+          "status" : "Approved",
+          "cts" : 1730960830397,
+          "lastModifiedBy" : "66d5b447299d441dfc15644a",
+          "description" : "a"
+        }, {
+          "status" : "Draft",
+          "cts" : 1730960795931,
+          "lastModifiedBy" : "66d5b447299d441dfc15644a",
+          "description" : "d"
+        }, {
+          "status" : "Approved",
+          "cts" : 1730960763022,
+          "lastModifiedBy" : "66d5b447299d441dfc15644a",
+          "description" : "a"
+        }, {
+          "status" : "Draft",
+          "cts" : 1730960508212,
+          "lastModifiedBy" : "vidya wiz",
+          "description" : "Created new proxy"
+        } ],
+        "changeLogs" : [ {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "f1fbf9096dc5ccd1725fe957f1307285b015ab67",
+          "timeStamp" : 1730960508212,
+          "totalNodes" : 2
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "88550520f3a675031cd68d96ea6b5b3f68cdc0a4",
+          "timeStamp" : 1730960563095,
+          "totalNodes" : 3
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "a183bbc8f99a63d96b1879c0e18f5a1c5d1cf3b0",
+          "timeStamp" : 1730960586389,
+          "totalNodes" : 3
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "f05db2b77c58cbba4ad89ef563d754884be82a4e",
+          "timeStamp" : 1730960823428,
+          "totalNodes" : 3
+        }, {
+          "modifiedBy" : "vidya wiz",
+          "commitId" : "6013e66018f5aacb01b55714750bf28eebfa0bdb",
+          "timeStamp" : 1730960889428,
+          "totalNodes" : 3
+        } ],
+        "virtualHostList" : [ {
+          "id" : "66dc0ef2e836d076001b628b",
+          "name" : "stage-data",
+          "timeStamp" : 1730960935315
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : true
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -339,6 +562,13 @@
       "proxyid" : "69536db89a792a2148b48efd",
       "name" : "Conditional Branching Checking",
       "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ "672c5c825d5d82602a2abafb" ],
+      "attachedConnectors" : [ ]
+    }, {
+      "id" : "672c5c825d5d82602a2abafb",
+      "proxyid" : "672c5c7c5d5d82602a2abafa",
+      "name" : "call workflow",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
