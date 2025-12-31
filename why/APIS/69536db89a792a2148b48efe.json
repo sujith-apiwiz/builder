@@ -1,5 +1,5 @@
 {
-  "cts" : 1767162530327,
+  "cts" : 1767162645795,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767162530323,
+        "mts" : 1767162645793,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -28,17 +28,17 @@
         "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
-            "b5128d5e-0936-4311-8c3e-5809e362ef5e" : [ "v1" ],
-            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "b5128d5e-0936-4311-8c3e-5809e362ef5e" ],
+            "5c0c7c0e-6000-49bd-b98a-162a83009560" : [ "v1" ],
+            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "5c0c7c0e-6000-49bd-b98a-162a83009560" ],
             "5d70d8f6-1c25-4501-9010-7d20179160f1" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
             "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ]
           },
           "outbound" : {
-            "v1" : [ "b5128d5e-0936-4311-8c3e-5809e362ef5e" ],
-            "b5128d5e-0936-4311-8c3e-5809e362ef5e" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
+            "v1" : [ "5c0c7c0e-6000-49bd-b98a-162a83009560" ],
+            "5c0c7c0e-6000-49bd-b98a-162a83009560" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
             "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
           },
-          "allNeighbours" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "b5128d5e-0936-4311-8c3e-5809e362ef5e", "v1", "ac577b84-f290-45d4-ac50-de444ac69bfe", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
+          "allNeighbours" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "v1", "5c0c7c0e-6000-49bd-b98a-162a83009560", "ac577b84-f290-45d4-ac50-de444ac69bfe", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
         },
         "vertexHashMap" : {
           "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : {
@@ -53,72 +53,6 @@
                 "type" : "JSON"
               }
             }
-          },
-          "b5128d5e-0936-4311-8c3e-5809e362ef5e" : {
-            "vertexId" : "b5128d5e-0936-4311-8c3e-5809e362ef5e",
-            "vertexType" : "CALL_WORKFLOW",
-            "name" : "Call Workflow",
-            "description" : "",
-            "callWorkflowData" : {
-              "childWorkflowId" : "672c5c825d5d82602a2abafb",
-              "childWorkflowName" : "call workflow",
-              "virtualHostId" : "66dc0ef2e836d076001b628b",
-              "virtualHostName" : "stage-data",
-              "request" : {
-                "headerParams" : [ {
-                  "name" : "header1",
-                  "value" : "value1"
-                }, {
-                  "name" : "content-type",
-                  "value" : "application/json"
-                } ],
-                "queryParams" : [ {
-                  "name" : "query1",
-                  "value" : "value1"
-                } ],
-                "targetRequestBodyType" : "RAW",
-                "body" : {
-                  "data" : "{}",
-                  "type" : "json"
-                },
-                "formParams" : [ ],
-                "urlEncodedParams" : [ ]
-              },
-              "response" : {
-                "statusCode" : 400,
-                "variables" : [ {
-                  "name" : "extract-header-1",
-                  "reference" : "headers",
-                  "value" : "value-1",
-                  "active" : true,
-                  "source" : "headers",
-                  "hide" : false,
-                  "feelExpression" : false
-                }, {
-                  "name" : "extract-payload",
-                  "reference" : "body",
-                  "value" : "$",
-                  "variableDataType" : "STRING",
-                  "active" : true,
-                  "source" : "raw",
-                  "hide" : false,
-                  "feelExpression" : false
-                } ]
-              },
-              "timeout" : 200,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -205,6 +139,70 @@
                 }
               }
             }
+          },
+          "5c0c7c0e-6000-49bd-b98a-162a83009560" : {
+            "vertexId" : "5c0c7c0e-6000-49bd-b98a-162a83009560",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "c1",
+              "value" : "value1",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : true
+            }, {
+              "name" : "c2",
+              "value" : "c3",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c3",
+              "value" : "c3",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c4",
+              "value" : "c4",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c5",
+              "value" : "c5",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c6",
+              "value" : "c6",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c7",
+              "value" : "c7",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "custom-value",
+              "value" : "value",
+              "type" : "STRING",
+              "feelExpression" : false,
+              "source" : "5c0c7c0e-6000-49bd-b98a-162a83009560",
+              "override" : true
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "ac577b84-f290-45d4-ac50-de444ac69bfe" : {
             "vertexId" : "ac577b84-f290-45d4-ac50-de444ac69bfe",
@@ -331,162 +329,6 @@
         "deployed" : false
       }
     }
-  }, {
-    "type" : "proxy",
-    "collectionName" : "ApiBuilder.Proxy.List",
-    "data" : {
-      "proxyData" : {
-        "id" : "672c5c825d5d82602a2abafb",
-        "cts" : 1730960508212,
-        "createdUserName" : "vidya wiz",
-        "modifiedUserName" : "vidya wiz",
-        "mts" : 1730960935389,
-        "createdBy" : "66d5b447299d441dfc15644a",
-        "modifiedBy" : "66d5b447299d441dfc15644a",
-        "taggedTeams" : [ ],
-        "proxyId" : "672c5c7c5d5d82602a2abafa",
-        "revision" : 1,
-        "name" : "call workflow",
-        "apiType" : "RESTAPI",
-        "apiMethod" : "GET",
-        "path" : "/callWorkflow",
-        "pathArray" : [ "callWorkflow" ],
-        "revisionStatus" : "APPROVED",
-        "locked" : true,
-        "lockedBy" : "vidya wiz",
-        "nodeDataHashMap" : {
-          "inbound" : {
-            "aba752ce-29b7-4721-af94-d06e9d3860a0" : [ "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" ],
-            "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" : [ "v1" ]
-          },
-          "outbound" : {
-            "v1" : [ "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" ],
-            "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" : [ "aba752ce-29b7-4721-af94-d06e9d3860a0" ]
-          },
-          "allNeighbours" : [ "v1", "aba752ce-29b7-4721-af94-d06e9d3860a0", "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" ]
-        },
-        "vertexHashMap" : {
-          "aba752ce-29b7-4721-af94-d06e9d3860a0" : {
-            "vertexId" : "aba752ce-29b7-4721-af94-d06e9d3860a0",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "type" : "JSON"
-              }
-            }
-          },
-          "v1" : {
-            "vertexId" : "v1",
-            "vertexType" : "START",
-            "name" : "Start",
-            "requestVariables" : [ ],
-            "imported" : true,
-            "skipRuntimeVariables" : false
-          },
-          "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b" : {
-            "vertexId" : "f9419ff0-f7d3-4aa8-b5da-e96dbf6de89b",
-            "vertexType" : "ASSERTION",
-            "name" : "Assertion",
-            "assertion" : {
-              "expression" : "({0})",
-              "placeHolders" : [ {
-                "rule" : "EQUAL_TO",
-                "key" : "env",
-                "value" : "dev",
-                "valueDataType" : "STRING"
-              } ],
-              "feelExpression" : false,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 200,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          }
-        },
-        "statusHistory" : [ {
-          "status" : "Approved",
-          "cts" : 1730960900594,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : "a"
-        }, {
-          "status" : "Review",
-          "cts" : 1730960876636,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : "r"
-        }, {
-          "status" : "Approved",
-          "cts" : 1730960830397,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : "a"
-        }, {
-          "status" : "Draft",
-          "cts" : 1730960795931,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : "d"
-        }, {
-          "status" : "Approved",
-          "cts" : 1730960763022,
-          "lastModifiedBy" : "66d5b447299d441dfc15644a",
-          "description" : "a"
-        }, {
-          "status" : "Draft",
-          "cts" : 1730960508212,
-          "lastModifiedBy" : "vidya wiz",
-          "description" : "Created new proxy"
-        } ],
-        "changeLogs" : [ {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "f1fbf9096dc5ccd1725fe957f1307285b015ab67",
-          "timeStamp" : 1730960508212,
-          "totalNodes" : 2
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "88550520f3a675031cd68d96ea6b5b3f68cdc0a4",
-          "timeStamp" : 1730960563095,
-          "totalNodes" : 3
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "a183bbc8f99a63d96b1879c0e18f5a1c5d1cf3b0",
-          "timeStamp" : 1730960586389,
-          "totalNodes" : 3
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "f05db2b77c58cbba4ad89ef563d754884be82a4e",
-          "timeStamp" : 1730960823428,
-          "totalNodes" : 3
-        }, {
-          "modifiedBy" : "vidya wiz",
-          "commitId" : "6013e66018f5aacb01b55714750bf28eebfa0bdb",
-          "timeStamp" : 1730960889428,
-          "totalNodes" : 3
-        } ],
-        "virtualHostList" : [ {
-          "id" : "66dc0ef2e836d076001b628b",
-          "name" : "stage-data",
-          "timeStamp" : 1730960935315
-        } ],
-        "enableTracing" : false,
-        "environmentName" : "",
-        "environmentId" : "",
-        "enableLogging" : false,
-        "misconfigurationMessages" : [ ],
-        "validated" : true,
-        "deleted" : false,
-        "deployed" : true
-      }
-    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -494,13 +336,6 @@
       "proxyid" : "69536db89a792a2148b48efd",
       "name" : "Conditional Branching Checking",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ ],
-      "attachedProxies" : [ "672c5c825d5d82602a2abafb" ],
-      "attachedConnectors" : [ ]
-    }, {
-      "id" : "672c5c825d5d82602a2abafb",
-      "proxyid" : "672c5c7c5d5d82602a2abafa",
-      "name" : "call workflow",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
