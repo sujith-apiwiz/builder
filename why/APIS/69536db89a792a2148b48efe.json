@@ -1,5 +1,5 @@
 {
-  "cts" : 1767163453368,
+  "cts" : 1767164910910,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767163453366,
+        "mts" : 1767164910908,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -28,18 +28,32 @@
         "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
-            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "v1" ],
+            "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "v1" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
-            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ]
+            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
+            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ]
           },
           "outbound" : {
-            "v1" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
+            "v1" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
-            "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
+            "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ],
+            "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
           },
-          "allNeighbours" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
+          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
         },
         "vertexHashMap" : {
+          "ccd48df9-4e36-4405-a468-9886890fb2bc" : {
+            "vertexId" : "ccd48df9-4e36-4405-a468-9886890fb2bc",
+            "vertexType" : "LOGGER",
+            "name" : "Logger Node",
+            "description" : "",
+            "logData" : {
+              "data" : "Debugging Data",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "36085e11-c105-452c-bcd7-9d4dd0e865eb" : {
             "vertexId" : "36085e11-c105-452c-bcd7-9d4dd0e865eb",
             "vertexType" : "STOP",
