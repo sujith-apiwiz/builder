@@ -1,5 +1,5 @@
 {
-  "cts" : 1767163335172,
+  "cts" : 1767163453368,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767163335170,
+        "mts" : 1767163453366,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -29,13 +29,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "v1" ],
-            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
+            "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
+            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ]
           },
           "outbound" : {
             "v1" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
-            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
+            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
+            "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
           },
-          "allNeighbours" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
+          "allNeighbours" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
         },
         "vertexHashMap" : {
           "36085e11-c105-452c-bcd7-9d4dd0e865eb" : {
@@ -50,6 +52,33 @@
                 "type" : "JSON"
               }
             }
+          },
+          "ff6e7790-5ab4-4327-94ab-14280568b3b3" : {
+            "vertexId" : "ff6e7790-5ab4-4327-94ab-14280568b3b3",
+            "vertexType" : "JSON_TO_XML_TRANSFORMATION",
+            "name" : "Jsom-to-Xml",
+            "jsonToXmlTransformationData" : {
+              "sourceVariable" : "c2",
+              "targetVariable" : "xml-output",
+              "jsonArray" : false,
+              "rootElementName" : "/path",
+              "objectElementName" : "",
+              "attributeList" : [ ],
+              "staticElementAttributeHashMap" : { },
+              "staticPathAttributeArrayList" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : {
             "vertexId" : "8d0a1a01-fb62-4a62-9f01-fa3538f31262",
