@@ -1,5 +1,5 @@
 {
-  "cts" : 1767165182985,
+  "cts" : 1767165217824,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767165182982,
+        "mts" : 1767165217820,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -33,8 +33,9 @@
             "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
             "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
-            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
-            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ]
+            "e23e8323-48ca-4c0a-99a0-670dbec60e1b" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
+            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ],
+            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ]
           },
           "outbound" : {
             "v1" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
@@ -42,10 +43,11 @@
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ],
             "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
             "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ],
-            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
-            "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ]
+            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ],
+            "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
+            "e23e8323-48ca-4c0a-99a0-670dbec60e1b" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
           },
-          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "07875599-2b0e-4b2d-baac-5f0e61e64e7f", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "v1" ]
+          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "07875599-2b0e-4b2d-baac-5f0e61e64e7f", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1", "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ]
         },
         "vertexHashMap" : {
           "ccd48df9-4e36-4405-a468-9886890fb2bc" : {
@@ -376,6 +378,81 @@
                 }
               }
             }
+          },
+          "e23e8323-48ca-4c0a-99a0-670dbec60e1b" : {
+            "vertexId" : "e23e8323-48ca-4c0a-99a0-670dbec60e1b",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "extract_header_1",
+              "value" : "v1",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "payload",
+              "value" : "$",
+              "feelExpression" : false,
+              "source" : "raw",
+              "override" : false
+            }, {
+              "name" : "extract_payload",
+              "value" : "$",
+              "feelExpression" : false,
+              "source" : "raw",
+              "override" : false
+            }, {
+              "name" : "c1",
+              "value" : "overide value",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : true
+            }, {
+              "name" : "c2",
+              "value" : "c3",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c3",
+              "value" : "c3",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c4",
+              "value" : "c4",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c5",
+              "value" : "c5",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c6",
+              "value" : "c6",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            }, {
+              "name" : "c7",
+              "value" : "c7",
+              "variableDataType" : "STRING",
+              "feelExpression" : false,
+              "source" : "headers",
+              "override" : false
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
