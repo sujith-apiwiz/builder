@@ -1,5 +1,5 @@
 {
-  "cts" : 1767161094778,
+  "cts" : 1767162142687,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767161094761,
+        "mts" : 1767162142682,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -28,15 +28,17 @@
         "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
-            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "v1" ],
+            "3d49e369-95a6-4659-a47a-1dc3e4887860" : [ "v1" ],
+            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "3d49e369-95a6-4659-a47a-1dc3e4887860" ],
             "5d70d8f6-1c25-4501-9010-7d20179160f1" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
             "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ]
           },
           "outbound" : {
-            "v1" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
+            "v1" : [ "3d49e369-95a6-4659-a47a-1dc3e4887860" ],
+            "3d49e369-95a6-4659-a47a-1dc3e4887860" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
             "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
           },
-          "allNeighbours" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "v1", "ac577b84-f290-45d4-ac50-de444ac69bfe", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
+          "allNeighbours" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "v1", "3d49e369-95a6-4659-a47a-1dc3e4887860", "ac577b84-f290-45d4-ac50-de444ac69bfe", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
         },
         "vertexHashMap" : {
           "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : {
@@ -137,6 +139,83 @@
                 }
               }
             }
+          },
+          "3d49e369-95a6-4659-a47a-1dc3e4887860" : {
+            "vertexId" : "3d49e369-95a6-4659-a47a-1dc3e4887860",
+            "vertexType" : "TARGET",
+            "name" : "some target",
+            "target" : {
+              "name" : "some target",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "apiwiz.io",
+                "path" : "/search",
+                "headerParams" : [ {
+                  "name" : "h1",
+                  "value" : "v1"
+                } ],
+                "queryParams" : [ {
+                  "name" : "q1",
+                  "value" : "v1"
+                } ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ {
+                  "name" : "eh1",
+                  "reference" : "headers",
+                  "value" : "ev1",
+                  "variableDataType" : "STRING",
+                  "active" : true,
+                  "source" : "headers",
+                  "hide" : false,
+                  "feelExpression" : false
+                }, {
+                  "name" : "payload",
+                  "reference" : "body",
+                  "value" : "$",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "ac577b84-f290-45d4-ac50-de444ac69bfe" : {
             "vertexId" : "ac577b84-f290-45d4-ac50-de444ac69bfe",
