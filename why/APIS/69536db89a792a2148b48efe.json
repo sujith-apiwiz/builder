@@ -1,5 +1,5 @@
 {
-  "cts" : 1767165217824,
+  "cts" : 1767165247615,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767165217820,
+        "mts" : 1767165247612,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -387,18 +387,33 @@
               "name" : "extract_header_1",
               "value" : "v1",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : false
             }, {
               "name" : "payload",
               "value" : "$",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "raw",
               "override" : false
             }, {
               "name" : "extract_payload",
               "value" : "$",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "raw",
               "override" : false
             }, {
@@ -406,6 +421,11 @@
               "value" : "overide value",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : true
             }, {
@@ -413,6 +433,11 @@
               "value" : "c3",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : false
             }, {
@@ -420,6 +445,11 @@
               "value" : "c3",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : false
             }, {
@@ -427,6 +457,11 @@
               "value" : "c4",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : false
             }, {
@@ -434,6 +469,11 @@
               "value" : "c5",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : false
             }, {
@@ -441,6 +481,11 @@
               "value" : "c6",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : false
             }, {
@@ -448,8 +493,20 @@
               "value" : "c7",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
               "override" : false
+            }, {
+              "name" : "custom_variable",
+              "value" : "custom_value",
+              "type" : "STRING",
+              "feelExpression" : false,
+              "source" : "e23e8323-48ca-4c0a-99a0-670dbec60e1b",
+              "override" : true
             } ],
             "imported" : false,
             "skipRuntimeVariables" : false
