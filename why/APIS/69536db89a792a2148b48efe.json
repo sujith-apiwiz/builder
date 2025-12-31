@@ -1,5 +1,5 @@
 {
-  "cts" : 1767163096307,
+  "cts" : 1767163186721,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767163096306,
+        "mts" : 1767163186720,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -28,12 +28,14 @@
         "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
-            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "v1" ]
+            "da060589-41db-47fd-b969-8053a6bf34af" : [ "v1" ],
+            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "da060589-41db-47fd-b969-8053a6bf34af" ]
           },
           "outbound" : {
-            "v1" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
+            "v1" : [ "da060589-41db-47fd-b969-8053a6bf34af" ],
+            "da060589-41db-47fd-b969-8053a6bf34af" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
           },
-          "allNeighbours" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb", "v1" ]
+          "allNeighbours" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb", "da060589-41db-47fd-b969-8053a6bf34af", "v1" ]
         },
         "vertexHashMap" : {
           "36085e11-c105-452c-bcd7-9d4dd0e865eb" : {
@@ -48,6 +50,39 @@
                 "type" : "JSON"
               }
             }
+          },
+          "da060589-41db-47fd-b969-8053a6bf34af" : {
+            "vertexId" : "da060589-41db-47fd-b969-8053a6bf34af",
+            "vertexType" : "EXTRACTION",
+            "name" : "Extract Data",
+            "description" : "",
+            "extractionData" : {
+              "extractionDataOperationList" : [ {
+                "name" : "name",
+                "path" : "$.name",
+                "type" : "JSON",
+                "inputData" : "data",
+                "targetVariable" : "output_name"
+              }, {
+                "name" : "key",
+                "path" : "$.key",
+                "type" : "JSON",
+                "inputData" : "data",
+                "targetVariable" : "output_key"
+              } ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
