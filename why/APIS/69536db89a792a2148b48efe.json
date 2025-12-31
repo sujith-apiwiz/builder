@@ -1,5 +1,5 @@
 {
-  "cts" : 1767164947097,
+  "cts" : 1767165108550,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767164947093,
+        "mts" : 1767165108548,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -32,16 +32,18 @@
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
             "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
-            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ]
+            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
+            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ]
           },
           "outbound" : {
             "v1" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ],
             "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
-            "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
+            "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
+            "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
           },
-          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
+          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
         },
         "vertexHashMap" : {
           "ccd48df9-4e36-4405-a468-9886890fb2bc" : {
@@ -140,6 +142,82 @@
                 "body" : {
                   "data" : "",
                   "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : {
+            "vertexId" : "16a0fc12-5407-4ae5-887b-7d9bc87cb23e",
+            "vertexType" : "TARGET",
+            "name" : "Service Call Out",
+            "target" : {
+              "name" : "Service Call Out",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "apiwiz.io",
+                "path" : "/path",
+                "headerParams" : [ {
+                  "name" : "h1",
+                  "value" : "v1"
+                } ],
+                "queryParams" : [ {
+                  "name" : "q1",
+                  "value" : "v1"
+                } ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ {
+                  "name" : "extract_header_1",
+                  "reference" : "headers",
+                  "value" : "v1",
+                  "active" : true,
+                  "source" : "headers",
+                  "hide" : false,
+                  "feelExpression" : false
+                }, {
+                  "name" : "payload",
+                  "reference" : "body",
+                  "value" : "$",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
                 }
               }
             },
