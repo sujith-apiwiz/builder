@@ -1,5 +1,5 @@
 {
-  "cts" : 1767164910910,
+  "cts" : 1767164947097,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767164910908,
+        "mts" : 1767164947093,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -31,15 +31,17 @@
             "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "v1" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
             "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
-            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ]
+            "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
+            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ]
           },
           "outbound" : {
             "v1" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ],
-            "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
+            "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
+            "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
           },
-          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
+          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1" ]
         },
         "vertexHashMap" : {
           "ccd48df9-4e36-4405-a468-9886890fb2bc" : {
@@ -50,6 +52,34 @@
             "logData" : {
               "data" : "Debugging Data",
               "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : {
+            "vertexId" : "c77929ea-198f-4e95-bc2c-63e7a2ad09e9",
+            "vertexType" : "JAVASCRIPT",
+            "name" : "Java Scripting",
+            "description" : "",
+            "javascriptData" : {
+              "targetVariable" : "output",
+              "variableDataType" : "STRING",
+              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n console.log(input.foo);\n return input;\n };",
+              "variables" : {
+                "name" : "name"
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "customResponseMapping" : false,
+              "responsePathMapping" : { }
             },
             "imported" : false,
             "skipRuntimeVariables" : false
