@@ -1,5 +1,5 @@
 {
-  "cts" : 1767165347678,
+  "cts" : 1767165845288,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767165347675,
+        "mts" : 1767165845278,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -30,26 +30,28 @@
           "inbound" : {
             "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "v1" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
-            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
+            "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
             "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
             "e23e8323-48ca-4c0a-99a0-670dbec60e1b" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
             "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ],
             "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" : [ "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ],
-            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" ]
+            "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" ],
+            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" ]
           },
           "outbound" : {
             "v1" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
-            "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ],
+            "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" ],
             "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
             "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ],
             "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ],
             "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
             "e23e8323-48ca-4c0a-99a0-670dbec60e1b" : [ "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" ],
-            "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ]
+            "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
+            "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
           },
-          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "2615680d-5cb2-48e5-b1ab-3d0cb921fb79", "07875599-2b0e-4b2d-baac-5f0e61e64e7f", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1", "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ]
+          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "2615680d-5cb2-48e5-b1ab-3d0cb921fb79", "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e", "07875599-2b0e-4b2d-baac-5f0e61e64e7f", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1", "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ]
         },
         "vertexHashMap" : {
           "ccd48df9-4e36-4405-a468-9886890fb2bc" : {
@@ -110,6 +112,49 @@
                 "type" : "XML",
                 "inputData" : "data",
                 "targetVariable" : "xml_data"
+              } ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" : {
+            "vertexId" : "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e",
+            "vertexType" : "REDIS_CACHING",
+            "name" : "redis ",
+            "description" : "",
+            "redisCachingData" : {
+              "redisCacheConnectorId" : "68398acdbb9e4f4731cd78c3",
+              "cachingOperationList" : [ {
+                "operationName" : "Get Data",
+                "targetVariable" : "populated_redis_data",
+                "redisCache" : {
+                  "key" : "name",
+                  "value" : "",
+                  "expiration" : 0,
+                  "timeUnit" : "SECONDS",
+                  "cachingOperationType" : "GET"
+                },
+                "successFull" : false
+              }, {
+                "operationName" : "Add Data",
+                "redisCache" : {
+                  "key" : "name",
+                  "value" : "Deepak",
+                  "expiration" : 5,
+                  "timeUnit" : "MINUTES",
+                  "cachingOperationType" : "ADD"
+                },
+                "successFull" : false
               } ],
               "skip" : false,
               "showActualErrorMessage" : false,
@@ -569,6 +614,25 @@
       }
     }
   }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.Redis.Cache",
+    "data" : {
+      "redisCacheConnectorData" : {
+        "id" : "68398acdbb9e4f4731cd78c3",
+        "cts" : 1748601549865,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1750245241105,
+        "createdBy" : "divakar v",
+        "modifiedBy" : "divakar v",
+        "name" : "redis connection 1",
+        "description" : "",
+        "host" : "2.tcp.us-cal-1.ngrok.io",
+        "port" : 11714,
+        "password" : "WRl6RLyup09riMa"
+      }
+    }
+  }, {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
     "data" : {
@@ -733,7 +797,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ "672c5c825d5d82602a2abafb" ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "68398acdbb9e4f4731cd78c3" ]
     }, {
       "id" : "672c5c825d5d82602a2abafb",
       "proxyid" : "672c5c7c5d5d82602a2abafa",
@@ -748,6 +812,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "68398acdbb9e4f4731cd78c3",
+      "name" : "redis connection 1"
+    } ]
   }
 }
