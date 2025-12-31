@@ -1,5 +1,5 @@
 {
-  "cts" : 1767162645795,
+  "cts" : 1767163096307,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767162645793,
+        "mts" : 1767163096306,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -28,21 +28,16 @@
         "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
-            "5c0c7c0e-6000-49bd-b98a-162a83009560" : [ "v1" ],
-            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "5c0c7c0e-6000-49bd-b98a-162a83009560" ],
-            "5d70d8f6-1c25-4501-9010-7d20179160f1" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
-            "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ]
+            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "5c0c7c0e-6000-49bd-b98a-162a83009560" ],
-            "5c0c7c0e-6000-49bd-b98a-162a83009560" : [ "ac577b84-f290-45d4-ac50-de444ac69bfe" ],
-            "ac577b84-f290-45d4-ac50-de444ac69bfe" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
+            "v1" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
           },
-          "allNeighbours" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98", "v1", "5c0c7c0e-6000-49bd-b98a-162a83009560", "ac577b84-f290-45d4-ac50-de444ac69bfe", "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
+          "allNeighbours" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb", "v1" ]
         },
         "vertexHashMap" : {
-          "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" : {
-            "vertexId" : "0d5bbd5b-9728-4f89-a3a1-b1084749cf98",
+          "36085e11-c105-452c-bcd7-9d4dd0e865eb" : {
+            "vertexId" : "36085e11-c105-452c-bcd7-9d4dd0e865eb",
             "vertexType" : "STOP",
             "name" : "Stop",
             "imported" : false,
@@ -137,173 +132,6 @@
                   "data" : "",
                   "type" : "json"
                 }
-              }
-            }
-          },
-          "5c0c7c0e-6000-49bd-b98a-162a83009560" : {
-            "vertexId" : "5c0c7c0e-6000-49bd-b98a-162a83009560",
-            "vertexType" : "VARIABLES",
-            "name" : "Set Variable",
-            "runtimeVariableList" : [ {
-              "name" : "c1",
-              "value" : "value1",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "headers",
-              "override" : true
-            }, {
-              "name" : "c2",
-              "value" : "c3",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "headers",
-              "override" : false
-            }, {
-              "name" : "c3",
-              "value" : "c3",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "headers",
-              "override" : false
-            }, {
-              "name" : "c4",
-              "value" : "c4",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "headers",
-              "override" : false
-            }, {
-              "name" : "c5",
-              "value" : "c5",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "headers",
-              "override" : false
-            }, {
-              "name" : "c6",
-              "value" : "c6",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "headers",
-              "override" : false
-            }, {
-              "name" : "c7",
-              "value" : "c7",
-              "variableDataType" : "STRING",
-              "feelExpression" : false,
-              "source" : "headers",
-              "override" : false
-            }, {
-              "name" : "custom-value",
-              "value" : "value",
-              "type" : "STRING",
-              "feelExpression" : false,
-              "source" : "5c0c7c0e-6000-49bd-b98a-162a83009560",
-              "override" : true
-            } ],
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "ac577b84-f290-45d4-ac50-de444ac69bfe" : {
-            "vertexId" : "ac577b84-f290-45d4-ac50-de444ac69bfe",
-            "vertexType" : "CONDITIONAL_FLOW",
-            "name" : "Condition",
-            "conditionalFlow" : [ {
-              "condition" : "if",
-              "assertion" : {
-                "expression" : "({0} && {1} && {2}) || ({3} && {4} && {5} && {6} && {7}) && ({8} || {9} || {10})",
-                "placeHolders" : [ {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c2",
-                  "value" : "c3",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c5",
-                  "value" : "c5",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c1",
-                  "value" : "c1",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c3",
-                  "value" : "c3",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c4",
-                  "value" : "c4",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c5",
-                  "value" : "c5",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c6",
-                  "value" : "c6",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c7",
-                  "value" : "c7",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c5",
-                  "value" : "c5",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c6",
-                  "value" : "c6",
-                  "valueDataType" : "STRING"
-                }, {
-                  "rule" : "EQUAL_TO",
-                  "key" : "c7",
-                  "value" : "c7",
-                  "valueDataType" : "STRING"
-                } ],
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false,
-                "errorResponse" : {
-                  "statusCode" : 400,
-                  "body" : {
-                    "data" : "",
-                    "type" : "json"
-                  }
-                }
-              },
-              "flowVertexes" : [ "5d70d8f6-1c25-4501-9010-7d20179160f1" ]
-            }, {
-              "condition" : "else",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "0d5bbd5b-9728-4f89-a3a1-b1084749cf98" ]
-            } ],
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "5d70d8f6-1c25-4501-9010-7d20179160f1" : {
-            "vertexId" : "5d70d8f6-1c25-4501-9010-7d20179160f1",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "type" : "JSON"
               }
             }
           }
