@@ -1,5 +1,5 @@
 {
-  "cts" : 1767610709540,
+  "cts" : 1767610862999,
   "name" : "TestJavaScript",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767609239947,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767610709471,
+        "mts" : 1767610862996,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/TestJavaScript",
         "pathArray" : [ "TestJavaScript" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Akash K",
         "nodeDataHashMap" : {
@@ -59,7 +59,7 @@
             "javascriptData" : {
               "targetVariable" : "response",
               "variableDataType" : "STRING",
-              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n    console.log(JSON.parse(input));\n\n console.log(context.getVariable(\"extractHeader\"));\n return input;\n };",
+              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n    console.log(input);\n\n console.log(context.getVariable(\"extractHeader\"));\n return input;\n };",
               "variables" : {
                 "name" : "akash"
               },
@@ -113,11 +113,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767610853627,
+          "lastModifiedBy" : "692ebe3b5e0d8c043dc7d211",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767610722820,
+          "lastModifiedBy" : "692ebe3b5e0d8c043dc7d211",
+          "description" : "f"
+        }, {
           "status" : "Draft",
           "cts" : 1767609239947,
           "lastModifiedBy" : "Akash K",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
