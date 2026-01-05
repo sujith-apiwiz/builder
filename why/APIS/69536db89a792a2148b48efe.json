@@ -1,5 +1,5 @@
 {
-  "cts" : 1767597599142,
+  "cts" : 1767597622500,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767597599076,
+        "mts" : 1767597622351,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -480,10 +480,39 @@
             "conditionalFlow" : [ {
               "condition" : "if",
               "assertion" : {
+                "expression" : "({0} && {1}) || ({2} || {3})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "c1",
+                  "value" : "c1",
+                  "valueDataType" : "STRING"
+                }, {
+                  "rule" : "EQUAL_TO",
+                  "key" : "c2",
+                  "value" : "c3",
+                  "valueDataType" : "STRING"
+                }, {
+                  "rule" : "EQUAL_TO",
+                  "key" : "c1",
+                  "value" : "c1",
+                  "valueDataType" : "STRING"
+                }, {
+                  "rule" : "EQUAL_TO",
+                  "key" : "c3",
+                  "value" : "c3",
+                  "valueDataType" : "STRING"
+                } ],
                 "feelExpression" : false,
                 "skip" : false,
                 "showActualErrorMessage" : false,
-                "continueOnError" : false
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
               },
               "flowVertexes" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ]
             }, {
