@@ -1,5 +1,5 @@
 {
-  "cts" : 1767605624275,
+  "cts" : 1767605965066,
   "name" : "New Workflow 9",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767599906516,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767605624270,
+        "mts" : 1767605965061,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -45,7 +45,7 @@
             "databaseData" : {
               "connectorId" : "695b78746137493295163475",
               "databaseType" : "MONGODB",
-              "query" : "{\"operation\":\"find\",\"databaseName\":\"userdb\",\"collection\":\"users\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"email\":\"\",\"phone\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"userdb\",\"collection\":\"users\",\"documents\":[{\"_id\":\"68401f16dc53b3577f850f45\",\"name\":\"kumar\",\"email\":\"s\",\"phone\":\"s\",\"_class\":\"com.example.usermanagement.model.UserModel\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
               "variableName" : "res",
               "connectorName" : "sujith-MongoDB",
               "tenantName" : "userdb",
