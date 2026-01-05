@@ -1,5 +1,5 @@
 {
-  "cts" : 1767334915886,
+  "cts" : 1767597440275,
   "name" : "Conditional Branching Checking",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767075256672,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767334915866,
+        "mts" : 1767597440262,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -28,7 +28,7 @@
         "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
-            "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "v1" ],
+            "72113962-7a08-4aea-b5b5-b01bd4e7186c" : [ "v1" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
             "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
@@ -37,10 +37,11 @@
             "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" : [ "07875599-2b0e-4b2d-baac-5f0e61e64e7f" ],
             "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" : [ "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ],
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" ],
-            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" ]
+            "36085e11-c105-452c-bcd7-9d4dd0e865eb" : [ "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" ],
+            "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "72113962-7a08-4aea-b5b5-b01bd4e7186c" ]
           },
           "outbound" : {
-            "v1" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ],
+            "v1" : [ "72113962-7a08-4aea-b5b5-b01bd4e7186c" ],
             "8d0a1a01-fb62-4a62-9f01-fa3538f31262" : [ "ff6e7790-5ab4-4327-94ab-14280568b3b3" ],
             "ff6e7790-5ab4-4327-94ab-14280568b3b3" : [ "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" ],
             "ccd48df9-4e36-4405-a468-9886890fb2bc" : [ "c77929ea-198f-4e95-bc2c-63e7a2ad09e9" ],
@@ -49,9 +50,10 @@
             "07875599-2b0e-4b2d-baac-5f0e61e64e7f" : [ "16a0fc12-5407-4ae5-887b-7d9bc87cb23e" ],
             "e23e8323-48ca-4c0a-99a0-670dbec60e1b" : [ "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" ],
             "2615680d-5cb2-48e5-b1ab-3d0cb921fb79" : [ "8d0a1a01-fb62-4a62-9f01-fa3538f31262" ],
-            "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ]
+            "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e" : [ "36085e11-c105-452c-bcd7-9d4dd0e865eb" ],
+            "72113962-7a08-4aea-b5b5-b01bd4e7186c" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ]
           },
-          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "2615680d-5cb2-48e5-b1ab-3d0cb921fb79", "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e", "07875599-2b0e-4b2d-baac-5f0e61e64e7f", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1", "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ]
+          "allNeighbours" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc", "c77929ea-198f-4e95-bc2c-63e7a2ad09e9", "2615680d-5cb2-48e5-b1ab-3d0cb921fb79", "ecd633d9-0443-4fa4-82e8-0ea7f3a2e58e", "07875599-2b0e-4b2d-baac-5f0e61e64e7f", "ff6e7790-5ab4-4327-94ab-14280568b3b3", "36085e11-c105-452c-bcd7-9d4dd0e865eb", "16a0fc12-5407-4ae5-887b-7d9bc87cb23e", "8d0a1a01-fb62-4a62-9f01-fa3538f31262", "v1", "72113962-7a08-4aea-b5b5-b01bd4e7186c", "e23e8323-48ca-4c0a-99a0-670dbec60e1b" ]
         },
         "vertexHashMap" : {
           "ccd48df9-4e36-4405-a468-9886890fb2bc" : {
@@ -470,6 +472,31 @@
                 }
               }
             }
+          },
+          "72113962-7a08-4aea-b5b5-b01bd4e7186c" : {
+            "vertexId" : "72113962-7a08-4aea-b5b5-b01bd4e7186c",
+            "vertexType" : "CONDITIONAL_FLOW",
+            "name" : "Condition",
+            "conditionalFlow" : [ {
+              "condition" : "if",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "ccd48df9-4e36-4405-a468-9886890fb2bc" ]
+            }, {
+              "condition" : "else",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              }
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "e23e8323-48ca-4c0a-99a0-670dbec60e1b" : {
             "vertexId" : "e23e8323-48ca-4c0a-99a0-670dbec60e1b",
