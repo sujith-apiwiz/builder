@@ -1,0 +1,182 @@
+{
+  "cts" : 1767592536425,
+  "name" : "New Workflow 7",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "694e30549a792a2148b482bf",
+        "cts" : 1766731860826,
+        "createdUserName" : "First user",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767592534670,
+        "createdBy" : "6948eef7a364ea598e8b58c2",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "694e30549a792a2148b482be",
+        "revision" : 1,
+        "name" : "New Workflow 7",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "21ab4675-a29e-4636-83f0-6a75175fd5e9" : [ "v1" ],
+            "74deb8c6-f8a0-4c26-8fd7-cc13143930ca" : [ "21ab4675-a29e-4636-83f0-6a75175fd5e9" ]
+          },
+          "outbound" : {
+            "v1" : [ "21ab4675-a29e-4636-83f0-6a75175fd5e9" ],
+            "21ab4675-a29e-4636-83f0-6a75175fd5e9" : [ "74deb8c6-f8a0-4c26-8fd7-cc13143930ca" ]
+          },
+          "allNeighbours" : [ "74deb8c6-f8a0-4c26-8fd7-cc13143930ca", "21ab4675-a29e-4636-83f0-6a75175fd5e9", "v1" ]
+        },
+        "vertexHashMap" : {
+          "74deb8c6-f8a0-4c26-8fd7-cc13143930ca" : {
+            "vertexId" : "74deb8c6-f8a0-4c26-8fd7-cc13143930ca",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "21ab4675-a29e-4636-83f0-6a75175fd5e9" : {
+            "vertexId" : "21ab4675-a29e-4636-83f0-6a75175fd5e9",
+            "vertexType" : "TARGET",
+            "name" : "a",
+            "target" : {
+              "name" : "a",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "test.apiwiz.io",
+                "path" : "/v1/api/automation/user-GET",
+                "headerParams" : [ {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                }, {
+                  "name" : "x-application-type",
+                  "value" : "ApiSandbox"
+                }, {
+                  "name" : "x-tenant",
+                  "value" : "qa-dev-686cb8a8e1052c276a27edc7-ApiBuilder"
+                } ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "RAW",
+                "body" : {
+                  "data" : "",
+                  "type" : "JSON"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1766731860826,
+          "lastModifiedBy" : "First user",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "Clear environment",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "694e30549a792a2148b482bf",
+      "proxyid" : "694e30549a792a2148b482be",
+      "name" : "New Workflow 7",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : "Clear environment"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
