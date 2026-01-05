@@ -1,0 +1,116 @@
+{
+  "cts" : 1767615173698,
+  "name" : "dlm wf1",
+  "exportedBy" : "Pranav Ananth",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695baac561374932951650ac",
+        "cts" : 1767615173628,
+        "createdUserName" : "Pranav Ananth",
+        "modifiedUserName" : "Pranav Ananth",
+        "mts" : 1767615173628,
+        "createdBy" : "6655a103339aa715119d5a13",
+        "modifiedBy" : "6655a103339aa715119d5a13",
+        "taggedTeams" : [ ],
+        "proxyId" : "695baac561374932951650ab",
+        "revision" : 1,
+        "name" : "dlm wf1",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/2w3edd",
+        "pathArray" : [ "2w3edd" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Pranav Ananth",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "e4c18509-0b81-4eaf-a70a-47b0f79a816c" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "e4c18509-0b81-4eaf-a70a-47b0f79a816c" ]
+          },
+          "allNeighbours" : [ "e4c18509-0b81-4eaf-a70a-47b0f79a816c", "v1" ]
+        },
+        "vertexHashMap" : {
+          "e4c18509-0b81-4eaf-a70a-47b0f79a816c" : {
+            "vertexId" : "e4c18509-0b81-4eaf-a70a-47b0f79a816c",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767615173628,
+          "lastModifiedBy" : "Pranav Ananth",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695baac561374932951650ac",
+      "proxyid" : "695baac561374932951650ab",
+      "name" : "dlm wf1",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
