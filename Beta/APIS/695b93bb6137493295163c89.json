@@ -1,5 +1,5 @@
 {
-  "cts" : 1767609308584,
+  "cts" : 1767609333395,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767609275790,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767609308511,
+        "mts" : 1767609333309,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,14 +28,43 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "ef394d88-5f9d-42de-956e-3436e34546f2" : [ "v1" ]
+            "45ae87a3-34b7-4ea5-9c45-0cb845cd2233" : [ "v1" ],
+            "ef394d88-5f9d-42de-956e-3436e34546f2" : [ "45ae87a3-34b7-4ea5-9c45-0cb845cd2233" ]
           },
           "outbound" : {
-            "v1" : [ "ef394d88-5f9d-42de-956e-3436e34546f2" ]
+            "v1" : [ "45ae87a3-34b7-4ea5-9c45-0cb845cd2233" ],
+            "45ae87a3-34b7-4ea5-9c45-0cb845cd2233" : [ "ef394d88-5f9d-42de-956e-3436e34546f2" ]
           },
-          "allNeighbours" : [ "ef394d88-5f9d-42de-956e-3436e34546f2", "v1" ]
+          "allNeighbours" : [ "45ae87a3-34b7-4ea5-9c45-0cb845cd2233", "ef394d88-5f9d-42de-956e-3436e34546f2", "v1" ]
         },
         "vertexHashMap" : {
+          "45ae87a3-34b7-4ea5-9c45-0cb845cd2233" : {
+            "vertexId" : "45ae87a3-34b7-4ea5-9c45-0cb845cd2233",
+            "vertexType" : "DATABASE",
+            "name" : "q",
+            "databaseData" : {
+              "connectorId" : "695b78746137493295163475",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"userdb\",\"collection\":\"users\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"email\":\"\",\"phone\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "q",
+              "connectorName" : "sujith-MongoDB",
+              "tenantName" : "userdb",
+              "collectionName" : "users",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "ef394d88-5f9d-42de-956e-3436e34546f2" : {
             "vertexId" : "ef394d88-5f9d-42de-956e-3436e34546f2",
             "vertexType" : "STOP",
@@ -94,6 +123,33 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "695b78746137493295163475",
+        "cts" : 1767602292517,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767609290978,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "name" : "sujith-MongoDB",
+        "description" : "sujith-MongoDB",
+        "host" : "0.tcp.jp.ngrok.io:10261",
+        "scheme" : "mongodb",
+        "url" : "mongodb://0.tcp.jp.ngrok.io:10261/?tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "none"
+        },
+        "ssl" : {
+          "sslConnection" : false,
+          "tlsAllowInvalidHostnames" : false
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -103,7 +159,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "695b78746137493295163475" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -111,6 +167,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695b78746137493295163475",
+      "name" : "sujith-MongoDB"
+    } ]
   }
 }
