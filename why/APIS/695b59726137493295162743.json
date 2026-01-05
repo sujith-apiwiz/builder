@@ -1,5 +1,5 @@
 {
-  "cts" : 1767594374659,
+  "cts" : 1767594385867,
   "name" : "TestingSharedFlowEvent",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767594354687,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767594374618,
+        "mts" : 1767594385863,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -44,7 +44,8 @@
             "name" : "testingflow",
             "description" : "test",
             "sharedFlowNodeData" : {
-              "sharedFlowId" : "",
+              "sharedFlowId" : "69451da78d4f204d1d61f7be",
+              "sharedFlowName" : "testOne",
               "inputVariablesMap" : { },
               "importOutputVariables" : false,
               "importedVariables" : [ ],
@@ -120,6 +121,63 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "69451da78d4f204d1d61f7be",
+        "cts" : 1766137255372,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766571719459,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ ],
+        "name" : "testOne",
+        "description" : "",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea" ]
+          },
+          "allNeighbours" : [ "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea", "v1" ]
+        },
+        "vertexHashMap" : {
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "testOne",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea" : {
+            "vertexId" : "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea",
+            "vertexType" : "SHARED_FLOW_STOP",
+            "name" : "Exit",
+            "sharedFlowStopData" : {
+              "stopNodeAction" : "TERMINATE_WITH_RESPONSE",
+              "sharedFlowResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ ],
+        "inputVariableList" : [ ],
+        "outputVariableList" : [ ],
+        "workspaceTenant" : "stage-data",
+        "misconfigurationMessages" : [ ],
+        "validated" : true
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -127,7 +185,7 @@
       "proxyid" : "695b59726137493295162742",
       "name" : "TestingSharedFlowEvent",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ ],
+      "attachedSharedFlows" : [ "69451da78d4f204d1d61f7be" ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
@@ -136,7 +194,14 @@
       "id" : "",
       "name" : ""
     } ],
-    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "69451da78d4f204d1d61f7be",
+      "name" : "testOne",
+      "description" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
     "connectorMetadataDetailsDtoList" : [ ]
   }
 }
