@@ -1,0 +1,116 @@
+{
+  "cts" : 1767609239954,
+  "name" : "TestJavaScript",
+  "exportedBy" : "Akash K",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695b93976137493295163c72",
+        "cts" : 1767609239947,
+        "createdUserName" : "Akash K",
+        "modifiedUserName" : "Akash K",
+        "mts" : 1767609239947,
+        "createdBy" : "692ebe3b5e0d8c043dc7d211",
+        "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
+        "taggedTeams" : [ ],
+        "proxyId" : "695b93976137493295163c71",
+        "revision" : 1,
+        "name" : "TestJavaScript",
+        "description" : "TestJavaScript///",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/TestJavaScript",
+        "pathArray" : [ "TestJavaScript" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Akash K",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "3767748f-53fa-4464-a644-bde3bf890bad" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "3767748f-53fa-4464-a644-bde3bf890bad" ]
+          },
+          "allNeighbours" : [ "3767748f-53fa-4464-a644-bde3bf890bad", "v1" ]
+        },
+        "vertexHashMap" : {
+          "3767748f-53fa-4464-a644-bde3bf890bad" : {
+            "vertexId" : "3767748f-53fa-4464-a644-bde3bf890bad",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767609239947,
+          "lastModifiedBy" : "Akash K",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "stage-data",
+        "selectedVirtualHostId" : "66dc0ef2e836d076001b628b",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695b93976137493295163c72",
+      "proxyid" : "695b93976137493295163c71",
+      "name" : "TestJavaScript",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
