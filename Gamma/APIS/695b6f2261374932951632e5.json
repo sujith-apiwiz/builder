@@ -1,0 +1,174 @@
+{
+  "cts" : 1767600053653,
+  "name" : "New Workflow 9",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695b6f2261374932951632e5",
+        "cts" : 1767599906516,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767600053647,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "695b6f2261374932951632e4",
+        "revision" : 1,
+        "name" : "New Workflow 9",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "065e56e3-42f3-4d60-86c6-d63ea3444b82" : [ "v1" ],
+            "7420031c-7960-448a-b4ee-b774e3d863e4" : [ "065e56e3-42f3-4d60-86c6-d63ea3444b82" ]
+          },
+          "outbound" : {
+            "v1" : [ "065e56e3-42f3-4d60-86c6-d63ea3444b82" ],
+            "065e56e3-42f3-4d60-86c6-d63ea3444b82" : [ "7420031c-7960-448a-b4ee-b774e3d863e4" ]
+          },
+          "allNeighbours" : [ "065e56e3-42f3-4d60-86c6-d63ea3444b82", "7420031c-7960-448a-b4ee-b774e3d863e4", "v1" ]
+        },
+        "vertexHashMap" : {
+          "065e56e3-42f3-4d60-86c6-d63ea3444b82" : {
+            "vertexId" : "065e56e3-42f3-4d60-86c6-d63ea3444b82",
+            "vertexType" : "DATABASE",
+            "name" : "23",
+            "databaseData" : {
+              "connectorId" : "68d129864a79af1664d426b8",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"student-details\",\"collection\":\"student.details\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"age\":\"\",\"class\":\"\",\"roll no\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "qwre",
+              "connectorName" : "Deepak Atlas DB",
+              "tenantName" : "student-details",
+              "collectionName" : "student.details",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "7420031c-7960-448a-b4ee-b774e3d863e4" : {
+            "vertexId" : "7420031c-7960-448a-b4ee-b774e3d863e4",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767599906516,
+          "lastModifiedBy" : "Apiwiz Admin",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "68d129864a79af1664d426b8",
+        "cts" : 1758538118789,
+        "createdUserName" : "Deepak Satuluri",
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1758538118789,
+        "createdBy" : "68d0fbf20ad3b87d2545c29c",
+        "modifiedBy" : "68d0fbf20ad3b87d2545c29c",
+        "name" : "Deepak Atlas DB",
+        "description" : "deepak atlas db",
+        "host" : "cluster0.36fr1.mongodb.net/",
+        "scheme" : "mongodb+srv",
+        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz-database",
+          "password" : "oNyFlrO4XM5AWX8Y",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695b6f2261374932951632e5",
+      "proxyid" : "695b6f2261374932951632e4",
+      "name" : "New Workflow 9",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "68d129864a79af1664d426b8" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "68d129864a79af1664d426b8",
+      "name" : "Deepak Atlas DB"
+    } ]
+  }
+}
