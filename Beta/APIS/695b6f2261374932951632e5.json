@@ -1,0 +1,175 @@
+{
+  "cts" : 1767605248581,
+  "name" : "New Workflow 9",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695b6f2261374932951632e5",
+        "cts" : 1767599906516,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767605248511,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "695b6f2261374932951632e4",
+        "revision" : 1,
+        "name" : "New Workflow 9",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "918708cb-74b2-4ea7-a16d-2c116c133f05" : [ "v1" ],
+            "7420031c-7960-448a-b4ee-b774e3d863e4" : [ "918708cb-74b2-4ea7-a16d-2c116c133f05" ]
+          },
+          "outbound" : {
+            "v1" : [ "918708cb-74b2-4ea7-a16d-2c116c133f05" ],
+            "918708cb-74b2-4ea7-a16d-2c116c133f05" : [ "7420031c-7960-448a-b4ee-b774e3d863e4" ]
+          },
+          "allNeighbours" : [ "918708cb-74b2-4ea7-a16d-2c116c133f05", "7420031c-7960-448a-b4ee-b774e3d863e4", "v1" ]
+        },
+        "vertexHashMap" : {
+          "918708cb-74b2-4ea7-a16d-2c116c133f05" : {
+            "vertexId" : "918708cb-74b2-4ea7-a16d-2c116c133f05",
+            "vertexType" : "DATABASE",
+            "name" : "w",
+            "databaseData" : {
+              "connectorId" : "695b78746137493295163475",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"find\",\"databaseName\":\"userdb\",\"collection\":\"users\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"email\":\"\",\"phone\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "q",
+              "connectorName" : "sujith-MongoDB",
+              "tenantName" : "userdb",
+              "collectionName" : "users",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "7420031c-7960-448a-b4ee-b774e3d863e4" : {
+            "vertexId" : "7420031c-7960-448a-b4ee-b774e3d863e4",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767599906516,
+          "lastModifiedBy" : "Apiwiz Admin",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "695b78746137493295163475",
+        "cts" : 1767602292517,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767602371860,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "name" : "sujith-MongoDB",
+        "description" : "sujith-MongoDB",
+        "host" : "0.tcp.jp.ngrok.io:10261",
+        "scheme" : "mongodb",
+        "url" : "mongodb://0.tcp.jp.ngrok.io:10261/?tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "none"
+        },
+        "ssl" : {
+          "sslConnection" : false,
+          "tlsAllowInvalidHostnames" : false
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695b6f2261374932951632e5",
+      "proxyid" : "695b6f2261374932951632e4",
+      "name" : "New Workflow 9",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "695b78746137493295163475" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695b78746137493295163475",
+      "name" : "sujith-MongoDB"
+    } ]
+  }
+}
