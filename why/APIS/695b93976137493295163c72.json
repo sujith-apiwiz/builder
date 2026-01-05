@@ -1,5 +1,5 @@
 {
-  "cts" : 1767610575316,
+  "cts" : 1767610709540,
   "name" : "TestJavaScript",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767609239947,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767610575308,
+        "mts" : 1767610709471,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -28,12 +28,14 @@
         "lockedBy" : "Akash K",
         "nodeDataHashMap" : {
           "inbound" : {
-            "3767748f-53fa-4464-a644-bde3bf890bad" : [ "v1" ]
+            "3b502501-7e87-4115-aed4-2ee53422fbad" : [ "v1" ],
+            "3767748f-53fa-4464-a644-bde3bf890bad" : [ "3b502501-7e87-4115-aed4-2ee53422fbad" ]
           },
           "outbound" : {
-            "v1" : [ "3767748f-53fa-4464-a644-bde3bf890bad" ]
+            "v1" : [ "3b502501-7e87-4115-aed4-2ee53422fbad" ],
+            "3b502501-7e87-4115-aed4-2ee53422fbad" : [ "3767748f-53fa-4464-a644-bde3bf890bad" ]
           },
-          "allNeighbours" : [ "3767748f-53fa-4464-a644-bde3bf890bad", "v1" ]
+          "allNeighbours" : [ "3767748f-53fa-4464-a644-bde3bf890bad", "3b502501-7e87-4115-aed4-2ee53422fbad", "v1" ]
         },
         "vertexHashMap" : {
           "3767748f-53fa-4464-a644-bde3bf890bad" : {
@@ -48,6 +50,34 @@
                 "type" : "JSON"
               }
             }
+          },
+          "3b502501-7e87-4115-aed4-2ee53422fbad" : {
+            "vertexId" : "3b502501-7e87-4115-aed4-2ee53422fbad",
+            "vertexType" : "JAVASCRIPT",
+            "name" : "extractHeader",
+            "description" : "extractHeader",
+            "javascriptData" : {
+              "targetVariable" : "response",
+              "variableDataType" : "STRING",
+              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n    console.log(JSON.parse(input));\n\n console.log(context.getVariable(\"extractHeader\"));\n return input;\n };",
+              "variables" : {
+                "name" : "akash"
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "customResponseMapping" : false,
+              "responsePathMapping" : { }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
