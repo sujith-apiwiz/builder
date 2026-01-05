@@ -1,5 +1,5 @@
 {
-  "cts" : 1767594354693,
+  "cts" : 1767594374659,
   "name" : "TestingSharedFlowEvent",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767594354687,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767594354687,
+        "mts" : 1767594374618,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -28,14 +28,40 @@
         "lockedBy" : "Nihal Ahamed",
         "nodeDataHashMap" : {
           "inbound" : {
-            "88bce103-1a2c-4371-a35b-929986b88700" : [ "v1" ]
+            "a2934f3f-32bd-436f-a397-2db567c567da" : [ "v1" ],
+            "88bce103-1a2c-4371-a35b-929986b88700" : [ "a2934f3f-32bd-436f-a397-2db567c567da" ]
           },
           "outbound" : {
-            "v1" : [ "88bce103-1a2c-4371-a35b-929986b88700" ]
+            "v1" : [ "a2934f3f-32bd-436f-a397-2db567c567da" ],
+            "a2934f3f-32bd-436f-a397-2db567c567da" : [ "88bce103-1a2c-4371-a35b-929986b88700" ]
           },
-          "allNeighbours" : [ "88bce103-1a2c-4371-a35b-929986b88700", "v1" ]
+          "allNeighbours" : [ "a2934f3f-32bd-436f-a397-2db567c567da", "88bce103-1a2c-4371-a35b-929986b88700", "v1" ]
         },
         "vertexHashMap" : {
+          "a2934f3f-32bd-436f-a397-2db567c567da" : {
+            "vertexId" : "a2934f3f-32bd-436f-a397-2db567c567da",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "testingflow",
+            "description" : "test",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "88bce103-1a2c-4371-a35b-929986b88700" : {
             "vertexId" : "88bce103-1a2c-4371-a35b-929986b88700",
             "vertexType" : "STOP",
