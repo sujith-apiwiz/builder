@@ -1,5 +1,5 @@
 {
-  "cts" : 1767605612183,
+  "cts" : 1767605624275,
   "name" : "New Workflow 9",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767599906516,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767605612179,
+        "mts" : 1767605624270,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -46,7 +46,7 @@
               "connectorId" : "695b78746137493295163475",
               "databaseType" : "MONGODB",
               "query" : "{\"operation\":\"find\",\"databaseName\":\"userdb\",\"collection\":\"users\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"email\":\"\",\"phone\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-              "variableName" : "q",
+              "variableName" : "res",
               "connectorName" : "sujith-MongoDB",
               "tenantName" : "userdb",
               "collectionName" : "users",
