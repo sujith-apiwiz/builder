@@ -1,5 +1,5 @@
 {
-  "cts" : 1767591676907,
+  "cts" : 1767591682114,
   "name" : "New Workflow 7",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1766731860826,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767591676844,
+        "mts" : 1767591682113,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -58,8 +58,6 @@
             "target" : {
               "name" : "a",
               "apiType" : "RESTAPI",
-              "certificateId" : "694b746d6027251a93ebf488",
-              "certificateName" : "common",
               "request" : {
                 "apiMethod" : "GET",
                 "scheme" : "https",
@@ -162,39 +160,6 @@
         "deployed" : false
       }
     }
-  }, {
-    "type" : "connector",
-    "collectionName" : "ApiBuilder.Certificate.List",
-    "data" : {
-      "certificateData" : {
-        "id" : "694b746d6027251a93ebf488",
-        "cts" : 1766552685499,
-        "createdUserName" : "Apiwiz Admin",
-        "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766553142419,
-        "createdBy" : "6943a6099f593fb753fe6911",
-        "modifiedBy" : "6943a6099f593fb753fe6911",
-        "taggedTeams" : [ ],
-        "name" : "common",
-        "content" : "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURyekNDQXBlZ0F3SUJBZ0lVUlhaTEo0M1MrOEJqaGlKZVNtTjFoMWVVL2xnd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1p6RUxNQWtHQTFVRUJoTUNTVTR4RWpBUUJnTlZCQWdNQ1V0QlVrNUJWRUZMUVRFU01CQUdBMVVFQnd3SgpRbUZ1WjJGc2IzSmxNUTh3RFFZRFZRUUtEQVpCVUVsM2FYb3hDakFJQmdOVkJBc01BV0V4RXpBUkJnTlZCQU1NCkNpb3VaR1Z0Ynk1amIyMHdIaGNOTWpVeE1ESTBNRFUwTnpVeVdoY05NalV4TVRJek1EVTBOelV5V2pCbk1Rc3cKQ1FZRFZRUUdFd0pKVGpFU01CQUdBMVVFQ0F3SlMwRlNUa0ZVUVV0Qk1SSXdFQVlEVlFRSERBbENZVzVuWVd4dgpjbVV4RHpBTkJnTlZCQW9NQmtGUVNYZHBlakVLTUFnR0ExVUVDd3dCWVRFVE1CRUdBMVVFQXd3S0tpNWtaVzF2CkxtTnZiVENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNRGQ0ZGVlZlF0QXFKS2sKaU1BemRxZnVCRzU0dTVuYlFlckp3RWI2eElpYkdnMllzT2pCSUlHMC9JSk1ZVW9tZW15bUVXUUtqVU5HOVJyeApoWi81UUpqazAzZzJrcDViVlVwc0ZaY0FXQnVyK2dLWGNmK0xEY0oyNjgwUTluRkw3TnM3ZTc5MXFKOGhmWnBVCmdGMHAwaFBFVTBpZmFxUVR5YVVvYXlnczRpdDlJL0pwNUY4b3BFdDJlYXdZM1pnUGpjTm9IN2FjcUoyMkwxME0KNnZDZ0U0TlhWMCtyTlR0ZWNqM2R5QiswalNIeGk1MGs3ejllcUFCZnpnUWh2L3FocWJveTBoY1dtZjlHL1JhZQpMdEl0V2YxRnVYVjFabTFoQ0hvUXY2aVZqOU9xdG91M2FMYUdsQ2MrMUtsSnlQcmVxcHM1UWllTGJrY0lYQVdoCnRqUUk5ck1DQXdFQUFhTlRNRkV3SFFZRFZSME9CQllFRkpURnR6d1lHT1R1UTY5OUVTb1BmQzFsOVRZNE1COEcKQTFVZEl3UVlNQmFBRkpURnR6d1lHT1R1UTY5OUVTb1BmQzFsOVRZNE1BOEdBMVVkRXdFQi93UUZNQU1CQWY4dwpEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBREUwbXpXaEQ2c2FtcFFmQmxFL0xOT0hLUm1NcUpCMXhkM0FHaWsxCnZqRkd4N05xU2ZuMGJ4RXZjczREQmlEU0VDKzdsVVFtczNyWjlEcUFVVHB2NjBNSGFqTmlLTmRsbnA3NzhRd3YKZCtHbGQ1L3Z1TFhWeFVKMmVYS29GWWUvL1hDTWdsMjFSeFJkNDlMeDJVMTFRcGhQa0lnNGJKaXljMWNnQlhXSApnRHh5TDFTYVZPeXUrbmkvVGFQaFE4SWN3Nnl2dVRwMkI2NlV5VHJKRXNQeTRlUnlaS0xMeHVqU3dHWnRiZ0UwCnBEM0NyZGJYa3NxTHhhSm1MeEZ6ajVKcURzRTE4S0VOcXNIK2NRZHIvbW1IVUN6RUJjZVlGdnNwZEYza0M4RTIKUUdTNjErMkhyZTV1T2pOdkEzN3A3ZTkrc2ZtRlFUQ2xXRWcydnZJWm5iUlNuOU09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
-        "description" : "common",
-        "certificateFileName" : "server.crt",
-        "password" : "null",
-        "alias" : "",
-        "status" : "APPROVED",
-        "statusHistory" : [ {
-          "status" : "Approved",
-          "cts" : 1766553142419,
-          "lastModifiedBy" : "Apiwiz Admin",
-          "description" : " "
-        }, {
-          "status" : "Draft",
-          "cts" : 1766552685499,
-          "lastModifiedBy" : "Apiwiz Admin",
-          "description" : "Created new certificate"
-        } ]
-      }
-    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -204,7 +169,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "694b746d6027251a93ebf488" ]
+      "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -212,10 +177,6 @@
       "name" : "Clear environment"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ {
-      "id" : "694b746d6027251a93ebf488",
-      "name" : "common",
-      "description" : "common"
-    } ]
+    "connectorMetadataDetailsDtoList" : [ ]
   }
 }
