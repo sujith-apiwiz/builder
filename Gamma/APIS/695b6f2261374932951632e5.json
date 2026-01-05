@@ -1,5 +1,5 @@
 {
-  "cts" : 1767600058422,
+  "cts" : 1767606115495,
   "name" : "New Workflow 9",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767599906516,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767600058349,
+        "mts" : 1767606108351,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -23,33 +23,33 @@
         "apiMethod" : "GET",
         "path" : "/",
         "pathArray" : [ ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "065e56e3-42f3-4d60-86c6-d63ea3444b82" : [ "v1" ],
-            "7420031c-7960-448a-b4ee-b774e3d863e4" : [ "065e56e3-42f3-4d60-86c6-d63ea3444b82" ]
+            "918708cb-74b2-4ea7-a16d-2c116c133f05" : [ "v1" ],
+            "7420031c-7960-448a-b4ee-b774e3d863e4" : [ "918708cb-74b2-4ea7-a16d-2c116c133f05" ]
           },
           "outbound" : {
-            "v1" : [ "065e56e3-42f3-4d60-86c6-d63ea3444b82" ],
-            "065e56e3-42f3-4d60-86c6-d63ea3444b82" : [ "7420031c-7960-448a-b4ee-b774e3d863e4" ]
+            "v1" : [ "918708cb-74b2-4ea7-a16d-2c116c133f05" ],
+            "918708cb-74b2-4ea7-a16d-2c116c133f05" : [ "7420031c-7960-448a-b4ee-b774e3d863e4" ]
           },
-          "allNeighbours" : [ "065e56e3-42f3-4d60-86c6-d63ea3444b82", "7420031c-7960-448a-b4ee-b774e3d863e4", "v1" ]
+          "allNeighbours" : [ "918708cb-74b2-4ea7-a16d-2c116c133f05", "7420031c-7960-448a-b4ee-b774e3d863e4", "v1" ]
         },
         "vertexHashMap" : {
-          "065e56e3-42f3-4d60-86c6-d63ea3444b82" : {
-            "vertexId" : "065e56e3-42f3-4d60-86c6-d63ea3444b82",
+          "918708cb-74b2-4ea7-a16d-2c116c133f05" : {
+            "vertexId" : "918708cb-74b2-4ea7-a16d-2c116c133f05",
             "vertexType" : "DATABASE",
-            "name" : "23",
+            "name" : "DB",
             "databaseData" : {
-              "connectorId" : "68d129864a79af1664d426b8",
+              "connectorId" : "695b78746137493295163475",
               "databaseType" : "MONGODB",
-              "query" : "{\"operation\":\"insert\",\"databaseName\":\"student-details\",\"collection\":\"student.details\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"age\":\"\",\"class\":\"\",\"roll no\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-              "variableName" : "qwre",
-              "connectorName" : "Deepak Atlas DB",
-              "tenantName" : "student-details",
-              "collectionName" : "student.details",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"userdb\",\"collection\":\"users\",\"documents\":[{\"_id\":\"68401f16dc53b3577f850f45\",\"name\":\"kumar\",\"email\":\"qqs\",\"phone\":\"s\",\"_class\":\"com.example.usermanagement.model.UserModel\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "res",
+              "connectorName" : "sujith-MongoDB",
+              "tenantName" : "userdb",
+              "collectionName" : "users",
               "manual" : false,
               "skip" : false,
               "showActualErrorMessage" : false,
@@ -103,11 +103,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767606036428,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767605984338,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767599906516,
           "lastModifiedBy" : "Apiwiz Admin",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -128,23 +139,24 @@
     "collectionName" : "Connectors.MongoDb.Configuration",
     "data" : {
       "mongoDBConfigurationData" : {
-        "id" : "68d129864a79af1664d426b8",
-        "cts" : 1758538118789,
-        "createdUserName" : "Deepak Satuluri",
-        "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1758538118789,
-        "createdBy" : "68d0fbf20ad3b87d2545c29c",
-        "modifiedBy" : "68d0fbf20ad3b87d2545c29c",
-        "name" : "Deepak Atlas DB",
-        "description" : "deepak atlas db",
-        "host" : "cluster0.36fr1.mongodb.net/",
-        "scheme" : "mongodb+srv",
-        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
+        "id" : "695b78746137493295163475",
+        "cts" : 1767602292517,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767606056591,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "name" : "sujith-MongoDB",
+        "description" : "sujith-MongoDB",
+        "host" : "0.tcp.jp.ngrok.io:10261",
+        "scheme" : "mongodb",
+        "url" : "mongodb://0.tcp.jp.ngrok.io:10261/?tls=false",
         "authentication" : {
-          "mongoDbAuthType" : "userNamePassword",
-          "username" : "apiwiz-database",
-          "password" : "oNyFlrO4XM5AWX8Y",
-          "authenticationMechanism" : "DEFAULT"
+          "mongoDbAuthType" : "none"
+        },
+        "ssl" : {
+          "sslConnection" : false,
+          "tlsAllowInvalidHostnames" : false
         }
       },
       "databaseType" : "MongoDb"
@@ -158,7 +170,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "68d129864a79af1664d426b8" ]
+      "attachedConnectors" : [ "695b78746137493295163475" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -167,8 +179,8 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "68d129864a79af1664d426b8",
-      "name" : "Deepak Atlas DB"
+      "id" : "695b78746137493295163475",
+      "name" : "sujith-MongoDB"
     } ]
   }
 }
