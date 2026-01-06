@@ -1,5 +1,5 @@
 {
-  "cts" : 1767679005471,
+  "cts" : 1767679124467,
   "name" : "DLM testcase 1 - queues",
   "exportedBy" : "Pranav Ananth",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767615266044,
         "createdUserName" : "Pranav Ananth",
         "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1767679005467,
+        "mts" : 1767679124463,
         "createdBy" : "6655a103339aa715119d5a13",
         "modifiedBy" : "6655a103339aa715119d5a13",
         "taggedTeams" : [ ],
@@ -59,7 +59,7 @@
                 "content-type" : "application/json"
               },
               "body" : {
-                "data" : "{{{responseJson}}}",
+                "data" : "{\n  \"status\": \"200\",\n  \"message\": \"Request processed successfully\",\n  \"data\": [\n    {\n      \"queueNo\": \"{{LVERSION}}\"\n    }\n  ],\n  \"platform\": {},\n  \"meta\": {\n    \"timestamp\": \"2025-09-15T14:30:45+08:00\",\n    \"correlationId\": \"{{correlationId}}\",\n    \"version\": \"1.0\"\n  }\n}",
                 "type" : "json"
               }
             }
