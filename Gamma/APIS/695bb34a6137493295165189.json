@@ -1,5 +1,5 @@
 {
-  "cts" : 1767680112519,
+  "cts" : 1767685863390,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767617354032,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767680110913,
+        "mts" : 1767685861707,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -23,56 +23,19 @@
         "apiMethod" : "GET",
         "path" : "/123",
         "pathArray" : [ "123" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : [ "v1" ],
-            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" ]
+            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" ],
-            "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+            "v1" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
           },
-          "allNeighbours" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+          "allNeighbours" : [ "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
         },
         "vertexHashMap" : {
-          "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : {
-            "vertexId" : "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3",
-            "vertexType" : "DATABASE",
-            "name" : "a",
-            "databaseData" : {
-              "connectorId" : "695ca3756137493295165919",
-              "databaseType" : "POSTGRESQL",
-              "query" : "select * from employees;",
-              "variableName" : "a",
-              "connectorName" : "sujith",
-              "schemaName" : "_timescaledb_internal",
-              "tableName" : "bgw_job_stat",
-              "manual" : false,
-              "queryRequest" : {
-                "tableName" : "bgw_job_stat",
-                "operation" : "SELECT",
-                "selectedFields" : { },
-                "limit" : 0,
-                "offSet" : 0,
-                "top" : 0
-              },
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -104,18 +67,33 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
-                "type" : "JSON"
+                "data" : "{{a}}",
+                "type" : "json"
               }
             }
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767685797299,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767685759874,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767617354032,
           "lastModifiedBy" : "Apiwiz Admin",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -131,34 +109,6 @@
         "deployed" : false
       }
     }
-  }, {
-    "type" : "connector",
-    "collectionName" : "Connectors.PostgreSql.Configuration",
-    "data" : {
-      "postgreSQLConfigurationData" : {
-        "id" : "695ca3756137493295165919",
-        "cts" : 1767678837629,
-        "createdUserName" : "Apiwiz Admin",
-        "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767679204580,
-        "createdBy" : "6943a6099f593fb753fe6911",
-        "modifiedBy" : "6943a6099f593fb753fe6911",
-        "taggedTeams" : [ {
-          "id" : "6948f1e0a364ea598e8b59c9",
-          "name" : "Beta"
-        } ],
-        "name" : "sujith",
-        "description" : "sujith",
-        "postgresAuthType" : "USERNAMEPASSWORD",
-        "postgresqlHostname" : "54.203.45.67",
-        "postgresqlPort" : "5432",
-        "postgresqlDatabase" : "apiwiz",
-        "postgresqlUsername" : "postgres",
-        "postgresqlPassword" : "test123",
-        "url" : "postgresql://54.203.45.67:5432"
-      },
-      "databaseType" : "PostgreSql"
-    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -168,7 +118,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695ca3756137493295165919" ]
+      "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -176,9 +126,6 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ {
-      "id" : "695ca3756137493295165919",
-      "name" : "sujith"
-    } ]
+    "connectorMetadataDetailsDtoList" : [ ]
   }
 }
