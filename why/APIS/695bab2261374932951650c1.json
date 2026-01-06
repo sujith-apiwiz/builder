@@ -1,5 +1,5 @@
 {
-  "cts" : 1767679859717,
+  "cts" : 1767679871244,
   "name" : "DLM testcase 1 - queues",
   "exportedBy" : "Pranav Ananth",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767615266044,
         "createdUserName" : "Pranav Ananth",
         "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1767679859715,
+        "mts" : 1767679871231,
         "createdBy" : "6655a103339aa715119d5a13",
         "modifiedBy" : "6655a103339aa715119d5a13",
         "taggedTeams" : [ ],
@@ -28,23 +28,19 @@
         "lockedBy" : "Pranav Ananth",
         "nodeDataHashMap" : {
           "inbound" : {
-            "cc3a60d9-0acc-4a6a-8930-f0f75a5574d2" : [ "v1" ],
-            "9865a6fd-7016-494a-8eee-4fc89830c951" : [ "cc3a60d9-0acc-4a6a-8930-f0f75a5574d2" ],
             "1af90b2d-a829-4fa7-9d85-3533d9530a4f" : [ "9865a6fd-7016-494a-8eee-4fc89830c951" ],
-            "4c519561-3c97-4fe5-992b-00841fa668cd" : [ "60448813-04a6-49e2-bee0-5583c91a5adb" ],
-            "60448813-04a6-49e2-bee0-5583c91a5adb" : [ "1af90b2d-a829-4fa7-9d85-3533d9530a4f" ],
+            "9865a6fd-7016-494a-8eee-4fc89830c951" : [ "v1" ],
+            "4c519561-3c97-4fe5-992b-00841fa668cd" : [ "1af90b2d-a829-4fa7-9d85-3533d9530a4f" ],
             "0d948480-a89f-44b8-9a12-666b05dada5c" : [ "4c519561-3c97-4fe5-992b-00841fa668cd" ],
             "44235092-2f23-4599-9793-fbe76fdc2148" : [ "4c519561-3c97-4fe5-992b-00841fa668cd" ]
           },
           "outbound" : {
-            "v1" : [ "cc3a60d9-0acc-4a6a-8930-f0f75a5574d2" ],
-            "cc3a60d9-0acc-4a6a-8930-f0f75a5574d2" : [ "9865a6fd-7016-494a-8eee-4fc89830c951" ],
             "9865a6fd-7016-494a-8eee-4fc89830c951" : [ "1af90b2d-a829-4fa7-9d85-3533d9530a4f" ],
-            "60448813-04a6-49e2-bee0-5583c91a5adb" : [ "4c519561-3c97-4fe5-992b-00841fa668cd" ],
-            "1af90b2d-a829-4fa7-9d85-3533d9530a4f" : [ "60448813-04a6-49e2-bee0-5583c91a5adb" ],
+            "v1" : [ "9865a6fd-7016-494a-8eee-4fc89830c951" ],
+            "1af90b2d-a829-4fa7-9d85-3533d9530a4f" : [ "4c519561-3c97-4fe5-992b-00841fa668cd" ],
             "4c519561-3c97-4fe5-992b-00841fa668cd" : [ "0d948480-a89f-44b8-9a12-666b05dada5c", "44235092-2f23-4599-9793-fbe76fdc2148" ]
           },
-          "allNeighbours" : [ "0d948480-a89f-44b8-9a12-666b05dada5c", "9865a6fd-7016-494a-8eee-4fc89830c951", "4c519561-3c97-4fe5-992b-00841fa668cd", "cc3a60d9-0acc-4a6a-8930-f0f75a5574d2", "60448813-04a6-49e2-bee0-5583c91a5adb", "v1", "1af90b2d-a829-4fa7-9d85-3533d9530a4f", "44235092-2f23-4599-9793-fbe76fdc2148" ]
+          "allNeighbours" : [ "0d948480-a89f-44b8-9a12-666b05dada5c", "9865a6fd-7016-494a-8eee-4fc89830c951", "4c519561-3c97-4fe5-992b-00841fa668cd", "v1", "1af90b2d-a829-4fa7-9d85-3533d9530a4f", "44235092-2f23-4599-9793-fbe76fdc2148" ]
         },
         "vertexHashMap" : {
           "0d948480-a89f-44b8-9a12-666b05dada5c" : {
@@ -212,196 +208,6 @@
             "imported" : false,
             "skipRuntimeVariables" : false
           },
-          "cc3a60d9-0acc-4a6a-8930-f0f75a5574d2" : {
-            "vertexId" : "cc3a60d9-0acc-4a6a-8930-f0f75a5574d2",
-            "vertexType" : "DATA_MAPPING",
-            "name" : "convert to soap XML payload",
-            "dataMappingData" : {
-              "sourceVariable" : "jsonInputPayload",
-              "targetVariable" : "xmlInputPayload",
-              "targetSchema" : "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\r\n    <xs:element name=\"Envelope\">\r\n        <xs:complexType>\r\n            <xs:sequence>\r\n                <xs:element type=\"xs:string\" name=\"Header\"/>\r\n                <xs:element name=\"Body\">\r\n                    <xs:complexType>\r\n                        <xs:sequence>\r\n                            <xs:element name=\"DLMTellerWebService\">\r\n                                <xs:complexType>\r\n                                    <xs:sequence>\r\n                                        <xs:element name=\"WebRequestCommon\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:string\" name=\"company\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"password\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"userName\"/>\r\n                                                </xs:sequence>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                        <xs:element type=\"xs:string\" name=\"OfsFunction\"/>\r\n                                        <xs:element name=\"TELLEREWBS3DLMWSType\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:integer\" name=\"TRANSACTIONCODE\"/>\r\n                                                    <xs:element name=\"gACCOUNT1\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mACCOUNT1\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:string\" name=\"ACCOUNT1\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"AMOUNTLOCAL1\"/>\r\n                                                                            <xs:element type=\"xs:string\" name=\"AMOUNTFCY1\"/>\r\n                                                                            <xs:element name=\"sgNARRATIVE1\">\r\n                                                                                <xs:complexType>\r\n                                                                                    <xs:sequence>\r\n                                                                                        <xs:element type=\"xs:string\" name=\"NARRATIVE1\"/>\r\n                                                                                    </xs:sequence>\r\n                                                                                </xs:complexType>\r\n                                                                            </xs:element>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:integer\" name=\"ACCOUNT2\"/>\r\n                                                    <xs:element name=\"gCHARGECUSTOMER\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mCHARGECUSTOMER\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHRGAMTLOCAL\"/>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:string\" name=\"STOCKREGISTER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"SERIESID\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"STOCKNUMBER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"ISSUECHEQUETYPE\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"LVERSION\"/>\r\n                                                </xs:sequence>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                    </xs:sequence>\r\n                                </xs:complexType>\r\n                            </xs:element>\r\n                        </xs:sequence>\r\n                    </xs:complexType>\r\n                </xs:element>\r\n            </xs:sequence>\r\n        </xs:complexType>\r\n    </xs:element>\r\n</xs:schema>",
-              "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"storeCode\": {\n      \"type\": \"string\"\n    },\n    \"transactionType\": {\n      \"type\": \"string\"\n    },\n    \"queueNo\": {\n      \"type\": \"string\"\n    },\n    \"chequeNo\": {\n      \"type\": \"string\"\n    },\n    \"tellerId\": {\n      \"type\": \"string\"\n    },\n    \"currency\": {\n      \"type\": \"string\"\n    },\n    \"accounts\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"debit\": {\n          \"type\": \"string\"\n        },\n        \"credit\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"debit\",\n        \"credit\"\n      ]\n    },\n    \"amount\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"storeCode\",\n    \"transactionType\",\n    \"queueNo\",\n    \"chequeNo\",\n    \"tellerId\",\n    \"currency\",\n    \"accounts\",\n    \"amount\"\n  ]\n}",
-              "pathOperations" : [ {
-                "sourcePathList" : [ {
-                  "sourcePath" : "$.storeCode",
-                  "customPath" : false
-                } ],
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/WebRequestCommon/company",
-                "containsDirectValue" : false,
-                "containsCustomList" : false
-              }, {
-                "sourcePathList" : [ {
-                  "sourcePath" : "$.transactionType",
-                  "customPath" : false
-                } ],
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/TELLEREWBS3DLMWSType/TRANSACTIONCODE",
-                "containsDirectValue" : false,
-                "containsCustomList" : false
-              }, {
-                "sourcePathList" : [ {
-                  "sourcePath" : "$.accounts.debit",
-                  "customPath" : false
-                } ],
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/TELLEREWBS3DLMWSType/gACCOUNT1/mACCOUNT1/ACCOUNT1",
-                "containsDirectValue" : false,
-                "containsCustomList" : false
-              }, {
-                "sourcePathList" : [ {
-                  "sourcePath" : "$.amount",
-                  "customPath" : false
-                } ],
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/TELLEREWBS3DLMWSType/gACCOUNT1/mACCOUNT1/AMOUNTLOCAL1",
-                "containsDirectValue" : false,
-                "containsCustomList" : false
-              }, {
-                "sourcePathList" : [ {
-                  "sourcePath" : "$.accounts.credit",
-                  "customPath" : false
-                } ],
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/TELLEREWBS3DLMWSType/ACCOUNT2",
-                "containsDirectValue" : false,
-                "containsCustomList" : false
-              }, {
-                "sourcePathList" : [ {
-                  "sourcePath" : "$.chequeNo",
-                  "customPath" : false
-                } ],
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/TELLEREWBS3DLMWSType/STOCKNUMBER",
-                "containsDirectValue" : false,
-                "containsCustomList" : false
-              }, {
-                "sourcePathList" : [ {
-                  "sourcePath" : "$.queueNo",
-                  "customPath" : false
-                } ],
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/TELLEREWBS3DLMWSType/LVERSION",
-                "containsDirectValue" : false,
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/WebRequestCommon/password",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{password}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/WebRequestCommon/userName",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{userName}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/TELLEREWBS3DLMWSType/TRANSACTIONCODE",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{transactionType}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/WebRequestCommon/company",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{companyId}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/TELLEREWBS3DLMWSType/gACCOUNT1/mACCOUNT1/ACCOUNT1",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{account1}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/TELLEREWBS3DLMWSType/gACCOUNT1/mACCOUNT1/AMOUNTLOCAL1",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{accountLocal1}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/TELLEREWBS3DLMWSType/ACCOUNT2",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{account2}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/TELLEREWBS3DLMWSType/LVERSION",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{LVersion}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/TELLEREWBS3DLMWSType/ISSUECHEQUETYPE",
-                "feelExpression" : {
-                  "expression" : "if chequeNo != null then queueNo else \"\"",
-                  "currentIndexElement" : false,
-                  "feelVariableList" : [ {
-                    "name" : "queueNo",
-                    "value" : "{{LVersion}}",
-                    "valueDataType" : "STRING"
-                  }, {
-                    "name" : "chequeNo",
-                    "value" : "{{stockNumber}}",
-                    "valueDataType" : "STRING"
-                  } ]
-                },
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "FEEL_EXPRESSION"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/TELLEREWBS3DLMWSType/STOCKNUMBER",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{stockNumber}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/WebRequestCommon/password",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{password}}"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "/Envelope/Body/DLMTellerWebService/WebRequestCommon/userName",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "{{userName}}"
-                },
-                "containsCustomList" : false
-              } ],
-              "sourceType" : "JSON",
-              "targetType" : "XML",
-              "skip" : true,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -496,116 +302,6 @@
                 }
               }
             }
-          },
-          "60448813-04a6-49e2-bee0-5583c91a5adb" : {
-            "vertexId" : "60448813-04a6-49e2-bee0-5583c91a5adb",
-            "vertexType" : "DATA_MAPPING",
-            "name" : "configuring response json",
-            "dataMappingData" : {
-              "sourceVariable" : "queueAPIResponse",
-              "targetVariable" : "responseJson",
-              "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"status\": {\n      \"type\": \"string\"\n    },\n    \"message\": {\n      \"type\": \"string\"\n    },\n    \"data\": {\n      \"type\": \"array\",\n      \"items\": [\n        {\n          \"type\": \"object\",\n          \"properties\": {\n            \"queueNo\": {\n              \"type\": \"string\"\n            }\n          },\n          \"required\": [\n            \"queueNo\"\n          ]\n        }\n      ],\n      \"minItems\": 1,\n      \"maxItems\": 1\n    },\n    \"platform\": {\n      \"type\": \"object\",\n      \"properties\": {},\n      \"required\": []\n    },\n    \"meta\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"timestamp\": {\n          \"type\": \"string\"\n        },\n        \"correlationId\": {\n          \"type\": \"string\"\n        },\n        \"version\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"timestamp\",\n        \"correlationId\",\n        \"version\"\n      ]\n    }\n  },\n  \"required\": [\n    \"status\",\n    \"message\",\n    \"data\",\n    \"platform\",\n    \"meta\"\n  ]\n}",
-              "sourceSchema" : "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\r\n    <xs:element name=\"S:Envelope\">\r\n        <xs:complexType>\r\n            <xs:sequence>\r\n                <xs:element name=\"S:Body\">\r\n                    <xs:complexType>\r\n                        <xs:sequence>\r\n                            <xs:element name=\"ns2:DLMTellerWebServiceResponse\">\r\n                                <xs:complexType>\r\n                                    <xs:sequence>\r\n                                        <xs:element name=\"Status\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:string\" name=\"transactionId\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"messageId\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"successIndicator\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"application\"/>\r\n                                                    <xs:element maxOccurs=\"unbounded\" type=\"xs:string\" name=\"messages\"/>\r\n                                                </xs:sequence>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                        <xs:element name=\"TELLERType\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:integer\" name=\"TRANSACTIONCODE\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"TELLERID1\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"DRCRMARKER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"CURRENCY1\"/>\r\n                                                    <xs:element name=\"gACCOUNT1\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mACCOUNT1\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:string\" name=\"ACCOUNT1\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"AMOUNTLOCAL1\"/>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:integer\" name=\"VALUEDATE1\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"CURRMARKET1\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"POSTYPE1\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"CURRENCY2\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"TELLERID2\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"ACCOUNT2\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"CUSTOMER2\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"AMOUNTLOCAL2\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"NETAMOUNT\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"VALUEDATE2\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"CURRMARKET2\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"POSTYPE2\"/>\r\n                                                    <xs:element name=\"gCHARGECUSTOMER\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mCHARGECUSTOMER\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHARGECUSTOMER\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHARGEACCOUNT\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHARGECATEGORY\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHRGDRTXNCDE\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHRGCRTXNCDE\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHRGAMTLOCAL\"/>\r\n                                                                            <xs:element type=\"xs:string\" name=\"CHARGECODE\"/>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:string\" name=\"WAIVECHARGES\"/>\r\n                                                    <xs:element name=\"gDENOMINATION\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element maxOccurs=\"unbounded\" name=\"mDENOMINATION\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:string\" name=\"DENOMINATION\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"UNIT\"/>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element name=\"gDRDENOM\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element maxOccurs=\"unbounded\" name=\"mDRDENOM\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:string\" name=\"DRDENOM\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"DRUNIT\"/>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element name=\"gNEWCUSTBAL\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element type=\"xs:integer\" name=\"NEWCUSTBAL\"/>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:integer\" name=\"DEALERDESK\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"STOCKREGISTER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"SERIESID\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"STOCKNUMBER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"ISSUECHEQUETYPE\"/>\r\n                                                    <xs:element name=\"gSTMTNO\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element type=\"xs:string\" name=\"STMTNO\"/>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:string\" name=\"RECORDSTATUS\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"CURRNO\"/>\r\n                                                    <xs:element name=\"gINPUTTER\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element type=\"xs:string\" name=\"INPUTTER\"/>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element name=\"gDATETIME\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element type=\"xs:integer\" name=\"DATETIME\"/>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:string\" name=\"COCODE\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"DEPTCODE\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"LVERSION\"/>\r\n                                                </xs:sequence>\r\n                                                <xs:attribute name=\"id\" type=\"xs:string\"/>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                    </xs:sequence>\r\n                                </xs:complexType>\r\n                            </xs:element>\r\n                        </xs:sequence>\r\n                    </xs:complexType>\r\n                </xs:element>\r\n            </xs:sequence>\r\n        </xs:complexType>\r\n    </xs:element>\r\n</xs:schema>",
-              "pathOperations" : [ {
-                "targetPath" : "$.data[*]",
-                "containsDirectValue" : false,
-                "containsCustomList" : true,
-                "customListData" : {
-                  "recordList" : [ {
-                    "pathOperations" : [ {
-                      "targetPath" : "$.data[*].queueNo",
-                      "containsDirectValue" : true,
-                      "directValueData" : {
-                        "directValueType" : "DIRECT_VALUE",
-                        "value" : "{{LVERSION}}"
-                      },
-                      "containsCustomList" : false
-                    } ]
-                  } ]
-                }
-              }, {
-                "targetPath" : "$.status",
-                "feelExpression" : {
-                  "expression" : "if successIndicator = \"success\" then 200 else 500",
-                  "currentIndexElement" : false,
-                  "feelVariableList" : [ {
-                    "name" : "successIndicator",
-                    "value" : "{{successIndicator}}",
-                    "valueDataType" : "STRING"
-                  } ]
-                },
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "FEEL_EXPRESSION"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "$.message",
-                "feelExpression" : {
-                  "expression" : "if queueAPIStatus = 200 then \"Request processed successfully\" else \"Request failed\"",
-                  "currentIndexElement" : false,
-                  "feelVariableList" : [ {
-                    "name" : "queueAPIStatus",
-                    "value" : "{{queueAPIStatus}}",
-                    "valueDataType" : "INTEGER"
-                  } ]
-                },
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "FEEL_EXPRESSION"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "$.meta.timestamp",
-                "feelExpression" : {
-                  "expression" : "now()",
-                  "currentIndexElement" : false
-                },
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "FEEL_EXPRESSION"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "$.meta.correlationId",
-                "feelExpression" : {
-                  "expression" : "correlationId",
-                  "currentIndexElement" : false,
-                  "feelVariableList" : [ {
-                    "name" : "correlationId",
-                    "value" : "{{correlationId}}",
-                    "valueDataType" : "STRING"
-                  } ]
-                },
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "FEEL_EXPRESSION"
-                },
-                "containsCustomList" : false
-              }, {
-                "targetPath" : "$.meta.version",
-                "containsDirectValue" : true,
-                "directValueData" : {
-                  "directValueType" : "DIRECT_VALUE",
-                  "value" : "1.0"
-                },
-                "containsCustomList" : false
-              } ],
-              "sourceType" : "XML",
-              "targetType" : "JSON",
-              "skip" : true,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           },
           "1af90b2d-a829-4fa7-9d85-3533d9530a4f" : {
             "vertexId" : "1af90b2d-a829-4fa7-9d85-3533d9530a4f",
