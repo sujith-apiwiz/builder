@@ -1,0 +1,179 @@
+{
+  "cts" : 1767695431300,
+  "name" : "New Workflow 6",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695cde806137493295166716",
+        "cts" : 1767693952750,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767695425873,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "695cde806137493295166715",
+        "revision" : 1,
+        "name" : "New Workflow 6",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "1a2c31dc-5ad2-4966-b698-547b34b2574a" : [ "v1" ],
+            "3093ea7c-390a-42fa-b7b1-2629efcb2432" : [ "1a2c31dc-5ad2-4966-b698-547b34b2574a" ]
+          },
+          "outbound" : {
+            "v1" : [ "1a2c31dc-5ad2-4966-b698-547b34b2574a" ],
+            "1a2c31dc-5ad2-4966-b698-547b34b2574a" : [ "3093ea7c-390a-42fa-b7b1-2629efcb2432" ]
+          },
+          "allNeighbours" : [ "1a2c31dc-5ad2-4966-b698-547b34b2574a", "3093ea7c-390a-42fa-b7b1-2629efcb2432", "v1" ]
+        },
+        "vertexHashMap" : {
+          "1a2c31dc-5ad2-4966-b698-547b34b2574a" : {
+            "vertexId" : "1a2c31dc-5ad2-4966-b698-547b34b2574a",
+            "vertexType" : "DATABASE",
+            "name" : "a",
+            "databaseData" : {
+              "connectorId" : "695cdfb6613749329516677e",
+              "databaseType" : "MYSQL",
+              "query" : "select * from users",
+              "variableName" : "a",
+              "connectorName" : "sd",
+              "tableName" : "users",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "users",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "3093ea7c-390a-42fa-b7b1-2629efcb2432" : {
+            "vertexId" : "3093ea7c-390a-42fa-b7b1-2629efcb2432",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767693952750,
+          "lastModifiedBy" : "Apiwiz Admin",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MySql.Configuration",
+    "data" : {
+      "mySQLConfigurationData" : {
+        "id" : "695cdfb6613749329516677e",
+        "cts" : 1767694262117,
+        "createdUserName" : "second user",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767695414589,
+        "createdBy" : "6948f0eda364ea598e8b5991",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "name" : "sd",
+        "description" : "wedf",
+        "mySqlConfigType" : "TCPIP",
+        "mysqlHostname" : "54.203.45.67",
+        "mysqlPort" : "3306",
+        "mysqlUserName" : "admin",
+        "mysqlPassword" : "admin123",
+        "mysqlDatabaseName" : "apiwiz",
+        "url" : "mysql://54.203.45.67:3306"
+      },
+      "databaseType" : "MySql"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695cde806137493295166716",
+      "proxyid" : "695cde806137493295166715",
+      "name" : "New Workflow 6",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "695cdfb6613749329516677e" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695cdfb6613749329516677e",
+      "name" : "sd"
+    } ]
+  }
+}
