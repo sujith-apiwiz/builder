@@ -1,5 +1,5 @@
 {
-  "cts" : 1767678976819,
+  "cts" : 1767680105720,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767617354032,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767678976769,
+        "mts" : 1767680105715,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,50 +28,37 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : [ "v1" ],
-            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5" ]
+            "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : [ "v1" ],
+            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" ]
           },
           "outbound" : {
-            "v1" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5" ],
-            "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+            "v1" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" ],
+            "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
           },
-          "allNeighbours" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+          "allNeighbours" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
         },
         "vertexHashMap" : {
-          "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : {
-            "vertexId" : "f3b1c790-4743-4009-8717-a14cf4ae8fa5",
-            "vertexType" : "TARGET",
-            "name" : "w",
-            "target" : {
-              "name" : "w",
-              "description" : "w",
-              "apiType" : "RESTAPI",
-              "request" : {
-                "apiMethod" : "POST",
-                "scheme" : "https",
-                "host" : "acme-team-production-jjgl.apiwiz.io",
-                "path" : "/account/user/details-v1/123",
-                "headerParams" : [ {
-                  "name" : "content-type",
-                  "value" : "application/json"
-                }, {
-                  "name" : "x-application-type",
-                  "value" : "ApiSandbox"
-                } ],
-                "queryParams" : [ ],
-                "targetRequestBodyType" : "RAW",
-                "body" : {
-                  "data" : "{\n  \"a\": \"aa\"\n}",
-                  "type" : "json"
-                },
-                "formParams" : [ ],
-                "urlEncodedParams" : [ ]
+          "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : {
+            "vertexId" : "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3",
+            "vertexType" : "DATABASE",
+            "name" : "a",
+            "databaseData" : {
+              "connectorId" : "695ca3756137493295165919",
+              "databaseType" : "POSTGRESQL",
+              "query" : "select * from employees;",
+              "variableName" : "a",
+              "connectorName" : "sujith",
+              "schemaName" : "_timescaledb_internal",
+              "tableName" : "bgw_job_stat",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "bgw_job_stat",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0
               },
-              "response" : {
-                "statusCode" : 400,
-                "variables" : [ ]
-              },
-              "timeout" : 0,
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -80,20 +67,6 @@
                 "body" : {
                   "data" : "",
                   "type" : "json"
-                }
-              },
-              "securityResponse" : {
-                "isEnabled" : false,
-                "useEnforcedRules" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false,
-                "errorResponse" : {
-                  "statusCode" : 400,
-                  "body" : {
-                    "data" : "",
-                    "type" : "json"
-                  }
                 }
               }
             },
@@ -158,6 +131,34 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.PostgreSql.Configuration",
+    "data" : {
+      "postgreSQLConfigurationData" : {
+        "id" : "695ca3756137493295165919",
+        "cts" : 1767678837629,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767679204580,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ {
+          "id" : "6948f1e0a364ea598e8b59c9",
+          "name" : "Beta"
+        } ],
+        "name" : "sujith",
+        "description" : "sujith",
+        "postgresAuthType" : "USERNAMEPASSWORD",
+        "postgresqlHostname" : "54.203.45.67",
+        "postgresqlPort" : "5432",
+        "postgresqlDatabase" : "apiwiz",
+        "postgresqlUsername" : "postgres",
+        "postgresqlPassword" : "test123",
+        "url" : "postgresql://54.203.45.67:5432"
+      },
+      "databaseType" : "PostgreSql"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -167,7 +168,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "695ca3756137493295165919" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -175,6 +176,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695ca3756137493295165919",
+      "name" : "sujith"
+    } ]
   }
 }
