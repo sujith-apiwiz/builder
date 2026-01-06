@@ -1,5 +1,5 @@
 {
-  "cts" : 1767697214583,
+  "cts" : 1767697697864,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767693952750,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767697208984,
+        "mts" : 1767697692263,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,39 +28,33 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "f34705c5-63dc-4527-ad19-80a084adbe79" : [ "v1" ],
-            "3093ea7c-390a-42fa-b7b1-2629efcb2432" : [ "f34705c5-63dc-4527-ad19-80a084adbe79" ]
+            "4d60af82-8b7b-4a7c-a990-3555af1118f2" : [ "v1" ],
+            "3093ea7c-390a-42fa-b7b1-2629efcb2432" : [ "4d60af82-8b7b-4a7c-a990-3555af1118f2" ]
           },
           "outbound" : {
-            "v1" : [ "f34705c5-63dc-4527-ad19-80a084adbe79" ],
-            "f34705c5-63dc-4527-ad19-80a084adbe79" : [ "3093ea7c-390a-42fa-b7b1-2629efcb2432" ]
+            "v1" : [ "4d60af82-8b7b-4a7c-a990-3555af1118f2" ],
+            "4d60af82-8b7b-4a7c-a990-3555af1118f2" : [ "3093ea7c-390a-42fa-b7b1-2629efcb2432" ]
           },
-          "allNeighbours" : [ "f34705c5-63dc-4527-ad19-80a084adbe79", "3093ea7c-390a-42fa-b7b1-2629efcb2432", "v1" ]
+          "allNeighbours" : [ "4d60af82-8b7b-4a7c-a990-3555af1118f2", "3093ea7c-390a-42fa-b7b1-2629efcb2432", "v1" ]
         },
         "vertexHashMap" : {
-          "f34705c5-63dc-4527-ad19-80a084adbe79" : {
-            "vertexId" : "f34705c5-63dc-4527-ad19-80a084adbe79",
-            "vertexType" : "DATABASE",
-            "name" : "a",
-            "databaseData" : {
-              "connectorId" : "695ce7896137493295166a4f",
-              "databaseType" : "MSSQL",
-              "query" : "SELECT * FROM Employees;\n",
-              "variableName" : "a",
-              "connectorName" : "sujith",
-              "tableName" : "trace_xe_event_map",
-              "manual" : false,
-              "queryRequest" : {
-                "tableName" : "trace_xe_event_map",
-                "operation" : "SELECT",
-                "selectedFields" : { },
-                "limit" : 0,
-                "offSet" : 0,
-                "top" : 0
-              },
+          "4d60af82-8b7b-4a7c-a990-3555af1118f2" : {
+            "vertexId" : "4d60af82-8b7b-4a7c-a990-3555af1118f2",
+            "vertexType" : "ENTITLEMENT",
+            "name" : "zqa",
+            "entitlementData" : {
+              "connectorId" : "695cdbee6137493295166643",
+              "connectorName" : "entitlement test",
+              "policyId" : "68bac7286954cb35a4ca5725",
+              "policyName" : "Role Based Access Control (RBAC)",
+              "serverUrl" : "",
+              "packagePath" : "",
+              "token" : "",
+              "inputData" : "",
+              "graphqlAuthorization" : false,
               "skip" : false,
               "showActualErrorMessage" : false,
-              "continueOnError" : false,
+              "continueOnError" : true,
               "errorResponse" : {
                 "statusCode" : 400,
                 "body" : {
@@ -147,9 +141,14 @@
     }
   }, {
     "type" : "connector",
-    "collectionName" : "Connectors.MsSql.Configuration",
+    "collectionName" : "Connectors.Entitlement",
     "data" : {
-      "databaseType" : "MsSql"
+      "apiBuilderEntitlementServerDTOData" : {
+        "id" : "695cdbee6137493295166643",
+        "name" : "entitlement test",
+        "serverUrl" : "https://dev-opa-test.apiwiz.io",
+        "token" : ""
+      }
     }
   } ],
   "metadata" : {
@@ -160,7 +159,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695ce7896137493295166a4f" ]
+      "attachedConnectors" : [ "68bac7286954cb35a4ca5725", "695cdbee6137493295166643" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -169,8 +168,8 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "695ce7896137493295166a4f",
-      "name" : "sujith"
+      "id" : "695cdbee6137493295166643",
+      "name" : "entitlement test"
     } ]
   }
 }
