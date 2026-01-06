@@ -1,5 +1,5 @@
 {
-  "cts" : 1767680850044,
+  "cts" : 1767683981869,
   "name" : "Xml Templates Data",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767680071310,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767680850037,
+        "mts" : 1767683981859,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -29,13 +29,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "8407ae37-ff3f-44e1-bfa8-b5384695ff04" : [ "v1" ],
-            "bceef7ac-01a6-40f5-833f-2456811b362b" : [ "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ]
+            "bceef7ac-01a6-40f5-833f-2456811b362b" : [ "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" ],
+            "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" : [ "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ]
           },
           "outbound" : {
             "v1" : [ "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ],
-            "8407ae37-ff3f-44e1-bfa8-b5384695ff04" : [ "bceef7ac-01a6-40f5-833f-2456811b362b" ]
+            "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" : [ "bceef7ac-01a6-40f5-833f-2456811b362b" ],
+            "8407ae37-ff3f-44e1-bfa8-b5384695ff04" : [ "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" ]
           },
-          "allNeighbours" : [ "bceef7ac-01a6-40f5-833f-2456811b362b", "v1", "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ]
+          "allNeighbours" : [ "bceef7ac-01a6-40f5-833f-2456811b362b", "9d040bfe-69a8-47d4-a109-5e43fe6fcb67", "v1", "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ]
         },
         "vertexHashMap" : {
           "bceef7ac-01a6-40f5-833f-2456811b362b" : {
@@ -50,6 +52,34 @@
                 "type" : "JSON"
               }
             }
+          },
+          "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" : {
+            "vertexId" : "9d040bfe-69a8-47d4-a109-5e43fe6fcb67",
+            "vertexType" : "JAVASCRIPT",
+            "name" : "Get UUID ",
+            "description" : "",
+            "javascriptData" : {
+              "targetVariable" : "",
+              "variableDataType" : "STRING",
+              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n console.log(input.foo);\n return input;\n };",
+              "variables" : { },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "customResponseMapping" : true,
+              "responsePathMapping" : {
+                "uuid" : "$.uuid"
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
