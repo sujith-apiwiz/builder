@@ -1,5 +1,5 @@
 {
-  "cts" : 1767677740911,
+  "cts" : 1767678810116,
   "name" : "DLM testcase 1 - queues",
   "exportedBy" : "Pranav Ananth",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767615266044,
         "createdUserName" : "Pranav Ananth",
         "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1767677740907,
+        "mts" : 1767678810113,
         "createdBy" : "6655a103339aa715119d5a13",
         "modifiedBy" : "6655a103339aa715119d5a13",
         "taggedTeams" : [ ],
@@ -629,20 +629,20 @@
                 "host" : "engineering-nktb.apiwiz.io",
                 "path" : "/dlm/v1/queues",
                 "headerParams" : [ {
-                  "name" : "content-type",
-                  "value" : "application/json"
-                }, {
                   "name" : "x-application-type",
                   "value" : "ApiSandbox"
                 }, {
                   "name" : "x-tenant",
                   "value" : "engineering"
+                }, {
+                  "name" : "content-type",
+                  "value" : "application/xml"
                 } ],
                 "queryParams" : [ ],
                 "targetRequestBodyType" : "RAW",
                 "body" : {
-                  "data" : "",
-                  "type" : "JSON"
+                  "data" : "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:s3=\"http://temenos.com/S3.DLM.WS\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <s3:DLMTellerWebService>\n      <!--Optional:-->\n      <WebRequestCommon>\n        <!--Optional:-->\n        <company>{{companyId}}</company>\n        <password>{{password}}</password>\n        <userName>{{userName}}</userName>\n      </WebRequestCommon>\n      <!--Optional:-->\n      <OfsFunction>\n      </OfsFunction>\n      <!--Optional:-->\n      <TELLEREWBS3DLMWSType>\n        <!--Optional:-->\n        <TRANSACTIONCODE>{{transactionCode}}</TRANSACTIONCODE>\n        <!--Optional:-->\n        <!--Optional:-->\n        <gACCOUNT1>\n          <!--Zero or more repetitions:-->\n          <mACCOUNT1>\n            <!--Optional:-->\n            <ACCOUNT1>{{account1}}</ACCOUNT1>\n            <!--Optional:-->\n            <AMOUNTLOCAL1>{{accountLocal1}}</AMOUNTLOCAL1>\n            <!--Optional:-->\n            <AMOUNTFCY1></AMOUNTFCY1>\n            <!--Optional:-->\n            <sgNARRATIVE1>\n              <!--Zero or more repetitions:-->\n              <NARRATIVE1/>\n            </sgNARRATIVE1>\n          </mACCOUNT1>\n        </gACCOUNT1>\n        <!--Optional:-->\n        <!--Optional:-->\n        <ACCOUNT2>{{account2}}\t</ACCOUNT2>\n        <!--Optional:-->\n        <gCHARGECUSTOMER >\n          <!--Zero or more repetitions:-->\n          <mCHARGECUSTOMER>\n            <!--Optional:-->\n            <!--Optional:-->\n            <CHRGAMTLOCAL>0</CHRGAMTLOCAL>\n            <!--Optional:-->\n          </mCHARGECUSTOMER>\n        </gCHARGECUSTOMER>\n        <STOCKREGISTER>DRAFT.companyID</STOCKREGISTER>\n        <!--Optional:-->\n        <SERIESID>DDMC*DDMC*PHP123456789</SERIESID>\n        <!--Optional:-->\n        <STOCKNUMBER>{{stockNumber}}</STOCKNUMBER>\n        <ISSUECHEQUETYPE>{{LVERSION}}</ISSUECHEQUETYPE>\n        <LVERSION>{{LVERSION}}</LVERSION>\n        <!--Optional:-->\n      </TELLEREWBS3DLMWSType>\n    </s3:DLMTellerWebService>\n  </soapenv:Body>\n</soapenv:Envelope>",
+                  "type" : "xml"
                 },
                 "formParams" : [ ],
                 "urlEncodedParams" : [ ]
