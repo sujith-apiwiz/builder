@@ -1,5 +1,5 @@
 {
-  "cts" : 1767617661313,
+  "cts" : 1767675442186,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767617354032,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767617661308,
+        "mts" : 1767675442184,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,29 +28,50 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "e3e8ee50-f034-4cec-b7e5-59d6d175f5be" : [ "v1" ],
-            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "e3e8ee50-f034-4cec-b7e5-59d6d175f5be" ]
+            "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : [ "v1" ],
+            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5" ]
           },
           "outbound" : {
-            "v1" : [ "e3e8ee50-f034-4cec-b7e5-59d6d175f5be" ],
-            "e3e8ee50-f034-4cec-b7e5-59d6d175f5be" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+            "v1" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5" ],
+            "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
           },
-          "allNeighbours" : [ "e3e8ee50-f034-4cec-b7e5-59d6d175f5be", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+          "allNeighbours" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
         },
         "vertexHashMap" : {
-          "e3e8ee50-f034-4cec-b7e5-59d6d175f5be" : {
-            "vertexId" : "e3e8ee50-f034-4cec-b7e5-59d6d175f5be",
-            "vertexType" : "DATABASE",
-            "name" : "a",
-            "databaseData" : {
-              "connectorId" : "695b78746137493295163475",
-              "databaseType" : "MONGODB",
-              "query" : "{\"operation\":\"insert\",\"databaseName\":\"userdb\",\"collection\":\"users\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"email\":\"\",\"phone\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
-              "variableName" : "a",
-              "connectorName" : "sujith-MongoDB",
-              "tenantName" : "userdb",
-              "collectionName" : "users",
-              "manual" : false,
+          "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : {
+            "vertexId" : "f3b1c790-4743-4009-8717-a14cf4ae8fa5",
+            "vertexType" : "TARGET",
+            "name" : "w",
+            "target" : {
+              "name" : "w",
+              "description" : "w",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "acme-team-production-jjgl.apiwiz.io",
+                "path" : "/account/user/details-v1/123",
+                "headerParams" : [ {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                }, {
+                  "name" : "x-application-type",
+                  "value" : "ApiSandbox"
+                } ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "RAW",
+                "body" : {
+                  "data" : "{\n  \"a\": \"aa\"\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -59,6 +80,20 @@
                 "body" : {
                   "data" : "",
                   "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
                 }
               }
             },
@@ -123,33 +158,6 @@
         "deployed" : false
       }
     }
-  }, {
-    "type" : "connector",
-    "collectionName" : "Connectors.MongoDb.Configuration",
-    "data" : {
-      "mongoDBConfigurationData" : {
-        "id" : "695b78746137493295163475",
-        "cts" : 1767602292517,
-        "createdUserName" : "Apiwiz Admin",
-        "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767617637187,
-        "createdBy" : "6943a6099f593fb753fe6911",
-        "modifiedBy" : "6943a6099f593fb753fe6911",
-        "name" : "sujith-MongoDB",
-        "description" : "sujith-MongoDB",
-        "host" : "0.tcp.jp.ngrok.io:10261",
-        "scheme" : "mongodb",
-        "url" : "mongodb://0.tcp.jp.ngrok.io:10261/?tls=false",
-        "authentication" : {
-          "mongoDbAuthType" : "none"
-        },
-        "ssl" : {
-          "sslConnection" : false,
-          "tlsAllowInvalidHostnames" : false
-        }
-      },
-      "databaseType" : "MongoDb"
-    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -159,7 +167,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695b78746137493295163475" ]
+      "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -167,9 +175,6 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ {
-      "id" : "695b78746137493295163475",
-      "name" : "sujith-MongoDB"
-    } ]
+    "connectorMetadataDetailsDtoList" : [ ]
   }
 }
