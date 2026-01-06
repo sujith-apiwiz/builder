@@ -1,5 +1,5 @@
 {
-  "cts" : 1767615378755,
+  "cts" : 1767677187561,
   "name" : "DLM testcase 1 - queues",
   "exportedBy" : "Pranav Ananth",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767615266044,
         "createdUserName" : "Pranav Ananth",
         "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1767615378753,
+        "mts" : 1767677187554,
         "createdBy" : "6655a103339aa715119d5a13",
         "modifiedBy" : "6655a103339aa715119d5a13",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "POST",
         "path" : "/dlm/v1/queues",
         "pathArray" : [ "dlm", "v1", "queues" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Pranav Ananth",
         "nodeDataHashMap" : {
@@ -219,7 +219,7 @@
             "dataMappingData" : {
               "sourceVariable" : "jsonInputPayload",
               "targetVariable" : "xmlInputPayload",
-              "targetSchema" : "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\r\n    <xs:element name=\"soapenv:Envelope\">\r\n        <xs:complexType>\r\n            <xs:sequence>\r\n                <xs:element type=\"xs:string\" name=\"soapenv:Header\"/>\r\n                <xs:element name=\"soapenv:Body\">\r\n                    <xs:complexType>\r\n                        <xs:sequence>\r\n                            <xs:element name=\"s3:DLMTellerWebService\">\r\n                                <xs:complexType>\r\n                                    <xs:sequence>\r\n                                        <xs:element name=\"WebRequestCommon\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:string\" name=\"company\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"password\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"userName\"/>\r\n                                                </xs:sequence>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                        <xs:element type=\"xs:string\" name=\"OfsFunction\"/>\r\n                                        <xs:element name=\"TELLEREWBS3DLMWSType\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:integer\" name=\"TRANSACTIONCODE\"/>\r\n                                                    <xs:element name=\"gACCOUNT1\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mACCOUNT1\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:string\" name=\"ACCOUNT1\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"AMOUNTLOCAL1\"/>\r\n                                                                            <xs:element type=\"xs:string\" name=\"AMOUNTFCY1\"/>\r\n                                                                            <xs:element name=\"sgNARRATIVE1\">\r\n                                                                                <xs:complexType>\r\n                                                                                    <xs:sequence>\r\n                                                                                        <xs:element type=\"xs:string\" name=\"NARRATIVE1\"/>\r\n                                                                                    </xs:sequence>\r\n                                                                                </xs:complexType>\r\n                                                                            </xs:element>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:integer\" name=\"ACCOUNT2\"/>\r\n                                                    <xs:element name=\"gCHARGECUSTOMER\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mCHARGECUSTOMER\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHRGAMTLOCAL\"/>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:string\" name=\"STOCKREGISTER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"SERIESID\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"STOCKNUMBER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"ISSUECHEQUETYPE\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"LVERSION\"/>\r\n                                                </xs:sequence>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                    </xs:sequence>\r\n                                </xs:complexType>\r\n                            </xs:element>\r\n                        </xs:sequence>\r\n                    </xs:complexType>\r\n                </xs:element>\r\n            </xs:sequence>\r\n        </xs:complexType>\r\n    </xs:element>\r\n</xs:schema>",
+              "targetSchema" : "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\r\n    <xs:element name=\"Envelope\">\r\n        <xs:complexType>\r\n            <xs:sequence>\r\n                <xs:element type=\"xs:string\" name=\"Header\"/>\r\n                <xs:element name=\"Body\">\r\n                    <xs:complexType>\r\n                        <xs:sequence>\r\n                            <xs:element name=\"DLMTellerWebService\">\r\n                                <xs:complexType>\r\n                                    <xs:sequence>\r\n                                        <xs:element name=\"WebRequestCommon\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:string\" name=\"company\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"password\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"userName\"/>\r\n                                                </xs:sequence>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                        <xs:element type=\"xs:string\" name=\"OfsFunction\"/>\r\n                                        <xs:element name=\"TELLEREWBS3DLMWSType\">\r\n                                            <xs:complexType>\r\n                                                <xs:sequence>\r\n                                                    <xs:element type=\"xs:integer\" name=\"TRANSACTIONCODE\"/>\r\n                                                    <xs:element name=\"gACCOUNT1\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mACCOUNT1\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:string\" name=\"ACCOUNT1\"/>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"AMOUNTLOCAL1\"/>\r\n                                                                            <xs:element type=\"xs:string\" name=\"AMOUNTFCY1\"/>\r\n                                                                            <xs:element name=\"sgNARRATIVE1\">\r\n                                                                                <xs:complexType>\r\n                                                                                    <xs:sequence>\r\n                                                                                        <xs:element type=\"xs:string\" name=\"NARRATIVE1\"/>\r\n                                                                                    </xs:sequence>\r\n                                                                                </xs:complexType>\r\n                                                                            </xs:element>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:integer\" name=\"ACCOUNT2\"/>\r\n                                                    <xs:element name=\"gCHARGECUSTOMER\">\r\n                                                        <xs:complexType>\r\n                                                            <xs:sequence>\r\n                                                                <xs:element name=\"mCHARGECUSTOMER\">\r\n                                                                    <xs:complexType>\r\n                                                                        <xs:sequence>\r\n                                                                            <xs:element type=\"xs:integer\" name=\"CHRGAMTLOCAL\"/>\r\n                                                                        </xs:sequence>\r\n                                                                    </xs:complexType>\r\n                                                                </xs:element>\r\n                                                            </xs:sequence>\r\n                                                        </xs:complexType>\r\n                                                    </xs:element>\r\n                                                    <xs:element type=\"xs:string\" name=\"STOCKREGISTER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"SERIESID\"/>\r\n                                                    <xs:element type=\"xs:integer\" name=\"STOCKNUMBER\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"ISSUECHEQUETYPE\"/>\r\n                                                    <xs:element type=\"xs:string\" name=\"LVERSION\"/>\r\n                                                </xs:sequence>\r\n                                            </xs:complexType>\r\n                                        </xs:element>\r\n                                    </xs:sequence>\r\n                                </xs:complexType>\r\n                            </xs:element>\r\n                        </xs:sequence>\r\n                    </xs:complexType>\r\n                </xs:element>\r\n            </xs:sequence>\r\n        </xs:complexType>\r\n    </xs:element>\r\n</xs:schema>",
               "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"storeCode\": {\n      \"type\": \"string\"\n    },\n    \"transactionType\": {\n      \"type\": \"string\"\n    },\n    \"queueNo\": {\n      \"type\": \"string\"\n    },\n    \"chequeNo\": {\n      \"type\": \"string\"\n    },\n    \"tellerId\": {\n      \"type\": \"string\"\n    },\n    \"currency\": {\n      \"type\": \"string\"\n    },\n    \"accounts\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"debit\": {\n          \"type\": \"string\"\n        },\n        \"credit\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"debit\",\n        \"credit\"\n      ]\n    },\n    \"amount\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"storeCode\",\n    \"transactionType\",\n    \"queueNo\",\n    \"chequeNo\",\n    \"tellerId\",\n    \"currency\",\n    \"accounts\",\n    \"amount\"\n  ]\n}",
               "pathOperations" : [ {
                 "targetPath" : "/soapenv:Envelope/soapenv:Body/s3:DLMTellerWebService/WebRequestCommon/password",
@@ -311,6 +311,38 @@
                 "directValueData" : {
                   "directValueType" : "DIRECT_VALUE",
                   "value" : "{{stockNumber}}"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/Envelope/Body/DLMTellerWebService/WebRequestCommon/company",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "{{companyId}}"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/Envelope/Body/DLMTellerWebService/WebRequestCommon/password",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "{{password}}"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/Envelope/Body/DLMTellerWebService/WebRequestCommon/userName",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "{{userName}}"
+                },
+                "containsCustomList" : false
+              }, {
+                "targetPath" : "/Envelope/Body/DLMTellerWebService/TELLEREWBS3DLMWSType/TRANSACTIONCODE",
+                "containsDirectValue" : true,
+                "directValueData" : {
+                  "directValueType" : "DIRECT_VALUE",
+                  "value" : "{{transactionCode}}"
                 },
                 "containsCustomList" : false
               } ],
@@ -674,11 +706,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767674427711,
+          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767615387167,
+          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "description" : "a"
+        }, {
           "status" : "Draft",
           "cts" : 1767615266044,
           "lastModifiedBy" : "Pranav Ananth",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "dlm",
         "environmentId" : "6954c28f3511b614ee3b02c5",
