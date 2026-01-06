@@ -1,5 +1,5 @@
 {
-  "cts" : 1767676307153,
+  "cts" : 1767680112519,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767617354032,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767676305551,
+        "mts" : 1767680110913,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,52 +28,37 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : [ "v1" ],
-            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5" ]
+            "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : [ "v1" ],
+            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" ]
           },
           "outbound" : {
-            "v1" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5" ],
-            "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+            "v1" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" ],
+            "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
           },
-          "allNeighbours" : [ "f3b1c790-4743-4009-8717-a14cf4ae8fa5", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+          "allNeighbours" : [ "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
         },
         "vertexHashMap" : {
-          "f3b1c790-4743-4009-8717-a14cf4ae8fa5" : {
-            "vertexId" : "f3b1c790-4743-4009-8717-a14cf4ae8fa5",
-            "vertexType" : "TARGET",
-            "name" : "w",
-            "target" : {
-              "name" : "w",
-              "description" : "w",
-              "apiType" : "RESTAPI",
-              "certificateId" : "694b74ac6027251a93ebf4c7",
-              "certificateName" : "Beta",
-              "request" : {
-                "apiMethod" : "POST",
-                "scheme" : "https",
-                "host" : "acme-team-production-jjgl.apiwiz.io",
-                "path" : "/account/user/details-v1/123",
-                "headerParams" : [ {
-                  "name" : "content-type",
-                  "value" : "application/json"
-                }, {
-                  "name" : "x-application-type",
-                  "value" : "ApiSandbox"
-                } ],
-                "queryParams" : [ ],
-                "targetRequestBodyType" : "RAW",
-                "body" : {
-                  "data" : "{\n  \"a\": \"aa\"\n}",
-                  "type" : "json"
-                },
-                "formParams" : [ ],
-                "urlEncodedParams" : [ ]
+          "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3" : {
+            "vertexId" : "fa0d4a9c-47e6-4ffd-9fe9-54eb87a33ea3",
+            "vertexType" : "DATABASE",
+            "name" : "a",
+            "databaseData" : {
+              "connectorId" : "695ca3756137493295165919",
+              "databaseType" : "POSTGRESQL",
+              "query" : "select * from employees;",
+              "variableName" : "a",
+              "connectorName" : "sujith",
+              "schemaName" : "_timescaledb_internal",
+              "tableName" : "bgw_job_stat",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "bgw_job_stat",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0
               },
-              "response" : {
-                "statusCode" : 400,
-                "variables" : [ ]
-              },
-              "timeout" : 0,
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -82,20 +67,6 @@
                 "body" : {
                   "data" : "",
                   "type" : "json"
-                }
-              },
-              "securityResponse" : {
-                "isEnabled" : false,
-                "useEnforcedRules" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false,
-                "errorResponse" : {
-                  "statusCode" : 400,
-                  "body" : {
-                    "data" : "",
-                    "type" : "json"
-                  }
                 }
               }
             },
@@ -162,39 +133,31 @@
     }
   }, {
     "type" : "connector",
-    "collectionName" : "ApiBuilder.Certificate.List",
+    "collectionName" : "Connectors.PostgreSql.Configuration",
     "data" : {
-      "certificateData" : {
-        "id" : "694b74ac6027251a93ebf4c7",
-        "cts" : 1766552748589,
+      "postgreSQLConfigurationData" : {
+        "id" : "695ca3756137493295165919",
+        "cts" : 1767678837629,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1766553115026,
+        "mts" : 1767679204580,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ {
           "id" : "6948f1e0a364ea598e8b59c9",
           "name" : "Beta"
         } ],
-        "name" : "Beta",
-        "content" : "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURyekNDQXBlZ0F3SUJBZ0lVUlhaTEo0M1MrOEJqaGlKZVNtTjFoMWVVL2xnd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1p6RUxNQWtHQTFVRUJoTUNTVTR4RWpBUUJnTlZCQWdNQ1V0QlVrNUJWRUZMUVRFU01CQUdBMVVFQnd3SgpRbUZ1WjJGc2IzSmxNUTh3RFFZRFZRUUtEQVpCVUVsM2FYb3hDakFJQmdOVkJBc01BV0V4RXpBUkJnTlZCQU1NCkNpb3VaR1Z0Ynk1amIyMHdIaGNOTWpVeE1ESTBNRFUwTnpVeVdoY05NalV4TVRJek1EVTBOelV5V2pCbk1Rc3cKQ1FZRFZRUUdFd0pKVGpFU01CQUdBMVVFQ0F3SlMwRlNUa0ZVUVV0Qk1SSXdFQVlEVlFRSERBbENZVzVuWVd4dgpjbVV4RHpBTkJnTlZCQW9NQmtGUVNYZHBlakVLTUFnR0ExVUVDd3dCWVRFVE1CRUdBMVVFQXd3S0tpNWtaVzF2CkxtTnZiVENDQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNRGQ0ZGVlZlF0QXFKS2sKaU1BemRxZnVCRzU0dTVuYlFlckp3RWI2eElpYkdnMllzT2pCSUlHMC9JSk1ZVW9tZW15bUVXUUtqVU5HOVJyeApoWi81UUpqazAzZzJrcDViVlVwc0ZaY0FXQnVyK2dLWGNmK0xEY0oyNjgwUTluRkw3TnM3ZTc5MXFKOGhmWnBVCmdGMHAwaFBFVTBpZmFxUVR5YVVvYXlnczRpdDlJL0pwNUY4b3BFdDJlYXdZM1pnUGpjTm9IN2FjcUoyMkwxME0KNnZDZ0U0TlhWMCtyTlR0ZWNqM2R5QiswalNIeGk1MGs3ejllcUFCZnpnUWh2L3FocWJveTBoY1dtZjlHL1JhZQpMdEl0V2YxRnVYVjFabTFoQ0hvUXY2aVZqOU9xdG91M2FMYUdsQ2MrMUtsSnlQcmVxcHM1UWllTGJrY0lYQVdoCnRqUUk5ck1DQXdFQUFhTlRNRkV3SFFZRFZSME9CQllFRkpURnR6d1lHT1R1UTY5OUVTb1BmQzFsOVRZNE1COEcKQTFVZEl3UVlNQmFBRkpURnR6d1lHT1R1UTY5OUVTb1BmQzFsOVRZNE1BOEdBMVVkRXdFQi93UUZNQU1CQWY4dwpEUVlKS29aSWh2Y05BUUVMQlFBRGdnRUJBREUwbXpXaEQ2c2FtcFFmQmxFL0xOT0hLUm1NcUpCMXhkM0FHaWsxCnZqRkd4N05xU2ZuMGJ4RXZjczREQmlEU0VDKzdsVVFtczNyWjlEcUFVVHB2NjBNSGFqTmlLTmRsbnA3NzhRd3YKZCtHbGQ1L3Z1TFhWeFVKMmVYS29GWWUvL1hDTWdsMjFSeFJkNDlMeDJVMTFRcGhQa0lnNGJKaXljMWNnQlhXSApnRHh5TDFTYVZPeXUrbmkvVGFQaFE4SWN3Nnl2dVRwMkI2NlV5VHJKRXNQeTRlUnlaS0xMeHVqU3dHWnRiZ0UwCnBEM0NyZGJYa3NxTHhhSm1MeEZ6ajVKcURzRTE4S0VOcXNIK2NRZHIvbW1IVUN6RUJjZVlGdnNwZEYza0M4RTIKUUdTNjErMkhyZTV1T2pOdkEzN3A3ZTkrc2ZtRlFUQ2xXRWcydnZJWm5iUlNuOU09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K",
-        "description" : "Beta",
-        "certificateFileName" : "server.crt",
-        "password" : "null",
-        "alias" : "",
-        "status" : "APPROVED",
-        "statusHistory" : [ {
-          "status" : "Approved",
-          "cts" : 1766553115026,
-          "lastModifiedBy" : "Apiwiz Admin",
-          "description" : " "
-        }, {
-          "status" : "Draft",
-          "cts" : 1766552748589,
-          "lastModifiedBy" : "Apiwiz Admin",
-          "description" : "Created new certificate"
-        } ]
-      }
+        "name" : "sujith",
+        "description" : "sujith",
+        "postgresAuthType" : "USERNAMEPASSWORD",
+        "postgresqlHostname" : "54.203.45.67",
+        "postgresqlPort" : "5432",
+        "postgresqlDatabase" : "apiwiz",
+        "postgresqlUsername" : "postgres",
+        "postgresqlPassword" : "test123",
+        "url" : "postgresql://54.203.45.67:5432"
+      },
+      "databaseType" : "PostgreSql"
     }
   } ],
   "metadata" : {
@@ -205,7 +168,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "694b74ac6027251a93ebf4c7" ]
+      "attachedConnectors" : [ "695ca3756137493295165919" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -214,9 +177,8 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "694b74ac6027251a93ebf4c7",
-      "name" : "Beta",
-      "description" : "Beta"
+      "id" : "695ca3756137493295165919",
+      "name" : "sujith"
     } ]
   }
 }
