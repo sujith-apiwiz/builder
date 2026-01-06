@@ -1,5 +1,5 @@
 {
-  "cts" : 1767693509218,
+  "cts" : 1767693517234,
   "name" : "TestResponse",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767684673468,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767693509144,
+        "mts" : 1767693517220,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -70,6 +70,7 @@
             "proxyResponse" : {
               "statusCode" : 200,
               "body" : {
+                "data" : "{{{response.content.body}}}",
                 "type" : "JSON"
               }
             }
