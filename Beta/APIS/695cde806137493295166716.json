@@ -1,5 +1,5 @@
 {
-  "cts" : 1767695439465,
+  "cts" : 1767697178422,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767693952750,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767695439461,
+        "mts" : 1767697178350,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -21,37 +21,37 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/",
-        "pathArray" : [ ],
-        "revisionStatus" : "DRAFT",
+        "path" : "/123",
+        "pathArray" : [ "123" ],
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "1a2c31dc-5ad2-4966-b698-547b34b2574a" : [ "v1" ],
-            "3093ea7c-390a-42fa-b7b1-2629efcb2432" : [ "1a2c31dc-5ad2-4966-b698-547b34b2574a" ]
+            "f34705c5-63dc-4527-ad19-80a084adbe79" : [ "v1" ],
+            "3093ea7c-390a-42fa-b7b1-2629efcb2432" : [ "f34705c5-63dc-4527-ad19-80a084adbe79" ]
           },
           "outbound" : {
-            "v1" : [ "1a2c31dc-5ad2-4966-b698-547b34b2574a" ],
-            "1a2c31dc-5ad2-4966-b698-547b34b2574a" : [ "3093ea7c-390a-42fa-b7b1-2629efcb2432" ]
+            "v1" : [ "f34705c5-63dc-4527-ad19-80a084adbe79" ],
+            "f34705c5-63dc-4527-ad19-80a084adbe79" : [ "3093ea7c-390a-42fa-b7b1-2629efcb2432" ]
           },
-          "allNeighbours" : [ "1a2c31dc-5ad2-4966-b698-547b34b2574a", "3093ea7c-390a-42fa-b7b1-2629efcb2432", "v1" ]
+          "allNeighbours" : [ "f34705c5-63dc-4527-ad19-80a084adbe79", "3093ea7c-390a-42fa-b7b1-2629efcb2432", "v1" ]
         },
         "vertexHashMap" : {
-          "1a2c31dc-5ad2-4966-b698-547b34b2574a" : {
-            "vertexId" : "1a2c31dc-5ad2-4966-b698-547b34b2574a",
+          "f34705c5-63dc-4527-ad19-80a084adbe79" : {
+            "vertexId" : "f34705c5-63dc-4527-ad19-80a084adbe79",
             "vertexType" : "DATABASE",
             "name" : "a",
             "databaseData" : {
-              "connectorId" : "695cdfb6613749329516677e",
-              "databaseType" : "MYSQL",
-              "query" : "select * from users",
+              "connectorId" : "695ce7896137493295166a4f",
+              "databaseType" : "MSSQL",
+              "query" : "SELECT * FROM Employees;\n",
               "variableName" : "a",
-              "connectorName" : "sd",
-              "tableName" : "users",
+              "connectorName" : "sujith",
+              "tableName" : "trace_xe_event_map",
               "manual" : false,
               "queryRequest" : {
-                "tableName" : "users",
+                "tableName" : "trace_xe_event_map",
                 "operation" : "SELECT",
                 "selectedFields" : { },
                 "limit" : 0,
@@ -80,8 +80,12 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
-                "type" : "JSON"
+                "data" : "{{a}}",
+                "type" : "json"
               }
             }
           },
@@ -110,11 +114,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767696534588,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767696512990,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767693952750,
           "lastModifiedBy" : "Apiwiz Admin",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -132,27 +147,27 @@
     }
   }, {
     "type" : "connector",
-    "collectionName" : "Connectors.MySql.Configuration",
+    "collectionName" : "Connectors.MsSql.Configuration",
     "data" : {
-      "mySQLConfigurationData" : {
-        "id" : "695cdfb6613749329516677e",
-        "cts" : 1767694262117,
-        "createdUserName" : "second user",
+      "msSqlConfigurationData" : {
+        "id" : "695ce7896137493295166a4f",
+        "cts" : 1767696265902,
+        "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767695414589,
-        "createdBy" : "6948f0eda364ea598e8b5991",
+        "mts" : 1767697157856,
+        "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
-        "name" : "sd",
-        "description" : "wedf",
-        "mySqlConfigType" : "TCPIP",
-        "mysqlHostname" : "54.203.45.67",
-        "mysqlPort" : "3306",
-        "mysqlUserName" : "admin",
-        "mysqlPassword" : "admin123",
-        "mysqlDatabaseName" : "apiwiz",
-        "url" : "mysql://54.203.45.67:3306"
+        "name" : "sujith",
+        "description" : "s",
+        "msSqlConfigType" : "SQL_AUTH",
+        "hostname" : "54.203.45.67",
+        "port" : "1433",
+        "username" : "SA",
+        "password" : "test@123",
+        "databaseName" : "master",
+        "url" : "jdbc:sqlserver://54.203.45.67:1433;databaseName=master"
       },
-      "databaseType" : "MySql"
+      "databaseType" : "MsSql"
     }
   } ],
   "metadata" : {
@@ -163,7 +178,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695cdfb6613749329516677e" ]
+      "attachedConnectors" : [ "695ce7896137493295166a4f" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -172,8 +187,8 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "695cdfb6613749329516677e",
-      "name" : "sd"
+      "id" : "695ce7896137493295166a4f",
+      "name" : "sujith"
     } ]
   }
 }
