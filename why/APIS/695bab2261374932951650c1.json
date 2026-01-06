@@ -1,5 +1,5 @@
 {
-  "cts" : 1767679194821,
+  "cts" : 1767679779711,
   "name" : "DLM testcase 1 - queues",
   "exportedBy" : "Pranav Ananth",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767615266044,
         "createdUserName" : "Pranav Ananth",
         "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1767679194756,
+        "mts" : 1767679779709,
         "createdBy" : "6655a103339aa715119d5a13",
         "modifiedBy" : "6655a103339aa715119d5a13",
         "taggedTeams" : [ ],
@@ -643,7 +643,7 @@
                 "variables" : [ {
                   "name" : "LVERSION",
                   "reference" : "body",
-                  "value" : "/*[local-name()='Envelope']/*[local-name()='Body']/*[local-name()=`TELLERType`]]/*[local-name()=`LVERSION`]",
+                  "value" : "/*[local-name()='Envelope']/*[local-name()='Body']/*[local-name()='DLMTellerWebServiceResponse']/*[local-name()='TELLERType']/*[local-name()='LVERSION']",
                   "active" : true,
                   "source" : "raw",
                   "hide" : false,
@@ -652,15 +652,6 @@
                   "name" : "successIndicator",
                   "reference" : "body",
                   "value" : "/*[local-name()='Envelope']/*[local-name()='Body']/*[local-name()='DLMTellerWebServiceResponse']/*[local-name()='Status']/*[local-name()='successIndicator']",
-                  "variableDataType" : "STRING",
-                  "active" : true,
-                  "source" : "raw",
-                  "hide" : false,
-                  "feelExpression" : false
-                }, {
-                  "name" : "queueAPIResponse",
-                  "reference" : "body",
-                  "value" : "/*",
                   "variableDataType" : "STRING",
                   "active" : true,
                   "source" : "raw",
@@ -737,6 +728,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767679690271,
+          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767679207153,
+          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "description" : "a"
+        }, {
           "status" : "Review",
           "cts" : 1767677534844,
           "lastModifiedBy" : "6655a103339aa715119d5a13",
