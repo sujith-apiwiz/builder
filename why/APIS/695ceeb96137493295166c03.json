@@ -1,0 +1,250 @@
+{
+  "cts" : 1767698105957,
+  "name" : "Xml Templates Data",
+  "exportedBy" : "Nihal Ahamed",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695ceeb96137493295166c03",
+        "cts" : 1767698105948,
+        "createdUserName" : "Nihal Ahamed",
+        "modifiedUserName" : "Nihal Ahamed",
+        "mts" : 1767698105948,
+        "createdBy" : "6704b7de02afc5238c963878",
+        "modifiedBy" : "6704b7de02afc5238c963878",
+        "taggedTeams" : [ ],
+        "proxyId" : "695ca8476137493295165be0",
+        "revision" : 2,
+        "name" : "Xml Templates Data",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/",
+        "pathArray" : [ ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Nihal Ahamed",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "8407ae37-ff3f-44e1-bfa8-b5384695ff04" : [ "v1" ],
+            "bceef7ac-01a6-40f5-833f-2456811b362b" : [ "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" ],
+            "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" : [ "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ]
+          },
+          "outbound" : {
+            "v1" : [ "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ],
+            "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" : [ "bceef7ac-01a6-40f5-833f-2456811b362b" ],
+            "8407ae37-ff3f-44e1-bfa8-b5384695ff04" : [ "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" ]
+          },
+          "allNeighbours" : [ "bceef7ac-01a6-40f5-833f-2456811b362b", "9d040bfe-69a8-47d4-a109-5e43fe6fcb67", "v1", "8407ae37-ff3f-44e1-bfa8-b5384695ff04" ]
+        },
+        "vertexHashMap" : {
+          "bceef7ac-01a6-40f5-833f-2456811b362b" : {
+            "vertexId" : "bceef7ac-01a6-40f5-833f-2456811b362b",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "9d040bfe-69a8-47d4-a109-5e43fe6fcb67" : {
+            "vertexId" : "9d040bfe-69a8-47d4-a109-5e43fe6fcb67",
+            "vertexType" : "JAVASCRIPT",
+            "name" : "Get UUID ",
+            "description" : "",
+            "javascriptData" : {
+              "targetVariable" : "",
+              "variableDataType" : "STRING",
+              "javascript" : "\n/** @param {Object} input - The input object provided from the Variables field. @returns {Object} - The processed output object, to be used in subsequent workflow steps. */\n var execute = function(input) { \n// Implement script logic here\n console.log(input.foo);\n return input;\n };",
+              "variables" : { },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "customResponseMapping" : true,
+              "responsePathMapping" : {
+                "uuid" : "$.uuid"
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "8407ae37-ff3f-44e1-bfa8-b5384695ff04" : {
+            "vertexId" : "8407ae37-ff3f-44e1-bfa8-b5384695ff04",
+            "vertexType" : "TARGET",
+            "name" : "Post Call",
+            "target" : {
+              "name" : "Post Call",
+              "apiType" : "RESTAPI",
+              "certificateId" : "6901a83c578b833affaeb8da",
+              "certificateName" : "certificate",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "petstore.swagger.io",
+                "path" : "/v2/pet",
+                "headerParams" : [ {
+                  "name" : "Content-Type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ {
+                  "name" : "query-1",
+                  "value" : "value-1"
+                } ],
+                "targetRequestBodyType" : "RAW",
+                "body" : {
+                  "data" : "{\n  \"id\": 101,\n  \"category\": {\n    \"id\": 1,\n    \"name\": \"Dogs\"\n  },\n  \"name\": \"Bruno\",\n  \"photoUrls\": [\n    \"https://example.com/bruno.jpg\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 1,\n      \"name\": \"friendly\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767698105948,
+          "lastModifiedBy" : "Nihal Ahamed",
+          "description" : "Created new proxy revision"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "ApiBuilder.Certificate.List",
+    "data" : {
+      "certificateData" : {
+        "id" : "6901a83c578b833affaeb8da",
+        "cts" : 1761716284674,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Akash K",
+        "mts" : 1765350484981,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
+        "name" : "certificate",
+        "description" : "ad",
+        "certificateFileName" : "cert.cer",
+        "password" : "null",
+        "alias" : "",
+        "status" : "APPROVED",
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1765350484981,
+          "lastModifiedBy" : "Akash K"
+        }, {
+          "status" : "Approved",
+          "cts" : 1761716396595,
+          "lastModifiedBy" : "Kiran Kamble",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1761716284674,
+          "lastModifiedBy" : "Kiran Kamble",
+          "description" : "Created new certificate"
+        } ]
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695ceeb96137493295166c03",
+      "proxyid" : "695ca8476137493295165be0",
+      "name" : "Xml Templates Data",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "6901a83c578b833affaeb8da" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "6901a83c578b833affaeb8da",
+      "name" : "certificate",
+      "description" : "ad"
+    } ]
+  }
+}
