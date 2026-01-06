@@ -1,5 +1,5 @@
 {
-  "cts" : 1767680461944,
+  "cts" : 1767680498668,
   "name" : "New Workflow 832",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767680393946,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767680461871,
+        "mts" : 1767680498666,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -21,9 +21,9 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/",
-        "pathArray" : [ ],
-        "revisionStatus" : "DRAFT",
+        "path" : "/dfscsdsd",
+        "pathArray" : [ "dfscsdsd" ],
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
@@ -130,6 +130,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767680487766,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Approved",
+          "cts" : 1767680470109,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767680393946,
           "lastModifiedBy" : "Kiran Kamble",
