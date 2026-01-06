@@ -1,5 +1,5 @@
 {
-  "cts" : 1767685752665,
+  "cts" : 1767685845548,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767617354032,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767685752660,
+        "mts" : 1767685845543,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/123",
         "pathArray" : [ "123" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
@@ -115,11 +115,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767685797299,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767685759874,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767617354032,
           "lastModifiedBy" : "Apiwiz Admin",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -144,7 +155,7 @@
         "cts" : 1767685536917,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767685536917,
+        "mts" : 1767685835060,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "name" : "sujith",
@@ -153,7 +164,6 @@
         "oracleDbHostname" : "54.203.45.67",
         "oracleDbPort" : "1521",
         "oracleDbUserName" : "sys",
-        "oracleDbPassword" : "test123",
         "oracleDbDatabaseName" : "ORCLPDB1",
         "role" : "SYSDBA",
         "url" : "sys/test123@apiwiz"
