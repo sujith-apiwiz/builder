@@ -1,5 +1,5 @@
 {
-  "cts" : 1767678810116,
+  "cts" : 1767678882024,
   "name" : "DLM testcase 1 - queues",
   "exportedBy" : "Pranav Ananth",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767615266044,
         "createdUserName" : "Pranav Ananth",
         "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1767678810113,
+        "mts" : 1767678882021,
         "createdBy" : "6655a103339aa715119d5a13",
         "modifiedBy" : "6655a103339aa715119d5a13",
         "taggedTeams" : [ ],
@@ -416,7 +416,7 @@
               "hide" : false,
               "feelExpression" : false
             }, {
-              "name" : "companyId",
+              "name" : "storeCode",
               "reference" : "body",
               "value" : "$.storeCode",
               "variableDataType" : "STRING",
@@ -425,7 +425,7 @@
               "hide" : false,
               "feelExpression" : false
             }, {
-              "name" : "transactionCode",
+              "name" : "transactionType",
               "reference" : "body",
               "value" : "$.transactionType",
               "variableDataType" : "STRING",
@@ -434,7 +434,7 @@
               "hide" : false,
               "feelExpression" : false
             }, {
-              "name" : "account1",
+              "name" : "accountsDebit",
               "reference" : "body",
               "value" : "$.accounts.debit",
               "variableDataType" : "STRING",
@@ -443,7 +443,7 @@
               "hide" : false,
               "feelExpression" : false
             }, {
-              "name" : "account2",
+              "name" : "accountsCredit",
               "reference" : "body",
               "value" : "$.accounts.credit",
               "variableDataType" : "STRING",
@@ -452,7 +452,7 @@
               "hide" : false,
               "feelExpression" : false
             }, {
-              "name" : "stockNumber",
+              "name" : "chequeNo",
               "reference" : "body",
               "value" : "$.chequeNo",
               "variableDataType" : "STRING",
@@ -461,7 +461,7 @@
               "hide" : false,
               "feelExpression" : false
             }, {
-              "name" : "LVersion",
+              "name" : "queueNo",
               "reference" : "body",
               "value" : "$.queueNo",
               "variableDataType" : "STRING",
@@ -470,16 +470,7 @@
               "hide" : false,
               "feelExpression" : false
             }, {
-              "name" : "jsonInputPayload",
-              "reference" : "body",
-              "value" : "$",
-              "variableDataType" : "STRING",
-              "active" : true,
-              "source" : "raw",
-              "hide" : false,
-              "feelExpression" : false
-            }, {
-              "name" : "accountLocal1",
+              "name" : "amount",
               "reference" : "body",
               "value" : "$.amount",
               "variableDataType" : "STRING",
