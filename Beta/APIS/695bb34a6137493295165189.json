@@ -1,5 +1,5 @@
 {
-  "cts" : 1767685440100,
+  "cts" : 1767685746446,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767617354032,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767685440050,
+        "mts" : 1767685746355,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,14 +28,51 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "v1" ]
+            "2cd0088e-2c0b-4f20-abf7-95da355f49bc" : [ "v1" ],
+            "e49f7c9d-b7a5-48a7-a2df-542f62209535" : [ "2cd0088e-2c0b-4f20-abf7-95da355f49bc" ]
           },
           "outbound" : {
-            "v1" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+            "v1" : [ "2cd0088e-2c0b-4f20-abf7-95da355f49bc" ],
+            "2cd0088e-2c0b-4f20-abf7-95da355f49bc" : [ "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
           },
-          "allNeighbours" : [ "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
+          "allNeighbours" : [ "2cd0088e-2c0b-4f20-abf7-95da355f49bc", "v1", "e49f7c9d-b7a5-48a7-a2df-542f62209535" ]
         },
         "vertexHashMap" : {
+          "2cd0088e-2c0b-4f20-abf7-95da355f49bc" : {
+            "vertexId" : "2cd0088e-2c0b-4f20-abf7-95da355f49bc",
+            "vertexType" : "DATABASE",
+            "name" : "a",
+            "databaseData" : {
+              "connectorId" : "695cbda06137493295166049",
+              "databaseType" : "ORACLEDB",
+              "query" : "select * from employees",
+              "variableName" : "a",
+              "connectorName" : "sujith",
+              "schemaName" : "SYS",
+              "tableName" : "BLOCKCHAIN_TABLE_DROPPED$",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "BLOCKCHAIN_TABLE_DROPPED$",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -94,6 +131,31 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.OracleDb.Configuration",
+    "data" : {
+      "oracleDbConfigurationData" : {
+        "id" : "695cbda06137493295166049",
+        "cts" : 1767685536917,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767685536917,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "name" : "sujith",
+        "description" : "",
+        "oracleDbConfigType" : "USERNAMEPASSWORD",
+        "oracleDbHostname" : "54.203.45.67",
+        "oracleDbPort" : "1521",
+        "oracleDbUserName" : "sys",
+        "oracleDbPassword" : "test123",
+        "oracleDbDatabaseName" : "ORCLPDB1",
+        "role" : "SYSDBA",
+        "url" : "sys/test123@apiwiz"
+      },
+      "databaseType" : "OracleDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -103,7 +165,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "695cbda06137493295166049" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -111,6 +173,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695cbda06137493295166049",
+      "name" : "sujith"
+    } ]
   }
 }
