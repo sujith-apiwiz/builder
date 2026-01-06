@@ -1,5 +1,5 @@
 {
-  "cts" : 1767697185860,
+  "cts" : 1767697214583,
   "name" : "New Workflow 6",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767693952750,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767697178350,
+        "mts" : 1767697208984,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -149,24 +149,6 @@
     "type" : "connector",
     "collectionName" : "Connectors.MsSql.Configuration",
     "data" : {
-      "msSqlConfigurationData" : {
-        "id" : "695ce7896137493295166a4f",
-        "cts" : 1767696265902,
-        "createdUserName" : "Apiwiz Admin",
-        "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767697157856,
-        "createdBy" : "6943a6099f593fb753fe6911",
-        "modifiedBy" : "6943a6099f593fb753fe6911",
-        "name" : "sujith",
-        "description" : "s",
-        "msSqlConfigType" : "SQL_AUTH",
-        "hostname" : "54.203.45.67",
-        "port" : "1433",
-        "username" : "SA",
-        "password" : "test@123",
-        "databaseName" : "master",
-        "url" : "jdbc:sqlserver://54.203.45.67:1433;databaseName=master"
-      },
       "databaseType" : "MsSql"
     }
   } ],
