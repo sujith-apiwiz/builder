@@ -1,5 +1,5 @@
 {
-  "cts" : 1767766636418,
+  "cts" : 1767766751959,
   "name" : "New Workflow 10",
   "exportedBy" : "First user",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767766594035,
         "createdUserName" : "First user",
         "modifiedUserName" : "First user",
-        "mts" : 1767766636364,
+        "mts" : 1767766751955,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6948eef7a364ea598e8b58c2",
         "taggedTeams" : [ ],
@@ -28,12 +28,14 @@
         "lockedBy" : "First user",
         "nodeDataHashMap" : {
           "inbound" : {
-            "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : [ "v1" ]
+            "39c66a1b-d017-46e5-9e3d-cb96fa44b36e" : [ "v1" ],
+            "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : [ "39c66a1b-d017-46e5-9e3d-cb96fa44b36e" ]
           },
           "outbound" : {
-            "v1" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9" ]
+            "v1" : [ "39c66a1b-d017-46e5-9e3d-cb96fa44b36e" ],
+            "39c66a1b-d017-46e5-9e3d-cb96fa44b36e" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9" ]
           },
-          "allNeighbours" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9", "v1" ]
+          "allNeighbours" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9", "v1", "39c66a1b-d017-46e5-9e3d-cb96fa44b36e" ]
         },
         "vertexHashMap" : {
           "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : {
@@ -71,6 +73,46 @@
                 }
               }
             }
+          },
+          "39c66a1b-d017-46e5-9e3d-cb96fa44b36e" : {
+            "vertexId" : "39c66a1b-d017-46e5-9e3d-cb96fa44b36e",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
+            "description" : "",
+            "callWorkflowData" : {
+              "childWorkflowId" : "695cefe36137493295166c43",
+              "childWorkflowName" : "New Workflow 8",
+              "virtualHostId" : "6943a658e44842424fc0c65d",
+              "virtualHostName" : "dev-tbac",
+              "request" : {
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
@@ -94,6 +136,179 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695cefe36137493295166c43",
+        "cts" : 1767698403862,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767766689304,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "695cefe36137493295166c42",
+        "revision" : 1,
+        "name" : "New Workflow 8",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/123123",
+        "pathArray" : [ "123123" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "cc37911a-3560-445c-a21c-eb85d527467c" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "cc37911a-3560-445c-a21c-eb85d527467c" ]
+          },
+          "allNeighbours" : [ "cc37911a-3560-445c-a21c-eb85d527467c", "v1" ]
+        },
+        "vertexHashMap" : {
+          "cc37911a-3560-445c-a21c-eb85d527467c" : {
+            "vertexId" : "cc37911a-3560-445c-a21c-eb85d527467c",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1767766681783,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767766656909,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767764731804,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767763335866,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767763247407,
+          "lastModifiedBy" : "6948eef7a364ea598e8b58c2",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1767762451466,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Approved",
+          "cts" : 1767762357348,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767762305468,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767703875784,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767703587703,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767698838676,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "./"
+        }, {
+          "status" : "Review",
+          "cts" : 1767698815467,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767698484925,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767698471309,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767698456985,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1767698403862,
+          "lastModifiedBy" : "Apiwiz Admin",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ {
+          "id" : "6943a658e44842424fc0c65d",
+          "name" : "dev-tbac",
+          "timeStamp" : 1767766689078,
+          "deployedBy" : "Apiwiz Admin"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : true
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -101,6 +316,13 @@
       "proxyid" : "695dfa426137493295167edf",
       "name" : "New Workflow 10",
       "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ "695cefe36137493295166c43" ],
+      "attachedConnectors" : [ ]
+    }, {
+      "id" : "695cefe36137493295166c43",
+      "proxyid" : "695cefe36137493295166c42",
+      "name" : "New Workflow 8",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
