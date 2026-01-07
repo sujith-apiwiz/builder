@@ -1,5 +1,5 @@
 {
-  "cts" : 1767779774991,
+  "cts" : 1767785155459,
   "name" : "TestAssignMessage",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767779774986,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767779774986,
+        "mts" : 1767785155397,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -28,14 +28,24 @@
         "lockedBy" : "Akash K",
         "nodeDataHashMap" : {
           "inbound" : {
-            "b67b99b7-702c-4b4b-9746-02697dcc04cf" : [ "v1" ]
+            "02373c49-c853-4eff-9522-b9f8b08fd8dc" : [ "v1" ],
+            "b67b99b7-702c-4b4b-9746-02697dcc04cf" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc" ]
           },
           "outbound" : {
-            "v1" : [ "b67b99b7-702c-4b4b-9746-02697dcc04cf" ]
+            "v1" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc" ],
+            "02373c49-c853-4eff-9522-b9f8b08fd8dc" : [ "b67b99b7-702c-4b4b-9746-02697dcc04cf" ]
           },
-          "allNeighbours" : [ "b67b99b7-702c-4b4b-9746-02697dcc04cf", "v1" ]
+          "allNeighbours" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc", "b67b99b7-702c-4b4b-9746-02697dcc04cf", "v1" ]
         },
         "vertexHashMap" : {
+          "02373c49-c853-4eff-9522-b9f8b08fd8dc" : {
+            "vertexId" : "02373c49-c853-4eff-9522-b9f8b08fd8dc",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -80,8 +90,8 @@
           "description" : "Created new proxy"
         } ],
         "enableTracing" : false,
-        "environmentName" : "",
-        "environmentId" : "",
+        "environmentName" : "AcmeBank DEV",
+        "environmentId" : "6651dc284289865ae027e44e",
         "selectedVirtualHostName" : "",
         "selectedVirtualHostId" : "",
         "kafkaConnectorId" : "",
@@ -100,15 +110,15 @@
       "id" : "695e2dbe613749329516873a",
       "proxyid" : "695e2dbe6137493295168739",
       "name" : "TestAssignMessage",
-      "attachedEnv" : "",
+      "attachedEnv" : "6651dc284289865ae027e44e",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
-      "id" : "",
-      "name" : ""
+      "id" : "6651dc284289865ae027e44e",
+      "name" : "AcmeBank DEV"
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ ]
