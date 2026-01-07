@@ -1,5 +1,5 @@
 {
-  "cts" : 1767772169785,
+  "cts" : 1767789274676,
   "name" : "New Workflow 10",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767766594035,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767772169780,
+        "mts" : 1767789274670,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,14 +28,14 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "974deffa-80f3-495e-af79-f26987bd925b" : [ "v1" ],
-            "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : [ "974deffa-80f3-495e-af79-f26987bd925b" ]
+            "7df560bd-7c95-4c10-9160-f8846fdff0fc" : [ "v1" ],
+            "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : [ "7df560bd-7c95-4c10-9160-f8846fdff0fc" ]
           },
           "outbound" : {
-            "v1" : [ "974deffa-80f3-495e-af79-f26987bd925b" ],
-            "974deffa-80f3-495e-af79-f26987bd925b" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9" ]
+            "v1" : [ "7df560bd-7c95-4c10-9160-f8846fdff0fc" ],
+            "7df560bd-7c95-4c10-9160-f8846fdff0fc" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9" ]
           },
-          "allNeighbours" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9", "v1", "974deffa-80f3-495e-af79-f26987bd925b" ]
+          "allNeighbours" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9", "v1", "7df560bd-7c95-4c10-9160-f8846fdff0fc" ]
         },
         "vertexHashMap" : {
           "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : {
@@ -74,19 +74,19 @@
               }
             }
           },
-          "974deffa-80f3-495e-af79-f26987bd925b" : {
-            "vertexId" : "974deffa-80f3-495e-af79-f26987bd925b",
+          "7df560bd-7c95-4c10-9160-f8846fdff0fc" : {
+            "vertexId" : "7df560bd-7c95-4c10-9160-f8846fdff0fc",
             "vertexType" : "REDIS_CACHING",
-            "name" : "q",
+            "name" : "a",
             "description" : "",
             "redisCachingData" : {
               "redisCacheConnectorId" : "695e0fa8613749329516828f",
               "cachingOperationList" : [ {
-                "operationName" : "q",
-                "description" : "q",
+                "operationName" : "a",
+                "description" : "a",
                 "redisCache" : {
-                  "key" : "q",
-                  "value" : "q",
+                  "key" : "a",
+                  "value" : "a",
                   "expiration" : 0,
                   "timeUnit" : "SECONDS",
                   "cachingOperationType" : "ADD"
@@ -95,7 +95,7 @@
               } ],
               "skip" : false,
               "showActualErrorMessage" : false,
-              "continueOnError" : true,
+              "continueOnError" : false,
               "errorResponse" : {
                 "statusCode" : 400,
                 "body" : {
@@ -109,6 +109,26 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767789146107,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767789122261,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767772191242,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767772175088,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1767770879399,
           "lastModifiedBy" : "6943a6099f593fb753fe6911",
@@ -148,8 +168,17 @@
         "id" : "695e0fa8613749329516828f",
         "cts" : 1767772072132,
         "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1767789210922,
         "createdBy" : "Apiwiz Admin",
-        "taggedTeams" : [ ],
+        "modifiedBy" : "Apiwiz Admin",
+        "taggedTeams" : [ {
+          "id" : "694a2d335e492342f9dff258",
+          "name" : "Alpha"
+        }, {
+          "id" : "694a271e5e492342f9dfef91",
+          "name" : "Gamma"
+        } ],
         "name" : "sujith-redis",
         "description" : "",
         "host" : "54.203.45.67",
