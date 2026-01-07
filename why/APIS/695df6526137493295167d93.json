@@ -1,5 +1,5 @@
 {
-  "cts" : 1767765670104,
+  "cts" : 1767765693379,
   "name" : "TestAssertion",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767765586349,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767765670102,
+        "mts" : 1767765693313,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -78,9 +78,18 @@
             "vertexType" : "START",
             "name" : "Request",
             "requestVariables" : [ {
-              "name" : "extracted",
+              "name" : "extracted1",
               "reference" : "headers",
-              "value" : "header",
+              "value" : "header1",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "headers",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "extracted2",
+              "reference" : "headers",
+              "value" : "header2",
               "variableDataType" : "STRING",
               "active" : true,
               "source" : "headers",
