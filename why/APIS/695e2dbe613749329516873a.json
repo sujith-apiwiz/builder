@@ -1,5 +1,5 @@
 {
-  "cts" : 1767785155459,
+  "cts" : 1767785775220,
   "name" : "TestAssignMessage",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767779774986,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767785155397,
+        "mts" : 1767785775155,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -50,7 +50,16 @@
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ ],
+            "requestVariables" : [ {
+              "name" : "extractedHeader",
+              "reference" : "headers",
+              "value" : "header1",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "headers",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
             "mandatoryHeaders" : [ ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
