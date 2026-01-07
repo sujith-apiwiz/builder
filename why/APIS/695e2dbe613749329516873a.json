@@ -1,5 +1,5 @@
 {
-  "cts" : 1767785832274,
+  "cts" : 1767785849146,
   "name" : "TestAssignMessage",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767779774986,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767785832271,
+        "mts" : 1767785848990,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -106,6 +106,13 @@
                 "valueDataType" : "STRING"
               } ],
               "source" : "headers",
+              "override" : true
+            }, {
+              "name" : "customVar",
+              "value" : "1",
+              "type" : "STRING",
+              "feelExpression" : false,
+              "source" : "02373c49-c853-4eff-9522-b9f8b08fd8dc",
               "override" : true
             } ],
             "imported" : false,
