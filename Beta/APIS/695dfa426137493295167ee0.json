@@ -1,0 +1,116 @@
+{
+  "cts" : 1767766636418,
+  "name" : "New Workflow 10",
+  "exportedBy" : "First user",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695dfa426137493295167ee0",
+        "cts" : 1767766594035,
+        "createdUserName" : "First user",
+        "modifiedUserName" : "First user",
+        "mts" : 1767766636364,
+        "createdBy" : "6948eef7a364ea598e8b58c2",
+        "modifiedBy" : "6948eef7a364ea598e8b58c2",
+        "taggedTeams" : [ ],
+        "proxyId" : "695dfa426137493295167edf",
+        "revision" : 1,
+        "name" : "New Workflow 10",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/ee",
+        "pathArray" : [ "ee" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "First user",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9" ]
+          },
+          "allNeighbours" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9", "v1" ]
+        },
+        "vertexHashMap" : {
+          "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : {
+            "vertexId" : "c59be96c-b49a-4312-81e8-ee9521c7f5e9",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767766594035,
+          "lastModifiedBy" : "First user",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695dfa426137493295167ee0",
+      "proxyid" : "695dfa426137493295167edf",
+      "name" : "New Workflow 10",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
