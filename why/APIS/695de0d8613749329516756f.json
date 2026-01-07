@@ -1,5 +1,5 @@
 {
-  "cts" : 1767760152429,
+  "cts" : 1767761473137,
   "name" : "New Workflow 836",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767760088583,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767760152423,
+        "mts" : 1767761473071,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -56,7 +56,10 @@
               "showActualErrorMessage" : false,
               "continueOnError" : false,
               "errorResponse" : {
-                "statusCode" : 400,
+                "statusCode" : 206,
+                "headers" : {
+                  "dsf" : "sdf"
+                },
                 "body" : {
                   "data" : "",
                   "type" : "json"
