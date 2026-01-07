@@ -1,5 +1,5 @@
 {
-  "cts" : 1767760088663,
+  "cts" : 1767760152429,
   "name" : "New Workflow 836",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767760088583,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767760088583,
+        "mts" : 1767760152423,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -28,14 +28,44 @@
         "lockedBy" : "Nihal Ahamed",
         "nodeDataHashMap" : {
           "inbound" : {
-            "17018b0b-8145-4b13-8ab5-4a661b758a33" : [ "v1" ]
+            "9d7ea26f-286c-4219-a1ae-27b732fb77a5" : [ "v1" ],
+            "17018b0b-8145-4b13-8ab5-4a661b758a33" : [ "9d7ea26f-286c-4219-a1ae-27b732fb77a5" ]
           },
           "outbound" : {
-            "v1" : [ "17018b0b-8145-4b13-8ab5-4a661b758a33" ]
+            "v1" : [ "9d7ea26f-286c-4219-a1ae-27b732fb77a5" ],
+            "9d7ea26f-286c-4219-a1ae-27b732fb77a5" : [ "17018b0b-8145-4b13-8ab5-4a661b758a33" ]
           },
-          "allNeighbours" : [ "17018b0b-8145-4b13-8ab5-4a661b758a33", "v1" ]
+          "allNeighbours" : [ "9d7ea26f-286c-4219-a1ae-27b732fb77a5", "17018b0b-8145-4b13-8ab5-4a661b758a33", "v1" ]
         },
         "vertexHashMap" : {
+          "9d7ea26f-286c-4219-a1ae-27b732fb77a5" : {
+            "vertexId" : "9d7ea26f-286c-4219-a1ae-27b732fb77a5",
+            "vertexType" : "DATABASE",
+            "name" : "test",
+            "description" : "test",
+            "databaseData" : {
+              "connectorId" : "682e31412d820556c5f23c86",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"Govind\",\"collection\":\"references\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"description\":\"\",\"createdBy\":\"\",\"modifiedBy\":\"\",\"deprecated\":\"\",\"isDefault\":\"\",\"revisions\":[{\"revision\":\"\",\"schemaId\":\"\",\"status\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\"}],\"comments\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\",\"__v\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "test",
+              "connectorName" : "Stage-Data DB",
+              "tenantName" : "Govind",
+              "collectionName" : "references",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "17018b0b-8145-4b13-8ab5-4a661b758a33" : {
             "vertexId" : "17018b0b-8145-4b13-8ab5-4a661b758a33",
             "vertexType" : "STOP",
@@ -94,6 +124,33 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "682e31412d820556c5f23c86",
+        "cts" : 1747857729040,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1747857729040,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
+        "name" : "Stage-Data DB",
+        "description" : "Stage-Data DB",
+        "host" : "10.10.12.20:27017/apiwiz",
+        "scheme" : "mongodb",
+        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz",
+          "password" : "Kufas2spaprunof",
+          "authenticationDatabase" : "admin",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -103,7 +160,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "682e31412d820556c5f23c86" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -111,6 +168,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "682e31412d820556c5f23c86",
+      "name" : "Stage-Data DB"
+    } ]
   }
 }
