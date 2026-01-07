@@ -1,5 +1,5 @@
 {
-  "cts" : 1767765586356,
+  "cts" : 1767765670104,
   "name" : "TestAssertion",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767765586349,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767765586349,
+        "mts" : 1767765670102,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -28,14 +28,38 @@
         "lockedBy" : "Akash K",
         "nodeDataHashMap" : {
           "inbound" : {
-            "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1" : [ "v1" ]
+            "a8a80eb0-7e41-4d93-8d7e-def69ae6a6fc" : [ "v1" ],
+            "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1" : [ "a8a80eb0-7e41-4d93-8d7e-def69ae6a6fc" ]
           },
           "outbound" : {
-            "v1" : [ "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1" ]
+            "v1" : [ "a8a80eb0-7e41-4d93-8d7e-def69ae6a6fc" ],
+            "a8a80eb0-7e41-4d93-8d7e-def69ae6a6fc" : [ "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1" ]
           },
-          "allNeighbours" : [ "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1", "v1" ]
+          "allNeighbours" : [ "a8a80eb0-7e41-4d93-8d7e-def69ae6a6fc", "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1", "v1" ]
         },
         "vertexHashMap" : {
+          "a8a80eb0-7e41-4d93-8d7e-def69ae6a6fc" : {
+            "vertexId" : "a8a80eb0-7e41-4d93-8d7e-def69ae6a6fc",
+            "vertexType" : "ASSERTION",
+            "name" : "Assertion",
+            "assertion" : {
+              "expression" : "",
+              "placeHolders" : [ ],
+              "feelExpression" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1" : {
             "vertexId" : "1d37ca31-5cb9-4ccf-a732-43b2d6a9c5b1",
             "vertexType" : "STOP",
@@ -53,7 +77,16 @@
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ ],
+            "requestVariables" : [ {
+              "name" : "extracted",
+              "reference" : "headers",
+              "value" : "header",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "headers",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
             "mandatoryHeaders" : [ ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
