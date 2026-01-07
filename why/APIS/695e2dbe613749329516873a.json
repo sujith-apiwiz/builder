@@ -1,5 +1,5 @@
 {
-  "cts" : 1767785786444,
+  "cts" : 1767785832274,
   "name" : "TestAssignMessage",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767779774986,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767785786442,
+        "mts" : 1767785832271,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -47,36 +47,66 @@
               "value" : "{ \"id\": 101, \"name\": \"Varsha K\", \"email\": \"varsha.k@example.com\", \"isActive\": true, \"roles\": [\"admin\", \"editor\"], \"profile\": { \"age\": 25, \"location\": \"Bengaluru, India\", \"skills\": [\"API Design\", \"Documentation\", \"GraphQL\"] } }",
               "variableDataType" : "BOOLEAN",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "ENV_VALUE",
               "override" : false
             }, {
               "name" : "id",
               "value" : "1",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "ENV_VALUE",
               "override" : true
             }, {
               "name" : "deepak_var",
               "value" : "CRqYkqk8J7QOj9332Ub1ET22E2lEBdiX2P3H38+iQfUF/ow5xU0Ae2PLmia/Q4yalvm0gdj1VODSqpqv+q1Ary+eC3ZpgQ9Fq9SbLUKfMXgkOEQwHMYZDsZrnmEa/eUz8aBtLc30b4mZoAxkNZ4N0qy/BrY2ccgPVaksKBtSaK9LnoIq318nm8CSFa48Il9NeyEV2vEOQdihyvHD7ZLnCM7rG57YExAyhWboL9BvmYOxcMQQIIkZP49Lom0fKB3phxU6c50X5haIxnLBvFNVU3urceOGHubnoQ7jpk687dKiekTNyVT/pcHJXbZJA4VpHXI2bxxuuXvjNf5LByp8AA==",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "override" : false
             }, {
               "name" : "xml_var",
               "value" : "<User>   <UserId>101</UserId>   <FullName>Varsha K</FullName>   <EmailAddress>varsha.k@example.com</EmailAddress>   <ActiveStatus>true</ActiveStatus>      <UserRoles>     <Role>admin</Role>     <Role>editor</Role>   </UserRoles>      <UserProfile>     <Age>25</Age>     <City>Bengaluru, India</City>     <SkillSet>       <Skill>API Design</Skill>       <Skill>Documentation</Skill>       <Skill>GraphQL</Skill>     </SkillSet>   </UserProfile> </User>",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "override" : false
             }, {
               "name" : "env-name",
               "value" : "Deepak test",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "override" : false
             }, {
               "name" : "extractedHeader",
-              "value" : "header1",
+              "value" : "header2",
               "variableDataType" : "STRING",
               "feelExpression" : false,
+              "feelVariableList" : [ {
+                "name" : "",
+                "value" : "",
+                "valueDataType" : "STRING"
+              } ],
               "source" : "headers",
-              "override" : false
+              "override" : true
             } ],
             "imported" : false,
             "skipRuntimeVariables" : false
