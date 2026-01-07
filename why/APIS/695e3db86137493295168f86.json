@@ -1,5 +1,5 @@
 {
-  "cts" : 1767783864339,
+  "cts" : 1767784010913,
   "name" : "Or Node",
   "exportedBy" : "Deepak Satuluri",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767783864274,
         "createdUserName" : "Deepak Satuluri",
         "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767783864274,
+        "mts" : 1767784010910,
         "createdBy" : "685a38a166575941216c9c0e",
         "modifiedBy" : "685a38a166575941216c9c0e",
         "taggedTeams" : [ ],
@@ -23,19 +23,51 @@
         "apiMethod" : "GET",
         "path" : "/or-node-val",
         "pathArray" : [ "or-node-val" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Deepak Satuluri",
         "nodeDataHashMap" : {
           "inbound" : {
-            "67e2578a-71fe-4660-9e07-3ae876889f21" : [ "v1" ]
+            "c3661a14-8f33-49b6-9b75-f62d213d64e9" : [ "v1" ],
+            "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291" : [ "262b22aa-cfb1-456b-b8c0-989d8766c958", "c3661a14-8f33-49b6-9b75-f62d213d64e9" ],
+            "262b22aa-cfb1-456b-b8c0-989d8766c958" : [ "v1" ],
+            "67e2578a-71fe-4660-9e07-3ae876889f21" : [ "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291" ]
           },
           "outbound" : {
-            "v1" : [ "67e2578a-71fe-4660-9e07-3ae876889f21" ]
+            "v1" : [ "262b22aa-cfb1-456b-b8c0-989d8766c958", "c3661a14-8f33-49b6-9b75-f62d213d64e9" ],
+            "c3661a14-8f33-49b6-9b75-f62d213d64e9" : [ "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291" ],
+            "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291" : [ "67e2578a-71fe-4660-9e07-3ae876889f21" ],
+            "262b22aa-cfb1-456b-b8c0-989d8766c958" : [ "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291" ]
           },
-          "allNeighbours" : [ "v1", "67e2578a-71fe-4660-9e07-3ae876889f21" ]
+          "allNeighbours" : [ "262b22aa-cfb1-456b-b8c0-989d8766c958", "c3661a14-8f33-49b6-9b75-f62d213d64e9", "v1", "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291", "67e2578a-71fe-4660-9e07-3ae876889f21" ]
         },
         "vertexHashMap" : {
+          "262b22aa-cfb1-456b-b8c0-989d8766c958" : {
+            "vertexId" : "262b22aa-cfb1-456b-b8c0-989d8766c958",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 2,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "c3661a14-8f33-49b6-9b75-f62d213d64e9" : {
+            "vertexId" : "c3661a14-8f33-49b6-9b75-f62d213d64e9",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 1,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -71,14 +103,33 @@
                 "type" : "JSON"
               }
             }
+          },
+          "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291" : {
+            "vertexId" : "a9b83d91-f70a-4e66-a3ac-a6ef6e1f3291",
+            "vertexType" : "OR_NODE",
+            "name" : "Or Node",
+            "description" : "",
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767783940989,
+          "lastModifiedBy" : "685a38a166575941216c9c0e",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767783922024,
+          "lastModifiedBy" : "685a38a166575941216c9c0e",
+          "description" : "A"
+        }, {
           "status" : "Draft",
           "cts" : 1767783864274,
           "lastModifiedBy" : "Deepak Satuluri",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
