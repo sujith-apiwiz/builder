@@ -1,7 +1,7 @@
 {
-  "cts" : 1767783458900,
+  "cts" : 1767784864180,
   "name" : "New Workflow 840",
-  "exportedBy" : "Kiran Kamble",
+  "exportedBy" : "Pranav Ananth",
   "data" : [ {
     "type" : "proxy",
     "collectionName" : "ApiBuilder.Proxy.List",
@@ -10,10 +10,10 @@
         "id" : "695e2e006137493295168771",
         "cts" : 1767779840676,
         "createdUserName" : "Binitkumar Shirsath",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767783458838,
+        "modifiedUserName" : "Pranav Ananth",
+        "mts" : 1767784864107,
         "createdBy" : "6875ddc455236f5d5fa969e7",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "6655a103339aa715119d5a13",
         "taggedTeams" : [ ],
         "proxyId" : "695e2e006137493295168770",
         "revision" : 1,
@@ -23,26 +23,43 @@
         "apiMethod" : "GET",
         "path" : "/adfaoifakf",
         "pathArray" : [ "adfaoifakf" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
-        "lockedBy" : "Kiran Kamble",
+        "lockedBy" : "Pranav Ananth",
         "nodeDataHashMap" : {
           "inbound" : {
-            "12808c53-b805-4248-b2c9-2226e6112e1a" : [ "v1" ],
-            "3dff0dc3-e387-4ec6-ae84-71a41b601507" : [ "12808c53-b805-4248-b2c9-2226e6112e1a" ]
+            "6c70d626-d9e7-4c85-8f88-9fb2541587ae" : [ "v1" ],
+            "3dff0dc3-e387-4ec6-ae84-71a41b601507" : [ "6c70d626-d9e7-4c85-8f88-9fb2541587ae" ]
           },
           "outbound" : {
-            "v1" : [ "12808c53-b805-4248-b2c9-2226e6112e1a" ],
-            "12808c53-b805-4248-b2c9-2226e6112e1a" : [ "3dff0dc3-e387-4ec6-ae84-71a41b601507" ]
+            "v1" : [ "6c70d626-d9e7-4c85-8f88-9fb2541587ae" ],
+            "6c70d626-d9e7-4c85-8f88-9fb2541587ae" : [ "3dff0dc3-e387-4ec6-ae84-71a41b601507" ]
           },
-          "allNeighbours" : [ "12808c53-b805-4248-b2c9-2226e6112e1a", "v1", "3dff0dc3-e387-4ec6-ae84-71a41b601507" ]
+          "allNeighbours" : [ "6c70d626-d9e7-4c85-8f88-9fb2541587ae", "v1", "3dff0dc3-e387-4ec6-ae84-71a41b601507" ]
         },
         "vertexHashMap" : {
-          "12808c53-b805-4248-b2c9-2226e6112e1a" : {
-            "vertexId" : "12808c53-b805-4248-b2c9-2226e6112e1a",
-            "vertexType" : "OR_NODE",
-            "name" : "test",
+          "6c70d626-d9e7-4c85-8f88-9fb2541587ae" : {
+            "vertexId" : "6c70d626-d9e7-4c85-8f88-9fb2541587ae",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "a",
             "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "69451da78d4f204d1d61f7be",
+              "sharedFlowName" : "testOne",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
             "imported" : false,
             "skipRuntimeVariables" : false
           },
@@ -84,11 +101,27 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767784849862,
+          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767784828756,
+          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "description" : "a"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767784796428,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767779840676,
           "lastModifiedBy" : "Binitkumar Shirsath",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
@@ -104,6 +137,63 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "69451da78d4f204d1d61f7be",
+        "cts" : 1766137255372,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1766571719459,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ ],
+        "name" : "testOne",
+        "description" : "",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea" ]
+          },
+          "allNeighbours" : [ "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea", "v1" ]
+        },
+        "vertexHashMap" : {
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "testOne",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea" : {
+            "vertexId" : "2b3a2fe2-2e05-4ce5-9c7c-dafbfcbdaeea",
+            "vertexType" : "SHARED_FLOW_STOP",
+            "name" : "Exit",
+            "sharedFlowStopData" : {
+              "stopNodeAction" : "TERMINATE_WITH_RESPONSE",
+              "sharedFlowResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ "695b59726137493295162743" ],
+        "inputVariableList" : [ ],
+        "outputVariableList" : [ ],
+        "workspaceTenant" : "stage-data",
+        "misconfigurationMessages" : [ ],
+        "validated" : true
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -111,7 +201,7 @@
       "proxyid" : "695e2e006137493295168770",
       "name" : "New Workflow 840",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ ],
+      "attachedSharedFlows" : [ "69451da78d4f204d1d61f7be" ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
     } ],
@@ -120,7 +210,14 @@
       "id" : "",
       "name" : ""
     } ],
-    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "69451da78d4f204d1d61f7be",
+      "name" : "testOne",
+      "description" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
     "connectorMetadataDetailsDtoList" : [ ]
   }
 }
