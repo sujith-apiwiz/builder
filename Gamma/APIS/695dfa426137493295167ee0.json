@@ -1,5 +1,5 @@
 {
-  "cts" : 1767789221060,
+  "cts" : 1767789230260,
   "name" : "New Workflow 10",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767766594035,
         "createdUserName" : "First user",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767789215794,
+        "mts" : 1767789224263,
         "createdBy" : "6948eef7a364ea598e8b58c2",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,14 +28,12 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "4bbc85bb-9b8b-4679-93c4-b6f2a7f0bc7a" : [ "v1" ],
-            "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : [ "4bbc85bb-9b8b-4679-93c4-b6f2a7f0bc7a" ]
+            "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "4bbc85bb-9b8b-4679-93c4-b6f2a7f0bc7a" ],
-            "4bbc85bb-9b8b-4679-93c4-b6f2a7f0bc7a" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9" ]
+            "v1" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9" ]
           },
-          "allNeighbours" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9", "4bbc85bb-9b8b-4679-93c4-b6f2a7f0bc7a", "v1" ]
+          "allNeighbours" : [ "c59be96c-b49a-4312-81e8-ee9521c7f5e9", "v1" ]
         },
         "vertexHashMap" : {
           "c59be96c-b49a-4312-81e8-ee9521c7f5e9" : {
@@ -50,39 +48,6 @@
                 "type" : "JSON"
               }
             }
-          },
-          "4bbc85bb-9b8b-4679-93c4-b6f2a7f0bc7a" : {
-            "vertexId" : "4bbc85bb-9b8b-4679-93c4-b6f2a7f0bc7a",
-            "vertexType" : "REDIS_CACHING",
-            "name" : "a",
-            "description" : "",
-            "redisCachingData" : {
-              "redisCacheConnectorId" : "695e0fa8613749329516828f",
-              "cachingOperationList" : [ {
-                "operationName" : "a",
-                "description" : "a",
-                "redisCache" : {
-                  "key" : "a",
-                  "value" : "a",
-                  "expiration" : 0,
-                  "timeUnit" : "SECONDS",
-                  "cachingOperationType" : "ADD"
-                },
-                "successFull" : false
-              } ],
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : true,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -160,32 +125,6 @@
         "deployed" : false
       }
     }
-  }, {
-    "type" : "connector",
-    "collectionName" : "Connectors.Redis.Cache",
-    "data" : {
-      "redisCacheConnectorData" : {
-        "id" : "695e0fa8613749329516828f",
-        "cts" : 1767772072132,
-        "createdUserName" : "Apiwiz Admin",
-        "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767789210922,
-        "createdBy" : "Apiwiz Admin",
-        "modifiedBy" : "Apiwiz Admin",
-        "taggedTeams" : [ {
-          "id" : "694a2d335e492342f9dff258",
-          "name" : "Alpha"
-        }, {
-          "id" : "694a271e5e492342f9dfef91",
-          "name" : "Gamma"
-        } ],
-        "name" : "sujith-redis",
-        "description" : "",
-        "host" : "54.203.45.67",
-        "port" : 6379,
-        "password" : "WRl6RLyup09riMa"
-      }
-    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -195,7 +134,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695e0fa8613749329516828f" ]
+      "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -203,9 +142,6 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ {
-      "id" : "695e0fa8613749329516828f",
-      "name" : "sujith-redis"
-    } ]
+    "connectorMetadataDetailsDtoList" : [ ]
   }
 }
