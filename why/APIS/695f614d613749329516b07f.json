@@ -1,5 +1,5 @@
 {
-  "cts" : 1767858565158,
+  "cts" : 1767858619779,
   "name" : "TestDetailedError",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767858509389,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767858565150,
+        "mts" : 1767858619725,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -28,14 +28,16 @@
         "lockedBy" : "Nihal Ahamed",
         "nodeDataHashMap" : {
           "inbound" : {
-            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "v1" ],
-            "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ]
+            "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" : [ "v1" ],
+            "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ],
+            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ]
           },
           "outbound" : {
-            "v1" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ],
-            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" ]
+            "v1" : [ "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ],
+            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" ],
+            "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ]
           },
-          "allNeighbours" : [ "d3c48d49-ae0d-49d4-b898-23239763da72", "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87", "v1" ]
+          "allNeighbours" : [ "d3c48d49-ae0d-49d4-b898-23239763da72", "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87", "v1", "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ]
         },
         "vertexHashMap" : {
           "d3c48d49-ae0d-49d4-b898-23239763da72" : {
@@ -108,6 +110,34 @@
                 }
               }
             }
+          },
+          "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" : {
+            "vertexId" : "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d",
+            "vertexType" : "DATABASE",
+            "name" : "test",
+            "description" : "trst",
+            "databaseData" : {
+              "connectorId" : "68b839a4399db1665a31dccd",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"find\",\"databaseName\":\"Govind\",\"collection\":\"guides\",\"documents\":[{\"_id\":\"\",\"createdBy\":\"\",\"updatedBy\":\"\",\"deprecated\":\"\",\"title\":\"\",\"comments\":\"\",\"visitors\":\"\",\"isDefault\":\"\",\"versions\":[{\"pages\":[{\"type\":\"\",\"pageId\":\"\",\"title\":\"\",\"pages\":\"\"}],\"version\":\"\",\"status\":\"\",\"createdBy\":\"\",\"updatedBy\":\"\",\"createdAt\":\"\",\"updatedAt\":\"\"}],\"cts\":\"\",\"mts\":\"\",\"__v\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "test",
+              "connectorName" : "Stage-DB",
+              "tenantName" : "Govind",
+              "collectionName" : "guides",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
@@ -155,6 +185,33 @@
       },
       "databaseType" : "MsSql"
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "68b839a4399db1665a31dccd",
+        "cts" : 1756903844986,
+        "createdUserName" : "vinay cn",
+        "modifiedUserName" : "vinay cn",
+        "mts" : 1756903844986,
+        "createdBy" : "6846a5df9d57390577fbfbae",
+        "modifiedBy" : "6846a5df9d57390577fbfbae",
+        "name" : "Stage-DB",
+        "description" : "Stage-DB",
+        "host" : "10.10.12.20:27017/apiwiz",
+        "scheme" : "mongodb",
+        "url" : "mongodb://apiwiz:Kufas2spaprunof@10.10.12.20:27017/apiwiz?authMechanism=DEFAULT&authSource=admin&tls=false",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz",
+          "password" : "Kufas2spaprunof",
+          "authenticationDatabase" : "admin",
+          "authenticationMechanism" : "DEFAULT"
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -164,7 +221,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695deb7661374932951678ca" ]
+      "attachedConnectors" : [ "695deb7661374932951678ca", "68b839a4399db1665a31dccd" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -175,6 +232,9 @@
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "695deb7661374932951678ca",
       "name" : "Stage-Connector"
+    }, {
+      "id" : "68b839a4399db1665a31dccd",
+      "name" : "Stage-DB"
     } ]
   }
 }
