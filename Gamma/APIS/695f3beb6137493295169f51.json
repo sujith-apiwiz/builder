@@ -1,5 +1,5 @@
 {
-  "cts" : 1767849773715,
+  "cts" : 1767849876504,
   "name" : "New Workflow 11",
   "exportedBy" : "Apiwiz Admin",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767848939952,
         "createdUserName" : "Apiwiz Admin",
         "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767849768499,
+        "mts" : 1767849869634,
         "createdBy" : "6943a6099f593fb753fe6911",
         "modifiedBy" : "6943a6099f593fb753fe6911",
         "taggedTeams" : [ ],
@@ -28,14 +28,12 @@
         "lockedBy" : "Apiwiz Admin",
         "nodeDataHashMap" : {
           "inbound" : {
-            "36e29fe2-be15-471a-87bc-c8543d7b4f06" : [ "v1" ],
-            "bf668cc3-3c58-4810-af6c-ad688d4637d3" : [ "36e29fe2-be15-471a-87bc-c8543d7b4f06" ]
+            "bf668cc3-3c58-4810-af6c-ad688d4637d3" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "36e29fe2-be15-471a-87bc-c8543d7b4f06" ],
-            "36e29fe2-be15-471a-87bc-c8543d7b4f06" : [ "bf668cc3-3c58-4810-af6c-ad688d4637d3" ]
+            "v1" : [ "bf668cc3-3c58-4810-af6c-ad688d4637d3" ]
           },
-          "allNeighbours" : [ "bf668cc3-3c58-4810-af6c-ad688d4637d3", "36e29fe2-be15-471a-87bc-c8543d7b4f06", "v1" ]
+          "allNeighbours" : [ "bf668cc3-3c58-4810-af6c-ad688d4637d3", "v1" ]
         },
         "vertexHashMap" : {
           "bf668cc3-3c58-4810-af6c-ad688d4637d3" : {
@@ -50,28 +48,6 @@
                 "type" : "JSON"
               }
             }
-          },
-          "36e29fe2-be15-471a-87bc-c8543d7b4f06" : {
-            "vertexId" : "36e29fe2-be15-471a-87bc-c8543d7b4f06",
-            "vertexType" : "REDIS_CACHING",
-            "name" : "q",
-            "description" : "",
-            "redisCachingData" : {
-              "redisCacheConnectorId" : "695e0fa8613749329516828f",
-              "cachingOperationList" : [ ],
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -118,32 +94,6 @@
         "deployed" : false
       }
     }
-  }, {
-    "type" : "connector",
-    "collectionName" : "Connectors.Redis.Cache",
-    "data" : {
-      "redisCacheConnectorData" : {
-        "id" : "695e0fa8613749329516828f",
-        "cts" : 1767772072132,
-        "createdUserName" : "Apiwiz Admin",
-        "modifiedUserName" : "Apiwiz Admin",
-        "mts" : 1767789210922,
-        "createdBy" : "Apiwiz Admin",
-        "modifiedBy" : "Apiwiz Admin",
-        "taggedTeams" : [ {
-          "id" : "694a2d335e492342f9dff258",
-          "name" : "Alpha"
-        }, {
-          "id" : "694a271e5e492342f9dfef91",
-          "name" : "Gamma"
-        } ],
-        "name" : "sujith-redis",
-        "description" : "",
-        "host" : "54.203.45.67",
-        "port" : 6379,
-        "password" : "WRl6RLyup09riMa"
-      }
-    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -153,7 +103,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695e0fa8613749329516828f" ]
+      "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -161,9 +111,6 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ {
-      "id" : "695e0fa8613749329516828f",
-      "name" : "sujith-redis"
-    } ]
+    "connectorMetadataDetailsDtoList" : [ ]
   }
 }
