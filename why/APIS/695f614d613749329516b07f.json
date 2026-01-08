@@ -1,5 +1,5 @@
 {
-  "cts" : 1767858828599,
+  "cts" : 1767859007233,
   "name" : "TestDetailedError",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767858509389,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767858828590,
+        "mts" : 1767859007223,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -28,18 +28,48 @@
         "lockedBy" : "Nihal Ahamed",
         "nodeDataHashMap" : {
           "inbound" : {
-            "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" : [ "v1" ],
+            "b022d106-39d2-45e1-9cc3-1ff18843bd4b" : [ "v1" ],
             "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ],
-            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ]
+            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ],
+            "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" : [ "b022d106-39d2-45e1-9cc3-1ff18843bd4b" ]
           },
           "outbound" : {
-            "v1" : [ "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ],
+            "v1" : [ "b022d106-39d2-45e1-9cc3-1ff18843bd4b" ],
             "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" ],
-            "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ]
+            "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ],
+            "b022d106-39d2-45e1-9cc3-1ff18843bd4b" : [ "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ]
           },
-          "allNeighbours" : [ "d3c48d49-ae0d-49d4-b898-23239763da72", "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87", "v1", "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ]
+          "allNeighbours" : [ "b022d106-39d2-45e1-9cc3-1ff18843bd4b", "d3c48d49-ae0d-49d4-b898-23239763da72", "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87", "v1", "0cd25187-6dbd-47ba-b4d4-a10dea46cf3d" ]
         },
         "vertexHashMap" : {
+          "b022d106-39d2-45e1-9cc3-1ff18843bd4b" : {
+            "vertexId" : "b022d106-39d2-45e1-9cc3-1ff18843bd4b",
+            "vertexType" : "DATABASE",
+            "name" : "mongodb",
+            "description" : "mongodb",
+            "databaseData" : {
+              "connectorId" : "68b839a4399db1665a31dccd",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"acme-bank-1\",\"collection\":\"API.Network.InternalIps\",\"documents\":[{\"_id\":\"\",\"internalIps\":\"\",\"_class\":\"\"}],\"updates\":[],\"pipelines\":[],\"deletes\":[],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "mongodb",
+              "connectorName" : "Stage-DB",
+              "tenantName" : "acme-bank-1",
+              "collectionName" : "API.Network.InternalIps",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "d3c48d49-ae0d-49d4-b898-23239763da72" : {
             "vertexId" : "d3c48d49-ae0d-49d4-b898-23239763da72",
             "vertexType" : "DATABASE",
@@ -166,30 +196,6 @@
     }
   }, {
     "type" : "connector",
-    "collectionName" : "Connectors.MsSql.Configuration",
-    "data" : {
-      "msSqlConfigurationData" : {
-        "id" : "695deb7661374932951678ca",
-        "cts" : 1767762806570,
-        "createdUserName" : "Deepak Satuluri",
-        "modifiedUserName" : "Deepak Satuluri",
-        "mts" : 1767762806570,
-        "createdBy" : "685a38a166575941216c9c0e",
-        "modifiedBy" : "685a38a166575941216c9c0e",
-        "name" : "Stage-Connector",
-        "description" : "this is stage connector",
-        "msSqlConfigType" : "SQL_AUTH",
-        "hostname" : "54.203.45.67",
-        "port" : "1433",
-        "username" : "SA",
-        "password" : "test@123",
-        "databaseName" : "master",
-        "url" : "jdbc:sqlserver://54.203.45.67:1433;databaseName=master"
-      },
-      "databaseType" : "MsSql"
-    }
-  }, {
-    "type" : "connector",
     "collectionName" : "Connectors.MongoDb.Configuration",
     "data" : {
       "mongoDBConfigurationData" : {
@@ -215,6 +221,30 @@
       },
       "databaseType" : "MongoDb"
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MsSql.Configuration",
+    "data" : {
+      "msSqlConfigurationData" : {
+        "id" : "695deb7661374932951678ca",
+        "cts" : 1767762806570,
+        "createdUserName" : "Deepak Satuluri",
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1767762806570,
+        "createdBy" : "685a38a166575941216c9c0e",
+        "modifiedBy" : "685a38a166575941216c9c0e",
+        "name" : "Stage-Connector",
+        "description" : "this is stage connector",
+        "msSqlConfigType" : "SQL_AUTH",
+        "hostname" : "54.203.45.67",
+        "port" : "1433",
+        "username" : "SA",
+        "password" : "test@123",
+        "databaseName" : "master",
+        "url" : "jdbc:sqlserver://54.203.45.67:1433;databaseName=master"
+      },
+      "databaseType" : "MsSql"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -224,7 +254,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ "695deb7661374932951678ca", "68b839a4399db1665a31dccd" ]
+      "attachedConnectors" : [ "68b839a4399db1665a31dccd", "695deb7661374932951678ca" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -233,11 +263,11 @@
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
     "connectorMetadataDetailsDtoList" : [ {
-      "id" : "695deb7661374932951678ca",
-      "name" : "Stage-Connector"
-    }, {
       "id" : "68b839a4399db1665a31dccd",
       "name" : "Stage-DB"
+    }, {
+      "id" : "695deb7661374932951678ca",
+      "name" : "Stage-Connector"
     } ]
   }
 }
