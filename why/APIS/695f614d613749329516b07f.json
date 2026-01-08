@@ -1,5 +1,5 @@
 {
-  "cts" : 1767858509460,
+  "cts" : 1767858565158,
   "name" : "TestDetailedError",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767858509389,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767858509389,
+        "mts" : 1767858565150,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -28,14 +28,51 @@
         "lockedBy" : "Nihal Ahamed",
         "nodeDataHashMap" : {
           "inbound" : {
-            "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" : [ "v1" ]
+            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "v1" ],
+            "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ]
           },
           "outbound" : {
-            "v1" : [ "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" ]
+            "v1" : [ "d3c48d49-ae0d-49d4-b898-23239763da72" ],
+            "d3c48d49-ae0d-49d4-b898-23239763da72" : [ "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" ]
           },
-          "allNeighbours" : [ "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87", "v1" ]
+          "allNeighbours" : [ "d3c48d49-ae0d-49d4-b898-23239763da72", "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87", "v1" ]
         },
         "vertexHashMap" : {
+          "d3c48d49-ae0d-49d4-b898-23239763da72" : {
+            "vertexId" : "d3c48d49-ae0d-49d4-b898-23239763da72",
+            "vertexType" : "DATABASE",
+            "name" : "test",
+            "description" : "test",
+            "databaseData" : {
+              "connectorId" : "695deb7661374932951678ca",
+              "databaseType" : "MSSQL",
+              "query" : "select * from table",
+              "variableName" : "test",
+              "connectorName" : "Stage-Connector",
+              "tableName" : "MSreplication_options",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "MSreplication_options",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87" : {
             "vertexId" : "24ff41ff-a4dc-4cb2-a6f7-da32666d9b87",
             "vertexType" : "STOP",
@@ -94,6 +131,30 @@
         "deployed" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MsSql.Configuration",
+    "data" : {
+      "msSqlConfigurationData" : {
+        "id" : "695deb7661374932951678ca",
+        "cts" : 1767762806570,
+        "createdUserName" : "Deepak Satuluri",
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1767762806570,
+        "createdBy" : "685a38a166575941216c9c0e",
+        "modifiedBy" : "685a38a166575941216c9c0e",
+        "name" : "Stage-Connector",
+        "description" : "this is stage connector",
+        "msSqlConfigType" : "SQL_AUTH",
+        "hostname" : "54.203.45.67",
+        "port" : "1433",
+        "username" : "SA",
+        "password" : "test@123",
+        "databaseName" : "master",
+        "url" : "jdbc:sqlserver://54.203.45.67:1433;databaseName=master"
+      },
+      "databaseType" : "MsSql"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -103,7 +164,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "695deb7661374932951678ca" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -111,6 +172,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695deb7661374932951678ca",
+      "name" : "Stage-Connector"
+    } ]
   }
 }
