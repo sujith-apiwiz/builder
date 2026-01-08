@@ -1,0 +1,116 @@
+{
+  "cts" : 1767851074978,
+  "name" : "New Workflow 843",
+  "exportedBy" : "Binitkumar Shirsath",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "695f4442613749329516a675",
+        "cts" : 1767851074914,
+        "createdUserName" : "Binitkumar Shirsath",
+        "modifiedUserName" : "Binitkumar Shirsath",
+        "mts" : 1767851074914,
+        "createdBy" : "6875ddc455236f5d5fa969e7",
+        "modifiedBy" : "6875ddc455236f5d5fa969e7",
+        "taggedTeams" : [ ],
+        "proxyId" : "695f4442613749329516a674",
+        "revision" : 1,
+        "name" : "New Workflow 843",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/adfpijpa",
+        "pathArray" : [ "adfpijpa" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Binitkumar Shirsath",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "ea8d5357-9293-4318-a115-7d26e1827aca" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "ea8d5357-9293-4318-a115-7d26e1827aca" ]
+          },
+          "allNeighbours" : [ "ea8d5357-9293-4318-a115-7d26e1827aca", "v1" ]
+        },
+        "vertexHashMap" : {
+          "ea8d5357-9293-4318-a115-7d26e1827aca" : {
+            "vertexId" : "ea8d5357-9293-4318-a115-7d26e1827aca",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767851074914,
+          "lastModifiedBy" : "Binitkumar Shirsath",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "695f4442613749329516a675",
+      "proxyid" : "695f4442613749329516a674",
+      "name" : "New Workflow 843",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
