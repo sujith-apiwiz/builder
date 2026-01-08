@@ -1,5 +1,5 @@
 {
-  "cts" : 1767785849146,
+  "cts" : 1767851592668,
   "name" : "TestAssignMessage",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767779774986,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767785848990,
+        "mts" : 1767851592661,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/TestAssignMessage",
         "pathArray" : [ "TestAssignMessage" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Akash K",
         "nodeDataHashMap" : {
@@ -97,7 +97,8 @@
               "override" : false
             }, {
               "name" : "extractedHeader",
-              "value" : "header2",
+              "value" : "{\"$schema\": \"http://json-schema.org/draft-04/schema#\"}",
+              "type" : "OBJECT",
               "variableDataType" : "STRING",
               "feelExpression" : false,
               "feelVariableList" : [ {
@@ -165,11 +166,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767851430988,
+          "lastModifiedBy" : "692ebe3b5e0d8c043dc7d211",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767785904672,
+          "lastModifiedBy" : "692ebe3b5e0d8c043dc7d211",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767779774986,
           "lastModifiedBy" : "Akash K",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "AcmeBank DEV",
         "environmentId" : "6651dc284289865ae027e44e",
