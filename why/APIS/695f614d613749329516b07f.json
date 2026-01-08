@@ -1,5 +1,5 @@
 {
-  "cts" : 1767858749715,
+  "cts" : 1767858828599,
   "name" : "TestDetailedError",
   "exportedBy" : "Nihal Ahamed",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767858509389,
         "createdUserName" : "Nihal Ahamed",
         "modifiedUserName" : "Nihal Ahamed",
-        "mts" : 1767858749708,
+        "mts" : 1767858828590,
         "createdBy" : "6704b7de02afc5238c963878",
         "modifiedBy" : "6704b7de02afc5238c963878",
         "taggedTeams" : [ ],
@@ -126,7 +126,7 @@
               "collectionName" : "guides",
               "manual" : false,
               "skip" : false,
-              "showActualErrorMessage" : false,
+              "showActualErrorMessage" : true,
               "continueOnError" : true,
               "errorResponse" : {
                 "statusCode" : 300,
