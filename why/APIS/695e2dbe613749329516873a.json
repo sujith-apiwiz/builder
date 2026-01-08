@@ -1,5 +1,5 @@
 {
-  "cts" : 1767851592668,
+  "cts" : 1767853837460,
   "name" : "TestAssignMessage",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767779774986,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767851592661,
+        "mts" : 1767853837395,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -28,14 +28,16 @@
         "lockedBy" : "Akash K",
         "nodeDataHashMap" : {
           "inbound" : {
-            "02373c49-c853-4eff-9522-b9f8b08fd8dc" : [ "v1" ],
-            "b67b99b7-702c-4b4b-9746-02697dcc04cf" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc" ]
+            "2361a2d3-994f-4a8a-980a-f2d429d28534" : [ "v1" ],
+            "b67b99b7-702c-4b4b-9746-02697dcc04cf" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc" ],
+            "02373c49-c853-4eff-9522-b9f8b08fd8dc" : [ "2361a2d3-994f-4a8a-980a-f2d429d28534" ]
           },
           "outbound" : {
-            "v1" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc" ],
-            "02373c49-c853-4eff-9522-b9f8b08fd8dc" : [ "b67b99b7-702c-4b4b-9746-02697dcc04cf" ]
+            "v1" : [ "2361a2d3-994f-4a8a-980a-f2d429d28534" ],
+            "02373c49-c853-4eff-9522-b9f8b08fd8dc" : [ "b67b99b7-702c-4b4b-9746-02697dcc04cf" ],
+            "2361a2d3-994f-4a8a-980a-f2d429d28534" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc" ]
           },
-          "allNeighbours" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc", "b67b99b7-702c-4b4b-9746-02697dcc04cf", "v1" ]
+          "allNeighbours" : [ "02373c49-c853-4eff-9522-b9f8b08fd8dc", "2361a2d3-994f-4a8a-980a-f2d429d28534", "b67b99b7-702c-4b4b-9746-02697dcc04cf", "v1" ]
         },
         "vertexHashMap" : {
           "02373c49-c853-4eff-9522-b9f8b08fd8dc" : {
@@ -116,6 +118,65 @@
               "source" : "02373c49-c853-4eff-9522-b9f8b08fd8dc",
               "override" : true
             } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "2361a2d3-994f-4a8a-980a-f2d429d28534" : {
+            "vertexId" : "2361a2d3-994f-4a8a-980a-f2d429d28534",
+            "vertexType" : "TARGET",
+            "name" : "rest",
+            "target" : {
+              "name" : "rest",
+              "description" : "rest",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "POST",
+                "scheme" : "https",
+                "host" : "rest.apiwiz.io",
+                "path" : "/rest",
+                "headerParams" : [ {
+                  "name" : "content-type",
+                  "value" : "application/json"
+                } ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "RAW",
+                "body" : {
+                  "data" : "{\"knsklas\":\"kadk\"}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
             "imported" : false,
             "skipRuntimeVariables" : false
           },
