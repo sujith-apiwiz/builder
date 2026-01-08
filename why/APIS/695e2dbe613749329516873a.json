@@ -1,5 +1,5 @@
 {
-  "cts" : 1767854428257,
+  "cts" : 1767854474344,
   "name" : "TestAssignMessage",
   "exportedBy" : "Akash K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767779774986,
         "createdUserName" : "Akash K",
         "modifiedUserName" : "Akash K",
-        "mts" : 1767854428180,
+        "mts" : 1767854474264,
         "createdBy" : "692ebe3b5e0d8c043dc7d211",
         "modifiedBy" : "692ebe3b5e0d8c043dc7d211",
         "taggedTeams" : [ ],
@@ -136,15 +136,23 @@
                 "path" : "/rest",
                 "headerParams" : [ {
                   "name" : "content-type",
-                  "value" : "application/x-www-form-urlencoded"
+                  "value" : "multipart/form-data"
                 } ],
                 "queryParams" : [ ],
-                "targetRequestBodyType" : "FORM_URL_ENCODED",
+                "targetRequestBodyType" : "FORM_PARAM",
                 "body" : {
                   "data" : "{\"knsklas\":\"kadk\"}",
                   "type" : "json"
                 },
-                "formParams" : [ ],
+                "formParams" : [ {
+                  "name" : "f",
+                  "reference" : "body",
+                  "value" : "f",
+                  "active" : true,
+                  "source" : "formParams",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ],
                 "urlEncodedParams" : [ {
                   "name" : "a",
                   "reference" : "body",
