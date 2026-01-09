@@ -1,5 +1,5 @@
 {
-  "cts" : 1767947811246,
+  "cts" : 1767947821150,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767947811241,
+        "mts" : 1767947821147,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -116,8 +116,13 @@
             "conditionalFlow" : [ {
               "condition" : "if",
               "assertion" : {
-                "expression" : "",
-                "placeHolders" : [ ],
+                "expression" : "({0})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "data",
+                  "value" : "$.headers.host",
+                  "valueDataType" : "STRING"
+                } ],
                 "feelExpression" : false,
                 "skip" : false,
                 "showActualErrorMessage" : false,
