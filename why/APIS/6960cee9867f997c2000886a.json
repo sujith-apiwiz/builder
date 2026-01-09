@@ -1,5 +1,5 @@
 {
-  "cts" : 1767953534678,
+  "cts" : 1767953890907,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767953534662,
+        "mts" : 1767953890739,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -55,11 +55,11 @@
             "name" : "Call Workflow",
             "description" : "",
             "callWorkflowData" : {
-              "childWorkflowId" : "68a416fa102850754347af8f",
-              "childWorkflowName" : "kamble test",
+              "childWorkflowId" : "6960939f613749329516d1e7",
+              "childWorkflowName" : "New Workflow 847",
               "virtualHostId" : "66dc0ef2e836d076001b628b",
               "virtualHostName" : "stage-data",
-              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/test-node-123",
+              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/kkk1/1b",
               "apiMethod" : "GET",
               "request" : {
                 "headerParams" : [ ],
@@ -321,6 +321,26 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1767953846905,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767953675079,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767953590990,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767953545150,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
           "cts" : 1767953345865,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
           "description" : "Proxy undeploy"
@@ -386,81 +406,41 @@
     "collectionName" : "ApiBuilder.Proxy.List",
     "data" : {
       "proxyData" : {
-        "id" : "68a416fa102850754347af8f",
-        "cts" : 1755584248140,
+        "id" : "6960939f613749329516d1e7",
+        "cts" : 1767936927146,
         "createdUserName" : "divakar v",
         "modifiedUserName" : "divakar v",
-        "mts" : 1755667433289,
+        "mts" : 1767937189149,
         "createdBy" : "63cf749921c7bb55c7368952",
         "modifiedBy" : "63cf749921c7bb55c7368952",
         "taggedTeams" : [ ],
-        "proxyId" : "6878c22c0be6fc450d97c241",
-        "revision" : 2,
-        "name" : "kamble test",
+        "proxyId" : "6960939f613749329516d1e6",
+        "revision" : 1,
+        "name" : "New Workflow 847",
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/kkk1/1b",
-        "pathArray" : [ "kkk1", "1b" ],
+        "path" : "/testing-variable-logger/{a}/{b}",
+        "pathArray" : [ "testing-variable-logger", "*", "*" ],
         "revisionStatus" : "APPROVED",
         "locked" : true,
         "lockedBy" : "divakar v",
         "nodeDataHashMap" : {
           "inbound" : {
-            "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" : [ "v1" ],
-            "6d6ae895-2572-4ed2-b5fd-e64a50853554" : [ "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" ]
+            "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : [ "v1" ],
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" ],
+            "21d40d53-ba0b-4432-a1a7-e612b3704242" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
           },
           "outbound" : {
-            "v1" : [ "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" ],
-            "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" : [ "6d6ae895-2572-4ed2-b5fd-e64a50853554" ]
+            "v1" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" ],
+            "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ],
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242" ]
           },
-          "allNeighbours" : [ "6d6ae895-2572-4ed2-b5fd-e64a50853554", "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe", "v1" ]
+          "allNeighbours" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299", "21d40d53-ba0b-4432-a1a7-e612b3704242", "v1", "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
         },
         "vertexHashMap" : {
-          "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" : {
-            "vertexId" : "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe",
-            "vertexType" : "CALL_WORKFLOW",
-            "name" : "Call Workflow",
-            "description" : "",
-            "callWorkflowData" : {
-              "childWorkflowId" : "6870992824e21472431f6cf0",
-              "childWorkflowName" : "New Workflow 478",
-              "virtualHostId" : "66dc0ef2e836d076001b628b",
-              "virtualHostName" : "stage-data",
-              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/products",
-              "apiMethod" : "GET",
-              "request" : {
-                "headerParams" : [ ],
-                "queryParams" : [ ],
-                "targetRequestBodyType" : "NONE",
-                "body" : {
-                  "data" : "{}",
-                  "type" : "json"
-                },
-                "formParams" : [ ],
-                "urlEncodedParams" : [ ]
-              },
-              "response" : {
-                "statusCode" : 400,
-                "variables" : [ ]
-              },
-              "timeout" : 0,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "6d6ae895-2572-4ed2-b5fd-e64a50853554" : {
-            "vertexId" : "6d6ae895-2572-4ed2-b5fd-e64a50853554",
+          "21d40d53-ba0b-4432-a1a7-e612b3704242" : {
+            "vertexId" : "21d40d53-ba0b-4432-a1a7-e612b3704242",
             "vertexType" : "STOP",
             "name" : "Stop",
             "imported" : false,
@@ -472,17 +452,18 @@
               }
             }
           },
-          "v1" : {
-            "vertexId" : "v1",
-            "vertexType" : "START",
-            "name" : "Request",
-            "requestVariables" : [ ],
-            "mandatoryHeaders" : [ ],
-            "mandatoryQueryParams" : [ ],
-            "imported" : true,
-            "skipRuntimeVariables" : false,
-            "securityResponse" : {
-              "isEnabled" : false,
+          "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : {
+            "vertexId" : "6458b7a7-5ad4-4427-a4b7-eb890f1f0299",
+            "vertexType" : "INCREMENT_DECREMENT",
+            "name" : "Increment A",
+            "description" : "",
+            "incDecData" : {
+              "incDecOperationList" : [ {
+                "operationName" : "ADDITION",
+                "variableName" : "a",
+                "changeType" : "INCREMENT",
+                "value" : "1"
+              } ],
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -491,233 +472,6 @@
                 "body" : {
                   "data" : "",
                   "type" : "json"
-                }
-              }
-            }
-          }
-        },
-        "statusHistory" : [ {
-          "status" : "Approved",
-          "cts" : 1755667418915,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "a"
-        }, {
-          "status" : "Review",
-          "cts" : 1755667395885,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "r"
-        }, {
-          "status" : "Approved",
-          "cts" : 1755667368743,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "a"
-        }, {
-          "status" : "Draft",
-          "cts" : 1755584248140,
-          "lastModifiedBy" : "divakar v",
-          "description" : "Created new proxy revision"
-        } ],
-        "virtualHostList" : [ {
-          "id" : "66dc0ef2e836d076001b628b",
-          "name" : "stage-data",
-          "timeStamp" : 1755667385653,
-          "deployedBy" : "divakar v"
-        }, {
-          "id" : "66dc0ef2e836d076001b628b",
-          "name" : "stage-data",
-          "timeStamp" : 1755667433279,
-          "deployedBy" : "divakar v"
-        } ],
-        "enableTracing" : false,
-        "environmentName" : "",
-        "environmentId" : "",
-        "selectedVirtualHostName" : "",
-        "selectedVirtualHostId" : "",
-        "kafkaConnectorId" : "",
-        "kafkaTopic" : "",
-        "kafkaGroupId" : "",
-        "enableLogging" : false,
-        "misconfigurationMessages" : [ ],
-        "validated" : true,
-        "parentWorkflowMap" : {
-          "66dc0ef2e836d076001b628b" : [ "687a21088423543bf6a39dc3" ]
-        },
-        "childWorkflowMap" : {
-          "66dc0ef2e836d076001b628b" : [ "6870992824e21472431f6cf0" ]
-        },
-        "deployed" : true,
-        "deleted" : false
-      }
-    }
-  }, {
-    "type" : "proxy",
-    "collectionName" : "ApiBuilder.Proxy.List",
-    "data" : {
-      "proxyData" : {
-        "id" : "6870992824e21472431f6cf0",
-        "cts" : 1752209704213,
-        "createdUserName" : "divakar v",
-        "modifiedUserName" : "divakar v",
-        "mts" : 1752746871046,
-        "createdBy" : "63cf749921c7bb55c7368952",
-        "modifiedBy" : "63cf749921c7bb55c7368952",
-        "taggedTeams" : [ ],
-        "proxyId" : "6870992824e21472431f6cef",
-        "revision" : 1,
-        "name" : "New Workflow 478",
-        "description" : "",
-        "apiType" : "RESTAPI",
-        "apiMethod" : "GET",
-        "path" : "/products",
-        "pathArray" : [ "products" ],
-        "revisionStatus" : "APPROVED",
-        "locked" : true,
-        "lockedBy" : "divakar v",
-        "nodeDataHashMap" : {
-          "inbound" : {
-            "85cb3394-ad98-41b0-823e-1d74d5ce6351" : [ "v1" ],
-            "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" : [ "85cb3394-ad98-41b0-823e-1d74d5ce6351" ],
-            "e168ef37-04fa-46e0-8568-b2320b941239" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" ],
-            "8e22cf7f-8039-4633-a484-4fc1255ed5fa" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" ]
-          },
-          "outbound" : {
-            "v1" : [ "85cb3394-ad98-41b0-823e-1d74d5ce6351" ],
-            "85cb3394-ad98-41b0-823e-1d74d5ce6351" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" ],
-            "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" : [ "8e22cf7f-8039-4633-a484-4fc1255ed5fa", "e168ef37-04fa-46e0-8568-b2320b941239" ]
-          },
-          "allNeighbours" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74", "85cb3394-ad98-41b0-823e-1d74d5ce6351", "8e22cf7f-8039-4633-a484-4fc1255ed5fa", "e168ef37-04fa-46e0-8568-b2320b941239", "v1" ]
-        },
-        "vertexHashMap" : {
-          "8e22cf7f-8039-4633-a484-4fc1255ed5fa" : {
-            "vertexId" : "8e22cf7f-8039-4633-a484-4fc1255ed5fa",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "headers" : {
-                "content-type" : "application/json"
-              },
-              "body" : {
-                "data" : "{\"Message\": \"Does not matched\"}",
-                "type" : "json"
-              }
-            }
-          },
-          "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" : {
-            "vertexId" : "fa75ee41-037a-4e61-ad23-e8c0bc3eac74",
-            "vertexType" : "CONDITIONAL_FLOW",
-            "name" : "Condition",
-            "conditionalFlow" : [ {
-              "condition" : "if",
-              "assertion" : {
-                "expression" : "({0})",
-                "placeHolders" : [ {
-                  "rule" : "EQUAL_TO",
-                  "key" : "category",
-                  "value" : "beauty",
-                  "valueDataType" : "STRING"
-                } ],
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false,
-                "errorResponse" : {
-                  "statusCode" : 400,
-                  "body" : {
-                    "data" : "",
-                    "type" : "json"
-                  }
-                }
-              },
-              "flowVertexes" : [ "e168ef37-04fa-46e0-8568-b2320b941239" ]
-            }, {
-              "condition" : "else",
-              "assertion" : {
-                "feelExpression" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false
-              },
-              "flowVertexes" : [ "8e22cf7f-8039-4633-a484-4fc1255ed5fa" ]
-            } ],
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "e168ef37-04fa-46e0-8568-b2320b941239" : {
-            "vertexId" : "e168ef37-04fa-46e0-8568-b2320b941239",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "headers" : {
-                "content-type" : "application/json"
-              },
-              "body" : {
-                "data" : "{\"Message\": \"Matched\"}",
-                "type" : "json"
-              }
-            }
-          },
-          "85cb3394-ad98-41b0-823e-1d74d5ce6351" : {
-            "vertexId" : "85cb3394-ad98-41b0-823e-1d74d5ce6351",
-            "vertexType" : "TARGET",
-            "name" : "kk",
-            "target" : {
-              "name" : "kk",
-              "apiType" : "RESTAPI",
-              "request" : {
-                "apiMethod" : "GET",
-                "scheme" : "https",
-                "host" : "dummyjson.com",
-                "path" : "/products",
-                "headerParams" : [ ],
-                "queryParams" : [ ],
-                "targetRequestBodyType" : "NONE",
-                "body" : {
-                  "type" : "json"
-                },
-                "formParams" : [ ],
-                "urlEncodedParams" : [ ]
-              },
-              "response" : {
-                "statusCode" : 400,
-                "variables" : [ {
-                  "name" : "category",
-                  "reference" : "body",
-                  "value" : "$.products[0].category",
-                  "active" : true,
-                  "source" : "raw",
-                  "hide" : false,
-                  "feelExpression" : false
-                } ]
-              },
-              "timeout" : 0,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              },
-              "securityResponse" : {
-                "isEnabled" : false,
-                "useEnforcedRules" : false,
-                "skip" : false,
-                "showActualErrorMessage" : false,
-                "continueOnError" : false,
-                "errorResponse" : {
-                  "statusCode" : 400,
-                  "body" : {
-                    "data" : "",
-                    "type" : "json"
-                  }
                 }
               }
             },
@@ -728,7 +482,25 @@
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ ],
+            "requestVariables" : [ {
+              "name" : "a",
+              "reference" : "path-variable",
+              "value" : "a",
+              "variableDataType" : "INTEGER",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "b",
+              "reference" : "path-variable",
+              "value" : "b",
+              "variableDataType" : "INTEGER",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
             "mandatoryHeaders" : [ ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
@@ -746,83 +518,35 @@
                 }
               }
             }
+          },
+          "f324c5f3-30d8-43ff-ac35-77653abdec47" : {
+            "vertexId" : "f324c5f3-30d8-43ff-ac35-77653abdec47",
+            "vertexType" : "LOGGER",
+            "name" : "Logging ",
+            "description" : "",
+            "logData" : {
+              "data" : "|{{a}}\n{{b}}",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
           "status" : "Approved",
-          "cts" : 1752746864097,
+          "cts" : 1767937184505,
           "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1752224911444,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1752217535618,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1752217483345,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1752217397387,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1752217379841,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1752217297405,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1752210704331,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1752210599455,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1752210548405,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1752210465644,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
+          "description" : "qwe"
         }, {
           "status" : "Draft",
-          "cts" : 1752210361280,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
-        }, {
-          "status" : "Approved",
-          "cts" : 1752210326553,
-          "lastModifiedBy" : "63cf749921c7bb55c7368952",
-          "description" : " "
-        }, {
-          "status" : "Draft",
-          "cts" : 1752209704213,
+          "cts" : 1767936927146,
           "lastModifiedBy" : "divakar v",
           "description" : "Created new proxy"
         } ],
         "virtualHostList" : [ {
           "id" : "66dc0ef2e836d076001b628b",
           "name" : "stage-data",
-          "timeStamp" : 1752746871042,
+          "timeStamp" : 1767937189000,
           "deployedBy" : "divakar v"
         } ],
         "enableTracing" : false,
@@ -836,9 +560,6 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "parentWorkflowMap" : {
-          "66dc0ef2e836d076001b628b" : [ "6878c22c0be6fc450d97c242", "68a416fa102850754347af8f" ]
-        },
         "deployed" : true,
         "deleted" : false
       }
@@ -959,19 +680,12 @@
       "name" : "TEST_TBAC_NODES",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "6960d2e5867f997c20008afb" ],
-      "attachedProxies" : [ "68a416fa102850754347af8f" ],
+      "attachedProxies" : [ "6960939f613749329516d1e7" ],
       "attachedConnectors" : [ "6943e47fd4167432fe664f26" ]
     }, {
-      "id" : "68a416fa102850754347af8f",
-      "proxyid" : "6878c22c0be6fc450d97c241",
-      "name" : "kamble test",
-      "attachedSharedFlows" : [ ],
-      "attachedProxies" : [ "6870992824e21472431f6cf0" ],
-      "attachedConnectors" : [ ]
-    }, {
-      "id" : "6870992824e21472431f6cf0",
-      "proxyid" : "6870992824e21472431f6cef",
-      "name" : "New Workflow 478",
+      "id" : "6960939f613749329516d1e7",
+      "proxyid" : "6960939f613749329516d1e6",
+      "name" : "New Workflow 847",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
