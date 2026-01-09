@@ -1,5 +1,5 @@
 {
-  "cts" : 1767953193084,
+  "cts" : 1767953534678,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767953193072,
+        "mts" : 1767953534662,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -55,8 +55,8 @@
             "name" : "Call Workflow",
             "description" : "",
             "callWorkflowData" : {
-              "childWorkflowId" : "6960a608613749329516dbb8",
-              "childWorkflowName" : "TESTING_NODES",
+              "childWorkflowId" : "68a416fa102850754347af8f",
+              "childWorkflowName" : "kamble test",
               "virtualHostId" : "66dc0ef2e836d076001b628b",
               "virtualHostName" : "stage-data",
               "url" : "HTTPS://stage-data-lkgc.apiwiz.io/test-node-123",
@@ -321,6 +321,16 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1767953345865,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767953202672,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
           "cts" : 1767953158264,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
           "description" : "Proxy undeploy"
@@ -376,46 +386,341 @@
     "collectionName" : "ApiBuilder.Proxy.List",
     "data" : {
       "proxyData" : {
-        "id" : "6960a608613749329516dbb8",
-        "cts" : 1767941640043,
-        "createdUserName" : "Kiran Kamble",
-        "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767949477788,
-        "createdBy" : "685b8a3df073051941d15c1c",
-        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "id" : "68a416fa102850754347af8f",
+        "cts" : 1755584248140,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1755667433289,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
         "taggedTeams" : [ ],
-        "proxyId" : "6960a608613749329516dbb7",
-        "revision" : 1,
-        "name" : "TESTING_NODES",
+        "proxyId" : "6878c22c0be6fc450d97c241",
+        "revision" : 2,
+        "name" : "kamble test",
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/test-node-123",
-        "pathArray" : [ "test-node-123" ],
+        "path" : "/kkk1/1b",
+        "pathArray" : [ "kkk1", "1b" ],
         "revisionStatus" : "APPROVED",
         "locked" : true,
-        "lockedBy" : "Kiran Kamble",
+        "lockedBy" : "divakar v",
         "nodeDataHashMap" : {
           "inbound" : {
-            "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : [ "v1" ],
-            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "v1" ],
-            "09b68623-d4e3-4fcb-a04f-aea04487f72f" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "350b021f-3660-43c7-89c9-e24f2607ec7b" ],
-            "4008f7e3-48f5-4dc3-9a64-db282a8fee55" : [ "09b68623-d4e3-4fcb-a04f-aea04487f72f" ]
+            "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" : [ "v1" ],
+            "6d6ae895-2572-4ed2-b5fd-e64a50853554" : [ "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" ]
           },
           "outbound" : {
-            "v1" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "350b021f-3660-43c7-89c9-e24f2607ec7b" ],
-            "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : [ "09b68623-d4e3-4fcb-a04f-aea04487f72f" ],
-            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "09b68623-d4e3-4fcb-a04f-aea04487f72f" ],
-            "09b68623-d4e3-4fcb-a04f-aea04487f72f" : [ "4008f7e3-48f5-4dc3-9a64-db282a8fee55" ]
+            "v1" : [ "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" ],
+            "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" : [ "6d6ae895-2572-4ed2-b5fd-e64a50853554" ]
           },
-          "allNeighbours" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "09b68623-d4e3-4fcb-a04f-aea04487f72f", "4008f7e3-48f5-4dc3-9a64-db282a8fee55", "v1", "350b021f-3660-43c7-89c9-e24f2607ec7b" ]
+          "allNeighbours" : [ "6d6ae895-2572-4ed2-b5fd-e64a50853554", "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe", "v1" ]
         },
         "vertexHashMap" : {
-          "09b68623-d4e3-4fcb-a04f-aea04487f72f" : {
-            "vertexId" : "09b68623-d4e3-4fcb-a04f-aea04487f72f",
-            "vertexType" : "OR_NODE",
-            "name" : "vh",
+          "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe" : {
+            "vertexId" : "1a55a514-1d39-444f-9ba9-c91c8e2f5ebe",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
             "description" : "",
+            "callWorkflowData" : {
+              "childWorkflowId" : "6870992824e21472431f6cf0",
+              "childWorkflowName" : "New Workflow 478",
+              "virtualHostId" : "66dc0ef2e836d076001b628b",
+              "virtualHostName" : "stage-data",
+              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/products",
+              "apiMethod" : "GET",
+              "request" : {
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "6d6ae895-2572-4ed2-b5fd-e64a50853554" : {
+            "vertexId" : "6d6ae895-2572-4ed2-b5fd-e64a50853554",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1755667418915,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : "a"
+        }, {
+          "status" : "Review",
+          "cts" : 1755667395885,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : "r"
+        }, {
+          "status" : "Approved",
+          "cts" : 1755667368743,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : "a"
+        }, {
+          "status" : "Draft",
+          "cts" : 1755584248140,
+          "lastModifiedBy" : "divakar v",
+          "description" : "Created new proxy revision"
+        } ],
+        "virtualHostList" : [ {
+          "id" : "66dc0ef2e836d076001b628b",
+          "name" : "stage-data",
+          "timeStamp" : 1755667385653,
+          "deployedBy" : "divakar v"
+        }, {
+          "id" : "66dc0ef2e836d076001b628b",
+          "name" : "stage-data",
+          "timeStamp" : 1755667433279,
+          "deployedBy" : "divakar v"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "parentWorkflowMap" : {
+          "66dc0ef2e836d076001b628b" : [ "687a21088423543bf6a39dc3" ]
+        },
+        "childWorkflowMap" : {
+          "66dc0ef2e836d076001b628b" : [ "6870992824e21472431f6cf0" ]
+        },
+        "deployed" : true,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6870992824e21472431f6cf0",
+        "cts" : 1752209704213,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "divakar v",
+        "mts" : 1752746871046,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "63cf749921c7bb55c7368952",
+        "taggedTeams" : [ ],
+        "proxyId" : "6870992824e21472431f6cef",
+        "revision" : 1,
+        "name" : "New Workflow 478",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/products",
+        "pathArray" : [ "products" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "divakar v",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "85cb3394-ad98-41b0-823e-1d74d5ce6351" : [ "v1" ],
+            "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" : [ "85cb3394-ad98-41b0-823e-1d74d5ce6351" ],
+            "e168ef37-04fa-46e0-8568-b2320b941239" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" ],
+            "8e22cf7f-8039-4633-a484-4fc1255ed5fa" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" ]
+          },
+          "outbound" : {
+            "v1" : [ "85cb3394-ad98-41b0-823e-1d74d5ce6351" ],
+            "85cb3394-ad98-41b0-823e-1d74d5ce6351" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" ],
+            "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" : [ "8e22cf7f-8039-4633-a484-4fc1255ed5fa", "e168ef37-04fa-46e0-8568-b2320b941239" ]
+          },
+          "allNeighbours" : [ "fa75ee41-037a-4e61-ad23-e8c0bc3eac74", "85cb3394-ad98-41b0-823e-1d74d5ce6351", "8e22cf7f-8039-4633-a484-4fc1255ed5fa", "e168ef37-04fa-46e0-8568-b2320b941239", "v1" ]
+        },
+        "vertexHashMap" : {
+          "8e22cf7f-8039-4633-a484-4fc1255ed5fa" : {
+            "vertexId" : "8e22cf7f-8039-4633-a484-4fc1255ed5fa",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "{\"Message\": \"Does not matched\"}",
+                "type" : "json"
+              }
+            }
+          },
+          "fa75ee41-037a-4e61-ad23-e8c0bc3eac74" : {
+            "vertexId" : "fa75ee41-037a-4e61-ad23-e8c0bc3eac74",
+            "vertexType" : "CONDITIONAL_FLOW",
+            "name" : "Condition",
+            "conditionalFlow" : [ {
+              "condition" : "if",
+              "assertion" : {
+                "expression" : "({0})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "category",
+                  "value" : "beauty",
+                  "valueDataType" : "STRING"
+                } ],
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              },
+              "flowVertexes" : [ "e168ef37-04fa-46e0-8568-b2320b941239" ]
+            }, {
+              "condition" : "else",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              },
+              "flowVertexes" : [ "8e22cf7f-8039-4633-a484-4fc1255ed5fa" ]
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "e168ef37-04fa-46e0-8568-b2320b941239" : {
+            "vertexId" : "e168ef37-04fa-46e0-8568-b2320b941239",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "{\"Message\": \"Matched\"}",
+                "type" : "json"
+              }
+            }
+          },
+          "85cb3394-ad98-41b0-823e-1d74d5ce6351" : {
+            "vertexId" : "85cb3394-ad98-41b0-823e-1d74d5ce6351",
+            "vertexType" : "TARGET",
+            "name" : "kk",
+            "target" : {
+              "name" : "kk",
+              "apiType" : "RESTAPI",
+              "request" : {
+                "apiMethod" : "GET",
+                "scheme" : "https",
+                "host" : "dummyjson.com",
+                "path" : "/products",
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ {
+                  "name" : "category",
+                  "reference" : "body",
+                  "value" : "$.products[0].category",
+                  "active" : true,
+                  "source" : "raw",
+                  "hide" : false,
+                  "feelExpression" : false
+                } ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              },
+              "securityResponse" : {
+                "isEnabled" : false,
+                "useEnforcedRules" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              }
+            },
             "imported" : false,
             "skipRuntimeVariables" : false
           },
@@ -441,224 +746,84 @@
                 }
               }
             }
-          },
-          "4008f7e3-48f5-4dc3-9a64-db282a8fee55" : {
-            "vertexId" : "4008f7e3-48f5-4dc3-9a64-db282a8fee55",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "data" : "ouhbou",
-                "type" : "JSON"
-              }
-            }
-          },
-          "350b021f-3660-43c7-89c9-e24f2607ec7b" : {
-            "vertexId" : "350b021f-3660-43c7-89c9-e24f2607ec7b",
-            "vertexType" : "DELAY",
-            "name" : "Delay",
-            "delayData" : {
-              "delayUnit" : "SECONDS",
-              "delayAmount" : 5,
-              "skip" : false,
-              "showActualErrorMessage" : false
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : {
-            "vertexId" : "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd",
-            "vertexType" : "DELAY",
-            "name" : "Delay",
-            "delayData" : {
-              "delayUnit" : "SECONDS",
-              "delayAmount" : 10,
-              "skip" : false,
-              "showActualErrorMessage" : false
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
           "status" : "Approved",
-          "cts" : 1767949471629,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752746864097,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : " "
         }, {
           "status" : "Review",
-          "cts" : 1767949175865,
-          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "cts" : 1752224911444,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : "Proxy undeploy"
         }, {
           "status" : "Approved",
-          "cts" : 1767948680366,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "njo"
-        }, {
-          "status" : "Review",
-          "cts" : 1767948612508,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767948557150,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "noj"
-        }, {
-          "status" : "Review",
-          "cts" : 1767948515561,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767948457304,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "ljkn"
-        }, {
-          "status" : "Review",
-          "cts" : 1767948320740,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767948098267,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752217535618,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : " "
         }, {
           "status" : "Review",
-          "cts" : 1767948044908,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752217483345,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : "Proxy undeploy"
         }, {
           "status" : "Approved",
-          "cts" : 1767948020106,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752217397387,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : " "
         }, {
           "status" : "Review",
-          "cts" : 1767947964419,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752217379841,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : "Proxy undeploy"
         }, {
           "status" : "Approved",
-          "cts" : 1767947941254,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752217297405,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : " "
         }, {
           "status" : "Review",
-          "cts" : 1767947888663,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752210704331,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : "Proxy undeploy"
         }, {
           "status" : "Approved",
-          "cts" : 1767947851230,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752210599455,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : " "
         }, {
           "status" : "Review",
-          "cts" : 1767947776786,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752210548405,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : "Proxy undeploy"
         }, {
           "status" : "Approved",
-          "cts" : 1767947736107,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1767947704584,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767947677793,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1767947654750,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767947621379,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1767947294830,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767947225550,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1767947100499,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767943284857,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "  "
-        }, {
-          "status" : "Review",
-          "cts" : 1767943126502,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767943012829,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1767942690270,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767942638983,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1767942611869,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767942452589,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : " "
-        }, {
-          "status" : "Review",
-          "cts" : 1767942436284,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1767942131071,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "cts" : 1752210465644,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
           "description" : " "
         }, {
           "status" : "Draft",
-          "cts" : 1767941640043,
-          "lastModifiedBy" : "Kiran Kamble",
+          "cts" : 1752210361280,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : " "
+        }, {
+          "status" : "Approved",
+          "cts" : 1752210326553,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1752209704213,
+          "lastModifiedBy" : "divakar v",
           "description" : "Created new proxy"
         } ],
         "virtualHostList" : [ {
           "id" : "66dc0ef2e836d076001b628b",
           "name" : "stage-data",
-          "timeStamp" : 1767949477719,
-          "deployedBy" : "Kiran Kamble"
+          "timeStamp" : 1752746871042,
+          "deployedBy" : "divakar v"
         } ],
         "enableTracing" : false,
         "environmentName" : "",
@@ -671,6 +836,9 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
+        "parentWorkflowMap" : {
+          "66dc0ef2e836d076001b628b" : [ "6878c22c0be6fc450d97c242", "68a416fa102850754347af8f" ]
+        },
         "deployed" : true,
         "deleted" : false
       }
@@ -791,12 +959,19 @@
       "name" : "TEST_TBAC_NODES",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "6960d2e5867f997c20008afb" ],
-      "attachedProxies" : [ "6960a608613749329516dbb8" ],
+      "attachedProxies" : [ "68a416fa102850754347af8f" ],
       "attachedConnectors" : [ "6943e47fd4167432fe664f26" ]
     }, {
-      "id" : "6960a608613749329516dbb8",
-      "proxyid" : "6960a608613749329516dbb7",
-      "name" : "TESTING_NODES",
+      "id" : "68a416fa102850754347af8f",
+      "proxyid" : "6878c22c0be6fc450d97c241",
+      "name" : "kamble test",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ "6870992824e21472431f6cf0" ],
+      "attachedConnectors" : [ ]
+    }, {
+      "id" : "6870992824e21472431f6cf0",
+      "proxyid" : "6870992824e21472431f6cef",
+      "name" : "New Workflow 478",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
