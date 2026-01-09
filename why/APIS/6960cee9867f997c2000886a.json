@@ -1,5 +1,5 @@
 {
-  "cts" : 1767952875713,
+  "cts" : 1767953193084,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767952875699,
+        "mts" : 1767953193072,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -31,8 +31,9 @@
             "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" : [ "v1" ],
             "1644b62d-e8eb-44b3-b785-7c4184128104" : [ "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ],
             "ceb27528-fda8-482f-a3eb-6282c120ae78" : [ "1644b62d-e8eb-44b3-b785-7c4184128104" ],
-            "879832e5-5695-41b5-996a-3ff373f6544c" : [ "164f08ce-aeab-4785-90dd-35d623d5e923" ],
+            "a1b54789-71fd-4b55-b7ad-b86e46297ede" : [ "164f08ce-aeab-4785-90dd-35d623d5e923" ],
             "6d911907-26f4-493f-ab1f-6f969085dcb3" : [ "879832e5-5695-41b5-996a-3ff373f6544c" ],
+            "879832e5-5695-41b5-996a-3ff373f6544c" : [ "a1b54789-71fd-4b55-b7ad-b86e46297ede" ],
             "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ],
             "6fe55857-41c8-4da2-be73-c026cd699239" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ]
           },
@@ -40,11 +41,12 @@
             "v1" : [ "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ],
             "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" : [ "1644b62d-e8eb-44b3-b785-7c4184128104" ],
             "1644b62d-e8eb-44b3-b785-7c4184128104" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ],
-            "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "879832e5-5695-41b5-996a-3ff373f6544c" ],
+            "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "a1b54789-71fd-4b55-b7ad-b86e46297ede" ],
             "879832e5-5695-41b5-996a-3ff373f6544c" : [ "6d911907-26f4-493f-ab1f-6f969085dcb3" ],
+            "a1b54789-71fd-4b55-b7ad-b86e46297ede" : [ "879832e5-5695-41b5-996a-3ff373f6544c" ],
             "ceb27528-fda8-482f-a3eb-6282c120ae78" : [ "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923" ]
           },
-          "allNeighbours" : [ "879832e5-5695-41b5-996a-3ff373f6544c", "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923", "6d911907-26f4-493f-ab1f-6f969085dcb3", "v1", "1644b62d-e8eb-44b3-b785-7c4184128104", "ceb27528-fda8-482f-a3eb-6282c120ae78", "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ]
+          "allNeighbours" : [ "879832e5-5695-41b5-996a-3ff373f6544c", "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923", "a1b54789-71fd-4b55-b7ad-b86e46297ede", "6d911907-26f4-493f-ab1f-6f969085dcb3", "v1", "1644b62d-e8eb-44b3-b785-7c4184128104", "ceb27528-fda8-482f-a3eb-6282c120ae78", "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ]
         },
         "vertexHashMap" : {
           "879832e5-5695-41b5-996a-3ff373f6544c" : {
@@ -57,6 +59,8 @@
               "childWorkflowName" : "TESTING_NODES",
               "virtualHostId" : "66dc0ef2e836d076001b628b",
               "virtualHostName" : "stage-data",
+              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/test-node-123",
+              "apiMethod" : "GET",
               "request" : {
                 "headerParams" : [ ],
                 "queryParams" : [ ],
@@ -114,6 +118,31 @@
               "tenantName" : "student-details",
               "collectionName" : "student.details",
               "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "a1b54789-71fd-4b55-b7ad-b86e46297ede" : {
+            "vertexId" : "a1b54789-71fd-4b55-b7ad-b86e46297ede",
+            "vertexType" : "SHARED_FLOW",
+            "name" : "TestNode",
+            "description" : "",
+            "sharedFlowNodeData" : {
+              "sharedFlowId" : "6960d2e5867f997c20008afb",
+              "sharedFlowName" : "TEST_NODE",
+              "inputVariablesMap" : { },
+              "importOutputVariables" : false,
+              "importedVariables" : [ ],
               "skip" : false,
               "showActualErrorMessage" : false,
               "continueOnError" : false,
@@ -291,6 +320,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767953158264,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767952914986,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1767952804116,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
@@ -666,6 +705,84 @@
       },
       "databaseType" : "MongoDb"
     }
+  }, {
+    "type" : "sharedFlow",
+    "collectionName" : "ApiBuilder.SharedFlows.List",
+    "data" : {
+      "sharedFlowData" : {
+        "id" : "6960d2e5867f997c20008afb",
+        "cts" : 1767953125145,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1767953139475,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ {
+          "id" : "6718a20d1e5c001e2fc678c4",
+          "name" : "APIwiz_Team"
+        }, {
+          "id" : "6805e8b4898ae74f4172ef02",
+          "name" : "Deepak"
+        } ],
+        "name" : "TEST_NODE",
+        "description" : "",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "069f2bb8-d03d-4cb1-91a0-cd3b4b3fed78" : [ "v1" ],
+            "f8300773-b239-4b41-b9cd-49fe2a085440" : [ "069f2bb8-d03d-4cb1-91a0-cd3b4b3fed78" ]
+          },
+          "outbound" : {
+            "v1" : [ "069f2bb8-d03d-4cb1-91a0-cd3b4b3fed78" ],
+            "069f2bb8-d03d-4cb1-91a0-cd3b4b3fed78" : [ "f8300773-b239-4b41-b9cd-49fe2a085440" ]
+          },
+          "allNeighbours" : [ "f8300773-b239-4b41-b9cd-49fe2a085440", "v1", "069f2bb8-d03d-4cb1-91a0-cd3b4b3fed78" ]
+        },
+        "vertexHashMap" : {
+          "069f2bb8-d03d-4cb1-91a0-cd3b4b3fed78" : {
+            "vertexId" : "069f2bb8-d03d-4cb1-91a0-cd3b4b3fed78",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 4,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "SHARED_FLOW_START",
+            "name" : "Input",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "f8300773-b239-4b41-b9cd-49fe2a085440" : {
+            "vertexId" : "f8300773-b239-4b41-b9cd-49fe2a085440",
+            "vertexType" : "SHARED_FLOW_STOP",
+            "name" : "Exit",
+            "sharedFlowStopData" : {
+              "stopNodeAction" : "TERMINATE_WITH_RESPONSE",
+              "sharedFlowResponse" : {
+                "statusCode" : 200,
+                "body" : {
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "parentWorkflowIds" : [ ],
+        "inputVariableList" : [ ],
+        "outputVariableList" : [ ],
+        "workspaceTenant" : "stage-data",
+        "misconfigurationMessages" : [ ],
+        "validated" : true
+      }
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -673,7 +790,7 @@
       "proxyid" : "6960cee9867f997c20008869",
       "name" : "TEST_TBAC_NODES",
       "attachedEnv" : "",
-      "attachedSharedFlows" : [ ],
+      "attachedSharedFlows" : [ "6960d2e5867f997c20008afb" ],
       "attachedProxies" : [ "6960a608613749329516dbb8" ],
       "attachedConnectors" : [ "6943e47fd4167432fe664f26" ]
     }, {
@@ -689,7 +806,14 @@
       "id" : "",
       "name" : ""
     } ],
-    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "sharedFlowMetadataDetailsDtoList" : [ {
+      "id" : "6960d2e5867f997c20008afb",
+      "name" : "TEST_NODE",
+      "description" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
     "connectorMetadataDetailsDtoList" : [ {
       "id" : "6943e47fd4167432fe664f26",
       "name" : "Deepak CloudDB Tagged"
