@@ -1,5 +1,5 @@
 {
-  "cts" : 1767954172266,
+  "cts" : 1767954189394,
   "name" : "Call New Workflow 851",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767954172261,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767954172261,
+        "mts" : 1767954189390,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -28,12 +28,14 @@
         "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
           "inbound" : {
-            "787cb568-5700-4af3-a437-a68381aece37" : [ "v1" ]
+            "ec6529a2-8538-4336-a217-947ba8b80e26" : [ "v1" ],
+            "787cb568-5700-4af3-a437-a68381aece37" : [ "ec6529a2-8538-4336-a217-947ba8b80e26" ]
           },
           "outbound" : {
-            "v1" : [ "787cb568-5700-4af3-a437-a68381aece37" ]
+            "v1" : [ "ec6529a2-8538-4336-a217-947ba8b80e26" ],
+            "ec6529a2-8538-4336-a217-947ba8b80e26" : [ "787cb568-5700-4af3-a437-a68381aece37" ]
           },
-          "allNeighbours" : [ "787cb568-5700-4af3-a437-a68381aece37", "v1" ]
+          "allNeighbours" : [ "787cb568-5700-4af3-a437-a68381aece37", "ec6529a2-8538-4336-a217-947ba8b80e26", "v1" ]
         },
         "vertexHashMap" : {
           "787cb568-5700-4af3-a437-a68381aece37" : {
@@ -48,6 +50,19 @@
                 "type" : "JSON"
               }
             }
+          },
+          "ec6529a2-8538-4336-a217-947ba8b80e26" : {
+            "vertexId" : "ec6529a2-8538-4336-a217-947ba8b80e26",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 1,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
