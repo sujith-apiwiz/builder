@@ -1,5 +1,5 @@
 {
-  "cts" : 1767948010279,
+  "cts" : 1767948087059,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767948010276,
+        "mts" : 1767948087006,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -30,17 +30,17 @@
           "inbound" : {
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "v1" ],
             "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
-            "4f77ce68-5d8c-40b7-802d-d899ca92d70d" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
-            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
+            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "7769bf47-036f-4b14-8616-cfd6c2b98a90" ],
+            "7769bf47-036f-4b14-8616-cfd6c2b98a90" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
             "03d10d8c-c49a-46c5-8c95-fda024f9a375" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ]
           },
           "outbound" : {
             "v1" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
-            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "4f77ce68-5d8c-40b7-802d-d899ca92d70d" ],
-            "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "03d10d8c-c49a-46c5-8c95-fda024f9a375", "09ff529c-d84c-4628-9f5f-672349af371e" ]
+            "7769bf47-036f-4b14-8616-cfd6c2b98a90" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
+            "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "7769bf47-036f-4b14-8616-cfd6c2b98a90", "03d10d8c-c49a-46c5-8c95-fda024f9a375" ]
           },
-          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "abc119d1-c14c-4d18-ab0f-2173620b715b", "03d10d8c-c49a-46c5-8c95-fda024f9a375", "4f77ce68-5d8c-40b7-802d-d899ca92d70d", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
+          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "7769bf47-036f-4b14-8616-cfd6c2b98a90", "abc119d1-c14c-4d18-ab0f-2173620b715b", "03d10d8c-c49a-46c5-8c95-fda024f9a375", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
         },
         "vertexHashMap" : {
           "bf301007-2cac-4caa-9400-ce0e59690ec9" : {
@@ -111,6 +111,23 @@
             "imported" : false,
             "skipRuntimeVariables" : false
           },
+          "7769bf47-036f-4b14-8616-cfd6c2b98a90" : {
+            "vertexId" : "7769bf47-036f-4b14-8616-cfd6c2b98a90",
+            "vertexType" : "INTERIM_RESPONSE",
+            "name" : "Interim Response",
+            "description" : "",
+            "interimResponseData" : {
+              "response" : {
+                "statusCode" : 200,
+                "body" : {
+                  "data" : "{{{dada}}}",
+                  "type" : "JSON"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "abc119d1-c14c-4d18-ab0f-2173620b715b" : {
             "vertexId" : "abc119d1-c14c-4d18-ab0f-2173620b715b",
             "vertexType" : "CONDITIONAL_FLOW",
@@ -137,7 +154,7 @@
                   }
                 }
               },
-              "flowVertexes" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ]
+              "flowVertexes" : [ "7769bf47-036f-4b14-8616-cfd6c2b98a90" ]
             }, {
               "condition" : "else",
               "assertion" : {
@@ -191,20 +208,6 @@
               }
             }
           },
-          "4f77ce68-5d8c-40b7-802d-d899ca92d70d" : {
-            "vertexId" : "4f77ce68-5d8c-40b7-802d-d899ca92d70d",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "body" : {
-                "data" : "{{{data}}}",
-                "type" : "JSON"
-              }
-            }
-          },
           "09ff529c-d84c-4628-9f5f-672349af371e" : {
             "vertexId" : "09ff529c-d84c-4628-9f5f-672349af371e",
             "vertexType" : "LOGGER",
@@ -219,6 +222,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767948044908,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767948020106,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1767947964419,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
