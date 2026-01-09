@@ -1,5 +1,5 @@
 {
-  "cts" : 1767952216339,
+  "cts" : 1767952232282,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767952216280,
+        "mts" : 1767952232278,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -99,10 +99,24 @@
             "conditionalFlow" : [ {
               "condition" : "if",
               "assertion" : {
+                "expression" : "({0})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "data",
+                  "value" : "postman-echo.com",
+                  "valueDataType" : "STRING"
+                } ],
                 "feelExpression" : false,
                 "skip" : false,
                 "showActualErrorMessage" : false,
-                "continueOnError" : false
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
               },
               "flowVertexes" : [ "6d911907-26f4-493f-ab1f-6f969085dcb3" ]
             }, {
