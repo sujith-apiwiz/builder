@@ -1,5 +1,5 @@
 {
-  "cts" : 1767947664508,
+  "cts" : 1767947720740,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767947664506,
+        "mts" : 1767947720661,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -138,13 +138,8 @@
             "conditionalFlow" : [ {
               "condition" : "if",
               "assertion" : {
-                "expression" : "({0})",
-                "placeHolders" : [ {
-                  "rule" : "EQUAL_TO",
-                  "key" : "a",
-                  "value" : "a",
-                  "valueDataType" : "STRING"
-                } ],
+                "expression" : "",
+                "placeHolders" : [ ],
                 "feelExpression" : false,
                 "skip" : false,
                 "showActualErrorMessage" : false,
@@ -225,6 +220,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767947704584,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767947677793,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1767947654750,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
