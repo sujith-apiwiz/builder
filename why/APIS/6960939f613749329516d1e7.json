@@ -1,5 +1,5 @@
 {
-  "cts" : 1767937007882,
+  "cts" : 1767937175144,
   "name" : "New Workflow 847",
   "exportedBy" : "divakar v",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767936927146,
         "createdUserName" : "divakar v",
         "modifiedUserName" : "divakar v",
-        "mts" : 1767937007880,
+        "mts" : 1767937175141,
         "createdBy" : "63cf749921c7bb55c7368952",
         "modifiedBy" : "63cf749921c7bb55c7368952",
         "taggedTeams" : [ ],
@@ -126,7 +126,7 @@
             "name" : "Logging ",
             "description" : "",
             "logData" : {
-              "data" : "",
+              "data" : "|{{a}}\n{{b}}",
               "skip" : false
             },
             "imported" : false,
