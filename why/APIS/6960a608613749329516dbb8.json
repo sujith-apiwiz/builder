@@ -1,5 +1,5 @@
 {
-  "cts" : 1767942097652,
+  "cts" : 1767942122824,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767942097650,
+        "mts" : 1767942122755,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -29,13 +29,15 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "v1" ],
-            "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ]
+            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
+            "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ]
           },
           "outbound" : {
             "v1" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
-            "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" ]
+            "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
+            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" ]
           },
-          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "b913195c-f1b2-4a31-97c3-eb283cb2a7bf", "v1" ]
+          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "b913195c-f1b2-4a31-97c3-eb283cb2a7bf", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
         },
         "vertexHashMap" : {
           "bf301007-2cac-4caa-9400-ce0e59690ec9" : {
@@ -141,6 +143,18 @@
                 }
               }
             }
+          },
+          "09ff529c-d84c-4628-9f5f-672349af371e" : {
+            "vertexId" : "09ff529c-d84c-4628-9f5f-672349af371e",
+            "vertexType" : "LOGGER",
+            "name" : "TestPayload",
+            "description" : "",
+            "logData" : {
+              "data" : "{{{data}}}",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
