@@ -1,5 +1,5 @@
 {
-  "cts" : 1767952544542,
+  "cts" : 1767952706342,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767952544428,
+        "mts" : 1767952706284,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/testtbacnodes",
         "pathArray" : [ "testtbacnodes" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
@@ -121,7 +121,7 @@
                 "content-type" : "application/json"
               },
               "body" : {
-                "data" : "{{{data: {{kk}}}}}",
+                "data" : "{\n    \"db\":{{kk}},\n    \"data\":{{data}}\n}",
                 "type" : "json"
               }
             }
@@ -249,11 +249,22 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767952661867,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767952559315,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767952105628,
           "lastModifiedBy" : "Kiran Kamble",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
