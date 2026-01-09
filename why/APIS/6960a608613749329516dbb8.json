@@ -1,5 +1,5 @@
 {
-  "cts" : 1767942629947,
+  "cts" : 1767942836516,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767942629945,
+        "mts" : 1767942836446,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -29,15 +29,17 @@
         "nodeDataHashMap" : {
           "inbound" : {
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "v1" ],
-            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
-            "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ]
+            "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
+            "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
+            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ]
           },
           "outbound" : {
             "v1" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
-            "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
-            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" ]
+            "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
+            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" ],
+            "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ]
           },
-          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "b913195c-f1b2-4a31-97c3-eb283cb2a7bf", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
+          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "b913195c-f1b2-4a31-97c3-eb283cb2a7bf", "abc119d1-c14c-4d18-ab0f-2173620b715b", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
         },
         "vertexHashMap" : {
           "bf301007-2cac-4caa-9400-ce0e59690ec9" : {
@@ -125,6 +127,45 @@
               }
             }
           },
+          "abc119d1-c14c-4d18-ab0f-2173620b715b" : {
+            "vertexId" : "abc119d1-c14c-4d18-ab0f-2173620b715b",
+            "vertexType" : "CONDITIONAL_FLOW",
+            "name" : "Condition",
+            "conditionalFlow" : [ {
+              "condition" : "if",
+              "assertion" : {
+                "expression" : "({0})",
+                "placeHolders" : [ {
+                  "rule" : "EQUAL_TO",
+                  "key" : "data",
+                  "value" : "$.headers.host",
+                  "valueDataType" : "STRING"
+                } ],
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false,
+                "errorResponse" : {
+                  "statusCode" : 400,
+                  "body" : {
+                    "data" : "",
+                    "type" : "json"
+                  }
+                }
+              },
+              "flowVertexes" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ]
+            }, {
+              "condition" : "else",
+              "assertion" : {
+                "feelExpression" : false,
+                "skip" : false,
+                "showActualErrorMessage" : false,
+                "continueOnError" : false
+              }
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
@@ -162,6 +203,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767942690270,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767942638983,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1767942611869,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
