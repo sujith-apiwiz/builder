@@ -1,5 +1,5 @@
 {
-  "cts" : 1767942122824,
+  "cts" : 1767942620114,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767942122755,
+        "mts" : 1767942620111,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -23,7 +23,7 @@
         "apiMethod" : "GET",
         "path" : "/test-node-123",
         "pathArray" : [ "test-node-123" ],
-        "revisionStatus" : "DRAFT",
+        "revisionStatus" : "REVIEW",
         "locked" : true,
         "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
@@ -117,6 +117,7 @@
             "proxyResponse" : {
               "statusCode" : 200,
               "body" : {
+                "data" : "{{{data}}}",
                 "type" : "JSON"
               }
             }
@@ -158,11 +159,32 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767942611869,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767942452589,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767942436284,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767942131071,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767941640043,
           "lastModifiedBy" : "Kiran Kamble",
           "description" : "Created new proxy"
         } ],
+        "virtualHostList" : [ ],
         "enableTracing" : false,
         "environmentName" : "",
         "environmentId" : "",
