@@ -1,5 +1,5 @@
 {
-  "cts" : 1767943139459,
+  "cts" : 1767943215796,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767943139406,
+        "mts" : 1767943215793,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -30,17 +30,17 @@
           "inbound" : {
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "v1" ],
             "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
-            "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
+            "81dccaa7-8ef3-4552-afa7-5ef9a4e64d56" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
             "09ff529c-d84c-4628-9f5f-672349af371e" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
             "03d10d8c-c49a-46c5-8c95-fda024f9a375" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ]
           },
           "outbound" : {
             "v1" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
-            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" ],
+            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "81dccaa7-8ef3-4552-afa7-5ef9a4e64d56" ],
             "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "03d10d8c-c49a-46c5-8c95-fda024f9a375", "09ff529c-d84c-4628-9f5f-672349af371e" ]
           },
-          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "b913195c-f1b2-4a31-97c3-eb283cb2a7bf", "abc119d1-c14c-4d18-ab0f-2173620b715b", "03d10d8c-c49a-46c5-8c95-fda024f9a375", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
+          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "81dccaa7-8ef3-4552-afa7-5ef9a4e64d56", "abc119d1-c14c-4d18-ab0f-2173620b715b", "03d10d8c-c49a-46c5-8c95-fda024f9a375", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
         },
         "vertexHashMap" : {
           "bf301007-2cac-4caa-9400-ce0e59690ec9" : {
@@ -111,22 +111,25 @@
             "imported" : false,
             "skipRuntimeVariables" : false
           },
-          "b913195c-f1b2-4a31-97c3-eb283cb2a7bf" : {
-            "vertexId" : "b913195c-f1b2-4a31-97c3-eb283cb2a7bf",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "headers" : {
-                "content-type" : "application/json"
-              },
-              "body" : {
-                "data" : "{{{data}}}",
-                "type" : "json"
+          "81dccaa7-8ef3-4552-afa7-5ef9a4e64d56" : {
+            "vertexId" : "81dccaa7-8ef3-4552-afa7-5ef9a4e64d56",
+            "vertexType" : "INTERIM_RESPONSE",
+            "name" : "Interim Response",
+            "description" : "",
+            "interimResponseData" : {
+              "response" : {
+                "statusCode" : 200,
+                "headers" : {
+                  "content-type" : "application/json"
+                },
+                "body" : {
+                  "data" : "{\n    \"work\": \"interim\"\n}",
+                  "type" : "json"
+                }
               }
-            }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "abc119d1-c14c-4d18-ab0f-2173620b715b" : {
             "vertexId" : "abc119d1-c14c-4d18-ab0f-2173620b715b",
