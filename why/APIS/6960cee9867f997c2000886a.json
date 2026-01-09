@@ -1,5 +1,5 @@
 {
-  "cts" : 1767952524596,
+  "cts" : 1767952544542,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767952524583,
+        "mts" : 1767952544428,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -117,9 +117,12 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
-                "data" : "{{{data}}}",
-                "type" : "JSON"
+                "data" : "{{{data: {{kk}}}}}",
+                "type" : "json"
               }
             }
           },
