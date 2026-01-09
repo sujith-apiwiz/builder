@@ -1,5 +1,5 @@
 {
-  "cts" : 1767943304267,
+  "cts" : 1767943320199,
   "name" : "postman echo flow",
   "exportedBy" : "Varsha K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941834510,
         "createdUserName" : "Varsha K",
         "modifiedUserName" : "Varsha K",
-        "mts" : 1767943304264,
+        "mts" : 1767943320190,
         "createdBy" : "691705d10865284391648e76",
         "modifiedBy" : "691705d10865284391648e76",
         "taggedTeams" : [ ],
@@ -31,14 +31,16 @@
             "397aaac6-b945-4d95-b211-88472f75c081" : [ "v1" ],
             "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" : [ "v1" ],
             "fb166a21-d90d-4462-aa9d-212cc2c0babe" : [ "397aaac6-b945-4d95-b211-88472f75c081" ],
-            "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" : [ "fb166a21-d90d-4462-aa9d-212cc2c0babe" ]
+            "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" : [ "fb166a21-d90d-4462-aa9d-212cc2c0babe" ],
+            "305956f1-a0bf-4b13-bb31-7087a05fb19c" : [ "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" ]
           },
           "outbound" : {
             "v1" : [ "397aaac6-b945-4d95-b211-88472f75c081", "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" ],
             "397aaac6-b945-4d95-b211-88472f75c081" : [ "fb166a21-d90d-4462-aa9d-212cc2c0babe" ],
-            "fb166a21-d90d-4462-aa9d-212cc2c0babe" : [ "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" ]
+            "fb166a21-d90d-4462-aa9d-212cc2c0babe" : [ "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" ],
+            "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" : [ "305956f1-a0bf-4b13-bb31-7087a05fb19c" ]
           },
-          "allNeighbours" : [ "397aaac6-b945-4d95-b211-88472f75c081", "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4", "v1", "87a2cca8-a76b-4105-96fe-3dddb76a7ac6", "fb166a21-d90d-4462-aa9d-212cc2c0babe" ]
+          "allNeighbours" : [ "397aaac6-b945-4d95-b211-88472f75c081", "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4", "v1", "87a2cca8-a76b-4105-96fe-3dddb76a7ac6", "fb166a21-d90d-4462-aa9d-212cc2c0babe", "305956f1-a0bf-4b13-bb31-7087a05fb19c" ]
         },
         "vertexHashMap" : {
           "397aaac6-b945-4d95-b211-88472f75c081" : {
@@ -287,6 +289,18 @@
             "description" : "",
             "logData" : {
               "data" : "First",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "305956f1-a0bf-4b13-bb31-7087a05fb19c" : {
+            "vertexId" : "305956f1-a0bf-4b13-bb31-7087a05fb19c",
+            "vertexType" : "LOGGER",
+            "name" : "Logger 2",
+            "description" : "",
+            "logData" : {
+              "data" : "Second",
               "skip" : false
             },
             "imported" : false,
