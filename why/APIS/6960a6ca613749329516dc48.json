@@ -1,5 +1,5 @@
 {
-  "cts" : 1767941834579,
+  "cts" : 1767943256098,
   "name" : "postman echo flow",
   "exportedBy" : "Varsha K",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941834510,
         "createdUserName" : "Varsha K",
         "modifiedUserName" : "Varsha K",
-        "mts" : 1767941834510,
+        "mts" : 1767943256042,
         "createdBy" : "691705d10865284391648e76",
         "modifiedBy" : "691705d10865284391648e76",
         "taggedTeams" : [ ],
@@ -28,16 +28,32 @@
         "lockedBy" : "Varsha K",
         "nodeDataHashMap" : {
           "inbound" : {
-            "a785c185-ccaa-4797-88af-9ea1a3ccf67e" : [ "v1" ],
-            "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" : [ "a785c185-ccaa-4797-88af-9ea1a3ccf67e" ]
+            "397aaac6-b945-4d95-b211-88472f75c081" : [ "v1" ],
+            "fb166a21-d90d-4462-aa9d-212cc2c0babe" : [ "397aaac6-b945-4d95-b211-88472f75c081" ],
+            "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" : [ "v1" ],
+            "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" : [ "fb166a21-d90d-4462-aa9d-212cc2c0babe" ]
           },
           "outbound" : {
-            "v1" : [ "a785c185-ccaa-4797-88af-9ea1a3ccf67e" ],
-            "a785c185-ccaa-4797-88af-9ea1a3ccf67e" : [ "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" ]
+            "v1" : [ "397aaac6-b945-4d95-b211-88472f75c081", "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" ],
+            "397aaac6-b945-4d95-b211-88472f75c081" : [ "fb166a21-d90d-4462-aa9d-212cc2c0babe" ],
+            "fb166a21-d90d-4462-aa9d-212cc2c0babe" : [ "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" ]
           },
-          "allNeighbours" : [ "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4", "v1", "a785c185-ccaa-4797-88af-9ea1a3ccf67e" ]
+          "allNeighbours" : [ "397aaac6-b945-4d95-b211-88472f75c081", "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4", "v1", "fb166a21-d90d-4462-aa9d-212cc2c0babe", "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" ]
         },
         "vertexHashMap" : {
+          "397aaac6-b945-4d95-b211-88472f75c081" : {
+            "vertexId" : "397aaac6-b945-4d95-b211-88472f75c081",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" : {
             "vertexId" : "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4",
             "vertexType" : "STOP",
@@ -251,33 +267,43 @@
               }
             }
           },
-          "a785c185-ccaa-4797-88af-9ea1a3ccf67e" : {
-            "vertexId" : "a785c185-ccaa-4797-88af-9ea1a3ccf67e",
-            "vertexType" : "DATA_MAPPING",
-            "name" : "CustomerMapping",
-            "dataMappingData" : {
-              "sourceVariable" : "payload",
-              "targetVariable" : "customerTarget",
-              "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"title\": \"CustomerOutput\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"string\"\n    },\n    \"name\": {\n      \"type\": \"string\"\n    },\n    \"emailId\": {\n      \"type\": \"string\"\n    },\n    \"mobile\": {\n      \"type\": \"string\"\n    },\n    \"location\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"cityName\": {\n          \"type\": \"string\"\n        },\n        \"postalCode\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  },\n  \"required\": [\n    \"id\",\n    \"name\",\n    \"emailId\"\n  ]\n}",
-              "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"title\": \"CustomerInput\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"customerId\": {\n      \"type\": \"string\"\n    },\n    \"fullName\": {\n      \"type\": \"string\"\n    },\n    \"contact\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"email\": {\n          \"type\": \"string\"\n        },\n        \"phone\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"email\"\n      ]\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"street\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"pincode\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  },\n  \"required\": [\n    \"customerId\",\n    \"fullName\"\n  ]\n}",
-              "sourceType" : "JSON",
-              "targetType" : "JSON",
+          "87a2cca8-a76b-4105-96fe-3dddb76a7ac6" : {
+            "vertexId" : "87a2cca8-a76b-4105-96fe-3dddb76a7ac6",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 0,
               "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "fb166a21-d90d-4462-aa9d-212cc2c0babe" : {
+            "vertexId" : "fb166a21-d90d-4462-aa9d-212cc2c0babe",
+            "vertexType" : "LOGGER",
+            "name" : "Logger",
+            "description" : "",
+            "logData" : {
+              "data" : "First",
+              "skip" : false
             },
             "imported" : false,
             "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767943065219,
+          "lastModifiedBy" : "691705d10865284391648e76",
+          "description" : " "
+        }, {
+          "status" : "Approved",
+          "cts" : 1767941891243,
+          "lastModifiedBy" : "691705d10865284391648e76",
+          "description" : " "
+        }, {
           "status" : "Draft",
           "cts" : 1767941834510,
           "lastModifiedBy" : "Varsha K",
