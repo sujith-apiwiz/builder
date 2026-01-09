@@ -1,5 +1,5 @@
 {
-  "cts" : 1767948451401,
+  "cts" : 1767948549868,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767948451398,
+        "mts" : 1767948549865,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -28,16 +28,18 @@
         "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
           "inbound" : {
-            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "v1" ],
             "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : [ "v1" ],
-            "6e90519c-4a96-4087-9262-7a7b55e65ad8" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "350b021f-3660-43c7-89c9-e24f2607ec7b" ]
+            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "v1" ],
+            "078902eb-f08d-4382-b122-be7aea63808d" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "350b021f-3660-43c7-89c9-e24f2607ec7b" ],
+            "6e90519c-4a96-4087-9262-7a7b55e65ad8" : [ "078902eb-f08d-4382-b122-be7aea63808d" ]
           },
           "outbound" : {
             "v1" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "350b021f-3660-43c7-89c9-e24f2607ec7b" ],
-            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "6e90519c-4a96-4087-9262-7a7b55e65ad8" ],
-            "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : [ "6e90519c-4a96-4087-9262-7a7b55e65ad8" ]
+            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "078902eb-f08d-4382-b122-be7aea63808d" ],
+            "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : [ "078902eb-f08d-4382-b122-be7aea63808d" ],
+            "078902eb-f08d-4382-b122-be7aea63808d" : [ "6e90519c-4a96-4087-9262-7a7b55e65ad8" ]
           },
-          "allNeighbours" : [ "6e90519c-4a96-4087-9262-7a7b55e65ad8", "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "v1", "350b021f-3660-43c7-89c9-e24f2607ec7b" ]
+          "allNeighbours" : [ "6e90519c-4a96-4087-9262-7a7b55e65ad8", "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "078902eb-f08d-4382-b122-be7aea63808d", "v1", "350b021f-3660-43c7-89c9-e24f2607ec7b" ]
         },
         "vertexHashMap" : {
           "6e90519c-4a96-4087-9262-7a7b55e65ad8" : {
@@ -93,6 +95,14 @@
               }
             }
           },
+          "078902eb-f08d-4382-b122-be7aea63808d" : {
+            "vertexId" : "078902eb-f08d-4382-b122-be7aea63808d",
+            "vertexType" : "OR_NODE",
+            "name" : "ibjij",
+            "description" : " ojno",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "350b021f-3660-43c7-89c9-e24f2607ec7b" : {
             "vertexId" : "350b021f-3660-43c7-89c9-e24f2607ec7b",
             "vertexType" : "DELAY",
@@ -108,6 +118,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767948515561,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767948457304,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "ljkn"
+        }, {
           "status" : "Review",
           "cts" : 1767948320740,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
