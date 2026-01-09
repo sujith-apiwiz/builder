@@ -1,0 +1,320 @@
+{
+  "cts" : 1767941834579,
+  "name" : "postman echo flow",
+  "exportedBy" : "Varsha K",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6960a6ca613749329516dc48",
+        "cts" : 1767941834510,
+        "createdUserName" : "Varsha K",
+        "modifiedUserName" : "Varsha K",
+        "mts" : 1767941834510,
+        "createdBy" : "691705d10865284391648e76",
+        "modifiedBy" : "691705d10865284391648e76",
+        "taggedTeams" : [ ],
+        "proxyId" : "68d4e1a12182833cdeb7a682",
+        "revision" : 3,
+        "name" : "postman echo flow",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "POST",
+        "path" : "/v2/postman/echo",
+        "pathArray" : [ "v2", "postman", "echo" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Varsha K",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "a785c185-ccaa-4797-88af-9ea1a3ccf67e" : [ "v1" ],
+            "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" : [ "a785c185-ccaa-4797-88af-9ea1a3ccf67e" ]
+          },
+          "outbound" : {
+            "v1" : [ "a785c185-ccaa-4797-88af-9ea1a3ccf67e" ],
+            "a785c185-ccaa-4797-88af-9ea1a3ccf67e" : [ "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" ]
+          },
+          "allNeighbours" : [ "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4", "v1", "a785c185-ccaa-4797-88af-9ea1a3ccf67e" ]
+        },
+        "vertexHashMap" : {
+          "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4" : {
+            "vertexId" : "c06cbfb5-92c7-4be0-9f4a-0d6182b633d4",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "{\n    \"converted object\" : {{{targetobject}}}\n}",
+                "type" : "json"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "payload",
+              "reference" : "body",
+              "value" : "$",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "p2",
+              "reference" : "body",
+              "value" : "$",
+              "variableDataType" : "STRING",
+              "active" : true,
+              "source" : "raw",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "ruleGroup" : [ {
+                "id" : "66de7ba9ce79b82d24ec5b81",
+                "name" : "OWASP Violations Validator",
+                "rules" : [ {
+                  "id" : "66de7be3ce79b82d24ec5b82",
+                  "name" : "Check for Broken Object Level Authorization (BOLA) rule"
+                }, {
+                  "id" : "66de7bf2ce79b82d24ec5b83",
+                  "name" : "Check for Broken Object Level Authorization (BOLA) - ObjectId In Path"
+                }, {
+                  "id" : "66de7c0ece79b82d24ec5b85",
+                  "name" : "Check for Broken User Authentication rule - Exposed Credentials in URLs"
+                }, {
+                  "id" : "66de7c1cce79b82d24ec5b86",
+                  "name" : "Check for Broken User Authentication rule - Session IDs or Tokens in URLs"
+                }, {
+                  "id" : "66de7c23ce79b82d24ec5bad",
+                  "name" : "Check for Excessive Data Exposure - Exposed Credentials in response body"
+                }, {
+                  "id" : "66de7c2ace79b82d24ec5bcb",
+                  "name" : "Check for Excessive Data Exposure - Sensitive Data in API Responses"
+                }, {
+                  "id" : "66de7c30ce79b82d24ec5bcc",
+                  "name" : "Check for Lack of Resources & Rate Limiting - Detecting Large Payloads"
+                }, {
+                  "id" : "66de7c36ce79b82d24ec5bcd",
+                  "name" : "Check for Lack of Resources & Rate Limiting - Detecting Missing Rate Limiting Headers"
+                }, {
+                  "id" : "66de7c42ce79b82d24ec5bce",
+                  "name" : "Check for Broken Function Level Authorization - Check for Unauthorized Requests"
+                }, {
+                  "id" : "66de7c5ece79b82d24ec5c08",
+                  "name" : "Check for Broken Function Level Authorization - Path traversal"
+                }, {
+                  "id" : "66de7c67ce79b82d24ec5c09",
+                  "name" : "Check for Mass assignment - Using numeric userId In path and Modifying Admin access"
+                }, {
+                  "id" : "66de8060ce79b82d24ec5d80",
+                  "name" : "SQL based Injection Attack 12"
+                }, {
+                  "id" : "66de806ece79b82d24ec5d81",
+                  "name" : "Extraction-Based SQL Injection"
+                }, {
+                  "id" : "66de8075ce79b82d24ec5d82",
+                  "name" : "Encoding-Based SQL Injection"
+                }, {
+                  "id" : "66de807ece79b82d24ec5d83",
+                  "name" : "Stacked Queries Injection"
+                }, {
+                  "id" : "66de80a8ce79b82d24ec5d84",
+                  "name" : "Out-of-Band SQL Injection"
+                }, {
+                  "id" : "66de80b0ce79b82d24ec5d85",
+                  "name" : "Time-Based SQL Injection"
+                }, {
+                  "id" : "66de80c7ce79b82d24ec5d87",
+                  "name" : "SQL based Injection Attack: Common Injection Testing Detected"
+                }, {
+                  "id" : "66de80dece79b82d24ec5dcb",
+                  "name" : "Detects MSSQL code execution and information gathering attempts in endpoint"
+                }, {
+                  "id" : "66de80f4ce79b82d24ec5dcc",
+                  "name" : "Basic SQL injection Common attack string for MySQL, Oracle, and others"
+                }, {
+                  "id" : "66de8105ce79b82d24ec5e06",
+                  "name" : "Detects classic SQL based injection probings 1/2"
+                }, {
+                  "id" : "66de814ace79b82d24ec5e08",
+                  "name" : "NoScript XSS InjectionChecker: Attribute based Injection"
+                }, {
+                  "id" : "66de815cce79b82d24ec5e09",
+                  "name" : "NoScript XSS InjectionChecker: HTML based Injection"
+                }, {
+                  "id" : "66de8173ce79b82d24ec5e0a",
+                  "name" : "IE XSS Filters threat - Attack Detected 12"
+                }, {
+                  "id" : "66de8190ce79b82d24ec5e0b",
+                  "name" : "XSS threat using embed tag"
+                }, {
+                  "id" : "66de819ece79b82d24ec5e0c",
+                  "name" : "Cross-Site Scripting threat"
+                }, {
+                  "id" : "66de81a3ce79b82d24ec5e0d",
+                  "name" : "JavaScript Injection in JSON or Endpoints"
+                }, {
+                  "id" : "66de81a7ce79b82d24ec5e0e",
+                  "name" : "DOM-Based XSS threat"
+                }, {
+                  "id" : "66e02189cb0e814ad094f909",
+                  "name" : "Script Injection via HTML Attributes"
+                }, {
+                  "id" : "66e021bccb0e814ad094f90e",
+                  "name" : "JavaScript URI/URL Manipulation"
+                }, {
+                  "id" : "66e021facb0e814ad094f911",
+                  "name" : "SVG Injection"
+                }, {
+                  "id" : "66e02201cb0e814ad094f91b",
+                  "name" : "Form Field Injection"
+                }, {
+                  "id" : "66e02208cb0e814ad094f9e4",
+                  "name" : "XSS through JSONP"
+                }, {
+                  "id" : "66e02222cb0e814ad094fa11",
+                  "name" : "CSS Injection"
+                }, {
+                  "id" : "66e0222ccb0e814ad094fa12",
+                  "name" : "Base64-Encoded XSS"
+                }, {
+                  "id" : "66e02235cb0e814ad094fa13",
+                  "name" : "Dangerous URI Schemes"
+                }, {
+                  "id" : "66e0223ecb0e814ad094fa55",
+                  "name" : "Style Attributes Injection with JavaScript (CSS Injection)"
+                }, {
+                  "id" : "66e02244cb0e814ad094fa6f",
+                  "name" : "Object Tag with Malicious Data Attributes"
+                }, {
+                  "id" : "66e0224bcb0e814ad094fa70",
+                  "name" : "Meta Tag Injection with JavaScript Redirection"
+                }, {
+                  "id" : "66e02282cb0e814ad094fa85",
+                  "name" : "Double Query SQL Injection"
+                }, {
+                  "id" : "66e02288cb0e814ad094fa89",
+                  "name" : "Batch SQL Injection"
+                }, {
+                  "id" : "66e0228dcb0e814ad094fa8a",
+                  "name" : "Function Call SQL Injection"
+                }, {
+                  "id" : "66e02299cb0e814ad094fa8b",
+                  "name" : "Exponential SQL Injection"
+                }, {
+                  "id" : "66e0229fcb0e814ad094fa8c",
+                  "name" : "Out-of-Bounds Injection"
+                }, {
+                  "id" : "66e022a8cb0e814ad094fa8e",
+                  "name" : "Bulk Insert Injection"
+                }, {
+                  "id" : "66e022afcb0e814ad094fa8f",
+                  "name" : "Keyword Bypass Injection"
+                }, {
+                  "id" : "66e025d1cb0e814ad094fe85",
+                  "name" : "Insert Statement Injection"
+                }, {
+                  "id" : "66e027ebcb0e814ad095010d",
+                  "name" : "Unicode Injection"
+                }, {
+                  "id" : "66e029c3cb0e814ad0950306",
+                  "name" : "Null Character Injection"
+                }, {
+                  "id" : "66e053b77e5f2f042709f73f",
+                  "name" : "JavaScript Object Notation (JSON) Injection"
+                } ]
+              } ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "\"Security threat found in proxy\"",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "a785c185-ccaa-4797-88af-9ea1a3ccf67e" : {
+            "vertexId" : "a785c185-ccaa-4797-88af-9ea1a3ccf67e",
+            "vertexType" : "DATA_MAPPING",
+            "name" : "CustomerMapping",
+            "dataMappingData" : {
+              "sourceVariable" : "payload",
+              "targetVariable" : "customerTarget",
+              "targetSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"title\": \"CustomerOutput\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"id\": {\n      \"type\": \"string\"\n    },\n    \"name\": {\n      \"type\": \"string\"\n    },\n    \"emailId\": {\n      \"type\": \"string\"\n    },\n    \"mobile\": {\n      \"type\": \"string\"\n    },\n    \"location\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"cityName\": {\n          \"type\": \"string\"\n        },\n        \"postalCode\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  },\n  \"required\": [\n    \"id\",\n    \"name\",\n    \"emailId\"\n  ]\n}",
+              "sourceSchema" : "{\n  \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n  \"title\": \"CustomerInput\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"customerId\": {\n      \"type\": \"string\"\n    },\n    \"fullName\": {\n      \"type\": \"string\"\n    },\n    \"contact\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"email\": {\n          \"type\": \"string\"\n        },\n        \"phone\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"email\"\n      ]\n    },\n    \"address\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"street\": {\n          \"type\": \"string\"\n        },\n        \"city\": {\n          \"type\": \"string\"\n        },\n        \"pincode\": {\n          \"type\": \"string\"\n        }\n      }\n    }\n  },\n  \"required\": [\n    \"customerId\",\n    \"fullName\"\n  ]\n}",
+              "sourceType" : "JSON",
+              "targetType" : "JSON",
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1767941834510,
+          "lastModifiedBy" : "Varsha K",
+          "description" : "Created new proxy revision"
+        } ],
+        "enableTracing" : true,
+        "environmentName" : "AcmeBank DEV",
+        "environmentId" : "6651dc284289865ae027e44e",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "68c7f0e79f1f251b4c0b7833",
+        "kafkaTopic" : "topic_0",
+        "kafkaGroupId" : "abc",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "6960a6ca613749329516dc48",
+      "proxyid" : "68d4e1a12182833cdeb7a682",
+      "name" : "postman echo flow",
+      "attachedEnv" : "6651dc284289865ae027e44e",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "6651dc284289865ae027e44e",
+      "name" : "AcmeBank DEV"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
