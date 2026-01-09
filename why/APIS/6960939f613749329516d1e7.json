@@ -1,5 +1,5 @@
 {
-  "cts" : 1767953995378,
+  "cts" : 1767956940508,
   "name" : "New Workflow 847",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767936927146,
         "createdUserName" : "divakar v",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767953995313,
+        "mts" : 1767956940504,
         "createdBy" : "63cf749921c7bb55c7368952",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -28,16 +28,14 @@
         "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
           "inbound" : {
-            "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : [ "v1" ],
-            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" ],
-            "21d40d53-ba0b-4432-a1a7-e612b3704242" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
+            "21d40d53-ba0b-4432-a1a7-e612b3704242" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ],
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" ],
-            "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ],
-            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242" ]
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242" ],
+            "v1" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
           },
-          "allNeighbours" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299", "21d40d53-ba0b-4432-a1a7-e612b3704242", "v1", "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
+          "allNeighbours" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242", "v1", "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
         },
         "vertexHashMap" : {
           "21d40d53-ba0b-4432-a1a7-e612b3704242" : {
@@ -52,32 +50,6 @@
                 "type" : "JSON"
               }
             }
-          },
-          "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : {
-            "vertexId" : "6458b7a7-5ad4-4427-a4b7-eb890f1f0299",
-            "vertexType" : "INCREMENT_DECREMENT",
-            "name" : "Increment A",
-            "description" : "",
-            "incDecData" : {
-              "incDecOperationList" : [ {
-                "operationName" : "ADDITION",
-                "variableName" : "a",
-                "changeType" : "INCREMENT",
-                "value" : "1"
-              } ],
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 200,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -134,6 +106,16 @@
           }
         },
         "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1767956929724,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767954004183,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
           "status" : "Review",
           "cts" : 1767953985386,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
