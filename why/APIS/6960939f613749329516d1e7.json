@@ -1,5 +1,5 @@
 {
-  "cts" : 1767936927155,
+  "cts" : 1767937007882,
   "name" : "New Workflow 847",
   "exportedBy" : "divakar v",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767936927146,
         "createdUserName" : "divakar v",
         "modifiedUserName" : "divakar v",
-        "mts" : 1767936927146,
+        "mts" : 1767937007880,
         "createdBy" : "63cf749921c7bb55c7368952",
         "modifiedBy" : "63cf749921c7bb55c7368952",
         "taggedTeams" : [ ],
@@ -21,19 +21,23 @@
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/testing-variable-logger",
-        "pathArray" : [ "testing-variable-logger" ],
+        "path" : "/testing-variable-logger/{a}/{b}",
+        "pathArray" : [ "testing-variable-logger", "*", "*" ],
         "revisionStatus" : "DRAFT",
         "locked" : true,
         "lockedBy" : "divakar v",
         "nodeDataHashMap" : {
           "inbound" : {
-            "21d40d53-ba0b-4432-a1a7-e612b3704242" : [ "v1" ]
+            "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : [ "v1" ],
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" ],
+            "21d40d53-ba0b-4432-a1a7-e612b3704242" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
           },
           "outbound" : {
-            "v1" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242" ]
+            "v1" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" ],
+            "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ],
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242" ]
           },
-          "allNeighbours" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242", "v1" ]
+          "allNeighbours" : [ "6458b7a7-5ad4-4427-a4b7-eb890f1f0299", "21d40d53-ba0b-4432-a1a7-e612b3704242", "v1", "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
         },
         "vertexHashMap" : {
           "21d40d53-ba0b-4432-a1a7-e612b3704242" : {
@@ -49,11 +53,55 @@
               }
             }
           },
+          "6458b7a7-5ad4-4427-a4b7-eb890f1f0299" : {
+            "vertexId" : "6458b7a7-5ad4-4427-a4b7-eb890f1f0299",
+            "vertexType" : "INCREMENT_DECREMENT",
+            "name" : "Increment A",
+            "description" : "",
+            "incDecData" : {
+              "incDecOperationList" : [ {
+                "operationName" : "ADDITION",
+                "variableName" : "a",
+                "changeType" : "INCREMENT",
+                "value" : "1"
+              } ],
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "v1" : {
             "vertexId" : "v1",
             "vertexType" : "START",
             "name" : "Request",
-            "requestVariables" : [ ],
+            "requestVariables" : [ {
+              "name" : "a",
+              "reference" : "path-variable",
+              "value" : "a",
+              "variableDataType" : "INTEGER",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "b",
+              "reference" : "path-variable",
+              "value" : "b",
+              "variableDataType" : "INTEGER",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
             "mandatoryHeaders" : [ ],
             "mandatoryQueryParams" : [ ],
             "imported" : true,
@@ -71,6 +119,18 @@
                 }
               }
             }
+          },
+          "f324c5f3-30d8-43ff-ac35-77653abdec47" : {
+            "vertexId" : "f324c5f3-30d8-43ff-ac35-77653abdec47",
+            "vertexType" : "LOGGER",
+            "name" : "Logging ",
+            "description" : "",
+            "logData" : {
+              "data" : "",
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           }
         },
         "statusHistory" : [ {
