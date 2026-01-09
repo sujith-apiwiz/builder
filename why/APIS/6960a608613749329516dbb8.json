@@ -1,5 +1,5 @@
 {
-  "cts" : 1767942620114,
+  "cts" : 1767942629947,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767942620111,
+        "mts" : 1767942629945,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -116,9 +116,12 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
                 "data" : "{{{data}}}",
-                "type" : "JSON"
+                "type" : "json"
               }
             }
           },
