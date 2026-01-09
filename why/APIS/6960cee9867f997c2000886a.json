@@ -1,5 +1,5 @@
 {
-  "cts" : 1767952706342,
+  "cts" : 1767952875713,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767952706284,
+        "mts" : 1767952875699,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -31,7 +31,8 @@
             "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" : [ "v1" ],
             "1644b62d-e8eb-44b3-b785-7c4184128104" : [ "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ],
             "ceb27528-fda8-482f-a3eb-6282c120ae78" : [ "1644b62d-e8eb-44b3-b785-7c4184128104" ],
-            "6d911907-26f4-493f-ab1f-6f969085dcb3" : [ "164f08ce-aeab-4785-90dd-35d623d5e923" ],
+            "879832e5-5695-41b5-996a-3ff373f6544c" : [ "164f08ce-aeab-4785-90dd-35d623d5e923" ],
+            "6d911907-26f4-493f-ab1f-6f969085dcb3" : [ "879832e5-5695-41b5-996a-3ff373f6544c" ],
             "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ],
             "6fe55857-41c8-4da2-be73-c026cd699239" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ]
           },
@@ -39,12 +40,53 @@
             "v1" : [ "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ],
             "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" : [ "1644b62d-e8eb-44b3-b785-7c4184128104" ],
             "1644b62d-e8eb-44b3-b785-7c4184128104" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ],
-            "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "6d911907-26f4-493f-ab1f-6f969085dcb3" ],
+            "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "879832e5-5695-41b5-996a-3ff373f6544c" ],
+            "879832e5-5695-41b5-996a-3ff373f6544c" : [ "6d911907-26f4-493f-ab1f-6f969085dcb3" ],
             "ceb27528-fda8-482f-a3eb-6282c120ae78" : [ "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923" ]
           },
-          "allNeighbours" : [ "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923", "6d911907-26f4-493f-ab1f-6f969085dcb3", "v1", "1644b62d-e8eb-44b3-b785-7c4184128104", "ceb27528-fda8-482f-a3eb-6282c120ae78", "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ]
+          "allNeighbours" : [ "879832e5-5695-41b5-996a-3ff373f6544c", "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923", "6d911907-26f4-493f-ab1f-6f969085dcb3", "v1", "1644b62d-e8eb-44b3-b785-7c4184128104", "ceb27528-fda8-482f-a3eb-6282c120ae78", "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ]
         },
         "vertexHashMap" : {
+          "879832e5-5695-41b5-996a-3ff373f6544c" : {
+            "vertexId" : "879832e5-5695-41b5-996a-3ff373f6544c",
+            "vertexType" : "CALL_WORKFLOW",
+            "name" : "Call Workflow",
+            "description" : "",
+            "callWorkflowData" : {
+              "childWorkflowId" : "6960a608613749329516dbb8",
+              "childWorkflowName" : "TESTING_NODES",
+              "virtualHostId" : "66dc0ef2e836d076001b628b",
+              "virtualHostName" : "stage-data",
+              "request" : {
+                "headerParams" : [ ],
+                "queryParams" : [ ],
+                "targetRequestBodyType" : "NONE",
+                "body" : {
+                  "data" : "{}",
+                  "type" : "json"
+                },
+                "formParams" : [ ],
+                "urlEncodedParams" : [ ]
+              },
+              "response" : {
+                "statusCode" : 400,
+                "variables" : [ ]
+              },
+              "timeout" : 0,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
           "6fe55857-41c8-4da2-be73-c026cd699239" : {
             "vertexId" : "6fe55857-41c8-4da2-be73-c026cd699239",
             "vertexType" : "STOP",
@@ -250,6 +292,16 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1767952804116,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767952721151,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
           "cts" : 1767952661867,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
           "description" : "Proxy undeploy"
@@ -277,6 +329,310 @@
         "misconfigurationMessages" : [ ],
         "validated" : true,
         "deployed" : false,
+        "deleted" : false
+      }
+    }
+  }, {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6960a608613749329516dbb8",
+        "cts" : 1767941640043,
+        "createdUserName" : "Kiran Kamble",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1767949477788,
+        "createdBy" : "685b8a3df073051941d15c1c",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
+        "taggedTeams" : [ ],
+        "proxyId" : "6960a608613749329516dbb7",
+        "revision" : 1,
+        "name" : "TESTING_NODES",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/test-node-123",
+        "pathArray" : [ "test-node-123" ],
+        "revisionStatus" : "APPROVED",
+        "locked" : true,
+        "lockedBy" : "Kiran Kamble",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : [ "v1" ],
+            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "v1" ],
+            "09b68623-d4e3-4fcb-a04f-aea04487f72f" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "350b021f-3660-43c7-89c9-e24f2607ec7b" ],
+            "4008f7e3-48f5-4dc3-9a64-db282a8fee55" : [ "09b68623-d4e3-4fcb-a04f-aea04487f72f" ]
+          },
+          "outbound" : {
+            "v1" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "350b021f-3660-43c7-89c9-e24f2607ec7b" ],
+            "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : [ "09b68623-d4e3-4fcb-a04f-aea04487f72f" ],
+            "350b021f-3660-43c7-89c9-e24f2607ec7b" : [ "09b68623-d4e3-4fcb-a04f-aea04487f72f" ],
+            "09b68623-d4e3-4fcb-a04f-aea04487f72f" : [ "4008f7e3-48f5-4dc3-9a64-db282a8fee55" ]
+          },
+          "allNeighbours" : [ "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd", "09b68623-d4e3-4fcb-a04f-aea04487f72f", "4008f7e3-48f5-4dc3-9a64-db282a8fee55", "v1", "350b021f-3660-43c7-89c9-e24f2607ec7b" ]
+        },
+        "vertexHashMap" : {
+          "09b68623-d4e3-4fcb-a04f-aea04487f72f" : {
+            "vertexId" : "09b68623-d4e3-4fcb-a04f-aea04487f72f",
+            "vertexType" : "OR_NODE",
+            "name" : "vh",
+            "description" : "",
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "4008f7e3-48f5-4dc3-9a64-db282a8fee55" : {
+            "vertexId" : "4008f7e3-48f5-4dc3-9a64-db282a8fee55",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "data" : "ouhbou",
+                "type" : "JSON"
+              }
+            }
+          },
+          "350b021f-3660-43c7-89c9-e24f2607ec7b" : {
+            "vertexId" : "350b021f-3660-43c7-89c9-e24f2607ec7b",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 5,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd" : {
+            "vertexId" : "f2aa4282-335c-49e4-bcb8-cf836ec0d0bd",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 10,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Approved",
+          "cts" : 1767949471629,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767949175865,
+          "lastModifiedBy" : "6655a103339aa715119d5a13",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767948680366,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "njo"
+        }, {
+          "status" : "Review",
+          "cts" : 1767948612508,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767948557150,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "noj"
+        }, {
+          "status" : "Review",
+          "cts" : 1767948515561,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767948457304,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "ljkn"
+        }, {
+          "status" : "Review",
+          "cts" : 1767948320740,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767948098267,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767948044908,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767948020106,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767947964419,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767947941254,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767947888663,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767947851230,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767947776786,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767947736107,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767947704584,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767947677793,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767947654750,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767947621379,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767947294830,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767947225550,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767947100499,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767943284857,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "  "
+        }, {
+          "status" : "Review",
+          "cts" : 1767943126502,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767943012829,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767942690270,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767942638983,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767942611869,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767942452589,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767942436284,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767942131071,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1767941640043,
+          "lastModifiedBy" : "Kiran Kamble",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ {
+          "id" : "66dc0ef2e836d076001b628b",
+          "name" : "stage-data",
+          "timeStamp" : 1767949477719,
+          "deployedBy" : "Kiran Kamble"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : true,
         "deleted" : false
       }
     }
@@ -318,8 +674,15 @@
       "name" : "TEST_TBAC_NODES",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
-      "attachedProxies" : [ ],
+      "attachedProxies" : [ "6960a608613749329516dbb8" ],
       "attachedConnectors" : [ "6943e47fd4167432fe664f26" ]
+    }, {
+      "id" : "6960a608613749329516dbb8",
+      "proxyid" : "6960a608613749329516dbb7",
+      "name" : "TESTING_NODES",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
