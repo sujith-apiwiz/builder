@@ -1,5 +1,5 @@
 {
-  "cts" : 1767947821150,
+  "cts" : 1767947842123,
   "name" : "TESTING_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767941640043,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767947821147,
+        "mts" : 1767947842121,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -30,15 +30,17 @@
           "inbound" : {
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "v1" ],
             "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
+            "4f77ce68-5d8c-40b7-802d-d899ca92d70d" : [ "09ff529c-d84c-4628-9f5f-672349af371e" ],
             "09ff529c-d84c-4628-9f5f-672349af371e" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
             "03d10d8c-c49a-46c5-8c95-fda024f9a375" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ]
           },
           "outbound" : {
             "v1" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9" ],
             "bf301007-2cac-4caa-9400-ce0e59690ec9" : [ "abc119d1-c14c-4d18-ab0f-2173620b715b" ],
+            "09ff529c-d84c-4628-9f5f-672349af371e" : [ "4f77ce68-5d8c-40b7-802d-d899ca92d70d" ],
             "abc119d1-c14c-4d18-ab0f-2173620b715b" : [ "03d10d8c-c49a-46c5-8c95-fda024f9a375", "09ff529c-d84c-4628-9f5f-672349af371e" ]
           },
-          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "abc119d1-c14c-4d18-ab0f-2173620b715b", "03d10d8c-c49a-46c5-8c95-fda024f9a375", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
+          "allNeighbours" : [ "bf301007-2cac-4caa-9400-ce0e59690ec9", "abc119d1-c14c-4d18-ab0f-2173620b715b", "03d10d8c-c49a-46c5-8c95-fda024f9a375", "4f77ce68-5d8c-40b7-802d-d899ca92d70d", "v1", "09ff529c-d84c-4628-9f5f-672349af371e" ]
         },
         "vertexHashMap" : {
           "bf301007-2cac-4caa-9400-ce0e59690ec9" : {
@@ -186,6 +188,20 @@
                   "data" : "",
                   "type" : "json"
                 }
+              }
+            }
+          },
+          "4f77ce68-5d8c-40b7-802d-d899ca92d70d" : {
+            "vertexId" : "4f77ce68-5d8c-40b7-802d-d899ca92d70d",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "data" : "{{{data}}}",
+                "type" : "JSON"
               }
             }
           },
