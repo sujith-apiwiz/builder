@@ -1,5 +1,5 @@
 {
-  "cts" : 1767952452980,
+  "cts" : 1767952524596,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767952452907,
+        "mts" : 1767952524583,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -31,16 +31,18 @@
             "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" : [ "v1" ],
             "1644b62d-e8eb-44b3-b785-7c4184128104" : [ "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ],
             "ceb27528-fda8-482f-a3eb-6282c120ae78" : [ "1644b62d-e8eb-44b3-b785-7c4184128104" ],
-            "6d911907-26f4-493f-ab1f-6f969085dcb3" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ],
+            "6d911907-26f4-493f-ab1f-6f969085dcb3" : [ "164f08ce-aeab-4785-90dd-35d623d5e923" ],
+            "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ],
             "6fe55857-41c8-4da2-be73-c026cd699239" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ]
           },
           "outbound" : {
             "v1" : [ "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ],
             "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" : [ "1644b62d-e8eb-44b3-b785-7c4184128104" ],
             "1644b62d-e8eb-44b3-b785-7c4184128104" : [ "ceb27528-fda8-482f-a3eb-6282c120ae78" ],
-            "ceb27528-fda8-482f-a3eb-6282c120ae78" : [ "6fe55857-41c8-4da2-be73-c026cd699239", "6d911907-26f4-493f-ab1f-6f969085dcb3" ]
+            "164f08ce-aeab-4785-90dd-35d623d5e923" : [ "6d911907-26f4-493f-ab1f-6f969085dcb3" ],
+            "ceb27528-fda8-482f-a3eb-6282c120ae78" : [ "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923" ]
           },
-          "allNeighbours" : [ "6fe55857-41c8-4da2-be73-c026cd699239", "6d911907-26f4-493f-ab1f-6f969085dcb3", "v1", "1644b62d-e8eb-44b3-b785-7c4184128104", "ceb27528-fda8-482f-a3eb-6282c120ae78", "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ]
+          "allNeighbours" : [ "6fe55857-41c8-4da2-be73-c026cd699239", "164f08ce-aeab-4785-90dd-35d623d5e923", "6d911907-26f4-493f-ab1f-6f969085dcb3", "v1", "1644b62d-e8eb-44b3-b785-7c4184128104", "ceb27528-fda8-482f-a3eb-6282c120ae78", "e5a0bb76-5e29-4a2c-8f0b-2ea9a582eb25" ]
         },
         "vertexHashMap" : {
           "6fe55857-41c8-4da2-be73-c026cd699239" : {
@@ -56,6 +58,33 @@
                 "type" : "JSON"
               }
             }
+          },
+          "164f08ce-aeab-4785-90dd-35d623d5e923" : {
+            "vertexId" : "164f08ce-aeab-4785-90dd-35d623d5e923",
+            "vertexType" : "DATABASE",
+            "name" : "testDb",
+            "databaseData" : {
+              "connectorId" : "6943e47fd4167432fe664f26",
+              "databaseType" : "MONGODB",
+              "query" : "{\"operation\":\"insert\",\"databaseName\":\"student-details\",\"collection\":\"student.details\",\"documents\":[{\"_id\":\"\",\"name\":\"\",\"age\":\"\",\"class\":\"\",\"roll no\":\"\"}],\"updates\":[{\"q\":{},\"u\":{},\"upsert\":false,\"multi\":false}],\"pipelines\":[{\"$match\":{\"status\":\"TESTED\"}},{\"$facet\":{\"deploymentFacet\":[{\"$group\":{\"_id\":\"$deploymentAccess.name\",\"count\":{\"$sum\":1}}},{\"$sort\":{\"count\":-1}},{\"$limit\":5}],\"tlsSettingsFacet\":[{\"$group\":{\"_id\":\"$tlsSettings.tlsMode\",\"totalCertificates\":{\"$sum\":1},\"avgPort\":{\"$avg\":\"$port\"}}}],\"statusHistoryFacet\":[{\"$unwind\":\"$statusHistory\"},{\"$group\":{\"_id\":\"$statusHistory.status\",\"count\":{\"$sum\":1}}}]}},{\"$project\":{\"deploymentFacet\":1,\"tlsSettingsFacet\":1,\"statusHistoryFacet\":1}}],\"deletes\":[{\"q\":{},\"limit\":0}],\"filter\":{},\"projection\":{},\"sort\":{},\"limit\":0,\"skip\":0}",
+              "variableName" : "kk",
+              "connectorName" : "Deepak CloudDB Tagged",
+              "tenantName" : "student-details",
+              "collectionName" : "student.details",
+              "manual" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
           },
           "v1" : {
             "vertexId" : "v1",
@@ -120,7 +149,7 @@
                   }
                 }
               },
-              "flowVertexes" : [ "6d911907-26f4-493f-ab1f-6f969085dcb3" ]
+              "flowVertexes" : [ "164f08ce-aeab-4785-90dd-35d623d5e923" ]
             }, {
               "condition" : "else",
               "assertion" : {
@@ -237,6 +266,36 @@
         "deleted" : false
       }
     }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MongoDb.Configuration",
+    "data" : {
+      "mongoDBConfigurationData" : {
+        "id" : "6943e47fd4167432fe664f26",
+        "cts" : 1766057087375,
+        "createdUserName" : "Deepak Satuluri",
+        "modifiedUserName" : "Deepak Satuluri",
+        "mts" : 1766061048809,
+        "createdBy" : "685a38a166575941216c9c0e",
+        "modifiedBy" : "685a38a166575941216c9c0e",
+        "name" : "Deepak CloudDB Tagged",
+        "description" : "Cloud DB",
+        "host" : "cluster0.36fr1.mongodb.net/",
+        "scheme" : "mongodb+srv",
+        "url" : "mongodb+srv://apiwiz-database:oNyFlrO4XM5AWX8Y@cluster0.36fr1.mongodb.net/",
+        "authentication" : {
+          "mongoDbAuthType" : "userNamePassword",
+          "username" : "apiwiz-database",
+          "password" : "oNyFlrO4XM5AWX8Y",
+          "authenticationMechanism" : "DEFAULT"
+        },
+        "ssl" : {
+          "sslConnection" : false,
+          "tlsAllowInvalidHostnames" : false
+        }
+      },
+      "databaseType" : "MongoDb"
+    }
   } ],
   "metadata" : {
     "proxyMetadataDetailsDtoList" : [ {
@@ -246,7 +305,7 @@
       "attachedEnv" : "",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
-      "attachedConnectors" : [ ]
+      "attachedConnectors" : [ "6943e47fd4167432fe664f26" ]
     } ],
     "collectionMetadataDetailsDtoList" : [ ],
     "environmentMetadataDetailsDtoList" : [ {
@@ -254,6 +313,9 @@
       "name" : ""
     } ],
     "sharedFlowMetadataDetailsDtoList" : [ ],
-    "connectorMetadataDetailsDtoList" : [ ]
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "6943e47fd4167432fe664f26",
+      "name" : "Deepak CloudDB Tagged"
+    } ]
   }
 }
