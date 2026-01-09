@@ -1,5 +1,5 @@
 {
-  "cts" : 1767954431972,
+  "cts" : 1767956999945,
   "name" : "TEST_TBAC_NODES",
   "exportedBy" : "Kiran Kamble",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1767952105628,
         "createdUserName" : "Kiran Kamble",
         "modifiedUserName" : "Kiran Kamble",
-        "mts" : 1767954431959,
+        "mts" : 1767956999790,
         "createdBy" : "685b8a3df073051941d15c1c",
         "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
@@ -55,11 +55,11 @@
             "name" : "Call Workflow",
             "description" : "",
             "callWorkflowData" : {
-              "childWorkflowId" : "691185f013c1403c9851fb0c",
-              "childWorkflowName" : "ParentFlow",
+              "childWorkflowId" : "6960939f613749329516d1e7",
+              "childWorkflowName" : "New Workflow 847",
               "virtualHostId" : "66dc0ef2e836d076001b628b",
               "virtualHostName" : "stage-data",
-              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/testing-variable-logger/{a}/{b}",
+              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/ParentFlow",
               "apiMethod" : "GET",
               "request" : {
                 "headerParams" : [ ],
@@ -321,6 +321,16 @@
         },
         "statusHistory" : [ {
           "status" : "Review",
+          "cts" : 1767954597308,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767954449798,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
           "cts" : 1767954124911,
           "lastModifiedBy" : "685b8a3df073051941d15c1c",
           "description" : "Proxy undeploy"
@@ -416,293 +426,140 @@
     "collectionName" : "ApiBuilder.Proxy.List",
     "data" : {
       "proxyData" : {
-        "id" : "691185f013c1403c9851fb0c",
-        "cts" : 1762756080875,
-        "createdUserName" : "Nihal Ahamed",
-        "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1762940216970,
-        "createdBy" : "6704b7de02afc5238c963878",
-        "modifiedBy" : "6655a103339aa715119d5a13",
+        "id" : "6960939f613749329516d1e7",
+        "cts" : 1767936927146,
+        "createdUserName" : "divakar v",
+        "modifiedUserName" : "Kiran Kamble",
+        "mts" : 1767956952875,
+        "createdBy" : "63cf749921c7bb55c7368952",
+        "modifiedBy" : "685b8a3df073051941d15c1c",
         "taggedTeams" : [ ],
-        "proxyId" : "691185f013c1403c9851fb0b",
+        "proxyId" : "6960939f613749329516d1e6",
         "revision" : 1,
-        "name" : "ParentFlow",
+        "name" : "New Workflow 847",
         "description" : "",
         "apiType" : "RESTAPI",
         "apiMethod" : "GET",
-        "path" : "/ParentFlow",
-        "pathArray" : [ "ParentFlow" ],
+        "path" : "/testing-variable-logger/{a}/{b}",
+        "pathArray" : [ "testing-variable-logger", "*", "*" ],
         "revisionStatus" : "APPROVED",
         "locked" : true,
-        "lockedBy" : "Pranav Ananth",
+        "lockedBy" : "Kiran Kamble",
         "nodeDataHashMap" : {
           "inbound" : {
-            "1503c303-4caa-443a-9a80-bbc7e465c11d" : [ "v1" ],
-            "df4d2050-e409-452c-9f37-67cd40563ef4" : [ "1503c303-4caa-443a-9a80-bbc7e465c11d" ]
+            "21d40d53-ba0b-4432-a1a7-e612b3704242" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ],
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "v1" ]
           },
           "outbound" : {
-            "v1" : [ "1503c303-4caa-443a-9a80-bbc7e465c11d" ],
-            "1503c303-4caa-443a-9a80-bbc7e465c11d" : [ "df4d2050-e409-452c-9f37-67cd40563ef4" ]
+            "f324c5f3-30d8-43ff-ac35-77653abdec47" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242" ],
+            "v1" : [ "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
           },
-          "allNeighbours" : [ "1503c303-4caa-443a-9a80-bbc7e465c11d", "df4d2050-e409-452c-9f37-67cd40563ef4", "v1" ]
+          "allNeighbours" : [ "21d40d53-ba0b-4432-a1a7-e612b3704242", "v1", "f324c5f3-30d8-43ff-ac35-77653abdec47" ]
         },
         "vertexHashMap" : {
-          "1503c303-4caa-443a-9a80-bbc7e465c11d" : {
-            "vertexId" : "1503c303-4caa-443a-9a80-bbc7e465c11d",
-            "vertexType" : "CALL_WORKFLOW",
-            "name" : "Call Workflow",
-            "description" : "",
-            "callWorkflowData" : {
-              "childWorkflowId" : "691454ba89f4533b36cba590",
-              "childWorkflowName" : "child flow 2",
-              "virtualHostId" : "66dc0ef2e836d076001b628b",
-              "virtualHostName" : "stage-data",
-              "url" : "HTTPS://stage-data-lkgc.apiwiz.io/child/exec/1",
-              "apiMethod" : "GET",
-              "request" : {
-                "headerParams" : [ ],
-                "queryParams" : [ ],
-                "targetRequestBodyType" : "NONE",
-                "body" : {
-                  "data" : "{}",
-                  "type" : "json"
-                },
-                "formParams" : [ ],
-                "urlEncodedParams" : [ ]
-              },
-              "response" : {
-                "statusCode" : 400,
-                "variables" : [ {
-                  "name" : "extractedValue",
-                  "reference" : "body",
-                  "value" : "$",
-                  "active" : true,
-                  "source" : "raw",
-                  "hide" : false,
-                  "feelExpression" : false
-                }, {
-                  "name" : "extractCode",
-                  "reference" : "status-code",
-                  "value" : "",
-                  "active" : true,
-                  "source" : "status-code",
-                  "hide" : false,
-                  "feelExpression" : false
-                } ]
-              },
-              "timeout" : 0,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            },
-            "imported" : false,
-            "skipRuntimeVariables" : false
-          },
-          "v1" : {
-            "vertexId" : "v1",
-            "vertexType" : "START",
-            "name" : "Request",
-            "requestVariables" : [ ],
-            "mandatoryHeaders" : [ ],
-            "mandatoryQueryParams" : [ ],
-            "imported" : true,
-            "skipRuntimeVariables" : false,
-            "securityResponse" : {
-              "isEnabled" : false,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            }
-          },
-          "df4d2050-e409-452c-9f37-67cd40563ef4" : {
-            "vertexId" : "df4d2050-e409-452c-9f37-67cd40563ef4",
+          "21d40d53-ba0b-4432-a1a7-e612b3704242" : {
+            "vertexId" : "21d40d53-ba0b-4432-a1a7-e612b3704242",
             "vertexType" : "STOP",
             "name" : "Stop",
             "imported" : false,
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
-              "headers" : {
-                "content-type" : "application/json"
-              },
               "body" : {
-                "data" : "{\n    \"status\": \"ok\"\n}",
-                "type" : "json"
-              }
-            }
-          }
-        },
-        "statusHistory" : [ {
-          "status" : "Approved",
-          "cts" : 1762940213867,
-          "lastModifiedBy" : "6655a103339aa715119d5a13",
-          "description" : "a"
-        }, {
-          "status" : "Review",
-          "cts" : 1762940182092,
-          "lastModifiedBy" : "6655a103339aa715119d5a13",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1762939987375,
-          "lastModifiedBy" : "6655a103339aa715119d5a13",
-          "description" : "a"
-        }, {
-          "status" : "Review",
-          "cts" : 1762840661717,
-          "lastModifiedBy" : "685b8a3df073051941d15c1c",
-          "description" : "Proxy undeploy"
-        }, {
-          "status" : "Approved",
-          "cts" : 1762756811045,
-          "lastModifiedBy" : "6704b7de02afc5238c963878",
-          "description" : "d"
-        }, {
-          "status" : "Draft",
-          "cts" : 1762756080875,
-          "lastModifiedBy" : "Nihal Ahamed",
-          "description" : "Created new proxy"
-        } ],
-        "virtualHostList" : [ {
-          "id" : "66dc0ef2e836d076001b628b",
-          "name" : "stage-data",
-          "timeStamp" : 1762940216890,
-          "deployedBy" : "Pranav Ananth"
-        } ],
-        "enableTracing" : false,
-        "environmentName" : "",
-        "environmentId" : "",
-        "selectedVirtualHostName" : "",
-        "selectedVirtualHostId" : "",
-        "kafkaConnectorId" : "",
-        "kafkaTopic" : "",
-        "kafkaGroupId" : "",
-        "enableLogging" : false,
-        "misconfigurationMessages" : [ ],
-        "validated" : true,
-        "deployed" : true,
-        "deleted" : false
-      }
-    }
-  }, {
-    "type" : "proxy",
-    "collectionName" : "ApiBuilder.Proxy.List",
-    "data" : {
-      "proxyData" : {
-        "id" : "691454ba89f4533b36cba590",
-        "cts" : 1762940090143,
-        "createdUserName" : "Pranav Ananth",
-        "modifiedUserName" : "Pranav Ananth",
-        "mts" : 1762940165118,
-        "createdBy" : "6655a103339aa715119d5a13",
-        "modifiedBy" : "6655a103339aa715119d5a13",
-        "taggedTeams" : [ ],
-        "proxyId" : "691454ba89f4533b36cba58f",
-        "revision" : 1,
-        "name" : "child flow 2",
-        "description" : "",
-        "apiType" : "RESTAPI",
-        "apiMethod" : "GET",
-        "path" : "/child/exec/1",
-        "pathArray" : [ "child", "exec", "1" ],
-        "revisionStatus" : "APPROVED",
-        "locked" : true,
-        "lockedBy" : "Pranav Ananth",
-        "nodeDataHashMap" : {
-          "inbound" : {
-            "934dca2d-8286-4d66-9921-00563ba7c1a6" : [ "v1" ],
-            "51da397a-a466-495c-86b5-6a868ad20367" : [ "934dca2d-8286-4d66-9921-00563ba7c1a6" ]
-          },
-          "outbound" : {
-            "v1" : [ "934dca2d-8286-4d66-9921-00563ba7c1a6" ],
-            "934dca2d-8286-4d66-9921-00563ba7c1a6" : [ "51da397a-a466-495c-86b5-6a868ad20367" ]
-          },
-          "allNeighbours" : [ "51da397a-a466-495c-86b5-6a868ad20367", "v1", "934dca2d-8286-4d66-9921-00563ba7c1a6" ]
-        },
-        "vertexHashMap" : {
-          "51da397a-a466-495c-86b5-6a868ad20367" : {
-            "vertexId" : "51da397a-a466-495c-86b5-6a868ad20367",
-            "vertexType" : "STOP",
-            "name" : "Stop",
-            "imported" : false,
-            "skipRuntimeVariables" : false,
-            "proxyResponse" : {
-              "statusCode" : 200,
-              "headers" : {
-                "content-type" : "application/json"
-              },
-              "body" : {
-                "data" : "\"child executed successfully\"",
-                "type" : "json"
+                "type" : "JSON"
               }
             }
           },
-          "v1" : {
-            "vertexId" : "v1",
-            "vertexType" : "START",
-            "name" : "Request",
-            "requestVariables" : [ ],
-            "mandatoryHeaders" : [ ],
-            "mandatoryQueryParams" : [ ],
-            "imported" : true,
-            "skipRuntimeVariables" : false,
-            "securityResponse" : {
-              "isEnabled" : false,
-              "skip" : false,
-              "showActualErrorMessage" : false,
-              "continueOnError" : false,
-              "errorResponse" : {
-                "statusCode" : 400,
-                "body" : {
-                  "data" : "",
-                  "type" : "json"
-                }
-              }
-            }
-          },
-          "934dca2d-8286-4d66-9921-00563ba7c1a6" : {
-            "vertexId" : "934dca2d-8286-4d66-9921-00563ba7c1a6",
+          "f324c5f3-30d8-43ff-ac35-77653abdec47" : {
+            "vertexId" : "f324c5f3-30d8-43ff-ac35-77653abdec47",
             "vertexType" : "LOGGER",
-            "name" : "test log",
+            "name" : "Logging ",
             "description" : "",
             "logData" : {
-              "data" : "\"test-ok\"",
+              "data" : "|{{a}}\n{{b}}",
               "skip" : false
             },
             "imported" : false,
             "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ {
+              "name" : "a",
+              "reference" : "path-variable",
+              "value" : "a",
+              "variableDataType" : "INTEGER",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            }, {
+              "name" : "b",
+              "reference" : "path-variable",
+              "value" : "b",
+              "variableDataType" : "INTEGER",
+              "active" : true,
+              "source" : "path-variable",
+              "hide" : false,
+              "feelExpression" : false
+            } ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
           }
         },
         "statusHistory" : [ {
           "status" : "Approved",
-          "cts" : 1762940162108,
-          "lastModifiedBy" : "6655a103339aa715119d5a13",
-          "description" : "a"
+          "cts" : 1767956948980,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767956929724,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767954004183,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1767953985386,
+          "lastModifiedBy" : "685b8a3df073051941d15c1c",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1767937184505,
+          "lastModifiedBy" : "63cf749921c7bb55c7368952",
+          "description" : "qwe"
         }, {
           "status" : "Draft",
-          "cts" : 1762940090143,
-          "lastModifiedBy" : "Pranav Ananth",
+          "cts" : 1767936927146,
+          "lastModifiedBy" : "divakar v",
           "description" : "Created new proxy"
         } ],
         "virtualHostList" : [ {
           "id" : "66dc0ef2e836d076001b628b",
           "name" : "stage-data",
-          "timeStamp" : 1762940165092,
-          "deployedBy" : "Pranav Ananth"
+          "timeStamp" : 1767956952852,
+          "deployedBy" : "Kiran Kamble"
         } ],
         "enableTracing" : false,
         "environmentName" : "",
@@ -835,19 +692,12 @@
       "name" : "TEST_TBAC_NODES",
       "attachedEnv" : "",
       "attachedSharedFlows" : [ "6960d2e5867f997c20008afb" ],
-      "attachedProxies" : [ "691185f013c1403c9851fb0c" ],
+      "attachedProxies" : [ "6960939f613749329516d1e7" ],
       "attachedConnectors" : [ "6943e47fd4167432fe664f26" ]
     }, {
-      "id" : "691185f013c1403c9851fb0c",
-      "proxyid" : "691185f013c1403c9851fb0b",
-      "name" : "ParentFlow",
-      "attachedSharedFlows" : [ ],
-      "attachedProxies" : [ "691454ba89f4533b36cba590" ],
-      "attachedConnectors" : [ ]
-    }, {
-      "id" : "691454ba89f4533b36cba590",
-      "proxyid" : "691454ba89f4533b36cba58f",
-      "name" : "child flow 2",
+      "id" : "6960939f613749329516d1e7",
+      "proxyid" : "6960939f613749329516d1e6",
+      "name" : "New Workflow 847",
       "attachedSharedFlows" : [ ],
       "attachedProxies" : [ ],
       "attachedConnectors" : [ ]
