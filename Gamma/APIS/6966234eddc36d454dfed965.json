@@ -1,0 +1,181 @@
+{
+  "cts" : 1768301577221,
+  "name" : "New Workflow 15",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6966234eddc36d454dfed965",
+        "cts" : 1768301390673,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1768301571619,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "6966234eddc36d454dfed964",
+        "revision" : 1,
+        "name" : "New Workflow 15",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/check-db",
+        "pathArray" : [ "check-db" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "03737734-3b03-4334-a319-936b91964c62" : [ "v1" ],
+            "3825e1d1-b779-4387-981e-20347689496b" : [ "03737734-3b03-4334-a319-936b91964c62" ]
+          },
+          "outbound" : {
+            "v1" : [ "03737734-3b03-4334-a319-936b91964c62" ],
+            "03737734-3b03-4334-a319-936b91964c62" : [ "3825e1d1-b779-4387-981e-20347689496b" ]
+          },
+          "allNeighbours" : [ "3825e1d1-b779-4387-981e-20347689496b", "03737734-3b03-4334-a319-936b91964c62", "v1" ]
+        },
+        "vertexHashMap" : {
+          "3825e1d1-b779-4387-981e-20347689496b" : {
+            "vertexId" : "3825e1d1-b779-4387-981e-20347689496b",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "03737734-3b03-4334-a319-936b91964c62" : {
+            "vertexId" : "03737734-3b03-4334-a319-936b91964c62",
+            "vertexType" : "DATABASE",
+            "name" : "a",
+            "databaseData" : {
+              "connectorId" : "695ceb906137493295166b01",
+              "databaseType" : "MSSQL",
+              "query" : "SELECT * FROM Employees;\n",
+              "variableName" : "res",
+              "connectorName" : "sujith",
+              "schemaName" : "db_denydatawriter",
+              "tableName" : "MSreplication_options",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "MSreplication_options",
+                "schema" : "db_denydatawriter",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1768301390673,
+          "lastModifiedBy" : "Apiwiz Admin",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.MsSql.Configuration",
+    "data" : {
+      "msSqlConfigurationData" : {
+        "id" : "695ceb906137493295166b01",
+        "cts" : 1767697296700,
+        "createdUserName" : "First user",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1768301342020,
+        "createdBy" : "6948eef7a364ea598e8b58c2",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "name" : "sujith",
+        "description" : "a",
+        "msSqlConfigType" : "SQL_AUTH",
+        "hostname" : "54.203.45.67",
+        "port" : "1433",
+        "username" : "SA",
+        "password" : "test@123",
+        "databaseName" : "master",
+        "url" : "jdbc:sqlserver://54.203.45.67:1433;databaseName=master"
+      },
+      "databaseType" : "MsSql"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "6966234eddc36d454dfed965",
+      "proxyid" : "6966234eddc36d454dfed964",
+      "name" : "New Workflow 15",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "695ceb906137493295166b01" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695ceb906137493295166b01",
+      "name" : "sujith"
+    } ]
+  }
+}
