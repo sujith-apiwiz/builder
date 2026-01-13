@@ -1,0 +1,196 @@
+{
+  "cts" : 1768302657702,
+  "name" : "New Workflow 15",
+  "exportedBy" : "Apiwiz Admin",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6966234eddc36d454dfed965",
+        "cts" : 1768301390673,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1768302657642,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ ],
+        "proxyId" : "6966234eddc36d454dfed964",
+        "revision" : 1,
+        "name" : "New Workflow 15",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/check-db",
+        "pathArray" : [ "check-db" ],
+        "revisionStatus" : "REVIEW",
+        "locked" : true,
+        "lockedBy" : "Apiwiz Admin",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "bef9205e-fbf0-4042-8b23-d5ab304beb25" : [ "v1" ],
+            "3825e1d1-b779-4387-981e-20347689496b" : [ "bef9205e-fbf0-4042-8b23-d5ab304beb25" ]
+          },
+          "outbound" : {
+            "v1" : [ "bef9205e-fbf0-4042-8b23-d5ab304beb25" ],
+            "bef9205e-fbf0-4042-8b23-d5ab304beb25" : [ "3825e1d1-b779-4387-981e-20347689496b" ]
+          },
+          "allNeighbours" : [ "3825e1d1-b779-4387-981e-20347689496b", "bef9205e-fbf0-4042-8b23-d5ab304beb25", "v1" ]
+        },
+        "vertexHashMap" : {
+          "3825e1d1-b779-4387-981e-20347689496b" : {
+            "vertexId" : "3825e1d1-b779-4387-981e-20347689496b",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "bef9205e-fbf0-4042-8b23-d5ab304beb25" : {
+            "vertexId" : "bef9205e-fbf0-4042-8b23-d5ab304beb25",
+            "vertexType" : "DATABASE",
+            "name" : "2",
+            "databaseData" : {
+              "connectorId" : "695ca3756137493295165919",
+              "databaseType" : "POSTGRESQL",
+              "query" : "SELECT * FROM employees;\n",
+              "variableName" : "342",
+              "connectorName" : "sujith",
+              "schemaName" : "_timescaledb_catalog",
+              "tableName" : "chunk",
+              "manual" : false,
+              "queryRequest" : {
+                "tableName" : "chunk",
+                "schema" : "_timescaledb_catalog",
+                "operation" : "SELECT",
+                "selectedFields" : { },
+                "limit" : 0,
+                "offSet" : 0,
+                "top" : 0
+              },
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1768302461712,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1768301578578,
+          "lastModifiedBy" : "6943a6099f593fb753fe6911",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1768301390673,
+          "lastModifiedBy" : "Apiwiz Admin",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "selectedVirtualHostName" : "",
+        "selectedVirtualHostId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  }, {
+    "type" : "connector",
+    "collectionName" : "Connectors.PostgreSql.Configuration",
+    "data" : {
+      "postgreSQLConfigurationData" : {
+        "id" : "695ca3756137493295165919",
+        "cts" : 1767678837629,
+        "createdUserName" : "Apiwiz Admin",
+        "modifiedUserName" : "Apiwiz Admin",
+        "mts" : 1768301360753,
+        "createdBy" : "6943a6099f593fb753fe6911",
+        "modifiedBy" : "6943a6099f593fb753fe6911",
+        "taggedTeams" : [ {
+          "id" : "6948f1e0a364ea598e8b59c9",
+          "name" : "Beta"
+        } ],
+        "name" : "sujith",
+        "description" : "sujith",
+        "postgresAuthType" : "USERNAMEPASSWORD",
+        "postgresqlHostname" : "54.203.45.67",
+        "postgresqlPort" : "5432",
+        "postgresqlDatabase" : "apiwiz",
+        "postgresqlUsername" : "postgres",
+        "postgresqlPassword" : "test123",
+        "url" : "postgresql://54.203.45.67:5432"
+      },
+      "databaseType" : "PostgreSql"
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "6966234eddc36d454dfed965",
+      "proxyid" : "6966234eddc36d454dfed964",
+      "name" : "New Workflow 15",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ "695ca3756137493295165919" ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ {
+      "id" : "695ca3756137493295165919",
+      "name" : "sujith"
+    } ]
+  }
+}
