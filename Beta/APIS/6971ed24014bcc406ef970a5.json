@@ -1,5 +1,5 @@
 {
-  "cts" : 1769073962154,
+  "cts" : 1769073969910,
   "name" : "New Workflow 118",
   "exportedBy" : "sujith kumar",
   "data" : [ {
@@ -11,7 +11,7 @@
         "cts" : 1769073956897,
         "createdUserName" : "sujith kumar",
         "modifiedUserName" : "sujith kumar",
-        "mts" : 1769073956897,
+        "mts" : 1769073963620,
         "createdBy" : "67ef785a0af8326d55247bec",
         "modifiedBy" : "67ef785a0af8326d55247bec",
         "taggedTeams" : [ ],
@@ -44,8 +44,11 @@
             "skipRuntimeVariables" : false,
             "proxyResponse" : {
               "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
               "body" : {
-                "type" : "JSON"
+                "type" : "json"
               }
             }
           },
@@ -88,8 +91,8 @@
         "enableLogging" : false,
         "misconfigurationMessages" : [ ],
         "validated" : true,
-        "deployed" : false,
-        "deleted" : false
+        "deleted" : false,
+        "deployed" : false
       }
     }
   } ],
