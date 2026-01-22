@@ -1,0 +1,216 @@
+{
+  "cts" : 1769073660954,
+  "name" : "New Workflow 116",
+  "exportedBy" : "sujith kumar",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "69710cc7014bcc406ef96212",
+        "cts" : 1769016519376,
+        "createdUserName" : "sujith kumar",
+        "modifiedUserName" : "sujith kumar",
+        "mts" : 1769073655535,
+        "createdBy" : "67ef785a0af8326d55247bec",
+        "modifiedBy" : "67ef785a0af8326d55247bec",
+        "taggedTeams" : [ ],
+        "proxyId" : "69710cc7014bcc406ef96211",
+        "revision" : 1,
+        "name" : "New Workflow 116",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/sujithTest",
+        "pathArray" : [ "sujithTest" ],
+        "revisionStatus" : "REVIEW",
+        "locked" : true,
+        "lockedBy" : "sujith kumar",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "a3d3831d-fa4d-4e84-81ba-efbf9705e976" : [ "v1" ],
+            "40f24130-29e6-4866-a2d6-348c5099ec2d" : [ "v1" ],
+            "22c38f12-27c0-4205-a96f-711a4c647911" : [ "a3d3831d-fa4d-4e84-81ba-efbf9705e976" ],
+            "8248448d-4767-43aa-91d9-969c2cdc1e38" : [ "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8", "22c38f12-27c0-4205-a96f-711a4c647911" ],
+            "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8" : [ "40f24130-29e6-4866-a2d6-348c5099ec2d" ],
+            "f3437368-6b75-4f13-a7e6-365420f2d20b" : [ "8248448d-4767-43aa-91d9-969c2cdc1e38" ]
+          },
+          "outbound" : {
+            "v1" : [ "a3d3831d-fa4d-4e84-81ba-efbf9705e976", "40f24130-29e6-4866-a2d6-348c5099ec2d" ],
+            "a3d3831d-fa4d-4e84-81ba-efbf9705e976" : [ "22c38f12-27c0-4205-a96f-711a4c647911" ],
+            "22c38f12-27c0-4205-a96f-711a4c647911" : [ "8248448d-4767-43aa-91d9-969c2cdc1e38" ],
+            "40f24130-29e6-4866-a2d6-348c5099ec2d" : [ "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8" ],
+            "8248448d-4767-43aa-91d9-969c2cdc1e38" : [ "f3437368-6b75-4f13-a7e6-365420f2d20b" ],
+            "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8" : [ "8248448d-4767-43aa-91d9-969c2cdc1e38" ]
+          },
+          "allNeighbours" : [ "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8", "8248448d-4767-43aa-91d9-969c2cdc1e38", "a3d3831d-fa4d-4e84-81ba-efbf9705e976", "v1", "22c38f12-27c0-4205-a96f-711a4c647911", "40f24130-29e6-4866-a2d6-348c5099ec2d", "f3437368-6b75-4f13-a7e6-365420f2d20b" ]
+        },
+        "vertexHashMap" : {
+          "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8" : {
+            "vertexId" : "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "a",
+              "value" : "20",
+              "type" : "STRING",
+              "feelExpression" : false,
+              "source" : "25bb88c7-4e6b-4af5-8a8b-8d9065e720c8",
+              "override" : true
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "8248448d-4767-43aa-91d9-969c2cdc1e38" : {
+            "vertexId" : "8248448d-4767-43aa-91d9-969c2cdc1e38",
+            "vertexType" : "OR_NODE",
+            "name" : "Or",
+            "description" : "",
+            "orNodeData" : {
+              "skip" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "a3d3831d-fa4d-4e84-81ba-efbf9705e976" : {
+            "vertexId" : "a3d3831d-fa4d-4e84-81ba-efbf9705e976",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 3,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          },
+          "22c38f12-27c0-4205-a96f-711a4c647911" : {
+            "vertexId" : "22c38f12-27c0-4205-a96f-711a4c647911",
+            "vertexType" : "VARIABLES",
+            "name" : "Set Variable",
+            "runtimeVariableList" : [ {
+              "name" : "a",
+              "value" : "10",
+              "type" : "STRING",
+              "feelExpression" : false,
+              "source" : "22c38f12-27c0-4205-a96f-711a4c647911",
+              "override" : true
+            } ],
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          },
+          "f3437368-6b75-4f13-a7e6-365420f2d20b" : {
+            "vertexId" : "f3437368-6b75-4f13-a7e6-365420f2d20b",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "headers" : {
+                "content-type" : "application/json"
+              },
+              "body" : {
+                "data" : "{{a}}s",
+                "type" : "json"
+              }
+            }
+          },
+          "40f24130-29e6-4866-a2d6-348c5099ec2d" : {
+            "vertexId" : "40f24130-29e6-4866-a2d6-348c5099ec2d",
+            "vertexType" : "DELAY",
+            "name" : "Delay",
+            "delayData" : {
+              "delayUnit" : "SECONDS",
+              "delayAmount" : 5,
+              "skip" : false,
+              "showActualErrorMessage" : false
+            },
+            "imported" : false,
+            "skipRuntimeVariables" : false
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Review",
+          "cts" : 1769073478904,
+          "lastModifiedBy" : "67ef785a0af8326d55247bec",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1769066466004,
+          "lastModifiedBy" : "67ef785a0af8326d55247bec",
+          "description" : " "
+        }, {
+          "status" : "Review",
+          "cts" : 1769066443042,
+          "lastModifiedBy" : "67ef785a0af8326d55247bec",
+          "description" : "Proxy undeploy"
+        }, {
+          "status" : "Approved",
+          "cts" : 1769016585946,
+          "lastModifiedBy" : "67ef785a0af8326d55247bec",
+          "description" : " "
+        }, {
+          "status" : "Draft",
+          "cts" : 1769016519376,
+          "lastModifiedBy" : "sujith kumar",
+          "description" : "Created new proxy"
+        } ],
+        "virtualHostList" : [ ],
+        "enableTracing" : false,
+        "environmentName" : "",
+        "environmentId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deleted" : false,
+        "deployed" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "69710cc7014bcc406ef96212",
+      "proxyid" : "69710cc7014bcc406ef96211",
+      "name" : "New Workflow 116",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : ""
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
