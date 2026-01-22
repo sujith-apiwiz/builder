@@ -1,0 +1,114 @@
+{
+  "cts" : 1769073962154,
+  "name" : "New Workflow 118",
+  "exportedBy" : "sujith kumar",
+  "data" : [ {
+    "type" : "proxy",
+    "collectionName" : "ApiBuilder.Proxy.List",
+    "data" : {
+      "proxyData" : {
+        "id" : "6971ed24014bcc406ef970a5",
+        "cts" : 1769073956897,
+        "createdUserName" : "sujith kumar",
+        "modifiedUserName" : "sujith kumar",
+        "mts" : 1769073956897,
+        "createdBy" : "67ef785a0af8326d55247bec",
+        "modifiedBy" : "67ef785a0af8326d55247bec",
+        "taggedTeams" : [ ],
+        "proxyId" : "6971ed24014bcc406ef970a4",
+        "revision" : 1,
+        "name" : "New Workflow 118",
+        "description" : "",
+        "apiType" : "RESTAPI",
+        "apiMethod" : "GET",
+        "path" : "/asdf3r",
+        "pathArray" : [ "asdf3r" ],
+        "revisionStatus" : "DRAFT",
+        "locked" : true,
+        "lockedBy" : "sujith kumar",
+        "nodeDataHashMap" : {
+          "inbound" : {
+            "ce3d55f8-5e80-4908-aa7c-9f01da3e406b" : [ "v1" ]
+          },
+          "outbound" : {
+            "v1" : [ "ce3d55f8-5e80-4908-aa7c-9f01da3e406b" ]
+          },
+          "allNeighbours" : [ "ce3d55f8-5e80-4908-aa7c-9f01da3e406b", "v1" ]
+        },
+        "vertexHashMap" : {
+          "ce3d55f8-5e80-4908-aa7c-9f01da3e406b" : {
+            "vertexId" : "ce3d55f8-5e80-4908-aa7c-9f01da3e406b",
+            "vertexType" : "STOP",
+            "name" : "Stop",
+            "imported" : false,
+            "skipRuntimeVariables" : false,
+            "proxyResponse" : {
+              "statusCode" : 200,
+              "body" : {
+                "type" : "JSON"
+              }
+            }
+          },
+          "v1" : {
+            "vertexId" : "v1",
+            "vertexType" : "START",
+            "name" : "Request",
+            "requestVariables" : [ ],
+            "mandatoryHeaders" : [ ],
+            "mandatoryQueryParams" : [ ],
+            "imported" : true,
+            "skipRuntimeVariables" : false,
+            "securityResponse" : {
+              "isEnabled" : false,
+              "skip" : false,
+              "showActualErrorMessage" : false,
+              "continueOnError" : false,
+              "errorResponse" : {
+                "statusCode" : 400,
+                "body" : {
+                  "data" : "",
+                  "type" : "json"
+                }
+              }
+            }
+          }
+        },
+        "statusHistory" : [ {
+          "status" : "Draft",
+          "cts" : 1769073956897,
+          "lastModifiedBy" : "sujith kumar",
+          "description" : "Created new proxy"
+        } ],
+        "enableTracing" : true,
+        "environmentName" : "Clear environment",
+        "environmentId" : "",
+        "kafkaConnectorId" : "",
+        "kafkaTopic" : "",
+        "kafkaGroupId" : "",
+        "enableLogging" : false,
+        "misconfigurationMessages" : [ ],
+        "validated" : true,
+        "deployed" : false,
+        "deleted" : false
+      }
+    }
+  } ],
+  "metadata" : {
+    "proxyMetadataDetailsDtoList" : [ {
+      "id" : "6971ed24014bcc406ef970a5",
+      "proxyid" : "6971ed24014bcc406ef970a4",
+      "name" : "New Workflow 118",
+      "attachedEnv" : "",
+      "attachedSharedFlows" : [ ],
+      "attachedProxies" : [ ],
+      "attachedConnectors" : [ ]
+    } ],
+    "collectionMetadataDetailsDtoList" : [ ],
+    "environmentMetadataDetailsDtoList" : [ {
+      "id" : "",
+      "name" : "Clear environment"
+    } ],
+    "sharedFlowMetadataDetailsDtoList" : [ ],
+    "connectorMetadataDetailsDtoList" : [ ]
+  }
+}
