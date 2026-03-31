@@ -6,11 +6,19 @@
   },
   "servers": [
     {
-      "url": "http://localhost:8000"
+      "x-schema": "https://",
+      "url": "https://apis.apiwiz.io/v2/ecommerce",
+      "x-name": "Dev",
+      "x-basePath": "/v2/ecommerce",
+      "description": "Dev",
+      "variables": {},
+      "x-hide": false,
+      "x-environmentId": "69c6154344f75f22a5755564",
+      "x-environmentName": "DevEnv"
     }
   ],
   "paths": {
-    "/v2/ecommerce/shipping/address/sujith-18": {
+    "/shipping/address/sujith-2": {
       "post": {
         "tags": [
           "ShippingService"
@@ -40,7 +48,7 @@
         }
       }
     },
-    "/v2/ecommerce/shipping/address/{addressId}": {
+    "/shipping/address/{addressId}": {
       "put": {
         "tags": [
           "ShippingService"
@@ -79,7 +87,7 @@
         }
       }
     },
-    "/v2/ecommerce/shipping/{orderId}/track": {
+    "/shipping/{orderId}/track": {
       "get": {
         "tags": [
           "ShippingService"
@@ -109,7 +117,7 @@
         }
       }
     },
-    "/v2/ecommerce/cart/{userId}/add": {
+    "/cart/{userId}/add": {
       "post": {
         "tags": [
           "CartService"
@@ -148,7 +156,7 @@
         }
       }
     },
-    "/v2/ecommerce/cart/{userId}": {
+    "/cart/{userId}": {
       "get": {
         "tags": [
           "CartService"
@@ -178,7 +186,7 @@
         }
       }
     },
-    "/v2/ecommerce/cart/{userId}/remove/{productId}": {
+    "/cart/{userId}/remove/{productId}": {
       "delete": {
         "tags": [
           "CartService"
@@ -216,7 +224,7 @@
         }
       }
     },
-    "/v2/ecommerce/cart/{userId}/update": {
+    "/cart/{userId}/update": {
       "put": {
         "tags": [
           "CartService"
@@ -255,7 +263,7 @@
         }
       }
     },
-    "/v2/ecommerce/products": {
+    "/products": {
       "get": {
         "tags": [
           "ProductService"
@@ -307,7 +315,7 @@
         }
       }
     },
-    "/v2/ecommerce/products/{productId}": {
+    "/products/{productId}": {
       "get": {
         "tags": [
           "ProductService"
@@ -337,7 +345,7 @@
         }
       }
     },
-    "/v2/ecommerce/products/search": {
+    "/products/search": {
       "get": {
         "tags": [
           "ProductService"
@@ -427,7 +435,7 @@
         }
       }
     },
-    "/v2/ecommerce/users/register": {
+    "/users/register": {
       "post": {
         "tags": [
           "UserService"
@@ -457,7 +465,7 @@
         }
       }
     },
-    "/v2/ecommerce/payments/{paymentId}": {
+    "/payments/{paymentId}": {
       "get": {
         "tags": [
           "PaymentService"
@@ -487,7 +495,7 @@
         }
       }
     },
-    "/v2/ecommerce/payments/webhook": {
+    "/payments/webhook": {
       "post": {
         "tags": [
           "PaymentService"
@@ -517,7 +525,7 @@
         }
       }
     },
-    "/v2/ecommerce/payments/initiate": {
+    "/payments/initiate": {
       "post": {
         "tags": [
           "PaymentService"
@@ -547,7 +555,7 @@
         }
       }
     },
-    "/v2/ecommerce/orders/place/{userId}": {
+    "/orders/place/{userId}": {
       "post": {
         "tags": [
           "OrderService"
@@ -577,7 +585,7 @@
         }
       }
     },
-    "/v2/ecommerce/orders/{orderId}": {
+    "/orders/{orderId}": {
       "get": {
         "tags": [
           "OrderService"
@@ -635,7 +643,7 @@
         }
       }
     },
-    "/v2/ecommerce/orders/user/{userId}": {
+    "/orders/user/{userId}": {
       "get": {
         "tags": [
           "OrderService"
