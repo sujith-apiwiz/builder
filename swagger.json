@@ -18,7 +18,7 @@
     }
   ],
   "paths": {
-    "/shipping/address/sujith-3": {
+    "/shipping/address/sujith-4": {
       "post": {
         "tags": [
           "ShippingService"
