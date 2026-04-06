@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Ecommerce-3",
-    "version": "v2"
+    "title": "Ecommerce-2",
+    "version": "v3"
   },
   "servers": [
     {
