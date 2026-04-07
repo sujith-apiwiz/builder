@@ -8,7 +8,7 @@
     "url" : "http://localhost:8000"
   } ],
   "paths" : {
-    "/v25/ecommerce/users" : {
+    "/v26/ecommerce/users" : {
       "post" : {
         "tags" : [ "UserService" ],
         "operationId" : "registerUser",
@@ -32,7 +32,7 @@
         }
       }
     },
-    "/v25/ecommerce/orders/place/{userId}" : {
+    "/v26/ecommerce/orders/place/{userId}" : {
       "post" : {
         "tags" : [ "OrderService" ],
         "operationId" : "placeOrder",
@@ -55,7 +55,7 @@
         }
       }
     },
-    "/v25/ecommerce/orders/{orderId}" : {
+    "/v26/ecommerce/orders/{orderId}" : {
       "get" : {
         "tags" : [ "OrderService" ],
         "operationId" : "getOrder",
@@ -78,7 +78,7 @@
         }
       }
     },
-    "/v25/ecommerce/cart/{userId}/add" : {
+    "/v26/ecommerce/cart/{userId}/add" : {
       "post" : {
         "tags" : [ "CartService" ],
         "operationId" : "addToCart",
@@ -108,7 +108,7 @@
         }
       }
     },
-    "/v25/ecommerce/cart/{userId}" : {
+    "/v26/ecommerce/cart/{userId}" : {
       "get" : {
         "tags" : [ "CartService" ],
         "operationId" : "getCart",
@@ -131,7 +131,7 @@
         }
       }
     },
-    "/v25/ecommerce/shipping/{orderId}/track" : {
+    "/v26/ecommerce/shipping/{orderId}/track" : {
       "get" : {
         "tags" : [ "ShippingService" ],
         "operationId" : "trackOrder",
@@ -154,7 +154,7 @@
         }
       }
     },
-    "/v25/ecommerce/products" : {
+    "/v26/ecommerce/products" : {
       "post" : {
         "tags" : [ "ProductService" ],
         "operationId" : "addProduct",
@@ -178,7 +178,7 @@
         }
       }
     },
-    "/v25/ecommerce/payments/webhook" : {
+    "/v26/ecommerce/payments/webhook" : {
       "post" : {
         "tags" : [ "PaymentService" ],
         "operationId" : "paymentWebhook",
@@ -202,7 +202,7 @@
         }
       }
     },
-    "/v25/ecommerce/payments/initiate" : {
+    "/v26/ecommerce/payments/initiate" : {
       "post" : {
         "tags" : [ "PaymentService" ],
         "operationId" : "initiatePayment",
