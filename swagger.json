@@ -8,7 +8,7 @@
     "url" : "http://localhost:8000"
   } ],
   "paths" : {
-    "/v1/ecommerce/users" : {
+    "/v25/ecommerce/users" : {
       "post" : {
         "tags" : [ "UserService" ],
         "operationId" : "registerUser",
@@ -32,7 +32,7 @@
         }
       }
     },
-    "/v1/ecommerce/users/{userId}" : {
+    "/v25/ecommerce/users/{userId}" : {
       "get" : {
         "tags" : [ "UserService" ],
         "operationId" : "getUser",
@@ -55,7 +55,7 @@
         }
       }
     },
-    "/v1/ecommerce/cart/{userId}/add" : {
+    "/v25/ecommerce/cart/{userId}/add" : {
       "post" : {
         "tags" : [ "CartService" ],
         "operationId" : "addToCart",
@@ -85,7 +85,7 @@
         }
       }
     },
-    "/v1/ecommerce/cart/{userId}" : {
+    "/v25/ecommerce/cart/{userId}" : {
       "get" : {
         "tags" : [ "CartService" ],
         "operationId" : "getCart",
@@ -108,7 +108,7 @@
         }
       }
     },
-    "/v1/ecommerce/cart/{userId}/remove/{productId}" : {
+    "/v25/ecommerce/cart/{userId}/remove/{productId}" : {
       "delete" : {
         "tags" : [ "CartService" ],
         "operationId" : "removeFromCart",
@@ -137,7 +137,7 @@
         }
       }
     },
-    "/v1/ecommerce/cart/{userId}/update" : {
+    "/v25/ecommerce/cart/{userId}/update" : {
       "put" : {
         "tags" : [ "CartService" ],
         "operationId" : "updateCart",
@@ -167,7 +167,7 @@
         }
       }
     },
-    "/v1/ecommerce/payments/{paymentId}" : {
+    "/v25/ecommerce/payments/{paymentId}" : {
       "get" : {
         "tags" : [ "PaymentService" ],
         "operationId" : "getPayment",
@@ -190,7 +190,7 @@
         }
       }
     },
-    "/v1/ecommerce/payments/webhook" : {
+    "/v25/ecommerce/payments/webhook" : {
       "post" : {
         "tags" : [ "PaymentService" ],
         "operationId" : "paymentWebhook",
@@ -214,7 +214,7 @@
         }
       }
     },
-    "/v1/ecommerce/payments/initiate" : {
+    "/v25/ecommerce/payments/initiate" : {
       "post" : {
         "tags" : [ "PaymentService" ],
         "operationId" : "initiatePayment",
@@ -238,7 +238,7 @@
         }
       }
     },
-    "/v1/ecommerce/products" : {
+    "/v25/ecommerce/products" : {
       "get" : {
         "tags" : [ "ProductService" ],
         "operationId" : "getAllProducts",
@@ -281,7 +281,7 @@
         }
       }
     },
-    "/v1/ecommerce/products/{productId}" : {
+    "/v25/ecommerce/products/{productId}" : {
       "get" : {
         "tags" : [ "ProductService" ],
         "operationId" : "getProductById",
@@ -304,7 +304,7 @@
         }
       }
     },
-    "/v1/ecommerce/products/search" : {
+    "/v25/ecommerce/products/search" : {
       "get" : {
         "tags" : [ "ProductService" ],
         "operationId" : "searchProducts",
@@ -372,7 +372,7 @@
         }
       }
     },
-    "/v1/ecommerce/orders/place/{userId}" : {
+    "/v25/ecommerce/orders/place/{userId}" : {
       "post" : {
         "tags" : [ "OrderService" ],
         "operationId" : "placeOrder",
@@ -395,7 +395,7 @@
         }
       }
     },
-    "/v1/ecommerce/orders/{orderId}" : {
+    "/v25/ecommerce/orders/{orderId}" : {
       "get" : {
         "tags" : [ "OrderService" ],
         "operationId" : "getOrder",
@@ -439,7 +439,7 @@
         }
       }
     },
-    "/v1/ecommerce/orders/user/{userId}" : {
+    "/v25/ecommerce/orders/user/{userId}" : {
       "get" : {
         "tags" : [ "OrderService" ],
         "operationId" : "getUserOrders",
@@ -466,7 +466,7 @@
         }
       }
     },
-    "/v1/ecommerce/shipping/address" : {
+    "/v25/ecommerce/shipping/address" : {
       "post" : {
         "tags" : [ "ShippingService" ],
         "operationId" : "addAddress",
@@ -490,7 +490,7 @@
         }
       }
     },
-    "/v1/ecommerce/shipping/address/{addressId}" : {
+    "/v25/ecommerce/shipping/address/{addressId}" : {
       "put" : {
         "tags" : [ "ShippingService" ],
         "operationId" : "updateAddress",
@@ -520,7 +520,7 @@
         }
       }
     },
-    "/v1/ecommerce/shipping/{orderId}/track" : {
+    "/v25/ecommerce/shipping/{orderId}/track" : {
       "get" : {
         "tags" : [ "ShippingService" ],
         "operationId" : "trackOrder",
