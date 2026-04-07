@@ -32,10 +32,10 @@
         }
       }
     },
-    "/v25/ecommerce/users/{userId}" : {
-      "get" : {
-        "tags" : [ "UserService" ],
-        "operationId" : "getUser",
+    "/v25/ecommerce/orders/place/{userId}" : {
+      "post" : {
+        "tags" : [ "OrderService" ],
+        "operationId" : "placeOrder",
         "parameters" : [ {
           "name" : "userId",
           "in" : "path",
@@ -49,7 +49,30 @@
             "content" : {
               "*/*" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/UserResponseDTO" } }
+                  "$ref" : "#/components/schemas/OrderResponseDTO" } }
+            }
+          }
+        }
+      }
+    },
+    "/v25/ecommerce/orders/{orderId}" : {
+      "get" : {
+        "tags" : [ "OrderService" ],
+        "operationId" : "getOrder",
+        "parameters" : [ {
+          "name" : "orderId",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string" }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/OrderResponseDTO" } }
             }
           }
         }
@@ -108,18 +131,12 @@
         }
       }
     },
-    "/v25/ecommerce/cart/{userId}/remove/{productId}" : {
-      "delete" : {
-        "tags" : [ "CartService" ],
-        "operationId" : "removeFromCart",
+    "/v25/ecommerce/shipping/{orderId}/track" : {
+      "get" : {
+        "tags" : [ "ShippingService" ],
+        "operationId" : "trackOrder",
         "parameters" : [ {
-          "name" : "userId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        }, {
-          "name" : "productId",
+          "name" : "orderId",
           "in" : "path",
           "required" : true,
           "schema" : {
@@ -131,28 +148,22 @@
             "content" : {
               "*/*" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/CartResponseDTO" } }
+                  "$ref" : "#/components/schemas/TrackingResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v25/ecommerce/cart/{userId}/update" : {
-      "put" : {
-        "tags" : [ "CartService" ],
-        "operationId" : "updateCart",
-        "parameters" : [ {
-          "name" : "userId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
+    "/v25/ecommerce/products" : {
+      "post" : {
+        "tags" : [ "ProductService" ],
+        "operationId" : "addProduct",
+        "parameters" : [ ],
         "requestBody" : {
           "content" : {
             "application/json" : {
               "schema" : {
-                "$ref" : "#/components/schemas/CartUpdateRequestDTO" } }
+                "$ref" : "#/components/schemas/ProductRequestDTO" } }
           }
         },
         "responses" : {
@@ -161,30 +172,7 @@
             "content" : {
               "*/*" : {
                 "schema" : {
-                  "$ref" : "#/components/schemas/CartResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/payments/{paymentId}" : {
-      "get" : {
-        "tags" : [ "PaymentService" ],
-        "operationId" : "getPayment",
-        "parameters" : [ {
-          "name" : "paymentId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/PaymentResponseDTO" } }
+                  "$ref" : "#/components/schemas/ProductResponseDTO" } }
             }
           }
         }
@@ -233,311 +221,6 @@
               "*/*" : {
                 "schema" : {
                   "$ref" : "#/components/schemas/PaymentResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/products" : {
-      "get" : {
-        "tags" : [ "ProductService" ],
-        "operationId" : "getAllProducts",
-        "parameters" : [ ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "type" : "array",
-                  
-                  "items" : {
-                    "$ref" : "#/components/schemas/ProductResponseDTO" }
-                } }
-            }
-          }
-        }
-      },
-      "post" : {
-        "tags" : [ "ProductService" ],
-        "operationId" : "addProduct",
-        "parameters" : [ ],
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/ProductRequestDTO" } }
-          }
-        },
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ProductResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/products/{productId}" : {
-      "get" : {
-        "tags" : [ "ProductService" ],
-        "operationId" : "getProductById",
-        "parameters" : [ {
-          "name" : "productId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/ProductResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/products/search" : {
-      "get" : {
-        "tags" : [ "ProductService" ],
-        "operationId" : "searchProducts",
-        "parameters" : [ {
-          "name" : "X-Request-Id",
-          "in" : "header",
-          "schema" : {
-            "type" : "string" }
-        }, {
-          "name" : "X-Client-Id",
-          "in" : "header",
-          "schema" : {
-            "type" : "string" }
-        }, {
-          "name" : "Authorization",
-          "in" : "header",
-          "schema" : {
-            "type" : "string" }
-        }, {
-          "name" : "category",
-          "in" : "query",
-          "schema" : {
-            "type" : "string" }
-        }, {
-          "name" : "minPrice",
-          "in" : "query",
-          "schema" : {
-            "type" : "number",
-            "format" : "double" }
-        }, {
-          "name" : "maxPrice",
-          "in" : "query",
-          "schema" : {
-            "type" : "number",
-            "format" : "double" }
-        }, {
-          "name" : "page",
-          "in" : "query",
-          "schema" : {
-            "type" : "integer" }
-        }, {
-          "name" : "size",
-          "in" : "query",
-          "schema" : {
-            "type" : "integer" }
-        }, {
-          "name" : "sortBy",
-          "in" : "query",
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "type" : "array",
-                  
-                  "items" : {
-                    "$ref" : "#/components/schemas/ProductResponseDTO" }
-                } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/orders/place/{userId}" : {
-      "post" : {
-        "tags" : [ "OrderService" ],
-        "operationId" : "placeOrder",
-        "parameters" : [ {
-          "name" : "userId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/OrderResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/orders/{orderId}" : {
-      "get" : {
-        "tags" : [ "OrderService" ],
-        "operationId" : "getOrder",
-        "parameters" : [ {
-          "name" : "orderId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/OrderResponseDTO" } }
-            }
-          }
-        }
-      },
-      "delete" : {
-        "tags" : [ "OrderService" ],
-        "operationId" : "cancelOrder",
-        "parameters" : [ {
-          "name" : "orderId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/OrderResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/orders/user/{userId}" : {
-      "get" : {
-        "tags" : [ "OrderService" ],
-        "operationId" : "getUserOrders",
-        "parameters" : [ {
-          "name" : "userId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "type" : "array",
-                  
-                  "items" : {
-                    "$ref" : "#/components/schemas/OrderResponseDTO" }
-                } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/shipping/address" : {
-      "post" : {
-        "tags" : [ "ShippingService" ],
-        "operationId" : "addAddress",
-        "parameters" : [ ],
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/AddressRequestDTO" } }
-          }
-        },
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/AddressResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/shipping/address/{addressId}" : {
-      "put" : {
-        "tags" : [ "ShippingService" ],
-        "operationId" : "updateAddress",
-        "parameters" : [ {
-          "name" : "addressId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/AddressRequestDTO" } }
-          }
-        },
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/AddressResponseDTO" } }
-            }
-          }
-        }
-      }
-    },
-    "/v25/ecommerce/shipping/{orderId}/track" : {
-      "get" : {
-        "tags" : [ "ShippingService" ],
-        "operationId" : "trackOrder",
-        "parameters" : [ {
-          "name" : "orderId",
-          "in" : "path",
-          "required" : true,
-          "schema" : {
-            "type" : "string" }
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "",
-            "content" : {
-              "*/*" : {
-                "schema" : {
-                  "$ref" : "#/components/schemas/TrackingResponseDTO" } }
             }
           }
         }
@@ -613,6 +296,30 @@
           "email" : {
             "type" : "string" },
           "updatedAt" : {
+            "type" : "string" }
+        } },
+      "ProductRequestDTO" : {
+        "type" : "object",
+        "properties" : {
+          "price" : {
+            "type" : "number",
+            "format" : "double" },
+          "name" : {
+            "type" : "string" },
+          "rating" : {
+            "type" : "number",
+            "format" : "double" },
+          "available" : {
+            "type" : "boolean" },
+          "description" : {
+            "type" : "string" },
+          "currency" : {
+            "type" : "string" },
+          "category" : {
+            "type" : "string" },
+          "stock" : {
+            "type" : "integer" },
+          "brand" : {
             "type" : "string" }
         } },
       "OrderItemDTO" : {
@@ -696,32 +403,19 @@
           "updatedAt" : {
             "type" : "string" }
         } },
-      "AddressResponseDTO" : {
+      "PaymentRequestDTO" : {
         "type" : "object",
         "properties" : {
-          "pincode" : {
+          "amount" : {
+            "type" : "number",
+            "format" : "double" },
+          "orderId" : {
             "type" : "string" },
-          "country" : {
+          "paymentMethod" : {
             "type" : "string" },
-          "createdAt" : {
+          "currency" : {
             "type" : "string" },
-          "phone" : {
-            "type" : "string" },
-          "city" : {
-            "type" : "string" },
-          "addressType" : {
-            "type" : "string" },
-          "name" : {
-            "type" : "string" },
-          "state" : {
-            "type" : "string" },
-          "addressLine" : {
-            "type" : "string" },
-          "userId" : {
-            "type" : "string" },
-          "addressId" : {
-            "type" : "string" },
-          "updatedAt" : {
+          "paymentGateway" : {
             "type" : "string" }
         } },
       "UserRequestDTO" : {
@@ -740,6 +434,27 @@
           "userType" : {
             "type" : "string" },
           "email" : {
+            "type" : "string" }
+        } },
+      "PaymentResponseDTO" : {
+        "type" : "object",
+        "properties" : {
+          "createdAt" : {
+            "type" : "string" },
+          "amount" : {
+            "type" : "number",
+            "format" : "double" },
+          "orderId" : {
+            "type" : "string" },
+          "paymentId" : {
+            "type" : "string" },
+          "paymentMethod" : {
+            "type" : "string" },
+          "currency" : {
+            "type" : "string" },
+          "transactionId" : {
+            "type" : "string" },
+          "status" : {
             "type" : "string" }
         } },
       "ProductResponseDTO" : {
@@ -770,98 +485,6 @@
           "brand" : {
             "type" : "string" },
           "updatedAt" : {
-            "type" : "string" }
-        } },
-      "ProductRequestDTO" : {
-        "type" : "object",
-        "properties" : {
-          "price" : {
-            "type" : "number",
-            "format" : "double" },
-          "name" : {
-            "type" : "string" },
-          "rating" : {
-            "type" : "number",
-            "format" : "double" },
-          "available" : {
-            "type" : "boolean" },
-          "description" : {
-            "type" : "string" },
-          "currency" : {
-            "type" : "string" },
-          "category" : {
-            "type" : "string" },
-          "stock" : {
-            "type" : "integer" },
-          "brand" : {
-            "type" : "string" }
-        } },
-      "CartUpdateRequestDTO" : {
-        "type" : "object",
-        "properties" : {
-          "quantity" : {
-            "type" : "integer" },
-          "productId" : {
-            "type" : "string" },
-          "operation" : {
-            "type" : "string" }
-        } },
-      "PaymentRequestDTO" : {
-        "type" : "object",
-        "properties" : {
-          "amount" : {
-            "type" : "number",
-            "format" : "double" },
-          "orderId" : {
-            "type" : "string" },
-          "paymentMethod" : {
-            "type" : "string" },
-          "currency" : {
-            "type" : "string" },
-          "paymentGateway" : {
-            "type" : "string" }
-        } },
-      "AddressRequestDTO" : {
-        "type" : "object",
-        "properties" : {
-          "pincode" : {
-            "type" : "string" },
-          "country" : {
-            "type" : "string" },
-          "phone" : {
-            "type" : "string" },
-          "city" : {
-            "type" : "string" },
-          "addressType" : {
-            "type" : "string" },
-          "name" : {
-            "type" : "string" },
-          "state" : {
-            "type" : "string" },
-          "addressLine" : {
-            "type" : "string" },
-          "userId" : {
-            "type" : "string" }
-        } },
-      "PaymentResponseDTO" : {
-        "type" : "object",
-        "properties" : {
-          "createdAt" : {
-            "type" : "string" },
-          "amount" : {
-            "type" : "number",
-            "format" : "double" },
-          "orderId" : {
-            "type" : "string" },
-          "paymentId" : {
-            "type" : "string" },
-          "paymentMethod" : {
-            "type" : "string" },
-          "currency" : {
-            "type" : "string" },
-          "transactionId" : {
-            "type" : "string" },
-          "status" : {
             "type" : "string" }
         } }
     }
