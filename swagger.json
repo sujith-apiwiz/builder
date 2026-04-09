@@ -2,13 +2,13 @@
   "openapi" : "3.0.1",
   "info" : {
     "title" : "Ecommerce",
-    "version" : "v0"
+    "version" : "v1"
   },
   "servers" : [ {
     "url" : "http://localhost:8000"
   } ],
   "paths" : {
-    "/v1/ecommerce/users" : {
+    "/v1/ecommerce/users/get" : {
       "post" : {
         "tags" : [ "UserService" ],
         "operationId" : "registerUser",
