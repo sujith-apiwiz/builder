@@ -1,278 +1,233 @@
 {
-  "openapi": "3.0.1",
-  "info": {
-    "title": "Ecommerce Platform APIs",
-    "version": "v1"
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Ecommerce",
+    "version" : "v0"
   },
-  "servers": [
-    {
-      "url": "http://localhost:8000"
-    }
-  ],
-  "paths": {
-    "/v1/ecommerce/users": {
-      "post": {
-        "tags": ["User Management"],
-        "operationId": "createUserAccount",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRequestDTO"
-              }
-            }
+  "servers" : [ {
+    "url" : "http://localhost:8000"
+  } ],
+  "paths" : {
+    "/v1/ecommerce/users" : {
+      "post" : {
+        "tags" : [ "UserService" ],
+        "operationId" : "registerUser",
+        "parameters" : [ ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/UserRequestDTO" } }
           }
         },
-        "responses": {
-          "200": {
-            "description": "User created successfully",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponseDTO"
-                }
-              }
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/UserResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/orders/place/{userId}": {
-      "post": {
-        "tags": ["Order Management"],
-        "operationId": "createOrderForUser",
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Order placed successfully",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/OrderResponseDTO"
-                }
-              }
+    "/v1/ecommerce/orders/place/{userId}" : {
+      "post" : {
+        "tags" : [ "OrderService" ],
+        "operationId" : "placeOrder",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string" }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/OrderResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/orders/{orderId}": {
-      "get": {
-        "tags": ["Order Management"],
-        "operationId": "fetchOrderDetails",
-        "parameters": [
-          {
-            "name": "orderId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Order details fetched successfully",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/OrderResponseDTO"
-                }
-              }
+    "/v1/ecommerce/orders/{orderId}" : {
+      "get" : {
+        "tags" : [ "OrderService" ],
+        "operationId" : "getOrder",
+        "parameters" : [ {
+          "name" : "orderId",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string" }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/OrderResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/cart/{userId}/add": {
-      "post": {
-        "tags": ["Cart Management"],
-        "operationId": "addItemToUserCart",
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CartItemDTO"
-              }
-            }
+    "/v1/ecommerce/cart/{userId}/add" : {
+      "post" : {
+        "tags" : [ "CartService" ],
+        "operationId" : "addToCart",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string" }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CartItemDTO" } }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Item added to cart",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/CartResponseDTO"
-                }
-              }
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CartResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/cart/{userId}": {
-      "get": {
-        "tags": ["Cart Management"],
-        "operationId": "getUserCartDetails",
-        "parameters": [
-          {
-            "name": "userId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Cart retrieved successfully",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/CartResponseDTO"
-                }
-              }
+    "/v1/ecommerce/cart/{userId}" : {
+      "get" : {
+        "tags" : [ "CartService" ],
+        "operationId" : "getCart",
+        "parameters" : [ {
+          "name" : "userId",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string" }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/CartResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/shipping/{orderId}/track": {
-      "get": {
-        "tags": ["Shipping & Tracking"],
-        "operationId": "trackOrderShipment",
-        "parameters": [
-          {
-            "name": "orderId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Tracking details retrieved",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/TrackingResponseDTO"
-                }
-              }
+    "/v1/ecommerce/shipping/{orderId}/track" : {
+      "get" : {
+        "tags" : [ "ShippingService" ],
+        "operationId" : "trackOrder",
+        "parameters" : [ {
+          "name" : "orderId",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string" }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/TrackingResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/products": {
-      "post": {
-        "tags": ["Product Catalog"],
-        "operationId": "createProduct",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ProductRequestDTO"
-              }
-            }
+    "/v1/ecommerce/products" : {
+      "post" : {
+        "tags" : [ "ProductService" ],
+        "operationId" : "addProduct",
+        "parameters" : [ ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/ProductRequestDTO" } }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Product created successfully",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProductResponseDTO"
-                }
-              }
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ProductResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/payments/webhook": {
-      "post": {
-        "tags": ["Payment Processing"],
-        "operationId": "handlePaymentWebhookEvent",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PaymentWebhookDTO"
-              }
-            }
+    "/v1/ecommerce/payments/webhook" : {
+      "post" : {
+        "tags" : [ "PaymentService" ],
+        "operationId" : "paymentWebhook",
+        "parameters" : [ ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/PaymentWebhookDTO" } }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Webhook processed successfully",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/PaymentResponseDTO"
-                }
-              }
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PaymentResponseDTO" } }
             }
           }
         }
       }
     },
-    "/v1/ecommerce/payments/initiate": {
-      "post": {
-        "tags": ["Payment Processing"],
-        "operationId": "initiateOrderPayment",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PaymentRequestDTO"
-              }
-            }
+    "/v1/ecommerce/payments/initiate" : {
+      "post" : {
+        "tags" : [ "PaymentService" ],
+        "operationId" : "initiatePayment",
+        "parameters" : [ ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/PaymentRequestDTO" } }
           }
         },
-        "responses": {
-          "200": {
-            "description": "Payment initiated successfully",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/PaymentResponseDTO"
-                }
-              }
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PaymentResponseDTO" } }
             }
           }
         }
       }
     }
   },
-  "components": {
+  "components" : {
     "schemas" : {
       "PaymentWebhookDTO" : {
         "type" : "object",
