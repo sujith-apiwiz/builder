@@ -273,6 +273,265 @@
     }
   },
   "components": {
-    "schemas": {}
+    "schemas" : {
+      "PaymentWebhookDTO" : {
+        "type" : "object",
+        "properties" : {
+          "paymentId" : {
+            "type" : "string" },
+          "gatewayResponse" : {
+            "type" : "string" },
+          "transactionId" : {
+            "type" : "string" },
+          "status" : {
+            "type" : "string" }
+        } },
+      "OrderResponseDTO" : {
+        "type" : "object",
+        "properties" : {
+          "totalAmount" : {
+            "type" : "number",
+            "format" : "double" },
+          "createdAt" : {
+            "type" : "string" },
+          "orderId" : {
+            "type" : "string" },
+          "totalDiscount" : {
+            "type" : "number",
+            "format" : "double" },
+          "currency" : {
+            "type" : "string" },
+          "userId" : {
+            "type" : "string" },
+          "items" : {
+            "type" : "array",
+            
+            "items" : {
+              "$ref" : "#/components/schemas/OrderItemDTO" }
+          },
+          "payableAmount" : {
+            "type" : "number",
+            "format" : "double" },
+          "paymentStatus" : {
+            "type" : "string" },
+          "status" : {
+            "type" : "string" },
+          "updatedAt" : {
+            "type" : "string" }
+        } },
+      "UserResponseDTO" : {
+        "type" : "object",
+        "properties" : {
+          "country" : {
+            "type" : "string" },
+          "createdAt" : {
+            "type" : "string" },
+          "phone" : {
+            "type" : "string" },
+          "preferredCurrency" : {
+            "type" : "string" },
+          "name" : {
+            "type" : "string" },
+          "active" : {
+            "type" : "boolean" },
+          "userType" : {
+            "type" : "string" },
+          "userId" : {
+            "type" : "string" },
+          "email" : {
+            "type" : "string" },
+          "updatedAt" : {
+            "type" : "string" }
+        } },
+      "ProductRequestDTO" : {
+        "type" : "object",
+        "properties" : {
+          "price" : {
+            "type" : "number",
+            "format" : "double" },
+          "name" : {
+            "type" : "string" },
+          "rating" : {
+            "type" : "number",
+            "format" : "double" },
+          "available" : {
+            "type" : "boolean" },
+          "description" : {
+            "type" : "string" },
+          "currency" : {
+            "type" : "string" },
+          "category" : {
+            "type" : "string" },
+          "stock" : {
+            "type" : "integer" },
+          "brand" : {
+            "type" : "string" }
+        } },
+      "OrderItemDTO" : {
+        "type" : "object",
+        "properties" : {
+          "quantity" : {
+            "type" : "integer" },
+          "productId" : {
+            "type" : "string" },
+          "price" : {
+            "type" : "number",
+            "format" : "double" },
+          "discount" : {
+            "type" : "number",
+            "format" : "double" },
+          "finalPrice" : {
+            "type" : "number",
+            "format" : "double" },
+          "productName" : {
+            "type" : "string" }
+        } },
+      "CartItemDTO" : {
+        "type" : "object",
+        "properties" : {
+          "quantity" : {
+            "type" : "integer" },
+          "productId" : {
+            "type" : "string" },
+          "price" : {
+            "type" : "number",
+            "format" : "double" },
+          "discount" : {
+            "type" : "number",
+            "format" : "double" },
+          "finalPrice" : {
+            "type" : "number",
+            "format" : "double" },
+          "currency" : {
+            "type" : "string" },
+          "productName" : {
+            "type" : "string" }
+        } },
+      "TrackingResponseDTO" : {
+        "type" : "object",
+        "properties" : {
+          "lastUpdated" : {
+            "type" : "string" },
+          "orderId" : {
+            "type" : "string" },
+          "courierPartner" : {
+            "type" : "string" },
+          "estimatedDelivery" : {
+            "type" : "string" },
+          "status" : {
+            "type" : "string" },
+          "trackingId" : {
+            "type" : "string" }
+        } },
+      "CartResponseDTO" : {
+        "type" : "object",
+        "properties" : {
+          "totalAmount" : {
+            "type" : "number",
+            "format" : "double" },
+          "totalDiscount" : {
+            "type" : "number",
+            "format" : "double" },
+          "currency" : {
+            "type" : "string" },
+          "userId" : {
+            "type" : "string" },
+          "items" : {
+            "type" : "array",
+            
+            "items" : {
+              "$ref" : "#/components/schemas/CartItemDTO" }
+          },
+          "payableAmount" : {
+            "type" : "number",
+            "format" : "double" },
+          "updatedAt" : {
+            "type" : "string" }
+        } },
+      "PaymentRequestDTO" : {
+        "type" : "object",
+        "properties" : {
+          "amount" : {
+            "type" : "number",
+            "format" : "double" },
+          "orderId" : {
+            "type" : "string" },
+          "paymentMethod" : {
+            "type" : "string" },
+          "currency" : {
+            "type" : "string" },
+          "paymentGateway" : {
+            "type" : "string" }
+        } },
+      "UserRequestDTO" : {
+        "type" : "object",
+        "properties" : {
+          "country" : {
+            "type" : "string" },
+          "phone" : {
+            "type" : "string" },
+          "preferredCurrency" : {
+            "type" : "string" },
+          "name" : {
+            "type" : "string" },
+          "active" : {
+            "type" : "boolean" },
+          "userType" : {
+            "type" : "string" },
+          "email" : {
+            "type" : "string" }
+        } },
+      "PaymentResponseDTO" : {
+        "type" : "object",
+        "properties" : {
+          "createdAt" : {
+            "type" : "string" },
+          "amount" : {
+            "type" : "number",
+            "format" : "double" },
+          "orderId" : {
+            "type" : "string" },
+          "paymentId" : {
+            "type" : "string" },
+          "paymentMethod" : {
+            "type" : "string" },
+          "currency" : {
+            "type" : "string" },
+          "transactionId" : {
+            "type" : "string" },
+          "status" : {
+            "type" : "string" }
+        } },
+      "ProductResponseDTO" : {
+        "type" : "object",
+        "properties" : {
+          "createdAt" : {
+            "type" : "string" },
+          "productId" : {
+            "type" : "string" },
+          "price" : {
+            "type" : "number",
+            "format" : "double" },
+          "name" : {
+            "type" : "string" },
+          "rating" : {
+            "type" : "number",
+            "format" : "double" },
+          "available" : {
+            "type" : "boolean" },
+          "description" : {
+            "type" : "string" },
+          "currency" : {
+            "type" : "string" },
+          "category" : {
+            "type" : "string" },
+          "stock" : {
+            "type" : "integer" },
+          "brand" : {
+            "type" : "string" },
+          "updatedAt" : {
+            "type" : "string" }
+        } }
+    }
   }
 }
