@@ -8,7 +8,7 @@
     "url" : "http://localhost:8000"
   } ],
   "paths" : {
-    "/v1/ecommerce/users" : {
+    "/v1/ecommerce/users/get" : {
       "post" : {
         "tags" : [ "UserService" ],
         "operationId" : "registerUser",
