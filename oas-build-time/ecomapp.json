@@ -1,7 +1,7 @@
 {
   "components": {
     "schemas": {
-      "CartItemDTO": {
+      "CartItem": {
         "properties": {
           "currency": {
             "type": "string"
@@ -37,7 +37,7 @@
           },
           "items": {
             "items": {
-              "$ref": "#/components/schemas/CartItemDTO"
+              "$ref": "#/components/schemas/CartItem"
             },
             "type": "array"
           },
@@ -416,7 +416,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CartItemDTO"
+                "$ref": "#/components/schemas/CartItem"
               }
             }
           }
