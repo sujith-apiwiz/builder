@@ -30,7 +30,7 @@
         },
         "type": "object"
       },
-      "CartResponseDTOO": {
+      "CartResponseDTO": {
         "properties": {
           "currency": {
             "type": "string"
