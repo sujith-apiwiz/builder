@@ -626,7 +626,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserRequestDTOO"
+                "$ref": "#/components/schemas/UserRequestDTO"
               }
             }
           }
