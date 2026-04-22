@@ -37,7 +37,7 @@
           },
           "items": {
             "items": {
-              "$ref": "#/components/schemas/CartItemDTOz"
+              "$ref": "#/components/schemas/CartItemDTO"
             },
             "type": "array"
           },
