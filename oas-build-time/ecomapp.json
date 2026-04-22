@@ -1,7 +1,7 @@
 {
   "components": {
     "schemas": {
-      "CartItemDTO": {
+      "CartItekmDTO": {
         "properties": {
           "currency": {
             "type": "string"
