@@ -1,7 +1,7 @@
 {
   "components": {
     "schemas": {
-      "CartItesmDTO": {
+      "CartItemDTO": {
         "properties": {
           "currency": {
             "type": "string"
@@ -364,41 +364,11 @@
     }
   },
   "info": {
-    "title": "Ecommerce",
-    "version": "v1"
+    "title": "Ecomapp",
+    "version": "v0"
   },
   "openapi": "3.0.1",
   "paths": {
-    "/v1/ecommerce/cart/{userId}": {
-      "get": {
-        "operationId": "getCart",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "userId",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/CartResponseDTO"
-                }
-              }
-            },
-            "description": ""
-          }
-        },
-        "tags": [
-          "CartService"
-        ]
-      }
-    },
     "/v1/ecommerce/cart/{userId}/add": {
       "post": {
         "operationId": "addToCart",
@@ -421,6 +391,36 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/CartResponseDTO"
+                }
+              }
+            },
+            "description": ""
+          }
+        },
+        "tags": [
+          "CartService"
+        ]
+      }
+    },
+    "/v1/ecommerce/cart/{userId}/cart-items": {
+      "get": {
+        "operationId": "getCart",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "content": {
