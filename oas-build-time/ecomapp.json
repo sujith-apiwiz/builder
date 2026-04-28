@@ -408,7 +408,7 @@
         ]
       }
     },
-    "/v1/ecommerce/cart/{userId}/cart-items": {
+    "/v1/ecommerce/cart/{userId}/items": {
       "get": {
         "operationId": "getCart",
         "parameters": [
