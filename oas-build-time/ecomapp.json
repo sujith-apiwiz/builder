@@ -1,361 +1,489 @@
 {
   "components": {
+    "parameters": {
+      "transactionId": {
+        "explode": false,
+        "in": "path",
+        "name": "transactionId",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      },
+      "x-channel-id": {
+        "explode": false,
+        "in": "header",
+        "name": "x-channel-id",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      },
+      "x-correlation-id": {
+        "explode": false,
+        "in": "header",
+        "name": "x-correlation-id",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      },
+      "x-payment-id": {
+        "explode": false,
+        "in": "header",
+        "name": "x-payment-id",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      },
+      "x-transaction-id": {
+        "explode": false,
+        "in": "header",
+        "name": "x-transaction-id",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "style": "simple"
+      }
+    },
     "schemas": {
-      "CartItemDTO": {
+      "client_error_response": {
+        "description": "Client-side error response (4XX)",
         "properties": {
-          "currency": {
-            "type": "string"
-          },
-          "discount": {
-            "format": "double",
-            "type": "number"
-          },
-          "finalPrice": {
-            "format": "double",
-            "type": "number"
-          },
-          "price": {
-            "format": "double",
-            "type": "number"
-          },
-          "productId": {
-            "type": "string"
-          },
-          "productName": {
-            "type": "string"
-          },
-          "quantity": {
-            "type": "integer"
-          }
-        },
-        "type": "object"
-      },
-      "CartResponseDTO": {
-        "properties": {
-          "currency": {
-            "type": "string"
-          },
-          "items": {
+          "details": {
             "items": {
-              "$ref": "#/components/schemas/CartItemDTO"
+              "properties": {
+                "field": {
+                  "type": "string"
+                },
+                "issue": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
             },
             "type": "array"
           },
-          "payableAmount": {
-            "format": "double",
-            "type": "number"
-          },
-          "totalAmount": {
-            "format": "double",
-            "type": "number"
-          },
-          "totalDiscount": {
-            "format": "double",
-            "type": "number"
-          },
-          "updatedAt": {
+          "error": {
+            "example": "Bad Request",
             "type": "string"
           },
-          "userId": {
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "OrderItemDTO": {
-        "properties": {
-          "discount": {
-            "format": "double",
-            "type": "number"
-          },
-          "finalPrice": {
-            "format": "double",
-            "type": "number"
-          },
-          "price": {
-            "format": "double",
-            "type": "number"
-          },
-          "productId": {
+          "errorCode": {
+            "example": "VALIDATION_ERROR",
             "type": "string"
           },
-          "productName": {
+          "message": {
+            "example": "Invalid input",
             "type": "string"
           },
-          "quantity": {
+          "path": {
+            "example": "/users",
+            "type": "string"
+          },
+          "requestId": {
+            "example": "req-123",
+            "type": "string"
+          },
+          "status": {
+            "example": 400,
             "type": "integer"
-          }
-        },
-        "type": "object"
-      },
-      "OrderResponseDTO": {
-        "properties": {
-          "createdAt": {
-            "type": "string"
           },
-          "currency": {
-            "type": "string"
-          },
-          "items": {
-            "items": {
-              "$ref": "#/components/schemas/OrderItemDTO"
-            },
-            "type": "array"
-          },
-          "orderId": {
-            "type": "string"
-          },
-          "payableAmount": {
-            "format": "double",
-            "type": "number"
-          },
-          "paymentStatus": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string"
-          },
-          "totalAmount": {
-            "format": "double",
-            "type": "number"
-          },
-          "totalDiscount": {
-            "format": "double",
-            "type": "number"
-          },
-          "updatedAt": {
-            "type": "string"
-          },
-          "userId": {
+          "timestamp": {
+            "example": "2026-01-01T10:00:00Z",
+            "format": "date-time",
             "type": "string"
           }
         },
         "type": "object"
       },
-      "PaymentRequestDTO": {
+      "creditor_account_information": {
         "properties": {
-          "amount": {
-            "format": "double",
-            "type": "number"
-          },
-          "currency": {
+          "cdtrAccountName": {
+            "description": "Name of the creditor's account holder",
+            "example": "John Doe",
             "type": "string"
           },
-          "orderId": {
+          "cdtrAccountNo": {
+            "description": "Account number of the creditor",
+            "example": "DE89370400440532013000",
             "type": "string"
           },
-          "paymentGateway": {
+          "cdtrAddress": {
+            "description": "Postal address of the creditor",
+            "example": "123 Main St, Berlin, Germany",
             "type": "string"
           },
-          "paymentMethod": {
+          "cdtrBIC": {
+            "description": "Bank Identifier Code of the creditor's bank",
+            "example": "DEUTDEFF",
+            "type": "string"
+          },
+          "cdtrBirthDt": {
+            "description": "Birth date of the creditor in YYYY-MM-DD format",
+            "example": "1980-05-15",
+            "type": "string"
+          },
+          "cdtrCountryCode": {
+            "description": "Two-letter country code of the creditor's location",
+            "example": "DE",
+            "type": "string"
+          },
+          "cdtrEmail": {
+            "description": "Email address of the creditor",
+            "example": "john.doe@example.com",
             "type": "string"
           }
         },
         "type": "object"
       },
-      "PaymentResponseDTO": {
+      "debtor_account_information": {
         "properties": {
-          "amount": {
-            "format": "double",
-            "type": "number"
-          },
-          "createdAt": {
+          "dbtrAccountName": {
+            "description": "Name on the debtor's bank account",
+            "example": "John Doe",
             "type": "string"
           },
-          "currency": {
+          "dbtrAccountNo": {
+            "description": "Number of the debtor's bank account",
+            "example": "1234567890123456",
             "type": "string"
           },
-          "orderId": {
+          "dbtrAddress": {
+            "description": "Full address of the debtor",
+            "example": "123 Elm Street, Springfield, IL 62704",
             "type": "string"
           },
-          "paymentId": {
+          "dbtrBIC": {
+            "description": "Bank Identifier Code of the debtor's bank",
+            "example": "DEUTDEFF",
             "type": "string"
           },
-          "paymentMethod": {
+          "dbtrBirthDt": {
+            "description": "Date of birth of the debtor (YYYY-MM-DD)",
+            "example": "1980-05-15",
             "type": "string"
           },
-          "status": {
+          "dbtrCountryCode": {
+            "description": "ISO country code of the debtor's residence",
+            "example": "US",
+            "type": "string"
+          },
+          "dbtrEmail": {
+            "description": "Email address of the debtor",
+            "example": "john.doe@example.com",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "partner_reference_information": {
+        "properties": {
+          "InstructionId": {
+            "description": "Unique identifier for the payment instruction.",
+            "example": "INST123456789",
+            "type": "string"
+          },
+          "endtoendId": {
+            "description": "End-to-end identifier used for tracking the entire transaction process.",
+            "example": "E2E987654321",
             "type": "string"
           },
           "transactionId": {
+            "description": "Unique identifier of the specific transaction.",
+            "example": "TXN20230427001",
             "type": "string"
           }
         },
         "type": "object"
       },
-      "PaymentWebhookDTO": {
+      "payment_information": {
         "properties": {
-          "gatewayResponse": {
+          "paymentType": {
+            "description": "Type of payment being processed",
+            "example": "CreditTransfer",
             "type": "string"
           },
-          "paymentId": {
+          "prtryAccountType": {
+            "description": "Proprietary account type identifier used internally",
+            "example": "SAVINGS",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "payment_request": {
+        "properties": {
+          "amount": {
+            "description": "The total amount to be paid in the transaction.",
+            "example": "1500.00",
+            "type": "string"
+          },
+          "creditorAccountInformation": {
+            "$ref": "#/components/schemas/creditor_account_information",
+            "description": "Details of the creditor's bank account to receive the payment.",
+            "example": "DE89370400440532013000"
+          },
+          "currency": {
+            "description": "The currency code in which the amount is specified.",
+            "example": "EUR",
+            "type": "string"
+          },
+          "debtorAccountInformation": {
+            "$ref": "#/components/schemas/debtor_account_information",
+            "description": "Details of the debtor's bank account from which the payment is made.",
+            "example": "DE12500105170648489890"
+          },
+          "partnerCode": {
+            "description": "Unique code identifying the partner initiating the payment.",
+            "example": "PARTNER123",
+            "type": "string"
+          },
+          "partnerPassword": {
+            "description": "Password or key used by the partner for authentication.",
+            "example": "s3cur3P@ssw0rd",
+            "type": "string"
+          },
+          "partnerReferenceInformation": {
+            "$ref": "#/components/schemas/partner_reference_information",
+            "description": "Reference information provided by the partner for tracking the payment.",
+            "example": "REF20230427XYZ"
+          },
+          "paymentInformation": {
+            "$ref": "#/components/schemas/payment_information",
+            "description": "Additional payment details or instructions.",
+            "example": "Urgent payment"
+          },
+          "purpose": {
+            "description": "The reason or purpose for making the payment.",
+            "example": "Invoice settlement",
+            "type": "string"
+          },
+          "remittanceInformation": {
+            "$ref": "#/components/schemas/remittance_information",
+            "description": "Additional information related to the payment for the beneficiary.",
+            "example": "Invoice #4567 payment"
+          },
+          "settlementDate": {
+            "description": "The date on which the payment should be settled.",
+            "example": "2024-07-01",
+            "type": "string"
+          },
+          "supplementaryData": {
+            "$ref": "#/components/schemas/supplementary_data",
+            "description": "Optional additional data related to the payment request.",
+            "example": "{\"note\": \"Handle with priority\"}"
+          }
+        },
+        "type": "object"
+      },
+      "payment_status_response": {
+        "properties": {
+          "endToEndId": {
+            "description": "Unique identifier for the transaction from origin to destination",
+            "example": "E2E9876543210",
+            "type": "string"
+          },
+          "instructionId": {
+            "description": "Unique identifier for the payment instruction",
+            "example": "INST1234567890",
             "type": "string"
           },
           "status": {
+            "description": "Current status of the payment transaction",
+            "example": "COMPLETED",
             "type": "string"
           },
           "transactionId": {
+            "description": "Unique identifier assigned to the transaction by the payment system",
+            "example": "TXN1357924680",
             "type": "string"
           }
         },
         "type": "object"
       },
-      "ProductRequestDTO": {
+      "remittance_information": {
         "properties": {
-          "available": {
-            "type": "boolean"
-          },
-          "brand": {
+          "addtlRmtInfo": {
+            "description": "Additional supplementary remittance information.",
+            "example": "Payment applied to balance due from previous invoice.",
             "type": "string"
           },
-          "category": {
+          "remittanceNumber": {
+            "description": "Unique identification number for the remittance.",
+            "example": "RM1234567890",
             "type": "string"
           },
-          "currency": {
+          "remittanceProp": {
+            "description": "Properties or attributes associated with the remittance.",
+            "example": "priority: high, currency: USD",
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "price": {
-            "format": "double",
-            "type": "number"
-          },
-          "rating": {
-            "format": "double",
-            "type": "number"
-          },
-          "stock": {
-            "type": "integer"
-          }
-        },
-        "type": "object"
-      },
-      "ProductResponseDTO": {
-        "properties": {
-          "available": {
-            "type": "boolean"
-          },
-          "brand": {
-            "type": "string"
-          },
-          "category": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "string"
-          },
-          "currency": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "price": {
-            "format": "double",
-            "type": "number"
-          },
-          "productId": {
-            "type": "string"
-          },
-          "rating": {
-            "format": "double",
-            "type": "number"
-          },
-          "stock": {
-            "type": "integer"
-          },
-          "updatedAt": {
+          "unstructuredInfo": {
+            "description": "Free-form remittance information provided by the sender.",
+            "example": "Invoice payment for order #12345",
             "type": "string"
           }
         },
         "type": "object"
       },
-      "TrackingResponseDTO": {
+      "server_error_response": {
+        "description": "Server-side error response (5XX)",
         "properties": {
-          "courierPartner": {
+          "error": {
+            "example": "Internal Server Error",
             "type": "string"
           },
-          "estimatedDelivery": {
+          "message": {
+            "example": "Unexpected error",
             "type": "string"
           },
-          "lastUpdated": {
-            "type": "string"
-          },
-          "orderId": {
+          "requestId": {
+            "example": "req-789",
             "type": "string"
           },
           "status": {
-            "type": "string"
+            "example": 500,
+            "type": "integer"
           },
-          "trackingId": {
-            "type": "string"
-          }
-        },
-        "type": "object"
-      },
-      "UserRequestDTO": {
-        "properties": {
-          "active": {
-            "type": "boolean"
-          },
-          "country": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "phone": {
-            "type": "string"
-          },
-          "preferredCurrency": {
-            "type": "string"
-          },
-          "userType": {
+          "timestamp": {
+            "example": "2026-01-01T10:00:00Z",
+            "format": "date-time",
             "type": "string"
           }
         },
         "type": "object"
       },
-      "UserResponseDTO": {
+      "supplementary_data": {
         "properties": {
-          "active": {
-            "type": "boolean"
-          },
-          "country": {
+          "OtherId": {
+            "description": "Additional identifier related to the supplementary data",
+            "example": "OID-9876543",
             "type": "string"
           },
-          "createdAt": {
+          "PAN": {
+            "description": "Primary Account Number associated with the payment method",
+            "example": "4111111111111111",
             "type": "string"
           },
-          "email": {
+          "expiryDate": {
+            "description": "The date when the supplementary data expires",
+            "example": "2025-12-31",
             "type": "string"
           },
-          "name": {
+          "groupId": {
+            "description": "Identifier for a group associated with the transaction",
+            "example": "grp-12345",
             "type": "string"
           },
-          "phone": {
+          "merchantCategoryCode": {
+            "description": "Code representing the type of merchant",
+            "example": "5812",
             "type": "string"
           },
-          "preferredCurrency": {
+          "pointofInteractionID": {
+            "description": "Identifier of the point of interaction device or location",
+            "example": "POI-001",
             "type": "string"
           },
-          "updatedAt": {
+          "subscriberNumber": {
+            "description": "Number identifying the subscriber involved in the transaction",
+            "example": "5551234567",
             "type": "string"
           },
-          "userId": {
+          "systemName": {
+            "description": "Name of the system generating or handling the supplementary data",
+            "example": "PaymentGatewayX",
             "type": "string"
           },
-          "userType": {
+          "tipAmount": {
+            "description": "Amount given as a tip",
+            "example": "5.00",
+            "type": "string"
+          },
+          "tipCurrency": {
+            "description": "Currency code for the tip amount",
+            "example": "USD",
+            "type": "string"
+          },
+          "transactionRef": {
+            "description": "Reference identifier for the transaction",
+            "example": "TX1234567890",
+            "type": "string"
+          },
+          "type": {
+            "description": "Type or category of the supplementary data",
+            "example": "LOYALTY_INFO",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "transaction_response": {
+        "properties": {
+          "amount": {
+            "description": "The amount involved in the transaction, represented as a string.",
+            "example": "150.00",
+            "type": "string"
+          },
+          "currency": {
+            "description": "The currency code used for the transaction.",
+            "example": "USD",
+            "type": "string"
+          },
+          "endToEndId": {
+            "description": "The unique identifier to track the transaction end-to-end.",
+            "example": "E2EID123456",
+            "type": "string"
+          },
+          "instructionId": {
+            "description": "The unique identifier for the transaction instruction.",
+            "example": "INST456789",
+            "type": "string"
+          },
+          "message": {
+            "description": "A message describing the status or result of the transaction.",
+            "example": "Transaction completed successfully.",
+            "type": "string"
+          },
+          "orchestrationSummary": {
+            "description": "A summary of the orchestration steps performed during the transaction.",
+            "example": "Validation passed, payment authorized, confirmation sent.",
+            "type": "string"
+          },
+          "partnerCode": {
+            "description": "The unique code identifying the partner involved in the transaction.",
+            "example": "PARTNER123",
+            "type": "string"
+          },
+          "paymentChannel": {
+            "description": "The channel through which the payment was made.",
+            "example": "online",
+            "type": "string"
+          },
+          "paymentType": {
+            "description": "The type of payment used in the transaction.",
+            "example": "credit_card",
+            "type": "string"
+          },
+          "requestPayload": {
+            "description": "The payload data sent with the transaction request.",
+            "example": "{\"orderId\":\"ORD1001\", \"customerId\":\"CUST789\"}",
+            "type": "string"
+          },
+          "status": {
+            "description": "The current status of the transaction (e.g., success, failed).",
+            "example": "success",
+            "type": "string"
+          },
+          "transactionId": {
+            "description": "The unique identifier assigned to the transaction.",
+            "example": "TXN789123456",
             "type": "string"
           }
         },
@@ -364,294 +492,200 @@
     }
   },
   "info": {
-    "title": "Ecommerce",
-    "version": "v1"
+    "contact": {
+      "email": "support@paymentservice.com",
+      "name": "Payment Service Support",
+      "url": "https://www.paymentservice.com/support"
+    },
+    "description": "The Payment Service API provides endpoints to manage and execute payment transactions, including retrieving transaction details by ID and initiating transfers securely and efficiently.",
+    "termsOfService": "https://www.paymentservice.com/terms",
+    "title": "Payment Service-buildTime",
+    "version": "v0"
   },
   "openapi": "3.0.1",
   "paths": {
-    "/v1/ecommerce/cart/{userId}": {
+    "/transfer": {
+      "parameters": [],
+      "post": {
+        "callbacks": {},
+        "description": "Initiates a transfer of funds between accounts. Users provide necessary details to complete the transfer securely and efficiently.",
+        "operationId": "transfer",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "amount": 150.75,
+                "currency": "USD",
+                "payment_method": "bank_transfer",
+                "payment_reference": "Invoice #2024-001",
+                "recipient_account": "1234567890",
+                "recipient_name": "John Doe",
+                "scheduled_date": "2024-07-01"
+              },
+              "schema": {
+                "$ref": "#/components/schemas/payment_request"
+              }
+            }
+          },
+          "description": "Request body containing the payment details required to initiate a money transfer."
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/payment_status_response"
+                }
+              }
+            },
+            "description": "Response for status 200",
+            "headers": {}
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "error": "BadRequest",
+                  "message": "Invalid input for /transfer",
+                  "path": "/transfer",
+                  "status": 400
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/client_error_response"
+                }
+              }
+            },
+            "description": "Invalid request for /transfer"
+          },
+          "500": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "error": "InternalServerError",
+                  "message": "Unexpected error occurred",
+                  "path": "/transfer",
+                  "status": 500
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/server_error_response"
+                }
+              }
+            },
+            "description": "Internal server error"
+          }
+        },
+        "security": [],
+        "servers": [],
+        "summary": "Execute a funds transfer",
+        "tags": [
+          "PaymentController"
+        ]
+      },
+      "servers": []
+    },
+    "/{transactionId}": {
       "get": {
-        "operationId": "getCart",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "userId",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/CartResponseDTO"
-                }
-              }
-            },
-            "description": ""
-          }
-        },
-        "tags": [
-          "CartService"
-        ]
-      }
-    },
-    "/v1/ecommerce/cart/{userId}/add": {
-      "post": {
-        "operationId": "addToCart",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "userId",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CartItemDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/CartResponseDTO"
-                }
-              }
-            },
-            "description": ""
-          }
-        },
-        "tags": [
-          "CartService"
-        ]
-      }
-    },
-    "/v1/ecommerce/orders/place/{userId}": {
-      "post": {
-        "operationId": "placeOrder",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "userId",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/OrderResponseDTO"
-                }
-              }
-            },
-            "description": ""
-          }
-        },
-        "tags": [
-          "OrderService"
-        ]
-      }
-    },
-    "/v1/ecommerce/orders/{orderId}": {
-      "get": {
-        "operationId": "getOrder",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "orderId",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/OrderResponseDTO"
-                }
-              }
-            },
-            "description": ""
-          }
-        },
-        "tags": [
-          "OrderService"
-        ]
-      }
-    },
-    "/v1/ecommerce/payments/initiate": {
-      "post": {
-        "operationId": "initiatePayment",
+        "callbacks": {},
+        "description": "Fetches detailed information about a specific transaction using its unique identifier. This operation helps users verify transaction statuses and details.",
+        "operationId": "getTransaction",
         "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PaymentRequestDTO"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "content": {
               "*/*": {
                 "schema": {
-                  "$ref": "#/components/schemas/PaymentResponseDTO"
+                  "$ref": "#/components/schemas/transaction_response"
                 }
               }
             },
-            "description": ""
-          }
-        },
-        "tags": [
-          "PaymentService"
-        ]
-      }
-    },
-    "/v1/ecommerce/payments/webhook": {
-      "post": {
-        "operationId": "paymentWebhook",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PaymentWebhookDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
+            "description": "Response for status 200",
+            "headers": {}
+          },
+          "400": {
             "content": {
-              "*/*": {
+              "application/json": {
+                "example": {
+                  "error": "BadRequest",
+                  "message": "Invalid input for /{transactionId}",
+                  "path": "/{transactionId}",
+                  "status": 400
+                },
                 "schema": {
-                  "$ref": "#/components/schemas/PaymentResponseDTO"
+                  "$ref": "#/components/schemas/client_error_response"
                 }
               }
             },
-            "description": ""
-          }
-        },
-        "tags": [
-          "PaymentService"
-        ]
-      }
-    },
-    "/v1/ecommerce/products": {
-      "post": {
-        "operationId": "addProduct",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ProductRequestDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
+            "description": "Invalid request for /{transactionId}"
+          },
+          "500": {
             "content": {
-              "*/*": {
+              "application/json": {
+                "example": {
+                  "error": "InternalServerError",
+                  "message": "Unexpected error occurred",
+                  "path": "/{transactionId}",
+                  "status": 500
+                },
                 "schema": {
-                  "$ref": "#/components/schemas/ProductResponseDTO"
+                  "$ref": "#/components/schemas/server_error_response"
                 }
               }
             },
-            "description": ""
+            "description": "Internal server error"
           }
         },
+        "security": [],
+        "servers": [],
+        "summary": "Retrieve transaction details",
         "tags": [
-          "ProductService"
+          "PaymentController"
         ]
-      }
-    },
-    "/v1/ecommerce/shipping/{orderId}/track": {
-      "get": {
-        "operationId": "trackOrder",
-        "parameters": [
-          {
-            "in": "path",
-            "name": "orderId",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/TrackingResponseDTO"
-                }
-              }
-            },
-            "description": ""
-          }
-        },
-        "tags": [
-          "ShippingService"
-        ]
-      }
-    },
-    "/v1/ecommerce/users": {
-      "post": {
-        "operationId": "registerUser",
-        "parameters": [],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UserRequestDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/UserResponseDTO"
-                }
-              }
-            },
-            "description": ""
-          }
-        },
-        "tags": [
-          "UserService"
-        ]
-      }
+      },
+      "parameters": [
+        {
+          "$ref": "#/components/parameters/transactionId"
+        }
+      ],
+      "servers": []
     }
   },
   "servers": [
     {
-      "url": "http://localhost:8000"
+      "description": "Sandbox",
+      "url": "https://acme-data-wadt.apiwiz.io/v1/payments",
+      "variables": {},
+      "x-basePath": "/v1/payments",
+      "x-environmentId": "",
+      "x-environmentName": "",
+      "x-hide": false,
+      "x-name": "Sandbox"
+    },
+    {
+      "description": "Dev",
+      "url": "https://acme-data-dev.apiwiz.io/v1/payments",
+      "variables": {},
+      "x-basePath": "/v1/payments",
+      "x-environmentId": "",
+      "x-environmentName": "",
+      "x-hide": false,
+      "x-name": "Dev"
+    },
+    {
+      "description": "Prod",
+      "url": "https://acme-data-prod.apiwiz.io/v1/payments",
+      "variables": {},
+      "x-basePath": "/v1/payments",
+      "x-environmentId": "",
+      "x-environmentName": "",
+      "x-hide": false,
+      "x-name": "Prod"
+    }
+  ],
+  "tags": [
+    {
+      "description": "Handles payment processing and transaction management.",
+      "name": "PaymentController"
     }
   ]
 }
